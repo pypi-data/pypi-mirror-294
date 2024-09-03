@@ -1,0 +1,2 @@
+[console_scripts]
+file_extractor = file_extractor.extractor:main
