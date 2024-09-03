@@ -1,0 +1,210 @@
+/*
+styles.css
+https://github.com/ddh0/easy-llama/
+*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #eeeeee;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+pre {
+    border-radius: 5px;
+    padding: 7px;
+    white-space: pre;
+    word-wrap: normal;
+    background-color: #000000bf;
+    color: #bebebe;
+    overflow: auto;
+    max-width: 100%;
+}
+
+.container {
+    width: 100svw;
+    height: auto;
+    margin: 10px;
+    padding: 0px;
+}
+
+h1 {
+    width: 90%;
+    text-wrap-mode: nowrap;
+    flex: auto;
+    text-align: left;
+}
+
+a {
+    color: #a0c5ff;
+}
+
+a:visited {
+    color: #a0c5ff;
+}
+
+.conversation {
+    background-color: #161616;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    height: 80svh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: anywhere;
+    min-width: 2rem;
+    /* min-height: 6rex; */
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+    color: #eeeeee;
+    max-width: 55svw;
+}
+
+.user-message {
+    background-color: #367739;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #266366;
+    align-self: flex-start;
+}
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    margin-top: 80svh;
+    height: 20svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border: none;
+}
+
+textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    overflow-wrap: anywhere;
+    top: 10px;
+    bottom: 10px;
+    width: 80%;
+    height: 25%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    resize: none;
+    margin-bottom: 10px;
+    background-color: #161616;
+    color: #eeeeee;
+    font-size: 16px;  /* this is necessary to prevent iOS safari from zooming in on the input box */
+}
+
+/* these 4 rules do the same thing on different browsers */
+textarea::placeholder {
+    color: #404040;
+}
+textarea::-webkit-input-placeholder {
+    color: #404040;
+}
+textarea::-moz-placeholder {
+    color: #404040;
+}
+textarea:-ms-input-placeholder {
+    color: #404040;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    padding: 10px;
+    border: none;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    max-width: 30ch;
+    max-height: 5rex;
+    border-radius: 3px;
+    background-color: #4b724b;
+    color: #eeeeee;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #355335;
+}
+
+.button-group {
+    margin-top: 8rex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.button-group button {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1;
+    margin-inline: 5px;
+}
+
+.disabled-button {
+    background-color: #404040 !important ;
+    cursor: not-allowed !important;
+}
+
+.disabled-button:hover {
+    background-color: #404040 !important ;
+}
+
+.red-button {
+    background-color: #6b3045;
+}
+
+.red-button:hover {
+    background-color: #4e2131;
+}
+
+#resetButton {
+    background-color: #6b3045;
+}
+
+#resetButton:hover {
+    background-color: #4e2131;
+}
+
+#removeButton {
+    background-color: #726642;
+}
+
+#removeButton:hover {
+    background-color: #534a2f;
+}
+
+#newBotMessageButton {
+    background-color: #3a5d5e;
+}
+
+#newBotMessageButton:hover {
+    background-color: #284344;
+}
+
+#swipeButton {
+    background-color: #563a5e;
+}
+
+#swipeButton:hover {
+    background-color: #3e2844;
+}
