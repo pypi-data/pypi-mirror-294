@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/datahorse/__init__.py
+src/datahorse/__version__.py
+src/datahorse/core.py
+src/datahorse/logger.py
+src/datahorse.egg-info/PKG-INFO
+src/datahorse.egg-info/SOURCES.txt
+src/datahorse.egg-info/dependency_links.txt
+src/datahorse.egg-info/requires.txt
+src/datahorse.egg-info/top_level.txt
