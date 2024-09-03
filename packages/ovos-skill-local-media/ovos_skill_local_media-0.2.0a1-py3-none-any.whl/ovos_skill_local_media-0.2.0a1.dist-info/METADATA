@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ovos-skill-local-media
+Version: 0.2.0a1
+Summary: OVOS file browser OCP skill plugin
+Home-page: https://github.com/OpenVoiceOS/skill-ovos-local-media
+Author: Aix
+Author-email: aix.m@outlook.com
+License: Apache-2.0
+Keywords: ovos file browser skill plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-utils>=0.0.38
+Requires-Dist: ovos-bus-client>=0.0.9a2
+Requires-Dist: ovos-workshop>=0.0.16a43
+Provides-Extra: notify
+Requires-Dist: pyudev; extra == "notify"
+
+play local media in OVOS
+
+
