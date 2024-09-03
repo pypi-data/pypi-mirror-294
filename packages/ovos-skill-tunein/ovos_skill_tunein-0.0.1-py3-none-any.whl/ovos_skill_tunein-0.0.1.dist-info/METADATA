@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ovos-skill-tunein
+Version: 0.0.1
+Summary: ovos tunein skill plugin
+Home-page: https://github.com/OpenVoiceOS/skill-ovos-tunein
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Keywords: ovos skill plugin
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: ovos-utils>=0.0.38
+Requires-Dist: ovos-bus-client>=0.0.9a1
+Requires-Dist: ovos-workshop>=0.0.16a43
+Requires-Dist: tunein>=0.0.4a1,~=0.0
+
+# <img src='./res/tunein.png' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/> TuneIn
+
+OCP skill for TuneIn
+
+![](./gui.png)
+
+
+## Examples 
+
+* "play heavy metal heart radio"
+* "play metal heart radio on tune in"
+
+
+## Credits 
+- JarbasAl
+- Emphasize
+
+## Category
+**Entertainment**
+
+## Tags
+#audio 
+#music
+#OCP
+#entertainment
+
+
