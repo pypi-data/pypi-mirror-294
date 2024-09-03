@@ -1,0 +1,3 @@
+[ovos.plugin.skill]
+skill-ovos-youtube-music.openvoiceos=skill_ovos_youtube_music:YoutubeMusicSkill
+
