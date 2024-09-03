@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error | PG-FMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #4a0080, #000000);
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 8em;
+            margin: 0;
+            background: linear-gradient(to right, #ff00ff, #8000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .button {
+            background: linear-gradient(to right, #ff00ff, #8000ff);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        .gecko {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .error-details {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gecko">🦎💻</div>
+        <h1>500</h1>
+        <p>Oops! Our geckos encountered an unexpected error while managing files.</p>
+        <p>Don't worry, our tech team is already on it!</p>
+        <a href="/" class="button">Return to Home</a>
+        <div class="error-details">
+            <p>Error Code: 500 Internal Server Error</p>
+            <p>Time: <span id="current-time"></span></p>
+            <p>If this issue persists, please contact our support team.</p>
+        </div>
+    </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('current-time').textContent = now.toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>

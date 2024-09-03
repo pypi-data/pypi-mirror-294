@@ -1,0 +1,48 @@
+[project]
+name = "pg-fms"
+version = "0.2.1"
+description = "The Purple Geckos File Management System (PG-FMS) is an advanced, Python-based file management solution designed to streamline and enhance file handling tasks."
+authors = [
+    { name = "Mike Odnis", email = "airwolf635@gmail.com" },
+    { name = "Pankti Mehta", email = "pnm1@rice.edu" },
+    { name = "Vay Manning", email = "jmanning7@dmacc.edu" },
+]
+dependencies = [
+    "click",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Source = "https://gitlab.com/WomB0ComB0/pg-fms"
+
+[project.scripts]
+pg-fms = "pg_fms.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+    "setuptools",
+    "wheel",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dependencies]
+click = "*"
+
+[tool.pdm.scripts.pg-fms]
+script = "pg_fms.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "error",
+]
