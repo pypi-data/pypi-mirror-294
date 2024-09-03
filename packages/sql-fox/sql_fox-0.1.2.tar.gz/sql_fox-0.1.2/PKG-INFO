@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sql-fox
+Version: 0.1.2
+Summary: An easy way to work with your database.
+Home-page: https://github.com/russkiylis/sql-fox
+Author: russkiylis
+Author-email: diaminerr@yandex.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymysql>=1.0.2
+Requires-Dist: sqlalchemy>=1.4.0
+Requires-Dist: cryptography>=3.4.7
+Requires-Dist: cffi>=1.14.5
+Requires-Dist: colorama>=0.4.4
+Requires-Dist: cx-oracle>=8.1.0
+Requires-Dist: fdb>=2.0.0
+Requires-Dist: future>=0.18.2
+Requires-Dist: greenlet>=1.1.0
+Requires-Dist: loguru>=0.5.3
+Requires-Dist: packaging>=20.9
+Requires-Dist: pluggy>=0.13.1
+Requires-Dist: psycopg2>=2.8.6
+Requires-Dist: pycparser>=2.20
+Requires-Dist: pyodbc>=4.0.30
+Requires-Dist: typing-extensions>=3.7.4.3
+Requires-Dist: win32-setctime>=1.0.2
+
+todo
