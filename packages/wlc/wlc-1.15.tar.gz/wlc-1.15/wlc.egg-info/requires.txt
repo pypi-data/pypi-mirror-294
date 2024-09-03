@@ -1,0 +1,15 @@
+argcomplete
+python-dateutil
+pyxdg
+requests>=2.25.0
+urllib3>=1.26
+
+[lint]
+pre-commit==3.8.0
+
+[test]
+pytest
+pytest-cov
+responses<0.26.0,>=0.10.1
+build==1.2.1
+twine==5.1.1
