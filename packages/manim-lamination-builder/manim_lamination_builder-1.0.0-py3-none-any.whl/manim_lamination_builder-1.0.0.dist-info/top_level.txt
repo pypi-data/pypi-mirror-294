@@ -1,0 +1,4 @@
+illistrations
+manim_lamination_builder
+quotient_pinching
+tests
