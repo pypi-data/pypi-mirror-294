@@ -1,0 +1,11 @@
+xdlake/__init__.py,sha256=6-HGWUgR1qDEJlZAPK6lmMo8ISrB7hbkzRcF0U-2doA,17552
+xdlake/__version__.py,sha256=Pv9ouMrHW4YJ2RqzWPcojtYRoZtNSgzCzgB3B3Q2FMU,411
+xdlake/dataset_utils.py,sha256=4B0ctkEcN2LsJ6WvKYolkYwz7q-2tHrqr2VFSJ0DBsA,4741
+xdlake/storage.py,sha256=Jk2L13yN461efZC8oq_btTWejj4Ty07XghRFz5uFMio,7286
+xdlake/utils.py,sha256=cvf-RIJtBL7u0soPSgZgX6rj-imbjDyLmL4W298M7DI,254
+xdlake/delta_log/__init__.py,sha256=BymPPuXrtNhBT-1693VPQfWwl9YunOrLaQQBx_S7p7w,20765
+xdlake-0.0.0.dist-info/LICENSE,sha256=S5pW2XTnUw-VQQ8ReKxmnTLazRkJnDE1sfvFTggsSg0,1073
+xdlake-0.0.0.dist-info/METADATA,sha256=85ioPZ5xApXTnDo9MkTYu3mz2s1b_qSPBrmeK3OXQNs,5615
+xdlake-0.0.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+xdlake-0.0.0.dist-info/top_level.txt,sha256=WKEAvCchNfPeJj7mXhZz72NCrfDmjpMxTg6Q-5eUs9c,7
+xdlake-0.0.0.dist-info/RECORD,,
