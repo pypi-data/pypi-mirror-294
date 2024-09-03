@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optional_requirements/__init__.py,sha256=hPGkmYiMyazVpFaDwjp3aJOcalAuV_jzd7XhnPGFN4E,616
+optional_requirements/_errors.py,sha256=zvvs4L-pGzfHMnJVfl6HL_MlPan8JjRCROXmCbbCVb0,1732
+optional_requirements/_import.py,sha256=uJba9hf2VGADqM9ah-ikNHRMdB91m60mIYXLQ-0rjdQ,2369
+optional_requirements/_module_info.py,sha256=FUDjqz-HJhjeWDn6r06tt8QAJ0BlwO-4qAGW3gFYaRI,1474
+optional_requirements/_requirements.py,sha256=vimHzF7NgjJebfRrFbEbjeDXHIvMREdrlC5b4mAEAe0,1716
+optional_requirements/_requirements_file.py,sha256=iPjV_7NFAoEbHs1oVBdFQbpy4UDaSOkN8etQzVnQ1v0,1182
+optional_requirements/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optional_requirements/version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+optional_requirements-0.0.1.dist-info/LICENSE,sha256=asQSwUEOHVo5dYJRimqLExuYir3yjyKjhaCakB1YHQ8,1069
+optional_requirements-0.0.1.dist-info/METADATA,sha256=YCbU-drzrIx2Wpa6Bd_zFLDSN3iQcQ58_fphjXCxr2A,2470
+optional_requirements-0.0.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+optional_requirements-0.0.1.dist-info/top_level.txt,sha256=WHclgNR8wl9f6avNpqnxieyAELKKa9na-qsTzqB_tmU,31
+optional_requirements-0.0.1.dist-info/RECORD,,
