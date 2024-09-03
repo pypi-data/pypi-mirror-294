@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jsonupdate_ng/__init__.py
+src/jsonupdate_ng/jsonupdate_ng.py
+src/jsonupdate_ng/version.py
+src/jsonupdate_ng.egg-info/PKG-INFO
+src/jsonupdate_ng.egg-info/SOURCES.txt
+src/jsonupdate_ng.egg-info/dependency_links.txt
+src/jsonupdate_ng.egg-info/top_level.txt
