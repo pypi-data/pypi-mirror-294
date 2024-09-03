@@ -1,0 +1,2 @@
+[console_scripts]
+snowdrop = snowdrop.__main__:main
