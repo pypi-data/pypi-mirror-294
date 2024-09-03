@@ -1,0 +1,12 @@
+numpy
+pandas
+rich
+rich_click
+update_checker
+pillow
+
+[:python_version > "3.10"]
+importlib-metadata
+
+[docs]
+sphinx
