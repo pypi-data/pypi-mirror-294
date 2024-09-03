@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-collections"
+version = "0.1.0"
+description = "Static collections for Flask"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-collections"
+packages = [{include = "flask_collections"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.0"
+markdown = "^3.6"
+pyyaml = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
