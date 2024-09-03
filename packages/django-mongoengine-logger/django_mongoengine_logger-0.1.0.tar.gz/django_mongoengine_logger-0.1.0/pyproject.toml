@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-mongoengine-logger"
+version = "0.1.0"
+description = "A Django logger that logs to MongoDB using MongoEngine."
+authors = ["Hamzeh Pourmahdi <hpourmahdi@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2"
+mongoengine = "^0.29.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
