@@ -1,0 +1,13 @@
+databrix_hub_extension/__init__.py,sha256=nTCJ8DwmOCsLyNpI7-zXOIwhoqIdnYjdRJffp8fSTuk,602
+databrix_hub_extension/_version.py,sha256=FovOZxokKMW5aKE9xYfcnGtzE7hO4JWnLVq3x7h0SlQ,172
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/package.json,sha256=LLNmj_DIlKGsvRAGPBgphiY_oUZ-b4Duieg0zF_zWng,5960
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/static/509.1d478740c9f694b2af77.js,sha256=HUeHQMn2lLKvd_WR-0lKrdkfCwOD_zfJHqPyQM8ZC68,1757
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/static/728.e64291c15cbd2e8d57dd.js,sha256=5kKRwVy9Lo1X3dopyUML0m-qRKA4CUsyzFq7ZZ0pCxE,4015
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/static/remoteEntry.a475ab499b87ebc3b5fe.js,sha256=pHWrSZuH68O1_iXdiMIET5smZLSRklqQSq_se1YPaAY,6716
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/static/style.js,sha256=sXzLS_-uL2hPpp8LfQZPURNTGIW6RuXGPIiT86jD29U,165
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+databrix_hub_extension-0.1.18.data/data/share/jupyter/labextensions/databrix_hub_extension/install.json,sha256=w40VWdN16htfgL3BtMQ5lKe20P0Cm2awhiq7lkTgMMw,205
+databrix_hub_extension-0.1.18.dist-info/METADATA,sha256=mJM8gW-qK9QPmINpt5DHoZUF5V9rXgSp_pC-OujeQcM,6107
+databrix_hub_extension-0.1.18.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+databrix_hub_extension-0.1.18.dist-info/licenses/LICENSE,sha256=kQg4wJG56De2J2AZyvxmdAonpQFDp5z5ubcm0zpw21k,1518
+databrix_hub_extension-0.1.18.dist-info/RECORD,,
