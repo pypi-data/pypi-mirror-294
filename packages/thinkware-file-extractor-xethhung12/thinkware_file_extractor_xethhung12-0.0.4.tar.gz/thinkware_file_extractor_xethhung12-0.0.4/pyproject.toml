@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinkware_file_extractor_xethhung12"
+version = "0.0.4"
+authors = [
+  { name="Xeth", email="admin@xethh.me" },
+]
+description = "A small example package"
+readme = "Readme.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/xh-dev/thinkware-file-extractor-xethhung12"
+Issues = "https://github.com/xh-dev/thinkware-file-extractor-xethhung12/issues"
