@@ -1,0 +1,13 @@
+tree_sitter_ocaml-0.23.0.dist-info/RECORD,,
+tree_sitter_ocaml-0.23.0.dist-info/WHEEL,sha256=vnfoQ3KwqdszTEC27axVOAiJ5iCffTFVrA8hteU0mmM,150
+tree_sitter_ocaml-0.23.0.dist-info/LICENSE,sha256=-XeiCAXdbidfFLwJCl-OY4QB2tTfNmhBwQYPEsdbdK4,1094
+tree_sitter_ocaml-0.23.0.dist-info/top_level.txt,sha256=lxg7ohoUuTz4lyuQQatWTiLKbmTsQLH_5gFOYLY2f1U,27
+tree_sitter_ocaml-0.23.0.dist-info/METADATA,sha256=lLQmeUe95bPw97soFrkGxdaKiksFIO4ZxLGURw3-Rpo,1955
+tree_sitter_ocaml/binding.c,sha256=E9MC8jVlaFJvnknHJfeeQhh1JD8gowsN03xIMbsSF6k,1318
+tree_sitter_ocaml/__init__.pyi,sha256=XX0-uGc1W7K__W2SGz3y9pJukGJDTRjZIOEV5m8pvf4,181
+tree_sitter_ocaml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_ocaml/_binding.abi3.so,sha256=VhT0jHFhoAl_SdASPEQSnvL5O6RAGsgkVLnA2NR_Soo,14787160
+tree_sitter_ocaml/__init__.py,sha256=5ryh5TRNUjgCQaG0KoILC8tN9Q1_uy3LPbUyB8rlIjM,1097
+tree_sitter_ocaml/queries/highlights.scm,sha256=W70OvbDIbBAEnoR2ECOJ-2NbSbpB_oIea46R7dtH-jw,3160
+tree_sitter_ocaml/queries/locals.scm,sha256=WU4oL6achaVCVeVPV0xSXJQAuDV9uBwxSrS5Pln0k2M,345
+tree_sitter_ocaml/queries/tags.scm,sha256=N_9O-yU8rEZqCGdG4Cs-LjkEpFLCdPeGUYPKETNgfwI,2375
