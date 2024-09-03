@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+improved_helloworld.egg-info/PKG-INFO
+improved_helloworld.egg-info/SOURCES.txt
+improved_helloworld.egg-info/dependency_links.txt
+improved_helloworld.egg-info/entry_points.txt
+improved_helloworld.egg-info/top_level.txt
+wolf functions/HelloWorld.py
+wolf functions/__init__.py
