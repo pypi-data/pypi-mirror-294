@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: flask-super-macros
+Version: 0.1.0
+Summary: Super charged Jinja macros for Flask
+Home-page: https://github.com/hyperflask/flask-super-macros
+License: MIT
+Author: Maxime Bouroumeau-Fuseau
+Author-email: maxime.bouroumeau@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: jinja-super-macros (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/hyperflask/flask-super-macros
+Description-Content-Type: text/markdown
+
+# Flask-Super-Macros
+
+Super charged Jinja macros for Flask using [Jinja Super Macros](https://github.com/hyperflask/jinja-super-macros).
+
+- Inspired by frontend component frameworks
+- Use macros like html components
+- Auto macro loader
+- Compatible with [Storybook](https://storybook.js.org/)
+
+## Installation
+
+    pip install flask-super-macros
+
+## Usage
+
+```python
+from flask import Flask
+from flask_super_macros import SuperMacros
+
+app = Flask(__name__)
+SuperMacros(app)
+```
+
+Macros will be automatically registered from:
+
+ - Macro defined using the `macro` directive in all template files called `__macros__.html`
+ - Created from files with the extension `.macro.html`
+ - Created from files in the `macros` folder
+
+*(Note: [creating macros from files]() is the equivalent of wrapping the whole file in a macro directive)*
+
+Example `macros/btn.html`:
+
+```
+<{button class="btn" **kwargs}>{{ inner }}</{}>
+```
+
+You can then use this macro in any template (no need to import):
+
+```
+<{ btn onclick="alert('hello')" }>click me</{ btn }>
+```
+
+See [Jinja Super Macros documentation]() to learn more about the new macro calling syntax.
+
+To register macros from other files, the [macro registry]() is available under ̀`app.macros`:
+
+```python
+app.macros.register_from_template("macros.html")
+```
+
+You can also [create macros fron functions]() using `app.macro`:
+
+```python
+from jinja_super_macros import html_class
+
+@app.macro
+def btn(**kwargs):
+    """<{button class="btn" **kwargs}>{{ inner }}</{}>"""
+```
+
+## Storybook
+
+Registered jinja macros can be viewed in Storybook using the server renderer.
+
+Initialize your storybook project:
+
+    npx storybook@latest init -t server
+
+(Optionnaly, empty the stories folder first to remove examples)
+
+Create story files:
+
+    flask create-macro-stories --watch
