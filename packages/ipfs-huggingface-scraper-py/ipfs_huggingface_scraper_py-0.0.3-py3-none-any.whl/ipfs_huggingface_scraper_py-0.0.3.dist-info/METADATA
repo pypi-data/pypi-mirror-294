@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ipfs_huggingface_scraper_py
+Version: 0.0.3
+Summary: A scraper of huggingface repositories, invoking an IPFS model manager.
+Author-email: Benjamin Barber <starworks5@gmail.com>
+Project-URL: Homepage, https://github.com/endomorphosis/ipfs_huggingface_scraper_py
+Project-URL: Issues, https://github.com/endomorphosis/ipfs_huggingface_scraper_py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ipfs_huggingface_scraper_py
