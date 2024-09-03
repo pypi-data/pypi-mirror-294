@@ -1,0 +1,7 @@
+openai
+requests
+anthropic
+rich
+pyfiglet
+prompt_toolkit
+inquirer
