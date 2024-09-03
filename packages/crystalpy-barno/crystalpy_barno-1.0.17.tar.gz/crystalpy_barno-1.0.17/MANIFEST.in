@@ -1,0 +1,7 @@
+# MANIFEST.in
+include README.md
+recursive-include src/crystalpy_barno *.py
+recursive-include src/crystalpy_barno/ReportsClasses/CR *.dll
+recursive-include src/crystalpy_barno/ReportsClasses/Helper *.py
+recursive-include src/crystalpy_barno/ReportsClasses/Sales *.py
+recursive-include src/crystalpy_barno/ReportsClasses/Stock *.py
