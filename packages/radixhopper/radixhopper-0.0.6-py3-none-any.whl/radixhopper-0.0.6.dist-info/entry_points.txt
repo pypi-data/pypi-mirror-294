@@ -1,0 +1,3 @@
+[console_scripts]
+radixhopper = radixhopper.cli:main
+radixhopper-gui = radixhopper.gui_runner:run_streamlit_app

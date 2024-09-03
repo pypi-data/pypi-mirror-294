@@ -1,0 +1,118 @@
+Metadata-Version: 2.3
+Name: radixhopper
+Version: 0.0.6
+Summary: A Python library for efficient radix-based number system conversions, specializing in cyclic fractions handling, for bases 2 through 36.
+Project-URL: Documentation, https://github.com/aarmn/radixhopper#readme
+Project-URL: Issues, https://github.com/aarmn/radixhopper/issues
+Project-URL: Source, https://github.com/aarmn/radixhopper
+Author-email: aarmn <aarmn80@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: bases,conversion,cyclic fractions,math,mathematics,number system,radix
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pydantic>=2.8.2
+Provides-Extra: cli
+Requires-Dist: fire>=0.4.0; extra == 'cli'
+Requires-Dist: rich; extra == 'cli'
+Provides-Extra: dev
+Requires-Dist: black>=21.0; extra == 'dev'
+Requires-Dist: flake8>=3.9; extra == 'dev'
+Requires-Dist: isort>=5.0; extra == 'dev'
+Requires-Dist: pytest-cov>=2.0; extra == 'dev'
+Requires-Dist: pytest>=6.0; extra == 'dev'
+Provides-Extra: streamlit
+Requires-Dist: streamlit; extra == 'streamlit'
+Description-Content-Type: text/markdown
+
+# ✨ RadixHopper ✨
+
+[![PyPI - Version](https://img.shields.io/pypi/v/radixhopper.svg)](https://pypi.org/project/radixhopper)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/radixhopper.svg)](https://pypi.org/project/radixhopper)
+
+-----
+
+🌟 Hop between number bases with ease! 🌟
+
+RadixHopper is a Python library for efficient radix-based number system conversions, specializing in cyclic fractions handling, for bases 2 through 36.
+
+## ✨ Features
+
+- 🔢 Convert numbers between bases 2 to 36
+- 🔄 Handle cyclic fractions with grace
+- 🚀 Lightning-fast conversions
+- 🎨 Beautiful CLI interface
+- 🌈 Streamlit web app included
+
+## 🌠 Installation
+
+Sprinkle some magic into your Python environment:
+
+```console
+pip install radixhopper
+```
+
+## 🎭 Usage
+
+### As a library
+
+```python
+from radixhopper import BaseConverter, ConversionInput
+
+input_data = ConversionInput(num="3.14", base_from=10, base_to=2)
+result = BaseConverter.base_convert(input_data)
+print(result)  # Output: 11.0[01000111101011100001]
+```
+
+### CLI
+
+```console
+radixhopper --num 3.14 --base-from 10 --base-to 2
+```
+
+### Web App
+
+Run the Streamlit app:
+
+```console
+streamlit run radixhopper/st.py
+```
+
+## 🌟 Contributing
+
+We welcome contributions! Please check our [Issues](https://github.com/Aarmn the limitless/radixhopper/issues) page for open tasks or suggest new features.
+
+## 📜 License
+
+`radixhopper` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## ✅ TODO
+
+ - [ ] Make it an actual pip package
+ - [ ] Improve data taking in and out structure
+ - [ ] click 
+
+## 🌠 Star Gazing
+
+```
+   *  .  . *       *    .        .        .   *    ..
+  .    *        .   ✨    .      .     *   .         *
+    *.   *    .    .    *    .    *   .    .   *
+  .   .     *     .   ✨     .        .       .     .
+    .    *.      .     .    *    .    *   .    .  *
+  *   .    .    .    .      .      .         .    .
+    .        .    . ✨      *   .    .   *     *
+  .    *     *     .     .    *    .    *   .    .
+    .    .        .           .      .        .
+  *     .    . *    .     *     .        .     *
+```
+
+Happy hopping! ✨🐰✨
