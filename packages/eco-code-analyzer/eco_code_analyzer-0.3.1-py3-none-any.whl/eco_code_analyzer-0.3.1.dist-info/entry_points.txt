@@ -1,0 +1,3 @@
+[console_scripts]
+eco-code-analyzer = eco_code_analyzer.cli:main
+
