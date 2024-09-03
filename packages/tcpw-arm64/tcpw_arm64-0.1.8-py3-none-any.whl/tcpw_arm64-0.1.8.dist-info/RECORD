@@ -1,0 +1,8 @@
+tcpw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcpw/__main__.py,sha256=t5UIbEOte1qPrr_kQaQ5VeaIJ1wmiZieixssipgdCtQ,158
+tcpw/tcpw,sha256=DZW0PuhzV4Un_xCGDkQR_4aE5jupKkpUG_G1oUO2nJY,845048
+tcpw_arm64-0.1.8.dist-info/METADATA,sha256=KOKg0tja5ZLEY_3ee37sDqDq_XYd0FJOPOwS6OZz2AE,3988
+tcpw_arm64-0.1.8.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+tcpw_arm64-0.1.8.dist-info/entry_points.txt,sha256=bglxSSXBRMIf19LwX2a5omNsO_ST6yRvIrzpw_88pxI,44
+tcpw_arm64-0.1.8.dist-info/top_level.txt,sha256=Y8N-ktN8BeTYYHS8HfF8S0l7ovzSX3RWBVlxmxfHfJk,5
+tcpw_arm64-0.1.8.dist-info/RECORD,,
