@@ -1,0 +1,4 @@
+cereja
+opencv-python
+matplotlib
+numpy
