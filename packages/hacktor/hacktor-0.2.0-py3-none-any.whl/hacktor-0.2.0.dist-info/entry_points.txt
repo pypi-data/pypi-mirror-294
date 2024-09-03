@@ -1,0 +1,3 @@
+[console_scripts]
+hacktor=hacktor.main:main
+
