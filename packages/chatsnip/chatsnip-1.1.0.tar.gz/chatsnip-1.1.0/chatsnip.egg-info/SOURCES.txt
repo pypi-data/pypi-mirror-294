@@ -1,0 +1,15 @@
+README.md
+setup.py
+chatsnip/__init__.py
+chatsnip/chatsnip.py
+chatsnip/extract_chat.py
+chatsnip/extractor.py
+chatsnip/file_splitter.py
+chatsnip/flask_app.py
+chatsnip/streamlit_ui.py
+chatsnip.egg-info/PKG-INFO
+chatsnip.egg-info/SOURCES.txt
+chatsnip.egg-info/dependency_links.txt
+chatsnip.egg-info/entry_points.txt
+chatsnip.egg-info/requires.txt
+chatsnip.egg-info/top_level.txt
