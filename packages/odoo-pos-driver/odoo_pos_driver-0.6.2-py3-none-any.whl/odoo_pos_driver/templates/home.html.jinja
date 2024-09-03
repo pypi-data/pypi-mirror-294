@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+{% extends "layout.html.jinja" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+{% for device_type in interface.device_types %}
+    {% set device = interface.get_device(device_type) %}
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{device.name}}
+    {% if device.is_connected%}
+                        <span class="badge rounded-pill text-bg-success">{{_('Connected')}}</span>
+    {% else%}
+                        <span class="badge rounded-pill text-bg-info">{{_('Disconnected')}}</span>
+    {% endif%}
+
+    {% if device.queue_size%}
+                        <span class="badge rounded-pill text-bg-warning">
+                        {{_('Pending Tasks')}}
+                            <span class="badge badge-light">
+                                {{device.queue_size}} / {{device.max_queue_size}}
+                            </span>
+                        </span>
+    {% endif%}
+
+    {% if device.errored_tasks_qty%}
+                        <a href="{{url_for('errored_tasks', device_type=device_type)}}"
+                            class="badge rounded-pill text-bg-danger">{{_('Errors')}}
+                            <span class="badge badge-light">{{device.errored_tasks_qty}}</span>
+                        </a>
+    {% endif%}
+
+    {% if device.disconnections_qty%}
+                        <a href="{{url_for('disconnections', device_type=device_type)}}"
+                            class="badge rounded-pill text-bg-danger">{{_('Disconnections')}}
+                            <span class="badge badge-light">{{device.disconnections_qty}}</span>
+                        </a>
+    {% endif%}
+                    </h5>
+
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="container-fluid" src="{{ url_for('static', filename='devices/' + device.usb_image_name) }}"
+                                style="max-height: 150px;max-width: 150px;" />
+                            </div>
+                            <div class="col-6">
+    {% if device.is_connected%}
+                                <ul>
+                                    <li>{{device.usb_device_name}}</li>
+                                    <li>{{device.usb_vendor_product_code}}</li>
+        {% if device.terminal_file%}
+                                    <li>{{device.terminal_file}}</li>
+        {% endif%}
+                                </ul>
+    {% endif%}
+                                <button type="button" class="container-fluid btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_{{device_type}}">
+                                  {{_('Test')}}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endfor%}
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal_display" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{{_('Test communication with display')}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{_('Close')}}"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="{{_('Line 1')}}" id="display_line_1"/>
+                <input type="text" placeholder="{{_('Line 2')}}" id="display_line_2"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="test_display(); return false;">{{_('Send to display')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_printer" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{{_('Test communication with printer')}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{_('Close')}}"></button>
+            </div>
+            <div class="modal-body">
+                    <input type="file" id="print_file"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="test_print(); return false;">{{_('Print')}}</button>
+                <button type="button" class="btn btn-primary" onclick="test_open_cashbox(); return false;">{{_('Open Cashbox')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_payment" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{{_('Test communication with payment terminal')}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{_('Close')}}"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="{{_('Amount (in €)')}}" id="payment_amount"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="test_payment(); return false;">{{_('Send Amount')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal_scale" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{{_('Test communication with scale')}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{_('Close')}}"></button>
+            </div>
+            <div class="modal-body">
+                    <input type="text" id="scale_weight" disabled/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="test_scale(); return false;">{{_('Get Weight')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function _call_ajax(url, data, callback) {
+        args = {
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            type: "POST",
+            timeout: 1000,
+            error: function (request, status, error) {
+                alert("Error. Code: " + request.status + ". Description: " + request.statusText);
+            },
+        }
+        if (data) {
+            args["data"] = JSON.stringify(data)
+        }
+        if (callback) {
+            args["success"] = callback
+        }
+        $.ajax(args);
+    }
+
+    function test_display() {
+        var data = {
+            params: {
+                text_to_display: JSON.stringify([
+                    $("#display_line_1").val(),
+                    $("#display_line_2").val(),
+                ]),
+            }
+        }
+        _call_ajax("/hw_proxy/send_text_customer_display", data)
+    }
+
+    function test_print() {
+        var myFile = $('#print_file').prop('files')[0];
+        var reader = new FileReader();
+        if (myFile) {
+            reader.readAsDataURL(myFile);
+            reader.onload = (event) => {
+                var data = {
+                    params: {
+                        data: {
+                            action: "print_receipt",
+                            receipt: reader.result.split(",")[1],
+                        },
+                    }
+                }
+                _call_ajax("/hw_proxy/default_printer_action", data);
+            };
+        }
+    }
+
+    function test_open_cashbox() {
+        var data = {
+            params: {
+                data: {action: "cashbox"},
+            }
+        }
+        _call_ajax("/hw_proxy/default_printer_action", data)
+    }
+
+    function test_payment() {
+        var payment_data = {
+                amount: $("#payment_amount").val(),
+                currency_iso: "EUR",
+                currency_decimals: 2,
+                payment_mode: "card",
+                payment_id: 123,
+                order_id: "ORDER-TEST-123",
+            }
+        var data = {
+            params: {
+                payment_info: JSON.stringify(payment_data),
+            }
+        }
+        _call_ajax("/hw_proxy/payment_terminal_transaction_start", data);
+    }
+
+    function test_scale() {
+        var callback = function(data) {
+            $("#scale_weight").val(data.result.weight);
+        }
+        _call_ajax("/hw_proxy/scale_read", false, callback);
+    }
+
+</script>
+
+{% endblock %}
