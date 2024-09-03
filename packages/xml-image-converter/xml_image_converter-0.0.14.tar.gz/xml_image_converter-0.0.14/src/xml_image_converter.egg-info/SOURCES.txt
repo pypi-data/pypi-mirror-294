@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/xml_image_converter/__init__.py
+src/xml_image_converter/bundle.mjs
+src/xml_image_converter/element.py
+src/xml_image_converter/package.json
+src/xml_image_converter/template.py
+src/xml_image_converter.egg-info/PKG-INFO
+src/xml_image_converter.egg-info/SOURCES.txt
+src/xml_image_converter.egg-info/dependency_links.txt
+src/xml_image_converter.egg-info/entry_points.txt
+src/xml_image_converter.egg-info/top_level.txt

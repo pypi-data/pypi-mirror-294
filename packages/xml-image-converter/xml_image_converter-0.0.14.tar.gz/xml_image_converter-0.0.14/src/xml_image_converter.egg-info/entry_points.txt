@@ -1,0 +1,2 @@
+[console_scripts]
+run-node-script = Realtime_Rendering_Tool.my_module:run_node_script
