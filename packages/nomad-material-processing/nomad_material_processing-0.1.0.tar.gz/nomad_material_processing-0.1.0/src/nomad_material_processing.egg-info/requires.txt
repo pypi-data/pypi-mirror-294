@@ -1,0 +1,6 @@
+nomad-lab>=1.3.4dev
+
+[dev]
+pytest
+ruff
+structlog
