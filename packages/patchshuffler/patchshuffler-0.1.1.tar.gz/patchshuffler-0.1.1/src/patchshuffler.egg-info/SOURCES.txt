@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/patchshuffler/__init__.py
+src/patchshuffler/base.py
+src/patchshuffler/patch_shuffler.py
+src/patchshuffler.egg-info/PKG-INFO
+src/patchshuffler.egg-info/SOURCES.txt
+src/patchshuffler.egg-info/dependency_links.txt
+src/patchshuffler.egg-info/requires.txt
+src/patchshuffler.egg-info/top_level.txt
+tests/test_patch_shuffler.py
