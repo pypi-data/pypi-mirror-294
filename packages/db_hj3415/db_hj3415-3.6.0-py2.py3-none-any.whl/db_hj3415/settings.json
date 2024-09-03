@@ -1,0 +1,4 @@
+{
+    "mongo_addr": "mongodb://hj3415:piyrw421@localhost:27017",
+    "redis_addr": "localhost"
+}
