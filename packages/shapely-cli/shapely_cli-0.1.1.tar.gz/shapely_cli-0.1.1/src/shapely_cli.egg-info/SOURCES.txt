@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/shapely_cli/cli.py
+src/shapely_cli/eval.py
+src/shapely_cli/helpers.py
+src/shapely_cli.egg-info/PKG-INFO
+src/shapely_cli.egg-info/SOURCES.txt
+src/shapely_cli.egg-info/dependency_links.txt
+src/shapely_cli.egg-info/entry_points.txt
+src/shapely_cli.egg-info/requires.txt
+src/shapely_cli.egg-info/top_level.txt
