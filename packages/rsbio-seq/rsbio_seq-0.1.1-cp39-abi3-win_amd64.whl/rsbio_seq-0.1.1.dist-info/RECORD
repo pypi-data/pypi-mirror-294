@@ -1,0 +1,8 @@
+rsbio_seq-0.1.1.dist-info/METADATA,sha256=wfT63zhCA2faCyDgXSEEpjpC9jHB91R4DlbVkK9dAcA,3252
+rsbio_seq-0.1.1.dist-info/WHEEL,sha256=RWw-DjN0KT3eDoJ7GTxTlCe6IRX5K2PqH8HzYCIGX_k,94
+rsbio_seq-0.1.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+rsbio_seq/__init__.py,sha256=cc4NKEqMf01PcgVtrYKQDZSC64gUqGp35uuIVF1xPT8,119
+rsbio_seq/__init__.pyi,sha256=IPG_2ieE9gngLluv5XMzR4BRjoqrQvmJxOa_XNxfJao,2346
+rsbio_seq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsbio_seq/rsbio_seq.pyd,sha256=zqiJflQH8GiVD3h8LasRcy5Pnmy_uFSBlW6OxI5ZkZE,429056
+rsbio_seq-0.1.1.dist-info/RECORD,,
