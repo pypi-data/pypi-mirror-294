@@ -1,0 +1,2 @@
+[console_scripts]
+dirmap = dirmapper.main:main
