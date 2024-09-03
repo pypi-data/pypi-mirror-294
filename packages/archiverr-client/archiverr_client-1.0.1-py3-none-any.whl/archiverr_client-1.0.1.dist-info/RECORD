@@ -1,0 +1,12 @@
+archiverr_client-1.0.1.data/scripts/archiverr,sha256=C7fmJj13R3Gk73hRo8wI6OQAV_hQCBNoRJQYs1Kf2MY,203
+src/Config.py,sha256=OgAsbO22Y9fXGjibORQFtW9KX42xNOslfkQuM70NhiQ,2815
+src/Utilities.py,sha256=zIplI10bQT_SEt1y12XANLNLCr6Z_sv0OFeOm4Us3O4,3382
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=0K7x9uO_k7JzXmIRGAxp6wsverVYOsO0IHEgIzLFY_A,16532
+src/client.py,sha256=-d-0_a44InsL8mIajTMGsLGDqohBx5WpoGwlqUsB8t0,1338
+src/constants.py,sha256=SDhwJ5iWdV9uJDVHMN-a8e0gmXwAgAirmkn__b74Tts,170
+src/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archiverr_client-1.0.1.dist-info/METADATA,sha256=_j3MmHZw2QoGS8FYaiL1_l90Fr3YYopyVCdRcTLha8s,1778
+archiverr_client-1.0.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+archiverr_client-1.0.1.dist-info/top_level.txt,sha256=ajarwwWOz3f2mG128Nh69XYYKGvJDzUDykrtccld0Nk,15
+archiverr_client-1.0.1.dist-info/RECORD,,
