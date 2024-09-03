@@ -1,0 +1,2 @@
+[gui_scripts]
+ui-inspector = uiinspector.uiinspector:run
