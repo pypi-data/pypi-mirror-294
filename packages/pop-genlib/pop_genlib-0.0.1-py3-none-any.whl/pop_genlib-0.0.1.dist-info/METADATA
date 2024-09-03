@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pop-genlib
+Version: 0.0.1
+Summary: AIoT serbot2 communication library
+Author: c.h.min
+Author-email: lab2@hanback.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ifaddr
+
