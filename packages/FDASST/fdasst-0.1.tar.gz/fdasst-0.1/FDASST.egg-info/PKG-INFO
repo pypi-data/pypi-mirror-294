@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: FDASST
+Version: 0.1
+Summary: A Python package to read disk usage also known as File Disk And System Stats Tool
+Home-page: https://github.com/CoderLogy/Python-Disk-Usage
+Author: Shourya Wadhwa
+Author-email: sourceboxtv@gmail.com
+License: GPL-3.0-or-later
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: resource
+
+# Python-Disk-Usage
+ Get disk usage information like how much space is available, free, and used.

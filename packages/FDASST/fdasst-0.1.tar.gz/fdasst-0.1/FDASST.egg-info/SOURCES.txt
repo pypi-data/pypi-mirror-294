@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+FDASST.egg-info/PKG-INFO
+FDASST.egg-info/SOURCES.txt
+FDASST.egg-info/dependency_links.txt
+FDASST.egg-info/requires.txt
+FDASST.egg-info/top_level.txt
+src/__init__.py
+src/disk_usage.py
