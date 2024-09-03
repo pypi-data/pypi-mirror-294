@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: pybalu
+Version: 0.3.1a5
+Summary: Python3 implementation of the computer vision and pattern recognition library Balu.
+Home-page: https://github.com/computervision-xray-testing
+License: GNU
+Keywords: computer vision,pattern recognition,machine learning,x-ray imaging
+Author: Marco Bucchi
+Author-email: mabucchi@uc.cl
+Maintainer: Christian Pieringer
+Maintainer-email: cppierin@uc.cl
+Requires-Python: >=3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: imageio (>=2.34.2,<3.0.0)
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: scikit-image (>=0.24.0,<0.25.0)
+Requires-Dist: scikit-learn (>=1.5.1,<2.0.0)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Project-URL: Repository, https://github.com/computervision-xray-testing/pybalu
+Description-Content-Type: text/markdown
+
+![Build and upload to PyPI](hhttps://github.com/computervision-xray-testing/pybalu/workflows/Build%20and%20upload%20to%20PyPI/badge.svg)
+
+
+# About the Project
+
+Python3 implementation for Balu, a computer vision, pattern recognition and image processing library. Originally implemented in Matlab&reg; by Domingo Mery.
+
+
+# Installation
+
+Python 3.10 or higher is required to use this package. In order to install pybalu, simply run
+
+```bash
+$ pip install pybalu
+```
+
+
+# Contributing
+
+We follow [github flow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow) standard. If you would like to contribute:
+
+- Fork the repo
+- Create a new branch called `feature/<feature-desc>` or `fix/<fix-desc>` depending on the nature of your contribution
+- Perform a pull request and wait for your contribution to be accepted or rejected
+
+Possible and useful contributions:
+
+- Tests
+- More feature extraction, analysis and transformation funcitons
+- Fixes
+- Documentation
+- Examples
+
+In case of contribution, once you have clone the repository, install the development version that includes optional dependencies specified in the pyproject.toml
+
+```bash
+$ pip install .[dev]
+```
+
+In `zsh` you could use
+
+```bash
+$ pip install ."[dev]"
+```
+
+
+## Roadmap
+
+- Documentation: _TODO_
+
