@@ -1,0 +1,134 @@
+#
+# Copyright (c) Lightly AG and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+#
+from __future__ import annotations
+
+from dataclasses import dataclass
+from enum import Enum
+from pathlib import Path
+
+import torch
+from omegaconf import MISSING, DictConfig
+from torch.nn import Module
+
+from lightly_train._checkpoint import Checkpoint
+from lightly_train._commands import _warnings, common_helpers
+from lightly_train._configs import omegaconf_utils, validate
+from lightly_train._configs.config import Config
+from lightly_train.types import PathLike
+
+
+def export(
+    out: PathLike,
+    checkpoint: PathLike,
+    part: ModelPart | str,
+    format: ModelFormat | str,
+    overwrite: bool = False,
+) -> None:
+    """Export a model from a checkpoint.
+
+    Args:
+        out:
+            Path where the exported model will be saved.
+        checkpoint:
+            Path to the LightlyTrain checkpoint file to export the model from. The
+            location of the checkpoint depends on the train command. If training was run
+            with `out="my_output_dir"`, then the last LightlyTrain checkpoint is saved
+            to `my_output_dir/checkpoints/last.ckpt`.
+        part:
+            Part of the model to export. Valid options are 'model' and
+            'embedding_model'. 'model' exports the model that was passed as `model`
+            argument to the pretraining function, while 'embedding_model' exports only
+            the embedding part of the model.
+        format:
+            Format to save the model in. Valid options are 'torch_model' and
+            'torch_state_dict'. 'torch_model' saves the model as a torch module which
+            can be loaded with `model = torch.load(out)`. This requires that the same
+            lightly_train version is installed when the model is exported and when it is
+            loaded again. 'torch_state_dict' saves the model's state dict which can be
+            loaded with `model.load_state_dict(torch.load(out))`. This is more flexible
+            and can be used to load the model with different lightly_train versions but
+            requires the model to already be instantiated.
+        overwrite:
+            Overwrite the output file if it already exists.
+    """
+    _warnings.filter_export_warnings()
+    part = _get_model_part(part=part)
+    format = _get_model_format(format=format)
+    out_path = common_helpers.get_out_path(out=out, overwrite=overwrite)
+    ckpt_path = common_helpers.get_checkpoint_path(checkpoint=checkpoint)
+    print(f"Loading checkpoint from '{ckpt_path}'")
+    ckpt = Checkpoint.from_path(checkpoint=ckpt_path)
+    model = _get_model(checkpoint=ckpt, part=part)
+    print(f"Exporting model to '{out_path}'")
+    _export_model(model=model, format=format, out=out_path)
+
+
+def export_from_config(config: DictConfig) -> None:
+    config = _validate_config(config=config)
+    config_dict = omegaconf_utils.config_to_dict(config=config)
+    export(**config_dict)
+
+
+@dataclass
+class ExportConfig(Config):
+    checkpoint: str = MISSING
+    out: str = common_helpers.get_default_out()
+    part: str = MISSING
+    format: str = MISSING
+
+
+class ModelFormat(Enum):
+    TORCH_MODEL = "torch_model"
+    TORCH_STATE_DICT = "torch_state_dict"
+
+
+class ModelPart(Enum):
+    MODEL = "model"
+    EMBEDDING_MODEL = "embedding_model"
+
+
+def _get_model_part(part: ModelPart | str) -> ModelPart:
+    try:
+        return ModelPart(part)
+    except ValueError:
+        raise ValueError(
+            f"Invalid model part: '{part}'. Valid parts are: "
+            f"{[p.value for p in ModelPart]}"
+        )
+
+
+def _get_model_format(format: ModelFormat | str) -> ModelFormat:
+    try:
+        return ModelFormat(format)
+    except ValueError:
+        raise ValueError(
+            f"Invalid model format: '{format}'. Valid formats are: "
+            f"{[f.value for f in ModelFormat]}"
+        )
+
+
+def _get_model(checkpoint: Checkpoint, part: ModelPart) -> Module:
+    if part == ModelPart.MODEL:
+        return checkpoint.lightly_train.models.model
+    elif part == ModelPart.EMBEDDING_MODEL:
+        return checkpoint.lightly_train.models.embedding_model
+    else:
+        raise ValueError(f"Invalid model part: {part}")
+
+
+def _export_model(model: Module, format: ModelFormat, out: Path) -> None:
+    if format == ModelFormat.TORCH_MODEL:
+        torch.save(model, out)
+    elif format == ModelFormat.TORCH_STATE_DICT:
+        torch.save(model.state_dict(), out)
+    else:
+        raise ValueError(f"Invalid model format: '{format}'")
+
+
+def _validate_config(config: DictConfig) -> DictConfig:
+    return validate.validate_dictconfig(config=config, default=ExportConfig)
