@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sensingSP
+Version: 0.0.7
+Summary: SensingSP™ is a Blender-based open-source library for simulating electromagnetic-based sensing systems and radar signal processing algorithms implementations.
+Home-page: https://gitlab.com/sparc-snt/sensing-signal-processing
+Author: Moein Ahmadi
+Author-email: moein.ahmadi@uni.lu, gmoein@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bpy (>=4.0.0)
+Requires-Dist: certifi (>=2024.7.4)
+Requires-Dist: charset-normalizer (>=3.3.2)
+Requires-Dist: contourpy (>=1.2.1)
+Requires-Dist: cycler (>=0.12.1)
+Requires-Dist: Cython (>=3.0.11)
+Requires-Dist: fonttools (>=4.53.1)
+Requires-Dist: idna (>=3.7)
+Requires-Dist: kiwisolver (>=1.4.5)
+Requires-Dist: llvmlite (>=0.43.0)
+Requires-Dist: mathutils (>=3.3.0)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numba (>=0.60.0)
+Requires-Dist: numpy (>=1.26.4)
+Requires-Dist: opencv-python (>=4.10.0.84)
+Requires-Dist: packaging (>=24.1)
+Requires-Dist: pillow (>=9.4.0)
+Requires-Dist: pyparsing (>=3.1.2)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.32.3)
+Requires-Dist: scipy (>=1.13.1)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: urllib3 (>=2.0.7)
+Requires-Dist: zstandard (>=0.23.0)
+Provides-Extra: no_deps
+
+# Sensing Signal Processing
+
+## Overview
+Sensing Signal Processing is a project focused on advanced signal processing techniques for various sensing applications. The project includes robust methods and algorithms designed to handle and analyze sensor data efficiently.
+
+## Installation
+To install the required dependencies, run:
+```bash
+pip install sensingsp
+```
