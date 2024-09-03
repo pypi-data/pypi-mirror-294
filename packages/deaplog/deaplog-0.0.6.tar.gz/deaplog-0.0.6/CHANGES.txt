@@ -1,0 +1,3 @@
+# we updated the sklean pakage into scikit-learn (python >=3.9), because it has been deprecated.
+# if you still would like to use the deaplog (v0.0.5) as old version (python >=3.7), please set a environment variable for sklearn before pip install deaplog as running this command:
+export SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=true

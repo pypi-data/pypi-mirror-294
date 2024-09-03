@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "deaplog"
+version = "0.0.6"
+authors = [
+  { name="BaoZhang", email="zhangbao5@mail.sysu.edu.cn" },
+]
+description = "A tool to perform differentially expression analysis and calculate the pseudotime and coodinates of genes by using single cell RNA-seq data"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["numpy",
+		"pandas",
+		"scanpy",
+		"anndata",
+		"scipy",
+		"sympy",
+		"fisher",
+		"random",
+		"operator",
+		"math",
+		"matplotlib",
+		"fisher",
+		"datetime",
+		"networkx",
+		"itertools",
+		"scikit-learn"]
+
+[project.urls]
+"Homepage" = "https://github.com/ZhangHongbo-Lab/DEAPLOG"
+"Bug Tracker" = "https://github.com/ZhangHongbo-Lab/DEAPLOG/issues"
