@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_revaluation_type_configurator,stock_revaluation_type - configurator,model_stock_revaluation_type,stock_revaluation_type_group,1,1,1,1
+access_stock_revaluation_type_all,stock_revaluation_type - all,model_stock_revaluation_type,,1,0,0,0
+access_stock_revaluation_all,stock_revaluation - all,model_stock_revaluation,,1,0,0,0
+access_stock_revaluation_viewer,stock_revaluation - viewer,model_stock_revaluation,stock_revaluation_viewer_group,1,0,0,0
+access_stock_revaluation_user,stock_revaluation - user,model_stock_revaluation,stock_revaluation_user_group,1,1,1,1

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2023 OpenSynergy Indonesia-->
+<!--Copyright 2023 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="stock_revaluation_view_tree" model="ir.ui.view">
+    <field name="name">stock_revaluation - Tree</field>
+    <field name="model">stock_revaluation</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='company_id']" position="after">
+            <field name="date" />
+            <field name="type_id" />
+            <field name="product_id" />
+            <field name="picking_id" />
+            <field name="date" />
+            <field name="old_price_unit" />
+            <field name="new_price_unit" />
+        </xpath>
+    </field>
+</record>
+
+<record id="stock_revaluation_view_search" model="ir.ui.view">
+    <field name="name">stock_revaluation - Search</field>
+    <field name="model">stock_revaluation</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="stock_revaluation_view_form" model="ir.ui.view">
+    <field name="name">stock_revaluation - Form</field>
+    <field name="model">stock_revaluation</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='user_id']" position="after">
+            <field name="type_id" />
+            <field name="allowed_product_ids" widget="many2many_tags" invisible="1" />
+            <field
+                    name="allowed_product_category_ids"
+                    widget="many2many_tags"
+                    invisible="1"
+                />
+            <field
+                    name="allowed_picking_type_ids"
+                    widget="many2many_tags"
+                    invisible="1"
+                />
+            <field
+                    name="allowed_picking_type_category_ids"
+                    widget="many2many_tags"
+                    invisible="1"
+                />
+            <field name="date" />
+        </xpath>
+        <xpath expr="//group[@name='header_right']" position="inside">
+            <field
+                    name="product_id"
+                    domain="['|', ('id', 'in', allowed_product_ids), ('categ_id', 'child_of', allowed_product_category_ids)]"
+                />
+            <field
+                    name="picking_id"
+                    domain="['|', ('picking_type_id','in', allowed_picking_type_ids), ('picking_type_category_id', 'in', allowed_picking_type_category_ids)]"
+                />
+            <field
+                    name="stock_move_id"
+                    domain="['|', '&amp;', '&amp;', ('picking_id', '=', False),('product_id','=',product_id),('state','=','done'), '&amp;', '&amp;', ('product_id','=',product_id),('state','=','done'),('picking_id','=',picking_id)]"
+                />
+            <field
+                    name="stock_valuation_layer_id"
+                    domain="[('stock_move_id','=',stock_move_id),('product_id','=',product_id)]"
+                />
+        </xpath>
+        <xpath expr="//page[1]" position="before">
+            <page name="value" string="Value">
+                <group name="value_1" colspan="4" col="2">
+                    <field name="quantity" force_save="1" />
+                </group>
+                <group name="value_2" colspan="4" col="2">
+                    <group name="value_2_1" colspan="1" col="2" string="Old">
+                        <field
+                                name="old_price_unit"
+                                string="Price Unit"
+                                force_save="1"
+                            />
+                        <field name="old_value" string="Value" force_save="1" />
+                    </group>
+                    <group name="value_2_2" colspan="1" col="2" string="New">
+                        <field name="new_price_unit" string="Price Unit" />
+                        <field name="new_value" string="Value" />
+                    </group>
+                </group>
+            </page>
+            <page name="stock_valuation_layer" string="Stock Valuation Layer">
+                <button
+                        name="action_reload_svl"
+                        string="SVL"
+                        type="object"
+                        class="oe_highlight"
+                        icon="fa-refresh"
+                        attrs="{'invisible':[('state','!=','draft')]}"
+                        style="margin-right:4px"
+                    />
+                <button
+                        name="action_open_svl"
+                        type="object"
+                        string="Open SVL"
+                        class="oe_highlight"
+                        icon="fa-bars"
+                    />
+                <field name="stock_valuation_layer_ids" />
+            </page>
+        </xpath>
+    </field>
+</record>
+
+<record id="stock_revaluation_action" model="ir.actions.act_window">
+    <field name="name">Stock Revaluations</field>
+    <field name="res_model">stock_revaluation</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="stock_revaluation_menu"
+        name="Stock Revaluations"
+        parent="stock.menu_stock_warehouse_mgmt"
+        action="stock_revaluation_action"
+        groups="stock_revaluation_viewer_group"
+        sequence="90"
+    />
+</odoo>
