@@ -1,0 +1,2 @@
+[console_scripts]
+bc_pulse = bc_pulse.__main__:main
