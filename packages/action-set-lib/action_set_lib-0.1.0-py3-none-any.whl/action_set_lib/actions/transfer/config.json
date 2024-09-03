@@ -1,0 +1,5 @@
+{
+	"author":"ardio",
+	"dependent_actions":["add_contact", "show_contact"],
+	"system_permissions":["self_address", "redis", "ardio_contract"]
+}
