@@ -1,0 +1,1 @@
+from .obfuscate_module import obfuscate_module, obfuscate_module_fake_init
