@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "rank2plan"
+version = "0.2.0"
+description = ""
+authors = ["Ryan Wang <ryanxiaowang2001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.22.0"
+pulp = "^2.8.0"
+bayesian-optimization = "^1.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[tool.pytest.ini_options]
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
