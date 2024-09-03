@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+gqlrequests/__init__.py
+gqlrequests/builder.py
+gqlrequests/py.typed
+gqlrequests/query_creator.py
+gqlrequests.egg-info/PKG-INFO
+gqlrequests.egg-info/SOURCES.txt
+gqlrequests.egg-info/dependency_links.txt
+gqlrequests.egg-info/top_level.txt
+tests/test_building_options.py
+tests/test_configuring_builder.py
+tests/test_creating_builder.py
+tests/test_function_queries.py
+tests/test_query_creator_helpers.py
