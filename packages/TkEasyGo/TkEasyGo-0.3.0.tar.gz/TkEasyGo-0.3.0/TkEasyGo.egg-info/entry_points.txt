@@ -1,0 +1,2 @@
+[console_scripts]
+TkEasyGo = build:run
