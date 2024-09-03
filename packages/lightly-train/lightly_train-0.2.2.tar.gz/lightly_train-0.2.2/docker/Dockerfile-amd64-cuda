@@ -1,0 +1,38 @@
+# Builds lightly/train:latest image on DockerHub. TODO: Add link
+# Image is CUDA-optimized for single/multi-GPU training and inference
+
+# Start FROM PyTorch image https://hub.docker.com/r/pytorch/pytorch
+FROM pytorch/pytorch:2.3.0-cuda11.8-cudnn8-runtime AS runtime
+
+# Set the environment variable for the volume mounting
+ENV LIGHTLY_TRAIN_IS_DOCKER="True" \
+    # Install packages into the system Python and skip creating a virtual environment.
+    UV_SYSTEM_PYTHON="true" \
+    # Do not cache dependencies as they would also be saved in the docker image.
+    UV_NO_CACHE="true"
+
+# Required for uv installation.
+RUN apt-get update && apt-get install -y make curl
+
+# Create working directory
+WORKDIR /home/lightly_train
+
+# Install uv
+COPY Makefile /home/lightly_train
+
+RUN make install-uv
+# Add uv to PATH
+ENV PATH="/root/.cargo/bin:$PATH"
+
+# Install the package dependencies.
+COPY pyproject.toml /home/lightly_train
+RUN make install-docker-dependencies
+
+# Copy the package itself
+COPY src /home/lightly_train/src
+
+# Install the package.
+RUN make install-docker
+
+# Default command that runs when the container starts.
+ENTRYPOINT ["lightly-train"]
