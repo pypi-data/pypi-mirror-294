@@ -1,0 +1,8 @@
+flask_files/__init__.py,sha256=zOZvksLkRc25PXnVTgRUtwtYwbmYFORA1Z1q8JKF5Qc,6867
+flask_files/form.py,sha256=t3SZSx3Y1CTOvcSeuLBTtjtH1wvU6npVFb5AY5TD4LU,638
+flask_files/images.py,sha256=QKSrtj3el4-5IFKeNTrJ4KSLJg9LSd_wCutTn3_Kbk8,3188
+flask_files/utils.py,sha256=5qkaXkqIMdXys8V0ryHOG9pUTAG0o4n2fBmj8tJyzm4,1944
+flask_files-0.1.0.dist-info/LICENSE,sha256=KYj3GvKGHq_xnLJ-GfxvK7nXl8zIWev7QEWbH5flM9Q,1067
+flask_files-0.1.0.dist-info/METADATA,sha256=4fW8iCikLPu1fTHtc45mRDPwmDFlSeJEua0AxY9HHF8,4004
+flask_files-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flask_files-0.1.0.dist-info/RECORD,,
