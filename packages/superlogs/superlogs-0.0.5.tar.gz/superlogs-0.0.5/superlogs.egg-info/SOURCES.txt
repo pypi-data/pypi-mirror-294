@@ -1,0 +1,7 @@
+pyproject.toml
+superlogs/__init__.py
+superlogs.egg-info/PKG-INFO
+superlogs.egg-info/SOURCES.txt
+superlogs.egg-info/dependency_links.txt
+superlogs.egg-info/requires.txt
+superlogs.egg-info/top_level.txt
