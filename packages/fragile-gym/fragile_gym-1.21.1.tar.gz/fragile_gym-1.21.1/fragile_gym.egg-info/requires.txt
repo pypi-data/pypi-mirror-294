@@ -1,0 +1,16 @@
+numpy>=1.18.0
+cloudpickle>=1.2.0
+ipython>=8.27.0
+
+[:python_version <= "3.8"]
+importlib_metadata>=4.8.1
+
+[accept-rom-license]
+autorom[accept-rom-license]==0.4.2
+
+[atari]
+ale-py==0.7.1
+
+[box2d]
+box2d-py==2.3.5
+pyglet>=1.4.0

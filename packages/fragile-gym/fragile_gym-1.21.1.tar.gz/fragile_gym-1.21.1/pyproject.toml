@@ -1,0 +1,55 @@
+[project]
+name = "fragile-gym"
+version = "1.21.1"
+description = "Gym: A universal API for reinforcement learning environments."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "" }
+authors = [
+    { name = "OpenAI", email = "jkterry@umd.edu" }
+]
+urls = { "Homepage" = "https://github.com/openai/gym" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+
+dependencies = [
+    "numpy>=1.18.0",
+    "cloudpickle>=1.2.0",
+    "importlib_metadata>=4.8.1; python_version<='3.8'",
+    "ipython>=8.27.0",
+]
+
+[project.optional-dependencies]
+atari = ["ale-py==0.7.1"]
+accept-rom-license = ["autorom[accept-rom-license]==0.4.2"]
+box2d = ["box2d-py==2.3.5", "pyglet>=1.4.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gym*"]
+
+[tool.setuptools.package-data]
+"gym" = [
+    "envs/mujoco/assets/*.xml",
+    "envs/classic_control/assets/*.png",
+    "envs/robotics/assets/LICENSE.md",
+    "envs/robotics/assets/fetch/*.xml",
+    "envs/robotics/assets/hand/*.xml",
+    "envs/robotics/assets/stls/fetch/*.stl",
+    "envs/robotics/assets/stls/hand/*.stl",
+    "envs/robotics/assets/textures/*.png"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
