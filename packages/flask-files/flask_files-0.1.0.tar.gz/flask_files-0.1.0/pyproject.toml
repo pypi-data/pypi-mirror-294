@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "flask-files"
+version = "0.1.0"
+description = ""
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-files"
+packages = [{include = "flask_files"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.1"
+fsspec = "^2023.12.2"
+
+[tool.poetry.group.images.dependencies]
+pillow = "^10.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
