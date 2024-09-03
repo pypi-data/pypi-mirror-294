@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: genai_ocean
+Version: 0.1.0
+Summary: A powerful web content fetcher and processor
+Home-page: https://github.com/yourusername/genai_ocean
+Author: Kammari Santhosh
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/genai_ocean
+Project-URL: Bug Tracker, https://github.com/yourusername/genai_ocean/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

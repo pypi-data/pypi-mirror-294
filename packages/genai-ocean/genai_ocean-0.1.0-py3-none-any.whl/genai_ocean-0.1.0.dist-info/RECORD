@@ -1,0 +1,10 @@
+genai_ocean/__init__.py,sha256=mj1A_BVJC4LINTTFroyaPuB_uWGjPBJKj7kP3-Fp7z8,237
+genai_ocean/embed_search.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genai_ocean/html_parser.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genai_ocean/search.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genai_ocean/search_tool.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genai_ocean-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genai_ocean-0.1.0.dist-info/METADATA,sha256=ryuWGYAgIt91jCJlhoTi7c5Hx8rhg9whKv8R15qF85w,614
+genai_ocean-0.1.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+genai_ocean-0.1.0.dist-info/top_level.txt,sha256=SdtaGsfBlxmE6sqjIBxeKbpOmuc_1g6AIdycngz5uWg,12
+genai_ocean-0.1.0.dist-info/RECORD,,
