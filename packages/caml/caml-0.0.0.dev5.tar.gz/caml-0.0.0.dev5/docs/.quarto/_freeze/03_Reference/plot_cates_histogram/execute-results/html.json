@@ -1,0 +1,12 @@
+{
+  "hash": "3582f429d7e251ad2ff7a9b3bd1fa166",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: plot_cates_histogram\n---\n\n\n\n`extensions.plots.plot_cates_histogram(estimated_cates, *, true_cates=None, figure_kwargs={}, hist_kwargs={})`\n\nPlots a histogram the estimated CATEs.\n\n## Parameters\n\n| Name              | Type                           | Description                  | Default    |\n|-------------------|--------------------------------|------------------------------|------------|\n| `estimated_cates` | numpy.typing.ArrayLike         | The estimated CATEs.         | _required_ |\n| `true_cates`      | numpy.typing.ArrayLike \\| None | The true CATEs.              | `None`     |\n| `figure_kwargs`   | dict                           | Matplotlib figure arguments. | `{}`       |\n| `hist_kwargs`     | dict                           | Matplotlib hist arguments.   | `{}`       |\n\n## Returns\n\n| Type                     | Description                  |\n|--------------------------|------------------------------|\n| matplotlib.figure.Figure | The histogram figure object. |\n\n## Examples\n\n\n::: {#d78d1745 .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nfrom caml.extensions.plots import plot_cates_histogram\n\nnp.random.seed(42)\ntrue_cates = np.random.normal(0, 1, 1000)\nestimated_cates = true_cates + np.random.normal(0, 0.5, 1000)\n\nfig = plot_cates_histogram(estimated_cates, true_cates=true_cates, hist_kwargs={'bins': 25})\nfig\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n![](plot_cates_histogram_files/figure-html/cell-2-output-1.png){width=575 height=435}\n:::\n:::\n\n\n",
+    "supporting": [
+      "plot_cates_histogram_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "hash": "6a2f7847d15c455397661aeef9a51461",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: cate_true_vs_estimated_plot\n---\n\n\n\n`extensions.plots.cate_true_vs_estimated_plot(true_cates, estimated_cates, *, figure_kwargs={}, scatter_kwargs={})`\n\nPlots a scatter plot of the estimated CATEs against the true CATEs.\n\n## Parameters\n\n| Name              | Type                   | Description                  | Default    |\n|-------------------|------------------------|------------------------------|------------|\n| `estimated_cates` | numpy.typing.ArrayLike | The estimated CATEs.         | _required_ |\n| `figure_kwargs`   | dict                   | Matplotlib figure arguments. | `{}`       |\n| `scatter_kwargs`  | dict                   | Matplotlib line arguments.   | `{}`       |\n\n## Returns\n\n| Type                     | Description                  |\n|--------------------------|------------------------------|\n| matplotlib.figure.Figure | The line plot figure object. |\n\n## Examples\n\n\n::: {#dea8eb80 .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nfrom caml.extensions.plots import cate_true_vs_estimated_plot\n\nnp.random.seed(42)\ntrue_cates = np.random.normal(0, 1, 100)\nestimated_cates = true_cates + np.random.normal(0, 0.5, 100)\n\nfig = cate_true_vs_estimated_plot(true_cates, estimated_cates)\nfig\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n![](cate_true_vs_estimated_plot_files/figure-html/cell-2-output-1.png){width=593 height=435}\n:::\n:::\n\n\n",
+    "supporting": [
+      "cate_true_vs_estimated_plot_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

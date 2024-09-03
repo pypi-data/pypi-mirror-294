@@ -1,0 +1,83 @@
+[project]
+authors = [{name = "jakepenzak", email = "jakepzak@gmail.com"}]
+dependencies = [
+    "econml>=0.15.1",
+    "flaml>=2.2.0",
+    "xgboost>=2.1.1",
+    "ibis-framework[pandas]>=9.3.0",
+    "typeguard>=4.3.0",
+    "doubleml>=0.8.0",
+    "matplotlib>=3.9.2",
+]
+description = "Extensions & abstractions of advanced econometric techniques leveraging machine learning."
+name = "caml"
+requires-python = ">= 3.10"
+version = "0.0.0.dev5"
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+pyspark = [
+    "ibis-framework[pyspark]>=9.3.0",
+    "flaml[spark]>=2.2.0",
+    "optuna>=3.6.1",
+    "ray>=2.35.0",
+]
+polars = [
+    "ibis-framework[polars]>=9.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pre-commit>=3.5.0",
+    "ruff>=0.6.2",
+    "quartodoc>=0.7.6",
+    "coverage>=7.6.1",
+    "pytest>=8.3.2",
+    "pytest-mock>=3.14.0",
+    "pytest-cov>=5.0.0",
+    "pytest-html>=4.1.1",
+    "genbadge>=1.1.1",
+    "defusedxml>=0.7.1",
+    "quarto-cli>=1.5.57",
+    "jupyter>=1.1.0",
+]
+
+[tool.ruff]
+exclude = ["scripts/notebooks/",
+            ".git",
+            ".pytest_cache",
+            ".ruff_cache",
+            "notebooks/"]
+
+extend-include = ["*.ipynb"]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+target-version = "py39"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402","F401"] # Import violations
+"**/{tests,docs,tools}/*" = ["E402"] # Import violations
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double" # Use double quotes for non-triple-quoted strings.
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "single" # Use single quotes for docstrings
+
+[tool.pytest.ini_options]
+filterwarnings = "ignore::DeprecationWarning"
