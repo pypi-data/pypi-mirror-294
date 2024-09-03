@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ipfs_huggingface_scraper_py/__init__.py
+ipfs_huggingface_scraper_py/ipfs_huggingface_scraper.py
+ipfs_huggingface_scraper_py.egg-info/PKG-INFO
+ipfs_huggingface_scraper_py.egg-info/SOURCES.txt
+ipfs_huggingface_scraper_py.egg-info/dependency_links.txt
+ipfs_huggingface_scraper_py.egg-info/top_level.txt
+test/test.py
