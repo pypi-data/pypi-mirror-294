@@ -1,0 +1,2 @@
+[console_scripts]
+cobo = sam_test_cobo_cli.commands:cli
