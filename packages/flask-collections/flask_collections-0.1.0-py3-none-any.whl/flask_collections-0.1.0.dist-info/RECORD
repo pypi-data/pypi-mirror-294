@@ -1,0 +1,11 @@
+flask_collections/__init__.py,sha256=2b5cMuhF_G225P79MBy02KfIMkHUvk6eac1_Y0iT61k,2242
+flask_collections/collection.py,sha256=2CLjVvk7_eFS0gdKjMV756X_EmaWZYMeUT9qyhAbHtg,6440
+flask_collections/collections/__init__.py,sha256=9EqdG8jEVbwrrJ8zpCubbSqZzAK5Ki1RRG8nfwYKv_M,945
+flask_collections/collections/api.py,sha256=PUDJsZIE6vMClZcFnxXyn0fzlIQZgPevbjxWp1hZB4I,3448
+flask_collections/collections/db.py,sha256=YYaP18B6TezW4qWuy98gn-SRTAgabSrpyAWkNXLW9Kg,560
+flask_collections/collections/directory.py,sha256=rlLKc7DEA3u0KY2dnk30zduhjQ34KW94EltK1ysv9FU,1818
+flask_collections/collections/files.py,sha256=0uz2jxn_VL_NGtNfPyP7KytiiPxyo_FlvPk_loIGeow,1416
+flask_collections-0.1.0.dist-info/LICENSE,sha256=KYj3GvKGHq_xnLJ-GfxvK7nXl8zIWev7QEWbH5flM9Q,1067
+flask_collections-0.1.0.dist-info/METADATA,sha256=yFZzVUDzBfBrUf9W7ImjR8XzYSVW574DfEnD8o2yJrM,1201
+flask_collections-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flask_collections-0.1.0.dist-info/RECORD,,

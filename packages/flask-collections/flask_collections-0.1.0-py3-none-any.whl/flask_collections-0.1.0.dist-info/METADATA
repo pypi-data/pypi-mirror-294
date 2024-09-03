@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: flask-collections
+Version: 0.1.0
+Summary: Static collections for Flask
+Home-page: https://github.com/hyperflask/flask-collections
+License: MIT
+Author: Maxime Bouroumeau-Fuseau
+Author-email: maxime.bouroumeau@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: markdown (>=3.6,<4.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Repository, https://github.com/hyperflask/flask-collections
+Description-Content-Type: text/markdown
+
+# Flask-Collections
+
+Static collections for Flask. Inspired by [Jekyll collections](https://jekyllrb.com/docs/collections/).
+
+## Installation
+
+    pip install flask-collections
+
+## Usage
+
+```python
+from flask import Flask
+from flask_collections import Collections
+
+app = Flask(__name__)
+collections = Collections(app)
+```
+
+## Creating collections
