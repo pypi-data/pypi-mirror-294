@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include meditation_audio_generator/ambient_files_urls.txt
+exclude meditation_audio_generator/.gitattributes
+exclude test_meditation_audio_generator.py
+exclude test_mp3_merger.py
+exclude test_mp3_mixer.py
+exclude venv/
+exclude keys.py

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+meditation_audio_generator/__init__.py
+meditation_audio_generator/meditation_audio_generator.py
+meditation_audio_generator/mp3_merger.py
+meditation_audio_generator/mp3_mixer.py
+meditation_audio_generator/visual_prompts_list.py
+meditation_audio_generator_openai.egg-info/PKG-INFO
+meditation_audio_generator_openai.egg-info/SOURCES.txt
+meditation_audio_generator_openai.egg-info/dependency_links.txt
+meditation_audio_generator_openai.egg-info/requires.txt
+meditation_audio_generator_openai.egg-info/top_level.txt
