@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: intentclassification
+Version: 0.0.3
+Summary: Intentclassification AI in python, easy to use intentclassifier package.
+Author: zhiftyDK
+Author-email: juulstausholmoscar@gmail.com
+License: The Unlicense
+Project-URL: Source, https://github.com/zhiftyDK/intentclassification
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+
+# intentclassifier
+Intentclassification AI in python, easy to use intentclassifier package.
