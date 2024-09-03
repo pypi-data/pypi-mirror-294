@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: greeng3-python
+Version: 0.1.2
+Summary: A library of things I find useful.
+Home-page: https://gitlab.com/greeng3/greeng3_python
+Author: Gordon Greene
+Author-email: greeng3@obscure-reference.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# python_library
+
+Under Construction
