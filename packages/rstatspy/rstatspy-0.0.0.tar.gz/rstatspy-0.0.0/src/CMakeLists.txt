@@ -1,0 +1,2 @@
+add_subdirectory(rstats)
+add_subdirectory(rstatspy)
