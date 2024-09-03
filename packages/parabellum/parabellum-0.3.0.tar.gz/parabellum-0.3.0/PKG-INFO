@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: parabellum
+Version: 0.3.0
+Summary: Parabellum environment for parallel warfare simulation
+Home-page: https://github.com/syrkis/parabellum
+License: MIT
+Keywords: warfare,simulation,parallel,environment
+Author: Noah Syrkis
+Author-email: desk@syrkis.com
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cartopy (>=0.23.0,<0.24.0)
+Requires-Dist: contextily (>=1.6.0,<2.0.0)
+Requires-Dist: darkdetect (>=0.8.0,<0.9.0)
+Requires-Dist: einops (>=0.8.0,<0.9.0)
+Requires-Dist: folium (>=0.17.0,<0.18.0)
+Requires-Dist: geopy (>=2.4.1,<3.0.0)
+Requires-Dist: ipykernel (>=6.29.5,<7.0.0)
+Requires-Dist: jax (==0.4.17)
+Requires-Dist: jaxmarl (==0.0.3)
+Requires-Dist: jaxtyping (>=0.2.33,<0.3.0)
+Requires-Dist: jupyterlab (>=4.2.2,<5.0.0)
+Requires-Dist: moviepy (>=1.0.3,<2.0.0)
+Requires-Dist: numpy (<2)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: osmnx (==2.0.0b0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: poetry (>=1.8.3,<2.0.0)
+Requires-Dist: pygame (>=2.5.2,<3.0.0)
+Requires-Dist: rasterio (>=1.3.10,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: stadiamaps (>=3.2.1,<4.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Project-URL: Repository, https://github.com/syrkis/parabellum
+Description-Content-Type: text/markdown
+
+# Parabellum
+
+Ultra-scalable JaxMARL based warfare simulation engine developed with Armasuisse funding.
+
+[![Documentation Status](https://readthedocs.org/projects/parabellum/badge/?version=latest)](https://parabellum.readthedocs.io/en/latest/?badge=latest)
+
+## Features
+
+- Obstacles and terrain integration
+- Rasterized maps
+- Blast radii simulation
+- Friendly fire mechanics
+- Pygame visualization
+- JAX-based parallelization
+
+## Install
+
+```bash
+pip install parabellum
+```
+
+## Quick Start
+
+```python
+import parabellum as pb
+from jax import random
+
+terrain = pb.terrain_fn("Thun, Switzerland", 1000)
+scenario = pb.make_scenario("Thun", terrain, 10, 10)
+env = pb.Parabellum(scenario)
+
+rng, key = random.split(random.PRNGKey(0))
+obs, state = env.reset(key)
+
+# Simulation loop
+for _ in range(100):
+    rng, rng_act, key_step = random.split(key)
+    key_act = random.split(rng_act, len(env.agents))
+    act = {a: env.action_space(a).sample(k) for a, k in zip(env.agents, key_act)}
+    obs, state, reward, done, info = env.step(key_step, act, state)
+
+# Visualize
+vis = pb.Visualizer(env, state_sequence)
+vis.animate()
+```
+
+## Documentation
+
+Full documentation: [parabellum.readthedocs.io](https://parabellum.readthedocs.io)
+
+## Team
+
+- Noah Syrkis
+- Timothée Anne
+- Supervisor: Sebastian Risi
+
+## License
+
+MIT
