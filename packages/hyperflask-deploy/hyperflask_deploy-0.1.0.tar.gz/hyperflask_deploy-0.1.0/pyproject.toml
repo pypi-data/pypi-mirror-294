@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hyperflask-deploy"
+version = "0.1.0"
+description = "Deployment support for Hyperflask"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/hyperflask-deploy"
+packages = [{include = "hyperflask_deploy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0"
+
+[tool.poetry.plugins."flask.commands"]
+deploy = "hyperflask_deploy:deploy_command"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
