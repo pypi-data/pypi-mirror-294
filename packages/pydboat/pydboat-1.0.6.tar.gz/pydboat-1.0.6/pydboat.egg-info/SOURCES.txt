@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+D:/_File/code/github/pyboat/src/resource/VSCode_Theme-1.10.7.zip
+D:/_File/code/github/pyboat/src/resource/python-223.8836.41.zip
+pydboat.egg-info/PKG-INFO
+pydboat.egg-info/SOURCES.txt
+pydboat.egg-info/dependency_links.txt
+pydboat.egg-info/top_level.txt
+src/__init__.py
+src/resource/__init__.py
