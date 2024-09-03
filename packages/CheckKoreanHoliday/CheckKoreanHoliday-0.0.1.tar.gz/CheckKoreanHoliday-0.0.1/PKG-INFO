@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: CheckKoreanHoliday
+Version: 0.0.1
+Summary: CheckKoreanHoliday
+Home-page: https://github.com/end18/CheckKoreanHoliday
+Author: Yong Hee, Bang
+Author-email: bangyh@gmail.com
+License: MIT
+Keywords: Holiday,KoreanHoliday
+License-File: LICENSE.txt
