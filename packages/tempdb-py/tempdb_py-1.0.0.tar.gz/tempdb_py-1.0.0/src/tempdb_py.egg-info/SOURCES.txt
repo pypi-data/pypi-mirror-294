@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/tempdb-py/__init__.py
+src/tempdb-py/client.py
+src/tempdb_py.egg-info/PKG-INFO
+src/tempdb_py.egg-info/SOURCES.txt
+src/tempdb_py.egg-info/dependency_links.txt
+src/tempdb_py.egg-info/top_level.txt
