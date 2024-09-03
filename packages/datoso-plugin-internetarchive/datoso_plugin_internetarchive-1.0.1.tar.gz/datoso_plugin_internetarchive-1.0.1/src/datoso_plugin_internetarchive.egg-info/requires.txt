@@ -1,0 +1,2 @@
+datoso>=1.0.1
+internetarchive>=4.1.0
