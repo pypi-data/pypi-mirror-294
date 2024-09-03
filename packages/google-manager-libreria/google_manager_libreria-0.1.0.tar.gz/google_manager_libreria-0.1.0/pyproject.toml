@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=72", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google_manager_libreria"
+version = "0.1.0"
+authors = [
+  { name="Jose Parodi", email="developers@consultoraparodi.com.ar" },
+]
+description = "manejo del paquete google mails,hojas de calculodrive "
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["requests"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/consultoraparodi/google_manager_libreria"
+"Bug Tracker" = "https://github.com/consultoraparodi/google_manager_libreria/issues"
+
+[project.optional-dependencies]
+gui = ["PyQt5"]
+cli = ["rich", "click"]
