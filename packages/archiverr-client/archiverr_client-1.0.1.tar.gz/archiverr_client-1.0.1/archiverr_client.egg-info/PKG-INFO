@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: archiverr_client
+Version: 1.0.1
+Summary: Archiver is a tool to archive, search and extract files and folders based on his md5 hash
+Author: Théo Hurlimann
+Author-email: theo.hrlmn@hes-so.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools>=62
+Requires-Dist: blinker==1.8.2
+Requires-Dist: certifi==2024.6.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: Flask==3.0.3
+Requires-Dist: idna==3.7
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: numpy==2.0.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: six==1.16.0
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: tzdata==2024.1
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: websockets==12.0
+Requires-Dist: Werkzeug==3.0.3
+
+# ArchiverR_Client
+
+
+
+## Installation
+Pour pouvoir installer Archiverr_Client depuis le code source. Il vous faudra une version python versi 3.11.9 afin d'être sur de la comptabilité.
+
+Ensuite placez vous dans un terminal à la racine du dossier Archiverr_Client et lancez la commande suivante:
+```bash
+pip install -r requirements.txt
+```
+Cette commande va installer toutes les dépendances nécessaires pour le bon fonctionnement du programme.
+Puis, pour lancer le programme, il vous suffit de lancer la commande suivante:
+```bash
+python archiverr
+```
+La liste des commandes s'affichera et vous pourrez commencer à utiliser le programme.
