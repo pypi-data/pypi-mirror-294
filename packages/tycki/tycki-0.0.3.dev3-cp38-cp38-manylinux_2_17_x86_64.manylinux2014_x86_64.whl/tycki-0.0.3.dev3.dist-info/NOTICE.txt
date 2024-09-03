@@ -1,0 +1,5 @@
+MCMCLib: A C++ library of Markov Chain Monte Carlo (MCMC) methods
+
+This product includes code from MCMClib (https://github.com/kthohr/mcmc) developed by Keith O'Hara (http://www.kthohr.com)
+Copyright 2011-2023 Keith O'Hara
+Licensed under Apache License, Version 2.0
