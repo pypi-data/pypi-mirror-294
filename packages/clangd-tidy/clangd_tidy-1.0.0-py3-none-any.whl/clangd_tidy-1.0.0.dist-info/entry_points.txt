@@ -1,0 +1,2 @@
+[console_scripts]
+clangd-tidy = clangd_tidy:main_cli
