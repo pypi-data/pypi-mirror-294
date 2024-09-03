@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flask-geo"
+version = "0.1.0"
+description = "Geolocation for Flask"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-geo"
+packages = [{include = "flask_geo.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.0"
+geoip2 = "^4.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+ruff = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
