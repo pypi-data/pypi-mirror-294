@@ -1,0 +1,15 @@
+chrome_lens_py/__init__.py,sha256=cf1oCdpkHy0gOeMpE2hvqCwbQTaNeYl5qSJBCbNYYlc,29
+chrome_lens_py/constants.py,sha256=Di4KGaikZ3xEgN6Fq73rnY8w041Iu9ryAALhpDfLlww,1701
+chrome_lens_py/cookies_manager.py,sha256=JHR8asFPUS9eYH5xTTvncXfsF8k1nLnsVPUf8vDsEqA,5888
+chrome_lens_py/image_processing.py,sha256=DmEeRgkETyLmfTAgE_ey6muf3Ca0HkQ0z_c_kbqJa-Y,580
+chrome_lens_py/lens_api.py,sha256=9sS8OmaSzXl3eXtpcGZ63UXyTpUnzAP88lzYdMwdr3k,1451
+chrome_lens_py/main.py,sha256=sukvykTtWoasnDkyKM6Bo7T7ZgACptkQZzBYvH_6IdA,3030
+chrome_lens_py/request_handler.py,sha256=OshyUkxG6apGqag3-mIYxNSrFd11j_NOqGSMkGGskfY,5639
+chrome_lens_py/text_processing.py,sha256=FMxhZTji8FuyQccwFZNiqENktqVqqzmeNyeIGwgiy7I,4678
+chrome_lens_py/utils.py,sha256=APO_ODNMRIkR5PtouHVX7THd9D1BGAlHHrPjG9vWDoQ,323
+chrome_lens_py-1.0.5.dist-info/LICENSE,sha256=rgE9ld-X7eJDeiG4mqhhyT95F_A2QGvVCzxJ2HBma_g,1065
+chrome_lens_py-1.0.5.dist-info/METADATA,sha256=T6UmWK2aDOcNLUeOkl_-4E9byGDbo8d11ljrceaX9L4,11359
+chrome_lens_py-1.0.5.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+chrome_lens_py-1.0.5.dist-info/entry_points.txt,sha256=lEWBMlqX4FLTkE2eTRXGLZPpcTSwkmAv9hhtoJqrdq4,55
+chrome_lens_py-1.0.5.dist-info/top_level.txt,sha256=7CotPwhKE-cJfoPWl3Avoa-VCSc9hmoz3DeetwzKcCI,15
+chrome_lens_py-1.0.5.dist-info/RECORD,,
