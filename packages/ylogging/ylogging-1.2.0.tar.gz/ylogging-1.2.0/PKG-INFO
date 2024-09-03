@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ylogging
+Version: 1.2.0
+Summary: logging helper for python that I always use in my projects
+Home-page: https://github.com/yactouat/ylogging
+Author: yactouat
+Author-email: yactouat@yactouat.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-error-reporting
+Requires-Dist: google-cloud-logging
+Requires-Dist: pytz
+
+# ylogging
