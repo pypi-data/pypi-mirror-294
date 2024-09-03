@@ -1,0 +1,9 @@
+rstatspy.pypy39-pp73-darwin.so,sha256=fzyBCa1I1DCcNf2vqoYxpMU5tFuXrBQ9IkosZbXibyM,86512
+include/rstats.h,sha256=XlBMzTmBbV54MDL4J0fznZ33aHXvVTbs4oQQpN6ZJrk,14117
+lib/librstats.dylib,sha256=KfyK3dpwqhYTUOqbPhXQXSKF_ebSe24tOMO_F67mEvE,17504
+lib/cmake/rstats/rstatsConfig.cmake,sha256=hU05McT_uewb8PBWCTWgBg9q4SufeL89OY7f6Het2Fk,4117
+lib/cmake/rstats/rstatsConfig-release.cmake,sha256=L6I4tBku4HlCsdZJ4xIgFNJM3Rh8g8cK8_rKEoqKcfE,812
+rstatspy-0.0.0.dist-info/RECORD,,
+rstatspy-0.0.0.dist-info/WHEEL,sha256=4fQvb86rdkuhGCfguWQ-0YaRVB1qoP2_KSeiy5ZuqzU,119
+rstatspy-0.0.0.dist-info/METADATA,sha256=61f3ync-ClcG_P_inHihrPaY3FGVgbrYvA871neEIQk,92
+rstatspy-0.0.0.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
