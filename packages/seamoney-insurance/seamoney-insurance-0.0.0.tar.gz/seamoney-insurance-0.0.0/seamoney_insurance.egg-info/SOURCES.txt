@@ -1,0 +1,6 @@
+README.md
+setup.py
+seamoney_insurance.egg-info/PKG-INFO
+seamoney_insurance.egg-info/SOURCES.txt
+seamoney_insurance.egg-info/dependency_links.txt
+seamoney_insurance.egg-info/top_level.txt
