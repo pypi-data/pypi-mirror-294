@@ -1,0 +1,9 @@
+dsw/command_queue/__init__.py,sha256=A9HKadwS8oe7hWkWxgwPRGT6E0Ine_C_Vxs9k0pMLJM,100
+dsw/command_queue/build_info.py,sha256=hPNVNk7c0mfZWxKFgDrfOzdZ0vu6aGYv4eUI40iej6k,381
+dsw/command_queue/command_queue.py,sha256=41VpILkR3XBwBHYJq469-kHbMMRLm7kGL8q9q1aaZbA,5491
+dsw/command_queue/query.py,sha256=5iVWZD0iYjVpzNoqopzBQRo-uyo8HiRY9RTe9Z9KoKU,1630
+dsw_command_queue-4.10.0.dist-info/LICENSE,sha256=rDtJ4LdsXvf_euOpGD0Q86P78K4JyM5m4yfYz9wZ750,11346
+dsw_command_queue-4.10.0.dist-info/METADATA,sha256=nq3_YxOxUR3NOjbZb9OP9UvyU8a5DksyvhozbYBlb0c,1921
+dsw_command_queue-4.10.0.dist-info/WHEEL,sha256=h1EKOoFKHNSFzM_QJosf_vDKwYj7ZUdWGA5_DtHyVA4,109
+dsw_command_queue-4.10.0.dist-info/top_level.txt,sha256=7SfbsHFoJ_vlAgG6C-xzETETwYO71dBrGnod8uMFnjw,4
+dsw_command_queue-4.10.0.dist-info/RECORD,,
