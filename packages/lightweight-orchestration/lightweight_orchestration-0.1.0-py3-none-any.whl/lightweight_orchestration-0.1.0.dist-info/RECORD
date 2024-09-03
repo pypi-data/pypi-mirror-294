@@ -1,0 +1,12 @@
+lightweight_orchestration/__init__.py,sha256=fQ0MgaLI77Yb3QWFSMFuLmEEs-d-UPlClUXvkKW15Ss,126
+lightweight_orchestration/simple_batch_orchestration.py,sha256=-jl-uJ_zVKa_cab656oXTJ9TPtUDRFaxJs96I0oVT-I,11848
+lightweight_orchestration/simple_job_orchestration.py,sha256=LfwQllp05gMf2gj2B-Hqb2gTmDkGOASdkOMzcskd7wM,10905
+tests/__init__.py,sha256=U0-tikTgf8d2_wVlB9qjkYt0ZsXgwLrgV4w1s4bbxuA,46
+tests/manual_test_simple_batch_orchestration.py,sha256=TF8dj_PhgwmsJ42oEFXF48OaLZfphYaqN0nveABqOb8,2325
+tests/manual_test_simple_job_orchestration.py,sha256=2fbH5g7c6yGEbRw2wYN3KeUhujfNQw_uFf7kv7z8hwQ,2412
+tests/test_simple_job_orchestration.py,sha256=i50xPnCcKNNa0sO4o134CG6aTqMW1h1ViqWM9Px505w,3891
+lightweight_orchestration-0.1.0.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+lightweight_orchestration-0.1.0.dist-info/METADATA,sha256=8xZ24xWjKyv9JTF3qunLz4yay-vgJ-ICOrTpiMskmSE,722
+lightweight_orchestration-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+lightweight_orchestration-0.1.0.dist-info/top_level.txt,sha256=ZHFPGsjTFPctZKnhezIG0sIDV_mONFNLmV2t0PoOmBk,32
+lightweight_orchestration-0.1.0.dist-info/RECORD,,
