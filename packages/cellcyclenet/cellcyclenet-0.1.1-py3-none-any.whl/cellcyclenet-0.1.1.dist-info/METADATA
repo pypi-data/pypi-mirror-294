@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cellcyclenet
+Version: 0.1.1
+Summary: Python package for predicting cell cycle stage from DAPI images
+Home-page: https://github.com/Noble-Lab/CellCycleNet
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib ==3.9.1
+Requires-Dist: numpy ==2.0.1
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: scikit-image ==0.24.0
+Requires-Dist: scikit-learn ==1.5.1
+Requires-Dist: tifffile ==2024.7.24
+Requires-Dist: torch ==2.3.1
+Requires-Dist: torchaudio ==2.3.1
+Requires-Dist: torchvision ==0.18.1
+
+# CellCycleNet
+
+![CellCycleNet Diagram](https://raw.githubusercontent.com/Noble-Lab/CellCycleNet/main/docs/img/CellCycleNet_diagram.png)
+
+## Installation
+
+**Option 1:** Install via pip: `pip install cellcyclenet`
+
+**Option 2:** Install via conda or build the development conda environment: [see documentation](https://github.com/Noble-Lab/CellCycleNet/blob/main/docs/dev_env_setup.md)
+
+## Running the included examples
+
+1. After installation, download `example_data.zip` from [here](https://beliveau-shared.s3.us-east-2.amazonaws.com/cellcyclenet/data/example_data.zip).
+
+2. Try running the included examples on these example files using the included example notebooks:
+
+	1. [Example #1](https://github.com/Noble-Lab/CellCycleNet/blob/main/notebooks/01_prediction_demo.ipynb): Predict cell cycle stage from segmented DAPI images
+	2. [Example #2](https://github.com/Noble-Lab/CellCycleNet/blob/main/notebooks/02_fine_tune_training_demo.ipynb): Fine tune pre-trained model with additional training
