@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: crystalpy_barno
+Version: 1.1.1
+Summary: Python integration with crystal report
+Home-page: https://github.com/barno1994/crystalpy_barno
+Author: barno1994
+Author-email: barno.baptu@gmail.com
+Maintainer: barno.baptu
+Maintainer-email: barno.baptu@gmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/barno1994/crystalpy_barno
+Project-URL: Issues, https://github.com/barno1994/crystalpy_barno/issues
+Keywords: crystal report,python integration
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: cffi==1.17.0; extra == "dev"
+Requires-Dist: clr-loader==0.2.6; extra == "dev"
+Requires-Dist: pycparser==2.22; extra == "dev"
+Requires-Dist: pythonnet==3.0.3; extra == "dev"
+
+# crystalpy
+
+Python integration with crystal report for dynamic output
+
+## Features
+
+Connect crystal report with python 
+
+## Installation
+
+To install this project, run the following command:
+```bash
+pip install crystalpy-barno
