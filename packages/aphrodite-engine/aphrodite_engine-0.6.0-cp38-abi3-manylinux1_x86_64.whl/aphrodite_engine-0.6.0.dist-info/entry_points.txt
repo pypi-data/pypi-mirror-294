@@ -1,0 +1,3 @@
+[console_scripts]
+aphrodite = aphrodite.endpoints.cli:main
+
