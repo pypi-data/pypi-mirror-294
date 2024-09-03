@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: git-stream
+Version: 1.0.1
+Summary: git-stream CI/CD module.
+Keywords: python,programming,utilities
+Author-email: "Jeffery G. Smith" <web@pobox.com>
+Requires-Python: ~=3.11
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Natural Language :: English
+Requires-Dist: BatCave
+Requires-Dist: vjer ; extra == "dev"
+Project-URL: changelog, https://github.com/tardis4500/git-stream/blob/main/CHANGELOG.md
+Project-URL: documentation, https://git-stream.readthedocs.io
+Project-URL: homepage, https://github.com/tardis4500/git-stream/
+Project-URL: repository, https://github.com/tardis4500/git-stream/
+Provides-Extra: dev
+
+# git-stream Python Module
+
+A command line tool to implement streams in Git.
