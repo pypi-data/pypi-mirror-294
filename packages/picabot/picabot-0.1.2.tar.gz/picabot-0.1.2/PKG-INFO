@@ -1,0 +1,66 @@
+Metadata-Version: 2.3
+Name: picabot
+Version: 0.1.2
+Summary: Library designed to ease the creation of bots for Picarto.
+Project-URL: Homepage, https://github.com/NobreHD/picabot
+Project-URL: Issues, https://github.com/NobreHD/picabot/issues
+Author-email: NobreHD <info@nobrehd.pt>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: websockets
+Description-Content-Type: text/markdown
+
+# PicaBot
+
+PicaBot is a Python library designed to simplify the creation of bots for Picarto.tv. It provides a framework for handling WebSocket connections, managing commands, and handling events, making it easy to build and customize your own bot.
+
+## Features
+
+- **Easy WebSocket Connection**: Seamlessly connect to Picarto.tv using WebSockets.
+- **Command Management**: Define custom commands with a prefix, and let your bot respond to user inputs.
+- **Event Handling**: Register handlers for different events like `message` (more in the future).
+- **Reconnection Handling**: Automatically attempts to reconnect in case of connection loss.
+
+## Installation
+
+You can install PicaBot via pip:
+
+```bash
+pip install picabot
+```
+
+## Usage
+
+Here is a basic example of how to use PicaBot to create a bot:
+
+```python
+import asyncio
+from picabot import PicaBot, PicaMessage
+
+bot = PicaBot.from_password(
+  "BOT_ACCOUNT_USERNAME",
+  "BOT_ACCOUNT_PASSWORD from https://oauth.picarto.tv/chat/bot",
+  "BOT_CHANNEL_NAME"
+)
+
+@bot.command("hello")
+async def hello_command(message: PicaMessage, *args):
+    await bot.send_message(f"Hello, {message.user_name}!")
+
+@bot.on("message")
+async def on_message(message: PicaMessage):
+  print(f"{message.user_name}: {message.message}")
+
+asyncio.run(bot.connect())
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+## License
+
+PicaBot is licensed under the GNU GPL-3.0 License. See `LICENSE` for more details.
