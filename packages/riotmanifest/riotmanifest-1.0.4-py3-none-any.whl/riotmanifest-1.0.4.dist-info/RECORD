@@ -1,0 +1,7 @@
+riotmanifest/__init__.py,sha256=cUnUegjAKVBJVGxZbBD1c3U3Kyxf7Z9594AIs5PGH28,685
+riotmanifest/extractor.py,sha256=mMBrjKdnUA8rnI94Spa4Wj-k2WSMc18ZWY4DNk_bRlg,6356
+riotmanifest/manifest.py,sha256=RQL8mo-e0ubD3ALHkUGHR9HvZWVq4T05YLytLdrjExc,21316
+riotmanifest-1.0.4.dist-info/METADATA,sha256=mGmU3OlkFoB-9S6n70H2K8oULLG2hPdnZtXn6_DOIT8,3760
+riotmanifest-1.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+riotmanifest-1.0.4.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+riotmanifest-1.0.4.dist-info/RECORD,,
