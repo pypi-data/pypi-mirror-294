@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: HLProp
+Version: 0.0.1
+Summary: Implementation of Hierarchical Label Propagation (HLP)
+Project-URL: Homepage, https://github.com/LudovicTuncay/HLProp
+Project-URL: Issues, https://github.com/LudovicTuncay/HLProp/issues
+Author-email: Ludovic TUNCAY <ludovic.tuncay@irit.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# HLProp
+Implementation of Hierarchical Label Propagation (HLP)
