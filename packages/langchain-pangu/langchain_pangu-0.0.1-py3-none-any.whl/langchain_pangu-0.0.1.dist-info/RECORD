@@ -1,0 +1,9 @@
+langchain_pangu/__init__.py,sha256=UpYxp4lSWoUjBJM1eWECLZiJcCxe530st7gX1aTG81A,509
+langchain_pangu/chat_models.py,sha256=l9Z9eAguDVXQ4B0VZdPT_AacKTzLNfE5Cq1RcY6JKH8,10763
+langchain_pangu/embeddings.py,sha256=fR20plVEXk_wvFwcWa-vPxcPNV1R1_cF-eVR-YhkJgo,31
+langchain_pangu/llms.py,sha256=e29z5GDvdil9EHRmupfgv2jkfP6DqZIVfRxsfVa9Xwg,6400
+langchain_pangu-0.0.1.dist-info/LICENSE,sha256=dG3-nCtsB9WFXKZXzM0dM02RwPOW8F-UKw3ZElXMQ4Y,1061
+langchain_pangu-0.0.1.dist-info/METADATA,sha256=t1STC7rVoqknXR3espiFZToo7nDP1VW34q2mt0ehbSk,514
+langchain_pangu-0.0.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+langchain_pangu-0.0.1.dist-info/top_level.txt,sha256=2bnKPklsGBLRsLQOb8pU_APQG7G_5TG7MipGNQrIt0M,16
+langchain_pangu-0.0.1.dist-info/RECORD,,
