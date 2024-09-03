@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+KANama.egg-info/PKG-INFO
+KANama.egg-info/SOURCES.txt
+KANama.egg-info/dependency_links.txt
+KANama.egg-info/requires.txt
+KANama.egg-info/top_level.txt
+tests/test_create.py
+tests/test_inference.py
+tests/test_train.py
