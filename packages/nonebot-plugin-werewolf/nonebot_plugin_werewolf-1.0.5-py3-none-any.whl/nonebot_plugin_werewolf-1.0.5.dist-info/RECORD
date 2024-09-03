@@ -1,0 +1,13 @@
+nonebot_plugin_werewolf-1.0.5.dist-info/METADATA,sha256=YAMSQ9RZA-0jUe8o1iXg5zLy-vNh7AEcpoo9ek_ar-E,6735
+nonebot_plugin_werewolf-1.0.5.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+nonebot_plugin_werewolf-1.0.5.dist-info/licenses/LICENSE,sha256=B_WbEqjGr6GYVNfEJPY31T1Opik7OtgOkhRs4Ig3e2M,1064
+nonebot_plugin_werewolf/__init__.py,sha256=7Kp0xiD5XhE803lRegOex0oEe3ZfCEnPOxSd1FqdhWM,734
+nonebot_plugin_werewolf/config.py,sha256=3O63P1pjvJEwgOwxApAHbKQzvCR1zoG5UjTClZ_OJts,315
+nonebot_plugin_werewolf/constant.py,sha256=MUqLz4jXfXPWc8wJdUXb0yaU0BcXZ_xbGM0Sn3IhAr4,1260
+nonebot_plugin_werewolf/game.py,sha256=3W_oghotlxbUgp7RaFmzla-CW-MVzNdYRb7JD7Xp_UU,15437
+nonebot_plugin_werewolf/matchers.py,sha256=D8F2FsV03YhBfXCUeUJmpSFvMk9Z7F0lKeFx-lRN9To,2281
+nonebot_plugin_werewolf/ob11_ext.py,sha256=I6bPCv5SgAStTJuvBl5F7wqgiksWeFkb4R7n06jXprA,2399
+nonebot_plugin_werewolf/player.py,sha256=AqeYhILjFEuPO0rXbp9dnCmUZO_dk0MODg_jXjwduyI,13986
+nonebot_plugin_werewolf/player_set.py,sha256=pEXyjmA7INog23i5-TmuJA559y5eKUehrPxHcnzWCTU,2571
+nonebot_plugin_werewolf/utils.py,sha256=8ddVr_PyObxZ8PfWry_-IXnH2dys2bTowKmHfqVbhPE,6233
+nonebot_plugin_werewolf-1.0.5.dist-info/RECORD,,
