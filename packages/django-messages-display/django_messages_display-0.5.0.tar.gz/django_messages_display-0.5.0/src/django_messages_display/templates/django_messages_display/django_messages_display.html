@@ -1,0 +1,48 @@
+{% if messages %}
+  <ul class="django_messages_display_messages_container">
+    {% for message in messages %}
+      <li role="status" aria-live="polite" class="django_messages_display_message {% if message.tags %}{{ message.tags }}{% endif %} hidden">
+        <p>{{ message }}</p>
+        {% if include_close_button %}
+          {% include "django_messages_display/close_button.html" %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <script>
+    (function() {
+      const container = document.querySelector('.django_messages_display_messages_container');
+      const messageElements = container.querySelectorAll('li');
+
+      function checkAllHidden() {
+        const allHidden = Array.from(messageElements).every(el => el.classList.contains('hidden'));
+        if (allHidden) {
+          container.classList.add('hidden');
+        }
+      }
+
+      messageElements.forEach((element, index) => {
+        const showDelay = index * 75;
+        const hideDelay = showDelay + 5000;
+
+        setTimeout(() => {
+          element.classList.remove('hidden');
+        }, showDelay);
+
+        setTimeout(() => {
+          element.classList.add('hidden');
+          checkAllHidden();
+        }, hideDelay);
+
+        const closeButton = element.querySelector('button');
+        if (closeButton) {
+          closeButton.addEventListener('click', () => {
+            element.classList.add('hidden');
+            checkAllHidden();
+          });
+        }
+      });
+    })();
+  </script>
+{% endif %}
