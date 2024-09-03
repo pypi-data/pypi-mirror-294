@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: ismgcc
+Version: 0.1
+Summary: Finding velocity coherent structures in molecular ISM using Gaussian decomposition and Graph theory
+Project-URL: Homepage, https://github.com/Haoran-Feng/ismgcc
+Project-URL: Issues, https://github.com/Haoran-Feng/ismgcc/issues
+Author-email: Haoran Feng <hrfeng@pmo.ac.cn>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: astropy
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: networkx>=3.2
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: regions
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: spectral-cube
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# ismgcc
+ISMGCC (InterStellar Medium Gaussian Component Clustering): Finding gas structures in molecular ISM using Gaussian decomposition and Graph theory
+
+This repository contains the Python code that implements the method described in [arXiv link].
+It is designed to find molecular gas structures from PPV data cubes, especially in the direction with crowded emissions, e.g., the inner galaxy.
+
+The document is currently under construction.
+Before its completion, please refer to the [tutorial](https://github.com/Haoran-Feng/ismgcc/blob/main/example/tutorial.ipynb). 
+
