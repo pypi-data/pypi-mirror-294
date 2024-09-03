@@ -1,0 +1,4 @@
+pedalboard
+pydub
+openai
+elevenlabs

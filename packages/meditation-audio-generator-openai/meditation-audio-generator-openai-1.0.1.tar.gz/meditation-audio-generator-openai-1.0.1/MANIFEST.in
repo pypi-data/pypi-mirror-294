@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+exclude meditation_audio_generator/.gitattributes
+exclude venv/
+exclude keys.py
+exclude temp_generator_main.py  
+
+
