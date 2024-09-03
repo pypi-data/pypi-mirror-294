@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: jinjapy
+Version: 0.1.0
+Summary: New hybrid file format combining a Jinja template with Python code in a frontmatter
+Home-page: https://github.com/hyperflask/jinjapy
+License: MIT
+Author: Maxime Bouroumeau-Fuseau
+Author-email: maxime.bouroumeau@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jinja2 (>=3.0.0,<4.0.0)
+Project-URL: Repository, https://github.com/hyperflask/jinjapy
+Description-Content-Type: text/markdown
+
+# Jinjapy
+
+New hybrid file format combining a Jinja template with Python code in a frontmatter
+
+```python
+from jinja2 import Environment
+import jinjapy
+
+loader = jinjapy.register_package("my_package")
+env = Environment(loader=loader)
+
+# execute the module + render the template
+# the module globals are used as the template context
+template_output = jinjapy.execute_module(env, "my_package.module")
+
+# module is available like any other import
+import foo from my_package.module
+```
+
+*my_package/module.html*:
+
+```
+---
+foo = "bar"
+---
+{{ foo }}
+```
+
+## Specification
+
+A jinjapy file contains 2 sections:
+
+- A frontmatter with some Python code (enclosed by lines containg 3 dashes "---")
+- A body containing some Jinja template code
+
+Both are optional:
+
+- If the frontmatter is missing, the file only contains a Jinja template
+- If the frontmatter is left unclosed (the file starts with "---" on a single line followed by some python code), the file has no template
