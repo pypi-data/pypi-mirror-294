@@ -1,0 +1,8 @@
+fesapi/__init__.py,sha256=gx1DWRqoeexPzLkaAxBS_PD3FitKoJ3vveLgXlip2Ag,1482405
+fesapi/_fesapi.cpython-311-x86_64-linux-gnu.so,sha256=OOq1AP2zSfJ50o2Y4hKr_KZRj76mtpV8tunT4ah6sdc,72275313
+fesapi-2.10.1.dist-info/RECORD,,
+fesapi-2.10.1.dist-info/WHEEL,sha256=DADY5t94d_180_IYzoqDAwr18omvhViSa1K7O6qMBRc,151
+fesapi-2.10.1.dist-info/top_level.txt,sha256=BzgmOhQB5SJ7EBU6JBqCNDwEwtw2XUJ4tAa2DUDX1o4,15
+fesapi-2.10.1.dist-info/METADATA,sha256=LNQajDufzUTzsjRvuPJUobuZIprnQTvhG9ohnZ3xduM,2032
+fesapi.libs/libminizip-b98285b8.so.1.0.0,sha256=-VvN3EDYObdJB3jUT-Xf1mKf218ilm0xlG_lhWQurWw,51553
+fesapi.libs/libFesapiCpp-56690373.so.2.10.1.0,sha256=aWiBERRhkwPVMqfRDd5WUpE70jhAszPoMbWRurSHOrk,43783137
