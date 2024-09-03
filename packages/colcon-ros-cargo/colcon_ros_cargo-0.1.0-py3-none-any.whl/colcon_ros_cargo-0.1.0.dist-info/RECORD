@@ -1,0 +1,13 @@
+colcon_ros_cargo/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+colcon_ros_cargo/package_identification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_ros_cargo/package_identification/ament_cargo.py,sha256=A__7S7EHmE8-v3ChjgHKFzgfO6AdxGSuZSn7nwHXSi4,1855
+colcon_ros_cargo/task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_ros_cargo/task/ament_cargo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_ros_cargo/task/ament_cargo/build.py,sha256=mJeP3udk3x0wxvMZpBFB85_ozPdfGxva_EUywfao68g,6786
+colcon_ros_cargo/task/ament_cargo/test.py,sha256=sTaocc34hZJ1S7v2O8Qfl5QDW-545I4bRx67pkzKIMM,716
+colcon_ros_cargo-0.1.0.dist-info/METADATA,sha256=TK6gW1xjnmRoWyVKykWUep2T32RAqWorQBn5b3Udgj8,3504
+colcon_ros_cargo-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colcon_ros_cargo-0.1.0.dist-info/entry_points.txt,sha256=3RgvxuEXzA_9dXH0Cd88KARdEAl4UtlOoMs5Jwa_LGA,333
+colcon_ros_cargo-0.1.0.dist-info/top_level.txt,sha256=3HTfiJvW71SqHBrv_bOz4DjZhnfA0YOWAFNURuONQi4,17
+colcon_ros_cargo-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+colcon_ros_cargo-0.1.0.dist-info/RECORD,,
