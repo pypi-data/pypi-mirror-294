@@ -1,0 +1,12 @@
+@import url('//fonts.googleapis.com/css?family=Roboto+Mono');
+
+.CodeMirror {
+    font-size: 14px !important;
+    font-family: 'Roboto Mono', monospace !important;
+    background-color: #404040 !important;
+    flex: 1 1 auto;
+}
+
+.CodeMirror-gutters {
+    background-color: #333 !important;
+}

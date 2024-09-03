@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=-uSlNSJfdfXZ2SMHHBenBwHVUQ8ebQlSDBtfvx1h3TY,638
+LICENSE.txt,sha256=r6GZa2sz0vQ1WRlL22RjpKJELcspJhLh7qAgup6X134,1070
+django_sb_codefield/__init__.py,sha256=SCJVcCTVNSSzweByRZNqgM5jiDIRKkCSHBARquT20_U,208
+django_sb_codefield/admin.py,sha256=Hn_9iBQWlvnMbENo9gXuDq6fLvriwotJTjAix-YRdjk,433
+django_sb_codefield/apps.py,sha256=phhdYqb--7tAvqMUqmf0PbW39gEvU2ksqMLZoqL02oE,168
+django_sb_codefield/fields.py,sha256=Q_DNCGuSHk8POJqgcX0TgY1Jgn3t1XwFluxQIr5YXio,1368
+django_sb_codefield/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sb_codefield/static/django_sb_codefield/css/codefield_django_admin.css,sha256=S0mx7a5m6VHQ1hniT6I54-feUbFW3DhWdr0LufLMgec,291
+django_sb_codefield/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sb_codefield/version.py,sha256=RaUmKlbSpON2kdBuuW-9YxbYMMTNqtrMmlybnRE6L5E,20
+django_sb_codefield/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sb_codefield-0.4.0.dist-info/LICENSE.txt,sha256=r6GZa2sz0vQ1WRlL22RjpKJELcspJhLh7qAgup6X134,1070
+django_sb_codefield-0.4.0.dist-info/METADATA,sha256=mDbSJKpJwaJn6Rfrcuo9-8lNZYtb7b6R4bikYSQa9hM,3430
+django_sb_codefield-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_sb_codefield-0.4.0.dist-info/RECORD,,
