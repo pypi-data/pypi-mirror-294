@@ -1,0 +1,3 @@
+[console_scripts]
+kaizen-cli=kaizen_cli.cli:cli
+
