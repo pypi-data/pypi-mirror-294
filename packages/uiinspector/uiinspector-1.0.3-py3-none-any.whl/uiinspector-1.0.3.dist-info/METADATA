@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: uiinspector
+Version: 1.0.3
+Summary: GUI tool for capturing windows ui element
+License-File: LICENSE
+Requires-Dist: PySide6 ==6.3.0
+Requires-Dist: uiautomation >=2.0.16
+Requires-Dist: pyjab >=1.1.5
+Requires-Dist: mouse
+Requires-Dist: keyboard
+Requires-Dist: yapf
+
