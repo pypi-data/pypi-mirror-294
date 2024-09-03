@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nakdimon-ort
+Version: 0.1.0
+Summary: Hebrew diacritics in onnxruntime
+Author: thewh1teagle
+Requires-Dist: onnxruntime>=1.0
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Project-URL: home, https://github.com/thewh1teagle/nakdimon-ort
+Provides-Extra: dev

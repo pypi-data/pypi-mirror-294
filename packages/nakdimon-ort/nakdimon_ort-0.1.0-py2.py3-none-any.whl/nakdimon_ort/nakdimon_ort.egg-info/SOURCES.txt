@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+nakdimon_ort/__init__.py
+nakdimon_ort/nakdimon_ort.egg-info/PKG-INFO
+nakdimon_ort/nakdimon_ort.egg-info/SOURCES.txt
+nakdimon_ort/nakdimon_ort.egg-info/dependency_links.txt
+nakdimon_ort/nakdimon_ort.egg-info/requires.txt
+nakdimon_ort/nakdimon_ort.egg-info/top_level.txt
