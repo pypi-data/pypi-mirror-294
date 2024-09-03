@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>HTML Rendering of Database Comparison Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="robots" content="none, noarchive">
+<link rel="icon" href="https://dws-public.eu-central-1.linodeobjects.com/icon.svg">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://dws-public.eu-central-1.linodeobjects.com/dws-styles.css">
+<link rel="stylesheet" href="https://dws-public.eu-central-1.linodeobjects.com/basic.css">
+</head>
+<body>
+<div id="preheader"></div>
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper" style="background: #F1EAE5">
+    <a href="#" class="brand-logo">
+      <img src="https://dws-public.eu-central-1.linodeobjects.com/logo-horizontal.svg" width="210" />
+    </a>
+  </div>
+</nav>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col s12 m8">
+        <h1>Comparing MySQL to Postgres</h1>
+        <h2>Introduction</h2>
+        <p>We are comparing MySQL to Postgres on a particular dataset and backend code.</p>
+        <h2>Why?</h2>
+        <p>We as a software service company do a crucial part of our clients workprocess automation by maintaining and improving their central application. The application is now over ten years old and as was common in that time, was written against a MySQL database. After the sale of MySQL we moved to MariaDB as so many companies have done, because MySQL is now no longer open source, and has moved to a subscription-based service for which must be paid.</p>
+        <p>In the course of our work, we frequently advise our clients on improvements to their systems. One of these was to move their MySQL database from a locally hosting MariaDB database to a managed cluster with failover nodes and and offsite backup. At the same time, we proposed to move to Postgres. Why we would want to do the latter is the object of this piece.
+        <h2>Backed by numbers</h2>
+        <p>To convince our client (and ourselves) better we decided to set up a system where we could create statistics. After copying the MySQL/MariaDB data to postgres (that is the subject of another post), we created a management command that would query both databases with exactly the same set of data and measure the results.</p>
+        <h3>The Set-up</h3>
+        <p>The management command is set up as follows:</p>
+        <ol>
+            <li>The database model to query</li>
+            <li>The operation to test with, read or write</li>
+            <li>The number of cycles to run</li>
+            <li>The time interval between queries</li>
+        </ol>
+        <h2>The Process</h2>
+        <p>Because we want to deliver a coherent document, the management command will run through all test cases we have defined. This will be different for every project. The conditions for this project are the following</p>
+        <pre></pre>
+        <h2>Results</h2>
+        <p>The results below are the outcome of a number of runs. The details of each run are split out into the following:</p>
+        <ul>
+            <li>Output: the output of the command, with:
+                <ul>
+                    <li>Database name</li>
+                    <li>Average query speed across the number of cycles with the given interval</li>
+                </ul>
+            </li>
+            <li>Notes: any other conditions that may not have been mentioned</li>
+            <li>Exceptions: a list of exceptions that occurred during the running of the queries, per database.</li>
+        </ul>
+        <h3>Calculations</h3>
+        <p>We give the relative results in percentages after each run through the databases. The calculation looks like this:
+        <pre>    
+        def calc(self, default: float, newcomer: float)-> str:
+            if default > newcomer:
+                c = round(((default-newcomer)/newcomer)*100)
+                return f"The Newcomer is faster by {c}%"
+            elif newcomer > default:
+                c = round(((newcomer-default)/default)*100)
+                return f"The Default is faster by {c}%"
+            else:
+                return "Default and Newcomer are exactly the same."
+        </pre>
+        </p>
+    </div>
+</div>
+</div>
+<div class="container">
+<h2>Results per Run</h2>
+    {% for d in data %}
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card">
+                <div class="card-content">
+                <h3 class="card-title">Model: {{ d.model.name }}, Operation: {{ d.operation }}</h3>
+
+                {% for k,v in d.output.items %}
+                    <p>Database: {{ k }} 
+                        <ul>
+                        {% for k,v in v.items %}
+                        
+                        <li>{{ k }}: {{ v }}</li>
+        
+                        </ul>
+                        {% endfor %}
+                        {% for k,v in v.items %}
+                        {% if k == "graph" %}
+                        <img src="{{ storage_url }}/{{ v }}" width="650" />
+                        {% endif %}
+                        {% endfor %}
+                    </p>
+                {% endfor %}
+                <h5>{{ d.comparison }}</h5>
+
+                <h5>Exceptions</h5>
+                {% for k,v in d.exceptions.items %}
+                <h6>Database {{ k }}</h6>
+                {% if not v %}
+                <p>No exceptions</p>
+                {% else %}
+                <ul>
+                {% for i in v %}
+                <pre>
+                    Model: {{ i.model }}
+                    PK: {{ i.pk }}
+                    Error: {{ i.error }}
+                </pre>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                {% endfor %}
+    
+                <h5>Notes</h5>
+                <p>{{ d.notes }}</p>
+                <h5>Full list of handled ids</h5>
+                <pre>{{ d.pks }}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<footer class="page-footer light-sand">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="text-night-black">About Django Web Studio</h5>
+        <p class="text-night-black">We are your partner in dedicated software development teams. Scale your business with us!</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="text-night-black">Django Web Studio Products</h5>
+        <ul>
+          <li><a class="text-night-black text-lighten-3" target="_blank" href="https://djangowebstudio.com/en/products/business-discovery/">Business & Discovery</a></li>
+          <li><a class="text-night-black text-lighten-3" target="_blank" href="https://djangowebstudio.com/en/products/team-as-a-service/">Team-as-a-Service</a></li>
+          <li><a class="text-night-black text-lighten-3" target="_blank" href="https://djangowebstudio.com/en/products/managed-application-services/">Managed Application Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container text-night-black">
+    © 2024 Copyright Django Web Studio
+    </div>
+  </div>
+</footer>
+</body>
+</html>
