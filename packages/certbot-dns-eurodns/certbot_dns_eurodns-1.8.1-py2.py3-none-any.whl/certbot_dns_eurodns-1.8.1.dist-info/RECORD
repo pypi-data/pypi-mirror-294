@@ -1,0 +1,8 @@
+certbot_dns_eurodns/__init__.py,sha256=_U9DPSgT20rM6FhfAY6HqGbI5FAEdHkQ0JMpCuHe-l8,3257
+certbot_dns_eurodns/dns_eurodns.py,sha256=6GmXpq7OyMMg7HzTezoNwWwI3r4ZT68-qaBycOfYzv8,8925
+certbot_dns_eurodns-1.8.1.dist-info/LICENSE.txt,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+certbot_dns_eurodns-1.8.1.dist-info/METADATA,sha256=Nvo9UwLl1YVYVb_Myfsbix6TT1WntdLrmUWxUmDOo7M,5472
+certbot_dns_eurodns-1.8.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+certbot_dns_eurodns-1.8.1.dist-info/entry_points.txt,sha256=j08k_SSjlSQNq_BjqC_FSbRSzrSkZbu8lm0MNnLF1Gw,79
+certbot_dns_eurodns-1.8.1.dist-info/top_level.txt,sha256=7gTIBnarqU1o4R4jk8sFAeihYg2coGArJF61IItHsgA,20
+certbot_dns_eurodns-1.8.1.dist-info/RECORD,,
