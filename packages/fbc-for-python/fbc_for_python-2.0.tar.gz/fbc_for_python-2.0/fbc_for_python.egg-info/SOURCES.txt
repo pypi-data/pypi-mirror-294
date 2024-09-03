@@ -1,0 +1,9 @@
+README.md
+setup.py
+fbc_for_python/FBC.py
+fbc_for_python/__init__.py
+fbc_for_python.egg-info/PKG-INFO
+fbc_for_python.egg-info/SOURCES.txt
+fbc_for_python.egg-info/dependency_links.txt
+fbc_for_python.egg-info/requires.txt
+fbc_for_python.egg-info/top_level.txt
