@@ -1,0 +1,16 @@
+odoo/addons/mgmtsystem_info_security_manual/README.rst,sha256=I--MMsG7zt6gH6-_vQ4iyDr0LlweOc1v8VOqc2Ji1Mg,3384
+odoo/addons/mgmtsystem_info_security_manual/__init__.py,sha256=7IBF3oB-qsWAnjCg67bdxEuofCoY8mIwQnpgyOpgtpk,975
+odoo/addons/mgmtsystem_info_security_manual/__manifest__.py,sha256=WA3ZcexbjZ6obS4A_3WZPRy3xoY-E7lzC_uFJyX7ks4,1398
+odoo/addons/mgmtsystem_info_security_manual/data/information_security_manual.xml,sha256=vunsIuVP0yZtUtyFF4IXhjybgAcXAa9weE3H_vJjJ0s,1328
+odoo/addons/mgmtsystem_info_security_manual/i18n/it.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/mgmtsystem_info_security_manual/i18n/mgmtsystem_info_security_manual.pot,sha256=leB6MlaWiU1sPOdcOTxNVY5KVORnHv0MfD14HgQJIIs,341
+odoo/addons/mgmtsystem_info_security_manual/i18n/sv.po,sha256=QNwqtJ03L7L3zc2_h0NR1jOSlPk1zDNzagMLFWVgtrw,411
+odoo/addons/mgmtsystem_info_security_manual/readme/CONTRIBUTORS.rst,sha256=c0piCT0OJ59rDJ2PHultRl1XRC6WTbLX5xWD3p7W5iQ,208
+odoo/addons/mgmtsystem_info_security_manual/readme/DESCRIPTION.rst,sha256=aMkHbAai7g4tP0BRo0vlQUcVetw45l3AXTcPeLEwO8M,62
+odoo/addons/mgmtsystem_info_security_manual/readme/USAGE.rst,sha256=Wz_xD6f5J7EmJtxXQiPYgLv7RwgK_V6_A-Y8ruVSUFM,175
+odoo/addons/mgmtsystem_info_security_manual/static/description/icon.png,sha256=1xiufEjkQfoKXPitFY7FJq4rbmAX-qSAdAE-n9dEN40,2397
+odoo/addons/mgmtsystem_info_security_manual/static/description/index.html,sha256=hHrslaFj6o6-jJiJKyD8751cRc3vqdzT1Sd0gF9rB1w,13132
+odoo_addon_mgmtsystem_info_security_manual-16.0.1.0.0.4.dist-info/METADATA,sha256=NckKCiTj5Ljw4_a_3EagMgXZCxfk1FDBenXhZslM2P0,4014
+odoo_addon_mgmtsystem_info_security_manual-16.0.1.0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo_addon_mgmtsystem_info_security_manual-16.0.1.0.0.4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_mgmtsystem_info_security_manual-16.0.1.0.0.4.dist-info/RECORD,,
