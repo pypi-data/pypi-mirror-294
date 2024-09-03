@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+autotiktokuploader/___init__.py
+autotiktokuploader/function.py
+autotiktokuploader.egg-info/PKG-INFO
+autotiktokuploader.egg-info/SOURCES.txt
+autotiktokuploader.egg-info/dependency_links.txt
+autotiktokuploader.egg-info/requires.txt
+autotiktokuploader.egg-info/top_level.txt
