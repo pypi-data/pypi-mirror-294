@@ -1,0 +1,11 @@
+pylego/__init__.py,sha256=7rcUcQcOWsOLxTOEXF2ASkwm_7eED1UIXzxdlgKPr5c,82
+pylego/go.mod,sha256=S-5MY_3fsoWvQMLkUAox6lnwtL3IX05pjiAlPQhfwPU,9469
+pylego/go.sum,sha256=HpR7HGB2ICojeKlw4xYXn_Q2dwUv1oS8GuYPTBXrk9I,98044
+pylego/lego.go,sha256=52e3iR6uc70EszJDNYCpM_78Cb6zZuYj1kK9L5ZBz9Y,5281
+pylego/lego.so,sha256=MV9xT-oDH-6liQSW2l0T929G6mxKeUhhrf2M3eK_kuI,140936920
+pylego/pylego.py,sha256=bHsVzqMM2DZmhCAn-yqlxKQ4Pr5QRyOpBjP2dJSBKMU,1976
+pylego-0.1.8.dist-info/LICENSE,sha256=aklz9Y8CIpFsN61U4jHlJYp4W_8HoDpY-tINlDcdSZY,10934
+pylego-0.1.8.dist-info/METADATA,sha256=8ieLkzOwTnWTcWHCB-GT0gs2fLdFZ27WF2HncKvR6vU,5528
+pylego-0.1.8.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+pylego-0.1.8.dist-info/top_level.txt,sha256=pSOYv55_w90qy3xOvqz_ysSz-X-XRTb-jMpiOyLNnNs,7
+pylego-0.1.8.dist-info/RECORD,,
