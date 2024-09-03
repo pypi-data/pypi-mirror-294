@@ -1,0 +1,8 @@
+rpaudio-0.0.5.dist-info/METADATA,sha256=xdbwyO2pljZRubjBQKsTVblNO4ncM5_dX6rMEeu1Ap0,4372
+rpaudio-0.0.5.dist-info/WHEEL,sha256=i-p8mgSn4a7rikHqe4YQswfPRr0VwhoXpb8SQEIsq0A,94
+rpaudio-0.0.5.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+rpaudio/__init__.py,sha256=pXJgmKOJlGLJGa-sKdTZeFR4qInaD5OX9Ap6ZTiOosk,111
+rpaudio/__init__.pyi,sha256=WAClGfUwaMXywoN_mG0f0ylCjrKAKxcgw4yZbmlPw2k,16635
+rpaudio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpaudio/rpaudio.pyd,sha256=VUceJkuhCvdFE1DE5sWI7vv9m-FjlC_kdnWDofCFRv4,2103296
+rpaudio-0.0.5.dist-info/RECORD,,
