@@ -1,0 +1,3 @@
+EngagedAutomaticClutchOutput is Physics.Signals.Output:
+    type: Physics.Signals.InputOutputType.ControlEvent
+    clutch is AutomaticClutch
