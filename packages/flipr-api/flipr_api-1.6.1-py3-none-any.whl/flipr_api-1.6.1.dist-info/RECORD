@@ -1,0 +1,9 @@
+flipr_api/__init__.py,sha256=2SftTbNGJ270WvZPqs5tKLpqrlgbLCnX45JvsR4j0TM,103
+flipr_api/client.py,sha256=UrtJ5sCxSXzvC3tOKBph7WhdCsEiPo368ggrSZd3lrY,8027
+flipr_api/const.py,sha256=whtKg4AF1QGFWlo2Ktq7LbrqK70XE27M6Dcq7bE51vs,159
+flipr_api/exceptions.py,sha256=V7vOkHFSFFv4LZspxk2aw6oKi-6wdN-ADxNt10wWx2k,321
+flipr_api/session.py,sha256=XmaFmaLT-iMXCtvvFdX3tQJ0ZhqkR2i7hiWHCANU8BU,2180
+flipr_api-1.6.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+flipr_api-1.6.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flipr_api-1.6.1.dist-info/METADATA,sha256=UzHnjQvvr2PZR6KsVj9CvFwadu2Py9gIVJGBzkIYbOo,4732
+flipr_api-1.6.1.dist-info/RECORD,,
