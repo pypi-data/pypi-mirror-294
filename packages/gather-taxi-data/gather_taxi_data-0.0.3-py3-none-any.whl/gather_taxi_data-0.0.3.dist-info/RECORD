@@ -1,0 +1,10 @@
+gather_taxi_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gather_taxi_data/gather_all_data.py,sha256=sUplngm4R9tEPasEcZcBJTI6t6vc39xsmhtYN9aglj4,1700
+gather_taxi_data/gather_bwc_data.py,sha256=5K_97oxvYgzx4vDhV1iB1Lzpg0ROJpxevE0NXfilvRo,11541
+gather_taxi_data/gather_gps_data.py,sha256=kgYbAGJzE7FiSTiyC6Zt2mjqrulwOE2Iw7-HC4zvJ6k,8834
+gather_taxi_data/requirements.txt,sha256=5PHBMbDOaU0Pwadb5fI9ScLdL_R8R51AT6jlEMjGqJ4,47
+gather_taxi_data/setup.py,sha256=UB8VzqMILfw-OQPkhtWgbOSc6xHEExdlimWUtk2G3Eo,663
+gather_taxi_data-0.0.3.dist-info/METADATA,sha256=VTOU9epeMTs916gJXuZ9gwbPYPcv3N6RVUbJn3PPvEM,618
+gather_taxi_data-0.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gather_taxi_data-0.0.3.dist-info/licenses/LICENSE,sha256=M8zRvtcN09msetbnlVSZO3lwK4lv1nZyp0Ja-a3RBiI,1072
+gather_taxi_data-0.0.3.dist-info/RECORD,,
