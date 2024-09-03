@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTEST_ADDOPTS": "--no-cov"
+            }
+        },
+        {
+            "name": "Debug quickstart",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/promptarchitect/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--prompts",
+                "./examples/quickstart",
+                "--output",
+                "./output_directory"
+            ]
+        }
+    ]
+}
