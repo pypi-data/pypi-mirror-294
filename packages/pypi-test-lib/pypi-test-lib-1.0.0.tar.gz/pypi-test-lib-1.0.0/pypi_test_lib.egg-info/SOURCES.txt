@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pypi_test.py
+setup.py
+pypi_test_lib.egg-info/PKG-INFO
+pypi_test_lib.egg-info/SOURCES.txt
+pypi_test_lib.egg-info/dependency_links.txt
+pypi_test_lib.egg-info/top_level.txt
+sub_package/__init__.py
+sub_package/sub.py
