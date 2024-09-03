@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: KANama
+Version: 2.5.0
+Summary: Fusing Kolmogorov–Arnold Networks with Meta's Llama model for next-level AI performance and versatility.
+Home-page: https://github.com/Goekdeniz-Guelmez/KANama
+Author: Gökdeniz Gülmez
+Author-email: goekdenizguelmez@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# KANama
+Llama3.1 x Kolmogorov–Arnold Networks
