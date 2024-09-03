@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tool-parse"
+version = "0.2.0"
+description = "Making LLM Tool-Calling Simpler."
+license = "The Unlicense (Unlicense)"
+authors = ["Harsh Verma <synacktra.work@gmail.com>"]
+readme = "readme.md"
+homepage = "https://github.com/synacktraa/tool-parse"
+repository = "https://github.com/synacktraa/tool-parse"
+keywords = ["tool-calling", "function-calling", "structured-tool", "LLM"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+docstring-parser = "0.16"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
