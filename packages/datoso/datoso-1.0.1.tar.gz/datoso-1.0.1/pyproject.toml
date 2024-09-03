@@ -1,0 +1,87 @@
+[build-system]
+requires      = ["setuptools~=67.6", "wheel~=0.40.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name        = "datoso"
+description = "Python command line tool to download and organize your Rom Dat files."
+readme      = "README.md"
+requires-python = ">=3.11"
+license     = {text = "MIT License"}
+authors     = [
+    {name = 'Lacides Miranda', email = 'laromicas@hotmail.com'},
+]
+keywords = ["emulators", "roms"]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    "Environment :: Console",
+    'License :: OSI Approved :: MIT License',
+    "Operating System :: POSIX :: Linux",
+    'Programming Language :: Python :: 3',
+    'Topic :: System :: Emulators',
+    'Topic :: System :: Archiving',
+]
+dependencies = [
+    "tinydb>=4.7.1",
+    "pydantic==1.10.9",
+    "python-dateutil>=2.8.2",
+    "xmltodict>=0.13.0",
+    "tabulate>=0.9.0",
+    "requests>=2.31.0",
+    "dataclasses-json>=0.6.4"
+]
+dynamic = ["version"]
+
+
+[project.optional-dependencies]
+all = [
+    "datoso-seed-fbneo>=1.0.0",
+    "datoso-seed-md-enhanced>=1.0.1",
+    "datoso-seed-nointro>=1.0.0",
+    "datoso-seed-pleasuredome>=1.0.0",
+    "datoso-seed-redump>=1.0.0",
+    "datoso-seed-sfc-enhancedcolors>=1.0.1",
+    "datoso-seed-sfc-msu1>=1.0.1",
+    "datoso-seed-sfc-speedhacks>=1.0.1",
+    "datoso-seed-tdc>=1.0.0",
+    "datoso-seed-translatedenglish>=1.0.1",
+    "datoso-seed-vpinmame>=1.0.1",
+    ]
+fbneo = [ "datoso-seed-fbneo>=1.0.0" ]
+md-enhanced = [ "datoso-seed-md-enhanced>=1.0.1" ]
+nointro = [ "datoso-seed-nointro>=1.0.0" ]
+pleasuredome = [ "datoso-seed-pleasuredome>=1.0.0" ]
+redump = [ "datoso-seed-redump>=1.0.0" ]
+sfc-enhancedcolors = [ "datoso-seed-sfc-enhancedcolors>=1.0.1" ]
+sfc-msu1 = [ "datoso-seed-sfc-msu1>=1.0.1" ]
+sfc-speedhacks = [ "datoso-seed-sfc-speedhacks>=1.0.1" ]
+tdc = [ "datoso-seed-tdc>=1.0.0" ]
+translatedenglish = [ "datoso-seed-translatedenglish>=1.0.1" ]
+vpinmame = [ "datoso-seed-vpinmame>=1.0.1" ]
+dev = [
+    "ruff>=0.6.3",
+    "line_profiler==4.1.3"
+    ]
+
+[project.urls]
+"Source Code"       = "https://github.com/laromicas/datoso"
+
+[project.scripts]
+datoso = "datoso.__main__:main"
+
+[tool.setuptools]
+packages = [
+    "datoso",
+    "datoso.actions",
+    "datoso.commands",
+    "datoso.configuration",
+    "datoso.helpers",
+    "datoso.repositories",
+    "datoso.seeds"
+    ]
+license-files = ["LICENSE"]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "datoso.__version__"}
