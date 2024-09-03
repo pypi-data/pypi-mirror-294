@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: athenaeum
+Version: 0.1.7
+Summary: 
+Author: mathewgeola
+Author-email: mathewgeola@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: drissionpage (>=4.0.5.6,<5.0.0.0)
+Requires-Dist: dynaconf (>=3.2.6,<4.0.0)
+Requires-Dist: furl (>=2.1.3,<3.0.0)
+Requires-Dist: htmlmin (>=0.1.12,<0.2.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: mongoengine (>=0.28.2,<0.29.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: peewee (>=3.17.6,<4.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: psutil (>=6.0.0,<7.0.0)
+Requires-Dist: py-mini-racer (>=0.6.0,<0.7.0)
+Requires-Dist: pyexecjs (>=1.5.1,<2.0.0)
+Requires-Dist: pymysql (>=1.1.1,<2.0.0)
+Requires-Dist: pypinyin (>=0.52.0,<0.53.0)
+Requires-Dist: requests-toolbelt (>=1.0.0,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0.32,<3.0.0)
+Requires-Dist: sqlparse (>=0.5.1,<0.6.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Requires-Dist: ujson (>=5.10.0,<6.0.0)
+Requires-Dist: walrus (>=0.9.4,<0.10.0)
+Requires-Dist: xlsxwriter (>=3.2.0,<4.0.0)
+Requires-Dist: yagmail (>=0.15.293,<0.16.0)
+Description-Content-Type: text/markdown
+
+# athenaeum
+
+
+~~~shell
+poetry install
+
+poetry run render_project example
+
+render_project example
+
+~~~
+
+
+~~~shell
+python -m unittest
+
+
+~~~

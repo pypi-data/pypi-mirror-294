@@ -1,0 +1,3 @@
+[console_scripts]
+render_project=athenaeum.scripts:render_project
+
