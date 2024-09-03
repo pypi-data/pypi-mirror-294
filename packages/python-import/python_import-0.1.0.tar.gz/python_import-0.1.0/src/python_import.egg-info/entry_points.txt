@@ -1,0 +1,2 @@
+[console_scripts]
+python-import = python_import.cli:app
