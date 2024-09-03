@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fintechff_indicator/__init__.py
+fintechff_indicator.egg-info/PKG-INFO
+fintechff_indicator.egg-info/SOURCES.txt
+fintechff_indicator.egg-info/dependency_links.txt
+fintechff_indicator.egg-info/requires.txt
+fintechff_indicator.egg-info/top_level.txt
+tests/test.py
