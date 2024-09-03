@@ -1,0 +1,15 @@
+tap_bitso/__init__.py,sha256=DBWNqff-BR3_3MitNxu-qzzaYC5flO6jdKVtuylWHLs,74
+tap_bitso/auth.py,sha256=99DnN0vrQzDP5Z5MRD0OMIHslzU5PAnEMCLCA7IafyA,2568
+tap_bitso/client.py,sha256=BBlcI0ijqVMgJB4ylcsLjXSQQi2iG_O8D88-YSjRf3E,5159
+tap_bitso/streams.py,sha256=5pzQapeLxPW-jYOAvO3pFmumuybBXXAhVJgmK5Hf40M,1750
+tap_bitso/tap.py,sha256=8Xngkn33_UEkk-J-Sg6GelMdlQTl7MF6idmqo6MtQrE,2713
+tap_bitso/schemas/__init__.py,sha256=tszraUgjLjvJzJ-cB-GzITWMfms7gYaJ1fKEvs3URAo,58
+tap_bitso/schemas/book.json,sha256=NAJu12nASE7_QG0sZRD0guleXrl6u-qkPp7DPMEbXWE,8787
+tap_bitso/schemas/ledger.json,sha256=qCcRYdns1O-n2P7T3JBIzodK7nY1TmK6NFEH53V2Ozw,3098
+tap_bitso/schemas/ticker.json,sha256=_0dDUlZ2eRP0iN00_V-KR1EoklA2DkAm8KNISzuTgbc,3728
+tap_bitso/schemas/trade.json,sha256=66fRQs6ubOrNoeFYBZz5SJgYH3bMuOPnJfoMgXfhrC8,2232
+tap_bitso-0.3.2.dist-info/METADATA,sha256=CTKYAeZhhHxPxK1LNZUN9maBpIZ2SkK6v4iFpinDsw8,17389
+tap_bitso-0.3.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tap_bitso-0.3.2.dist-info/entry_points.txt,sha256=IN09MQANFq3O_422hFSR3Mjz5S266GjcUot7w6wsvz8,57
+tap_bitso-0.3.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_bitso-0.3.2.dist-info/RECORD,,
