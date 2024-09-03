@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gryszka_config_package
+Version: 0.1.1
+Summary: A package to read configuration from a YAML file
+Author-email: Gryszka <romanowicz.g@gmail.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+# file reader package
+the package tests , how to read file form a package.
