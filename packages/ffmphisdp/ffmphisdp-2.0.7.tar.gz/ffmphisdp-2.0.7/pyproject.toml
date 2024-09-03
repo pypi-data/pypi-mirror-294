@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "ffmphisdp"
+version = "2.0.7"
+description = ""
+authors = ["jimmy huguet <jimmy.huguet@skillcorner.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+ffmpeg-python = "^0.2.0"
+numpy = ">=1.0.0,<2"
+pyav = ">=12"
+tqdm = "^4.66.4"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.2.3"
+pytest = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core", "poetry-external-dependencies"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["typer.Argument", "typer.Option"]
+
+[tool.ruff]
+fix = true
+line-length = 120
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I001", "Q", "SIM", "UP", "W"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+
+[external]
+dependencies = ["pkg:generic/ffmpeg"]
