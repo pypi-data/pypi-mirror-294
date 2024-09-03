@@ -1,0 +1,2 @@
+[console_scripts]
+weatherwolf = weatherwolf.__main__:main
