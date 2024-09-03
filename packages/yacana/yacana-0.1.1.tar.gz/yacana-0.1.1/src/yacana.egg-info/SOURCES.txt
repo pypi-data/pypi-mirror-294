@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/yacana.egg-info/PKG-INFO
+src/yacana.egg-info/SOURCES.txt
+src/yacana.egg-info/dependency_links.txt
+src/yacana.egg-info/requires.txt
+src/yacana.egg-info/top_level.txt
