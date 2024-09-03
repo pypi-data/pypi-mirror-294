@@ -1,0 +1,15 @@
+numpy
+PyQt5
+PyOpenGL
+pyqtgraph
+python-lzf
+matplotlib
+opencv-python==4.1.2.30
+opencv-contrib-python
+tqdm
+utm
+pyyaml
+vtk
+scipy
+tabulate
+pyquaternion
