@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pproto-py
+Version: 2.1.1
+Summary: pproto_py is Python implementation of "Point Of View" communication protocol
+Home-page: https://github.com/TochkaAI/pproto_py-2.0
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: PyYAML (==6.0.1)
+Requires-Dist: aiologger (==0.7.0)
+Requires-Dist: annotated-types (==0.6.0)
+Requires-Dist: cfgv (==3.4.0)
+Requires-Dist: distlib (==0.3.8)
+Requires-Dist: filelock (==3.13.1)
+Requires-Dist: identify (==2.5.33)
+Requires-Dist: nodeenv (==1.8.0)
+Requires-Dist: platformdirs (==4.1.0)
+Requires-Dist: pydantic (>=2.5.2)
+Requires-Dist: pydantic-core (>=2.14.5)
+Requires-Dist: typing-extensions (>=4.9.0)
+Requires-Dist: virtualenv (==20.25.0)
+
+UNKNOWN
+
