@@ -1,0 +1,12 @@
+mdtidy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdtidy/cleaner.py,sha256=efAOVbi7bl3emxBcdjtd1ytJqIHYf02kjEbCinA0WCo,5657
+mdtidy/combined_processor.py,sha256=TJX1LIkPXodxt_YyH09lsntmyjji3j_-Uzayoh9vYas,4065
+mdtidy/eval_set.py,sha256=LOiBXKI1qna2bjnvg7cOaDhKL_em8TtrQLPQQzGwJP0,1607
+mdtidy/gemini_processor.py,sha256=znDK5dmoBbDnDR22pxwauIPgsR8E78hBbyJi4VAlDLU,21435
+mdtidy/gpt_processor.py,sha256=F_1sCPprUslv-uPAU7maNdIa4dU0eRDvBAdpeMNidKc,16428
+mdtidy/policies.py,sha256=0L205LF63qikTgNxyfgF2d5fQhoWdCX15mIdASkdfRc,5406
+mdtidy-0.5.2.dist-info/LICENSE,sha256=CPezeUg6yS_O5nu6HizU0qUwtdeaXenJY5dDRbZpICE,1070
+mdtidy-0.5.2.dist-info/METADATA,sha256=qL2mbw1mKajcIR3WlzFc50Bc_YUK-GxyNnmDhQGkKgI,6389
+mdtidy-0.5.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mdtidy-0.5.2.dist-info/top_level.txt,sha256=cG5VAvFDmmRy6G7pDgR_-1kRRAz_kLldiNci_ONR3eQ,7
+mdtidy-0.5.2.dist-info/RECORD,,
