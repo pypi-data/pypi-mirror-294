@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lightweight_orchestration/__init__.py
+lightweight_orchestration/simple_batch_orchestration.py
+lightweight_orchestration/simple_job_orchestration.py
+lightweight_orchestration.egg-info/PKG-INFO
+lightweight_orchestration.egg-info/SOURCES.txt
+lightweight_orchestration.egg-info/dependency_links.txt
+lightweight_orchestration.egg-info/top_level.txt
+tests/__init__.py
+tests/manual_test_simple_batch_orchestration.py
+tests/manual_test_simple_job_orchestration.py
+tests/test_simple_job_orchestration.py
