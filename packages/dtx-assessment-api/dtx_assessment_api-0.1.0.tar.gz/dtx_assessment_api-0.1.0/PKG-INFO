@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dtx-assessment-api
+Version: 0.1.0
+Summary: 
+Author: jchauhan
+Author-email: jitendra@detoxio.ai
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: detoxio-api-protocolbuffers-python
+Requires-Dist: detoxio_api_grpc_python
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
