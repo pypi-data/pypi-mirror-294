@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: duckduckgo-api-haystack
+Version: 0.1.0
+Summary: A Haystack component integrating Duckduckgo API for WebSearch
+Author-email: Giovanni Alzetta <giovannialzetta@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/GivAlz/duckduckgo_api_websearch
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckduckgo-search
+Requires-Dist: haystack-ai
+
+# DuckduckgoApiWebSearch
+
+Haystack component to use Websearch via the freely available Duckduckgo API.
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Overview](#Overview)
+- [License](#license)
+
+## Installation
+
+```console
+pip install duckduckgo-api-haystack
+```
+
+## Overview
+
+This repository implements a module in the style of **SearchApiWebSearch**
+and **SerperDevWebSearch**, but using the freely-available duckduckgo API.
+
+When you give DuckduckgoWebSearch a query, it returns a list of the URLs most relevant to your search.
+It uses page snippets (pieces of text displayed under the page title in search results) to find the answers,
+not the whole pages.
+
+
+## License
+
+`duckduckgo-api-websearch` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.

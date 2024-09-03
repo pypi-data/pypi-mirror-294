@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+duckduckgo_api_haystack.egg-info/PKG-INFO
+duckduckgo_api_haystack.egg-info/SOURCES.txt
+duckduckgo_api_haystack.egg-info/dependency_links.txt
+duckduckgo_api_haystack.egg-info/requires.txt
+duckduckgo_api_haystack.egg-info/top_level.txt
+duckduckgo_api_websearch/__init__.py
+duckduckgo_api_websearch/duckduckgoapi.py
+tests/test_duckduckgoapi.py
