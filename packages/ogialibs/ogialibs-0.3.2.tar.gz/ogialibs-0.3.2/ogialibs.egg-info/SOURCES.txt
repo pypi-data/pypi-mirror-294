@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+ogialibs/__init__.py
+ogialibs/data.py
+ogialibs.egg-info/PKG-INFO
+ogialibs.egg-info/SOURCES.txt
+ogialibs.egg-info/dependency_links.txt
+ogialibs.egg-info/top_level.txt
+tests/test_cached_parquet.py

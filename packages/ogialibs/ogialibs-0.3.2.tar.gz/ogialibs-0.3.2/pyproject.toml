@@ -1,0 +1,18 @@
+[project]
+name = "ogialibs"
+version = "0.3.02"
+description = "Common Python methods for OGIA"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Office-of-Groundwater-Impact-Assessment/ogialibs"
+Issues = "https://github.com/Office-of-Groundwater-Impact-Assessment/ogialibs/issues"
+
+[build-system]
+requires = ['setuptools', 'geopandas>=0.13', 'pyarrow']
+build-backend = "setuptools.build_meta"
