@@ -1,0 +1,8 @@
+funcnodes_pandas/__init__.py,sha256=uzA9Fx8ykLWvp-XXd6sBaykFp49jTtq16Zc1y5jxAD4,3026
+funcnodes_pandas/dataframe.py,sha256=JT81NcHsc_14V_ZqQLkAucIqRTvSOxo9xWsOt1L3zHA,16367
+funcnodes_pandas/dataseries.py,sha256=sb3mmT9inEFoa9aZdSxKMdStR3zMkGGWGm93-VI6Yds,2419
+funcnodes_pandas/grouping.py,sha256=75R7CVEQG20WIxjUZHPE9AfvSVUEcJKn50yoBOEMXNc,5371
+funcnodes_pandas-0.2.2.dist-info/METADATA,sha256=gsEF7Dpwv5xyUR6nqHI1BfIXQmoXxYIVbyOjLnNKqtg,547
+funcnodes_pandas-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funcnodes_pandas-0.2.2.dist-info/entry_points.txt,sha256=51ZBtSCHSOPUP7yZveva3uv7FGt3nhqqrG0wSi0RWxw,78
+funcnodes_pandas-0.2.2.dist-info/RECORD,,
