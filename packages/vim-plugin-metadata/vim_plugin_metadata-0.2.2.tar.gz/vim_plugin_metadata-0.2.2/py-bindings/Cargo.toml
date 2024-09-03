@@ -1,0 +1,21 @@
+[package]
+name = "py-vim-plugin-metadata"
+version = "0.2.2"
+authors = { workspace = true }
+edition = { workspace = true }
+repository = { workspace = true }
+license = { workspace = true }
+keywords = { workspace = true }
+categories = { workspace = true }
+exclude = [
+    ".gitignore"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "vim_plugin_metadata"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.0", features = ["abi3-py38"] }
+vim-plugin-metadata = { workspace = true }
