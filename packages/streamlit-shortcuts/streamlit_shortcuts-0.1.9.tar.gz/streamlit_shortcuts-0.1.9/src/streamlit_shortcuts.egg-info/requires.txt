@@ -1,0 +1,9 @@
+streamlit
+
+[dev]
+pre-commit
+black
+flake8
+
+[test]
+pytest
