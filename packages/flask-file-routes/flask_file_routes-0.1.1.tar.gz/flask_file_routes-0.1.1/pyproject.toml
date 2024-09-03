@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flask-file-routes"
+version = "0.1.1"
+description = "File-based routing with a new mix-code file format that combines python code and a jinja template"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-file-routes"
+packages = [{include = "flask_file_routes.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jinjapy = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
