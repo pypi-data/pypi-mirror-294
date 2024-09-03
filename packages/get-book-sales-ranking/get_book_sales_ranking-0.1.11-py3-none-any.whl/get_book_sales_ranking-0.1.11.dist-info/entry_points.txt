@@ -1,0 +1,2 @@
+[console_scripts]
+get_book_sales_ranking = get_book_sales_ranking.main:main_get
