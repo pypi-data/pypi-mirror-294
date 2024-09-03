@@ -1,0 +1,37 @@
+[{
+    "name": "transfer_auto",
+    "group": "transfer",
+    "type": "backend",
+    "level": 1,
+    "parameters": [
+        {
+            "name": "receiver",
+            "type": "string",
+            "required": true,
+            "description": "The destination address or contact name to which the crypto will be transferred."
+        },
+        {
+            "name": "amount",
+            "type": "float",
+            "required": true,
+            "description": "The amount of crypto to be transferred."
+        },
+        {
+            "name": "chain",
+            "type": "enum",
+            "enum": ["Base", "Ethereum", "BSC"],
+            "default": "Base",
+            "required": false,
+            "description": "The blockchain network on which the transfer will occur. Options include Base, Ethereum, and BSC."
+        },
+        {
+            "name": "token",
+            "type": "enum",
+            "enum": ["USDC", "USDT"],
+            "default": "USDC",
+            "required": false,
+            "description": "The type of token to be transferred. Options include USDC and USDT."
+        }
+    ],
+    "description": "Transfers cryptocurrency to another wallet, specifying the destination address, amount, blockchain network, and token type."
+}]

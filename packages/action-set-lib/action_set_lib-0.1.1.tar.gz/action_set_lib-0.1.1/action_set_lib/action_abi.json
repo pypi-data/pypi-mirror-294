@@ -1,0 +1,25 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "transfer_usdc",
+            "description": "Transfer money to the user name or address provided",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "receiver": {
+                        "type": "string",
+                        "description": "recipient of the transfer"
+                    },
+                    "amount": {
+                        "type": "int",
+                        "description": "amount of transfer"
+                    }
+                },
+                "required": [
+                    "location"
+                ]
+            }
+        }
+    }
+]
