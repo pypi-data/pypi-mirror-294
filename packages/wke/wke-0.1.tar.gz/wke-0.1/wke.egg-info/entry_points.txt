@@ -1,0 +1,2 @@
+[console_scripts]
+wke = wke.bin.cmd:main
