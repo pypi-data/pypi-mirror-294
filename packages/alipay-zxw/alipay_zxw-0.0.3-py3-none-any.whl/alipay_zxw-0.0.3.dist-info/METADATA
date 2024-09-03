@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: alipay_zxw
+Version: 0.0.3
+Summary: 基于python-alipay-sdk==3.3.0，改造成异步。用法与python-alipay-sdk完全一致。
+Home-page: https://github.com/sunshineinwater/
+Author: 薛伟的小工具
+Author-email: 
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodomex>=3.15.0
+Requires-Dist: pyOpenSSL>=22.0.0
+Requires-Dist: httpx>=0.20.0
+
+# 常用函数包
+
+-
+    1. 项目根目录下必须包含config.py文件
+
+- 支付接口编写规范：
+  支付服务_代码规范.py
+
