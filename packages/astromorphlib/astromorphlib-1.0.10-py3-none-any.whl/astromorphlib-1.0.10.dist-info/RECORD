@@ -1,0 +1,14 @@
+stat_lib/Table_Arp_Madore_pairs_updated.txt,sha256=HjCT3crr9re6HlkTYYsFQm0HXMfEgJzizmJjRLZ7u00,294972
+stat_lib/__init__.py,sha256=1UuBZedwkAIYep-7uzHT9ZCOUCS_yoFanLT9NaeD8UA,162016
+stat_lib/__init__old.py,sha256=oaJRaU0dJySt1HJobHxFY0YLwh3LptXHlawdKW5gbE8,90209
+stat_lib/iDR4_obs_seeing.csv,sha256=iT5ITulmOvXPdPSvg59oFl_d406QmrE1xbAPm_52YQk,156205
+stat_lib/iDR4_zero-points.csv,sha256=xmoWHhw2GjJZizYCweUfaneasDmzJcO3GZ480GYCOuA,175683
+stat_lib/properties.dat,sha256=5o-tg_zuERxriCHbHlX1TcaDUIiE_aBAQDYCT_50bos,731
+stat_lib/zero_points.fits,sha256=Q9pBUe1aV9rz_Wg9K2JosAww1_qaDXZhH3X0IqfGmPc,106560
+stat_lib/__pycache__/__init__.cpython-38.pyc,sha256=RQI48K4H-6EsEnREA87knK3VcZJfzmnegEWHXD05XX0,86949
+stat_lib/__pycache__/stat_lib.cpython-38.pyc,sha256=JjjvbJ3ZvDC4AA3UpVNQVK9XrceagpYT4uErUPrEllE,20743
+astromorphlib-1.0.10.dist-info/LICENSE.txt,sha256=9HVZvOfbXdgcsB8H4xM6WnFv7ghfh5Pf45Ix3X470Mo,399
+astromorphlib-1.0.10.dist-info/METADATA,sha256=FE7J-EoBisqqWjLgBBAZ2YmUuyYGVC52i0fIfiw6k7g,4477
+astromorphlib-1.0.10.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+astromorphlib-1.0.10.dist-info/top_level.txt,sha256=wiqsogIcqAUB4tFCAP8f3Bix4TmhWZaQKZB0NxhgORA,9
+astromorphlib-1.0.10.dist-info/RECORD,,
