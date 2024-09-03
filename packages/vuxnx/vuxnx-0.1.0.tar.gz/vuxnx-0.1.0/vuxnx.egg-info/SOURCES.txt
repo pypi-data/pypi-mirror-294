@@ -1,0 +1,8 @@
+README.md
+setup.py
+consoleAI/ModelAI.py
+consoleAI/__init__.py
+vuxnx.egg-info/PKG-INFO
+vuxnx.egg-info/SOURCES.txt
+vuxnx.egg-info/dependency_links.txt
+vuxnx.egg-info/top_level.txt
