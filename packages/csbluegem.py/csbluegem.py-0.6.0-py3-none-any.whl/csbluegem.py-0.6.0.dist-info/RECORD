@@ -1,0 +1,12 @@
+csbluegem/__init__.py,sha256=niNvHNrEIQJ7c5P5YJIdgamMLUDXQa5v-O4DtZhgjnE,1170
+csbluegem/client.py,sha256=F2-cUeTkBkDHyNFo5Tmt1j6JybFdC-8uJNWDUJnV07I,11843
+csbluegem/errors.py,sha256=E2jtrSd8QsnY6X0AjYUq7TQmDQJBsNHq0y6I2NR3EF8,1597
+csbluegem/http.py,sha256=xLxNGw4iRi6ciXPnyONXgSh3OagIpc_s6FZp_2muFXI,4161
+csbluegem/meta.py,sha256=e-FXpdcyrCJuwZQr505SHL5BGDj_pdU4xX88jc1eHR4,141
+csbluegem/types.py,sha256=cLouC-dXxlyuW1-QgqUJtz3Ru9stA3MJYPK4FLxp2tA,16746
+csbluegem/utils.py,sha256=ubCLNIU_IWXk9i6Oi1UNEkBxMHpEC-I62B8TMKsweS8,3578
+csbluegem.py-0.6.0.dist-info/LICENSE,sha256=XvwyslX1IhcmqcxsM3DXAosH4kxbywHvwcRX-Is6GhA,1054
+csbluegem.py-0.6.0.dist-info/METADATA,sha256=-U5qwMd7W4MPagWhG-VnYK_qrtAmrdPMfp8xEpY07-o,3119
+csbluegem.py-0.6.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+csbluegem.py-0.6.0.dist-info/top_level.txt,sha256=BqUjJmj2PrbUxk5L6vjBK0XU6prynUQNqFeEZAetKMo,10
+csbluegem.py-0.6.0.dist-info/RECORD,,
