@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Customer_segmentation_clustering.egg-info/PKG-INFO
+Customer_segmentation_clustering.egg-info/SOURCES.txt
+Customer_segmentation_clustering.egg-info/dependency_links.txt
+Customer_segmentation_clustering.egg-info/top_level.txt
