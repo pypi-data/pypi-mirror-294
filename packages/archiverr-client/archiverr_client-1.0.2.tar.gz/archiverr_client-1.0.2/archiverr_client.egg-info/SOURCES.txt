@@ -1,0 +1,15 @@
+README.md
+archiverr
+setup.py
+archiverr_client.egg-info/PKG-INFO
+archiverr_client.egg-info/SOURCES.txt
+archiverr_client.egg-info/dependency_links.txt
+archiverr_client.egg-info/requires.txt
+archiverr_client.egg-info/top_level.txt
+src/Config.py
+src/Utilities.py
+src/__init__.py
+src/__main__.py
+src/client.py
+src/constants.py
+src/config/__init__.py
