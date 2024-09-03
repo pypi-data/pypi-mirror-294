@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: pyclsload
+Version: 1.5.0
+Project-URL: Homepage, https://github.com/nbdy/pyclsload
+Project-URL: Repository, https://github.com/nbdy/pyclsload.git
+Project-URL: Issues, https://github.com/nbdy/pyclsload/issues
+Author: nbdy
+Maintainer: nbdy
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pyclsload
+
+[![CodeFactor](https://www.codefactor.io/repository/github/nbdy/pyclsload/badge)](https://www.codefactor.io/repository/github/nbdy/pyclsload)
+
+easily load classes from source files
+
+it's basically just a wrapper around importlib
+
+## why?
+
+```python
+# doesn't look
+from pyclsload import load_cls
+this_a_class = load_cls("somefile.py", "ThisAClass")
+this_a_class.somemethod()
+
+# better than
+from importlib.util import spec_from_file_location, module_from_spec
+s = spec_from_file_location("ThisAClass", "somefile.py")
+m = module_from_spec(s)
+s.loader.exec_module(m)
+this_a_class = m.__dict__["ThisAClass"]()
+this_a_class.somemethod()
+```
+
+## features
+
+- [X] Load class from file (load_cls)
+- [X] Load classes from directory (load_dir)
+
+see the [tests](/tests) to get a better understanding on how to use it
+
+## install
+
+```shell
+pip install pyclsload
+```
