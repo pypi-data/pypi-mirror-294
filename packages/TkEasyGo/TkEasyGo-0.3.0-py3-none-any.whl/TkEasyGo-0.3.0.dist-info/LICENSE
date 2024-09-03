@@ -1,0 +1,107 @@
+MIT License
+
+版权所有 (c) 2024 TkEasyGo
+
+特此免费授予获得本软件及相关文档文件（“软件”）副本的任何人无限制地使用、复制、修改、合并、发布、分发、再许可和/或销售本软件及其副本的权限，前提是满足以下条件：
+
+1. **版权声明和许可声明**：
+   - 在软件的所有副本或重要部分中必须包含上述版权声明和本许可声明。这意味着，无论您如何使用、修改或分发本软件，都必须保留原始作者的版权声明和许可条款，以确保未来的使用者也能够知晓该软件的授权情况。
+
+2. **提供“原样”软件**：
+   - 本软件按“原样”提供，不附带任何形式的明示或暗示的担保，包括但不限于适销性、特定用途适用性和不侵权的担保。这意味着，软件提供者不对软件的使用效果或适用性承担任何责任。用户在使用软件时，应自行承担风险，并根据需要对软件进行验证和测试。
+
+3. **免责条款**：
+   - 在任何情况下，作者或版权持有人均不对因软件的使用或其他交易中产生的任何索赔、损害或其他责任承担责任，无论是在合同诉讼、侵权行为或其他情况下产生的。这一条款保护作者免于因软件缺陷或使用中的问题而面临的法律责任。
+
+4. **商标和其他权利**：
+   - 本许可证不授予使用许可人商标、服务标志或产品名称的权利，除非是为描述软件来源并再现版权声明的内容。这意味着，您不能使用本软件的名称或标志进行宣传或商标注册，除非得到明确授权。
+
+5. **法律限制**：
+   - 在适用法律允许的最大范围内，作者或版权持有人在任何情况下均不对因使用或无法使用本软件而导致的任何特殊、偶然、间接或后果性损害负责（包括但不限于利润损失、数据丢失、业务中断、商业信息丢失或其他财务损失）。这条款进一步保护作者，防止因软件使用导致的意外损失。
+
+6. **许可证终止**：
+   - 如果您违反本许可证的任何条款，本许可证将自动终止。终止后，您必须停止使用本软件，并销毁所有副本。这保证了许可证的强制执行，如果用户不遵守条款，许可证将失效，用户必须停止使用软件。
+
+7. **适用法律**：
+   - 本许可证受适用法律的约束。适用法律应在许可证中说明，以确保许可证的法律效力和适用性。
+
+8. **其他条款**：
+   - 本许可证不限制任何一方根据其他法律或法律协议寻求救济的权利，也不限制从其他来源获取本软件副本的权利。无论本许可证中的条款如何，您仍然可以根据其他法律或协议寻求救济。
+   - 本许可证不对软件的再许可施加任何限制。这意味着您可以将本软件的许可继续传递给其他人，而不受额外的限制。
+   - 如果本许可证的任何部分被认为不可执行，其余部分仍应有效。即使部分条款被认定为无效，其他条款仍将继续有效，以保证许可证的整体效力。
+
+--------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2024 TkEasyGo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. **Copyright Notice and Permission Notice**:
+   - The above copyright notice and this permission notice shall be included in
+     all copies or substantial portions of the Software. This ensures that the
+     original copyright and license terms are preserved in all copies and
+     modifications of the software, informing future users of the license terms.
+
+2. **Software Provided "As Is"**:
+   - THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. This means that the
+     software is provided without any guarantees regarding its performance,
+     reliability, or suitability for any particular purpose. Users assume all
+     risks associated with using the software.
+
+3. **Disclaimer of Liability**:
+   - IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+     THE SOFTWARE. This clause protects the authors from legal liability arising
+     from the use or misuse of the software.
+
+4. **Trademarks and Other Rights**:
+   - This license does not grant permission to use the trade names, trademarks,
+     service marks, or product names of the licensor, except as required for
+     describing the origin of the software and reproducing the content of the
+     copyright notice. You cannot use the software’s name or trademarks for
+     promotion or registration without explicit permission.
+
+5. **Limitation of Liability**:
+   - To the maximum extent permitted by applicable law, in no event shall the
+     author or copyright holders be liable for any special, incidental, indirect,
+     or consequential damages whatsoever (including, but not limited to, damages
+     for loss of profits, loss of data, business interruption, loss of business
+     information, or any other pecuniary loss) arising out of the use of or
+     inability to use the software, even if the author has been advised of the
+     possibility of such damages. This further protects the authors from
+     unexpected losses resulting from the software.
+
+6. **License Termination**:
+   - If you violate any of the terms of this license, this license will
+     automatically terminate. Upon termination, you must stop using the software
+     and destroy all copies. This clause ensures that the license is enforceable,
+     and users must cease using the software if they breach the terms.
+
+7. **Applicable Law**:
+   - This license is governed by the applicable laws. The applicable law should
+     be specified to ensure the legal effectiveness and applicability of the
+     license.
+
+8. **Additional Terms**:
+   - This license does not restrict the rights of any party to seek relief
+     under any other law or legal agreement, or to obtain copies of the software
+     from other sources. Regardless of the terms, you can still seek relief
+     under other legal agreements.
+   - This license does not impose any restrictions on sublicensing of the software.
+     This means you can continue to pass on the license to others without
+     additional restrictions.
+   - If any portion of this license is found to be unenforceable, the remaining
+     portions shall remain in effect. If any part of the license is invalidated,
+     the rest of the terms will still be effective to maintain the overall
+     validity of the license.
+
