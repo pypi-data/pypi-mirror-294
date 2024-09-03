@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+orbitdb_kit_py/__init__.py
+orbitdb_kit_py/orbitdb_kit.py
+orbitdb_kit_py/orbitdb_kit_lib.py
+orbitdb_kit_py/websocket_kit.py
+orbitdb_kit_py/websocket_kit_lib.py
+orbitdb_kit_py.egg-info/PKG-INFO
+orbitdb_kit_py.egg-info/SOURCES.txt
+orbitdb_kit_py.egg-info/dependency_links.txt
+orbitdb_kit_py.egg-info/top_level.txt
