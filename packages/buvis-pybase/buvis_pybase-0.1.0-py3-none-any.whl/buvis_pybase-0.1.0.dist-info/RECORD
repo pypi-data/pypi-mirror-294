@@ -1,0 +1,7 @@
+buvis/pybase/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+buvis/pybase/filesystem/__init__.py,sha256=A31IYlrudve5FtmQHz9YZfp4gJ6_jjt8ODjOSGRYmcM,184
+buvis/pybase/filesystem/file_creation_datetime.py,sha256=8VgSqngZCKYl1NgwTyKrkRSQQ9NRuLwMQLPX6WZNlyU,2019
+buvis_pybase-0.1.0.dist-info/LICENSE,sha256=kz3XPSdSKlRq3-QZljKet3NELjMUlLkR50jde-qsdIg,1062
+buvis_pybase-0.1.0.dist-info/METADATA,sha256=1j_mnqla5nLmfghUnnS8quBG9YXxk_UDFBqWd0tR3Mo,476
+buvis_pybase-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+buvis_pybase-0.1.0.dist-info/RECORD,,

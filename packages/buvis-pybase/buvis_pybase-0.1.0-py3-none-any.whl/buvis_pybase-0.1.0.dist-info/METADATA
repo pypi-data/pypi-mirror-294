@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: buvis-pybase
+Version: 0.1.0
+Summary: Foundation of BUVIS python projects
+License: MIT
+Author: Tomáš Bouška
+Author-email: tomas@buvis.net
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: tzlocal (>=5.2,<6.0)
+Description-Content-Type: text/markdown
+
+# buvis-pybase
+Foundation of BUVIS python projects
+
