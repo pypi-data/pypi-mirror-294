@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pdf_nupper/__init__.py
+pdf_nupper/cli.py
+pdf_nupper/core.py
+pdf_nupper.egg-info/PKG-INFO
+pdf_nupper.egg-info/SOURCES.txt
+pdf_nupper.egg-info/dependency_links.txt
+pdf_nupper.egg-info/entry_points.txt
+pdf_nupper.egg-info/requires.txt
+pdf_nupper.egg-info/top_level.txt
