@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: interactive_classification_metrics
+Version: 0.2.2
+Summary: Interactive classification metrics
+Project-URL: Homepage, https://github.com/davhbrown/interactive_classification_metrics
+Project-URL: Issues, https://github.com/davhbrown/interactive_classification_metrics/issues
+Author: David H. Brown
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <3.11,>=3.8
+Requires-Dist: bokeh==2.4.3
+Requires-Dist: numpy>=1.21.5
+Requires-Dist: pandas==1.4.2
+Requires-Dist: py-mcc-f1==0.1.0
+Requires-Dist: scikit-learn==1.0.2
+Requires-Dist: scipy==1.7.3
+Description-Content-Type: text/markdown
+
+# Interactive classification metrics
+Get an intuitive sense for the ROC curve and other binary classification metrics with this interactive visualization application.
+
+Read the [README](https://github.com/davhbrown/interactive-classification-metrics) for more information.
+
+## Install
+```
+pip install interactive-classification-metrics
+```
+New environment recommended. Python >=3.8, <3.11. Installs:
+```
+bokeh==2.4.3
+numpy>=1.21.5
+pandas==1.4.2
+py_mcc_f1==0.1.0
+scikit_learn==1.0.2
+scipy==1.7.3
+```
+
+## Run the application with Bokeh server locally
+```
+run-app
+```
+
+Opens a web browser where you can use the application.
+
+## Acknowledgments
+Special thanks to Dr. Davide Chicco ([@davidechicco](https://github.com/davidechicco)) for valuable feedback on this project.
