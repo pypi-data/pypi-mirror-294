@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tbstock
+Version: 1.1
+Summary: tanbao stock data analysis tools
+Home-page: 
+Author: tanbao
+Author-email: tanbao210@hotmail.com
+Requires-Python: >=3.9, <3.10
+Requires-Dist: typing_extensions
+Requires-Dist: pymysql
+Requires-Dist: akshare
+Requires-Dist: baostock
+Requires-Dist: loguru
+Requires-Dist: exchange_calendars
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: pyautogui
+Requires-Dist: selenium
+Requires-Dist: sqlalchemy
+Requires-Dist: pyecharts
+Requires-Dist: plottable
+Requires-Dist: snapshot_selenium
+Requires-Dist: TA-Lib
+Requires-Dist: backtrader
