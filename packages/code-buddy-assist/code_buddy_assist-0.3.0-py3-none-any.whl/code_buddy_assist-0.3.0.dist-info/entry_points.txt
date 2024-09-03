@@ -1,0 +1,2 @@
+[console_scripts]
+code-buddy-assist = code_buddy.main:main
