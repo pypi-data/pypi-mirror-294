@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: flwr_monitoring
+Version: 0.2.0
+Summary: A package for monitoring Flower federated learning framework using Prometheus and WandB
+Home-page: https://github.com/kandola-network/KanFL
+Author: Kandola
+Author-email: Vishal Gupta <vishalsg42+pip@gmail.com>
+Maintainer-email: Vishal Gupta <vishalsg42+pip@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/kandola-network/KanFL
+Keywords: flower,monitoring,federated learning,prometheus,wandb
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flwr==1.11.0
+Requires-Dist: GPUtil==1.4.0
+Requires-Dist: psutil==6.0.0
+Requires-Dist: prometheus-client==0.20.0
+Requires-Dist: wandb==0.17.7
+
+# Federated Learning Monitoring Library
+
+## Overview
+
+The Federated Learning Monitoring Library is designed to provide comprehensive monitoring capabilities for federated learning processes. This library extends existing federated learning strategies (like FedAvg) with monitoring tools such as Prometheus. It allows users to track various metrics related to training, communication, and resource usage, providing deep insights into the performance and efficiency of federated learning systems.
+
+## Features
+
+- **Custom Monitoring Strategy**: Wraps existing federated learning strategies with monitoring capabilities.
+- **Prometheus Integration**: Supports Prometheus as a monitoring tool out-of-the-box.
+- **Resource Usage Tracking**: Monitors CPU, memory, and GPU usage.
+- **Comprehensive Metrics**: Tracks training time, communication time, client participation, accuracy, loss, and more.
+
+## Installation
+
+To install the library, clone the repository and install the dependencies using pip:
+
+```bash
+git clone git@github.com:kandola-network/KanFL.git
+cd KanFL
+pip install -r requirements.txt
+

@@ -1,0 +1,5 @@
+flwr==1.11.0
+GPUtil==1.4.0
+psutil==6.0.0
+prometheus-client==0.20.0
+wandb==0.17.7
