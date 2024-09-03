@@ -1,0 +1,10 @@
+table_evaluator/__init__.py,sha256=6C6PRpTqG834UDbVgMmYza8wLwNRFkuR9yiWiCMA7T0,73
+table_evaluator/metrics.py,sha256=NNBv525pZCNSqVip159KGzZ6QO-nWbNTvdmGTbn6xgc,5266
+table_evaluator/notebook.py,sha256=Al3fDj7tnHwhon1SVwpLnecnfCsxA6-Mhgxv_4cSm24,2177
+table_evaluator/plots.py,sha256=sl_pPCDA6Y9vgOEv19wFp6zH6Meg6rn84_d9eoIm4No,10906
+table_evaluator/table_evaluator.py,sha256=eCaoCFwP4b4sNsRF-YQKe43IUS8ut0n4AACRznZg-8Q,36573
+table_evaluator/utils.py,sha256=AMYSi7dJt02_OqmZLuQ3NLyeoN97alJ99HLpOwyQhnU,1792
+table_evaluator-1.7.0.dist-info/LICENSE,sha256=ftIFSsaFUjOBCQQ7TEg-E-kz-fo0riBJsVMcl8kEm6U,1076
+table_evaluator-1.7.0.dist-info/METADATA,sha256=01MV-goKooXy94j2psp39EaOdS_Ub2Nsxgo9PaJJjJo,9208
+table_evaluator-1.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+table_evaluator-1.7.0.dist-info/RECORD,,
