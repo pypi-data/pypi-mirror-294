@@ -1,0 +1,8 @@
+
+radical.utils~=1.80.0
+radical.gtod~=1.80.0
+
+psij-python
+setproctitle
+dill
+
