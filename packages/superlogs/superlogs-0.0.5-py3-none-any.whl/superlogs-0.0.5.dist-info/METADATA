@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: superlogs
+Version: 0.0.5
+Summary: A flexible Python package for logging with Google Cloud integration and multi-environment support.
+Author-email: Caio Pizzol <caio@supersuite.dev>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-logging==3.11.2
+Requires-Dist: google-cloud-storage==2.18.2
+Requires-Dist: loguru==0.7.2
+
