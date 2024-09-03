@@ -1,0 +1,11 @@
+flask_assets_pipeline/__init__.py,sha256=lA-5VGBTU6RSkYI1-wlLh35PwsL66pCT63Fa1GHpZoA,25606
+flask_assets_pipeline/cli.py,sha256=976bmlkMLjNXAgmZktakKS1yPazskqUsw5Iy1wuOiOY,11309
+flask_assets_pipeline/esbuild.mjs,sha256=gTVgNq9E9YaaXNmqLAdw7PU9dKdxQB8_ZO2ep4zlO80,1906
+flask_assets_pipeline/jinja.py,sha256=_j8t149rLB6J_vTDJL2bLW14bhQYPtUjs3XwI6u-pek,6415
+flask_assets_pipeline/livereload.py,sha256=T5WsNTTLYk2upyMkPnlWCaRjKxUXHlBCiiNZ3oeYuFM,1924
+flask_assets_pipeline/tailwind.config.js,sha256=Xl_ubHX7iFAUdThtmYlYLl2Jt8PKkuGDajxSb-rgHL8,210
+flask_assets_pipeline/utils.py,sha256=H9Iivg--MjGhCG4zIz2RPOdhJP6KpkNUGjbLBSdMGGc,2154
+flask_assets_pipeline-0.1.2.dist-info/LICENSE,sha256=KYj3GvKGHq_xnLJ-GfxvK7nXl8zIWev7QEWbH5flM9Q,1067
+flask_assets_pipeline-0.1.2.dist-info/METADATA,sha256=Y65W2MEX_O2Haxg3tyIiTrFSj9CBAKcWnMWDSj_KCPY,13461
+flask_assets_pipeline-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flask_assets_pipeline-0.1.2.dist-info/RECORD,,
