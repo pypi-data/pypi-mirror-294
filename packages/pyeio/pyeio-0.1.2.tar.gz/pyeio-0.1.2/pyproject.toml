@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "pyeio"
+version = "0.1.2"
+description = "Python package for easy data input output handling."
+readme = "README.md"
+repository = "https://github.com/harttraveller/pyeio"
+documentation = "https://harttraveller.github.io/pyeio"
+authors = ["Hart Traveller <ruling_fiction.0b@icloud.com>"]
+maintainers = ["Hart Traveller <ruling_fiction.0b@icloud.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.13"
+toml = { version = "^0.10.2", optional = true }
+orjson = { version = "^3.10.7", optional = true }
+pyyaml = { version = "^6.0.2", optional = true }
+zstandard = { version = "^0.23.0", optional = true }
+netcdf4 = { version = "^1.7.1.post2", optional = true }
+numpy = { version = "^2.1.0", optional = true }
+pandas = { version = "^2.2.2", optional = true }
+xmltodict = { version = "^0.13.0", optional = true }
+avro = { version = "^1.12.0", optional = true }
+
+[tool.poetry.extras]
+json = ["orjson"]
+jsonl = ["orjson"]
+toml = ["toml"]
+yaml = ["pyyaml"]
+zst = ["zstandard"]
+xml = ["xmltodict"]
+avro = ["avro"]
+nc = ["netcdf4", "numpy"]
+all = [
+    "toml",
+    "orjson",
+    "pyyaml",
+    "zstandard",
+    "netcdf4",
+    "numpy",
+    "pandas",
+    "xmltodict",
+    "avro",
+]
+# csv
+# gz
+# xz
+# xls
+# xlsb
+# xlsx
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.33"
+mkdocstrings = "^0.26.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
