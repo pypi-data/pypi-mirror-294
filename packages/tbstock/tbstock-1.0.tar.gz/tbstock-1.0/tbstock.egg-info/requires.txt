@@ -1,0 +1,16 @@
+typing_extensions
+pymysql
+akshare
+baostock
+loguru
+exchange_calendars
+tqdm
+pandas
+pyautogui
+selenium
+sqlalchemy
+pyecharts
+plottable
+snapshot_selenium
+TA-Lib
+backtrader
