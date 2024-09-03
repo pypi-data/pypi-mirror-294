@@ -1,0 +1,11 @@
+django_messages_display/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_messages_display/static/django_messages_display/django_messages_display.css,sha256=RmpvipHMMbeXzrZJYPX5dZT73OV_aK-NZZ16fJgupEQ,3060
+django_messages_display/templates/django_messages_display/close_button.html,sha256=Cn_SAUJCXsq-2Dp7egNBl3UgGk9wPF6RTzsxpSx5-w4,354
+django_messages_display/templates/django_messages_display/django_messages_display.html,sha256=iL5evhVDt1j8o0OqTUda-aXR5T4sEp0VF38vZHTWg5M,1498
+django_messages_display/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_messages_display/templatetags/django_messages_display.py,sha256=rTSzNb2yZfDnupVoo2a8IkCdZZJVeA2peUzX8c33fWk,610
+django_messages_display-0.5.0.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_messages_display-0.5.0.dist-info/METADATA,sha256=0VboV16lLSEjHjc079N4aGmWH3ttOObOW5_YPBbOHTM,2889
+django_messages_display-0.5.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+django_messages_display-0.5.0.dist-info/top_level.txt,sha256=Wq9sGdOFfcmn8pEat1eUcAEb2tS-sjCbkrVQuNAQoAs,24
+django_messages_display-0.5.0.dist-info/RECORD,,
