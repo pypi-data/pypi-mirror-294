@@ -1,0 +1,15 @@
+nomad_measurements/__init__.py,sha256=myL2oGwHsuzCB-6J-AcTqlVSY9BUZIj1SBhGySPkfFY,390
+nomad_measurements/general.py,sha256=AX7MQQvp4sBnNPRQjH-XRAS2e_m1OqJaqAV-ui9B2GY,4556
+nomad_measurements/utils.py,sha256=k4rUh3A_1mLmFFNrdYHGqKQw73x7OvEK-KicyRKMyiA,5045
+nomad_measurements/transmission/__init__.py,sha256=q3qEw8sWw79pfbOPDlHuEnsW6RZwoh5fG5uM_vYKg3k,1446
+nomad_measurements/transmission/parser.py,sha256=k_FOdRtZhdhGTt1imexKjoN2K2lmI5Vg6BsunTV2VAE,1504
+nomad_measurements/transmission/schema.py,sha256=W5J9Ss2AHKeRkG2aYtOR76iFLlfahDtmqMII-2wE_m0,5381
+nomad_measurements/xrd/__init__.py,sha256=KTPxGZ3L6ADkeLuWXa6kd2yiOyHxqcljZ490Xc-E7dg,770
+nomad_measurements/xrd/parser.py,sha256=dodAoWOo1IdMp-qNr-gtjykVbLGsaq6ePCxDpW2jFYE,1628
+nomad_measurements/xrd/schema.py,sha256=8MjuK22KpOUf6udlpWiNU8uzttS0soNEo_hSBxNs9R8,38809
+nomad_measurements-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nomad_measurements-0.1.0.dist-info/METADATA,sha256=rrRX54rJKQEwun97mh2nk20C-cCYWoY5cYoH0GObUCI,16430
+nomad_measurements-0.1.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+nomad_measurements-0.1.0.dist-info/entry_points.txt,sha256=Vpy9xPQS_MyXrNK9QhT2su9duo8mSh0IyUjWs-3NemU,266
+nomad_measurements-0.1.0.dist-info/top_level.txt,sha256=eSOiovOrrr2ARJAI11xmeccKOQZFX4EaJEFiV4N2uzo,19
+nomad_measurements-0.1.0.dist-info/RECORD,,
