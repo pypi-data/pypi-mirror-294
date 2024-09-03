@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gitlab_auto_version/__init__.py
+gitlab_auto_version/gitlab_auto_version.py
+gitlab_auto_version.egg-info/PKG-INFO
+gitlab_auto_version.egg-info/SOURCES.txt
+gitlab_auto_version.egg-info/dependency_links.txt
+gitlab_auto_version.egg-info/entry_points.txt
+gitlab_auto_version.egg-info/requires.txt
+gitlab_auto_version.egg-info/top_level.txt
