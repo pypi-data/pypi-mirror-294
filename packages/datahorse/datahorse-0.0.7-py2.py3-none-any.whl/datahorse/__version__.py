@@ -1,0 +1,7 @@
+__title__ = "datahorse"
+__description__ = "Your Data Assistant"
+__version__ = "0.0.7"
+__author__ = "DeDolphins"
+__author_email__ = "info@datahorse.ai"
+__license__ = "creativeml-openrail-m"
+__url__ = "https://datahorse.ai"
