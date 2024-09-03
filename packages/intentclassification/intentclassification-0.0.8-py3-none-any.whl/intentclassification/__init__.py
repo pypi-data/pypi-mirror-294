@@ -1,0 +1,1 @@
+from intentclassification.intentclassification import IntentClassifier, handleTriggers
