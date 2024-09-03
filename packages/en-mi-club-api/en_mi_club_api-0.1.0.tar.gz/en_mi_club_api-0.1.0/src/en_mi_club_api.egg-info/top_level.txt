@@ -1,0 +1,9 @@
+auth
+commerces
+plans
+raffles
+subscriptions
+tickets
+user_entities
+verification_code
+wallet
