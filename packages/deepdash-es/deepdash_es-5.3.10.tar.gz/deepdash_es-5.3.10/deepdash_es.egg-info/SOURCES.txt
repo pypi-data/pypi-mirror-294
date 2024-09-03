@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+deepdash_es.egg-info/PKG-INFO
+deepdash_es.egg-info/SOURCES.txt
+deepdash_es.egg-info/dependency_links.txt
+deepdash_es.egg-info/top_level.txt

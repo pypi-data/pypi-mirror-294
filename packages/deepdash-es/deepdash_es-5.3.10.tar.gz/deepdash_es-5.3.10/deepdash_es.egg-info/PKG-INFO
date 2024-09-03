@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: deepdash-es
+Version: 5.3.10
+Summary: A simple example package
+Author: sachin
+Author-email: sachin1337hacker@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
