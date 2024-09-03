@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gryszka_config_package"
+version = "0.1.2"
+description = "A package to read configuration from a YAML file"
+authors = [
+    { name="Gryszka", email="romanowicz.g@gmail.com" }
+]
+dependencies = [
+    "pyyaml"
+]
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["gryszka_config_package"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+gryszka_config_package = ["config.yml"]
