@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/crystalpy_barno.egg-info/PKG-INFO
+src/crystalpy_barno.egg-info/SOURCES.txt
+src/crystalpy_barno.egg-info/dependency_links.txt
+src/crystalpy_barno.egg-info/requires.txt
+src/crystalpy_barno.egg-info/top_level.txt
