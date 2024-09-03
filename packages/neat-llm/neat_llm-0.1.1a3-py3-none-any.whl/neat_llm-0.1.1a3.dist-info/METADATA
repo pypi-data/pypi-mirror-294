@@ -1,0 +1,234 @@
+Metadata-Version: 2.3
+Name: neat-llm
+Version: 0.1.1a3
+Summary: Neat is a simpler and more intuitive abstraction for quickly working with llms. Easily create tool-calling agents, generate structured output, and easily switch between a wide range of models providers, simplifying the process of building and protoyping llm applications.
+License-File: LICENSE
+Keywords: ai,language-model,llm,llm-agents
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4
+Requires-Dist: duckduckgo-search
+Requires-Dist: litellm>=1.44.14
+Requires-Dist: loguru
+Requires-Dist: numpydoc
+Requires-Dist: pydantic-settings>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Description-Content-Type: text/markdown
+
+# neat-llm
+
+A simpler abstraction for working with Large Language Models (LLMs).
+
+## Features
+
+- **Unified Interface**: Work with multiple LLM providers (OpenAI, Anthropic, Cohere, Mistral) through a single, consistent API.
+- **Prompt Management**: Easily create, version, and reuse prompts (in development).
+- **Tool Integration**: Seamlessly integrate custom tools and functions for LLMs to use.
+- **Structured Outputs**: Define and validate structured outputs using Pydantic models.
+- **Type Safety**: Leverage Python's type hinting for a safer development experience.
+- **Flexible Configuration**: Easy-to-use configuration management with environment variable support.
+- **Conversation Mode**: Engage in multi-turn dialogues with your agent.
+
+**Note**: Prompt versioning and database features are currently under development. These features may undergo changes in future releases.
+
+## Installation
+
+```bash
+pip install neat-llm
+```
+
+## API Key Setup
+
+To use neat-llm with various LLM providers, you need to set up the appropriate API keys. You can do this in two ways:
+
+1. Create a `.env` file in your project root with the following content:
+
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   ANTHROPIC_API_KEY=your_anthropic_api_key
+   COHERE_API_KEY=your_cohere_api_key
+   MISTRAL_API_KEY=your_mistral_api_key
+   ```
+
+
+2. Use the `neat_config` object to set API keys programmatically:
+
+   ```python
+   from neat import neat_config
+
+   neat_config.openai_api_key = "your_openai_api_key"
+   neat_config.anthropic_api_key = "your_anthropic_api_key"
+   neat_config.cohere_api_key = "your_cohere_api_key"
+   neat_config.mistral_api_key = "your_mistral_api_key"
+   ```
+
+Replace `your_*_api_key` with your actual API keys from the respective providers.
+
+## Quick Start
+
+```python
+from neat import Neat
+
+neat = Neat()
+
+@neat.lm()
+def generate_story(theme: str, length: int):
+    return [
+        neat.system("You are a creative story writer."),
+        neat.user(f"Write a {length}-word story about {theme}."),
+    ]
+
+def main():
+    story = generate_story("time travel", 100)
+    print("Generated Story:")
+    print(story)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Advanced Usage
+
+### Custom Tools
+
+Currently, neat-llm does not support decorating methods and classes directly. As a workaround, you can use a function wrapper to define your custom tools.
+
+```python
+from neat import Neat
+from pydantic import BaseModel, Field
+import random
+
+neat = Neat()
+
+class WeatherInfo(BaseModel):
+    """Represents weather information for a specific location."""
+    temperature: float = Field(..., description="Current temperature in Celsius")
+    conditions: str = Field(..., description="Brief description of weather conditions")
+
+class ClothingRecommendation(BaseModel):
+    """Represents clothing recommendations based on weather."""
+    top: str = Field(..., description="Recommended top clothing item")
+    bottom: str = Field(..., description="Recommended bottom clothing item")
+    accessories: str = Field(..., description="Recommended accessories, if any")
+
+# You can register your custom tools as functions using one of 2 methods:
+# 1. Using the @neat.tool() decorator
+@neat.tool()
+def get_weather(location: str) -> WeatherInfo:
+    """Fetch current weather information for a given location."""
+    # Simulating weather data for demonstration
+    temp = round(random.uniform(-5, 35), 1)
+    conditions = random.choice(["Sunny", "Cloudy", "Rainy", "Windy", "Snowy"])
+    return WeatherInfo(temperature=temp, conditions=conditions)
+
+# 2. Using the neat.add_tool() method
+def recommend_clothing(weather: WeatherInfo) -> ClothingRecommendation:
+    """Recommend clothing based on weather conditions."""
+    if weather.temperature < 10:
+        return ClothingRecommendation(top="Warm coat", bottom="Thick pants", accessories="Scarf and gloves")
+    elif 10 <= weather.temperature < 20:
+        return ClothingRecommendation(top="Light jacket", bottom="Jeans", accessories="Light scarf")
+    else:
+        return ClothingRecommendation(top="T-shirt", bottom="Shorts", accessories="Sunglasses")
+
+# Register the function as a tool
+neat.add_tool(recommend_clothing)
+
+@neat.lm(tools=[get_weather, recommend_clothing])
+def assistant():
+    return [
+        neat.system("You are a helpful weather and fashion assistant. Use the get_weather tool to check the weather for specific locations, and the recommend_clothing tool to suggest appropriate outfits based on the weather."),
+        neat.user("What's the weather like in Paris today, and what should I wear?"),
+    ]
+
+def main():
+    conversation = assistant()
+    print("Weather and Fashion Assistant:")
+    print(conversation)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Structured Outputs
+
+```python
+from neat import Neat
+from pydantic import BaseModel, Field
+
+neat = Neat()
+
+class MovieRecommendation(BaseModel):
+    """Represents a movie recommendation with details."""
+    title: str = Field(..., description="The title of the recommended movie")
+    year: int = Field(..., description="The release year of the movie")
+    genre: str = Field(..., description="The primary genre of the movie")
+    reason: str = Field(..., description="A brief explanation for why this movie is recommended")
+
+@neat.lm(response_model=MovieRecommendation)
+def recommend_movie(preferences: str):
+    return [
+        neat.system("You are a movie recommendation expert. Provide recommendations based on user preferences."),
+        neat.user(f"Recommend a movie based on these preferences: {preferences}"),
+    ]
+
+def main():
+    preferences = "I like sci-fi movies with mind-bending plots and strong character development"
+    movie = recommend_movie(preferences)
+    print("Movie Recommendation:")
+    print(f"Title: {movie.title} ({movie.year})")
+    print(f"Genre: {movie.genre}")
+    print(f"Reason: {movie.reason}")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Conversation Mode
+
+```python
+from neat import Neat
+
+neat = Neat()
+
+@neat.lm(conversation=True)
+def chat_with_ai():
+    return [
+        neat.system("You are a friendly and knowledgeable AI assistant. Engage in a conversation with the user, answering their questions and providing helpful information."),
+        neat.user("Hello! I'd like to chat about various topics. What shall we discuss?"),
+    ]
+
+def main():
+    chat_with_ai()  # This will start an interactive conversation
+
+if __name__ == "__main__":
+    main()
+```
+
+In conversation mode, you'll see a rich console interface with color-coded messages and formatted text. To exit the conversation, simply type "exit" or "quit".
+
+## Documentation
+
+For full documentation, visit [docs.neat-llm.com](https://docs.neat-llm.com).
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [LiteLLM](https://github.com/BerriAI/litellm) for providing the backend LLM interactions.
+- All the amazing LLM providers and researchers pushing the boundaries of AI.
