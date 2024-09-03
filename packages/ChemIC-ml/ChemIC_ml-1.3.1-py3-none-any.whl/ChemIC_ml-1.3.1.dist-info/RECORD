@@ -1,0 +1,13 @@
+chemic/__init__.py,sha256=-ypEJktJToAL9by62JJKWEzDo_KPCQtmE5kwFgX24z4,22
+chemic/app.py,sha256=ZBYh-gLpsbfGWK-JnITY3leOWvlP1Y3CUC0KhrhUmlA,1991
+chemic/chemical_labels.py,sha256=_w5vRmE_9kgZ4X4aAgUnLwUgLVTJqEd_xFdNxkbFD5s,1515
+chemic/client.py,sha256=Xw0TXylwmCQ4gLv1gB5cpnqV-T8C8KDSJXZvR6WzBIc,4675
+chemic/config.py,sha256=J8yJhfdTpf84Up4O4m3DLXcslx6-_aD2dYghjVHAYWA,2870
+chemic/image_classifier.py,sha256=5rb6AxwZezt0B4_RqabbOOy5G4MoJ7tmeCblBlzCnD4,8029
+chemic/loading_images.py,sha256=doGZNBOC5Rmd_r9Xf18dOOHULUNYfrJgYzx9K9cVN0M,3647
+chemic/utils.py,sha256=437mgF_m5NMlF8IqQjCBlBwUob5mFPSKI7QX3l-Tdt4,2480
+ChemIC_ml-1.3.1.dist-info/LICENSE.md,sha256=e8MFe0i0NwbfThyrkqxQO5T0SjIdylPQ7FYT-2mlkw0,1072
+ChemIC_ml-1.3.1.dist-info/METADATA,sha256=S6XE3VKXN4RbUPoMO-ubY_WCOfHer05Qc2Ciu34osD0,9021
+ChemIC_ml-1.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ChemIC_ml-1.3.1.dist-info/top_level.txt,sha256=O9n5N9VNhWz17mq2kL6aDiOHuG3PRrwMZ409czNp5T4,7
+ChemIC_ml-1.3.1.dist-info/RECORD,,
