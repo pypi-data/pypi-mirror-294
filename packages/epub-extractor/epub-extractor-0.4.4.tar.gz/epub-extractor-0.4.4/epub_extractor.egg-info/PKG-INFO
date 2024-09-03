@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: epub-extractor
+Version: 0.4.4
+Summary: Extract comic EPUB pages to Jpeg files, Dump meta information.
+Home-page: https://github.com/ytyng/epub-extractor.git
+Author: torico
+Author-email: ytyng@live.jp
+License: BSD
+Keywords: comic epub extract jpeg images and meta information.
+License-File: LICENSE.txt
+
+~~~~~~~~~~~~~~
+epub-extractor
+~~~~~~~~~~~~~~
+
+* Extract Jpeg images from EPUB file.
+
+* Dump metadata from EPUB file.
+
+
+Install
+-------
+
+::
+
+  $ pip install epub-extractor
+
+
+Requirements
+------------
+
+* unzip
+
+
+
+epub-extract-jpeg
+-----------------
+
+::
+
+    $ epub-extract-jpeg comic.epub
+
+Extract jpeg images.
+
+
+
+epub-dump-meta
+--------------
+
+::
+
+    $ epub-extract-jpeg comic.epub
+
