@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: wave-front
+Version: 0.0.1.dev1
+Requires-Dist: h2o-wave==1.5.0
+
