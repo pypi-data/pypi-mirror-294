@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+sql_fox/Exceptions.py
+sql_fox/__init__.py
+sql_fox/core.py
+sql_fox/db_init.py
+sql_fox/imports.py
+sql_fox/settings.py
+sql_fox.egg-info/PKG-INFO
+sql_fox.egg-info/SOURCES.txt
+sql_fox.egg-info/dependency_links.txt
+sql_fox.egg-info/requires.txt
+sql_fox.egg-info/top_level.txt
+tests/test_core.py
+tests/test_db_init.py
