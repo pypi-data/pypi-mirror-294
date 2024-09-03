@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ft4ftir/__init__.py
+ft4ftir/apodization.py
+ft4ftir/fourier_transform.py
+ft4ftir/ft.py
+ft4ftir/interferogram.py
+ft4ftir/test.py
+ft4ftir/io/__init__.py
+ft4ftir/io/bruker_opus.py
+ft4ftirs.egg-info/PKG-INFO
+ft4ftirs.egg-info/SOURCES.txt
+ft4ftirs.egg-info/dependency_links.txt
+ft4ftirs.egg-info/requires.txt
+ft4ftirs.egg-info/top_level.txt

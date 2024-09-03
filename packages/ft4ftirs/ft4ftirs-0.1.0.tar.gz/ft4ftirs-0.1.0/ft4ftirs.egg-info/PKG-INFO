@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ft4ftirs
+Version: 0.1.0
+Summary: A package for processing FTIR interferograms.
+Home-page: https://github.com/jongablop/ft4ftirs
+Author: Jon Gabirondo-López
+Author-email: jon.gabirondol@ehu.eus
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: brukeropusreader>=1.3.0
+
+# FT4FTIR
+
+FT4FTIR (Fourier Tranform for Fourier Transform Infrared Spectroscopy) is a Python package for processing interferograms from FTIR (Fourier Transform Infrared Spectroscopy) data. 
+It supports reading Bruker OPUS files, processing interferograms (apodization, zero-filling, Fourier transform), 
+and extracting spectra for further analysis.
+
+## Installation
+
+You can install the package using `pip`:
+
+```bash
+pip install ft4ftir
