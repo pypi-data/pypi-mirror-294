@@ -1,0 +1,360 @@
+{
+    "France":
+    {
+        "UTC-10:00": ["Society Islands", "Tuamotus", "Austral Islands"],
+        "UTC-09:30": ["Marquesas Islands"],
+        "UTC-09:00": ["Gambier Islands"],
+        "UTC-08:00": ["Clipperton Island"],
+        "UTC-04:00": ["Guadeloupe", "Martinique", "Saint Barthélemy", "Saint Martin"],
+        "UTC-3:00": ["French Guiana", "Saint Pierre and Miquelon"],
+        "UTC+01:00": ["Metropolitan France"],
+        "UTC+03:00": ["Mayotte", "Scattered Islands in the Indian Ocean"],
+        "UTC+04:00": ["Réunion", "Crozet Islands"],
+        "UTC+05:00": ["Kerguelen Islands", "Saint Paul and Amsterdam Islands"],
+        "UTC+11:00": ["New Caledonia"],
+        "UTC+12:00": ["Wallis and Futuna"]
+    },
+    "Russia":
+    {
+        "UTC+02:00": ["Kaliningrad"],
+        "UTC+03:00": ["Moscow"],
+        "UTC+04:00": ["Astrakhan", "Samara", "Saratov", "Udmurtia", "Ulyanovsk"],
+        "UTC+05:00": ["Yekaterinburg", "Bashkortostan", "Chelyabinsk", "Khanty–Mansia", "Kurgan", "Orenburg", "Perm", "Sverdlovsk", "Tyumen", "Yamalia"],
+        "UTC+06:00": ["Omsk"],
+        "UTC+07:00": ["Krasnoyarsk", "Altai", "Kemerovo", "Khakassia", "Novosibirsk", "Tomsk", "Tuva"],
+        "UTC+08:00": ["Irkutsk", "Buryatia"],
+        "UTC+09:00": ["Yakutsk", "Amur", "Sakha Republic", "Zabaykalsky Krai"],
+        "UTC+10:00": ["Vladivostok", "Jewish Autonomous Oblast", "Khabarovsk", "Primorsky Krai", "Sakha Republic"],
+        "UTC+11:00": ["Magadan", "Sakha", "Sakhalin"],
+        "UTC+12:00": ["Kamchatka", "Chukotka"]
+    },
+    "United States":
+    {
+        "UTC-12:00": ["Baker Island", "Howland Island"],
+        "UTC-11:00": ["American Samoa", "Jarvis Island", "Kingman Reef", "Midway Atoll", "Palmyra Atoll"],
+        "UTC-10:00": ["Hawaii", "Aleutian Islands", "Johnston Atoll"],
+        "UTC-09:00": ["Alaska"],
+        "UTC-08:00": ["Pacific Time zone", "Idaho Panhandle", "Nevada", "Oregon"],
+        "UTC-07:00": ["Mountain Time zone", "Idaho", "Oregon", "Mountain states", "parts of adjacent states"],
+        "UTC-06:00": ["Central Time zone", "Gulf Coast", "Great Lakes"],
+        "UTC-05:00": ["Eastern Time zone", "Great Lakes", "Florida", "Atlantic coast"],
+        "UTC-04:00": ["Puerto Rico", "U.S. Virgin Islands"],
+        "UTC+10:00": ["Guam", "Northern Mariana Islands"],
+        "UTC+12:00": ["Wake Island"]
+    },
+    "Antarctica":
+    {
+        "UTC-03:00": ["Palmer Station", "Rothera Station"],
+        "UTC+00:00": ["Troll Station"],
+        "UTC+03:00": ["Syowa Station"],
+        "UTC+05:00": ["Mawson Station"],
+        "UTC+06:00": ["Vostok Station"],
+        "UTC+07:00": ["Davis Station"],
+        "UTC+08:00": ["Casey Station"],
+        "UTC+10:00": ["Dumont-d'Urville Station", "Casey Station"],
+        "UTC+11:00": ["Casey Station"],
+        "UTC+12:00": ["McMurdo Station", "Amundsen–Scott South Pole Station"]
+    },
+    "Australia":
+    {
+        "UTC+05:00": ["Heard and McDonald Islands"],
+        "UTC+06:30": ["Cocos (Keeling) Islands"],
+        "UTC+07:00": ["Christmas Island"],
+        "UTC+08:00": ["Western Australia", "Indian Pacific railway"],
+        "UTC+08:45": ["South Australia", "Western Australia"],
+        "UTC+09:30": ["South Australia", "Northern Territory", "New South Wales"],
+        "UTC+10:00": ["Queensland", "New South Wales", "Australian Capital Territory", "Victoria", "Tasmania"],
+        "UTC+10:30": ["Lord Howe Island"],
+        "UTC+11:00": ["Norfolk Island"]
+    },
+    "United Kingdom":
+    {
+        "UTC-08:00": ["Pitcairn Islands"],
+        "UTC-05:00": ["Cayman Islands", "Turks and Caicos Islands"],
+        "UTC-04:00": ["Anguilla", "Bermuda", "British Virgin Islands", "Montserrat"],
+        "UTC-03:00": ["Falkland Islands"],
+        "UTC-02:00": ["South Georgia and the South Sandwich Islands"],
+        "UTC+00:00": ["Main territory of the United Kingdom", "Saint Helena", "Ascension", "Tristan da Cunha", "Guernsey", "Isle of Man", "Jersey"],
+        "UTC+01:00": ["Gibraltar"],
+        "UTC+02:00": ["Akrotiri and Dhekelia"],
+        "UTC+06:00": ["British Indian Ocean Territory"]
+    },
+    "Canada":
+    {
+        "UTC-08:00": ["British Columbia", "Tungsten", "Cantung Mine", "Northwest Territories", "Yukon"],
+        "UTC-07:00": ["Alberta", "British Columbia", "Northwest Territories", "Nunavut", "Saskatchewan"],
+        "UTC-06:00": ["Manitoba", "Nunavut", "Ontario", "Saskatchewan"],
+        "UTC-05:00": ["Nunavut", "Ontario", "Quebec"],
+        "UTC-04:00": ["Labrador", "New Brunswick", "Nova Scotia", "Prince Edward Island", "Quebec"],
+        "UTC-03:30": ["Labrador", "Newfoundland"]
+    }, 
+    "Denmark":
+    {
+        "UTC-04:00": ["Pituffik Space Base"],
+        "UTC-03:00": ["Greenland"],
+        "UTC-01:00": ["Ittoqqortoormiit"],
+        "UTC+00:00": ["Danmarkshavn weather station", "Faroe Islands"],
+        "UTC+01:00": ["Main territory of Denmark"]
+    },
+    "New Zealand":
+    {
+        "UTC-11:00": ["Niue"],
+        "UTC-10:00": ["Cook Islands"],
+        "UTC+12:00": ["Main territiry of New Zealand"],
+        "UTC+12:45": ["Chatham Islands"],
+        "UTC+13:00": ["Tokelau"]
+    },
+    "Brazil":
+    {
+        "UTC-05:00": ["Brasília time -2", "Acre", "Southwestern Amazonas"],
+        "UTC-04:00": ["Brasília time -1", "Amazonas State", "Mato Grosso", "Mato Grosso do Sul", "Rondônia", "Roraima"],
+        "UTC-03:00": ["Brasília time", "Southeast Region", "South Region", "Northeast Region", "Goiás", "Distrito Federal", "Tocantins", "Pará", "Amapá"],
+        "UTC-02:00": ["Brasília time +1", "Fernando de Noronha", "Trindade and Martim Vaz", "Rocas Atoll", "Saint Peter and Saint Paul Archipelago"]
+    },
+    "Mexico": 
+    {
+        "UTC-08:00": ["Zone 4 or Northwest Zone", "State of Baja California"],
+        "UTC-07:00": ["Zone 3 or Pacific Zone", "Baja California Sur", "Chihuahua", "Nayarit", "Sinaloa", "Sonora"],
+        "UTC-06:00": ["Zone 2 or Central Zone", "Most of Mexico"],
+        "UTC-05:00": ["Zone 1 or Southeast Zone", "State of Quintana Roo"]
+    },
+    "Chile": 
+    {
+        "UTC-06:00": ["Easter Island"],
+        "UTC-04:00": ["Main territory of Chile"],
+        "UTC-03:00": ["Magallanes", "Chilean Antarctica"]
+    },
+    "Indonesia": 
+    {
+        "UTC+07:00": ["Western Indonesian Standard Time", "Sumatra", "Java", "Madura", "Bangka Belitung Islands", "Riau Islands", "West Kalimantan", "Central Kalimantan"],
+        "UTC+08:00": ["Central Indonesian Standard Time", "Sulawesi", "Bali", "East Nusa Tenggara", "West Nusa Tenggara", "East Kalimantan", "North Kalimantan", "South Kalimantan"],
+        "UTC+09:00": ["Eastern Indonesian Standard Time", "Maluku Islands", "Western New Guinea"]
+    },
+    "Kiribati": 
+    {
+        "UTC+12:00": ["Gilbert Islands"],
+        "UTC+13:00": ["Phoenix Islands"],
+        "UTC+14:00": ["Line Islands"]
+    },
+    "Democratic Republic of the Congo": 
+    {
+        "UTC+01:00": ["WAT", "Équateur", "Kinshasa", "Kongo Central", "Kwango", "Kwilu", "Mai-Ndombe", "Mongala", "Nord-Ubangi", "Sud-Ubangi", "Tshuapa"],
+        "UTC+02:00": ["CAT", "Bas-Uele", "Haut-Katanga", "Haut-Lomami", "Haut-Uele", "Kasaï", "Kasaï-Central", "Kasaï Oriental", "Lomami", "Lualaba", "Maniema", "Nord-Kivu", "Sankuru", "Sud-Kivu", "Tanganyika", "Tshopo", "Ituri Interim Administration"]
+    },
+    "Ecuador": 
+    {
+        "UTC-06:00": ["GALT", "Galápagos Province"],
+        "UTC-05:00": ["Ecuador Time", "Main territory"]
+    },
+    "Federated States of Micronesia": 
+    {
+        "UTC+10:00": ["Chuuk", "Yap"],
+        "UTC+11:00": ["Kosrae", "Pohnpei"]
+    },
+    "Kingdom of the Netherlands": 
+    {
+        "UTC-04:00": ["AST", "Caribbean municipalities", "constituent countries"],
+        "UTC+01:00": ["CET", "Main territory of Netherland"]
+    },
+    "Mongolia": 
+    {
+        "UTC+07:00": ["Khovd", "Uvs", "Bayan-Ölgii"],
+        "UTC+08:00": ["Most of the country"]
+    },
+    "Papua New Guinea": 
+    {
+        "UTC+10:00": ["Most of the country"],
+        "UTC+11:00": ["Autonomous Region of Bougainville"]
+    },
+    "Portugal": 
+    {
+        "UTC-01:00": ["Azores"],
+        "UTC+00:00": ["WET", "Madeira", "Main territory of Portugal"]
+    },
+    "South Africa": 
+    {
+        "UTC+02:00": ["South African Standard Time", "Main territory of South Africa"],
+        "UTC+03:00": ["Prince Edward Islands"]
+    },
+    "Spain": 
+    {
+        "UTC+00:00": ["WET", "Canary Islands"],
+        "UTC+01:00": ["CET", "Main territory of Spain"]
+    },
+    "Afghanistan": { "UTC+04:30": ["Time in Afghanistan"] },
+    "Albania": { "UTC+01:00": ["CET", "Time in Albania"] },
+    "Algeria": { "UTC+01:00": ["CET", "Time in Algeria"] },
+    "Andorra": { "UTC+01:00": ["CET", "Time in Andorra"] },
+    "Angola": { "UTC+01:00": ["WAT", "Time in Angola"] },
+    "Antigua and Barbuda": { "UTC-04:00": ["AST"] },
+    "Argentina": { "UTC-03:00": ["ART", "Time in Argentina"] },
+    "Armenia": { "UTC+04:00": ["Time in Armenia"] },
+    "Austria": { "UTC+01:00": ["CET", "Time in Austria"] },
+    "Azerbaijan": { "UTC+04:00": ["Time in Azerbaijan"] },
+    "Bahamas": { "UTC-05:00": ["EST"] },
+    "Bahrain": { "UTC+03:00": ["Time in Bahrain"] },
+    "Bangladesh": { "UTC+06:00": ["BST", "Time in Bangladesh"] },
+    "Barbados": { "UTC-04:00": [] },
+    "Belarus": { "UTC+03:00": ["FET", "Time in Belarus"] },
+    "Belgium": { "UTC+01:00": ["CET", "Time in Belgium"] },
+    "Belize": { "UTC-06:00": [] },
+    "Benin": { "UTC+01:00": ["WAT"] },
+    "Bhutan": { "UTC+06:00": ["BTT", "Time in Bhutan"] },
+    "Bolivia": { "UTC-04:00": [] },
+    "Bosnia and Herzegovina": { "UTC+01:00": ["CET", "Time in Bosnia and Herzegovina"] },
+    "Botswana": { "UTC+02:00": ["CAT"] },
+    "Brunei": { "UTC+08:00": ["Time in Brunei"] },
+    "Bulgaria": { "UTC+02:00": ["EET", "Time in Bulgaria"] },
+    "Burkina Faso": { "UTC+00:00": [] },
+    "Burundi": { "UTC+02:00": ["CAT"] },
+    "Cambodia": { "UTC+07:00": ["Time in Cambodia"] },
+    "Cameroon": { "UTC+01:00": ["WAT"] },
+    "Cape Verde": { "UTC-01:00": ["Cape Verde Time"] },
+    "Central African Republic": { "UTC+01:00": ["WAT"] },
+    "Chad": { "UTC+01:00": ["WAT"] },
+    "China": { "UTC+08:00": ["CST", "only uses Xinjiang Time unofficially in Tibet and Xinjiang", "Time in China"] },
+    "Colombia": { "UTC-05:00": ["Time in Colombia"] },
+    "Comoros": { "UTC+03:00": ["EAT"] },
+    "Republic of the Congo": { "UTC+01:00": ["WAT"] },
+    "Costa Rica": { "UTC-06:00": ["Time in Costa Rica"] },
+    "Croatia": { "UTC+01:00": ["CET", "Time in Croatia"] },
+    "Cuba": { "UTC-05:00": [] },
+    "Cyprus": { "UTC+02:00": ["EET", "Time in Cyprus"] },
+    "Czech Republic": { "UTC+01:00": ["CET", "CRT", "Time in the Czech Republic"] },
+    "Djibouti": { "UTC+03:00": ["EAT"] },
+    "Dominica": { "UTC-04:00": [] },
+    "Dominican Republic": { "UTC-04:00": [] },
+    "East Timor": { "UTC+09:00": ["Time in East Timor"] },
+    "Egypt": { "UTC+02:00": ["EET", "Time in Egypt"] },
+    "El Salvador": { "UTC-06:00": [] },
+    "Equatorial Guinea": { "UTC+01:00": ["WAT"] },
+    "Eritrea": { "UTC+03:00": ["EAT"] },
+    "Estonia": { "UTC+02:00": ["EET"] },
+    "Eswatini": { "UTC+02:00": [] },
+    "Ethiopia": { "UTC+03:00": ["EAT", "Time in Ethiopia"] },
+    "Fiji": { "UTC+12:00": ["Time in Fiji"] },
+    "Finland": { "UTC+02:00": ["EET", "Time in Finland"] },
+    "Gabon": { "UTC+01:00": ["WAT"] },
+    "Gambia": { "UTC+00:00": [] },
+    "Georgia": { "UTC+04:00": ["Time in Georgia"] },
+    "Germany": { "UTC+01:00": ["CET", "Time in Germany"] },
+    "Ghana": { "UTC+00:00": ["Time in Ghana"] },
+    "Greece": { "UTC+02:00": ["EET", "Time in Greece"] },
+    "Grenada": { "UTC-04:00": [] },
+    "Guatemala": { "UTC-06:00": [] },
+    "Guinea": { "UTC+00:00": [] },
+    "Guinea-Bissau": { "UTC+00:00": [] },
+    "Guyana": { "UTC-04:00": [] },
+    "Haiti": { "UTC-05:00": [] },
+    "Honduras": { "UTC-06:00": [] },
+    "Hong Kong": { "UTC+08:00": ["HKT", "Time in Hong Kong"] },
+    "Hungary": { "UTC+01:00": ["CET", "Time in Hungary"] },
+    "Iceland": { "UTC+00:00": ["Time in Iceland"] },
+    "India": { "UTC+05:30": ["IST", "Time in India"] },
+    "Iran": { "UTC+03:30": ["IRST", "Time in Iran"] },
+    "Iraq": { "UTC+03:00": ["Time in Iraq"] },
+    "Ireland": { "UTC+00:00": ["WET", "Time in Ireland"] },
+    "Israel": { "UTC+02:00": ["IST", "Time in Israel"] },
+    "Italy": { "UTC+01:00": ["CET", "Time in Italy"] },
+    "Ivory Coast": { "UTC+00:00": [] },
+    "Jamaica": { "UTC−05:00": ["Time in Jamaica"] },
+    "Japan": { "UTC+09:00": ["JST", "Time in Japan"] },
+    "Jordan": { "UTC+03:00": ["Time in Jordan"] },
+    "Kazakhstan": { "UTC+05:00": ["Time in Kazakhstan"] },
+    "Kenya": { "UTC+03:00": ["EAT", "Time in Kenya"] },
+    "North Korea": { "UTC+09:00": ["Pyongyang Time", "Time in North Korea"] },
+    "South Korea": { "UTC+09:00": ["Korea Standard Time", "Time in South Korea"] },
+    "Kuwait": { "UTC+03:00": ["Arabia Standard Time", "Time in Kuwait"] },
+    "Kyrgyzstan": { "UTC+06:00": ["Time in Kyrgyzstan"] },
+    "Laos": { "UTC+07:00": ["Time in Laos"] },
+    "Latvia": { "UTC+02:00": ["EET"] },
+    "Lebanon": { "UTC+02:00": ["EET", "Time in Lebanon"] },
+    "Lesotho": { "UTC+02:00": [] },
+    "Liberia": { "UTC±00:00": [] },
+    "Libya": { "UTC+02:00": ["EET", "Time in Libya"] },
+    "Liechtenstein": { "UTC+01:00": ["CET", "Time in Liechtenstein"] },
+    "Lithuania": { "UTC+02:00": ["EET", "Time in Lithuania"] },
+    "Luxembourg": { "UTC+01:00": ["CET", "Time in Luxembourg"] },
+    "Macau": { "UTC+08:00": ["Macau Standard Time", "Time in Macau"] },
+    "Madagascar": { "UTC+03:00": ["EAT"] },
+    "Malawi": { "UTC+02:00": ["CAT"] },
+    "Malaysia": { "UTC+08:00": ["Malaysian Standard Time", "Time in Malaysia"] },
+    "Maldives": { "UTC+05:00": ["Time in the Maldives"] },
+    "Mali": { "UTC±00:00": [] },
+    "Malta": { "UTC+01:00": ["CET", "Time in Malta"] },
+    "Marshall Islands": { "UTC+12:00": ["Time in the Marshall Islands"] },
+    "Mauritania": { "UTC±00:00": [] },
+    "Mauritius": { "UTC+04:00": ["Mauritius Time"] },
+    "Moldova": { "UTC+02:00": ["EET", "Time in Moldova"] },
+    "Monaco": { "UTC+01:00": ["CET", "Time in Monaco"] },
+    "Montenegro": { "UTC+01:00": ["CET", "Time in Montenegro"] },
+    "Morocco": { "UTC+01:00": ["CET"] },
+    "Mozambique": { "UTC+02:00": ["CAT"] },
+    "Myanmar": { "UTC+06:30": ["Myanmar Standard Time", "Time in Myanmar"] },
+    "Namibia": { "UTC+02:00": ["CAT", "Time in Namibia"] },
+    "Nauru": { "UTC+12:00": [] },
+    "Nepal": { "UTC+05:45": ["Nepal Time", "Time in Nepal"] },
+    "Nicaragua": { "UTC−06:00": [] },
+    "Niger": { "UTC+01:00": ["WAT"] },
+    "Nigeria": { "UTC+01:00": ["WAT"] },
+    "North Macedonia": { "UTC+01:00": ["CET", "Time in North Macedonia"] },
+    "Norway": { "UTC+01:00": ["CET", "Time in Norway"] },
+    "Oman": { "UTC+04:00": ["Time in Oman"] },
+    "Pakistan": { "UTC+05:00": ["PKT", "Time in Pakistan"] },
+    "Palau": { "UTC+09:00": ["Time in Palau"] },
+    "Palestine": { "UTC+02:00": ["Time in the State of Palestine"] },
+    "Panama": { "UTC−05:00": [] },
+    "Paraguay": { "UTC−04:00": ["Time in Paraguay"] },
+    "Peru": { "UTC−05:00": ["PET", "Time in Peru"] },
+    "Philippines": { "UTC+08:00": ["PHT", "Time in the Philippines"] },
+    "Poland": { "UTC+01:00": ["CET", "Time in Poland"] },
+    "Qatar": { "UTC+03:00": ["Arabia Standard Time", "Time in Qatar"] },
+    "Romania": { "UTC+02:00": ["EET", "Time in Romania"] },
+    "Rwanda": { "UTC+02:00": ["CAT"] },
+    "Saint Kitts and Nevis": { "UTC−04:00": [] },
+    "Saint Lucia": { "UTC−04:00": [] },
+    "Saint Vincent and the Grenadines": { "UTC−04:00": [] },
+    "Samoa": { "UTC+13:00": ["Time in Samoa"] },
+    "San Marino": { "UTC+01:00": ["CET", "Time in San Marino"] },
+    "São Tomé and Príncipe": { "UTC±00:00": [] },
+    "Saudi Arabia": { "UTC+03:00": ["Arabia Standard Time", "Time in Saudi Arabia"] },
+    "Senegal": { "UTC±00:00": [] },
+    "Serbia": { "UTC+01:00": ["CET", "Time in Serbia"] },
+    "Seychelles": { "UTC+04:00": ["Seychelles Time"] },
+    "Sierra Leone": { "UTC±00:00": [] },
+    "Singapore": { "UTC+08:00": ["SST", "Time in Singapore"] },
+    "Slovakia": { "UTC+01:00": ["CET", "Time in Slovakia"] },
+    "Slovenia": { "UTC+01:00": ["CET", "Time in Slovenia"] },
+    "Solomon Islands": { "UTC+11:00": ["Time in Solomon Islands"] },
+    "Somalia": { "UTC+03:00": ["EAT"] },
+    "South Sudan": { "UTC+02:00": ["CAT", "Time in South Sudan"] },
+    "Sri Lanka": { "UTC+05:30": ["SLST", "Time in Sri Lanka"] },
+    "Sudan": { "UTC+02:00": ["Time in Sudan"] },
+    "Suriname": { "UTC−03:00": [] },
+    "Sweden": { "UTC+01:00": ["CET", "Time in Sweden"] },
+    "Switzerland": { "UTC+01:00": ["CET", "Time in Switzerland"] },
+    "Syria": { "UTC+03:00": ["EET", "Time in Syria"] },
+    "Taiwan": { "UTC+08:00": ["Time in Taiwan"] },
+    "Tajikistan": { "UTC+05:00": ["Time in Tajikistan"] },
+    "Tanzania": { "UTC+03:00": ["EAT"] },
+    "Thailand": { "UTC+07:00": ["THA", "Time in Thailand"] },
+    "Togo": { "UTC±00:00": [] },
+    "Tonga": { "UTC+13:00": ["Time in Tonga"] },
+    "Trinidad and Tobago": { "UTC−04:00": ["AST", "Time in Trinidad and Tobago"] },
+    "Tunisia": { "UTC+01:00": ["CET"] },
+    "Turkey": { "UTC+03:00": ["TRT", "Time in Turkey"] },
+    "Turkmenistan": { "UTC+05:00": ["Time in Turkmenistan"] },
+    "Tuvalu": { "UTC+12:00": ["Time in Tuvalu"] },
+    "Uganda": { "UTC+03:00": ["EAT"] },
+    "Ukraine": { "UTC+02:00": ["EET", "Time in Ukraine"] },
+    "United Arab Emirates": { "UTC+04:00": ["Time in the United Arab Emirates"] },
+    "Uruguay": { "UTC−03:00": ["Time in Uruguay"] },
+    "Uzbekistan": { "UTC+05:00": ["Uzbekistan Time", "Time in Uzbekistan"] },
+    "Vanuatu": { "UTC+11:00": ["Time in Vanuatu"] },
+    "Vatican City": { "UTC+01:00": ["CET", "Time in Vatican City"] },
+    "Venezuela": { "UTC−04:00": ["Time in Venezuela"] },
+    "Vietnam": { "UTC+07:00": ["Indochina Time", "Time in Vietnam"] },
+    "Yemen": { "UTC+03:00": ["Time in Yemen"] },
+    "Zambia": { "UTC+02:00": ["CAT"] },
+    "Zimbabwe": { "UTC+02:00": ["CAT"] }
+}
