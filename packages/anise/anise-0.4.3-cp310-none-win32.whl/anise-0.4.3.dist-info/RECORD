@@ -1,0 +1,5 @@
+anise-0.4.3.dist-info/METADATA,sha256=XDUgdx1QQQtWBe5kFsgZ4y8CDWUXMzMZP1Ogr3Dfmm8,6946
+anise-0.4.3.dist-info/WHEEL,sha256=D1_ZSWW8Lt0FXZcnIWUmN80ixMJn5U7QC5eCY3AtAQA,91
+anise/__init__.py,sha256=fxCM8U0C0Arf9lTTNySPgdYsVN94D95GuBje4ASb8J8,103
+anise/anise.cp310-win32.pyd,sha256=Ow1PsmXlpkw0qMzbDCapcjJEwJjq4ymUoLgUE17NuWU,8482304
+anise-0.4.3.dist-info/RECORD,,
