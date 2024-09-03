@@ -1,0 +1,3 @@
+[hyperflask.extensions]
+auth=hyperflask_auth:Auth
+

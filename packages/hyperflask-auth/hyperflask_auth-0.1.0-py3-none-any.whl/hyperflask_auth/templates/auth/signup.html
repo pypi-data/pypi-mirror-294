@@ -1,0 +1,18 @@
+{% extends "auth/layout.html" %}
+
+{% block auth_header %}
+  <h3 class="font-semibold text-2xl text-gray-800">Sign Up</h3>
+  <p class="text-gray-500">Create an account.</p>
+{% endblock %}
+
+{% block auth_content %}
+<{Form}>
+    <{FormControl label="Email"}>
+      {{ form.email.email(placeholder="you@domain.com", required=True) }}
+    </{}>
+    <{FormControl label="Password"}>
+      {{ form.password.password(required=True) }}
+    </{}>
+    <{Button type="submit" style="primary"}>Signup</{}>
+</{}>
+{% endblock %}
