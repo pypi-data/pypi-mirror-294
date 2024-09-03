@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: dbtimer
+Version: 0.1.1
+Summary: A Django management command to measure and benchmark database query performance.
+Home-page: https://bitbucket.org/dpater/dbtimer
+Author: Django Web Studio
+Author-email: devs@djangowebstudio.com
+License: GNU
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django <5.0,>=3.2
+Requires-Dist: tqdm >=4.64.0
+Requires-Dist: boto3 >=1.18.0
+Requires-Dist: matplotlib >=3.4.0
+Requires-Dist: requests >=2.26.0
+
+# DBTimer for Django
+
+## Overview
+
+`DBTimer` is a Django management command designed to measure the performance of various database operations (read, write, search) across different models and databases in a Django application. It helps developers and database administrators benchmark and optimize query performance by recording execution times and generating visual graphs.
+
+## Features
+
+- **Measure Query Times**: Perform read, write, and search operations on specified models and record the time taken for each operation.
+- **Support for Multiple Databases**: Test and compare the performance of different database configurations.
+- **Automated Graph Generation**: Generate graphs visualizing query performance and upload them to an S3-compatible storage service.
+- **Detailed Reporting**: Save results in JSON and HTML formats, including performance metrics and comparisons.
+- **Exception Handling**: Log and handle exceptions encountered during database operations.
+- **Customizable via Django Settings**: Configure models, fields, and operations to benchmark directly in Django settings.
+
+## Installation
+
+You can install the `Django DBTimer Command` package via `pip`:
+
+```bash
+pip install dbtimer
+```
+
+## Configuration
+To use the Django DBTimer Command, you need to add some configuration to your Django settings:
+
+### settings_local.py
+Most commonly you will be creating a settings_local because this feature will likely not be used in production.
+
+####Example:
+```
+DBTIMER_ARGS = {
+    "cycles": 100,  # Number of iterations per operation
+    "sleep": 0.1,   # Sleep interval between operations
+    "operations": ["read", "write", "search"],  # Operations to benchmark
+    "models": [
+        {
+            "conf": ("myapp", "MyModel"),
+            "name": "MyModel",
+            "attr": "field_name",
+            "search": {"field_name__icontains": "test"},
+        },
+        # Add more models as needed
+    ],
+    "dbs": ["default", "replica"],  # Databases to test
+}
+```
+
+### AWS S3 configuration for storing graphs
+AWS_S3_REGION_NAME = 'your-region'
+AWS_S3_ENDPOINT_URL = 'https://your-s3-endpoint'
+AWS_ACCESS_KEY_ID = 'your-access-key-id'
+AWS_SECRET_ACCESS_KEY = 'your-secret-access-key'
+LINODE_BUCKET = 'your-s3-bucket-name'
+
+## Usage
+Run the management command with optional notes:
+`python manage.py dbtimer --notes "Testing query performance on different branches"`
+
+## Output
+The command will produce:
+
+* Graphs: Plots showing the duration of each operation for different database configurations, uploaded to the specified S3 bucket.
+* JSON Report: A JSON file containing detailed results of the benchmark session.
+* HTML Report: An HTML file summarizing the results, including links to the generated graphs.
+
+## Example Output
+After running the command, you will see logs indicating the progress and completion of the benchmarking process. The output files will be saved to your S3 bucket, and a URL will be provided in the console.
+
+## Dependencies
+* Django
+* tqdm for progress bars
+* boto3 for S3 operations
+* matplotlib for graph generation
+* requests for HTTP operations
+Ensure these dependencies are listed in your requirements.txt or setup.py for easy installation.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+For any questions or feedback, please contact devs@djangowebstudio.com.
