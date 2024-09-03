@@ -1,0 +1,8 @@
+meditation_audio_generator/__init__.py,sha256=9fyetywje-kjC2g6uNl2-i5nr_7BLCWS3GuPeecGlrw,64
+meditation_audio_generator/meditation_audio_generator.py,sha256=XiUBEpji2yJY7-Nq9sNCQ9u7spBY9udqsj0ejccB13M,32362
+meditation_audio_generator/mp3_merger.py,sha256=jy-upYaB7b9JBoz6hZh3zBiYH3C0PgvO0LtLfv2vLE8,8140
+meditation_audio_generator/mp3_mixer.py,sha256=CE1VByaZKCOw2gxwR4HE3WmfUAiyUXWJaIyi_EZYDuc,10557
+meditation_audio_generator_openai-1.0.1.dist-info/METADATA,sha256=y7dF_O49LizmcDfWWLuRpth-a_heu1bJhf3JkyMUPMY,8229
+meditation_audio_generator_openai-1.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+meditation_audio_generator_openai-1.0.1.dist-info/top_level.txt,sha256=ErPVNr4UZoUPLlIB_0mbsXmS290zH_FBhpMA67Gc338,27
+meditation_audio_generator_openai-1.0.1.dist-info/RECORD,,
