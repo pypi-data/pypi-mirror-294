@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "async-batcher"
+version = "0.2.1"
+description = "A service to batch your http requests."
+authors = ["Hussein Awala <hussein@awala.fr>"]
+readme = "README.md"
+repository = "https://github.com/hussein-awala/async-batcher"
+keywords = ["python", "asyncio", "rest", "grpc", "fastapi"]
+license = "Apache-2.0"
+packages = [{include = "async_batcher"}]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/hussein-awala/async-batcher/issues"
+"Documentation" = "https://github.com/hussein-awala/async-batcher/blob/main/README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aioboto3 = {version = "^13.1", optional = true}
+scylla-driver = {version = "^3", optional = true}
+keras = [
+    {version = "^2.12", optional = true, markers = "python_version < '3.12'"},
+    {version = ">=2.12 <4", optional = true, markers = "python_version == '3.12'"}
+]
+scikit-learn = [
+    {version = "^1.2", optional = true, markers = "python_version < '3.12'"},
+    {version = "^1.3", optional = true, markers = "python_version == '3.12'"}
+]
+sqlalchemy = {version = ">=1.4 <3", extras = ["asyncio"], optional = true}
+
+[tool.poetry.extras]
+aws= ["aioboto3"]
+scylla = ["scylla-driver"]
+keras = ["keras"]
+sklearn = ["scikit-learn"]
+sqlalchemy = ["sqlalchemy"]
+
+[tool.poetry.dev-dependencies]
+mock = "^5.1.0"
+pytest = "^8"
+pytest-asyncio = "^0.23.5"
+pre-commit = "^3"
+types-aioboto3 = {version = "^13.1", extras = ["dynamodb"]}
+aiosqlite = "^0.20"
+asyncpg = "^0.29"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+indent-width = 4
+src = ["async_batcher", "examples", "tests"]
+fixable = ["ALL"]
+ignore = ["E712"]
+select = [
+    "E", # pycodestyle
+    "W", # pycodestyle
+    "F", # Pyflakes
+    "B", # flake8-bugbear
+    "PIE", # flake8-pie
+    "C4", # flake8-comprehensions
+    "I", # isort
+    "UP", # pyupgrade,
+    "TCH", # flake8-type-checking
+]
+exclude = ["*_pb2*"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.isort]
+required-imports = ["from __future__ import annotations"]
+combine-as-imports = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
