@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: ovos-skill-boot-finished
+Version: 0.1.0
+Summary: OVOS finished booting skill
+Home-page: https://github.com/OpenVoiceOS/skill-ovos-boot-finished
+Author: OpenVoiceOS
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Description: # Finished Booting
+        
+        ## Summary
+        
+        Skill to speak when OVOS is ready
+        
+        ## Description
+        
+        When OpenVoiceOS is started or restarted, this skill will speak a notification to the
+        user. This speech can be enabled/disabled by intent.
+        
+        ## Examples
+        
+        - "Enable ready notifications."
+        - "Disable load speech."
+        
+        ## Credits
+        [NeonGeckoCom](https://github.com/NeonGeckoCom/skill-core_ready)
+        
+        ## Category
+        **Daily**
+        
+Keywords: ovos skill plugin
+Platform: UNKNOWN
