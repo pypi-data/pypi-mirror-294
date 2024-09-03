@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+intentclassification/__init__.py
+intentclassification/intentclassification.py
+intentclassification.egg-info/PKG-INFO
+intentclassification.egg-info/SOURCES.txt
+intentclassification.egg-info/dependency_links.txt
+intentclassification.egg-info/requires.txt
+intentclassification.egg-info/top_level.txt
