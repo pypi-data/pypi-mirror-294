@@ -1,0 +1,14 @@
+README.md
+setup.py
+pycompileo/__init__.py
+pycompileo.egg-info/PKG-INFO
+pycompileo.egg-info/SOURCES.txt
+pycompileo.egg-info/dependency_links.txt
+pycompileo.egg-info/top_level.txt
+pycompileo/compilation/__init__.py
+pycompileo/compilation/compiler.py
+pycompileo/compilation/decompiler.py
+pycompileo/obfuscation/__init__.py
+pycompileo/obfuscation/obfuscate.py
+pycompileo/obfuscation/obfuscate_module.py
+pycompileo/obfuscation/obfuscate_package.py
