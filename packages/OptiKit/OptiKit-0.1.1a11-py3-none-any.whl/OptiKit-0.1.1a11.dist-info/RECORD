@@ -1,0 +1,12 @@
+optikit/Beam.py,sha256=E711meMR3Rhr-tq8H3g7-OcAgQa3aqnrvOoBjFnFiVA,5661
+optikit/Gaussian.py,sha256=DfXDYSUsZlwJYgTLtMSH83bYhNvK2jhKBoBSu0SFuzE,5315
+optikit/HermiteGauss.py,sha256=7jlW6iV2KpwHF61tbQNrTLox2hd0KS5kvtbWjnze69A,7076
+optikit/InceGauss.py,sha256=INaGuTTYEo6lb7mhB1j8eU0Qw2TXJ2OPlN6rgxTk5lI,15362
+optikit/LaguerreGauss.py,sha256=PD25027CvdvqqtrOhTsr3HI937Aj3L2JO78cO5Om6Wo,7010
+optikit/__init__.py,sha256=1h7AcKgaYMYOr4N-TNzBsm1fpWSfXXiumXWiul8oXzo,130
+optikit/optics.py,sha256=pay06QUaXPASUX4f2qstflGX5aFOeLWQocASkn05cwk,5232
+OptiKit-0.1.1a11.dist-info/LICENSE,sha256=2ETruSKXK0eJFHTpGQkiOtRCtThFZhon5Q5YJSVbF3Q,1103
+OptiKit-0.1.1a11.dist-info/METADATA,sha256=h-XhdXXVgQeqtiWONNwR82OAHwWvqfJJ7oUOme-ogDs,10104
+OptiKit-0.1.1a11.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+OptiKit-0.1.1a11.dist-info/top_level.txt,sha256=kiGlc7zUzFay63Q7_IJ9mG-JzH6B8BrfD0xIhQAr1s8,8
+OptiKit-0.1.1a11.dist-info/RECORD,,
