@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: scipion-em-kiharalab
+Version: 1.1.1
+Summary: Scipion plugin in order to use ther kiharalab software
+Home-page: https://github.com/scipion-em/scipion-em-kiharalab
+Author: Daniel Del Hoyo, Martín Salinas
+Author-email: ddelhoyo@cnb.csic.es, martin.salinas@cnb.csic.es
+Project-URL: Bug Reports, https://github.com/scipion-em/scipion-em-kiharalab/issues
+Project-URL: Pull Requests, https://github.com/scipion-em/scipion-em-kiharalab/pulls
+Keywords: scipion kiharalab scipion-3.0 EM
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+.. |organization| replace:: scipion-em
+.. |repository| replace:: scipion-em-kiharalab
+
+========================================
+Kihara Lab plugin
+========================================
+This is a **Scipion** plugin that offers different `Kihara Lab tools <https://kiharalab.org/>`_.
+These tools will make it possible to carry out different functions for working with electron density maps.
+The code involving these functionalities can be found at https://github.com/kiharalab.
+
+Therefore, this plugin allows to use programs from the DAQ software suite
+within the Scipion framework.
+
+========================================
+Wiki
+========================================
+All the information regarding installation, protocols, changelog and others, can be found in the `Wiki <https://github.com/scipion-em/scipion-em-kiharalab/wiki>`_.
