@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vovo
+Version: 0.0.5
+Summary: vovo base package
+Author: Ark
+Author-email: ark.wu@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx[http2] (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic (>=2.8.2,<2.9.0)
+Requires-Dist: requests (>=2.32.3,<2.33.0)
+Requires-Dist: sentry-sdk (>=2.13.0,<2.14.0)
+Requires-Dist: tqdm (>=4.66.4,<4.67.0)
