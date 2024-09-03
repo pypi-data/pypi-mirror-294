@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pypi-test-lib
+Version: 1.0.0
+Summary: This is a test lib.
+Author: sz
+Author-email: xixihaha@qq.com
+License: MIT
+License-File: LICENSE.txt
+
+
+
+This is a title
+===============
+
+*这是斜体*
+
+**这是粗体**
+
+``This is Code``
