@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bc_pulse_krT"
+version = "3.0.0b32"
+authors = [
+    { name = "fieryhenry" },
+    { name = "CintagramABP" }
+]
+description = "A save file editor for The Battle Cats"
+license = { text = "GPL-3.0-or-later License" }
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "aenum",
+    "colored==1.4.4",
+    "pyjwt",
+    "requests",
+    "pyyaml",
+    "beautifulsoup4",
+    "colorama"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
