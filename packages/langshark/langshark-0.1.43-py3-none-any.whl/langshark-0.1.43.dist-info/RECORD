@@ -1,0 +1,9 @@
+langshark/__init__.py,sha256=OvdR4aaNL13ni_mzTO3MFBxNE79pOj8o9EGeFjvuLyU,103
+langshark/client.py,sha256=GfNmVYlBUCtB_-uEGpSdxZNut6DJXJmr6qTkho_tVJ8,1657
+langshark/decorators.py,sha256=zWknur__EW7Lz_AUzD01usDdUD6fb8DumrVbaODR0AU,870
+langshark/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langshark-0.1.43.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langshark-0.1.43.dist-info/METADATA,sha256=Z4MIC4VuT5tDaBBFuupn6_95ZKrI-FDgvync4DT58U0,1811
+langshark-0.1.43.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+langshark-0.1.43.dist-info/top_level.txt,sha256=hlDKPRx7T4ICT9qZN-6_z9k622nSgTHHc4QHnrETlhc,10
+langshark-0.1.43.dist-info/RECORD,,
