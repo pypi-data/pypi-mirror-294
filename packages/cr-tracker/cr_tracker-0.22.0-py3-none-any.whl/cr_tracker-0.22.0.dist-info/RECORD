@@ -1,0 +1,15 @@
+CR-Tracker/Testing3.ipynb,sha256=Q0suleJW5GLBF8nK8SzM_Zoqzr0dXe1SCFSGy8_X_n0,39052
+CR-Tracker/__init__.py,sha256=KmXM_AmoBFvGvKxtPdVaz3XLCqbHTlv2lx76_hkhuf0,181
+CR-Tracker/main.py,sha256=mrP9DeQCI_Fuyl3XNxzkl-q0rt4O7oyQP2xsoWAemag,13553
+CR-Tracker/main_ws.py,sha256=mrP9DeQCI_Fuyl3XNxzkl-q0rt4O7oyQP2xsoWAemag,13553
+CR-Tracker/main_ws_only.py,sha256=MpWjpQou1BpX7PtogVlCz2Fi09aHVpLBlQ7IFD92yB8,7338
+CR-Tracker/testing4.ipynb,sha256=Kf9saE_HwHFXnpjg9diz6EbIHVjboS9eEIMcSGbOhVk,7395
+CR-Tracker/testing5.ipynb,sha256=hn49fhEqT-5bIp4w8BLPtQTE7JqPOySrUUZaxAAQi4w,8191
+CR-Tracker/__pycache__/main_ws.cpython-39.pyc,sha256=nopJflebSht0IEQpJzhwS256OTdNb76zf2aia1bKIXo,8144
+CR-Tracker/__pycache__/main_ws_only.cpython-39.pyc,sha256=WXLcNAOrO8zbEsCJ_Yvd-UMbeNBHq_-GCBVTtOKlbnc,4825
+cr_tracker/__init__.py,sha256=3Ap6Hi3aYnHbxQmpywW5ClXTTW5bZW1Yw713iFY152Y,223
+cr_tracker/main.py,sha256=mrP9DeQCI_Fuyl3XNxzkl-q0rt4O7oyQP2xsoWAemag,13553
+cr_tracker-0.22.0.dist-info/METADATA,sha256=ECAzjkAlVzIVN7GhF40BC_Ghe0K-oML5r8eMHVp17ag,8662
+cr_tracker-0.22.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cr_tracker-0.22.0.dist-info/top_level.txt,sha256=UNnJtuFskIkBx8ikx9zGjgnuh5VTQpJE8zIlR6sC77o,11
+cr_tracker-0.22.0.dist-info/RECORD,,
