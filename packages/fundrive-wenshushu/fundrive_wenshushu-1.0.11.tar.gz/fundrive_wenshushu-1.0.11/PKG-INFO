@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fundrive-wenshushu
+Version: 1.0.11
+Summary: 
+Author: farfun
+Author-email: 1007530194@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: base58 (>=2.1.0,<3.0.0)
+Requires-Dist: fundrive (>=1.0.53,<2.0.0)
+Requires-Dist: pycryptodomex (>=3.20.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
