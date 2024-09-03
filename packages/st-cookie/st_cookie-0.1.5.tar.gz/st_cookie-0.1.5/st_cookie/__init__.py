@@ -1,0 +1,6 @@
+__version__ = "0.1.5"
+
+from ._cookie_manager import CookieManager
+
+cookie_manager = CookieManager()
+__all__ = ["cookie_manager"]
