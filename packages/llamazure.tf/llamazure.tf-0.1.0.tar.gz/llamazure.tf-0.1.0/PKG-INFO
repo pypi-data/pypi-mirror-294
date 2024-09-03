@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: llamazure.tf
+Version: 0.1.0
+Summary: Generate some azurerm resources without the headache
+Author: Daniel Goldman
+Maintainer: Daniel Goldman
+License: Round Robin 2.0.0
+Project-URL: Homepage, https://github.com/lilatomic/llamazure
+Project-URL: Repository, https://github.com/lilatomic/llamazure
+Project-URL: Changelog, https://github.com/lilatomic/llamazure/blob/main/llamazure/tf/changelog.md
+Project-URL: Issues, https://github.com/lilatomic/llamazure/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet :: Log Analysis
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# llamazure.tf
+
+Easily generate azurerm resources.
+
+## Network
+
+Network rules are a pain. Generate them easily!

@@ -1,0 +1,11 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+llamazure.tf.egg-info/PKG-INFO
+llamazure.tf.egg-info/SOURCES.txt
+llamazure.tf.egg-info/dependency_links.txt
+llamazure.tf.egg-info/namespace_packages.txt
+llamazure.tf.egg-info/top_level.txt
+llamazure/tf/__init__.py
+llamazure/tf/models.py
+llamazure/tf/network.py
