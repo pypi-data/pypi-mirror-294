@@ -1,0 +1,3 @@
+recursive-include src/bc_pulse/files *
+recursive-exclude src/bc_pulse/files/game_data *
+recursive-exclude src/bc_pulse/files/map_names *
