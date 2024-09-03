@@ -1,0 +1,16 @@
+{
+    "project_name": "demo",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "projects_data_dir": "/tmp",
+    "access_token": "secret",
+    "db_password": "secret",
+    "docker_registry": "ghcr.io/xxx",
+    "docker_username": "usr",
+    "docker_password": "secret",
+    "domain": "app.example.com",
+    "_copy_without_render": [
+        "*.j2",
+        "justfile",
+        "ansible/roles"
+    ]
+}

@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  app:
+    image: {{cookiecutter.project_slug}}:latest
+    command: gunicorn -b 0.0.0.0:3000 --timeout 999 --threads 24 -k uvicorn.workers.UvicornWorker app.main:server
+    environment:
+      - APP_NAME=${APP_NAME}
+      - DATABASE_URL=mongodb://root:secret@db/app?authSource=admin
+      - DATA_DIR=/data
+      - DOMAIN=localhost
+      - ACCESS_TOKEN=${ACCESS_TOKEN}
+    volumes:
+      - app:/data
+    ports:
+      - "3000:3000"
+  db:
+    image: mongo:7
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=secret
+    volumes:
+      - db:/data/db
+
+
+volumes:
+  db:
+  app:

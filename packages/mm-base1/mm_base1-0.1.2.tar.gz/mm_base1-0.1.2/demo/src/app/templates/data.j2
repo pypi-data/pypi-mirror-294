@@ -1,0 +1,28 @@
+{% extends "inc/base.j2" %}
+{% block content %}
+  <div class="menu">
+    <h3>data</h3>
+    <a href="/api-post/generate">generate</a>
+  </div>
+  <br>
+
+
+  <table class="table table-sm">
+    <tr>
+      <th>created_at</th>
+      <th>status</th>
+      <th>value</th>
+      <th>delete</th>
+      <th>view</th>
+    </tr>
+    {% for d in data %}
+      <tr>
+        <td>{{ d.created_at | dt }}</td>
+        <td>{{ d.status.value }}</td>
+        <td>{{ d.value }}</td>
+        <td><a href="/api-delete/{{ d.id }}" onclick="return confirm('sure?')">delete</a></td>
+        <td><a href="/api/{{ d.id }}">view</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
