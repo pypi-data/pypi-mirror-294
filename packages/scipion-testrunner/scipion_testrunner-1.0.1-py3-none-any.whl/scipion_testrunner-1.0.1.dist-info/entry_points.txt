@@ -1,0 +1,3 @@
+[console_scripts]
+scipion_testrunner=scipion_testrunner.__main__:main
+

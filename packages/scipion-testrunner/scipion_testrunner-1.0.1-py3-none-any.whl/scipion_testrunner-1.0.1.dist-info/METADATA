@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: scipion-testrunner
+Version: 1.0.1
+Summary: Module to handle in an efficient way the execution of Scipion tests
+License: LICENSE
+Keywords: scipion,testing
+Author: Martín Salinas
+Author-email: ssalinasmartin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Scipion test runner
+A module designed to handle in an efficient way the execution of Scipion tests.
+This module, even if it can be used locally as a user-friendly way of running all the tests of a specific plugin in parallel while avoiding cluttering the terminal, has been designed for CI/CD processes.
+
+This Python module needs to be installed in an enviroment with an installation of [Scipion3](https://scipion.i2pc.es/) in order to work.
+
+## Installation
+To install this package, activate the enviroment that contains Scipion, and run `pip install scipion-testrunner`.
+
+## Usage
+To view the usage guide, run `scipion_testrunner -h`.
+
