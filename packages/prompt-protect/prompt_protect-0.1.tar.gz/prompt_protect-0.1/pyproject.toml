@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "prompt-protect"
+version = "0.1"
+description = "An NLP classification for detecting prompt injection"
+authors = ["patrick o'leary <pjaol@pjaol.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/thevgergroup/prompt_protect"
+repository = "https://github.com/thevgergroup/prompt_protect.git"
+keywords = ["AI", "GenAI", "security", "prompt injection", "detection", "classification", "NLP"]
+classifiers= [
+                "Topic :: Scientific/Engineering :: Artificial Intelligence",
+                "Topic :: Security",
+                ]
+
+exclude = [
+    "test-models",
+    "models",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+scikit-learn = "^1.5.1"
+transformers = "^4.44.2"
+numpy = "1.26.4"
+pandas = "^2.2.2"
+datasets = "^2.21.0"
+torch = "2.2.2"
+skops = "^0.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipywidgets = "^8.1.5"
+jupyterlab = "^4.2.5"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.poetry-dynamic-versioning]
+enable = false
