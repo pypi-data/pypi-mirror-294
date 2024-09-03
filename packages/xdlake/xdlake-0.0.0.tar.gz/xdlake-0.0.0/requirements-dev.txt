@@ -1,0 +1,8 @@
+pandas
+deltalake
+ruff-lsp
+mypy
+gcsfs
+s3fs
+adlfs
+tox
