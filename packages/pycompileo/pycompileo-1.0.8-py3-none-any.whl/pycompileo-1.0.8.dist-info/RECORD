@@ -1,0 +1,10 @@
+pycompileo/__init__.py,sha256=sRjmFShXWb8ba3HhLeeIbgIqx-KDEB_WLzSS61lh4Lw,55
+pycompileo/obfuscate_module/__init__.py,sha256=uMvN-_LeFBWIpmK-3Kfu9AMEMp8ZYmHOqYaULd919WA,47
+pycompileo/obfuscate_module/obfuscate_module.py,sha256=Y1zumhCQH49IT9UnBM7tmMbj_efq14PIe5PAsFLLfuc,1112
+pycompileo/utility/__init__.py,sha256=VhST4RssH-DjO07Of0Vfv6-J69AJPJrM5iXVgGy7-3w,101
+pycompileo/utility/obfuscate.py,sha256=804lsqStixAC3QeqeIE9MCV4_Rt1A7tVdgMPhumSSwc,1386
+pycompileo/utility/unobfuscate.py,sha256=xY8XRVtgZXaPxKANdW0XAuKFcW4tbYGJAOGET-rwSp0,549
+pycompileo-1.0.8.dist-info/METADATA,sha256=ihsa_NycFk9zz0-Rc_JGvUnFShGSnhGjIpsBsFBJ3TQ,1308
+pycompileo-1.0.8.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pycompileo-1.0.8.dist-info/top_level.txt,sha256=mGrDx45UQbu-VP-LVoX3O5qDoHoUpUvWwiniog-StgA,11
+pycompileo-1.0.8.dist-info/RECORD,,
