@@ -1,0 +1,11 @@
+pstash/__init__.py,sha256=5MT3tDmFG9F6718IyA14DyKzrsOTOGvtAfVFSfihXI4,9082
+pstash/options.py,sha256=93eoVdmt3sw4JtwQxzDB7PZHcL5kDLRnuC71SzbwqoE,6711
+pstash/stashb.py,sha256=yaN7g1SfRYIKJcQqKa7JP23sAigzmrjWfsVcU5V12Vc,4417
+pstash/stashd.py,sha256=G34OzIbBe7y4Zi3gLXoR-wPmAXrXhb2OZjStHnKOH3I,3608
+pstash/_libs/stash.dll,sha256=nk8zwlfhs1EG-_62b72xZ7eGtW9A9_I6zyeBkff1yvg,35095015
+pstash/_libs/stash.exe,sha256=zXdga_pjaEQD_bbw2ctp4mSi3LyI-nEXUpikVFIKRrk,52502257
+pstash/_libs/stash.h,sha256=eu7Wzf1GmzUxnwZEApGDOZk7IELSObch-wABQlHHA2U,9986
+pstash-0.1.3.dist-info/METADATA,sha256=6GV3osMijO0KM2SNKc5e8otqTx3FL_GKalejRSyYFNo,1292
+pstash-0.1.3.dist-info/WHEEL,sha256=nBBepbAQRGMCG7IfMzjD-Tp0p7OYLIGX97VuSD2VSd0,97
+pstash-0.1.3.dist-info/top_level.txt,sha256=bOcg-VM28vJeG3l8lXxN5sdgNWNKqBU6CHy7Z5z9ZTE,7
+pstash-0.1.3.dist-info/RECORD,,
