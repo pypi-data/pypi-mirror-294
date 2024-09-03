@@ -1,0 +1,58 @@
+name: Test tap-pushbullet
+
+on:
+  push:
+    branches: [main]
+    paths:
+    - tap_pushbullet/**
+    - tests/**
+    - noxfile.py
+    - pyproject.toml
+    - uv.lock
+    - .github/workflows/test.yml
+    - .github/workflows/constraints.txt
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+    - tap_pushbullet/**
+    - tests/**
+    - noxfile.py
+    - pyproject.toml
+    - uv.lock
+    - .github/workflows/test.yml
+    - .github/workflows/constraints.txt
+
+env:
+  FORCE_COLOR: "1"
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      NOXSESSION: ${{ matrix.session }}-${{ matrix.python-version }}
+    strategy:
+      matrix:
+        include:
+        - {python-version: "3.13", session: "tests"}
+        - {python-version: "3.12", session: "tests"}
+        - {python-version: "3.11", session: "tests"}
+        - {python-version: "3.10", session: "tests"}
+        - {python-version: "3.9",  session: "tests"}
+        - {python-version: "3.8",  session: "tests"}
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        allow-prereleases: true
+    - uses: hynek/setup-cached-uv@v2
+    - run: |
+        uv tool install nox
+        nox --version
+
+    - name: Run Nox
+      env:
+        TAP_PUSHBULLET_API_KEY: ${{ secrets.TAP_PUSHBULLET_API_KEY }}
+      run: |
+        nox --verbose
