@@ -1,0 +1,7 @@
+dist
+env
+illistrations
+manim_lamination_builder
+media
+quotient_pinching
+tests
