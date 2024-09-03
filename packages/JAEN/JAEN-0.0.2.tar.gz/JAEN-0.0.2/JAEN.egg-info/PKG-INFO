@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: JAEN
+Version: 0.0.2
+Summary: 차별화된 실무중심 교육
+Home-page: https://www.jaen.kr/
+Author: baem1n
+Author-email: baemin.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
