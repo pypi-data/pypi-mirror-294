@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/opengenai/__init__.py
+src/opengenai/embed_search.py
+src/opengenai/html_parser.py
+src/opengenai/search.py
+src/opengenai/search_tool.py
+src/opengenai.egg-info/PKG-INFO
+src/opengenai.egg-info/SOURCES.txt
+src/opengenai.egg-info/dependency_links.txt
+src/opengenai.egg-info/top_level.txt
+tests/test_archon.py
