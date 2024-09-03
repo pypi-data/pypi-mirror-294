@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bc-pulse-krT
+Version: 3.0.0b36
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: aenum
+Requires-Dist: colored==1.4.4
+Requires-Dist: pyjwt
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: beautifulsoup4
+Requires-Dist: colorama
+
+UNKNOWN
+
