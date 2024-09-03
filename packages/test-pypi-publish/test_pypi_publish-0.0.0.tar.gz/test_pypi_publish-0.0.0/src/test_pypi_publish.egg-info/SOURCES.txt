@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/example_package/__init__.py
+src/test_pypi_publish.egg-info/PKG-INFO
+src/test_pypi_publish.egg-info/SOURCES.txt
+src/test_pypi_publish.egg-info/dependency_links.txt
+src/test_pypi_publish.egg-info/top_level.txt
+tests/test_example.py
