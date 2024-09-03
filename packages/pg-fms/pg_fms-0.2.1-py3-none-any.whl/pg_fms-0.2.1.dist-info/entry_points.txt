@@ -1,0 +1,3 @@
+[console_scripts]
+pg-fms = pg_fms.cli:main
+
