@@ -1,0 +1,11 @@
+info_ratio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+info_ratio/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+info_ratio/common/helper_functions.py,sha256=gxo2i2uiwcEmmexvLvJYtv3y2VaW9aZIdUFEsM364eo,4117
+info_ratio/common/input_output.py,sha256=wlGBHL1mTEGGDTv-g9NYf-9peVGi7OU8-v2p4Sjp-TA,1492
+info_ratio/common/logging.py,sha256=luG1-iKzoNn79Zk0u1PtSVyI3LJobRk_UBeWPdbZeLQ,308
+info_ratio/core.py,sha256=nYqgnZ_S8kXFW-FvY3uIeD82_29uFxxfLlJzRxVE5Qk,2486
+info_ratio/jupyterTmp.ipynb,sha256=dezh5SDm8z3RSwTcd7qX0hUn30BhFrCcU5qDRh-XIQU,21059
+info_ratio-0.1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+info_ratio-0.1.0.dist-info/METADATA,sha256=PdHMeTpCIa4e8_D3AnH0ANPJq9p3H6cbNipameHQHo4,679
+info_ratio-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+info_ratio-0.1.0.dist-info/RECORD,,
