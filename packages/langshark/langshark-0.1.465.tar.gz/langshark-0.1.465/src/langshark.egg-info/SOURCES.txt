@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/langshark/__init__.py
+src/langshark/client.py
+src/langshark/decorators.py
+src/langshark/utils.py
+src/langshark.egg-info/PKG-INFO
+src/langshark.egg-info/SOURCES.txt
+src/langshark.egg-info/dependency_links.txt
+src/langshark.egg-info/requires.txt
+src/langshark.egg-info/top_level.txt
+tests/test_client.py
