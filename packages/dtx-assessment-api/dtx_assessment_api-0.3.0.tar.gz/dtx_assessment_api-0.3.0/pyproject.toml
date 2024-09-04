@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dtx-assessment-api"
+version = "0.3.0"  # a placeholder
+description = ""
+authors = ["jchauhan <jitendra@detoxio.ai>"]
+readme = "README.md"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry-dynamic-versioning.from-file]
+source = "VERSION"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+pydantic = "^2.8.2"
+detoxio-api-protocolbuffers-python = "*"
+detoxio_api_grpc_python = "*"
+
+[[tool.poetry.source]]
+name = "buf"
+url = "https://buf.build/gen/python"
+priority = "supplemental"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
