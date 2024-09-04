@@ -1,0 +1,3 @@
+[console_scripts]
+bellande_format = bellande_parser:bellande_format
+
