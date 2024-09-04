@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ttsmaker
+Version: 0.2
+Summary: A Python library for interacting with TTSMaker API
+Home-page: https://github.com/williamxhero/ttsmaker
+Author: Yosef
+Author-email: williamxhero@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# TTSMaker
+
+TTSMaker is a Python library that allows you to interact with the TTSMaker API to convert text to speech. 
+
+https://ttsmaker.cn/developer-api-docs
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install ttsmaker
+```
+
+## Usage
+
+```python
+from ttsmaker import TTSMaker
+
+ttsmaker = TTSMaker()
+
+order = ttsmaker.create_tts_order("鎴戜滑鏉ヨ亰鑱婂ぉ", voice_id=1504)
+order.save_audio("audio_file")
+```
+
