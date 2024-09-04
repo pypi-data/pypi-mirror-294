@@ -1,0 +1,2 @@
+drf_email_auth
+tests
