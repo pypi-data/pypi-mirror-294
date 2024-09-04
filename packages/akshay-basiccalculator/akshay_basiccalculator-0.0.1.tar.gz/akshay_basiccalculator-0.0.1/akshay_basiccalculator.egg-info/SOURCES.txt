@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+myfunctions.py
+setup.py
+akshay_basiccalculator.egg-info/PKG-INFO
+akshay_basiccalculator.egg-info/SOURCES.txt
+akshay_basiccalculator.egg-info/dependency_links.txt
+akshay_basiccalculator.egg-info/top_level.txt
