@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "sea-query"
+description = "SQL query builder base on SeaQuery"
+requires-python = ">=3.8"
+authors = [{ name = "Ordanis Sanchez", email = "sea-query@ordanisanchez.dev" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+dynamic = ["version"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+exclude = ["tests/*.py"]
+
+[tool.uv]
+dev-dependencies = ["pytest>=8.3.2", "ruff>=0.6.2", "mypy>=1.11.2"]
