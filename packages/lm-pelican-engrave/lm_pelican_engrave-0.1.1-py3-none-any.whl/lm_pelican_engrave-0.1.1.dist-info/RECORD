@@ -1,0 +1,14 @@
+lm_pelican_engrave-0.1.1.dist-info/METADATA,sha256=lXuOCrQpgvXGAq82ekTcR1fBpAalNGyV0O4hiS87TDM,4855
+lm_pelican_engrave-0.1.1.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+lm_pelican_engrave-0.1.1.dist-info/licenses/LICENSE,sha256=TXAOZvSB9N4cGjH797h7UNhfEtt78wIe9g2CHt7-6m4,1062
+pelican/plugins/lm_pelican_engrave/__init__.py,sha256=ek_hYM9O109R4CQt8PMCu2cWcBXFuEUw1DrX7nDWJFA,51
+pelican/plugins/lm_pelican_engrave/engrave.py,sha256=71Yikwkkr5G5g1tURFn6_hw5GD_kUzHDzkGzdT-99VU,2558
+pelican/plugins/lm_pelican_engrave/engraver/__init__.py,sha256=TDjbILf0lL4ejNr_Safae0Mmj8zvFeB1ZLFXlNb3Mvo,35
+pelican/plugins/lm_pelican_engrave/engraver/qrcode.py,sha256=X3fMMb_BwP5J7YYJSHk7FxXc1EA_JCdI6ZnsmvIaEpU,746
+pelican/plugins/lm_pelican_engrave/engraver/template.py,sha256=5hIKfgAgpUjyizo4XxCh7yQ5uOpW_O5KC2vZEd6ohEQ,1222
+pelican/plugins/lm_pelican_engrave/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican/plugins/lm_pelican_engrave/tests/test_engrave.py,sha256=D6dqwmF9ziZQo0bKQy-hDeHDYBvcJKD0qD1bufJgaV0,5078
+pelican/plugins/lm_pelican_engrave/tests/test_engraver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican/plugins/lm_pelican_engrave/tests/test_engraver/test_qrcode.py,sha256=zqLiSNDRXG_WhXSDobQ-HuvMFpxCCp00RfqOIgk3SXc,1775
+pelican/plugins/lm_pelican_engrave/tests/test_engraver/test_template.py,sha256=hUBbWjJoY48o-X0z_1LSAr3gZYREMOkWyuGOmSirS5o,546
+lm_pelican_engrave-0.1.1.dist-info/RECORD,,
