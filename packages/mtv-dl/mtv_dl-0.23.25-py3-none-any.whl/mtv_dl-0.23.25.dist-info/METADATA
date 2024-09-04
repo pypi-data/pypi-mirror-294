@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mtv_dl
+Version: 0.23.25
+Summary: MediathekView Downloader
+Home-page: https://github.com/fnep/mtv_dl
+License: MIT
+Author: Frank Epperlein
+Author-email: frank+mtv_dl@epperle.in
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Video
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: certifi (>=2024.8.30,<2025.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: durationpy (>=0.7,<0.8)
+Requires-Dist: ijson (>=3.3.0,<4.0.0)
+Requires-Dist: iso8601 (>=2.1.0,<3.0.0)
+Requires-Dist: rich (>=13.8.0,<14.0.0)
+Project-URL: Repository, https://github.com/fnep/mtv_dl
+Description-Content-Type: text/x-rst
+
+Command line tool to download videos from sources available through MediathekView.
+
