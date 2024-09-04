@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+checkexplore_defect_package.egg-info/PKG-INFO
+checkexplore_defect_package.egg-info/SOURCES.txt
+checkexplore_defect_package.egg-info/dependency_links.txt
+checkexplore_defect_package.egg-info/top_level.txt
