@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pddiktipy/__init__.py
+pddiktipy/api.py
+pddiktipy/helper.py
+pddiktipy.egg-info/PKG-INFO
+pddiktipy.egg-info/SOURCES.txt
+pddiktipy.egg-info/dependency_links.txt
+pddiktipy.egg-info/requires.txt
+pddiktipy.egg-info/top_level.txt
