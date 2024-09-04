@@ -1,0 +1,15 @@
+GeneMaster/__init__.py,sha256=lq1ah1imd0Cjpccr8TJzy_wa-gx6PB2VJ14IGSuUG9s,375
+GeneMaster/dtypes/DNA.py,sha256=k5BvYgZeD7V6IaVhrMrrdbcQx2sgZr2XzzlYTmgKxis,5693
+GeneMaster/dtypes/RNA.py,sha256=u6VWaRuj4xbKYnoPDIUeUy-BCGlGer1wsHqpV7Z7-G8,3578
+GeneMaster/dtypes/__init__.py,sha256=zUolLEG3lg0ps2Qatw0bYg1Cb64okDWBNW5a4j8HC4I,44
+GeneMaster/operations/DNAOperations.py,sha256=ZtGfoDnNd6JfE9rFar_dfDNh9ulEC3EyBnIqgogFoP8,13021
+GeneMaster/operations/RNAOperations.py,sha256=aSiJuARdWWu57s6KFxstiwGYQyDMhG_ANKPB2-iBhkc,3239
+GeneMaster/operations/__init__.py,sha256=Swo2dxiGlffvSq2_tKGHrwsbp1ivUIckDvjyekrAXcA,1244
+GeneMaster/parsing/__init__.py,sha256=nzEd6LzFhnr4Vt5A-FkBIodYSgf_023kAiihJS-_Z8A,29
+GeneMaster/parsing/fasta.py,sha256=T2pPpMZ2yDm22GvpQBkQiQshEPIT4mWFRElq8szvSe4,476
+GeneMaster/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GeneMaster/tests/test_dna.py,sha256=bfK5Mvb30M5lAAA1RMxPrkjjbP1nidYBmRruWGzTuFs,2578
+GeneMaster-0.1.2.dist-info/METADATA,sha256=ypuDtpyZDYMbgNkZ-qgihCGUw11HMxF0PDdrJygEWAU,1330
+GeneMaster-0.1.2.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+GeneMaster-0.1.2.dist-info/top_level.txt,sha256=NETw5NRNyKL4NkwLDRRg_GKaM8m6eG0BwoZsjo6fOuI,11
+GeneMaster-0.1.2.dist-info/RECORD,,
