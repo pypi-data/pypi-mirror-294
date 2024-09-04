@@ -1,0 +1,7 @@
+README.md
+setup.py
+coffeeapi.egg-info/PKG-INFO
+coffeeapi.egg-info/SOURCES.txt
+coffeeapi.egg-info/dependency_links.txt
+coffeeapi.egg-info/requires.txt
+coffeeapi.egg-info/top_level.txt
