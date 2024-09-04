@@ -1,0 +1,11 @@
+pydglab/__init__.py,sha256=IqrvDRwqbnM5kw2sro4ksLB-BeEFIa5SSbLvh-zAwWk,443
+pydglab/bthandler_v2.py,sha256=2m2oTrZdGzHR7k5Ku86MPw1IWaZsOoCHX88N9PHVEmI,3506
+pydglab/bthandler_v3.py,sha256=B1HZaosSIYSP_m_2tZExrDgYRVESwzjmOxdvZYjBiT0,2897
+pydglab/model_v2.py,sha256=aA5WpN_TdtxXP0IVyRAjEWZQ4MRWyl0EjMIX7G9Z46M,1236
+pydglab/model_v3.py,sha256=N4rTE6mHHhZeNTnE0JqSTQz3l4vNSa_fYXAdT0xNmQg,1318
+pydglab/service.py,sha256=tnIhrq1zQjOfvR3S0j8aG13GWR8TRwlmvAAcPXmsh6o,28041
+pydglab/uuid.py,sha256=_eheZKXUIEFHOaTfAv-ABZW8cZEX92K7-y-96d_L-ls,1290
+pydglab-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pydglab-1.0.0.dist-info/METADATA,sha256=XIp37JQ8o8-cD_1ZRCohIaJD_u-jxFbTLlbOn6HRTFw,2720
+pydglab-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pydglab-1.0.0.dist-info/RECORD,,
