@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: prompt-sender
+Version: 0.1.1
+Summary: Send prompts and model responses to the Argilla A/B testing platform for annotations
+Author: Hannah Galbraith
+Author-email: hannah.galbraith@bsc.es
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argilla (>=2.0.1,<3.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+An app to send prompts and responses to the Argilla A/B Testing Platform
+
