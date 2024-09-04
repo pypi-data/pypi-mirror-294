@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/CupDefs/__init__.py
+src/CupDefs/init.py
+src/CupDefs/logger.py
+src/CupDefs/logo
+src/CupDefs/utils.py
+src/CupDefs/vars.py
+src/CupDefs/vergen.py
+src/CupDefs.egg-info/PKG-INFO
+src/CupDefs.egg-info/SOURCES.txt
+src/CupDefs.egg-info/dependency_links.txt
+src/CupDefs.egg-info/requires.txt
+src/CupDefs.egg-info/top_level.txt
