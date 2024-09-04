@@ -1,0 +1,7 @@
+README.md
+setup.py
+synq_infra_management.egg-info/PKG-INFO
+synq_infra_management.egg-info/SOURCES.txt
+synq_infra_management.egg-info/dependency_links.txt
+synq_infra_management.egg-info/requires.txt
+synq_infra_management.egg-info/top_level.txt
