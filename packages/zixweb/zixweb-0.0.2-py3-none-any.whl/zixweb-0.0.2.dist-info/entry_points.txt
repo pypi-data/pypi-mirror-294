@@ -1,0 +1,2 @@
+[console_scripts]
+zix = zix:cli.entry_point
