@@ -1,0 +1,27 @@
+[project]
+name = "dashai_plugin_prueba_alanezz"
+version = "0.0.1"
+
+dependencies = [
+  # add plugin dependencies here
+]
+
+authors = [ # add author information
+  { name="alanezz"},
+  { email="adrian.soto@imfd.cl"},
+]
+
+keywords = [ # keep the component types you are extending
+    "Model",
+]
+
+description = "DashAI Plugin description"
+readme = "README.md"
+requires-python = ">=3.8" # DashAI software needs python 3.8 or higher
+
+[project.entry-points.'dashai.plugins']
+MLPImageClassifier = 'dashai_plugin_prueba_alanezz.mlp_image_classifier:MLPImageClassifier'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

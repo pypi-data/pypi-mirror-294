@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: dashai_plugin_prueba_alanezz
+Version: 0.0.1
+Summary: DashAI Plugin description
+Author: alanezz
+Author-email: adrian.soto@imfd.cl
+Keywords: Model
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+#
+#
+DEFINIR ESTRUCTURA PARA EL README
+#
+#
+
+# **DashAI plugin template**
