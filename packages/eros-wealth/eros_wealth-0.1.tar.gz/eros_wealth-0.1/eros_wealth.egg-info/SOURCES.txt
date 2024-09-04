@@ -1,0 +1,6 @@
+setup.py
+eros_wealth.egg-info/PKG-INFO
+eros_wealth.egg-info/SOURCES.txt
+eros_wealth.egg-info/dependency_links.txt
+eros_wealth.egg-info/top_level.txt
+tests/test_environment.py
