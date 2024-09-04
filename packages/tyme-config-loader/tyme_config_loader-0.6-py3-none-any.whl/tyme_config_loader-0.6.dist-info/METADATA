@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tyme_config_loader
+Version: 0.6
+Summary: A simple Python library
+Author: Bao Tran
+Author-email: bao.tr0401@gmail.com
+Requires-Dist: pyyaml
+
