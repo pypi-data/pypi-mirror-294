@@ -1,0 +1,251 @@
+import copy
+import time
+from abc import ABC, abstractmethod
+
+import numpy as np
+
+from mu_alpha_zero.Game.tictactoe_game import TicTacToeGameManager
+
+
+class Player(ABC):
+    """
+    To create a custom player, extend this class and implement the choose_move method.
+    You can see different implementations below.
+    """
+
+    @abstractmethod
+    def __init__(self, game_manager, **kwargs):
+        pass
+
+    @abstractmethod
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        pass
+
+    @abstractmethod
+    def make_fresh_instance(self):
+        pass
+
+    def init_kwargs(self, kwargs: dict):
+        for key in kwargs.keys():
+            setattr(self, key, kwargs[key])
+
+    @abstractmethod
+    def set_game_manager(self, game_manager):
+        pass
+
+
+class RandomPlayer(Player):
+    def __init__(self, game_manager: TicTacToeGameManager, **kwargs):
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        move = self.game_manager.get_random_valid_action(board, **kwargs)
+        if "unravel" in kwargs.keys():
+            unravel = kwargs["unravel"]
+        else:
+            unravel = True
+        return tuple(move) if unravel else int(move)
+
+    def make_fresh_instance(self):
+        return RandomPlayer(self.game_manager.make_fresh_instance(), **self.kwargs)
+
+    def set_game_manager(self, game_manager):
+        self.game_manager = game_manager
+
+
+class PerfectConnect4Player(Player):
+
+    def __init__(self, game_manager, **kwargs):
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        assert kwargs.get("move") is not None, "Please provide the last move made."
+        from mu_alpha_zero.PerfectConnect4Negamax.board import Board
+        from mu_alpha_zero.PerfectConnect4Negamax.solver import solve
+        bd = Board()
+        bd.play(kwargs["move"])
+        move = solve(bd)
+        return move
+
+    def make_fresh_instance(self):
+        pass
+
+    def set_game_manager(self, game_manager):
+        pass
+
+
+class NetPlayer(Player):
+    def __init__(self, game_manager: TicTacToeGameManager, **kwargs):
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        try:
+            current_player = kwargs["current_player"]
+            device = kwargs["device"]
+            tau = kwargs["tau"]
+        except KeyError:
+            raise KeyError("Missing keyword argument. Please supply kwargs: current_player, device, "
+                           "tau")
+
+        pi, _ = self.monte_carlo_tree_search.search(self.network, board, current_player, device, tau=tau)
+        move = self.game_manager.select_move(pi, tau=tau)
+        self.monte_carlo_tree_search.step_root(None)
+        if "unravel" in kwargs.keys():
+            unravel = kwargs["unravel"]
+        else:
+            unravel = True
+        if unravel:
+            return self.game_manager.network_to_board(move)
+        return int(move)
+
+    def make_fresh_instance(self):
+        return NetPlayer(self.game_manager.make_fresh_instance(), **{"network": copy.deepcopy(self.network),
+                                                                     "monte_carlo_tree_search": self.monte_carlo_tree_search.make_fresh_instance()})
+
+    def set_network(self, network):
+        self.network = network
+
+    def set_game_manager(self, game_manager):
+        self.game_manager = game_manager
+
+
+class HumanPlayer(Player):
+    def __init__(self, game_manager: TicTacToeGameManager, **kwargs):
+        self.name = self.__class__.__name__
+        self.game_manager = game_manager
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        time.sleep(0.4)
+        if self.game_manager.headless:
+            raise RuntimeError("Cannot play with a human player in headless mode.")
+        move = self.game_manager.get_human_input(board)
+        return move
+
+    def make_fresh_instance(self):
+        return HumanPlayer(self.game_manager.make_fresh_instance(), **self.kwargs)
+
+    def set_game_manager(self, game_manager):
+        self.game_manager = game_manager
+
+
+class Connect4MinimaxPlayer(Player):
+
+    def __init__(self, game_manager, **kwargs):
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        time.sleep(0.4)
+        from mu_alpha_zero.MuZero.MinimaxOpponent.player import PlayerMM
+        from mu_alpha_zero.MuZero.MinimaxOpponent.board import Board
+        bd = Board.from_game_state(board[:, :, 0], (1, kwargs["move"]))
+        player = PlayerMM(6, False)
+        move = player.findMove(bd)
+        return move
+
+    def make_fresh_instance(self):
+        return Connect4MinimaxPlayer(self.game_manager.make_fresh_instance(), **self.kwargs)
+
+    def set_game_manager(self, game_manager):
+        self.game_manager = game_manager
+
+
+class NoopPlayer(Player):
+
+    def __init__(self, game_manager, **kwargs):
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        return None
+
+    def make_fresh_instance(self):
+        pass
+
+    def set_game_manager(self, game_manager):
+        pass
+
+
+class MinimaxPlayer(Player):
+    def __init__(self, game_manager: TicTacToeGameManager, **kwargs):
+        # self.evaluate_fn = evaluate_fn
+        self.game_manager = game_manager
+        self.name = self.__class__.__name__
+        self.kwargs = kwargs
+        self.init_kwargs(kwargs)
+
+    def choose_move(self, board: np.ndarray, **kwargs) -> tuple[int, int]:
+        try:
+            depth = kwargs["depth"]
+            player = kwargs["player"]
+        except KeyError:
+            raise KeyError("Missing keyword argument. Please supply kwargs: depth, player")
+        move = self.minimax(board.copy(), depth, True, player)[1]
+        return tuple(move)
+
+    def minimax(self, board: np.ndarray, depth: int, is_max: bool, player: int, alpha=-float("inf"),
+                beta=float("inf")) -> tuple:
+        # self.game_manager.check_pg_events()
+        eval_ = self.evaluate_fn(board)
+        if eval_ is not None:
+            return eval_, None
+        if depth == 0:
+            return self.evaluate_fn(board, check_end=False), None
+
+        if is_max:
+            best_score = -float("inf")
+            best_move = None
+            for move in self.game_manager.get_valid_moves(board):
+                board[move[0]][move[1]] = player
+                score = self.minimax(board.copy(), depth - 1, False, -player, alpha, beta)[0]
+                # print(score)
+                board[move[0]][move[1]] = 0
+                if score > best_score:
+                    best_move = move
+                best_score = max(score, best_score)
+                alpha = max(alpha, best_score)
+
+                if alpha >= beta:
+                    break
+            # if best_move is None:
+            #     return self.evaluate_fn(board, player), None
+            return best_score, best_move
+        else:
+            best_score = float("inf")
+            best_move = None
+            for move in self.game_manager.get_valid_moves(board):
+                board[move[0]][move[1]] = player
+                score = self.minimax(board.copy(), depth - 1, True, -player, alpha, beta)[0]
+                if score is None:
+                    continue
+                # print(score)
+                board[move[0]][move[1]] = 0
+                best_score = min(score, best_score)
+                beta = min(beta, best_score)
+
+                if beta <= alpha:
+                    break
+            # if best_move is None:
+            #     return self.evaluate_fn(board, player), None
+            return best_score, best_move
+
+    def make_fresh_instance(self):
+        return MinimaxPlayer(self.game_manager.make_fresh_instance(), **self.kwargs)
+
+    def set_game_manager(self, game_manager):
+        self.game_manager = game_manager
