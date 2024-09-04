@@ -1,0 +1,6 @@
+setup.py
+rk_p2.egg-info/PKG-INFO
+rk_p2.egg-info/SOURCES.txt
+rk_p2.egg-info/dependency_links.txt
+rk_p2.egg-info/entry_points.txt
+rk_p2.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+rk-p = cli:main
