@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: instanceSlackBot
+Version: 1.0.0
+Home-page: https://github.com/Dai-H15/InstanceSlackBot
+Download-URL: https://github.com/Dai-H15/InstanceSlackBot
+Author: Daichi Matsumoto
+Author-email: s1f102200828@iniad.org
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: slack_sdk>=3.31.0
+
+# プロジェクト名
+
+このファイルは、SlackSDKにおける基本操作をより使いやすいようにインスタンスにまとめて管理できるようにまとめたものになっています。
+初心者の方でも間違いを少なく、チャンネルの作成からユーザーの招待、投稿の送信などを行うことができます。
+意識していることは、INIADのチーム開発で同様のSlackBotを作成されたいという有志の方に向けてです。
+個別の使用方法を教授することはありません。
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下で提供されています。詳細は[LICENSE](./LICENSE)ファイルを参照してください。
+
+## 使用しているライブラリ
+
+このプロジェクトでは以下のライブラリを使用しています：
+
+- [slack-sdk](https://github.com/slackapi/python-slack-sdk) - MIT License
