@@ -1,0 +1,31 @@
+# 根据 Dynaconf 规则， settings.local.yml 的配置为本地配置，
+# 且优先级比 settings.yml 低，所以本地配置会在后面加载，覆盖之前的配置。
+# settings.yml 为系统默认配置，会被 git 追踪管理，不要填写真正的数据库连接信息。
+# 真实配置信息可以写在 settings.local.yml 文件中，会覆盖默认配置。
+LOG_LEVEL: INFO
+LOG_FILE: "quantguard.log"
+LOG_HANDLER: ["console"]
+VERSION: 0.1.0
+
+CLICKHOUSE:
+  HOST:
+  PORT:
+  USERNAME:
+  PASSWORD:
+  DATABASE:
+
+CRONTABS: 
+  BILL_SYNC: "10 * * * *"
+  BILL_SUMMARY: "10 * * * *"
+
+BILL_SYNC:
+  ORDER_DAYS: 7 # 订单同步天数
+  LEDGER_DAYS: 7 # 账单同步天数
+
+# 配置本地vpn代理，用于访问交易所API
+PROXY_URL: http://127.0.0.1:7890
+
+# 要同步的账户信息从omega配置获取
+SYNC_OMEGA:
+  account: ["okx_test", "binance_test"]
+  config_file: "xxx.toml"
