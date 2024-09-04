@@ -1,0 +1,10 @@
+__pycache__
+_version.py
+.*.swp
+.coverage*
+.envrc
+*.lcov
+docs/_build
+examples/catalog.fits
+examples/vmap.fits.gz
+examples/nz.npz
