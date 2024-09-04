@@ -1,0 +1,170 @@
+# Rudra
+
+Rudra is a flexible OpenAI-powered agent SDK that allows easy integration of custom tools.
+
+## Installation
+
+```
+pip install rudra openai
+```
+
+## Usage
+
+```python
+from rudra import Rudra
+from openai import OpenAI
+
+# OpenAI
+openai_api_key = ""
+client = OpenAI(api_key=openai_api_key)
+model="gpt-3.5-turbo"
+
+# Groq
+API_KEY = ""
+BASE_URL = "https://api.groq.com/openai/v1"
+
+client = OpenAI(
+  api_key = API_KEY,
+  base_url = BASE_URL
+)
+model="mixtral-8x7b-32768"
+
+# Initialize Rudra
+rudra = Rudra(client=client, model=model)
+
+# Define your custom tools here
+class MyTool(Tool):
+    # Implement the Tool interface
+
+
+# Run a task
+result = agent.run("Your task here")
+print(result)
+```
+
+## Built-in Tools
+
+Rudra comes with several built-in tools that you can use as examples or directly in your projects. Here's how to implement and use these tools:
+
+### 1. WikipediaSummarizer
+
+This tool fetches and summarizes Wikipedia articles.
+
+```python
+# Define your custom tools here
+import wikipedia
+class WikipediaTool:
+    def name(self):
+        return "wikipedia"
+
+    def description(self):
+        return "Search Wikipedia for information on a given topic"
+
+    def execute(self, query: str) -> dict:
+        try:
+            page = wikipedia.page(query)
+            return {
+                "title": page.title,
+                "summary": page.summary[:500] + "...",  # Truncate summary for brevity
+                "url": page.url
+            }
+        except wikipedia.exceptions.DisambiguationError as e:
+            return {"error": f"Disambiguation error. Possible options: {e.options}"}
+        except wikipedia.exceptions.PageError:
+            return {"error": f"No Wikipedia page found for '{query}'"}
+
+rudra.add_tool(WikipediaTool())
+
+# Run a task
+task = "What's the capital of France and what's the weather like there today?"
+result = rudra.run(task)
+
+print("Task:", task)
+print("Results:")
+if isinstance(result, dict) and "results" in result:
+    for action_result in result["results"]:
+        print(action_result)
+else:
+    print("Unexpected result format:", result)
+
+# Example with streaming
+print("\nStreaming example:")
+streaming_task = "Tell me about the Eiffel Tower and the current weather in Paris."
+try:
+    for chunk in rudra.run_stream(streaming_task):
+        print(chunk)
+except Exception as e:
+    print(f"An error occurred during streaming: {str(e)}")
+print("\nStreaming finished.")
+```
+
+### 2. OpenWeather
+
+This tool fetches current weather information for a specified city using the OpenWeather API.
+
+```python
+class WeatherTool:
+    def __init__(self, api_key):
+        self.api_key = api_key
+
+    def name(self):
+        return "weather"
+
+    def description(self):
+        return "Get current weather information for a given city"
+
+    def execute(self, city: str) -> dict:
+        base_url = "http://api.openweathermap.org/data/2.5/weather"
+        params = {
+            "q": city,
+            "appid": self.api_key,
+            "units": "metric"
+        }
+        response = requests.get(base_url, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            return {
+                "city": data["name"],
+                "temperature": data["main"]["temp"],
+                "description": data["weather"][0]["description"]
+            }
+        else:
+            return {"error": f"Failed to fetch weather data for '{city}'"}
+
+```
+
+## Using Multiple Tools
+
+You can use multiple tools with a single RudraAgent instance:
+
+```python
+# Initialize Rudra
+rudra = Rudra(client=client, model=model)
+
+rudra.add_tool(WikipediaTool())
+
+weather_api = ""
+rudra.add_tool(WeatherTool(weather_api))
+
+# Run a task
+task = "What's the capital of France and what's the weather like there today?"
+result = rudra.run(task)
+
+print("Task:", task)
+print("Results:")
+if isinstance(result, dict) and "results" in result:
+    for action_result in result["results"]:
+        print(action_result)
+else:
+    print("Unexpected result format:", result)
+
+# Example with streaming
+print("\nStreaming example:")
+streaming_task = "Tell me about the Eiffel Tower and the current weather in Paris."
+try:
+    for chunk in rudra.run_stream(streaming_task):
+        print(chunk)
+except Exception as e:
+    print(f"An error occurred during streaming: {str(e)}")
+print("\nStreaming finished.")
+```
