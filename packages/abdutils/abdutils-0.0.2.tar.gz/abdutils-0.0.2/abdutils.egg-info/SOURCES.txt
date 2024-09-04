@@ -1,0 +1,10 @@
+README.md
+setup.py
+abdutils/__init__.py
+abdutils/abdaugs.py
+abdutils/abdutils.py
+abdutils.egg-info/PKG-INFO
+abdutils.egg-info/SOURCES.txt
+abdutils.egg-info/dependency_links.txt
+abdutils.egg-info/requires.txt
+abdutils.egg-info/top_level.txt
