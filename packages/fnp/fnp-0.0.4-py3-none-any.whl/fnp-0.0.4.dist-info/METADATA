@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fnp
+Version: 0.0.4
+Summary: A module that lets you extract column from an excel file and plot it.
+Author: Sushruta Das
+Author-email: sushrutadas0@gmail.com
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+A module that lets you extract column from an excel file and plot it.
