@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyhud
+Version: 0.1.1
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: debug
+Requires-Dist: debugpy ; extra == 'debug'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: black ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: mypy ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: types-setuptools ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: types-requests ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: aiohttp ; (python_version >= "3.8") and extra == 'dev'
+
+# README for the pacakge
