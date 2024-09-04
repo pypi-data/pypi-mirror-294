@@ -1,0 +1,11 @@
+fastapi_throttle/__init__.py,sha256=yVHOoNXvg14zrjW_afAAxpgcka4dH4XGR42WyvBEqhQ,60
+fastapi_throttle/limiter.py,sha256=0Mbu73NvRTfaOgyl00mhR_f7KAJKoHxSBkIpagBnIxs,2549
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_limiter.py,sha256=t3POVFNyn21L8PfbCAURMBqKbKT3_WOSmmOvwTcRZS4,2149
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_limiter.py,sha256=T-2S5vKknPp8MiXX_p4k0TuuuN3V6zLjZPdEs8b87iw,1536
+fastapi_throttle-0.1.2.dist-info/LICENSE,sha256=Jphx0UrXfS7TWpqHt8Twoa445T4pHDzpdoyEB8SpuXs,1066
+fastapi_throttle-0.1.2.dist-info/METADATA,sha256=nzQRWxPtgzTicQuCsBf4r9ikQaG70EXzKrYHhc6OFyI,739
+fastapi_throttle-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fastapi_throttle-0.1.2.dist-info/top_level.txt,sha256=2FLtwyQfib7jsiozrtDT16ZOtt7_TtaiA0YFRXT-jj4,23
+fastapi_throttle-0.1.2.dist-info/RECORD,,
