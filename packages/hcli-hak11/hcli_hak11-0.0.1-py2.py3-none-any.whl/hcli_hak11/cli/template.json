@@ -1,0 +1,66 @@
+{
+    "hcliTemplateVersion": "1.0",
+    "executable": [
+        {
+            "command": "hak11",
+            "http": "post"
+        },
+        {
+            "command": "hak11 logs",
+            "http": "get"
+        }
+    ],
+    "cli": [
+        {
+            "id": "hak11",
+            "name": "hak11",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "hak11 - an HCLI for interacting with a CNC via GRBL Controller (e.g. an OpenBuilds BlackBox controller) via input and output streams"
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hak11 <command>"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"hak11\" HCLI allows you to remotely control a Linear AK-11 keypad via command line by sending streams of keypad digits. This service is expected to run on a raspberry pi connected to at least 12 relays that can be triggered via GPIO."
+                },
+                {
+                    "name": "examples",
+                    "description": "hak11 logs"
+                }
+            ],
+            "command": [
+                {
+                    "href": "hak11logs",
+                    "name": "logs",
+                    "description": "The \"logs\" command allows for a client to poll for a log tail against the hak11 service log output stream."
+                }
+            ]
+        },
+        {
+            "id": "hak11logs",
+            "name": "logs",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "logs - tails hak11 service logs."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hak11 logs"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"logs\" command allows for a client to poll for a log tail against the hak11 service log output stream."
+                },
+                {
+                    "name": "examples",
+                    "description": "while true; do hak11 logs; sleep 0.01; done"
+                }
+            ]
+        }
+    ]
+}
