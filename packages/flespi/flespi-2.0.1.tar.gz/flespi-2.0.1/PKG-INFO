@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: flespi
+Version: 2.0.1
+Summary: Flespi REST API for Python
+Author-email: "Golden M, Inc." <software@goldenm.com>
+Maintainer-email: Kenny Mochizuki <kenny@goldenm.com>
+License: MIT License
+Project-URL: Repository, https://github.com/goldenm-software/flespi-python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tzdata
+
+# Flespi REST API wrapper for Python
+[![pypi version](https://badge.fury.io/py/flespi.svg)](https://pypi.org/project/flespi/)
+
+## Installation
+Use the package manager [pip](https://pypi.org/) to install flespi
+
+```bash
+$ pip3 install flespi
+```
+
+### Usage
+```python
+from flespi import FlespiClient
+# Or
+from flespi.rest import FlespiClient
+
+token = 'your_token' # Without "FlespiToken"
+# Initialize Flespi instance
+flespi = FlespiClient(token)
+
+response = flespi.get('/gw/devices/all')
+
+print(response)
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
