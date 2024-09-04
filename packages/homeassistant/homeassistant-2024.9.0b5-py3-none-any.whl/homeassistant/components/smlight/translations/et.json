@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Seade on juba h\u00e4\u00e4lestatud"
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus",
+            "invalid_auth": "Tuvastamine nurjus",
+            "unknown": "Ootamatu t\u00f5rge"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Salas\u00f5na",
+                    "username": "Kasutajanimi"
+                },
+                "description": "Sisesta kasutajanimi ja salas\u00f5na"
+            },
+            "confirm_discovery": {
+                "description": "Kas seadistada SMLIGHT-i aadressil {host}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "SMLIGHT SLZB-06x seadme hostinimi v\u00f5i IP-aadress"
+                },
+                "description": "SMLIGHT Zigbee sidumise seadistamine"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "core_temperature": {
+                "name": "Tuumikkiibi temperatuur"
+            },
+            "fs_usage": {
+                "name": "Failis\u00fcsteemi kasutus"
+            },
+            "ram_usage": {
+                "name": "Muutm\u00e4lu kasutus"
+            },
+            "zigbee_temperature": {
+                "name": "Zigbee kiibi temperatuur"
+            }
+        }
+    }
+}

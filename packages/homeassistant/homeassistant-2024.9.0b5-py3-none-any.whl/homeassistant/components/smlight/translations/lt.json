@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u012erenginys jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "Prisijungimos vardas"
+                },
+                "description": "\u012eveskite vartotojo vard\u0105 ir slapta\u017eod\u012f"
+            },
+            "confirm_discovery": {
+                "description": "Ar norite nustatyti SMLIGHT adresu {host}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "SMLIGHT SLZB-06x \u012frenginio pagrindinio kompiuterio pavadinimas arba IP adresas"
+                },
+                "description": "Nustatykite SMLIGHT Zigbee integracij\u0105"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "core_temperature": {
+                "name": "Pagrindin\u0117 lusto temperat\u016bra"
+            },
+            "fs_usage": {
+                "name": "Fail\u0173 sistemos naudojimas"
+            },
+            "ram_usage": {
+                "name": "RAM naudojimas"
+            },
+            "zigbee_temperature": {
+                "name": "Zigbee lusto temperat\u016bra"
+            }
+        }
+    }
+}
