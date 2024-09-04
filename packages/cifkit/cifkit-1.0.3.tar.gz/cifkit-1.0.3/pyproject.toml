@@ -1,0 +1,28 @@
+[project]
+name = "cifkit"
+version = "1.0.3"
+description = "Python library for high-throughput .cif analysis"
+authors = [{name = "Sangjoon Lee", email = "bobleesj@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["cif", "solid-state", "high-throughput", "crystallography"]
+
+dependencies = [
+    "gemmi",
+    "matplotlib",
+    "numpy",
+    "pyvista",
+    "scipy",
+    "setuptools",
+    "click"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 79
