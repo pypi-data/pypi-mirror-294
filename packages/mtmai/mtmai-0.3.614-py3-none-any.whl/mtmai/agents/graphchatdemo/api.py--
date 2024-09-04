@@ -1,0 +1,118 @@
+import logging
+
+from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
+from langchain_core.runnables import RunnableConfig
+from langgraph.graph.state import CompiledStateGraph
+from pydantic import BaseModel
+
+from mtmai.agents.graphchatdemo.deps import GraphAppDep
+from mtmai.api.deps import OptionalUserDep
+from mtmai.mtlibs import aisdk, mtutils
+
+router = APIRouter()
+logger = logging.getLogger()
+
+
+async def agent_event_stream(
+    *,
+    graph: CompiledStateGraph,
+    inputs,
+    thread: RunnableConfig,
+):
+    async for event in graph.astream_events(
+        inputs,
+        version="v2",
+        config=thread,
+    ):
+        kind = event["event"]
+        node_name = event["name"]
+        data = event["data"]
+        # tags = event.get("tags", [])
+        logger.info("%s:node: %s", kind, node_name)
+        if kind == "on_chat_model_stream":
+            content = data["chunk"].content
+            if content:
+                print(content, end="", flush=True)
+                yield aisdk.text(content)
+
+            if event["metadata"].get("langgraph_node") == "final":
+                logger.info("终结节点")
+
+        if kind == "on_chain_stream":
+            if data and (node_name == "uidelta_node" or node_name == "tools"):
+                chunk_data = data.get("chunk", {})
+                picked_data = {
+                    key: chunk_data[key] for key in ["uidelta"] if key in chunk_data
+                }
+
+                if picked_data:
+                    yield aisdk.data(picked_data)
+        if kind == "on_chain_end" and node_name == "LangGraph":
+            # yield aisdk.data(jsonable_encoder(data))
+            final_messages = event["data"]["output"]["messages"]
+            for message in final_messages:
+                message.pretty_print()
+            logger.info("中止节点")
+
+    yield aisdk.finish()
+
+
+class CompletinRequest(BaseModel):
+    thread_id: str | None = None
+    prompt: str
+    option: str | None = None
+
+
+@router.post("")
+async def completions(
+    user: OptionalUserDep, graphapp: GraphAppDep, req: CompletinRequest
+):
+    thread_id = req.thread_id
+    if not thread_id:
+        thread_id = mtutils.gen_orm_id_key()
+    thread: RunnableConfig = {
+        "configurable": {"thread_id": thread_id, "user_id": user.id}
+    }
+
+    response = response = StreamingResponse(
+        agent_event_stream(
+            graph=graphapp,
+            inputs={
+                "user_id": user.id,
+                "user_input": req.prompt,
+                "user_option": req.option,
+            },
+            thread=thread,
+        ),
+        media_type="text/event-stream",
+    )
+    response.headers["x-vercel-ai-data-stream"] = "v1"
+    return response
+
+
+# @router.get("/graph_image")
+# async def graph_image(user: OptionalUserDep):
+#     agent_inst = GraphChatDemoAgent()
+
+#     image_data = agent_inst.build_flow().compile().get_graph(xray=1).draw_mermaid_png()
+#     return Response(content=image_data, media_type="image/png")
+
+
+# @router.get("/start")
+# async def agent_start(user: OptionalUserDep, graphapp: GraphAppDep):
+#     thread_id = mtutils.gen_orm_id_key()
+#     thread: RunnableConfig = {
+#         "configurable": {"thread_id": thread_id, "user_id": user.id}
+#     }
+#     inputs = {
+#         "user_id": user.id,
+#         "user_input": "/start",
+#         "user_option": "",
+#     }
+#     a = await graphapp.ainvoke(
+#         inputs,
+#         version="v2",
+#         config=thread,
+#     )
+#     return {"threadId": thread_id}
