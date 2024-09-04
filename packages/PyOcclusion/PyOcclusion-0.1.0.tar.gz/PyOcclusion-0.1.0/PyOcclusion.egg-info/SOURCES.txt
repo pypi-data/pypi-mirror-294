@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyOcclusion/__init__.py
+PyOcclusion.egg-info/PKG-INFO
+PyOcclusion.egg-info/SOURCES.txt
+PyOcclusion.egg-info/dependency_links.txt
+PyOcclusion.egg-info/requires.txt
+PyOcclusion.egg-info/top_level.txt
