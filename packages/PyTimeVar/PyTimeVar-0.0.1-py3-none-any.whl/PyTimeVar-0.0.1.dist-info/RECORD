@@ -1,0 +1,9 @@
+PyTimeVar/__init__.py,sha256=LugxtkKPZ17I7XRW7lBar9LRuEcCxWuTF1RrlTMgUpk,241
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/compare.py,sha256=jRQoA4G7WsOQ-XTWFkhEDd5pjLWXlO_lAUhTh3rthl0,3701
+tests/replicateSection3.py,sha256=vSVJLdVlNXTtXIeRAK7LpCwT3MrZqYiailP3bFkKWlc,2003
+tests/test_timevarmodels.py,sha256=Vb8Nsnmkd1DcOK-1iA5IrjtbuuODhTrT2OORCcySLVs,87
+PyTimeVar-0.0.1.dist-info/METADATA,sha256=Sp3qW2Xv16GlJi7eTSVS_biJ48R4Wie-raBLuPpuJ7o,77
+PyTimeVar-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyTimeVar-0.0.1.dist-info/top_level.txt,sha256=lWtwcjoq1usF2gB2EWUZkqpmf_IkldVhnTzi9gmQ0aE,16
+PyTimeVar-0.0.1.dist-info/RECORD,,
