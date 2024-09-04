@@ -1,0 +1,5 @@
+setup.py
+funnel_easy_logging.egg-info/PKG-INFO
+funnel_easy_logging.egg-info/SOURCES.txt
+funnel_easy_logging.egg-info/dependency_links.txt
+funnel_easy_logging.egg-info/top_level.txt
