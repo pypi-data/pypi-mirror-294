@@ -1,0 +1,5 @@
+"""
+Compression parameters
+"""
+COMPRESSION_LEVEL_LZ4 = 10
+COMPRESSION_BLOCK_SIZE_LZ4 = 128 * 1024
