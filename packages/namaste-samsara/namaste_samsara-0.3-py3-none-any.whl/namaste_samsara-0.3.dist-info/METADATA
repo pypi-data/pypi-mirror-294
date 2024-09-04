@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: namaste_samsara
+Version: 0.3
+Description-Content-Type: text/markdown
+
+# Just a Learning project to understand python packages and publishing them
+
+# Example
+
+```python
+from namaste_samsara import hello
+hello()
+```
+
+Or, from the command prompt
+
+```bash
+namaste-samsara
+```
+
+Both output:
+
+```python
+>>> Hello Everyone from SAMSARA SOCIAL!!
+```
