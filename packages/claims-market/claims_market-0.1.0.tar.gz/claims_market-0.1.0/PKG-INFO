@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: claims_market
+Version: 0.1.0
+Summary: A library to fetch and process data from the Claims Market API
+Home-page: https://github.com/yourusername/claims_market
+Author: Patrick Ashrafi
+Author-email: pa@ai-holding.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# Claims Market Library
+
+The Claims Market Library is a Python package designed to fetch, process, and analyze data from the Claims Market API. It provides easy-to-use functions for retrieving and manipulating claims market data for various companies, including Alameda Research LLC, BlockFi Inc., Celsius Network LLC, FTX Trading Ltd., and Genesis Global Capital, LLC.
+
+## Features
+
+- Fetch up-to-date claims market data from the API
+- Automatic data type conversion (dates to datetime, bid/ask to float)
+- Retrieve data for specific companies
+- Filter data by date range
+- Calculate mid-prices
+- Get latest prices for all companies
+
+## Installation
+
+You can install the Claims Market Library using pip:
+
+```
+pip install claims_market
+```
+
+## Usage
+
+Here's a quick start guide to using the Claims Market Library:
+
+```python
+from claims_market import ClaimsMarket
+from datetime import datetime
+
+# Create an instance of ClaimsMarket
+cm = ClaimsMarket()
+
+# Fetch all data
+all_data = cm.fetch_data()
+
+# Get data for specific companies
+ftx_data = cm.get_ftx_data()
+alameda_data = cm.get_alameda_data()
+
+# Get data within a date range
+start_date = datetime(2023, 1, 1)
+end_date = datetime(2023, 6, 30)
+date_range_data = cm.get_data_in_date_range(start_date, end_date)
+
+# Calculate mid prices
+data_with_mid_prices = cm.calculate_mid_price()
+
+# Get latest prices
+latest_prices = cm.get_latest_prices()
+
+# Print the first few rows of the FTX data
+print(ftx_data.head())
+```
+
+## Data Structure
+
+The library returns data in pandas DataFrame format with the following columns:
+
+- `date`: The date of the pricing data (datetime)
+- `bid`: The bid price (float)
+- `ask`: The ask price (float)
+- `name`: The name of the company
+- `mid_price`: The calculated mid-price between bid and ask (available after calling `calculate_mid_price()`)
+
+## Advanced Usage
+
+### Customizing Data Retrieval
+
+You can easily retrieve data for any company in the dataset:
+
+```python
+custom_company_data = cm.get_company_data("Your Company Name")
+```
+
+### Data Analysis
+
+The library returns pandas DataFrames, allowing you to perform further analysis using pandas functions:
+
+```python
+import matplotlib.pyplot as plt
+
+# Plot FTX bid prices over time
+ftx_data = cm.get_ftx_data()
+plt.figure(figsize=(12, 6))
+plt.plot(ftx_data['date'], ftx_data['bid'])
+plt.title('FTX Bid Prices Over Time')
+plt.xlabel('Date')
+plt.ylabel('Bid Price')
+plt.show()
+```
+
+## License
+
+This project is licensed under a Custom Attribution License. It is free to use, but if used in research papers or publications, appropriate credit must be given.
+
+## Citation
+
+If you use this library in your research or publication, please cite it as follows:
+
+```
+Patrick Ashrafi. 2024. Claims Market Library. 
+```
+
+For example:
+
+```
+Smith, J. (2023). Claims Market Library. v0.1.0. https://github.com/patzen123/claims_market
+```
+
+
+## Contributing
+
+Contributions to the Claims Market Library are welcome! Please feel free to submit a Pull Request.
+
+## Support
+
+If you encounter any problems or have any questions, please open an issue on the GitHub repository.
