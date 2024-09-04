@@ -1,0 +1,5 @@
+setup.py
+funnel_otempfile.egg-info/PKG-INFO
+funnel_otempfile.egg-info/SOURCES.txt
+funnel_otempfile.egg-info/dependency_links.txt
+funnel_otempfile.egg-info/top_level.txt
