@@ -1,0 +1,8 @@
+setup.py
+askari/__init__.py
+askari/guardrails.py
+askari_mgasa.egg-info/PKG-INFO
+askari_mgasa.egg-info/SOURCES.txt
+askari_mgasa.egg-info/dependency_links.txt
+askari_mgasa.egg-info/requires.txt
+askari_mgasa.egg-info/top_level.txt
