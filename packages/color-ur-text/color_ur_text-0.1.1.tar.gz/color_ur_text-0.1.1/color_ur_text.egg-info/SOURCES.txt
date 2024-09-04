@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+color_ur_text.egg-info/PKG-INFO
+color_ur_text.egg-info/SOURCES.txt
+color_ur_text.egg-info/dependency_links.txt
+color_ur_text.egg-info/top_level.txt
+src/__init__.py
+src/color_ur_text.py
