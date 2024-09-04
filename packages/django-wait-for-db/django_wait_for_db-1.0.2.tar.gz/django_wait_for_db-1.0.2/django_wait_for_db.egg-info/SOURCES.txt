@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+django_wait_for_db.egg-info/PKG-INFO
+django_wait_for_db.egg-info/SOURCES.txt
+django_wait_for_db.egg-info/dependency_links.txt
+django_wait_for_db.egg-info/not-zip-safe
+django_wait_for_db.egg-info/requires.txt
+django_wait_for_db.egg-info/top_level.txt
+wait_for_db/__init__.py
+wait_for_db/apps.py
+wait_for_db/management/commands/wait_for_db.py
