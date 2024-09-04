@@ -1,0 +1,8 @@
+{% load i18n %}
+{% translate "Hi there," %}
+
+{% blocktranslate %}You’ve been invited to join {{ site_name }}.{% endblocktranslate %}
+{% translate "Complete your registration on the following page:" %} {{ registration_link }}
+
+{% translate "Thanks for using our site!" %}
+{% blocktranslate %}The {{ site_name }} team{% endblocktranslate %}
