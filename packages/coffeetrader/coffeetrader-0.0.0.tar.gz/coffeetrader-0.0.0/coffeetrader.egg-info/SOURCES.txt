@@ -1,0 +1,7 @@
+README.md
+setup.py
+coffeetrader.egg-info/PKG-INFO
+coffeetrader.egg-info/SOURCES.txt
+coffeetrader.egg-info/dependency_links.txt
+coffeetrader.egg-info/requires.txt
+coffeetrader.egg-info/top_level.txt
