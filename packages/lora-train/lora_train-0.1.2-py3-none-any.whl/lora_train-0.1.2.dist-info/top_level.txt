@@ -1,0 +1,6 @@
+extensions_built_in
+jobs
+notebooks
+ostris_ai_toolkit
+scripts
+toolkit
