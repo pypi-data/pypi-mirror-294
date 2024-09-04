@@ -1,0 +1,11 @@
+nvidia_pstate/__init__.py,sha256=UdBvdcHSEvxTE9FJOAuhemOhAT74AEyhxeAz2RsAlzs,64
+nvidia_pstate/nvapi.py,sha256=RSxe5p6L1fgcL08MlNamXZJw0U05FixJfCwxRY9xXZs,5232
+nvidia_pstate/pstate.py,sha256=lHN5INJkNPSnUjJEHXyVHgvwOsVJX-ZetFSNukFPr-U,609
+nvidia_pstate/pstate_nvapi.py,sha256=i0hHkYum0fFb7nChk-JCgVuPTZUZP6E_ybG6_5fAcqQ,1847
+nvidia_pstate/scripts/nvidia_pstate.py,sha256=nuwKQFQaM7s-IL0VcwoduWvhoHwu_THwPAt_jsj9SGI,1356
+nvidia_pstate-1.0.5.post1.dist-info/LICENSE,sha256=O3xc18eiqOZ9Vi237mcGg32IAYiJiZ_F8H__YLe_rJ4,1066
+nvidia_pstate-1.0.5.post1.dist-info/METADATA,sha256=iNQ9yEUloArMiW-oY0KGYb99e7Uvdn-0B-UgKYQXLiE,2498
+nvidia_pstate-1.0.5.post1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+nvidia_pstate-1.0.5.post1.dist-info/entry_points.txt,sha256=oOi17uNyyDbDpsQTiLwYzFGP85AnSyKFCWaxDNMnWjE,75
+nvidia_pstate-1.0.5.post1.dist-info/top_level.txt,sha256=41WUVIdSfeYifwk4z5-CRClKZjcOGA3FN9CsEbyTUXk,14
+nvidia_pstate-1.0.5.post1.dist-info/RECORD,,
