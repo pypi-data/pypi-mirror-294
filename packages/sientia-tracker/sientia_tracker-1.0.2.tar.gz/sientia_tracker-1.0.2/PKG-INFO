@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sientia_tracker
+Version: 1.0.2
+Summary: Library for Aignosi Tracking API
+Author: ['Ítalo Azevedo', 'Pedro Bahia']
+Author-email: ['italo@aignosi.com.br', 'pedro.bahia@aignosi.com.br']
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE
+Requires-Dist: mlflow==2.10.1
+Requires-Dist: typing
