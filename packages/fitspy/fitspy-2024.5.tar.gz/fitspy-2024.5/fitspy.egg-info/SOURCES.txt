@@ -1,0 +1,350 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+doc/conf.py
+doc/gen_figures.py
+doc/gh-pages.py
+doc/index.rst
+doc/make.bat
+doc/_build/doctrees/environment.pickle
+doc/_build/doctrees/index.doctree
+doc/_build/doctrees/api/fitspy.app.callbacks.doctree
+doc/_build/doctrees/api/fitspy.app.doctree
+doc/_build/doctrees/api/fitspy.app.gui.doctree
+doc/_build/doctrees/api/fitspy.app.toplevels.doctree
+doc/_build/doctrees/api/fitspy.app.utils.doctree
+doc/_build/doctrees/api/fitspy.baseline.doctree
+doc/_build/doctrees/api/fitspy.doctree
+doc/_build/doctrees/api/fitspy.models.doctree
+doc/_build/doctrees/api/fitspy.spectra.doctree
+doc/_build/doctrees/api/fitspy.spectra_map.doctree
+doc/_build/doctrees/api/fitspy.spectrum.doctree
+doc/_build/doctrees/api/fitspy.utils.doctree
+doc/_build/doctrees/api/fitspy.utils_mp.doctree
+doc/_build/doctrees/api/modules.doctree
+doc/_build/doctrees/dev_guide/dev_notes.doctree
+doc/_build/doctrees/release_notes/release_notes.doctree
+doc/_build/doctrees/user_guide/auto_mode.doctree
+doc/_build/doctrees/user_guide/baseline.doctree
+doc/_build/doctrees/user_guide/fitting.doctree
+doc/_build/doctrees/user_guide/gui.doctree
+doc/_build/doctrees/user_guide/input_data.doctree
+doc/_build/doctrees/user_guide/intro.doctree
+doc/_build/doctrees/user_guide/outputs.doctree
+doc/_build/doctrees/user_guide/peak_models.doctree
+doc/_build/doctrees/user_guide/workflow.doctree
+doc/_build/html/.buildinfo
+doc/_build/html/genindex.html
+doc/_build/html/index.html
+doc/_build/html/objects.inv
+doc/_build/html/py-modindex.html
+doc/_build/html/search.html
+doc/_build/html/searchindex.js
+doc/_build/html/_images/2d-map.png
+doc/_build/html/_images/2d-map_intensity_fwhm.png
+doc/_build/html/_images/2d-map_unordered.png
+doc/_build/html/_images/baseline.png
+doc/_build/html/_images/baseline_semi_auto.png
+doc/_build/html/_images/figure_settings.png
+doc/_build/html/_images/files_selector.png
+doc/_build/html/_images/fit_constraint.png
+doc/_build/html/_images/fit_settings.png
+doc/_build/html/_images/fitting.png
+doc/_build/html/_images/gen_figures_baseline.png
+doc/_build/html/_images/gen_figures_baseline_attached.png
+doc/_build/html/_images/gen_figures_bkg.png
+doc/_build/html/_images/global_actions.png
+doc/_build/html/_images/home.png
+doc/_build/html/_images/models.png
+doc/_build/html/_images/navigation_toolbox.png
+doc/_build/html/_images/normalization.png
+doc/_build/html/_images/outliers.png
+doc/_build/html/_images/overall_settings.png
+doc/_build/html/_images/parameters.png
+doc/_build/html/_images/params_2d_map_csv.png
+doc/_build/html/_images/params_all_csv.png
+doc/_build/html/_images/params_csv.png
+doc/_build/html/_images/show_all.png
+doc/_build/html/_images/spectra.png
+doc/_build/html/_images/workflow.png
+doc/_build/html/_sources/index.rst.txt
+doc/_build/html/_sources/api/fitspy.app.callbacks.rst.txt
+doc/_build/html/_sources/api/fitspy.app.gui.rst.txt
+doc/_build/html/_sources/api/fitspy.app.rst.txt
+doc/_build/html/_sources/api/fitspy.app.toplevels.rst.txt
+doc/_build/html/_sources/api/fitspy.app.utils.rst.txt
+doc/_build/html/_sources/api/fitspy.baseline.rst.txt
+doc/_build/html/_sources/api/fitspy.models.rst.txt
+doc/_build/html/_sources/api/fitspy.rst.txt
+doc/_build/html/_sources/api/fitspy.spectra.rst.txt
+doc/_build/html/_sources/api/fitspy.spectra_map.rst.txt
+doc/_build/html/_sources/api/fitspy.spectrum.rst.txt
+doc/_build/html/_sources/api/fitspy.utils.rst.txt
+doc/_build/html/_sources/api/fitspy.utils_mp.rst.txt
+doc/_build/html/_sources/api/modules.rst.txt
+doc/_build/html/_sources/dev_guide/dev_notes.rst.txt
+doc/_build/html/_sources/release_notes/release_notes.rst.txt
+doc/_build/html/_sources/user_guide/auto_mode.rst.txt
+doc/_build/html/_sources/user_guide/baseline.rst.txt
+doc/_build/html/_sources/user_guide/fitting.rst.txt
+doc/_build/html/_sources/user_guide/gui.rst.txt
+doc/_build/html/_sources/user_guide/input_data.rst.txt
+doc/_build/html/_sources/user_guide/intro.rst.txt
+doc/_build/html/_sources/user_guide/outputs.rst.txt
+doc/_build/html/_sources/user_guide/peak_models.rst.txt
+doc/_build/html/_sources/user_guide/workflow.rst.txt
+doc/_build/html/_static/2d-map.png
+doc/_build/html/_static/2d-map_intensity_fwhm.png
+doc/_build/html/_static/2d-map_unordered.png
+doc/_build/html/_static/_sphinx_javascript_frameworks_compat.js
+doc/_build/html/_static/attractors_settings.png
+doc/_build/html/_static/baseline.png
+doc/_build/html/_static/baseline_semi_auto.png
+doc/_build/html/_static/basic.css
+doc/_build/html/_static/doctools.js
+doc/_build/html/_static/documentation_options.js
+doc/_build/html/_static/figure_settings.png
+doc/_build/html/_static/file.png
+doc/_build/html/_static/files_selector.png
+doc/_build/html/_static/fit_constraint.png
+doc/_build/html/_static/fit_settings.png
+doc/_build/html/_static/fitspy.png
+doc/_build/html/_static/fitting.png
+doc/_build/html/_static/gen_figures_baseline.png
+doc/_build/html/_static/gen_figures_baseline_attached.png
+doc/_build/html/_static/gen_figures_bkg.png
+doc/_build/html/_static/global_actions.png
+doc/_build/html/_static/graphviz.css
+doc/_build/html/_static/home.png
+doc/_build/html/_static/jquery-3.6.0.js
+doc/_build/html/_static/jquery.js
+doc/_build/html/_static/language_data.js
+doc/_build/html/_static/logo_black.png
+doc/_build/html/_static/minus.png
+doc/_build/html/_static/models.png
+doc/_build/html/_static/navigation_toolbox.png
+doc/_build/html/_static/normalization.png
+doc/_build/html/_static/outliers.png
+doc/_build/html/_static/overall_settings.png
+doc/_build/html/_static/parameters.png
+doc/_build/html/_static/params_2d_map_csv.png
+doc/_build/html/_static/params_all_csv.png
+doc/_build/html/_static/params_csv.png
+doc/_build/html/_static/peaks.png
+doc/_build/html/_static/plus.png
+doc/_build/html/_static/pygments.css
+doc/_build/html/_static/save_figures.png
+doc/_build/html/_static/searchtools.js
+doc/_build/html/_static/show_all.png
+doc/_build/html/_static/spectra.png
+doc/_build/html/_static/sphinx_highlight.js
+doc/_build/html/_static/underscore-1.13.1.js
+doc/_build/html/_static/underscore.js
+doc/_build/html/_static/workflow.png
+doc/_build/html/_static/css/badge_only.css
+doc/_build/html/_static/css/theme.css
+doc/_build/html/_static/css/fonts/Roboto-Slab-Bold.woff
+doc/_build/html/_static/css/fonts/Roboto-Slab-Bold.woff2
+doc/_build/html/_static/css/fonts/Roboto-Slab-Regular.woff
+doc/_build/html/_static/css/fonts/Roboto-Slab-Regular.woff2
+doc/_build/html/_static/css/fonts/fontawesome-webfont.eot
+doc/_build/html/_static/css/fonts/fontawesome-webfont.svg
+doc/_build/html/_static/css/fonts/fontawesome-webfont.ttf
+doc/_build/html/_static/css/fonts/fontawesome-webfont.woff
+doc/_build/html/_static/css/fonts/fontawesome-webfont.woff2
+doc/_build/html/_static/css/fonts/lato-bold-italic.woff
+doc/_build/html/_static/css/fonts/lato-bold-italic.woff2
+doc/_build/html/_static/css/fonts/lato-bold.woff
+doc/_build/html/_static/css/fonts/lato-bold.woff2
+doc/_build/html/_static/css/fonts/lato-normal-italic.woff
+doc/_build/html/_static/css/fonts/lato-normal-italic.woff2
+doc/_build/html/_static/css/fonts/lato-normal.woff
+doc/_build/html/_static/css/fonts/lato-normal.woff2
+doc/_build/html/_static/js/badge_only.js
+doc/_build/html/_static/js/html5shiv-printshiv.min.js
+doc/_build/html/_static/js/html5shiv.min.js
+doc/_build/html/_static/js/theme.js
+doc/_build/html/api/fitspy.app.callbacks.html
+doc/_build/html/api/fitspy.app.gui.html
+doc/_build/html/api/fitspy.app.html
+doc/_build/html/api/fitspy.app.toplevels.html
+doc/_build/html/api/fitspy.app.utils.html
+doc/_build/html/api/fitspy.baseline.html
+doc/_build/html/api/fitspy.html
+doc/_build/html/api/fitspy.models.html
+doc/_build/html/api/fitspy.spectra.html
+doc/_build/html/api/fitspy.spectra_map.html
+doc/_build/html/api/fitspy.spectrum.html
+doc/_build/html/api/fitspy.utils.html
+doc/_build/html/api/fitspy.utils_mp.html
+doc/_build/html/api/modules.html
+doc/_build/html/dev_guide/dev_notes.html
+doc/_build/html/release_notes/release_notes.html
+doc/_build/html/user_guide/auto_mode.html
+doc/_build/html/user_guide/baseline.html
+doc/_build/html/user_guide/fitting.html
+doc/_build/html/user_guide/gui.html
+doc/_build/html/user_guide/input_data.html
+doc/_build/html/user_guide/intro.html
+doc/_build/html/user_guide/outputs.html
+doc/_build/html/user_guide/peak_models.html
+doc/_build/html/user_guide/workflow.html
+doc/_static/2d-map.png
+doc/_static/2d-map_intensity_fwhm.png
+doc/_static/2d-map_unordered.png
+doc/_static/attractors_settings.png
+doc/_static/baseline.png
+doc/_static/baseline_semi_auto.png
+doc/_static/figure_settings.png
+doc/_static/files_selector.png
+doc/_static/fit_constraint.png
+doc/_static/fit_settings.png
+doc/_static/fitspy.png
+doc/_static/fitting.png
+doc/_static/gen_figures_baseline.png
+doc/_static/gen_figures_baseline_attached.png
+doc/_static/gen_figures_bkg.png
+doc/_static/global_actions.png
+doc/_static/home.png
+doc/_static/logo_black.png
+doc/_static/models.png
+doc/_static/navigation_toolbox.png
+doc/_static/normalization.png
+doc/_static/outliers.png
+doc/_static/overall_settings.png
+doc/_static/parameters.png
+doc/_static/params_2d_map_csv.png
+doc/_static/params_all_csv.png
+doc/_static/params_csv.png
+doc/_static/peaks.png
+doc/_static/save_figures.png
+doc/_static/show_all.png
+doc/_static/spectra.png
+doc/_static/workflow.png
+doc/api/fitspy.app.callbacks.rst
+doc/api/fitspy.app.gui.rst
+doc/api/fitspy.app.rst
+doc/api/fitspy.app.toplevels.rst
+doc/api/fitspy.app.utils.rst
+doc/api/fitspy.baseline.rst
+doc/api/fitspy.models.rst
+doc/api/fitspy.rst
+doc/api/fitspy.spectra.rst
+doc/api/fitspy.spectra_map.rst
+doc/api/fitspy.spectrum.rst
+doc/api/fitspy.utils.rst
+doc/api/fitspy.utils_mp.rst
+doc/api/modules.rst
+doc/dev_guide/dev_notes.rst
+doc/release_notes/release_notes.rst
+doc/user_guide/auto_mode.rst
+doc/user_guide/baseline.rst
+doc/user_guide/fitting.rst
+doc/user_guide/gui.rst
+doc/user_guide/input_data.rst
+doc/user_guide/intro.rst
+doc/user_guide/outputs.rst
+doc/user_guide/peak_models.rst
+doc/user_guide/workflow.rst
+examples/ex_gui_2d_maps.py
+examples/ex_gui_apply_model_to_all_new_spectra.py
+examples/ex_gui_auto_decomposition.py
+examples/ex_gui_peak_models_in_noise.py
+examples/ex_gui_reload_model.py
+examples/ex_gui_users_defined_models_2d_map.py
+examples/ex_nogui_auto_decomposition.py
+examples/ex_nogui_model_reconstruction_from_params.py
+examples/data/2D_maps/bkg_models.py
+examples/data/2D_maps/bkg_models.txt
+examples/data/2D_maps/model.json
+examples/data/2D_maps/ordered_map.txt
+examples/data/2D_maps/peak_models.py
+examples/data/2D_maps/peak_models.txt
+examples/data/2D_maps/unordered_map.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1757.0  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1757.0  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1757.4  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1757.4  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1764.2  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1764.2  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1764.6  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1764.6  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1765.0  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1765.0  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1765.4  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1765.4  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1765.8  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1765.8  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1766.2  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1766.2  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1766.6  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1766.6  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1767.0  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1767.0  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1767.4  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1767.4  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1767.8  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1767.8  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1768.2  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1768.2  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1768.6  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1768.6  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1769.0  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1769.0  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1769.4  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1769.4  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1769.8  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1769.8  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1770.2  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1770.2  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1770.6  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1770.6  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1771.0  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1771.0  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1771.4  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1771.4  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1771.8  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1771.8  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1772.2  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1772.2  Y=72_stats.txt
+examples/data/2D_maps/results/ordered_map.txt  X=1772.6  Y=72.csv
+examples/data/2D_maps/results/ordered_map.txt  X=1772.6  Y=72_stats.txt
+examples/data/2D_maps/results/results.csv
+examples/data/spectra_1/spectrum_1_1.txt
+examples/data/spectra_1/spectrum_1_2.txt
+examples/data/spectra_1/spectrum_1_3.txt
+examples/data/spectra_2/model.json
+examples/data/spectra_2/spectrum_2_1.csv
+examples/data/spectra_2/spectrum_2_1.txt
+examples/data/spectra_2/spectrum_2_2.txt
+examples/data/spectra_2/spectrum_2_3.txt
+examples/data/spectra_3/model.json
+examples/data/spectra_3/spectrum_3_1.txt
+examples/data/spectra_3/spectrum_3_2.txt
+fitspy/__init__.py
+fitspy/baseline.py
+fitspy/models.py
+fitspy/spectra.py
+fitspy/spectra_map.py
+fitspy/spectrum.py
+fitspy/utils.py
+fitspy/utils_mp.py
+fitspy.egg-info/PKG-INFO
+fitspy.egg-info/SOURCES.txt
+fitspy.egg-info/dependency_links.txt
+fitspy.egg-info/entry_points.txt
+fitspy.egg-info/requires.txt
+fitspy.egg-info/top_level.txt
+fitspy/app/__init__.py
+fitspy/app/callbacks.py
+fitspy/app/gui.py
+fitspy/app/toplevels.py
+fitspy/app/utils.py
+tests/test_gui_2d_maps.py
+tests/test_gui_apply_model_to_all_new_spectra.py
+tests/test_gui_auto_decomposition.py
+tests/test_gui_peak_models_in_noise.py
+tests/test_gui_users_defined_models_2d_map.py
+tests/test_nogui_auto_decomposition.py
+tests/utils.py
