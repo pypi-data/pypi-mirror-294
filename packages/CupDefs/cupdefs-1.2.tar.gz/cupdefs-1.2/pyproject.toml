@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CupDefs"
+version = "1.2"
+readme = 'README.md'
+authors = [
+  { name="Savtis", email="nihyisebe@gmail.com" },
+]
+dependencies = [
+  'colorama'
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
