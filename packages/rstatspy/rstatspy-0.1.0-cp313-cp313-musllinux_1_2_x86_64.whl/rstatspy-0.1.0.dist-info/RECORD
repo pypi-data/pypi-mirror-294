@@ -1,0 +1,9 @@
+rstatspy.cpython-313-x86_64-linux-musl.so,sha256=DzEoziTV4rraxJyRK0OG2El20F9nlR_bol1w84m3ZIs,39264
+rstatspy-0.1.0.dist-info/RECORD,,
+rstatspy-0.1.0.dist-info/WHEEL,sha256=oDOl81Vy9oX-RtjV-0435-je_M242J-YWGH3e3A1ceQ,117
+rstatspy-0.1.0.dist-info/METADATA,sha256=48BLAa_chxm8VvUH81KsNSxRDSQ-vt5DktcoKkFFJ3c,3265
+rstatspy-0.1.0.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+lib/librstats.so,sha256=1LOe28eYELXgNzgkbdtpoe4EIGmNsOPQK5b2hlUapAQ,14024
+lib/cmake/rstats/rstatsConfig-release.cmake,sha256=68Tq9xYh-4Mw16BPFjGvk8rmx2D-J71BCsc2x74Yr34,796
+lib/cmake/rstats/rstatsConfig.cmake,sha256=hU05McT_uewb8PBWCTWgBg9q4SufeL89OY7f6Het2Fk,4117
+include/rstats.h,sha256=XlBMzTmBbV54MDL4J0fznZ33aHXvVTbs4oQQpN6ZJrk,14117
