@@ -1,0 +1,11 @@
+galaxysled/__init__.py,sha256=8Nm6NMfppyU2TBdZv-MmkWqDxWlaN_vEfEzVbdj_YDc,84
+galaxysled/functions.py,sha256=2V_6YVmZwGzdmyYk57voypb1pUZRSa2NkLGUfuiJfsg,11408
+galaxysled/functions_mcmc.py,sha256=se9rU0lMNkWKxCNZX4n-tczjsr9e4kXld5l8QihGLtE,12195
+galaxysled/gmcs.py,sha256=zm5o34tHSZmdXTheWr69FG2dKROTvS_POMp8lORgEo0,3132
+galaxysled/test.py,sha256=FxOvfTYzz4bwbcGgSsD0keP-gTInLrh2yMZMCPAE0tM,356
+galaxysled/resources/__init__.py,sha256=8Nm6NMfppyU2TBdZv-MmkWqDxWlaN_vEfEzVbdj_YDc,84
+galaxysled-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+galaxysled-0.0.5.dist-info/METADATA,sha256=BRu4pN4JUJXy30MtHMx6NP9IXVSQmHNI9ZtIYjk8O0s,8652
+galaxysled-0.0.5.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+galaxysled-0.0.5.dist-info/top_level.txt,sha256=aKZEt2nbrdRJKXFqxioyzLj9yJmWtnz-kHq7_DLsvGw,11
+galaxysled-0.0.5.dist-info/RECORD,,
