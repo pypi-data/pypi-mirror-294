@@ -1,0 +1,3 @@
+[console_scripts]
+degrade-fourier = radifox.utils.degrade.degrade_fourier:main
+degrade-slice-selection = radifox.utils.degrade.degrade_slice_selection:main
