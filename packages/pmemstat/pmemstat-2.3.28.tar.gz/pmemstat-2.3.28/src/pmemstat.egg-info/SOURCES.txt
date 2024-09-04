@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pmemstat/CpuSmooth.py
+src/pmemstat/KillThem.py
+src/pmemstat/Window.py
+src/pmemstat/__init__.py
+src/pmemstat/main.py
+src/pmemstat.egg-info/PKG-INFO
+src/pmemstat.egg-info/SOURCES.txt
+src/pmemstat.egg-info/dependency_links.txt
+src/pmemstat.egg-info/entry_points.txt
+src/pmemstat.egg-info/requires.txt
+src/pmemstat.egg-info/top_level.txt
