@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: COMSTABPY
+Version: 0.0.1
+Summary: ComStabPY is an python package that contains basic functions to apply the unified framework for partitioning the drivers of stability of ecological communities
+Home-page: https://github.com/gocchipintive/COMSTABPY/blob/main/comstabpy.py
+Author: Guido Occhipinti
+Author-email: occhipinti.guido@gmail.com
+License: MIT
+Keywords: stability,ecology,biodiversity
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+COMSTABPY is an python package that contains basic functions to apply the unified framework for partitioning the drivers of stability of ecological communities developed in (Segrestin et al. 2024 Global Ecology and Biogeography, 10.1111/geb.13828). Additionally it provides some plotting function. The code is partially based on the original R package comstab, url: https://cran.r-project.org/web/packages/comstab/index.html 
+
+
+Change Log
+============
+0.0.1 (Sep 03, 2024)
+ — — — — — — — — — -
+- First Release
