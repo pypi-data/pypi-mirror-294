@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Relations Visualization</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-start justify-center min-h-screen py-4">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <div class="w-full max-w-7xl">
+      <!-- Top Controls -->
+      <div class="flex justify-between mb-4">
+        <!-- Dropdown Search -->
+        <div class="relative">
+          <label
+            for="model-select"
+            class="block text-sm font-medium text-gray-700"
+            >Select Model:</label
+          >
+          <div class="mt-1 relative">
+            <button
+              id="dropdownSearchButton"
+              data-dropdown-toggle="dropdownSearch"
+              class="w-64 text-left py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+            >
+              Select a model
+            </button>
+            <div
+              id="dropdownSearch"
+              class="hidden absolute z-10 w-full bg-white rounded-md shadow-lg"
+            >
+              <div class="px-3 py-2">
+                <input
+                  type="text"
+                  id="dropdownSearchInput"
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+                  placeholder="Search..."
+                />
+              </div>
+              <ul
+                id="dropdownSearchOptions"
+                class="py-2 text-sm text-gray-700"
+                aria-labelledby="dropdownSearchButton"
+              >
+                <!-- Options will be dynamically added here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex space-x-5">
+          <input
+            id="path-input"
+            type="text"
+            class="bg-violet-300 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2"
+            readonly
+          />
+
+          <button
+            id="copy-btn"
+            onclick="CopyRelationsPath()"
+            class="text-start text-white bg-violet-600 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-1 w-48 text-center"
+          >
+            Get path
+          </button>
+
+          <button
+            data-modal-target="settings-modal"
+            data-modal-toggle="settings-modal"
+            class="text-white bg-violet-600 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-1 text-center"
+            type="button"
+          >
+            More
+          </button>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left text-gray-700">
+          <thead class="text-xs uppercase bg-gray-200">
+            <tr>
+              <th class="px-6 py-3">Model Name</th>
+              <th class="px-6 py-3">Fields</th>
+              <th class="px-6 py-3">Relations</th>
+              <th class="px-6 py-3">Functions</th>
+            </tr>
+          </thead>
+          <tbody
+            id="main-table-tbody"
+            class="bg-white divide-y divide-gray-200"
+          ></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="modal-div" class="flex flex-row"></div>
+
+    <!-- Settings modal -->
+    <div
+      id="settings-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed inset-0 z-50 flex items-center justify-center w-full max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <div class="relative bg-white rounded-lg shadow">
+          <div class="p-4 md:p-2 space-y-4">
+
+            <div class="mb-4 border-b border-gray-200">
+              <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="settings-active-tabs" data-tabs-toggle="#settings-active-tabs-content" role="tablist">
+                <li class="me-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 rounded-t-lg" id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About</button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 rounded-t-lg" id="code_device-tab" data-tabs-target="#code_device" type="button" role="tab" aria-controls="code_device" aria-selected="false">Coding device</button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 rounded-t-lg" id="color-tab" data-tabs-target="#color" type="button" role="tab" aria-controls="color" aria-selected="false">Color settings</button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 rounded-t-lg" id="create_path-tab" data-tabs-target="#create_path" type="button" role="tab" aria-controls="create_path" aria-selected="false">Create models relation path</button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Coding device-->
+            <div id="settings-active-tabs-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="code_device" role="tabpanel" aria-labelledby="code_device-tab">
+                    <p>Select which coding device are you using. This is needed to decide what to do when you click model. <br>In case Visual Studio Code this will open directly file with this model, only when one vs window is open.<br>In other case's it will copy to you'r clipboard command to open file.</p>
+                    <br>
+                    <div class="flex items-center mb-4">
+                      <input id="vs-radio" name="coding-device" type="radio" value="vs" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                      <label for="vs-radio" class="ml-2 text-sm font-medium text-gray-900">Visual Studio Code</label>
+                    </div>
+                
+                    <div class="flex items-center mb-4">
+                        <input id="cmax-radio" name="coding-device" type="radio" value="cmax" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                        <label for="cmax-radio" class="ml-2 text-sm font-medium text-gray-900">cmax</label>
+                    </div>
+                
+                    <div class="flex items-center mb-4">
+                        <input id="vim-radio" name="coding-device" type="radio" value="vim" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                        <label for="vim-radio" class="ml-2 text-sm font-medium text-gray-900">vim</label>
+                    </div>
+                    <button onclick="save_preference()" type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Save</button>
+                </div>
+            </div>
+
+            <!-- Colors -->
+            <div id="settings-active-tabs-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="color" role="tabpanel" aria-labelledby="color-tab">
+                    <table class="w-full text-sm text-middle text-gray-700">
+                  <thead class="text-xs uppercase bg-gray-200">
+                    <tr>
+                      <th class="px-6 py-3">Font color</th>
+                      <th class="px-6 py-3">Field type</th>
+                      <th class="px-6 py-3">Background color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Forward Relations -->
+                    <tr class="text-center text-2xl text-gray-900 font-semibold">
+                      <td></td>
+                      <td>Forward</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="OneToOneField"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">OneToOneField</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="OneToOneField"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="ForeignKey"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">ForeignKey</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="ForeignKey"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="ManyToManyField"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">ManyToManyField</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="ManyToManyField"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <!-- Reverse Relations -->
+                    <tr class="text-center text-2xl text-gray-900 font-semibold">
+                      <td></td>
+                      <td>Reverse</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="OneToOneRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">OneToOneRel</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="OneToOneRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="ManyToOneRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">ManyToOneRel</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="ManyToOneRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="ManyToManyRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">ManyToManyRel</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="ManyToManyRel"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <!-- Other fields -->
+                    <tr class="text-center text-2xl text-gray-900 font-semibold">
+                      <td></td>
+                      <td>Other</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="default"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">Default fields</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="default"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="method"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">Methods</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="method"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="color"
+                          name="selected"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                      <td class="text-center">Selected</td>
+                      <td>
+                        <input
+                          onchange="set_new_colors(this)"
+                          type="color"
+                          id="background-color"
+                          name="selected"
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <button onclick="save_preference()" type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Save</button>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div id="settings-active-tabs-content">
+              <div class="hidden p-4 rounded-lg bg-gray-50" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <div class="p-4 md:p-5 space-y-4">
+                  <p class="text-base leading-relaxed text-gray-700">
+                    This application is designed to help you view and manage various
+                    models efficiently. With an intuitive UI and powerful features,
+                    you can easily navigate through the data.
+                  </p>
+                  <p class="text-base leading-relaxed text-gray-700">
+                    Feel free to explore the settings to customize the appearance
+                    according to your preferences. Your feedback is valuable to us!
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Create models relation path -->
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="create_path" role="tabpanel" aria-labelledby="create_path-tab">
+              <div class="p-4 md:p-5 space-y-4">
+                <div class="text-center">
+                  <p>Might not work. In tests.</p>
+                </div>
+                <div class="flex space-x-4">
+                  <div class="flex-1">
+                    <button id="dropdownSearchButtonFirst" data-dropdown-toggle="dropdownSearchFirst" class="w-64 text-left py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                      Select from model
+                    </button>
+                    <div id="dropdownSearchFirst" class="hidden absolute z-10 w-full bg-white rounded-md shadow-lg">
+                      <div class="px-3 py-2">
+                        <input type="text" id="dropdownSearchInputFirst" class="block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" placeholder="Search..." />
+                      </div>
+                      <ul id="create-models-relation-path-from" class="py-2 text-sm text-gray-700" aria-labelledby="dropdownSearchButtonFirst">
+                        <!-- Options will be dynamically added here -->
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <button id="dropdownSearchButtonSecound" data-dropdown-toggle="dropdownSearchSecound" class="w-64 text-left py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                      Select to model
+                    </button>
+                    <div id="dropdownSearchSecound" class="hidden absolute z-10 w-full bg-white rounded-md shadow-lg">
+                      <div class="px-3 py-2">
+                        <input type="text" id="dropdownSearchInputSecound" class="block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" placeholder="Search..." />
+                      </div>
+                      <ul id="create-models-relation-path-to" class="py-2 text-sm text-gray-700" aria-labelledby="dropdownSearchButtonSecound">
+                        <!-- Options will be dynamically added here -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button onclick="create_models_relation_path_func()" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2">Create</button>
+                  <input id="create-models-relation-path-input" type="text" class="bg-violet-300 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2 mt-4" readonly/>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b"
+          >
+            <button
+              data-modal-hide="settings-modal"
+              type="button"
+              class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+
+    $(document).ready(function () {
+
+      // 'from' model selected to create model relation path
+      let selectedFirstName = undefined;
+      
+      // 'to' model selected to create model relation path
+      let selectedSecoundName = undefined;
+
+      // List of reverse relation types
+      let reverse_relation = ["OneToOneRel", "ManyToOneRel", "ManyToManyRel"];
+      
+      // Coding device
+      let code_device = "{{session.code_device}}";
+      
+      // Set check for used coding device
+      switch(code_device){
+        case 'vs':
+          $('#vs-radio').prop('checked', true);
+          break
+        case 'cmax':
+          $('#cmax-radio').prop('checked', true);
+          break
+        case 'vim':
+          $('#vim-radio').prop('checked', true);
+          break
+      }
+
+      // Map to save selected models
+      let displayedModels = new Set();
+
+      // Map for fields color
+      let map = new Map();
+
+       // Forward Relations
+      map.set("OneToOneField", ["{{ session.OneToOneField_text }}", "{{ session.OneToOneField_bg }}"]);
+      map.set("ForeignKey", ["{{ session.ForeignKey_text }}", "{{ session.ForeignKey_bg }}"]);
+      map.set("ManyToManyField", ["{{ session.ManyToManyField_text }}", "{{ session.ManyToManyField_bg }}"]);
+
+      // Reverse Relations
+      map.set("OneToOneRel", ["{{ session.OneToOneRel_text }}", "{{ session.OneToOneRel_bg }}"]);
+      map.set("ManyToOneRel", ["{{ session.ManyToOneRel_text }}", "{{ session.ManyToOneRel_bg }}"]);
+      map.set("ManyToManyRel", ["{{ session.ManyToManyRel_text }}", "{{ session.ManyToManyRel_bg }}"]);
+
+      // Active field
+      map.set("selected", ["{{ session.selected_text }}", "{{ session.selected_bg }}"]);
+
+      // Default field
+      map.set("default", ["{{ session.default_text }}", "{{ session.default_bg }}"]);
+
+      // Method button
+      map.set("method", ["{{ session.method_text }}", "{{ session.method_bg }}"]);
+
+      // Setting values to inputs in settings > color settings
+      map.forEach((values, name) => {
+        $(`input#color[name="${name}"]`).val(values[0]);
+        $(`input#background-color[name="${name}"]`).val(values[1]);
+      });
+
+      // Map keys
+      map_keys = [...map.keys()];
+
+      // Data from framework
+      let data = JSON.parse("{{ models | escapejs }}");
+
+      // Adding options to select with models passed from framework
+      $.each(data, function (index, object) {
+        $("#dropdownSearchOptions").append(
+          `<li><button type="button" class="w-full text-left px-4 py-2 hover:bg-gray-100" data-value="${index}" data-name="${object.name}">${object.name}</button></li>`
+        );
+        $("#create-models-relation-path-from").append(
+          `<li><button type="button" class="w-full text-left px-4 py-2 hover:bg-gray-100" data-value="${index}" data-name="${object.name}">${object.name}</button></li>`
+        );
+        $("#create-models-relation-path-to").append(
+          `<li><button type="button" class="w-full text-left px-4 py-2 hover:bg-gray-100" data-value="${index}" data-name="${object.name}">${object.name}</button></li>`
+        );
+      });
+
+      // Getting data about model after selecting in select
+      $("#dropdownSearchOptions button").on("click", function () {
+        const selectedIndex = $(this).data("value");
+        const selectedName = $(this).data("name");
+        $("#dropdownSearchButton").text(selectedName);
+        $("#dropdownSearch").addClass("hidden");
+
+        const selectedModel = data[selectedIndex];
+        $("#main-table-tbody").empty();
+        displayedModels.clear();
+
+        if (selectedModel) {
+          $.ajax({
+            url: '{% url "aqSFrOMAEQgBlduCuYfr" %}',
+            data: {
+              model: selectedName,
+            },
+            success: function (response) {
+              const modelData = response.data;
+              if (modelData) {
+                appendModelRow(modelData);
+                displayedModels.add(modelData.name);
+              }
+            },
+            error: function (xhr, status, error) {
+              console.error(
+                `Error fetching data for model ${selectedName}: ${error}`
+              );
+            },
+          });
+        }
+      });
+
+      // Search for model select
+      $("#dropdownSearchInput").on("input", function () {
+        const searchTerm = $(this).val().toLowerCase();
+        $("#dropdownSearchOptions li").each(function () {
+          const text = $(this).text().toLowerCase();
+          $(this).toggle(text.includes(searchTerm));
+        });
+      });
+
+      // Search for model from select
+      $("#dropdownSearchInputFirst").on("input", function () {
+        const searchTerm = $(this).val().toLowerCase();
+        $("#create-models-relation-path-from li").each(function () {
+          const text = $(this).text().toLowerCase();
+          $(this).toggle(text.includes(searchTerm));
+        });
+      });
+
+      // Search for model to select
+      $("#dropdownSearchInputSecound").on("input", function () {
+        const searchTerm = $(this).val().toLowerCase();
+        $("#create-models-relation-path-to li").each(function () {
+          const text = $(this).text().toLowerCase();
+          $(this).toggle(text.includes(searchTerm));
+        });
+      });
+
+      // Listener on selecting first model, getting data about him and passing to next function
+      $("#model-select").on("change", function () {
+        const selectedIndex = $(this).val();
+        const selectedName = $("#model-select option:selected").attr("name");
+        const selectedModel = data[selectedIndex];
+        $("#main-table-tbody").empty();
+        displayedModels.clear();
+
+        if (selectedModel) {
+          $.ajax({
+            url: '{% url "aqSFrOMAEQgBlduCuYfr" %}',
+            data: {
+              model: selectedName,
+            },
+            success: function (response) {
+              const modelData = response.data;
+              if (modelData) {
+                appendModelRow(modelData);
+                displayedModels.add(modelData.name);
+              }
+            },
+            error: function (xhr, status, error) {
+              console.error(
+                `Error fetching data for model ${selectedName}: ${error}`
+              );
+            },
+          });
+        }
+      });
+
+      // Appending data to table
+      function appendModelRow(modelData) {
+        let fieldsContent = "";
+        let relationsContent = "";
+        let func_info = "";
+        let func_data = JSON.parse(modelData.functions);
+
+        // Create default fields
+        $.each(modelData.fields, function (fieldType, fieldsArray) {
+          if (
+            fieldType !== "OneToOneRel" &&
+            fieldType !== "ManyToOneRel" &&
+            fieldType !== "ManyToManyRel" &&
+            fieldType !== "OneToOneField" &&
+            fieldType !== "ForeignKey" &&
+            fieldType !== "ManyToManyField"
+          ) {
+            $.each(fieldsArray, function (index, field) {
+              const field_data = field.data.replace(/\"/g, "'"); // Replace double quotes with single quotes
+
+              fieldsContent += `
+              <span style="color:${map.get("default")[0]}; background-color:${
+                map.get("default")[1]
+              };" name='default' class="inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded cursor-pointer" title="${field_data}">${
+                field.name
+              }</span>`;
+            });
+          }
+        });
+
+        // Create relation fields
+        $.each(modelData.relations, function (relationType, relationsArray) {
+          $.each(relationsArray, function (index, relation) {
+
+            let element_values = map.get(relation.relation_type);
+            if (element_values == undefined) {
+              console.log("relationed map not found");
+              return;
+            }
+
+            const relation_data = relation.data.replace(/\"/g, "'"); // Replace double quotes with single quotes
+
+            relationsContent += `<button title="${relation_data}" name="${relation.relation_type}" style="color:${element_values[0]}; background-color:${element_values[1]}" class="inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded hover:underline" onclick="fetchRelatedModel('${relation.related_model}', this)">${relation.field_name}
+            </button>`;
+          });
+        });
+
+        // Create method fields and modal
+        $.each(func_data, function (index, data) {
+          let repaired_data = data.data
+            .replace(/\n/g, "<br>") // Replace newlines with <br>
+            .replace(/ {2}/g, "&nbsp;&nbsp;") // Replace two spaces with non-breaking spaces
+            .replace(/ {4}/g, "&nbsp;&nbsp;&nbsp;&nbsp;"); // Replace four spaces with non-breaking spaces
+
+          let element_values = map.get("method");
+
+          modal_id = `${modelData.name.replace('.', '-')}-${data.name}-modal`;
+
+          func_info += `<button name='method' style="color:${element_values[0]}; background-color:${element_values[1]}" 
+            data-modal-toggle="${modal_id}" 
+            type="button" 
+            class="text-gray-900 border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded hover:underline">${data.name}</button>`;
+
+        // Append modal to the modal div
+        $("#modal-div").append(`
+          <div name="modal" id="${modal_id}" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+        <div class="relative bg-white rounded-lg">
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    ${data.name}
+                </h3>
+            </div>
+            <div class="p-4 md:p-5 space-y-4 overflow-y-auto max-h-[70vh]">
+                <pre><code>${repaired_data}</code></pre>
+            </div>
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="${modal_id}" type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">I
+                    accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+        `);
+      });
+
+        $("#main-table-tbody").append(`
+          <tr id="${modelData.name}">
+            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap hover:bg-gray-300 cursor-pointer" onclick="copy_to_clipboard_or_open(this)" id="${
+              modelData.url.line
+            }" name="${modelData.url.url}">
+              ${modelData.name}
+            </td>
+            <td class="px-6 py-4">${fieldsContent || "N/A"}</td>
+            <td class="px-6 py-4">${relationsContent || "N/A"}</td>
+            <td class="px-6 py-4">${func_info || "N/A"}</td>
+          </tr>
+        `);
+      }
+
+      // Getting data about model which was clicked by user and passing it to next function
+      window.fetchRelatedModel = function (modelName, btnElement) {
+        let closest_div_id = $(btnElement).closest("td").attr("id");
+        
+
+        $(btnElement).closest("td").find('button').each(function () {
+        let name = $(this).attr("name");
+        if (map_keys.includes(name)) {
+          $(this)
+            .css("color", map.get(name)[0])
+            .css("background-color", map.get(name)[1]);
+        }
+      });
+
+        $(btnElement)
+          .css("color", map.get("selected")[0])
+          .css("background-color", map.get("selected")[1]);
+
+        let cloned_button = $(btnElement).clone();
+
+        $(btnElement).closest("td").prepend(cloned_button);
+        let currentRow = $(btnElement).closest("tr");
+        $(btnElement).remove();
+        $.each(currentRow.nextAll("tr"), function(){
+          displayedModels.delete($(this).attr('id'));
+        });
+
+        currentRow.nextAll("tr").remove();
+
+        $.ajax({
+          url: '{% url "aqSFrOMAEQgBlduCuYfr" %}',
+          data: {
+            model: modelName,
+          },
+          success: function (response) {
+            const modelData = response.data;
+            if (modelData) {
+              appendModelRow(modelData);
+              displayedModels.add(modelData.name);
+            }
+          },
+          error: function (xhr, status, error) {
+            console.error(
+              `Error fetching data for model ${modelName}: ${error}`
+            );
+          },
+        });
+      };
+
+      // Get path from first to last model
+      window.CopyRelationsPath = function () {
+        const list_of_elemenets = [];
+        elements = $("#main-table-tbody").children();
+        $.each(elements, function (index, element) {
+          list_of_elemenets.push(element.id);
+        });
+
+        $.ajax({
+          url: '{% url "AZVTNbMJfPHKWIorjAIz" %}',
+          data: {
+            list: JSON.stringify(list_of_elemenets),
+          },
+          success: function (response) {
+            $("#path-input").val(response.path);
+            navigator.clipboard.writeText(response.path);
+            showSuccessMessage();
+          },
+          error: function (xhr, status, error) {
+            console.error(
+              `Error finding relation for model ${list_of_elemenets}`
+            );
+          },
+        });
+      };
+
+      // Set new color to buttons
+      window.new_colors_for_buttons = function (element) {
+        let elements_name = $(element).attr("name");
+        let type = $(element).attr("id") === "color" ? 0 : 1;
+        let value = $(element).val();
+        let array = map.get(elements_name);
+        if (array) {
+          array[type] = value;
+          map.set(elements_name, array);
+        }
+        let buttons = "";
+        if (elements_name == "default") {
+          buttons = $(`span[name^="${elements_name}"]`);
+        } 
+       else if (elements_name == 'selected'){
+          save_preference();
+          window.location.reload();
+        }  
+        else {
+          buttons = $(`button[name^="${elements_name}"]`);
+        }
+
+        buttons.each(function () {
+          if (type === 0) {
+            this.style.color = value;
+          } else {
+            this.style.backgroundColor = value;
+          }
+        });
+      };
+
+
+    // Function to pass element to change buttons color
+    window.set_new_colors = function(element) {
+      window.new_colors_for_buttons(element);
+    }
+
+   // Event listener for showing modal
+$(document).on("click", "[data-modal-toggle]", function () {
+  var modalId = $(this).attr("data-modal-toggle");
+  $("#" + modalId).removeClass("hidden");
+});
+
+// Event listener for hiding modal
+$(document).on("click", "[data-modal-hide]", function () {
+  var modalId = $(this).attr("data-modal-hide");
+  $("#" + modalId).addClass("hidden");
+});
+
+    // Logic for closing modals with a button
+    $(document).on("click", "[data-modal-hide]", function (event) {
+      event.stopPropagation(); // Prevents the click from closing other modals unintentionally
+      var modalId = $(this).attr("data-modal-hide");
+      $("#" + modalId).addClass("hidden");
+    });
+
+    
+// Close the modal when clicking outside of it
+$(document).on("click", function (event) {
+  if (!$(event.target).closest(".modal-content").length &&
+      !$(event.target).is("[data-modal-toggle]")) {
+      $('.modal').addClass("hidden");
+  }
+});
+    // Prevent body click event from closing the modal when clicking inside modal content
+    $(document).on("click", ".modal-content", function (event) {
+      event.stopPropagation();
+    });
+
+    // Listener for changing coding device
+    $('[name^="coding-device"]').on('change', function(){code_device = $(this).attr('value');});
+
+    // Copy path or open file to model
+    window.copy_to_clipboard_or_open = function(element) {
+      // Get the code device from a global variable or element
+      const codeDevice = code_device; 
+    
+      switch (codeDevice) {
+        case "vs":
+          // Create the Visual Studio Code URL
+          const vsCopy = `vscode://file/${$(element).attr("name")}:${$(element).attr("id")}`;
+          // Open the file in VS Code
+          window.location.href = vsCopy;
+          break;
+    
+        case "cmax":
+          // Create the cmax command
+          const cmaxCopy = `cmax open ${$(element).attr("name")} --line ${$(element).attr("id")}`;
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val(`${cmaxCopy}`).select();
+          document.execCommand("copy");
+          $temp.remove();
+          break;
+    
+        case "vim":
+          // Create the vim command
+          const vimCopy = `vim +${$(element).attr("id")} ~/${$(element).attr("name")}`;
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val(`${vimCopy}`).select();
+          document.execCommand("copy");
+          $temp.remove();
+          break;
+    
+        default:
+          alert("Unknown code device.");
+          break;
+      }
+    }
+
+    $("#create-models-relation-path-from button").on("click", function () {
+      selectedFirstName = $(this).data("name");
+      $("#dropdownSearchButtonFirst").text(selectedFirstName);
+      $("#dropdownSearchFirst").addClass("hidden");
+
+    });
+
+    $("#create-models-relation-path-to button").on("click", function () {
+      selectedSecoundName = $(this).data("name");
+      $("#dropdownSearchButtonSecound").text(selectedSecoundName);
+      $("#dropdownSearchSecound").addClass("hidden");
+
+    });
+
+    window.create_models_relation_path_func = function(){
+      if (selectedFirstName === undefined){
+        $('#dropdownSearchButtonFirst').addClass('bg-red-900').addClass('text-white')
+        setTimeout(function(){$('#dropdownSearchButtonFirst').removeClass('bg-red-900').removeClass('text-white')}, 2000);
+      }
+      if (selectedSecoundName === undefined){
+        $('#dropdownSearchButtonSecound').addClass('bg-red-900').addClass('text-white')
+        setTimeout(function(){$('#dropdownSearchButtonSecound').removeClass('bg-red-900').removeClass('text-white')}, 2000);
+      }
+
+      $.ajax({
+        url: '{% url "McXordmafUNDsqgjmyIE" %}',
+        data: {
+          model_from: selectedFirstName,
+          model_to: selectedSecoundName,
+        },
+        success: function (response) {
+          $("#create-models-relation-path-input").val(response.path);
+          navigator.clipboard.writeText(response.path);
+        },
+        error: function (xhr, status, error) {
+          console.error(
+            `Error finding relation for model ${list_of_elemenets}`
+          );
+        },
+      });
+      
+
+    }
+    
+    window.save_preference = function(){
+      $.ajax({
+        url: '{% url "ImMLywRmaWEhXzjCkaxl" %}',
+        method: "GET",
+        csrfmiddlewaretoken: '{{ csrf_token }}',
+        data: {
+          code_device:code_device,
+          OneToOneField_text:map.get('OneToOneField')[0],
+          OneToOneField_bg:map.get('OneToOneField')[1],
+
+          ForeignKey_text:map.get('ForeignKey')[0],
+          ForeignKey_bg:map.get('ForeignKey')[1],
+
+          ManyToManyField_text:map.get('ManyToManyField')[0],
+          ManyToManyField_bg:map.get('ManyToManyField')[1],
+
+          OneToOneRel_text:map.get('OneToOneRel')[0],
+          OneToOneRel_bg:map.get('OneToOneRel')[1],
+
+          ManyToOneRel_text:map.get('ManyToOneRel')[0],
+          ManyToOneRel_bg:map.get('ManyToOneRel')[1],
+
+          ManyToManyRel_text:map.get('ManyToManyRel')[0],
+          ManyToManyRel_bg:map.get('ManyToManyRel')[1],
+
+          selected_text:map.get('selected')[0],
+          selected_bg:map.get('selected')[1],
+
+          default_text:map.get('default')[0],
+          default_bg:map.get('default')[1],
+
+          method_text:map.get('method')[0],
+          method_bg:map.get('method')[1],
+
+        },
+        success: function (response) {
+          console.log(response.status);
+        },
+        error: function (xhr, status, error) {
+          console.error(
+            'Error saving preference'
+          );
+        },
+      });
+    }
+  });
+
+  </script>
+
+  <style>
+    #code_view {
+      background-color: #1e1e1e; /* VS Code background */
+      color: #d4d4d4; /* Default text color */
+      border-color: #333; /* Border color similar to VS Code */
+      font-family: "Fira Code", monospace; /* Optional: use a code font */
+      font-size: 14px; /* Adjust text size */
+      width: auto;
+    }
+
+    #code_view code {
+      color: #d4d4d4; /* Default text color */
+    }
+
+    #code_view code .keyword {
+      color: #569cd6; /* Keyword color */
+    }
+
+    #code_view code .string {
+      color: #ce9178; /* String color */
+    }
+
+    #code_view code .function {
+      color: #dcdcaa; /* Function color */
+    }
+
+    #code_view code .comment {
+      color: #6a9955; /* Comment color */
+    }
+
+    .modal {
+      z-index: 9999;
+    }
+    
+    .modal-content {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    body.modal-open .content {
+      display: none;
+  }
+  
+  </style>
+</html>
