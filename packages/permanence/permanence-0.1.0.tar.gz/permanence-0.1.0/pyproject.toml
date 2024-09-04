@@ -1,0 +1,30 @@
+[project]
+name = "permanence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "attrs",
+    "frozendict",
+    "typing-extensions",
+    "uuid6",
+    "iroh>=0.23.0",
+    "loguru>=0.7.2",
+    "pandas>=2.2.2",
+    "pyarrow>=17.0.0",
+    "numpy>=2.1.0",
+    "blake3>=0.4.1",
+    "scipy>=1.14.1",
+    "rich>=13.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.2",
+    "build>=1.2.1",
+]
