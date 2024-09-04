@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: switch-java-version
+Version: 0.1.0
+Summary: A script to switch between Java versions on Windows
+Home-page: https://github.com/yourusername/switch-java
+Author: Gamertoky1188
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# switch-java
+
+A script to switch between Java versions on Windows.
+
+# switch-java
+
+A Python script to switch between different Java versions on Windows. This script checks for the installed Java versions, allows you to select one, and sets it as the active version. If the selected version is not installed, it prompts you to install it.
+
+## Features
+
+- Lists installed Java versions.
+- Allows you to switch between Java versions.
+- Sets the selected Java version as the default for the system.
+
+## Installation
+
+You can install this package from PyPI:
+
+```bash
+pip install switch-java
