@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "itemattribute"
+version = "0.0.1"
+dependencies = []
+requires-python = ">= 3.7"
+authors = [{name = "Andy Mounce", email = "ammounce@gmail.com"}]
+description = "Python class that allows dict item syntax for attribute access"
+readme = {file = "README.txt", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/ammounce/itemattribute"
+Issues = "https://github.com/ammounce/itemattribute/issues"

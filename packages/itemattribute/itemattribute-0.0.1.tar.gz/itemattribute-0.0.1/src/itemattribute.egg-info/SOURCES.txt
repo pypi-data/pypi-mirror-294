@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/itemattribute/__init__.py
+src/itemattribute/item_attribute.py
+src/itemattribute.egg-info/PKG-INFO
+src/itemattribute.egg-info/SOURCES.txt
+src/itemattribute.egg-info/dependency_links.txt
+src/itemattribute.egg-info/top_level.txt
