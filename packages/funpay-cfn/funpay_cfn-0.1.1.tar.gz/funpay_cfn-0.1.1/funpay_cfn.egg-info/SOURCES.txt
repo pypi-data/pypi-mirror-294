@@ -1,0 +1,7 @@
+README.md
+setup.py
+funpay_cfn.egg-info/PKG-INFO
+funpay_cfn.egg-info/SOURCES.txt
+funpay_cfn.egg-info/dependency_links.txt
+funpay_cfn.egg-info/requires.txt
+funpay_cfn.egg-info/top_level.txt
