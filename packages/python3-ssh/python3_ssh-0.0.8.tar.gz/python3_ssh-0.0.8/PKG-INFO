@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: python3-ssh
+Version: 0.0.8
+Summary: used to ssh to exe cmd or scp file
+Home-page: https://gitee.com/devops_dev/ssh
+Author: redrose2100
+Author-email: hitredrose@163.com
+Maintainer: redrose2100
+Maintainer-email: hitredrose@163.com
+License: MIT
+Project-URL: Documentation, https://gitee.com/devops_dev/ssh/README.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko
+Requires-Dist: func_timeout
+Requires-Dist: python3-log
+
+# ssh
+## 安装
+```bash
+pip3 install python3-ssh
+```
+
+## 使用
+* 远程执行一条命令，比如 ls
+```python
+from ssh import SSHClient
+ssh = SSHClient(ip="10.240.124.1",port=22,username="root",password="Mugen_runner@123456")
+rs=ssh.exec("ls /")
+# 执行命令的返回码
+print(rs.exit_status_code)
+# 执行命令的返回内容
+print(rs.stdout)
+```
+
