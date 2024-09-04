@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bytetools/__init__.py
+src/bytetools/exceptions.py
+src/bytetools/operations.c
+src/bytetools/operations.py
+src/bytetools.egg-info/PKG-INFO
+src/bytetools.egg-info/SOURCES.txt
+src/bytetools.egg-info/dependency_links.txt
+src/bytetools.egg-info/top_level.txt
+tests/test_string_ops.py
