@@ -1,0 +1,6 @@
+alerts
+build
+drafts
+install
+prs
+uninstall
