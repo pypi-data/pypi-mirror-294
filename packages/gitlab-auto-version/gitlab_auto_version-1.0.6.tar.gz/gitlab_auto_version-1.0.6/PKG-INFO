@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: gitlab-auto-version
+Version: 1.0.6
+Summary: A package to automate version bumping and Git tagging in GitLab CI.
+Home-page: https://gitlab.com/mosiko1234/gitlab-auto-version
+Author: Moshe Eliya
+Author-email: mosiko1234@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: configparser
+Requires-Dist: PyYAML
+
+# gitlab-auto-version
+
+
+[![PyPI version](https://badge.fury.io/py/gitlab-auto-version.svg)](https://badge.fury.io/py/gitlab-auto-version)
+
+```markdown
+A Python package to automate version bumping and Git tag creation within a GitLab CI/CD pipeline. This package simplifies the process of managing your project's versions, ensuring consistency and traceability across your builds.
+
+## Features
+
+* **Intelligent Version Bumping:**
+    * Automatically determines the appropriate version bump (major, minor, or patch) based on keywords in your commit messages.
+    * Supports the following keywords:
+        * `bump major`: Triggers a major version bump (e.g., from 1.2.3 to 2.0.0).
+        * `bump minor`: Triggers a minor version bump (e.g., from 1.2.3 to 1.3.0).
+        * No keyword: Triggers a patch version bump (e.g., from 1.2.3 to 1.2.4).
+* **Unique Tag Generation:**
+    * Ensures that generated tags are unique by incrementing the patch version if a tag with the same version already exists.
+* **GitLab CI Integration:**
+    * Seamlessly integrates with GitLab CI/CD pipelines.
+    * Retrieves the branch name from the `CI_COMMIT_REF_NAME` environment variable.
+    * Pushes tags to the GitLab origin remote using a Deploy Token for authentication.
+    * Optionally loads configuration from your `.gitlab-ci.yml` file.
+* **Customizable:**
+    * Allows you to specify a custom tag name format, environment variable name, and environment file path through command-line arguments or configuration in your `.gitlab-ci.yml` file.
+* **Robust Error Handling:**
+    * Includes comprehensive error handling to provide informative messages in case of issues during execution.
+
+## Installation
+
+```bash
+pip install gitlab-auto-version
+```
+
+## Functions
+
+* `get_current_version()`: 
+    * Retrieves the current version from Git tags. 
+    * If no tags are found, it defaults to '0.0.0'.
+* `get_branch_name()`:
+    * Retrieves the current branch name from the `CI_COMMIT_REF_NAME` environment variable in GitLab CI.
+* `bump_version(version, part)`: 
+    * Takes the current version and a 'part' indicator ('major', 'minor', or 'patch').
+    * Increments the appropriate part of the version and resets lower parts to 0.
+* `tag_exists(tag)`:
+    * Checks if a Git tag with the given name already exists in the repository.
+* `create_tag(version, tag_name=None)`:
+    * Creates and pushes a Git tag to the GitLab origin remote.
+    * Constructs a tag name combining the version and branch name (or uses a custom tag name if provided).
+    * Uses the `DEPLOY_TOKEN` environment variable for authentication.
+* `get_commit_message()`:
+    * Retrieves the commit message of the latest commit.
+* `determine_new_version(current_version, commit_message)`:
+    * Determines the new version based on the commit message and ensures its uniqueness.
+* `set_build_version(created_tag, env_var_name, env_file_path)`:
+    * Sets the build version environment variable and optionally writes it to a file.
+* `load_config(config_file_path='.gitlab-ci.yml')`:
+    * Loads configuration from the `.gitlab-ci.yml` file (optional).
+* `main()`:
+    * The main function that orchestrates the version bumping and tagging process.
+
+## Usage in Other Projects (GitLab CI)
+
+1. **Install the package:**
+   * Add the following line to the `script` section of your `.gitlab-ci.yml` file:
+
+   ```yaml
+   - pip install gitlab-auto-version
+   ```
+
+2. **Run the script:**
+   * In the desired job's `script` section, add:
+
+   ```yaml
+   - gitlab-auto-version
+   ```
+
+3. **Configure (Optional):**
+   * Customize behavior by adding these variables to `.gitlab-ci.yml` or as command-line arguments:
+     * `tag_name`: Custom tag name format (e.g., `v{version}-{branch_name}`)
+     * `env_var_name`: Environment variable to store the created tag (default: `BUILD_VERSION`)
+     * `env_file_path`: File to write the environment variable to (default: `build_version.env`)
+
+4. **Use the `BUILD_VERSION` variable:**
+   * Access the created tag in subsequent pipeline stages using the `$BUILD_VERSION` variable.
+
+**Example `.gitlab-ci.yml`**
+
+```yaml
+stages:
+  - versioning
+  - build
+
+bump_version:
+  stage: versioning
+  script:
+    - pip install gitlab-auto-version
+    - gitlab-auto-version
+
+build_docker_image:
+  stage: build
+  script:
+    - docker build -t my-image:$BUILD_VERSION .
+    - docker push my-image:$BUILD_VERSION
+```
+
+**Important Notes:**
+
+* Ensure your GitLab CI runner has the necessary permissions to push tags.
+* Create a Deploy Token with `read_repository` and `write_repository` permissions and store it as a masked variable named `DEPLOY_TOKEN` in your GitLab CI/CD settings.
+* Use commit messages with keywords like `bump major` or `bump minor` to trigger specific version bumps.
+
+This comprehensive `README.md` provides a clear explanation of your package's functionality and how to utilize it effectively within GitLab CI pipelines. Feel free to add more specific examples or use cases if relevant to your project. 
