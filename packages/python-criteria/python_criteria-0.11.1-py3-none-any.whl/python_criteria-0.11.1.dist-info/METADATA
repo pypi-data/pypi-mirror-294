@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: python-criteria
+Version: 0.11.1
+Summary: Pythonic criteria pattern implementation for allowing infraestructure abstraction in hexagonal applications.
+Author-email: Juan Cerezo <jcerezo.dev@proton.me>
+License: GPL-3.0-only
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: ci
+Requires-Dist: pre-commit ; extra == 'ci'
+Requires-Dist: src[lint] ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: src[lint] ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: pylint ; extra == 'lint'
+Requires-Dist: pyright ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Requires-Dist: autoflake ; extra == 'lint'
+Requires-Dist: radon ; extra == 'lint'
+
+# python-criteria
+
+## TODO:
+
+- [ ] Basic Documentation and Examples
