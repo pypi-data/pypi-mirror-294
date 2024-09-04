@@ -1,0 +1,17 @@
+vhcalc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vhcalc/app.py,sha256=qQqttWqNoCyNFGUtwuZacI3noSS-S6qxLbr4tcKAuhI,2232
+vhcalc/services/__init__.py,sha256=Hz0OEZ9CKatLYPfgIj093SBZqU_x1zkj_aOvKBJUU2s,159
+vhcalc/services/imghashes.py,sha256=IRoANE4rJdSS_MG07M3Xr79zKXca4Raida_cEIo7_3Y,3188
+vhcalc/services/reader_frames.py,sha256=oCBxzWkeD1vufyDIJPSRWwSoNJ7mr3i9b8CW8SvpDW0,1976
+vhcalc/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vhcalc/tools/chunk.py,sha256=GIWP2IgnhyqNXq9USn5qXLgQiOXIuV0H983EUwzjTJ0,452
+vhcalc/tools/click_default_group.py,sha256=BVJPp_FOttcmAnFRuoIdCc97bvrUfd00dYsMca4xM-A,4965
+vhcalc/tools/click_path.py,sha256=VQqcgOUSJ8zeH7_wP-GXzQdgoxDn6aioNyf7-Liuiws,3126
+vhcalc/tools/imghash.py,sha256=B2Q-a77VIbpK6UxiOC0TqL1hDGEpf-NmOhqXMuqP6lk,2170
+vhcalc/tools/progress_bar.py,sha256=rzmkNQ-jcrgODy75QZ5MR4GG1GeyTXOpqc0gthGoqlI,1396
+vhcalc/tools/version_extended_informations.py,sha256=YTYY73bDc5Um3zqrYmAe0J7nTP_hfma8w7HgNj49Z8E,542
+vhcalc-0.3.0.dist-info/LICENSE,sha256=d3CIsG6X1HqNB1on6WmQl3BD8KRqizL41R6DGrXcvVQ,1069
+vhcalc-0.3.0.dist-info/METADATA,sha256=StVHZbV-8nY9iNfG5ccZ1pZrUi7PH2tZLrht1ivplgA,4038
+vhcalc-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vhcalc-0.3.0.dist-info/entry_points.txt,sha256=AccXMlyAV-xD4dGg98gL-yqD-C4b232e7yA-PmgHmiI,104
+vhcalc-0.3.0.dist-info/RECORD,,
