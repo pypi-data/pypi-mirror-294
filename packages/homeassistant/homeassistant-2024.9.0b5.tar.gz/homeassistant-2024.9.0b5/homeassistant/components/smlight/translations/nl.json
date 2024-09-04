@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Apparaat is al geconfigureerd"
+        },
+        "error": {
+            "cannot_connect": "Kan geen verbinding maken",
+            "invalid_auth": "Ongeldige authenticatie",
+            "unknown": "Onverwachte fout"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Wachtwoord",
+                    "username": "Gebruikersnaam"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "ram_usage": {
+                "name": "RAM-gebruik"
+            },
+            "zigbee_temperature": {
+                "name": "Zigbee chip temperatuur"
+            }
+        }
+    }
+}
