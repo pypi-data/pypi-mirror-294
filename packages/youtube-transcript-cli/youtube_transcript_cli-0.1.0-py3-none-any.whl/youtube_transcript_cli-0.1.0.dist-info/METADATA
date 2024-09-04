@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: youtube-transcript-cli
+Version: 0.1.0
+Summary: A CLI tool to fetch and display YouTube video transcripts.
+Author: NickMystic
+License: MIT License
+        
+        Copyright (c) 2024 ghostofpokemon
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: youtube-transcript-api>=0.6.2
+
+# YouTube Transcript CLI
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+Welcome to the YouTube Transcript CLI! This tool allows you to fetch and display transcripts of YouTube videos right from your terminal. Whether you're a developer, researcher, or just curious, this tool has got you covered!
+
+## Features
+
+- **Fetch Transcripts**: Get transcripts for any YouTube video.
+- **Multiple Languages**: Specify your preferred language for the transcript.
+- **Save to File**: Save the transcript to a file for later use.
+- **No Print Option**: Fetch transcripts without printing them to the terminal.
+
+## Installation
+
+To install the YouTube Transcript CLI, simply run:
+
+```bash
+pip install youtube-transcript-cli
+```
+
+## Usage
+
+Once installed, you can use the `cap` command to fetch transcripts. Here are some examples:
+
+### Fetch and Print Transcript
+
+```bash
+cap https://www.youtube.com/watch?v=Y-KztRvRyl0
+```
+
+### Fetch and Save Transcript to a File
+
+```bash
+cap https://www.youtube.com/watch?v=Y-KztRvRyl0 --save transcript.txt
+```
+
+### Fetch Transcript in a Different Language
+
+```bash
+cap https://www.youtube.com/watch?v=Y-KztRvRyl0 --languages es
+```
+
+### Fetch Transcript Without Printing to Terminal
+
+```bash
+cap https://www.youtube.com/watch?v=Y-KztRvRyl0 --save transcript.txt --no-print
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with ❤️ by NickMystic (https://github.com/ghostofpokemon)
