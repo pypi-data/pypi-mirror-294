@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: surf-archiver
+Version: 0.1.1a0
+Summary: 
+Author: Isaac Williams
+Author-email: isaac.andrew.williams@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aio-pika (>=9.4.1,<10.0.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: pydantic-settings[yaml] (>=2.2.1,<3.0.0)
+Requires-Dist: s3fs (>=2024.3.1,<2025.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Surf archiver: CLI tool 
+
+Surf-Archiver copies daily data from S3, bundling it into a per experiment per day
+tar archive.
+
+
+# Installation
+
+Surf archiver can be installed using [pipx](https://github.com/pypa/pipx). This allows
+the cli to be executing the command `surf-archiver`.
+
+In order for it run, ensure that the appropriate AWS environment variables are set. 
+These include (but are not limited to):
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+
+
+# Example usage
+
+To view available commands run:
+```
+surf-archive --help
+```
+
+
+To archive for a specific date run:
+```
+surf-archive archive "2000-01-01" --target-dir .
+```
+
