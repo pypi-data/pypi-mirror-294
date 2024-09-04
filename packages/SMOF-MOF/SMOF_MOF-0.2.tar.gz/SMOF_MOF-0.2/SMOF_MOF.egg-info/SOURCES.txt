@@ -1,0 +1,9 @@
+README.md
+setup.py
+SMOF_MOF/__init__.py
+SMOF_MOF/main.py
+SMOF_MOF.egg-info/PKG-INFO
+SMOF_MOF.egg-info/SOURCES.txt
+SMOF_MOF.egg-info/dependency_links.txt
+SMOF_MOF.egg-info/requires.txt
+SMOF_MOF.egg-info/top_level.txt
