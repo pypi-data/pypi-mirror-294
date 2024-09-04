@@ -1,0 +1,13 @@
+numpy
+pygame~=2.1.3
+optuna~=3.2.0
+gym[accept-rom-license,atari]
+dill
+gymnasium[atari]
+diskcache
+pushbullet-python
+torchvision
+torchaudio
+torch
+wandb
+multiprocess

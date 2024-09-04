@@ -1,0 +1,269 @@
+import copy
+from typing import Tuple, List, Any, Dict
+
+import wandb
+from multiprocess import set_start_method
+
+set_start_method("spawn", force=True)
+from multiprocess.pool import Pool
+
+import numpy as np
+import torch as th
+
+from mu_alpha_zero.AlphaZero.MCTS.az_node import AlphaZeroNode
+from mu_alpha_zero.AlphaZero.utils import augment_experience_with_symmetries, mask_invalid_actions
+from mu_alpha_zero.Game.tictactoe_game import TicTacToeGameManager
+from mu_alpha_zero.General.memory import GeneralMemoryBuffer
+from mu_alpha_zero.General.network import GeneralNetwork
+from mu_alpha_zero.General.search_tree import SearchTree
+from mu_alpha_zero.Hooks.hook_manager import HookManager
+from mu_alpha_zero.Hooks.hook_point import HookAt
+from mu_alpha_zero.config import AlphaZeroConfig
+from mu_alpha_zero.mem_buffer import SingleGameData, DataPoint
+from mu_alpha_zero.shared_storage_manager import SharedStorage
+
+
+class McSearchTree(SearchTree):
+    def __init__(self, game_manager: TicTacToeGameManager, alpha_zero_config: AlphaZeroConfig,
+                 hook_manager: HookManager or None = None):
+        self.game_manager = game_manager
+        self.alpha_zero_config = alpha_zero_config
+        self.hook_manager = hook_manager if hook_manager is not None else HookManager()
+        self.root_node = None
+
+    def play_one_game(self, network: GeneralNetwork, device: th.device) -> tuple[
+        list | list[tuple[int | Any, Any, float, int]], int, int, int]:
+        """
+        Plays a single game using the Monte Carlo Tree Search algorithm.
+
+        Args:
+            network: The neural network used for searching and evaluating moves.
+            device: The device (e.g., CPU or GPU) on which the network is located.
+
+        Returns:
+            A tuple containing the game history, and the number of wins, losses, and draws.
+            The game history is a list of tuples, where each tuple contains:
+            - The game state multiplied by the current player
+            - The policy vector (probability distribution over moves)
+            - The game result (1 for a win, -1 for a loss, 0 for a draw)
+            - The current player (-1 or 1)
+        """
+        # tau = self.args["tau"]
+        state = self.game_manager.reset()
+        current_player = 1
+        game_history = []
+        # game_data = SingleGameData()
+        results = {"1": 0, "-1": 0, "D": 0}
+        move_number = 0
+        tau = self.alpha_zero_config.tau
+        while True:
+            if move_number > self.alpha_zero_config.zero_tau_after_first_n_moves != 0:
+                tau = 0
+            pi, _ = self.search(network, state, current_player, device)
+            move = self.game_manager.select_move(pi, tau=tau)
+            # self.step_root([move])
+            self.step_root(None)
+            # pi = [x for x in pi.values()]
+            game_history.append((state * current_player, pi, None, current_player,
+                                 self.game_manager.get_invalid_actions(state, current_player)))
+            state = self.game_manager.get_next_state(state, self.game_manager.network_to_board(move), current_player)
+            r = self.game_manager.game_result(current_player, state)
+            if r is not None:
+                if r == current_player:
+                    results["1"] += 1
+                elif -1 < r < 1:
+                    results["D"] += 1
+                else:
+                    results["-1"] += 1
+
+                if -1 < r < 1:
+                    game_history = [(x[0], x[1], r, x[3], x[4]) for x in game_history]
+                else:
+                    game_history = [(x[0], x[1], r * current_player * x[3], x[3], x[4]) for x in game_history]
+
+                break
+            current_player *= -1
+            move_number += 1
+
+        # game_history = make_channels(game_history)
+        if self.alpha_zero_config.augment_with_symmetries:
+            game_history = self.game_manager.augment_game_history_with_symmetries(game_history)
+        self.hook_manager.process_hook_executes(self, self.play_one_game.__name__, __file__, HookAt.TAIL,
+                                                args=(game_history, results))
+        # for state, pi, r, player, move_mask in game_history:
+        #     game_data.add_data_point(DataPoint(pi, r, None, None, player, state, move_mask))
+        return game_history, results["1"], results["-1"], results["D"]
+
+    def search(self, network, state, current_player, device, tau=None):
+        """
+        Perform a Monte Carlo Tree Search on the current state starting with the current player.
+        :param tau:
+        :param network:
+        :param state:
+        :param current_player:
+        :param device:
+        :return:
+        """
+        num_simulations = self.alpha_zero_config.num_simulations
+        if tau is None:
+            tau = self.alpha_zero_config.tau
+        if self.root_node is None:
+            self.root_node = AlphaZeroNode(current_player, times_visited_init=0)
+        state_ = self.game_manager.get_canonical_form(state, current_player)
+        # state_ = make_channels_from_single(state_)
+        state_ = th.tensor(state_, dtype=th.float32, device=device).unsqueeze(0)
+        probabilities, v = network.predict(state_, muzero=False)
+        if self.alpha_zero_config.add_dirichlet_noise:
+            probabilities = (
+                                    1 - self.alpha_zero_config.dirichlet_alpha) * probabilities + self.alpha_zero_config.dirichlet_alpha * np.random.dirichlet(
+                [0.03] * len(probabilities))
+        probabilities = mask_invalid_actions(probabilities,
+                                             self.game_manager.get_invalid_actions(state.copy(), current_player))
+        probabilities = probabilities.flatten().tolist()
+        self.root_node.expand(state, probabilities)
+        for simulation in range(num_simulations):
+            current_node = self.root_node
+            path = [current_node]
+            action = None
+            while current_node.was_visited():
+                current_node, action = current_node.get_best_child(c=self.alpha_zero_config.c)
+                if current_node is None:  # This was for testing purposes
+                    th.save(self.root_node, "root_node.pt")
+                    th.save(network.state_dict(), f"network_none_checkpoint_{current_player}.pt")
+                    raise ValueError("current_node is None")
+                path.append(current_node)
+
+            # leaf node reached
+            next_state = self.game_manager.get_next_state(current_node.parent().state.copy(),
+                                                          self.game_manager.network_to_board(action),
+                                                          current_node.parent().current_player)
+            next_state_ = self.game_manager.get_canonical_form(next_state, current_node.current_player)
+            v = self.game_manager.game_result(current_node.current_player, next_state)
+            if v is None:
+                # next_state_ = make_channels_from_single(next_state_)
+                next_state_ = th.tensor(next_state_, dtype=th.float32, device=device).unsqueeze(0)
+                probabilities, v = network.predict(next_state_, muzero=False)
+                probabilities = mask_invalid_actions(probabilities, self.game_manager.get_invalid_actions(next_state,
+                                                                                                          current_node.current_player))
+                v = v.flatten().tolist()[0]
+                probabilities = probabilities.flatten().tolist()
+                current_node.expand(next_state, probabilities)
+
+            self.backprop(v, path)
+
+        self.hook_manager.process_hook_executes(self, self.search.__name__, __file__, HookAt.TAIL,
+                                                args=(tau, self.root_node))
+        return self.root_node.get_self_action_probabilities(), None
+
+    def backprop(self, v, path):
+        """
+        Backpropagates the value `v` through the search tree, updating the relevant nodes.
+
+        Args:
+            v (float): The value to be backpropagated.
+            path (list): The path from the leaf node to the root node.
+
+        Returns:
+            None
+        """
+        for node in reversed(path):
+            v *= -1
+            node.total_value += v
+            node.update_q(v)
+            node.times_visited += 1
+
+    def step_root(self, actions: list | None) -> None:
+        if actions is not None:
+            if self.root_node is not None:
+                if not self.root_node.was_visited():
+                    return
+                for action in actions:
+                    self.root_node = self.root_node.children[action]
+                self.root_node.parent = None
+        else:
+            # reset root node
+            self.root_node = None
+
+    def make_fresh_instance(self):
+        return McSearchTree(self.game_manager.make_fresh_instance(), self.alpha_zero_config)
+
+    def self_play(self, net: GeneralNetwork, device: th.device, num_games: int, memory: GeneralMemoryBuffer) -> tuple[
+        int, int, int]:
+        wins_p1, wins_p2, draws = 0, 0, 0
+        for game in range(num_games):
+            game_results, wins_p1_, wins_p2_, draws_ = self.play_one_game(net, device)
+            wins_p1 += wins_p1_
+            wins_p2 += wins_p2_
+            draws += draws_
+            memory.add_list(game_results)
+
+        return wins_p1, wins_p2, draws
+
+    @staticmethod
+    def parallel_self_play(nets: list, trees: list, memory: GeneralMemoryBuffer, device: th.device, num_games: int,
+                           num_jobs: int):
+        with Pool(num_jobs) as p:
+            if not memory.is_disk:
+                results = p.starmap(p_self_play,
+                                    [(nets[i], trees[i], copy.deepcopy(device), num_games // num_jobs, None) for i in
+                                     range(len(nets))])
+            else:
+                results = p.starmap(p_self_play, [
+                    (nets[i], trees[i], copy.deepcopy(device), num_games // num_jobs, copy.deepcopy(memory)) for i in
+                    range(len(nets))])
+        wins_p1, wins_p2, draws = 0, 0, 0
+        for result in results:
+            wins_p1 += result[0]
+            wins_p2 += result[1]
+            draws += result[2]
+            if not memory.is_disk:
+                memory.add_list(result[3])
+        return wins_p1, wins_p2, draws
+
+    @staticmethod
+    def start_continuous_self_play(nets: list, trees: list, shared_storage: SharedStorage, device: th.device,
+                                   config: AlphaZeroConfig, num_jobs: int, num_worker_iters: int) -> Pool:
+        pool = Pool(num_jobs)
+        for i in range(num_jobs):
+            pool.apply_async(c_p_self_play, args=(
+                nets[i], trees[i], copy.deepcopy(device), config, i, shared_storage, num_worker_iters // num_jobs
+            ))
+
+        return pool
+
+
+def p_self_play(net, tree, device, num_games, memory):
+    wins_p1, wins_p2, draws = 0, 0, 0
+    data = []
+    for game in range(num_games):
+        game_results, wp1, wp2, ds = tree.play_one_game(net, device)
+        wins_p1 += wp1
+        wins_p2 += wp2
+        draws += ds
+        if memory is not None:
+            memory.add_list(game_results)
+        else:
+            data.extend(game_results)
+    if memory is None:
+        return wins_p1, wins_p2, draws, data
+    return wins_p1, wins_p2, draws
+
+
+def c_p_self_play(net, tree, device, config: AlphaZeroConfig, p_num: int, shared_storage: SharedStorage,
+                  num_worker_iters: int):
+    if p_num == 0:
+        wandb.init(project=config.wandbd_project_name, name="Self play")
+
+    net = net.to(device)
+    for iter_ in range(num_worker_iters):
+        if shared_storage.get_experimental_network_params() is None:
+            params = shared_storage.get_stable_network_params()
+        else:
+            params = shared_storage.get_experimental_network_params()
+        # params = shared_storage.get_stable_network_params()
+        net.load_state_dict(params)
+        net.eval()
+        game_results, wins_p1, wins_p2, draws = tree.play_one_game(net, device)
+        shared_storage.add_list(game_results)
+        if p_num == 0:
+            wandb.log({"Iteration": iter_, "Wins p1": wins_p1, "Wins p2": wins_p2, "Draws": draws})
