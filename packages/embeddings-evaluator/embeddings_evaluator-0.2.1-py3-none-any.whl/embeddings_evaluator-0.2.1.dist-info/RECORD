@@ -1,0 +1,8 @@
+embeddings_evaluator/__init__.py,sha256=0CPtawYxhfXyl6TFUzQ_e2R14Xfkm2EKhKfjoL8K64Y,524
+embeddings_evaluator/comparison.py,sha256=mDkxKjYiiXIvySyF9Di5T--8jHd2TX2IvNo58t4m_3k,7329
+embeddings_evaluator/evaluation.py,sha256=DMLrZ-ZyHGSFPo1Q_sOxXJWHmGxIkRzzNQeO45LAP7w,758
+embeddings_evaluator/metrics.py,sha256=ZaavXBpIRyhlkMuU0Fs9xyhlcZuJlbTZQ0s9HjxMNwQ,3735
+embeddings_evaluator-0.2.1.dist-info/METADATA,sha256=VPJWj6FJ0TTnk7smcjryX62X6sE2_IiwydyoWBRLxlI,5004
+embeddings_evaluator-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+embeddings_evaluator-0.2.1.dist-info/top_level.txt,sha256=72u06LquE_La50A2QrdmJRJZ9oZSaO8P-387Zwen0qk,21
+embeddings_evaluator-0.2.1.dist-info/RECORD,,
