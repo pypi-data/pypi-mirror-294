@@ -1,0 +1,16 @@
+
+[ci]
+pre-commit
+src[lint]
+
+[dev]
+pre-commit
+src[lint]
+
+[lint]
+black
+pylint
+pyright
+isort
+autoflake
+radon
