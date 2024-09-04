@@ -1,0 +1,132 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = 'pySDC'
+version = '5.5.1'
+description = 'A Python implementation of spectral deferred correction methods and the likes'
+license = {text = "BSD-2-Clause"}
+readme = 'README.md'
+authors=[
+    {name='Robert Speck', email='r.speck@fz-juelich.de'},
+    {name='Thibaut Lunet', email='thibaut.lunet@tuhh.de'},
+    {name='Thomas Baumann', email='t.baumann@fz-juelich.de'},
+    {name='Lisa Wimmer', email='wimmer@uni-wuppertal.de'},
+    {name='Ikrom Akramov', email='ikrom.akramov@tuhh.de'},
+    {name='Giacomo Rosilho De Souza', email='giacomo.rosilhodesouza@usi.ch'},
+    {name='Jakob Fritz', email='j.fritz@fz-juelich.de'},
+    ]
+
+
+classifiers = [
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+dependencies = [
+    'numpy>=1.15.4',
+    'scipy>=0.17.1',
+    'matplotlib>=3.0',
+    'sympy>=1.0',
+    'numba>=0.35',
+    'dill>=0.2.6',
+    'qmat>=0.1.8',
+    ]
+
+[project.urls]
+Homepage = "http://www.parallel-in-time.org/pySDC/"
+Repository = "https://github.com/Parallel-in-Time/pySDC/"
+Documentation = "http://www.parallel-in-time.org/pySDC/"
+Tracker = "https://github.com/Parallel-in-Time/pySDC/issues"
+
+[project.optional-dependencies]
+apps = [
+    'petsc4py>=3.10.0',
+    'mpi4py>=3.0.0',
+    'fenics>=2019.1.0',
+    'mpi4py-fft>=2.0.2'
+    ]
+dev = [
+    'ruff',
+    'pytest',
+    'pytest-cov',
+    'sphinx'
+    ]
+
+[tool.pytest.ini_options]
+markers = [
+    'base: all basic tests',
+    'fenics: tests relying on FEniCS',
+    'slow: tests taking much longer than bearable',
+    'mpi4py: tests using MPI parallelism (but no other external library such as petsc)',
+    'petsc: tests relying on PETSc/petsc4py',
+    'benchmark: tests for benchmarking',
+    'cupy: tests for cupy on GPUs',
+    'libpressio: tests using the libpressio library',
+    'monodomain: tests the monodomain project, which requires previous compilation of c++ code',
+    'pytorch: tests for PyTorch related things in pySDC'
+    ]
+timeout = 300
+
+[tool.ruff]
+line-length = 120
+extend-exclude = [
+    'playgrounds',
+    'tests',
+    '*/data/*'
+    ]
+
+[tool.ruff.lint]
+select = ["C", "E", "F", "W", "B"]
+ignore = ["E203", # Whitespace before punctuation
+          "E741", # Ambiguous variable name
+          "E402", # Module level import not at top of cell
+          "W605", # Invalid escape sequence
+          "F401", # unused import
+          "B023", # function uses loop variable
+          "B028", # No excplicit stackvariable
+          "C408", # Unnecessary collection call
+          "C417", # Unnecessary map usage
+          # Newly added
+          "C901", # Complex name
+          "E501", # Line length, as enforced by black, but black ignores comments
+          "E721" # Type comparison
+          ]
+# W504 is not supported by ruff and does not need to be excluded
+
+[tool.ruff.lint.per-file-ignores]
+"pySDC/tutorial/step_6/C_MPI_parallelization.py" = ["F401"]
+"pySDC/projects/Hamiltonian/solar_system.py" = ["F401"]
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+exclude = '''playgrounds/'''
+
+[tool.coverage.run]
+omit = ['*/pySDC/tests/*', '*/data/*', '*/pySDC/playgrounds/*', '*/pySDC/projects/deprecated/*', '*/pySDC/projects/*/tests/*']
+relative_files = true
+concurrency = ['multiprocessing']
+source = ['pySDC']
+
+[tool.coverage.report]
+skip_empty = true
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    'pragma: no cover',
+
+    # Don't complain about missing debug-only code:
+    'def __repr__',
+    'if self\.debug',
+
+    # Don't complain if tests don't hit defensive assertion code:
+    'raise',
+
+    # Don't complain if non-runnable code isn't run:
+    'if 0:',
+    'if __name__ == .__main__.:',
+    'pass',
+    '@abc.abstractmethod',
+    '__author__*',
+    ]
