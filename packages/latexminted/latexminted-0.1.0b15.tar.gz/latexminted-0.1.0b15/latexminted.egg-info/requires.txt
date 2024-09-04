@@ -1,0 +1,3 @@
+latex2pydata>=0.4.0
+latexrestricted>=0.4.0
+pygments>=2.17.0
