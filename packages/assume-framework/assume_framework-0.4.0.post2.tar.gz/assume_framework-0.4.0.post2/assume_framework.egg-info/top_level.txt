@@ -1,0 +1,9 @@
+LICENSES
+assume
+assume-db
+assume_cli
+dist
+docker_configs
+docs
+examples
+tests
