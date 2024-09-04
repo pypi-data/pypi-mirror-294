@@ -1,0 +1,15 @@
+FEDI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FEDI/pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FEDI/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FEDI/scripts/fedi_dmri_outliers.py,sha256=Hh0ZebWub7M5_3QCnWYOpa9YGSWeLBhz8sKMl_fSYQ8,26039
+FEDI/scripts/fedi_dmri_qweights.py,sha256=IEQ3OYDwcNWY5yvHvS4776vYf0JjsNTbCvLMkADxHJU,7646
+FEDI/scripts/fedi_dmri_rotate_bvecs.py,sha256=CoxwBwARR3mg3MUC4PiDgMo8jh9PoZQk88Hg_a0W1d4,3486
+FEDI/scripts/fedi_dmri_snr.py,sha256=rJ65nGsltwvPEEOeVMKP_HBoorCNEb3mQM2sg0dboCA,2900
+FEDI/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FEDI/utils/common.py,sha256=ppOhRGKH4gYQpquKRTsoV2DhjL3gB4H2EBg3uA6gqdM,2092
+fedi-0.1.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+fedi-0.1.0.dist-info/METADATA,sha256=ooyjBsthR0hfHjWqAkxuN6-2w9hcU6AB7pBFYm68P1c,345
+fedi-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fedi-0.1.0.dist-info/entry_points.txt,sha256=L-pO6FqM5oPMee7MWk_BSBhnKdQ-K8gOO-TxmUy7zlo,248
+fedi-0.1.0.dist-info/top_level.txt,sha256=xYDeRVhE9P8jAiS_KqeIKAzXBfMPgK73CUZqud3wxy4,5
+fedi-0.1.0.dist-info/RECORD,,
