@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: randextract
+Version: 0.1.0
+Summary: A reference implementation for testing & validating Privacy Amplification algorithms
+Author-email: Esther Hänggi <esther.haenggi@hslu.ch>, Iyán Méndez Veiga <iyan.mendezveiga@hslu.ch>
+License: MIT License
+        
+        Copyright (c) 2024 Iyán Méndez Veiga
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: Homepage, https://randextract.crypto-lab.ch
+Project-URL: Issues, https://github.com/cryptolab/randextract/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2.1,>=1.25
+Requires-Dist: galois>=0.3.6
+Requires-Dist: scipy>=1.12
+Requires-Dist: gmpy2<3,>=2.2.0a1
+Requires-Dist: termcolor>=2.4
+Provides-Extra: dev
+Requires-Dist: jupyterlab; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == "docs"
+Requires-Dist: sphinx-book-theme; extra == "docs"
+Requires-Dist: sphinxcontrib-bibtex; extra == "docs"
+Requires-Dist: sphinx-togglebutton; extra == "docs"
+Requires-Dist: sphinx-tabs; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Provides-Extra: examples
+Requires-Dist: pyzmq; extra == "examples"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Provides-Extra: all
+Requires-Dist: randextract[dev,docs,examples,test]; extra == "all"
+
+<div align="center">
+<picture>
+  <source srcset="logo/logo-dark-mode.png" media="(prefers-color-scheme: dark)">
+  <img width=500px alt="randExtract logo" src="logo/logo-light-mode.png">
+</picture>
+</div>
+<br>
+
+[![Test](https://github.com/cryptohslu/randextract/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/cryptohslu/randextract/actions/workflows/test.yml)
+[![Docs](https://github.com/cryptohslu/randextract/actions/workflows/docs.yml/badge.svg)](https://github.com/cryptohslu/randextract/actions/workflows/docs.yml)
+
+The `randextract` library is a Python 3 package implementing randomness extractors that can be used to transform
+weak random sources into almost-uniform ones. The library implements quantum-proof strong randomness extractors that can
+be used in the Privacy Amplification (PA) step of any Quantum Key Distribution (QKD) or Quantum Random Number Generator
+(QRNG) protocol. Since quantum-proof strong randomness extractors are also classical-proof, these extractors are also
+well-suited for applications that involve only classical or no side-information at all.
+
+Our goal is to provide an easy-to-read *reference* library, whose correctness can be easily verified, that can be used
+to validate high performance implementations (usually hardware based) that are more difficult to audit and test.
+
+## Structure of the repo
+The source code of the library is in `src/randextract`, unit and integration tests in `tests`, and the documentation in
+`docs/source`. Additional tools such as plots, datasets used for testing and the scripts to generate them, Jupyter
+notebooks, etc. are all in `tools`.
+
+## Build & install
+You can install the latest release of the package using `pip`:
+
+```bash
+pip install randextract
+```
+
+You can also install the current dev version cloning this git repo:
+```bash
+git clone https://github.com/cryptohslu/randextract.git
+cd randextract
+# (Optionally, create a virtual environment)
+python -m venv .venv
+source .venv/bin/activate
+pip install .
+```
+
+The documentation is available at https://randextract.crypto-lab.ch.
+
+You can also build the documentation locally:
+```bash
+cd docs
+make html
+```
