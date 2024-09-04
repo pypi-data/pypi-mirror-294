@@ -1,0 +1,3 @@
+docs
+simple_salesforce
+tests
