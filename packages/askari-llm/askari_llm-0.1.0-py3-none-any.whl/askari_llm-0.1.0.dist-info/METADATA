@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: askari-llm
+Version: 0.1.0
+Summary: A package to create AI guardrails for LLM applications using YAML-defined policies.
+Home-page: UNKNOWN
+Author: mgasa
+Author-email: mgasa.loucat1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyyaml
+
+UNKNOWN
+
