@@ -1,0 +1,6 @@
+py_excel_rs-0.2.0.dist-info/METADATA,sha256=JKzT51Og0tMTJzsyPV6GmG-LG1-9PB4Vi4gndQcA6T8,3140
+py_excel_rs-0.2.0.dist-info/WHEEL,sha256=MkKFniK2N1nMal3LoSsZSmzgLyFcEHiIMvf4zu5Wpi4,129
+py_excel_rs/df_to_xlsx.py,sha256=t_4VGaMbMo8iMyO-sxnmGNFpr3-48NglGppSqJE3iZw,320
+py_excel_rs/__init__.py,sha256=FfFD82Vx86vBe8hGClXoSY-YY9Q5itXUghkIPTZpnsM,48
+py_excel_rs/_excel_rs.cpython-312-x86_64-linux-gnu.so,sha256=1hsjnfDI3z1yhbXSMNfqEh1qP1SW0cAkmyVXT0lFvwA,5669824
+py_excel_rs-0.2.0.dist-info/RECORD,,
