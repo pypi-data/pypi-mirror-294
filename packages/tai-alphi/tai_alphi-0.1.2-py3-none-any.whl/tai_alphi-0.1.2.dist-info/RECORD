@@ -1,0 +1,12 @@
+tai_alphi/__init__.py,sha256=ASyFiVMxyiEkLs49Xto8qGMpevsaEGQf3GcMOCO0kaM,1974
+tai_alphi/adaptative_cards.py,sha256=-tHNYXthjbualpGsLqFWbq7-DZN9497EzFrdZgQnGzM,15086
+tai_alphi/config.py,sha256=hseN8DK8HuGoujc9QRYVutsLOqRIjb3x2HHf6bQxcP8,9441
+tai_alphi/exceptions.py,sha256=NOjtoCCyjQR3aepPEomBoGhcXRQpE6N9pUOKm2sSbNY,1098
+tai_alphi/formatters.py,sha256=2mavm8cNsdxcoRRuXBSPOOphoeh2UbpYJO2gLaogT3I,3749
+tai_alphi/handlers.py,sha256=kNk0f1fo84hKCywhYVNQ17MOoGn9e6WjAywbTtwqtEI,3123
+tai_alphi/log_config.py,sha256=WTH_bDgp9dpPAGlE4nW5cqDZKq3AuWu6qKmzvMF_4cg,800
+tai_alphi/loggers.py,sha256=W3eJlxXujcsuCoV8C5aJoo_6lZiD6N81-GHeVjZt3xo,4969
+tai_alphi-0.1.2.dist-info/METADATA,sha256=ZRgDeZvxCs0MjxLdVCgYkek97nSvN6G3kC-jaoa9Cfw,847
+tai_alphi-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tai_alphi-0.1.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tai_alphi-0.1.2.dist-info/RECORD,,
