@@ -1,0 +1,28 @@
+[project]
+name = "dashai_mlp_model_fran"
+version = "0.0.7"
+
+dependencies = [
+  # add plugin dependencies here
+]
+
+authors = [
+  { name="fran"},
+  { email="francisca.cona@ug.uchile.cl"},
+]
+
+keywords = [
+    "Model",
+]
+
+description = "DashAI Plugin description"
+readme = "README.md"
+requires-python = ">=3.8" # DashAI software needs python 3.8 or higher
+
+[project.entry-points.'dashai.plugins']
+model_name = 'dashai_mlp_model_fran.model_class_template:ImgMLPClass'
+# Add all the necessary entrypoint (one per DashAI component)
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
