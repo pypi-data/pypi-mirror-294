@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rlmodule
+Version: 0.0.2
+Summary: Flexible reinforcement learning models instantiators library
+Author: Lopatovsky
+Maintainer: Lopatovsky
+License: MIT License
+Project-URL: Homepage, https://github.com/FabricaAI/rlmodule
+Project-URL: Documentation, https://github.com/FabricaAI/rlmodule
+Project-URL: Discussions, https://github.com/FabricaAI/rlmodule/discussions
+Project-URL: Bug Reports, https://github.com/FabricaAI/rlmodule/issues
+Project-URL: Say Thanks!, https://github.com/lopatovsky
+Project-URL: Source, https://github.com/FabricaAI/rlmodule
+Keywords: reinforcement-learning,machine-learning,reinforcement,machine,learning,rl,rl-models,rl-modules,models,modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gym
+Requires-Dist: gymnasium
+Requires-Dist: torch >=1.9
+Requires-Dist: skrl >=1.2.0
+Provides-Extra: all
+Requires-Dist: skrl >=1.2.0 ; extra == 'all'
+Provides-Extra: skrl
+Requires-Dist: skrl >=1.2.0 ; extra == 'skrl'
+
+# rlmodule
+Flexible reinforcement learning models instantiators library
