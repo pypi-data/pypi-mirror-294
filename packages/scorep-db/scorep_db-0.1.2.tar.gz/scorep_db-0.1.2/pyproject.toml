@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "scorep-db"
+version = "0.1.2"
+description = "Minimal tooling to keep track of Score-P Profiles + Traces."
+authors = ["Maximilian Sander <maximilian.sander1@tu-dresden.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rdflib = "^7.0.0"
+rdflib-sqlalchemy = "^0.5.4"
+python-dotenv = "^1.0.1"
+minio = "^7.2.7"
+setuptools = "^72.2.0"
+ruff = "^0.6.0"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.scripts]
+scorep-db = "scorep_db.__main__:exec_main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://gitlab.hrz.tu-chemnitz.de/s0872522--tu-dresden.de/scorep-db"
+Repository = "https://gitlab.hrz.tu-chemnitz.de/s0872522--tu-dresden.de/scorep-db"
