@@ -1,0 +1,14 @@
+fideparser/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+fideparser/arbiter.py,sha256=JCk1BZyo4MFumOXe5AXCXd6ym4uJQTkD26leTLHZNq4,1051
+fideparser/exceptions.py,sha256=L8x2muZsLKuMfNtRU_d-_K8kDLPv5Rh55PYRVZL9mZs,120
+fideparser/jsonencdec.py,sha256=qK5dfE1lEkHVwwQlD9QBzddnTz8zBI1gW26zG7INjH4,500
+fideparser/main.py,sha256=zO9cLth4GQFkiN90plGv3tLHHXWpz-L8CUcn551_wlI,2256
+fideparser/mergecsv.py,sha256=0cJhLPyQ7a2O35HjQe1yY9wzR8pJoXYXx7p0YLUfep8,1532
+fideparser/ratingperiod.py,sha256=DcgAI7usExGNypSt3WsFH_dyEGze-MyenIehik3hilM,4144
+fideparser/report.py,sha256=s9fRfiMj1-84C8igJLzTQuWyWsgfHSciMTt3yLvTyiY,643
+fideparser/tournament.py,sha256=PyHcGuOtfDDjsIPsOyw_xXwk1yANfX0P6ZhIAWWSuQc,4092
+fideparser-1.1.dist-info/METADATA,sha256=1K5J5hpNr0dRczRKjWYxtn7z-tN8WPKyu6b8tSMKCCI,6162
+fideparser-1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fideparser-1.1.dist-info/entry_points.txt,sha256=vVsp5egXmJP0BSR9rpiOGoT491Myl6Bxet67IEl5iUc,108
+fideparser-1.1.dist-info/top_level.txt,sha256=53fiOkrIugR7OgjFEep8YTyAQRPBG-y2uteJlg2qt54,11
+fideparser-1.1.dist-info/RECORD,,
