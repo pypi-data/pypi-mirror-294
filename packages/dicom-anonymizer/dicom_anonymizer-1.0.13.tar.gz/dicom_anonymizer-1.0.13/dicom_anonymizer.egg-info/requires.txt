@@ -1,0 +1,10 @@
+pydicom
+tqdm
+
+[dev]
+pytest
+bs4
+fire
+requests
+pre-commit
+ruff
