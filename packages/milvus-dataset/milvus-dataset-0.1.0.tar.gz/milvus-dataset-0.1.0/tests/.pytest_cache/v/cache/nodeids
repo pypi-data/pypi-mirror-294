@@ -1,0 +1,7 @@
+[
+  "test_e2e.py::TestMilvusDatasetE2E::test_list_datasets",
+  "test_e2e.py::TestMilvusDatasetE2E::test_load_dataset",
+  "test_e2e.py::TestMilvusDatasetE2E::test_read_batch",
+  "test_e2e.py::TestMilvusDatasetE2E::test_read_full",
+  "test_e2e.py::TestMilvusDatasetE2E::test_read_stream"
+]
