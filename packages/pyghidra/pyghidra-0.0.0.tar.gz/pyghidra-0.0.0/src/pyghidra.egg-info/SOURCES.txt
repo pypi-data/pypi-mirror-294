@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyghidra/__init__.py
+src/pyghidra.egg-info/PKG-INFO
+src/pyghidra.egg-info/SOURCES.txt
+src/pyghidra.egg-info/dependency_links.txt
+src/pyghidra.egg-info/top_level.txt
