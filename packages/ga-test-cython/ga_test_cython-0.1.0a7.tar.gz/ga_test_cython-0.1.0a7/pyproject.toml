@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "ga_test_cython"
+version = "0.1.0-a7"
+description = "An tiny example of GitHub Actions + Poetry + Cython"
+authors = ["Christian Pieringer <cppierin@uc.cl>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+Cython = ">=3.0.0"
+numpy = "^2.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.7"
+pytest = "^8.3.2"
+
+
+[build-system]
+requires = ["poetry-core", "numpy", "setuptools >= 69.0.0", "Cython >= 3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
+
+
+[tool.ruff]
+line-length = 100
+
+
+[tool.ruff.format]
+indent-style = "tab"
+docstring-code-format = true
+docstring-code-line-length = 100
+
