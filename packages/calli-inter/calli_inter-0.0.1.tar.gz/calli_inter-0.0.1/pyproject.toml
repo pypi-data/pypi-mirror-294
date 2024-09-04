@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "calli_inter"
+version = "0.0.1"
+authors = [
+    { name="Michael Becker", email="mich@elbecker.de" },
+]
+dependencies = [
+    "pyserial>=3.5,<4.0",
+]
+
+description = "Calliope mini as Interface for communication between computers"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/inf-schule/calli-inter"
+Issues = "https://github.com/inf-schule/calli-inter/issues"
