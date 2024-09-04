@@ -1,0 +1,4 @@
+appdirs
+keyring
+uv
+setuptools
