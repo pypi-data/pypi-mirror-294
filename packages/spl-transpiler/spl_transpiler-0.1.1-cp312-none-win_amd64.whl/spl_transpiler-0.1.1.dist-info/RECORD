@@ -1,0 +1,9 @@
+spl_transpiler-0.1.1.dist-info/METADATA,sha256=3Xn5zaE3UYjanmlRIMJ1jZYxV7INzgKpIY5f8xtgr3E,4909
+spl_transpiler-0.1.1.dist-info/WHEEL,sha256=f0Nk2GWSn9ojh4Dg27z93x-XiE29zKB1_Q0LUcX-tdw,95
+spl_transpiler-0.1.1.dist-info/licenses/LICENSE,sha256=ZFMPowOGPwM2Xi4529k1ZJ1XilSLkLI5jFvK_5Dn5uY,1060
+spl_transpiler/live_translator.py,sha256=wZGmNYq34OWyL5bVZsiZMqqJdZulpsKnRKDFZbLKVEM,5121
+spl_transpiler/live_translator.tcss,sha256=IpbxmrECZpP9P2w2HxBByOhyVb9d-JQNbXhcMzWzxLw,221
+spl_transpiler/__init__.py,sha256=9-vkU5XmVr5Yg4eKHJbNkIlNNbaYl_Ee_mwG3LGnq7c,256
+spl_transpiler/__main__.py,sha256=lX71vyiv5Yn1Q2uF0Bmr512nJLhQKASDur9G7mQtg6o,325
+spl_transpiler/spl_transpiler.cp312-win_amd64.pyd,sha256=UyQtqj6c57fVnqnON8Sahhks4ffz3zBChZcr-LP7Mic,2063360
+spl_transpiler-0.1.1.dist-info/RECORD,,
