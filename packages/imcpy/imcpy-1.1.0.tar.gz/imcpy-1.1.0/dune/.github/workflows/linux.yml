@@ -1,0 +1,25 @@
+name: linux
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Prepare
+      run: cmake -B ${{github.workspace}}/build -DDEBUG=1 -DTESTS=1
+
+    - name: Build
+      # Build your program
+      run: cmake --build ${{github.workspace}}/build -j$(nproc)
+
+    - name: Test
+      # Run tests
+      run: ctest --test-dir ${{github.workspace}}/build -j$(nproc)
