@@ -1,0 +1,4 @@
+dist
+docs
+simple_salesforce
+tests

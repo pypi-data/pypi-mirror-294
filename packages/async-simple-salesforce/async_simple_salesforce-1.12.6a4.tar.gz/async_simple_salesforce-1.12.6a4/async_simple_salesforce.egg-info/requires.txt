@@ -1,0 +1,8 @@
+aiofiles>=24.1.0
+httpx>=0.18.2
+more-itertools>=8.10.0
+pendulum
+pyjwt[crypto]
+requests>=2.26.0
+typing-extensions
+zeep

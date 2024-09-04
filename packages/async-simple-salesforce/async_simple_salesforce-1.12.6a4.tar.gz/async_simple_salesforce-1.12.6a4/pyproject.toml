@@ -1,0 +1,127 @@
+[project]
+name = "async-simple-salesforce"
+description = "Async fork of simple-salesforce"
+authors = [{name="Erik Aker", email="eaker@mulliganfunding.com"}]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+  "uv", "requirements", "packaging"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "Operating System :: OS Independent",
+  "Topic :: Internet :: WWW/HTTP",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "aiofiles>=24.1.0",
+  "httpx>=0.18.2",
+  "more-itertools>=8.10.0",
+  "pendulum",
+  "pyjwt[crypto]",
+  "requests>=2.26.0",
+  "typing-extensions",
+  "zeep",
+]
+dynamic = [
+  "version",
+]
+
+[build-system]
+requires = ["setuptools", "versioningit"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+mypkg = ["*.wsdl", "*.rst", "*.txt", "*.in", "*.md"]
+
+[tool.versioningit]
+default-version = "1.0.0+unknown"
+
+[project.urls]
+Repository = "https://github.com/MulliganFunding/async-simple-salesforce"
+Documentation = "https://github.com/MulliganFunding/async-simple-salesforce/blob/main/README.md"
+Changelog = "https://github.com/MulliganFunding/async-simple-salesforce/blob/main/CHANGELOG.md"
+Releases = "https://github.com/MulliganFunding/async-simple-salesforce/releases"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+asyncio_mode = "auto"
+pythonpath = "."
+addopts = "--cov=simple_salesforce --cov-report html"
+testpaths = [
+    "tests",
+]
+
+[tool.ruff.lint]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = ["E", "F"]
+ignore = ["E402", "E501"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F"]
+
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `F401` (unused import) for `__init__.py` files.
+"__init__.py" = ["F401"]
+
+[tool.uv]
+dev-dependencies = [
+  "build>=1.2.1",
+  "cryptography",
+  "mypy>=1.11.0",
+  "pytest>=8.3.2",
+  "pytest-asyncio>=0.24.0",
+  "pytest-cov>=5.0.0",
+  "pytest-httpx>=0.30.0",
+  "pytz>=2024.1",
+  "responses>=0.25.3",
+  "ruff>=0.6.3",
+  "twine>=5.1.1",
+  "types-aiofiles>=24.1.0.20240626",
+  "types-requests>=2.32.0.20240712",
+]
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+line-length = 110
+
+# Assume Python 3.10.
+target-version = "py311"
