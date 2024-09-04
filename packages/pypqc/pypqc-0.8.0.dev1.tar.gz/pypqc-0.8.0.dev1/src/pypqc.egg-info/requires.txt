@@ -1,0 +1,10 @@
+pypqc-cffi-bindings-libre
+
+[falcon]
+pypqc-cffi-bindings-falcon
+
+[hqc]
+pypqc-cffi-bindings-hqc
+
+[kyber]
+pypqc-cffi-bindings-kyber
