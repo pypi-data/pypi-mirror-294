@@ -1,0 +1,2 @@
+Django>=4.0
+user_agents>=2.2.0
