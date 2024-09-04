@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ga_test_cython
+Version: 0.1.0a6
+Summary: An tiny example of GitHub Actions + Poetry + Cython
+Author: Christian Pieringer
+Author-email: cppierin@uc.cl
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Cython (>=3.0.0)
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# CI/CD of Cython Package
+
+This repository develops an example of a CI/CD pipeline for a Python package with Cython (C/C++) Extensions through GitHub Actions.
+
+
+# References
+
+1. [Publishing Proprietary Python Packages on PyPI Using Poetry](https://d39l7znklsxxzt.cloudfront.net/zh/blog/2021/01/19/publishing-a-proprietary-python-package-on-pypi-using-poetry/)
+2. [Trie Again: Python Trie implementation optimized for T9 completion](https://github.com/EgorBlagov/trie-again/tree/main)
+
