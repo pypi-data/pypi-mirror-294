@@ -1,0 +1,15 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include ostris_ai_toolkit *
+recursive-include toolkit *
+recursive-include jobs *
+recursive-include config *
+recursive-include extensions *
+recursive-include scripts *
+recursive-include assets *
+recursive-include notebooks *
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+recursive-exclude * __pycache__
+recursive-exclude venv *
+recursive-exclude .venv *
