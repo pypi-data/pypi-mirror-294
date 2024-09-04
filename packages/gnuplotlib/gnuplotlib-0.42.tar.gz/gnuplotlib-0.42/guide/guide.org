@@ -1,0 +1,1184 @@
+This is an overview of the capabilities of =gnuplotlib=. The [[https://github.com/dkogan/gnuplotlib/][documentation]]
+provides a complete API reference.
+
+* Tutorial
+** Specifying the data in one dataset
+
+First, a trivial plot: let's plot a sinusoid
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+gp.plot(np.sin(th))
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-1.svg]]
+
+This was a trivial plot, and was trivially-easy to make: we called =plot()= with
+one argument, and we got a plot.
+
+Here each point we plotted was 2-dimensional (has an x value an a y value), but
+we passed in only one number for each point. =gnuplotlib= noted the missing
+value and filled in sequential integers (0, 1, 2, ...) for the x coordinate.
+
+If we pass in two arrays, =gnuplotlib= will use one for the x, and the other for
+the y. Let's plot =sin(theta)= vs. =cos(theta)=, i.e. a circle:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-np.pi, np.pi, 100)
+gp.plot(np.cos(th), np.sin(th))
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-2.svg]]
+
+Hmmm. We asked for a circle, but this looks more like an ellipse. Why? Because
+gnuplot is autoscaling the x and y axes independently to fill the plot window.
+If we ask for the autoscaling to scale the axes /together/, we get a circle:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-np.pi, np.pi, 100)
+gp.plot(np.cos(th), np.sin(th),
+        square = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-3.svg]]
+
+Here we used the =square= /plot option/. More on those later. We just plotted
+something where each point is represented by 2 values: x and y. When making 2D
+plots, this is the most common situation, but others are possible. What if we
+want to color-code our points using another array to specify the colors? You
+pass in the new array, you tell =gnuplotlib= that you now have /3/ values per
+point (the =tuplesize=), and you tell =gnuplot= how you want this plot to be
+made:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-np.pi, np.pi, 100)
+gp.plot(np.cos(th), np.sin(th),
+        # The angle (in degrees) is shown as the color
+        th * 180./np.pi,
+        tuplesize = 3,
+        _with     = 'linespoints palette',
+        square    = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-4.svg]]
+
+=_with= is a /curve option/ that indicates how this dataset should be plotted.
+It's =_with= and not =with= because the latter is a built-in keyword in Python.
+=gnuplotlib= treats all =_xxx= options identically to =xxx=, so =plot(..., _with
+= 'xxx')= and =plot(..., **{'_with': 'xxx'})= and =plot(..., **{'with': 'xxx'})=
+are identical.
+
+Styles in =_with= are strings that are passed on to =gnuplot= verbatim. So the
+full power of =gnuplot= is available, and there's nothing =gnuplotlib=-specific
+to learn. =gnuplot= has plenty of documentation about styling details.
+
+Earlier we saw that a missing x array can be automatically filled-in with
+integers 0, 1, 2, ... This is available with fancier plots also. The rule is:
+
+- Normally we should be given exactly =tuplesize= arrays
+- If we are given exactly =tuplesize-1= arrays, use 0, 1, 2, ... for the x
+- If we are given exactly =tuplesize-2= arrays, use a regularly spaced xy grid
+  with 0, 1, 2, ... in x and in y
+
+These are the only allowed mismatches between =tuplesize= and how much data is
+received. This allows flexibility in the passing of data, and some level of
+validation of input. Example. Let's color-code the sinusoid by passing in /two/
+arrays. The =tuplesize= is still 3, but we have an implicit x.
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+gp.plot(np.sin(th),
+        # use the cosine as the color
+        np.cos(th),
+        tuplesize = 3,
+        _with     = 'linespoints palette')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-5.svg]]
+
+Finally, so far we have been passing in each dimension in a separate array. But
+it is often far more convenient to pass in a single array where each point is
+represented in a row corresponding to the last dimension in that array. This is
+specifiable by passing in a negative =tuplesize=, and most easily explained with
+an example. The circle plot from earlier can be made in this way:
+
+#+BEGIN_SRC python :python python3 :results output :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+
+th     = np.linspace(-np.pi, np.pi, 100)
+points = nps.transpose(nps.cat(np.cos(th), np.sin(th)))
+
+print(points.shape)
+#+END_SRC
+
+#+RESULTS:
+: (100, 2)
+
+I.e. we have 100 rows, each one of length 2.
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+# shape (100,)
+th     = np.linspace(-np.pi, np.pi, 100)
+# shape (100, 2)
+points = nps.transpose(nps.cat(np.cos(th), np.sin(th)))
+gp.plot(points,
+        tuplesize = -2,
+        square    = True)
+# instead of
+# gp.plot(points[:,0], points[:,1],
+#         tuplesize = 2,
+#         square    = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-7.svg]]
+
+** Specifying multiple datasets
+So far we were plotting a single dataset at a time. However, often we want to
+plot multiple datasets in the same plot, together. Note that the code and
+documentation uses the terms "dataset" and "curve" interchangeably.
+
+As before, the whole plot is made with a single call to =plot()=. In its most
+explicit form, each dataset is specified as a /tuple/. /plot options/ apply to
+the whole plot, and are given as kwargs to the =plot()= call. /curve options/
+apply to each dataset, and are passed as a =dict= in the last element of each
+dataset tuple. So each =plot= command looks like
+
+#+BEGIN_SRC python :results none :exports code
+plot( curve, curve, ..., plot_options )
+#+END_SRC
+
+#+RESULTS:
+
+where each =curve= is a =tuple=:
+
+#+BEGIN_SRC python :results none :exports code
+curve = (array, array, ..., curve_options)
+#+END_SRC
+
+#+RESULTS:
+
+The data in each dataset is interpreted as described in the previous section.
+
+Let's plot a sine and a cosine together, using the default styling for one, and
+a specific styling for another. And let's set some common options.
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+gp.plot( (
+           th, np.sin(th),
+         ),
+         (
+           th, np.cos(th),
+           dict(_with  = "points pt 7",
+                legend = "cosine")
+         ),
+
+         xlabel = "Angle (rad)",
+         title  = "Sine and cosine",
+         unset  = 'grid')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-10.svg]]
+
+The =plot()= kwargs are the plot options, but curve options are allowed there as
+well. These will be used as the default curve options for all curves that omit
+those specific options. For instance, if I want to plot lots of things with
+lines, except /one/, I can do this:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+gp.plot( ( np.sin(th), ),
+         ( np.cos(th), ),
+         ( th,         ),
+         ( -th, dict(_with = 'points ps 0.5') ),
+         _with = 'lines')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-11.svg]]
+
+If we have just one dataset, each tuple can be inlined, which is why something
+like =gp.plot(x, y)= works.
+
+Unlike =matplotlib=, here we make a single =plot()= call instead of making a
+separate call for each dataset and for each format setting. You can still
+construct the plot piecemeal, however, but you use normal Python directives to
+do that. For instance, the previous plot can be created instead like this:
+
+#+BEGIN_SRC python :results none :exports code
+datasets = []
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+datasets.append(( np.sin(th), ),)
+datasets.append(( np.cos(th), ),)
+datasets.append(( th,         ),)
+datasets.append(( -th, dict(_with = 'points ps 0.5') ),)
+
+plot_options = dict()
+plot_options['with'] = 'lines'
+
+gp.plot(*datasets, **plot_options)
+#+END_SRC
+
+#+RESULTS:
+
+Finally, [[https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html][broadcasting]] is fully supported here, and can be used to simplify the
+=plot()= call. Previously we plotted two sinusoids together using a tuple for
+each dataset. With broadcasting, we can avoid that:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+gp.plot( th,
+         nps.cat(np.sin(th),
+                 np.cos(th)),
+
+         legend = np.array( ("sin", "cos"), ) )
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-13.svg]]
+
+I passed in an aray of shape =(100,)= for the x, and an array of shape
+=(2,100,)= for the y. The broadcasting logic kicks in, and we get a plot of two
+separate datasets, one for each row of y. The curve options broadcast as well:
+the =legend= is expecting a scalar, but I gave it an array of shape =(2,)=, so
+it uses a different legend for each of the two plotted datasets.
+
+** Specifying multiple plots
+If we want multiple plot windows, the object-oriented =gnuplotlib= interface
+provides this. Each =gnuplotlib= object represents a separate =gnuplot= process
+and a separate plot window. All the one-call =plot()= commands shown so far
+reuse a single global =gnuplotlib= object for convenience. So if we want
+multiple simultaneous plot windows, we explicitly create and use separate
+=gnuplotlib= objects. The general sequence is:
+
+#+BEGIN_SRC python :results none :exports code
+plot1 = gp.gnuplotlib(plot_options_and_default_curve_options)
+plot1.plot(curves)
+
+plot2 = gp.gnuplotlib(plot_options_and_default_curve_options)
+plot2.plot(curves)
+
+...
+#+END_SRC
+
+#+RESULTS:
+
+A trivial example:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(-2.*np.pi, 2.*np.pi, 100)
+plot1 = gp.gnuplotlib( title  = 'sinusoid',
+                       xlabel = 'Angle (rad)')
+plot1.plot(th, np.sin(th),
+           _with  = 'lines',
+           legend = 'sine')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-15.svg]]
+
+Or if we want /one plot window/ containing /multiple/ plots, we can use the
+/multiplot/ interface. This extends the previous structure where
+
+- a plot (configured with plot options) contains datasets (configured with curve
+  options)
+
+so that we instead have
+
+- a process (configured with process options) contains plots (configured with
+  plot options) contains datasets (configured with curve options)
+
+In the usual non-multiplot case, process options are lumped into the larger set
+of plot options. When making a multiplot, we still have a single =plot()=
+command, but now each /plot/ lives in a separate tuple. We have similar
+semantics as before: default plot options can be given together with the process
+options. Plot options can be given as a =dict= in the last element of that
+plot's tuple. Example. Two sinusoids together, in a multiplot:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(0, np.pi*2, 30)
+gp.plot( (th, np.cos(th), dict(title="cos",
+                               _xrange = [0,2.*np.pi],
+                               _yrange = [-1,1],)),
+         (th, np.sin(th), dict(title="sin",
+                               _xrange = [0,2.*np.pi],
+                               _yrange = [-1,1])),
+         multiplot='title "multiplot sin,cos" layout 2,1',)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-16.svg]]
+
+We get a multiplot if we pass in a =multiplot= process option. The value of this
+option is given directly to =gnuplot= in a =set multiplot= command. As before,
+see the =gnuplot= documentation for all the details: run
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help multiplot'
+#+END_SRC
+
+* Recipes
+This is a good overview of the syntax. Now let's demo some fancy plots to
+serve as a cookbook.
+
+Since the actual plotting is handled by =gnuplot=, its documentation and [[http://www.gnuplot.info/demo/][demos]]
+are the primary reference on how to do stuff.
+
+** Line, point sizes, thicknesses, styles
+Most often, we're plotting lines or points. The most common styling keywords
+are:
+
+- =pt= (or equivalently =pointtype=)
+- =ps= (or equivalently =pointsize=)
+- =lt= (or equivalently =linetype=)
+- =lw= (or equivalently =linewidth=)
+- =lc= (or equivalently =linecolor=)
+- =dt= (or equivalently =dashtype=)
+
+For details about these and all other styles, see the =gnuplot= documentation.
+For instance, the first little bit of the docs about the different line widths:
+
+#+BEGIN_SRC shell :results output verbatim :exports both
+gnuplot -e 'help linewidth' | head -n 20
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+ Each terminal has a default set of line and point types, which can be seen
+ by using the command `test`.  `set style line` defines a set of line types
+ and widths and point types and sizes so that you can refer to them later by
+ an index instead of repeating all the information at each invocation.
+
+ Syntax:
+       set style line <index> default
+       set style line <index> {{linetype  | lt} <line_type> | <colorspec>}
+                              {{linecolor | lc} <colorspec>}
+                              {{linewidth | lw} <line_width>}
+                              {{pointtype | pt} <point_type>}
+                              {{pointsize | ps} <point_size>}
+                              {{pointinterval | pi} <interval>}
+                              {{pointnumber | pn} <max_symbols>}
+                              {{dashtype | dt} <dashtype>}
+                              {palette}
+       unset style line
+       show style line
+
+ `default` sets all line style parameters to those of the linetype with
+#+end_example
+
+gnuplot has a =test= command, which produces a demo of the various available
+styles. This documentation uses the =svg= terminal (what gnuplot calls a
+"backend"). So for the =svg= terminal, the various styles look like this:
+
+#+begin_src gnuplot :results file link :session gnuplotlib-guide-gnuplot :exports both :file gnuplot-terminal-test.svg
+test
+#+end_src
+
+#+RESULTS:
+[[file:gnuplot-terminal-test.svg]]
+
+So for instance if you plot something with =linespoints pt 4 dt 2 lc 7= you'll
+get a red dashed line with square points. By default you'd be using one of the
+interactive graphical terminals (=x11= or =qt=), which would have largely
+similar styling.
+
+Let's make a plot with some variable colors and point sizes:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+x = np.arange(21) - 10
+gp.plot( ( x**2, np.abs(x)/2, x*50,
+           dict(_with     = 'points pointtype 7 pointsize variable palette',
+                tuplesize = 4) ),
+         ( 3*x + 30,
+           dict(_with = 'lines lw 3 lc "red" dashtype 2')),
+         cbrange = '-600:600',)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-17.svg]]
+
+Let's now plot two datasets, one with variable color, the other with variable
+size. We have =tuplesize=3= for both, but I'm passing in /one/ array. So the xy
+domain is a regular grid of the appropriate size.
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+y,x = np.mgrid[-10:11, -8:2]
+r   = np.sqrt(x*x + y*y)
+
+gp.plot( nps.cat(x,r / 5.),
+         tuplesize = 3,
+         _with     = np.array(('points palette pt 7',
+                               'points ps variable pt 6')),
+         square = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-18.svg]]
+
+To see a sampling of all the availble line and point styles, run the =test=
+command in =gnuplot=.
+
+** Error bars
+As before, the =gnuplot= documentation has the styling details:
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help xerrorbars'
+gnuplot -e 'help yerrorbars'
+gnuplot -e 'help xyerrorbars'
+#+END_SRC
+
+For brevity, I'm not including the contents of those help pages here. These tell
+us how to specify errorbars: how many columns to pass in, what they mean, etc.
+Example:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+x = np.arange(21) - 10
+y = x**2 * 10 + 20
+gp.plot( ( x + 1,
+           y + 20,
+           dict(_with = 'lines') ),
+
+         ( x + 1,
+           y + 20,
+           x**2/80,
+           x**2/4,
+           dict(legend    = "using the 'x y xdelta ydelta' style",
+                _with     = 'xyerrorbars',
+                tuplesize = 4) ),
+         ( x,
+           y,
+           x - x**2/80,
+           x + x**2/40,
+           y - x**2/4,
+           y + x**2/4 / 2,
+           dict(legend    = "using the 'x y xlow xhigh ylow yhigh' style",
+                _with     = 'xyerrorbars',
+                tuplesize = 6)),
+
+         ( x, x*20 + 500., np.ones(x.shape) * 40,
+           dict(legend    = "using the 'x y ydelta' style; constant ydelta",
+                _with     = 'yerrorbars',
+                tuplesize = 3)),
+
+         xmin  = 1 + x[0],
+         xmax  = 1 + x[-1],
+         set = 'key box opaque')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-19.svg]]
+
+** Polar coordinates
+See
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help polar'
+#+END_SRC
+
+Let's plot the [[https://en.wikipedia.org/wiki/Conchoid_of_de_Sluze][Conchoids of de Sluze]] using broadcasting:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+rho = np.linspace(0, 2*np.pi, 1000)  # dim=(  1000,)
+a   = np.arange(-4,3)[:, np.newaxis] # dim=(7,1)
+
+gp.plot( rho,
+         1./np.cos(rho) + a*np.cos(rho), # broadcasted. dim=(7,1000)
+
+         _with  = 'lines',
+         set    = 'polar',
+         square = True,
+         yrange = [-5,5],
+         legend = np.array(["a = {}".format(_) for _ in a.ravel()]) )
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-20.svg]]
+
+** Labels
+Docs:
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help labels'
+gnuplot -e 'help set label'
+#+END_SRC
+
+Basic example:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+x = np.arange(5)
+y = x+1
+gp.plot(x, y,
+        np.array( ['At x={}'.format(_) for _ in x], dtype=str),
+        _with     = 'labels',
+        tuplesize = 3,
+        unset     = 'grid')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-21.svg]]
+
+More complex example:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+x = np.arange(5, dtype=float)
+y = x+1
+gp.plot(x, y,
+        np.array( ['At x={}'.format(_) for _ in x], dtype=str),
+        x / 4 * 90, # Angles, in degrees
+        x,          # Mapped to colors
+        _with     = 'labels rotate variable textcolor palette',
+        tuplesize = 5,
+        unset     = 'grid')
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-22.svg]]
+
+** 3D plots
+We can plot in 3D by passing in the plot option =_3d = True= or by calling
+=plot3d()= instead of =plot()=. The latter is simply a convenience function to
+set the =_3d= plot option. When plotting interactively, you can use the mouse to
+rotate the plot, and look at it from different directions. Otherwise, the
+viewing angle can be set with the =view= setting. See
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help set view'
+#+END_SRC
+
+In general there're lots of ways to plot images, meshes, contours, and so on.
+Please see the =gnuplot= docs.
+
+Let's plot a sphere:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+th = np.linspace(0,        np.pi*2, 30)
+ph = np.linspace(-np.pi/2, np.pi*2, 30)[:,np.newaxis]
+x  = (np.cos(ph) * np.cos(th))          .ravel()
+y  = (np.cos(ph) * np.sin(th))          .ravel()
+z  = (np.sin(ph) * np.ones( th.shape )) .ravel()
+
+gp.plot3d( x, y, z,
+           _with  = 'points',
+           title  = 'sphere',
+           square = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-23.svg]]
+
+A double-helix with variable color and variable pointsize
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+th    = np.linspace(0, 6*np.pi, 200)
+z     = np.linspace(0, 5,       200)
+size  = 0.5 + np.abs(np.cos(th))
+color = np.sin(2*th)
+
+gp.plot3d( np.cos(th) * nps.transpose(np.array((1,-1))),
+           np.sin(th) * nps.transpose(np.array((1,-1))),
+           z,
+           size,
+           color,
+           legend = np.array(('spiral 1', 'spiral 2')),
+           tuplesize = 5,
+           _with = 'points pointsize variable pointtype 7 palette',
+           title    = 'Double helix',
+           squarexy = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-24.svg]]
+
+** 3D plots: meshes and contours
+Both of these are plots of discrete 3D points. If we pass in exactly
+=tuplesize-2= arrays, then we will use an implicit grid as our xy domain. Let's
+create a mesh, and plot it:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z,
+          squarexy = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-25.svg]]
+
+By default we plot with lines (meaning "wireframe" here) and points. Probably
+just the wireframe would be nicer. And let's use variable colors to encode z.
+And let's rotate it
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z, z,
+          _with = 'lines palette',
+          tuplesize = 4,
+          set = ('view 50,30', 'view equal xy')
+)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-26.svg]]
+
+Let's add some contours beneath
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z,
+          _with = 'lines',
+          set = ('view 60,30', 'view equal xy',
+                 'contour base')
+)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-27.svg]]
+
+When looking at contour plots I generally find them to be much more legible as a
+top-down view, without the 3D component. So I usually do something like this
+instead:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z,
+          _with = np.array(('image', 'lines lw 2 nosurface')),
+          legend = np.array(('surface', '')),
+          set = ('key outside',
+                 'view 0,0',
+                 'view equal xy',
+                 'contour base',
+                 'cntrparam bspline',
+                 'cntrparam levels 15'),
+          unset=('grid', 'colorbox') )
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-28.svg]]
+
+This is technically a 3D plot, but we're looking at it straight down, from the
+top. The 3D plot processing is required to make contours. If we just want to
+draw a colormapped grid, we can do this as a 2D plot. Let's do that, and also
+use a grayscale colormap
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot(z,
+        _with     = 'image pixels',
+        tuplesize = 3,
+        set       = 'palette grey',
+        unset     = 'grid',
+        square    = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-29.svg]]
+
+This is very useful for annotating images. Note that above I used the =image
+pixels= instead of =image=. This is a compabilitity mode that is required to
+work around a bug in github's .svg display. Usually you'd use the normal =image=
+style.
+
+Finally, in these few examples we used an implicit 2D grid as our domain. This
+implicit grid is regular, and uses integers 0, 1, 2, ... in each dimension. What
+if this grid isn't exactly what we want?
+
+One method is to set up a transformation in the =using= directive. Here the
+=image= style works properly only when a linear transformation is involved. With
+a nonlinear transformation, the =pm3d= style is needed. It resamples the input
+in a grid, so it's able to handle this.
+
+Linear transformation:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z,
+          _with = np.array(('image', 'lines nosurface')),
+          set = ('view 0,0',
+                 'view equal xy',
+                 'contour base',
+                 'cntrparam bspline',
+                 'cntrparam levels 15'),
+          using = '(100+$1+$2):($1-$2):3',
+          ascii = True,
+          unset = 'grid' )
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-30.svg]]
+
+Nonlinear transformation:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 60
+# shape (N+1,N+1,2). Linear values from -1 to 1
+xy = nps.mv(np.mgrid[0:N+1,0:N+1], 0, -1)/(N/2.) - 1.
+# shape (N+1,N+1)
+r = nps.mag(xy)
+z = np.exp(-r * 2.) * np.sin(xy[...,0]*6) * np.sin(xy[...,1]*6)
+
+gp.plot3d(z,
+          _with = 'pm3d',
+          set = ('view 0,0',
+                 'contour base',
+                 'cntrparam bspline',
+                 'cntrparam levels 15'),
+          using = '($1*$1):2:3',
+          ascii = True,
+          unset = 'grid' )
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-31.svg]]
+
+Some other techniques are possible using linked axes or passing in discrete
+points, but I'm not going into those here.
+
+What if we want multiple sets of contours in one plot? =gnuplot= doesn't
+directly allow that. But you can use =multiplot= to draw the multiple contours
+on top of one another, resulting in the plot we want:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import gnuplotlib as gp
+
+x,y = np.meshgrid(np.linspace(-5,5,100),
+                  np.linspace(-5,5,100))
+z0 = np.sin(x) + y*y/8.
+z1 = np.sin(x) + y*y/10.
+z2 = np.sin(x) + y*y/12.
+
+commonset = ( 'origin 0,0',
+              'size 1,1',
+              'view 60,20,1,1',
+              'xrange [0:100]',
+              'yrange [0:100]',
+              'zrange [0:150]',
+              'contour base' )
+gp.plot3d( (z0, dict(_set = commonset + ('xyplane at 10',))),
+           (z1, dict(_set = commonset + ('xyplane at 80',  'border 15'), unset=('ztics',))),
+           (z2, dict(_set = commonset + ('xyplane at 150', 'border 15'), unset=('ztics',))),
+
+           tuplesize=3,
+           _with = np.array(('lines nosurface',
+                             'labels boxed nosurface')),
+           square=1,
+           multiplot=True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-32.svg]]
+
+** Histograms
+=gnuplot= (and =gnuplotlib=) has support for histograms. So we can give it data,
+and have it bin it for us. Or we can compute the histogram with =numpy=, and
+just use =gnuplotlib= to plot the resulting bars. Let's sample a normal
+distribution, and do it both ways. And let's compute the expected and observed
+probability-density-functions, and plot those on top (as equations, evaluated by
+=gnuplot=). With =gnuplotlib=:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+ 
+from scipy.special import erf
+
+N = 500
+x = np.random.randn(N)
+binwidth = 0.5
+
+def equation_gaussian(N = 0, mean = 0, sigma = 0, title = ''):
+    k = N * np.sqrt(2.*np.pi) * sigma * erf(binwidth/(2.*np.sqrt(2)*sigma))
+    return '{k}*exp(-(x-{mean})*(x-{mean})/(2.*{sigma}*{sigma})) / sqrt(2.*pi*{sigma}*{sigma}) title "{title}" with lines lw 2'. \
+        format(k     = k,
+               mean  = mean,
+               sigma = sigma,
+               title = title)
+
+gp.plot(x,
+        histogram       = True,
+        binwidth        = binwidth,
+        equation_above  = \
+          ( equation_gaussian( mean  = 0,
+                               sigma = 1.0,
+                               N     = N,
+                               title = 'Expected PDF',),
+            equation_gaussian( mean  = np.mean(x),
+                               sigma = np.std(x),
+                               N     = N,
+                               title = 'Observed PDF',)))
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-33.svg]]
+
+With =numpy=:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+ 
+from scipy.special import erf
+
+N = 500
+x = np.random.randn(N)
+
+hist, bin_edges = np.histogram(x, bins = 10)
+binwidth = bin_edges[1] - bin_edges[0]
+
+bin_centers = bin_edges[1:] - binwidth/2.
+
+def equation_gaussian(N = 0, mean = 0, sigma = 0, title = ''):
+    k = N * np.sqrt(2.*np.pi) * sigma * erf(binwidth/(2.*np.sqrt(2)*sigma))
+    return '{k}*exp(-(x-{mean})*(x-{mean})/(2.*{sigma}*{sigma})) / sqrt(2.*pi*{sigma}*{sigma}) title "{title}" with lines lw 2'. \
+        format(k     = k,
+               mean  = mean,
+               sigma = sigma,
+               title = title)
+
+gp.plot(bin_centers, hist,
+        _with = 'boxes fill solid 1 border lt -1',
+        _set  = 'boxwidth {}'.format(binwidth),
+        equation_above  = \
+          ( equation_gaussian( mean  = 0,
+                               sigma = 1.0,
+                               N     = N,
+                               title = 'Expected PDF',),
+            equation_gaussian( mean  = np.mean(x),
+                               sigma = np.std(x),
+                               N     = N,
+                               title = 'Observed PDF',)))
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-34.svg]]
+
+If we want multiple histograms drawn on top of one another, the styling should
+be adjusted so that they both remain visible. For instance:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+ 
+x1 = np.random.randn(1000)
+x2 = np.random.randn(1000) / 2.0
+binwidth = 0.2
+
+gp.plot( nps.cat(x1,x2),
+         histogram = True,
+         binwidth  = binwidth,
+         _with     = \
+           np.array(('boxes fill transparent solid 0.3 border lt -1',
+                     'boxes fill transparent pattern 1 border lt -1')))
+#+END_SRC
+#+RESULTS:
+[[file:guide-35.svg]]
+
+** Vector fields
+Documentation in gnuplot available like this:
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help vectors'
+#+END_SRC
+
+The docs say that in 2D we want 4 columns: =x, y, xdelta, ydelta= and in 3D we
+want 6 columns: =x, y, z, xdelta, ydelta, zdelta=. And we can have a variable
+arrowstyle. A vectorfield in 2D:
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+# shape (2, 100)
+xy = nps.clump( nps.cat( *np.meshgrid(np.linspace(-5,5,10),
+                          np.linspace(-5,5,10)) ),
+                n = -2 )
+# each one has shape (100,)
+x,y = xy
+
+# shape (100,)
+r = nps.mag( nps.transpose(xy) )
+
+
+gp.plot( x, y, y/np.sqrt(r+0.1)*0.5, -x/np.sqrt(r+0.1)*0.5,
+         tuplesize = 4,
+         _with = 'vectors filled head',
+         square=1)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-36.svg]]
+
+** Ellipses
+Let's say we have a bunch of points with covariance matrices associated with
+each one. We can plot each point and its 1-sigma ellipses. Let's do it two ways:
+
+- with ellipses (possible only in 2D)
+- with points sampled around the edge of the ellipse (possible in 2D and 3D)
+
+The documentation for ellipses is available with
+
+#+BEGIN_SRC shell :results none :exports code
+gnuplot -e 'help ellipses'
+#+END_SRC
+
+The docs say that our options are
+
+#+begin_example
+      2 columns: x y
+      3 columns: x y major_diam
+      4 columns: x y major_diam minor_diam
+      5 columns: x y major_diam minor_diam angle
+#+end_example
+
+Let's do it by plotting ellipses
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 8
+
+# The center of my ellipses
+# shape (2, N*N)
+xy = nps.clump( nps.cat( *np.meshgrid(np.linspace(-5,5,N),
+                                      np.linspace(-5,5,N)) ),
+                n = -2 )
+# each one has shape (N*N,)
+x,y = xy
+
+# I want repeatable random numbers
+np.random.seed(0)
+
+# Let's make up some covariances
+
+th = np.random.random((N*N,))
+v0 = nps.transpose(nps.cat(np.sin(th),  np.cos(th)))
+v1 = nps.transpose(nps.cat(np.cos(th), -np.sin(th)))
+l  = (np.random.random((N*N,2)) + 0.2) / 4
+# shape (N*N, 2,2)
+C = \
+  nps.outer(v0*l[:,(0,)], v0*l[:,(0,)]) + \
+  nps.outer(v1*l[:,(1,)], v1*l[:,(1,)])
+
+# Got covariances C (let's pretend I didn't make them up). For gnuplot I need to
+# compute the major and minor axis lengths, and the angle off horizontal.
+# np.linalg.eig and np.arctan2 support broadcasting, so I can use them directly
+l,v = np.linalg.eig(C)
+major_diam = np.sqrt(l[:,0]) * 2.0
+minor_diam = np.sqrt(l[:,1]) * 2.0
+v_major = v[:,:,0]
+angle = np.arctan2(v_major[:,1], v_major[:,0]) * 180./np.pi
+
+gp.plot( ( x, y, major_diam, minor_diam, angle,
+          dict(tuplesize = 5,
+               _with = 'ellipses')),
+         ( x, y,
+          dict(_with = 'points ps 0.5')),
+          _set = ('xrange [-6:6]', 'yrange [-6:6]'),
+         square = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-37.svg]]
+
+And again, by sampling the angles, and plotting points. This is more work, but
+can work in 3D too (we can remap a sphere). I'm using the same data here, so the
+points should trace the same shape as the ellipses I just computed
+
+#+BEGIN_SRC python :python python3 :results file link :session gnuplotlib-guide :exports both
+import numpy      as np
+import numpysane  as nps
+import gnuplotlib as gp
+
+N = 8
+
+# The center of my ellipses
+# shape (2, N*N)
+xy = nps.clump( nps.cat( *np.meshgrid(np.linspace(-5,5,N),
+                                      np.linspace(-5,5,N)) ),
+                n = -2 )
+# each one has shape (N*N,)
+x,y = xy
+
+# I want repeatable random numbers
+np.random.seed(0)
+
+# Let's make up some covariances
+
+th = np.random.random((N*N,))
+v0 = nps.transpose(nps.cat(np.sin(th),  np.cos(th)))
+v1 = nps.transpose(nps.cat(np.cos(th), -np.sin(th)))
+l  = (np.random.random((N*N,2)) + 0.2) / 4
+# shape (N*N, 2,2)
+C = \
+  nps.outer(v0*l[:,(0,)], v0*l[:,(0,)]) + \
+  nps.outer(v1*l[:,(1,)], v1*l[:,(1,)])
+
+# Got covariances C (let's pretend I didn't make them up). I use this matrix to
+# remap a circle, and plot the resulting points
+l,v = np.linalg.eig(C)
+
+# A = V sqrt(diag(l)) Vt
+# numpy diag() function is weird, so I'm doing that myself here
+A = nps.matmult(v * nps.dummy(np.sqrt(l), -2), nps.transpose(v))
+
+th = np.linspace(0, 2.*np.pi, 20)
+# shape (Nangles, 2)
+v = nps.transpose(nps.cat(np.cos(th), np.sin(th)))
+# shape (Nangles, N*N, 1, 2)
+v = nps.matmult(nps.mv(v, -2, -4), A)
+# shape (Nangles, N*N, 2)
+xy_1sigma = nps.transpose(xy) + v[..., 0, :]
+# shape (Nangles*N*N, 2)
+xy_1sigma = nps.clump(xy_1sigma, n=2)
+
+gp.plot( ( xy_1sigma,
+          dict(tuplesize = -2,
+               _with = 'dots')),
+         ( x, y,
+          dict(_with = 'points ps 0.5')),
+          _set = ('xrange [-6:6]', 'yrange [-6:6]'),
+         square = True)
+#+END_SRC
+
+#+RESULTS:
+[[file:guide-38.svg]]
+

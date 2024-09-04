@@ -1,0 +1,91 @@
+gnuplotlib (0.42)
+
+  * Regexes use raw strings, so Python 3.12 will not throw warnings to
+    stdout
+  * gnuplotlib.wait() can accept gnuplotlib objects to wait for
+
+ -- Dima Kogan <dkogan@debian.org>  Tue, 03 Sep 2024 12:07:40 -0700
+
+gnuplotlib (0.41)
+
+  * I "unset multiplot" after sending multiplot data
+
+ -- Dima Kogan <dkogan@debian.org>  Sat, 23 Dec 2023 12:24:59 -0800
+
+gnuplotlib (0.40)
+
+  * gnuplotlib works with subclasses of np.ndarray
+  * minor improvements to error-handling logic
+
+ -- Dima Kogan <dkogan@debian.org>  Mon, 19 Jun 2023 16:41:33 -0700
+
+gnuplotlib (0.39)
+
+  * Added 'cblegend' plot option
+
+ -- Dima Kogan <dkogan@debian.org>  Sat, 14 Jan 2023 23:08:35 -0800
+
+gnuplotlib (0.38)
+
+  * Extended add_plot_option() API
+  
+    This is a backwards-compatible update. There is NO API break. Two new
+    features:
+
+    - multiple key/value sets can be set in a single call by using keyword
+      arguments
+
+    - "overwrite" kwarg can be used to overwrite previously-set keys OR to
+      leave the previous ones without barfing
+
+ -- Dima Kogan <dkogan@debian.org>  Sun, 11 Apr 2021 18:42:07 -0700
+
+gnuplotlib (0.37)
+
+  * Updated default hardcopy settings
+
+ -- Dima Kogan <dkogan@debian.org>  Wed, 03 Feb 2021 14:31:33 -0800
+
+gnuplotlib (0.36)
+
+  * add_plot_option() API change: takes single options as scalars and
+    lists as lists, just like the plot options that accept multiple values
+
+ -- Dima Kogan <dkogan@debian.org>  Fri, 13 Nov 2020 21:28:55 -0800
+
+gnuplotlib (0.35)
+
+  * Improved default svg terminal settings
+  * Added add_plot_option() function, more robust plot option parsing
+
+ -- Dima Kogan <dkogan@debian.org>  Sun, 08 Nov 2020 01:33:03 -0800
+
+gnuplotlib (0.34)
+
+  * Lots of updates to the guide contents, and to the way it is built
+  * I now barf if both "_key" and "key" are given in any set of options
+  * Reduced the uninteresting complaining at exit with ipython
+  * Any curves where ALL the data arrays are empty are ignored
+
+ -- Dima Kogan <dkogan@debian.org>  Sat, 19 Sep 2020 20:28:11 -0700
+
+gnuplotlib (0.33)
+
+  * BIG documentation update. Added the "guide": a tutorial and set of
+    demos.
+  * License change: any version of the LGPL instead of LGPL-3+
+
+ -- Dima Kogan <dkogan@debian.org>  Sat, 14 Mar 2020 23:22:27 -0700
+
+gnuplotlib (0.32)
+
+  * Major rework: support for multiplots. No breaking changes
+  * All errors raise a specific GnuplotlibError instead of Exception
+  * tuplesize<0 works with single points
+  * added convenience plot options square-xy and squarexy as synonyms for
+    square_xy
+  * "square_xy" works in 2D: synonym for "square"
+  * "hardcopy" and "output" are now synonyms
+  * Makefile uses python3
+
+ -- Dima Kogan <dima@secretsauce.net>  Thu, 28 Nov 2019 18:50:02 -0800
