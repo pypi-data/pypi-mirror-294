@@ -1,0 +1,13 @@
+# Test the intervals. Paintings should appear half as long
+
+[[albums]]
+order="sequence" # These are picked in sequence
+folder="images/numbers"
+weight=1
+interval=4
+
+[[albums]]
+order="random" # These appear randomly 
+folder="images/paintings"
+weight=1
+interval=2

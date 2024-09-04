@@ -1,0 +1,2 @@
+class Snafu(Exception):
+    pass

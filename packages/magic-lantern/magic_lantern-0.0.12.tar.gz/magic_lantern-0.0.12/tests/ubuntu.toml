@@ -1,0 +1,10 @@
+# Test the global values
+exclude=[]
+fullscreen=true
+weight=10
+interval=2
+
+[[albums]]  # A folder that should be on ubuntu installations
+order="sequence" # These are picked in sequence
+folder="/usr/share/backgrounds"
+
