@@ -1,0 +1,8 @@
+README.md
+setup.py
+core/codi_bg.egg-info/PKG-INFO
+core/codi_bg.egg-info/SOURCES.txt
+core/codi_bg.egg-info/dependency_links.txt
+core/codi_bg.egg-info/entry_points.txt
+core/codi_bg.egg-info/requires.txt
+core/codi_bg.egg-info/top_level.txt
