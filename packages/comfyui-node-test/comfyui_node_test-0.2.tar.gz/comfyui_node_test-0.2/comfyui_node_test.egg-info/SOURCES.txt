@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+comfyui_node_test.egg-info/PKG-INFO
+comfyui_node_test.egg-info/SOURCES.txt
+comfyui_node_test.egg-info/dependency_links.txt
+comfyui_node_test.egg-info/top_level.txt
