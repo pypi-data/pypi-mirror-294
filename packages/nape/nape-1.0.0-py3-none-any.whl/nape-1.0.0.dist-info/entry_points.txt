@@ -1,0 +1,2 @@
+[console_scripts]
+nape-eval = main:main
