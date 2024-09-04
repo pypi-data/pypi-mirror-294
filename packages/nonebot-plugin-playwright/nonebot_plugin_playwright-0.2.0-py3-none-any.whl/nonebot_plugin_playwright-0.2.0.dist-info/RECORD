@@ -1,0 +1,9 @@
+nonebot_plugin_playwright/__init__.py,sha256=1Ua3_4Wh4M9zzTgXUs4ye0PcUZNrV9Tie2U0PQ46Y7s,711
+nonebot_plugin_playwright/browser.py,sha256=b1ZIC5E6L4vJvR2RNUPfSkILSvo2fOA3jNyk1SQ0HQo,3558
+nonebot_plugin_playwright/config.py,sha256=_e3U9a-ZjtE6iy2sQBnxXXvUrXdUCId0eZsmqOVNbfo,1120
+nonebot_plugin_playwright/tool.py,sha256=QjH_INpKgBcM7nxOKiv6hJ_ik3-J13eyh2WJ5m4T3MU,1824
+nonebot_plugin_playwright/tool.pyi,sha256=YE0sD63VQIXaGbOTGnbTsq2umu4iTcrq44ooSzERgGM,5765
+nonebot_plugin_playwright-0.2.0.dist-info/LICENSE,sha256=TjgwMCR7rvynMxc_BW5IiVO7FIFKOZWN3XWnf5lbB0U,1071
+nonebot_plugin_playwright-0.2.0.dist-info/METADATA,sha256=-ULgIJZGRJqVTBhR6fMmor3LKm1V_NDb1vvIBibpH7E,1821
+nonebot_plugin_playwright-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_playwright-0.2.0.dist-info/RECORD,,
