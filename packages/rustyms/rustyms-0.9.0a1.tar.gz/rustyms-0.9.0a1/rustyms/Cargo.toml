@@ -1,0 +1,67 @@
+[package]
+name = "rustyms"
+version = "0.9.0-alpha.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Douwe Schulte <d.schulte@uu.nl>"]
+description = "A library to handle proteomic mass spectrometry data and match peptides to spectra."
+categories = ["science::bioinformatics::proteomics"]
+keywords = ["spectra", "mass-spectrometry", "bio", "fragmentation", "proforma"]
+repository = "https://github.com/snijderlab/rustyms"
+readme = "README.md"
+include = [
+    "src/**/*",
+    "databases/**/*",
+    "README.md",
+    "build.rs",
+    "benches/**/*",
+]
+rust-version = "1.75.0"
+
+[dependencies]
+bincode = { workspace = true }
+flate2 = { workspace = true }
+itertools = { workspace = true }
+mzdata = { workspace = true, optional = true }
+ndarray = { workspace = true, optional = true }
+ordered-float = { workspace = true, features = ["serde"] }
+probability = { workspace = true, optional = true }
+rand = { workspace = true, optional = true }
+rayon = { workspace = true, optional = true }
+regex = { workspace = true }
+serde = { workspace = true, features = ["derive", "rc"] }
+similar = { workspace = true }
+uom = { workspace = true, features = ["use_serde", "usize", "isize"] }
+
+[build-dependencies]
+bincode = { workspace = true }
+flate2 = { workspace = true }
+itertools = { workspace = true }
+ordered-float = { workspace = true, features = ["serde"] }
+regex = { workspace = true }
+roxmltree = { workspace = true }
+serde = { workspace = true, features = ["derive", "rc"] }
+uom = { workspace = true, features = ["use_serde", "usize", "isize"] }
+
+[dev-dependencies]
+iai-callgrind = { workspace = true }
+serde_json = { workspace = true }
+
+[features]
+default = [
+    "imgt",
+    "align",
+    "identification",
+    "rayon",
+    "isotopes",
+    "rand",
+    "mzdata",
+]
+imgt = []
+align = []
+identification = []
+isotopes = ["probability", "ndarray"]
+
+[[bench]]
+name = "iai"
+harness = false
