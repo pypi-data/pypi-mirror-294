@@ -1,0 +1,11 @@
+async-solipsism
+async-timeout
+coveralls
+decorator
+katcp-codec
+pre-commit
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+typing-extensions
