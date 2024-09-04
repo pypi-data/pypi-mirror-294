@@ -1,0 +1,9 @@
+transient_package/__init__.py,sha256=Fr5PA4cdfkq9kWn7hHUHUKXgPAWN5eCM869GafZnb5U,48
+transient_package/transient.py,sha256=dqPw_gtO9CRGAwpDG-pFayXiS_3UOEgq_CuV0bUi4yc,2633
+transient_package/scripts/transient_package.py,sha256=55aPaZkkBacX3cdjIzfqEyGSH0tIpJ3DDmu7S1z5t-A,5969
+transient_package-1.0.0.dist-info/LICENSE,sha256=O3xc18eiqOZ9Vi237mcGg32IAYiJiZ_F8H__YLe_rJ4,1066
+transient_package-1.0.0.dist-info/METADATA,sha256=R2eFR_Z73_cs9o8Wg0Zs6o0nmnKh0MmCxShsmQcgsa8,2593
+transient_package-1.0.0.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+transient_package-1.0.0.dist-info/entry_points.txt,sha256=c7qyNjFxoma_HZPoc_kbk44l2ztZJQc4ZQeeclC-2J0,87
+transient_package-1.0.0.dist-info/top_level.txt,sha256=UI3d4-vaIQn17F0VC3X-lwFPdB8N16g1j2YkOLphL5o,18
+transient_package-1.0.0.dist-info/RECORD,,
