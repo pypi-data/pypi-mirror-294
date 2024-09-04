@@ -1,0 +1,12 @@
+PennyLane_Lightning_Kokkos.libs/libgomp-bc9a3cf4.so.1.0.0,sha256=brvzs7GlJTO4Bw-oeSToAlSAURSSTwq5BQ9lW9dKb4g,343345
+pennylane_lightning/lightning_kokkos_ops.cpython-311-aarch64-linux-gnu.so,sha256=cCoynz_LfLCFG8LzaGUd8-DqG5FMnpLFs0AtnJqmqvU,48958929
+pennylane_lightning/liblightning_kokkos_catalyst.so,sha256=R0ZSTfZZSildrGOd2XGndm1P0JUcVD3h0Un03gWJjAM,23757433
+pennylane_lightning/lightning_kokkos/lightning_kokkos.py,sha256=TE0dWlX_E7CUg2TKVWgZ7rJ4vrVHOk5u5Mnx4MD0NOk,33832
+pennylane_lightning/lightning_kokkos/__init__.py,sha256=b5bC5e_6CY9RPZQBeUhLE6l6ecAc8ocGCb2S4K_Ym7I,737
+pennylane_lightning/lightning_kokkos/lightning_kokkos.toml,sha256=nplvUFqqmwQmUcl1YIz9scJD-rav6zcOi6n6CQW41G4,6230
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/METADATA,sha256=ZUzLVrJzhYd-MvXokn1ErS0S9Gi0pAAGc4Kc0DfR7CY,26180
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/top_level.txt,sha256=e3OLLST9VXaQtYnH68djXaL2fbc_-6v6THc_InTmY6o,41
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/RECORD,,
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/WHEEL,sha256=C8iLyK-rxYoMN5Y5A97Od6WQJMyjZJe3T2KxAxxAyr0,114
+PennyLane_Lightning_Kokkos-0.38.0.dist-info/entry_points.txt,sha256=4ZRRai-y45jgpHOGrbMR_6lbxC5RQ-rm7_96_65kVLM,92
