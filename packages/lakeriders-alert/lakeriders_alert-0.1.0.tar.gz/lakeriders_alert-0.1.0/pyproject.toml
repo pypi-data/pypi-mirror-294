@@ -1,0 +1,26 @@
+[project]
+name = "lakeriders-alert"
+version = "0.1.0"
+description = "Get a Telegram message whenever a wakeboard session with the LakeRiders club becomes available"
+readme = "README.md"
+authors = [{ name = "Eduardo Conde Pena", email = "econdepe@pm.me" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.1",
+    "requests>=2.32",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6", "pre-commit>=3.8", "PyYAML>=6.0"]
+
+[project.urls]
+Homepage = "https://github.com/econdepe/LakeRidersAlert"
+Issues = "https://github.com/econdepe/LakeRidersAlert/issues"
+
+[project.scripts]
+lakeridersalert = "lakeridersalert.main:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
