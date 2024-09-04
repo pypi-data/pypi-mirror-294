@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gemini_pt
+Version: 0.0.2
+Summary: Automatic pentest using AI
+Author: Elouan Teissere
+Author-email: <elouan.teissere@sii.fr>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Dist: google-generativeai
+Requires-Dist: grpcio
+Requires-Dist: markdown2
+Requires-Dist: openai
+Requires-Dist: pdfkit
+Requires-Dist: python-dotenv
+Requires-Dist: python-nmap
+
+This program use the Gemini API to perform the first steps of a pentest
