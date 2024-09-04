@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eduwallet"
+version = "1.1.3"
+authors = [{ name = "kanade" }]
+description = "A simple budget program"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pseudoisomer/eduwallet"
+Issues = "https://github.com/pypa/sampleproject/issues"
