@@ -1,0 +1,7 @@
+numpy<2.0.0
+
+[jax]
+sphericart-jax
+
+[torch]
+sphericart-torch
