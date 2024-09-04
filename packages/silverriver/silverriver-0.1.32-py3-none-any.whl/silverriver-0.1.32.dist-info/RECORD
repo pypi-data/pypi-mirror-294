@@ -1,0 +1,17 @@
+silverriver/__init__.py,sha256=UyVbqyshbWzwJu-m56tS2KYxvs_FjDyM7d1Zal4GX68,462
+silverriver/client/__init__.py,sha256=QbJBvJw_6zt8airF0eho2aOkPen4IeTCoXfI0jgXPG8,3745
+silverriver/client/agent_endpoints.py,sha256=dRtXmi9bSkJp0nyLp4n7PoCPj1yG5i3ypDkv7n64zoA,524
+silverriver/client/browser_endpoints.py,sha256=sDxsOEPNFC82wc1pSewyNA0__vF_N5vxf_mYo_ZreNM,735
+silverriver/client/endpoint.py,sha256=1bPHtQMrsK6FWDCmX-PDxuwcDH_oGt5Y1tidtyQSvvU,657
+silverriver/client/http_client.py,sha256=mxyQNgU4aSaIuoP0Z18NZ0JX0W9x5hXDEQxPbF7b-AM,2864
+silverriver/interfaces/__init__.py,sha256=cuZaYZIMzqbAwUXPMKbUSdRkwvbaQo7BS7Exnmo-yaM,1890
+silverriver/interfaces/base_agent.py,sha256=6WgZXiCA03G_F62n-vC5la5272Wkc0zbL7gG1PR8W9c,2509
+silverriver/interfaces/chat.py,sha256=ukVpteLKdOrvHJ6q-yW1JF1jPESL6QolUwIUbzwsv3Q,205
+silverriver/interfaces/data_models.py,sha256=o_uQIpcRs3OiuoTk1tJ-QxX7tASJ87T47SWiwjpZ_xk,578
+silverriver/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silverriver/utils/execution.py,sha256=M0lSpbagcIqzYtW-0zzR4zrg6yfnBUeMLR-sKVJYbKk,1098
+silverriver/utils/remote_browser.py,sha256=EgC4C85ijDNcDp1nlCY4alno65EqLzd9PUnoksVX0L4,1779
+silverriver-0.1.32.dist-info/METADATA,sha256=9kyTFaUhxAiVyPzEtcu87d5fAVGrMGcZ8EmcTYXGNN4,1801
+silverriver-0.1.32.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+silverriver-0.1.32.dist-info/top_level.txt,sha256=zMJ8i6Qd7ZyDY8Pfo7Q4nKUmA-h8IVZQ9OqpPEbSVgw,12
+silverriver-0.1.32.dist-info/RECORD,,
