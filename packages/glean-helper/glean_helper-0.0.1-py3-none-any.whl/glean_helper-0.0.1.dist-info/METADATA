@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: glean-helper
+Version: 0.0.1
+Summary: Helper models, classes, and functions for interacting with the Glean Indexing and Client APIs. This is an unofficial module, and is not supported or endorsed by Glean.
+Project-URL: API Documentation, https://developers.glean.com
+Project-URL: Helper Documentation, https://developers.glean.com
+Project-URL: Issues, https://github.com/nathancatania/glean-helper/issues
+Project-URL: Source, https://github.com/nathancatania/glean-helper
+Author-email: Nathan Catania <pypi@nathancatania.com>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: email-validator
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: uuid7
+Description-Content-Type: text/markdown
+
+# Glean Helper
+
+Helper models, classes, and functions for interacting with the Glean Indexing and Client APIs.
+
+This is an unofficial module, and is not supported or endorsed by Glean.
