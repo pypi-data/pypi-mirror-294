@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: chatwoot-python-client
+Version: 1.0.0.10
+Summary: Chatwoot
+Home-page: 
+Author-email: hello@chatwoot.com
+Keywords: Swagger,Chatwoot
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.15
+Requires-Dist: six >=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    This is the API documentation for Chatwoot server.  # noqa: E501
+    
