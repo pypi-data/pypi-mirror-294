@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+FilterlessCook.egg-info/PKG-INFO
+FilterlessCook.egg-info/SOURCES.txt
+FilterlessCook.egg-info/dependency_links.txt
+FilterlessCook.egg-info/entry_points.txt
+FilterlessCook.egg-info/requires.txt
+FilterlessCook.egg-info/top_level.txt
+filterlesscook/__init__.py
+filterlesscook/filterlesscook.py
