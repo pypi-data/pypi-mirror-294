@@ -1,0 +1,10 @@
+faiss_vector_aggregator/__init__.py,sha256=uO4Nx3AQRjyvrw0LRxnvP7Oq1HqmT7OkSIhbYk1hlqg,181
+faiss_vector_aggregator/aggregator.py,sha256=4bCpJEx2A3G4L7IQfvvn5Hrbhqb3y-GZlo4stlkG-88,2587
+faiss_vector_aggregator/embedding_methods.py,sha256=M2XrfGkrSwGCYqgXhuKfMqGctkQ4rX7rxdaiBC_prJI,3011
+faiss_vector_aggregator/faiss_index_helpers.py,sha256=dm3hRqanKudRpAXL_lUIrqJXDUKe3APt6biAUQ3WIv4,1129
+faiss_vector_aggregator/utils.py,sha256=7QawJcPs_rxF64E6-MP_TtOx9IQC6Lqi2_zMHbode3c,424
+faiss_vector_aggregator-0.2.7.dist-info/LICENSE,sha256=KPvCCIySGzF4TIKB3e8CvLmLpl8-1yxWbJepNwxrEfw,1094
+faiss_vector_aggregator-0.2.7.dist-info/METADATA,sha256=PWZQQjnSO1EfsTS8GpQ1-V7EZVHqJBKEwPYKiRuo2FM,5674
+faiss_vector_aggregator-0.2.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+faiss_vector_aggregator-0.2.7.dist-info/top_level.txt,sha256=0X78dYXjQQS2PnovhOnV182worDyLKRPRdF9756LSR4,24
+faiss_vector_aggregator-0.2.7.dist-info/RECORD,,
