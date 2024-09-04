@@ -1,0 +1,9 @@
+you_mp3/__init__.py,sha256=743eEx7-0U7G2xEusoWgZS_EPaWmdZ5cj80TWQ2_MCg,1003
+you_mp3/__main__.py,sha256=Iop0iy3yDcdMDwiZLOduWXWAmaniuzxkh8IaF7vSWSE,3445
+you_mp3/downloader.py,sha256=pFwhxHnl4gSf7tNNOqC1fv455eGszMz31Qx-ecETS0A,4023
+you_mp3/metadata.py,sha256=C9plWy0i5YjwRyut6baJM3DoOF2ccwqQetovX-SR7Fc,3235
+you_mp3-1.dist-info/entry_points.txt,sha256=Rzc8ydXE3TwdEkeepq63EjbZuua_BdgzX77FrWftXi4,49
+you_mp3-1.dist-info/LICENSE,sha256=KrPIO2Ij3T_47dfpfngKzpC4EXohIZMsHauG0R4M-kM,1234
+you_mp3-1.dist-info/METADATA,sha256=B1J4fEWTBle-bSovzFm2vVeL83pKjqNGrEQvqR9uJb0,2612
+you_mp3-1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+you_mp3-1.dist-info/RECORD,,
