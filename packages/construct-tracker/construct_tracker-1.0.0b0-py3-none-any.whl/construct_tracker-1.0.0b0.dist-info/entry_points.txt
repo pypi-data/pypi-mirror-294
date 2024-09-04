@@ -1,0 +1,3 @@
+[console_scripts]
+construct-tracker-cli=construct-tracker.cli:main
+
