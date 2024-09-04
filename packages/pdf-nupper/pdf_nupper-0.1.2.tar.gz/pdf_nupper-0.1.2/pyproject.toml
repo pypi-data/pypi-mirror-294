@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-nupper"
+version = "0.1.2"
+description = "A command-line tool for n-upping PDF files (e.g., combining 2 pages into one) for printing purposes."
+readme = "README.md"
+authors = [{ name = "Thameera Senanayaka", email = "me@thameera.com" }]
+requires-python = ">=3.6"
+keywords = ["PDF", "n-up", "combine", "printing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pypdf>=4.3.0"]
+
+[project.scripts]
+pdf-nupper = "pdf_nupper.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/thameera/pdf-nupper"
+"Bug Tracker" = "https://github.com/thameera/pdf-nupper/issues"
+
+[tool.setuptools.packages.find]
+include = ["pdf_nupper"]
