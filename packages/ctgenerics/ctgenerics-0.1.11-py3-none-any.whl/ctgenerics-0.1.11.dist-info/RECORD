@@ -1,0 +1,11 @@
+ctgenerics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctgenerics/connect.py,sha256=hpwklP12GAA4WstsTt2bwXUMuZmesFxO32c_HChSkx0,5397
+ctgenerics/project_setup.py,sha256=inQQb6V1B6eeLRYp3jKA8HxtzvJyC2FuzIIOFCDvl4w,2176
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/connect_test.py,sha256=L4oYqeOX1prwnIAPWdyjAWbGs6gwS28Imri4E8Bb_as,3093
+ctgenerics-0.1.11.dist-info/LICENSE,sha256=EKOFEfCMgQajPsByLAGJq2Osdi5lW63wH7TCHA_g_T8,1086
+ctgenerics-0.1.11.dist-info/METADATA,sha256=64wvBIcx6Y-c7efMybEpVkC5NZ4nWVsw5v3ofA5zPCM,577
+ctgenerics-0.1.11.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+ctgenerics-0.1.11.dist-info/entry_points.txt,sha256=KvgJ-xTjOekP6_r9aZxBzUEPn0VwRuyoFBfvwIfRaXk,64
+ctgenerics-0.1.11.dist-info/top_level.txt,sha256=r8Qa79lOx7bopAgiPpIUW-goiZd0wiJrCw9bWaTh-mE,17
+ctgenerics-0.1.11.dist-info/RECORD,,
