@@ -1,0 +1,13 @@
+sagemath_bliss-10.5b3.dist-info/RECORD,,
+sagemath_bliss-10.5b3.dist-info/WHEEL,sha256=ryLKxG55QpZ2rbZGU4HhYCFDrPpIopkpjrc0EphFNKo,113
+sagemath_bliss-10.5b3.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+sagemath_bliss-10.5b3.dist-info/METADATA,sha256=QXWwbm5HEeNPDgMFB84BvBqafGfEVOhPHSM12vUnTkI,2201
+sage/all__sagemath_bliss.py,sha256=2p3JOEnbjaX22LWk6f1yfiAvhMMkcvNXwTp_NcGw6pM,44
+sage/graphs/bliss.cpython-311-aarch64-linux-musl.so,sha256=mxH07bNpLFXsBTtFrs2_N1Yripq3QnzkyfvsGJxRDNs,1188905
+sage/graphs/all__sagemath_bliss.py,sha256=2p3JOEnbjaX22LWk6f1yfiAvhMMkcvNXwTp_NcGw6pM,44
+sage/graphs/bliss.pyx,sha256=tdD81xTIfyxo3IgoWfsrTpHE33aTZQFWcAd-quMvzU0,32385
+sage/cython_debug/cython_debug_info_sage.graphs.bliss,sha256=uMfU6RRnu5oFrCSjhX_zxiA5M-4v2vQ4pv0rfnQmIKA,125612
+sage/cython_debug/interpreter,sha256=3027d51qrrth75h2pA3Z41sEl6w5Cx84HJdV88Qr9X8,34
+sagemath_bliss.libs/libgcc_s-7393e603.so.1,sha256=7G--_FjUcXaygGLbopN7bg1zXff52EmI7Bsc2D2TXbk,201017
+sagemath_bliss.libs/libbliss-e1f165a9.so,sha256=u0m4Z2UjykA2ezbmpwO3PRSVuKhHzijztb_UuC7D-Kk,2108129
+sagemath_bliss.libs/libstdc++-1b614e01.so.6.0.32,sha256=XXJsmg9XChAumTluQnKaKPw0aZHT_olzaylk-ZtJWcY,3586193
