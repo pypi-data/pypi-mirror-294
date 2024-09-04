@@ -1,0 +1,3 @@
+[console_scripts]
+tigrinya-coder-decoder = tigrinya_alphabets.Tigrinya_alphabet_coder_decoder:main
+
