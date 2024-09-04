@@ -1,0 +1,2 @@
+[console_scripts]
+bythonj = bythonj.bythonj:main
