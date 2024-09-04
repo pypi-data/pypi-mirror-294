@@ -1,0 +1,11 @@
+diptest-0.8.1.dist-info/RECORD,,
+diptest-0.8.1.dist-info/WHEEL,sha256=xo-hqiKu5ah5uU_HQZ4hLezV67OuQCJPMe6feCdNhh0,114
+diptest-0.8.1.dist-info/METADATA,sha256=w_mCKCOME0Dch5cJhY2PbUjHbQA-oWpbNHa2vPFSSYY,6012
+diptest-0.8.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+diptest-0.8.1.dist-info/licenses/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+diptest/__init__.py,sha256=uOxIGUfX6YGpjLv_NplfXKApqXvr74QcDRJ1JP7VVSs,1509
+diptest/consts.py,sha256=01BFx6m7v0yDWewYJaCBr6JSEUMruh74NxJ8GvT4eQo,23298
+diptest/.diptest.py.un~,sha256=DJ7VQK2JcBUq7OIB6Rkm2FnL14ktaD9rUoVZTdF6ET0,1515
+diptest/diptest.py,sha256=9dq75OE7XgUd-H4mHtyYCLSC6wO8WXYsiTGFeSIPndc,6966
+diptest/.dylibs/libomp.dylib,sha256=fyVs1fPnViVH-7lZt_GK2xsC2rShJtmghxxW-CGVHmU,824000
+diptest/lib/_diptest_core.cpython-311-darwin.so,sha256=rjIuym4n4AAd-yn-hk2Mba3EA2KcPK_EPm5CqV4qhx8,184512
