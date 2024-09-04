@@ -1,0 +1,16 @@
+bvhsdk/__init__.py,sha256=p137vKdlClq-V2UHGjYupaejRUbCPiFfJR7ACK5YoNo,179
+bvhsdk/anim.py,sha256=kSiFFUDL5XnWuXpCa14crBext9PYFLJZxC4-KLyj1l4,51788
+bvhsdk/bvh.py,sha256=mowlRhIvemHgeVXFMhaJzSkTxU2cUIHusHkOx0ZrIjA,17893
+bvhsdk/egocentriccoord.py,sha256=8rEJjVlnMeScH_zreLgthy24bt6mNyoNFhk2_8UROm8,95234
+bvhsdk/ik.py,sha256=mJ0UC13ZSQX8O7hiSZ3IhujIRBPBZAVRzSK0PhNxAUc,7159
+bvhsdk/mathutils.py,sha256=MA7ocubJLoZbNtzR0hgBZo-XZVZ16pAVX0x3LYtukuY,44202
+bvhsdk/plotanimation.py,sha256=4qISy0K955ul0sydWZG-xfZ5LKK32MoTA4CECKGBnQk,56597
+bvhsdk/retarget.py,sha256=61eSgvi7TJdD9TkeQUhaakunBZ3qkgUGaVc1qE6Csjk,15523
+bvhsdk/skeletonmap.py,sha256=sj0HMg6BNBsKmTiHwYsEvpzg33g5YuEwoJRr3lQlQZY,25520
+bvhsdk/surface.py,sha256=LzG4_RZXba2pc3dnNgImInrWknpnSTkRNdn17SdQWbE,44222
+bvhsdk/gui/__init__.py,sha256=4_h9meXMCLqsSk-Gd_Ga7oN72OBsncettC62vkLG6vE,21
+bvhsdk/gui/main.py,sha256=ldrPJsxUmmG2xuFeEgVqdd6zBKbBIgRz57QOxX5NKc4,8337
+bvhsdk-0.2.1.dist-info/LICENSE,sha256=hs1C9wqrf_YayVTAJP3Nqci4I94JgtPsppJhpPard2k,1097
+bvhsdk-0.2.1.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+bvhsdk-0.2.1.dist-info/METADATA,sha256=orEvu4_tOiA5bxolsV4rNJrArnEkOoos591fLX3Qztg,6176
+bvhsdk-0.2.1.dist-info/RECORD,,
