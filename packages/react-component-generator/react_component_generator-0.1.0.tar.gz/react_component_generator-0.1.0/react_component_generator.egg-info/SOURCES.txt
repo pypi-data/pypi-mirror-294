@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+react_component_generator/__init__.py
+react_component_generator/cli.py
+react_component_generator.egg-info/PKG-INFO
+react_component_generator.egg-info/SOURCES.txt
+react_component_generator.egg-info/dependency_links.txt
+react_component_generator.egg-info/entry_points.txt
+react_component_generator.egg-info/requires.txt
+react_component_generator.egg-info/top_level.txt
+tests/__init__.py
+tests/tests_cli.py

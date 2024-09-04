@@ -1,0 +1,2 @@
+[console_scripts]
+react-component-generator = react_component_generator.cli:cli
