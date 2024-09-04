@@ -1,0 +1,79 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "text": "What machine learning model can be used to represent the data?",
+            "response_type": "choice",
+            "choices": [
+                "Graph Convolutional Network",
+                "Graph Attention Network",
+                "GraphSAGE"
+            ]
+        },
+        {
+            "pid": "a02",
+            "text": "@gcn",
+            "response_type": "object",
+            "example": {
+                "model_type": "Graph Convolutional Network",
+                "parameters": {
+                    "num_layers": 2,
+                    "hidden_units": 64,
+                    "dropout_rate": 0.5
+                }
+            }
+        },
+        {
+            "pid": "a03",
+            "text": "@gat",
+            "response_type": "object",
+            "example": {
+                "model_type": "Graph Attention Network",
+                "parameters": {
+                    "num_heads": 8,
+                    "hidden_units": 64,
+                    "dropout_rate": 0.5
+                }
+            }
+        },
+        {
+            "pid": "a04",
+            "text": "@graphsage",
+            "response_type": "object",
+            "example": {
+                "model_type": "GraphSAGE",
+                "parameters": {
+                    "num_samples": [10, 25],
+                    "hidden_units": 64,
+                    "dropout_rate": 0.5
+                }
+            }
+        }
+    ],
+    "transitions": [
+        {
+            "source": "a01",
+            "target": "a02",
+            "condition": {
+                "type": "eq",
+                "arg": "Graph Convolutional Network"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a03",
+            "condition": {
+                "type": "eq",
+                "arg": "Graph Attention Network"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a04",
+            "condition": {
+                "type": "eq",
+                "arg": "GraphSAGE"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "text": "What operation do you want to perform on the text data?",
+            "response_type": "choice",
+            "choices": [
+                "Text Processing",
+                "Categorical Analysis",
+                "Data Cleaning",
+                "Feature Engineering"
+            ]
+        },
+        {
+            "pid": "a02",
+            "text": "Text Processing",
+            "response_type": "object",
+            "example": {
+                "operation": "Text Processing",
+                "tasks": ["tokenization", "lemmatization", "stopword removal"],
+                "output": "@example/processed_text_data.json"
+            }
+        },
+        {
+            "pid": "a03",
+            "text": "Categorical Analysis",
+            "response_type": "object",
+            "example": {
+                "operation": "Categorical Analysis",
+                "tasks": ["frequency analysis", "label encoding", "one-hot encoding"],
+                "output": "@example/categorical_analysis.json"
+            }
+        },
+        {
+            "pid": "a04",
+            "text": "Data Cleaning",
+            "response_type": "object",
+            "example": {
+                "operation": "Data Cleaning",
+                "tasks": ["missing value imputation", "outlier detection and handling"],
+                "output": "@example/cleaned_data.json"
+            }
+        },
+        {
+            "pid": "a05",
+            "text": "Feature Engineering",
+            "response_type": "object",
+            "example": {
+                "operation": "Feature Engineering",
+                "tasks": ["TF-IDF transformation", "word embedding"],
+                "output": "@example/engineered_features.json"
+            }
+        }
+    ]
+}

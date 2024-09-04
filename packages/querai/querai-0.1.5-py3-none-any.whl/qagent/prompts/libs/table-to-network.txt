@@ -1,0 +1,13 @@
+A tabular data must be shown as a network. You extract entity types aka node types for the network.
+Each entity type has attributes from the table columns. If there are 2+ entity types, show edges from source to target entity types.
+Only return the JSON data without any additional text.
+The JSON structure is like:
+
+nodetypes
+    [(<str of the entity type>, [<str of column names>])]
+edges
+    [(source nodetype, target nodetype)]
+
+The header columns of the table and a few rows are
+
+{user_input}

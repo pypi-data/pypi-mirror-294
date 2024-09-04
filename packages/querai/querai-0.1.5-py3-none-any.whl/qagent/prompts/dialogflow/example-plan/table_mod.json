@@ -1,0 +1,85 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "text": "What operation do you want to perform on the table data?",
+            "response_type": "choice",
+            "choices": [
+                "Filtering",
+                "Sorting",
+                "Aggregation",
+                "Joining",
+                "Pivoting",
+                "Descriptive Statistics"
+            ]
+        },
+        {
+            "pid": "a02",
+            "text": "Filtering",
+            "response_type": "object",
+            "example": {
+                "operation": "Filtering",
+                "criteria": {
+                    "column": "age",
+                    "condition": ">= 18"
+                },
+                "output": "@example/filtered_data.json"
+            }
+        },
+        {
+            "pid": "a03",
+            "text": "Sorting",
+            "response_type": "object",
+            "example": {
+                "operation": "Sorting",
+                "by": "date",
+                "order": "ascending",
+                "output": "@example/sorted_data.json"
+            }
+        },
+        {
+            "pid": "a04",
+            "text": "Aggregation",
+            "response_type": "object",
+            "example": {
+                "operation": "Aggregation",
+                "by": "region",
+                "metrics": ["sum", "average"],
+                "output": "@example/aggregated_data.json"
+            }
+        },
+        {
+            "pid": "a05",
+            "text": "Joining",
+            "response_type": "object",
+            "example": {
+                "operation": "Joining",
+                "type": "inner",
+                "on": "customer_id",
+                "output": "@example/joined_data.json"
+            }
+        },
+        {
+            "pid": "a06",
+            "text": "Pivoting",
+            "response_type": "object",
+            "example": {
+                "operation": "Pivoting",
+                "rows": ["date"],
+                "columns": ["region"],
+                "values": "sales",
+                "output": "@example/pivoted_data.json"
+            }
+        },
+        {
+            "pid": "a07",
+            "text": "Descriptive Statistics",
+            "response_type": "object",
+            "example": {
+                "operation": "Descriptive Statistics",
+                "metrics": ["mean", "std", "min", "max"],
+                "output": "@example/descriptive_stats.json"
+            }
+        }
+    ]
+}
