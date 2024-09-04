@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyplume-dhi
+Version: 0.0.31
+Summary: A library for reading, manipulating, and analyzing TRDI ADCP data and SeaBird CTD data.
+Home-page:  
+Author: Andy Banks
+Author-email: anba@dhigroup.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
