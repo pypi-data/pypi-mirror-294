@@ -1,0 +1,14 @@
+permanence/__init__.py,sha256=I9ShdzW75x3Rmx9aU3G_wf40GO5T27yTTbfWyZgWNzE,284
+permanence/artifact.py,sha256=yysUamyenM7n5VEaZyFc9H1gTYU7JiAoeAcnkyw6EO8,3491
+permanence/chunks.py,sha256=Fyzc4TedukuwreBd_pGb6vFSZDy0R_eMDhzEThkXV48,20068
+permanence/namespace.py,sha256=kgLp5nRdYCR_mFBXSDaVNPjJ7O2jhCthEW-LsItx3KE,1235
+permanence/object.py,sha256=OxEfV07Dzk683WMwctqgawfvrepblPFfgolELmI7qlo,5970
+permanence/record_type.py,sha256=sYLFD0Z-EXNlMko5FEZoBfbWqgJ6-pPv1Uprc4a5_FU,1964
+permanence/scope_type.py,sha256=Za_5D7w9W8R6cO2HRzxYYKwY5sZ9rJ5esf6KbINfttk,1839
+permanence/tag_type.py,sha256=VvO3V1Y8I6cY_S98z9et7xLWpLTQ2FBPuH5_ecweUvo,3614
+permanence/diff/__init__.py,sha256=Rg8oUDvEMk1gm-VTISUsTLV33cYS8BxRc-vXbHriJPs,5794
+permanence/diff/bounds.py,sha256=yLW1Gve-BA4Y5KHQJWPPVqPJ6OKf6Ou0FLhuoNkSBxM,1418
+permanence/diff/viewer.py,sha256=CaDUEQY8BnY-qrgwueG68EyjWGF2d0AmQ0E4qTtSBfY,104
+permanence-0.1.0.dist-info/METADATA,sha256=1-BWP-4S5ud4f7PjODtJfhLBdDHZJt1FQGZP1JDpRhI,445
+permanence-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+permanence-0.1.0.dist-info/RECORD,,

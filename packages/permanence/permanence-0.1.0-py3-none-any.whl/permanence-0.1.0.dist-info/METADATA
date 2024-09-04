@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: permanence
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Requires-Dist: attrs
+Requires-Dist: blake3>=0.4.1
+Requires-Dist: frozendict
+Requires-Dist: iroh>=0.23.0
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: numpy>=2.1.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: pyarrow>=17.0.0
+Requires-Dist: rich>=13.8.0
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: typing-extensions
+Requires-Dist: uuid6
