@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydocmaker
+Version: 1.0.0
+Summary: a minimal document maker to make docx, markdown, html, and tex documents from python. Written in pure python.
+Home-page: https://github.com/TobiasGlaubach/pyandoc
+Author: Tobias Glaubach
+Project-URL: Bug Tracker, https://github.com/TobiasGlaubach/pyandoc/issues
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pydocmaker
+a minimal document maker to make docx, markdown, html, and tex documents from python.
+Written in pure python. 
+
+Named in honor and spirit after the famous [pandoc](https://github.com/jgm/pandoc) package.
