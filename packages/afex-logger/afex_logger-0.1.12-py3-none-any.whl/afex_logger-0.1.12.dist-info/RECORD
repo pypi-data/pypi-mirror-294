@@ -1,0 +1,11 @@
+afex_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afex_logger/http_agent.py,sha256=QCQcxrCWVd7kH9Kjnvkb5UeFns1igp2cEiKl8dATNCI,2067
+afex_logger/http_interceptor.py,sha256=YbNVoyCgNK_c5VrJgqMKXZXGFfpvrCAJXVZXFt_9VDc,3531
+afex_logger/log_service.py,sha256=aNDMbdGTWDc-ETSiBWdVnUdFhejMfaArTRaO3U6kBIA,915
+afex_logger/ssm_service.py,sha256=1kfQP9vVKgBucOyUvJNWsT5aYTi6_7Ftqb9AETfbSPQ,1658
+afex_logger/tasks.py,sha256=cvCq4cJWIY0JCbHCf1CE7cuVrSEM6BpmuAfh6nMy5sY,526
+afex_logger/util.py,sha256=6HCXS2T6qtbG0tCbPYvKRz2XayJvRAkhx0qAUZandzI,4487
+afex_logger-0.1.12.dist-info/METADATA,sha256=3LJwrBlwRDK1mUFrqHxVoudhYGbBcRRbSbtLLgm4_WI,164
+afex_logger-0.1.12.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+afex_logger-0.1.12.dist-info/top_level.txt,sha256=kIUiHxxzqiwvUAxy_hKJrAsYlMLoaGfvhs2q5DZoFuA,12
+afex_logger-0.1.12.dist-info/RECORD,,

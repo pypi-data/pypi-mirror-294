@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: afex-logger
+Version: 0.1.12
+Summary: AFEX logger package
+Author: nlasisi@africaexchange.com
+Requires-Dist: celery
+Requires-Dist: boto3
+
