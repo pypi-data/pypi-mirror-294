@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ddecon/ddecon.egg-info/PKG-INFO
+ddecon/ddecon.egg-info/SOURCES.txt
+ddecon/ddecon.egg-info/dependency_links.txt
+ddecon/ddecon.egg-info/top_level.txt
