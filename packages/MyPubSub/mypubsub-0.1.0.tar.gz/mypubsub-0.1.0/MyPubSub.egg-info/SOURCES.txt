@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+MyPubSub.egg-info/PKG-INFO
+MyPubSub.egg-info/SOURCES.txt
+MyPubSub.egg-info/dependency_links.txt
+MyPubSub.egg-info/requires.txt
+MyPubSub.egg-info/top_level.txt
+mypubsub/__init__.py
+mypubsub/__main__.py
+mypubsub/modules/__init__.py
+mypubsub/modules/singleton/__init__.py
+mypubsub/modules/singleton/singleton_base.py
+tests/test_mypubsub.py
+tests/test_singleton.py
