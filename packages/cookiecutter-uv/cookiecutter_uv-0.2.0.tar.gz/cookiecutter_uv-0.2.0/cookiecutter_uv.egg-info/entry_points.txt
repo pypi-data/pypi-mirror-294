@@ -1,0 +1,2 @@
+[console_scripts]
+ccp = cookiecutter_uv.cli:main
