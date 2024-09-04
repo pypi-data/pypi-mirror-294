@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+fce/__init__.py
+fce/extractor.py
+fce/tree.py
+fce/utils.py
+fce/version.py
+file_content_extractor.egg-info/PKG-INFO
+file_content_extractor.egg-info/SOURCES.txt
+file_content_extractor.egg-info/dependency_links.txt
+file_content_extractor.egg-info/entry_points.txt
+file_content_extractor.egg-info/top_level.txt
