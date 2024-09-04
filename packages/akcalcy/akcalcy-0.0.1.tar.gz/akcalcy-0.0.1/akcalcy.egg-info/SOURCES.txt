@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+USES.txt
+setup.py
+akcalcy/__init__.py
+akcalcy/myfunctions.py
+akcalcy.egg-info/PKG-INFO
+akcalcy.egg-info/SOURCES.txt
+akcalcy.egg-info/dependency_links.txt
+akcalcy.egg-info/top_level.txt
