@@ -1,0 +1,14 @@
+rijksplotlib/__init__.py,sha256=3xaFhLYk2tKKum_CPRdZgDfPQ239jrJ6s_r-4JWaG_8,3617
+rijksplotlib/color.py,sha256=kSFj5rlvpToA3vtlDsYxMQyRD1kr5BW3VuVVLAYdMdQ,5303
+rijksplotlib/colormaps.py,sha256=KGQ2MZ6uoZWoC1FPf-IFGspIBbzTbevmki7orxHD2kA,8304
+rijksplotlib/pylint_rules.py,sha256=1mzNIN57u9rff9R7QKh3X3rILronm2EQI7OsxJxcCtE,2678
+rijksplotlib/pyplot.py,sha256=m5Ltz5s3bY_w2D6PyQNBrfm15i-lQ1hm3ehMfhzhFz8,29386
+rijksplotlib/utils.py,sha256=JwKhf6rr2JQcoWFvg4HWjm4YQNdbgDwgtgOPiW0C1hE,7388
+rijksplotlib/validate.py,sha256=bC99g7l9VpfQt0VbHMFLUYsrkOxOuluSgjr8lMk6_bo,9717
+rijksplotlib/stylesheets/__init__.py,sha256=pBumkesNbDNp8-GolMIQMBpQ6lNvO6bAFSTi-FDgIK4,1040
+rijksplotlib/stylesheets/rws_report.mplstyle,sha256=T9HsvjyBXhC_G-W5lPYYOLeRG1561XkIX1uVqumHRPM,2235
+rijksplotlib-1.0.5.dist-info/LICENSE,sha256=rRv6qEF24JnZ31GcJtwjtEN8j2lDuxiYkpZvnuoPNxc,11274
+rijksplotlib-1.0.5.dist-info/METADATA,sha256=xHkpwiqWgYNM2mxuUhLaZ5QfkRSF7hYmVdOrPS0Spdk,7211
+rijksplotlib-1.0.5.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+rijksplotlib-1.0.5.dist-info/top_level.txt,sha256=-mBpGDtXeedguSA9pfHutq9NDI6A6wkxxLceN-9VxrQ,13
+rijksplotlib-1.0.5.dist-info/RECORD,,
