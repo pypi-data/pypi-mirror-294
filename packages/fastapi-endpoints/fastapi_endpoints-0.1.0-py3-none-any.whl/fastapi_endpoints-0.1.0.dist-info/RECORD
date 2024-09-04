@@ -1,0 +1,9 @@
+fastapi_endpoints/__init__.py,sha256=aOYYzIvoy2bbNENUB6c-Q1U9nFlhRpZ7rVYWBlertIY,165
+fastapi_endpoints/constants.py,sha256=kqTcCfz7Mx6Ad8V-8Xyximilq-_izdos2Q4vwRX1sq8,169
+fastapi_endpoints/exceptions.py,sha256=4Cx9L18YV_B3JPItHUfOVOjkDajYEYKc1JHODobgHKA,712
+fastapi_endpoints/router.py,sha256=POcKiPhWkpEuh6yS-I64HKlQ5XBr-muU9FiMF479SkU,2983
+fastapi_endpoints/utils.py,sha256=2r9OJcHWTTbtH6du0MsQDLF6Tsig2-BzFHdAJvrKqVM,1083
+fastapi_endpoints-0.1.0.dist-info/LICENSE,sha256=NnvvUWwnhda23sQdzkx8A9mPYenhS3FXO0sDyggB2ug,926
+fastapi_endpoints-0.1.0.dist-info/METADATA,sha256=5r0YZRMOYDGskD_Mec7aQvi4LMfbj5H1C1BGQfASCfU,4114
+fastapi_endpoints-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastapi_endpoints-0.1.0.dist-info/RECORD,,
