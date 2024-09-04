@@ -1,0 +1,2 @@
+[console_scripts]
+fhs-pia-wireguard-netns = fhs_pia_wireguard_netns.cli:main
