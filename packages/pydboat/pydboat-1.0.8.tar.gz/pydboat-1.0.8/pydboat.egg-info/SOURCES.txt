@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+D:/_File/code/github/pyboat/src/resource/docker-compose-linux-x86_64_ v2.18.1
+pydboat.egg-info/PKG-INFO
+pydboat.egg-info/SOURCES.txt
+pydboat.egg-info/dependency_links.txt
+pydboat.egg-info/top_level.txt
+src/__init__.py
+src/resource/__init__.py
