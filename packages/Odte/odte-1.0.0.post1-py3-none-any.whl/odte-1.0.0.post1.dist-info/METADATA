@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: Odte
+Version: 1.0.0.post1
+Summary: Oblique decision tree Ensemble.
+Project-URL: Home, https://github.com/doctorado-ml/odte
+Project-URL: Docs, https://odte.readthedocs.io
+Author-email: Ricardo Montañana <ricardo.montanana@alu.uclm.es>
+License: MIT License
+        
+        Copyright (c) 2020 Doctorado-ML
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: decision-tree,ensemble,oblique-classifier,oblique-decision-tree,scikit-learn,svm
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.11
+Requires-Dist: stree>=1.4
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pandas; extra == 'dev'
+Requires-Dist: pip-audit; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: myst-parser; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme; extra == 'doc'
+Description-Content-Type: text/markdown
+
+![CI](https://github.com/Doctorado-ML/Odte/workflows/CI/badge.svg)
+[![CodeQL](https://github.com/Doctorado-ML/Odte/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Doctorado-ML/Odte/actions/workflows/codeql-analysis.yml)
+[![codecov](https://codecov.io/gh/Doctorado-ML/odte/branch/master/graph/badge.svg)](https://codecov.io/gh/Doctorado-ML/odte)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f4b5ef87584b4095b6e49aefbe594c82)](https://www.codacy.com/gh/Doctorado-ML/Odte/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Doctorado-ML/Odte&utm_campaign=Badge_Grade)
+[![PyPI version](https://badge.fury.io/py/Odte.svg)](https://badge.fury.io/py/Odte)
+![https://img.shields.io/badge/python-3.11%2B-blue](https://img.shields.io/badge/python-3.11%2B-brightgreen)
+[![DOI](https://zenodo.org/badge/271595804.svg)](https://zenodo.org/badge/latestdoi/271595804)
+
+# Odte
+
+Oblique Decision Tree Ensemble classifier based on [STree](https://github.com/doctorado-ml/stree) nodes.
