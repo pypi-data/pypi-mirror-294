@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rapidata"
+version = "0.1.21"
+description = "Rapidata package containing the Rapidata Python Client to interact with the Rapidata Web API in an easy way."
+authors = ["Rapidata AG <info@rapidata.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+pyjwt = "^2.9.0"
+pillow = "^10.4.0"
+pydantic = "^2.8.2"
+python-dateutil = "^2.9.0.post0"
+
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
