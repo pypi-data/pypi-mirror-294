@@ -1,0 +1,13 @@
+name: "Liquidator Metric"
+version: "1.0.0"
+type: "metric"
+metric_type: "agent"
+author: "Almanak"
+description: ""
+license: "MIT"
+
+settings:
+  example_setting: "example_value"
+
+dependencies:
+  - "library://almanak/protocols/aave-v3:1.0.0"
