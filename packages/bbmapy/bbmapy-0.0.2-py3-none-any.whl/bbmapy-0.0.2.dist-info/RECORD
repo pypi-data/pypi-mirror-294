@@ -1,0 +1,12 @@
+bbmapy/__init__.py,sha256=eCGvvQcUCQENPhenw8bHSW0-WQJfF5-K0REg1_w4d-M,259
+bbmapy/_version.py,sha256=NDHlyIcJZjLz8wKlmD1-pr6me5FHBAYwO_ynLG-37N8,411
+bbmapy/base.py,sha256=s2gIFCTEgzwm26Hkmp-Q9SC-PevqPMjHbKbpIiu-iz0,2870
+bbmapy/commands.py,sha256=0qDcvKRcALc9NTer03atkog_4xVnJiP1c6wNvxzm0N4,644265
+bbmapy/ex.py,sha256=mBn2P1-bQ2grIQ8vcr9AhV5nAQQPuVO9HDsXRGo0ni0,2766
+bbmapy/scanner.py,sha256=zxn_dYw2rtjnCjgNqDtjjhcXdA2F7wCzR6bwwlsJTAU,2742
+bbmapy-0.0.2.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bbmapy-0.0.2.dist-info/METADATA,sha256=KemG83QtmnzfWdA3QYl9WVuDhWO1B4jkeLU-rdirpEk,4247
+bbmapy-0.0.2.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+bbmapy-0.0.2.dist-info/entry_points.txt,sha256=-ssrOYU13Y7ELfPtUGijcmchb5ivwJw820tfVpzOiRw,65
+bbmapy-0.0.2.dist-info/top_level.txt,sha256=TyfscNPCDLweR-4NeC9WNO6T9wTbqI1J3gZhyWAVlyU,7
+bbmapy-0.0.2.dist-info/RECORD,,
