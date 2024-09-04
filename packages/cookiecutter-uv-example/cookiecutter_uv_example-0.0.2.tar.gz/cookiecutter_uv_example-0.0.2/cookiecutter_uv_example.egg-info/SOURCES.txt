@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+cookiecutter_uv_example/__init__.py
+cookiecutter_uv_example/foo.py
+cookiecutter_uv_example.egg-info/PKG-INFO
+cookiecutter_uv_example.egg-info/SOURCES.txt
+cookiecutter_uv_example.egg-info/dependency_links.txt
+cookiecutter_uv_example.egg-info/top_level.txt
+tests/test_foo.py
