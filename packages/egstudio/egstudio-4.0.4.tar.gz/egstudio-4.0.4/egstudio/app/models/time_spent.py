@@ -1,0 +1,26 @@
+from sqlalchemy_utils import UUIDType
+from egstudio.app import db
+from egstudio.app.models.serializer import SerializerMixin
+from egstudio.app.models.base import BaseMixin
+
+
+class TimeSpent(db.Model, BaseMixin, SerializerMixin):
+    """
+    Describes the time spent by someone on a task.
+    """
+
+    duration = db.Column(db.Float, nullable=False)
+    date = db.Column(db.Date, nullable=False)
+
+    task_id = db.Column(
+        UUIDType(binary=False), db.ForeignKey("task.id"), index=True
+    )
+    person_id = db.Column(
+        UUIDType(binary=False), db.ForeignKey("person.id"), index=True
+    )
+
+    __table_args__ = (
+        db.UniqueConstraint(
+            "person_id", "task_id", "date", name="time_spent_uc"
+        ),
+    )

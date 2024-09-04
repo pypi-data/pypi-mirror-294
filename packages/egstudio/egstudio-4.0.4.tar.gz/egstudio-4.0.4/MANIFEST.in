@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include egstudio/migrations
+recursive-include egstudio/migrations/versions *
+include egstudio/migrations/alembic.ini
+include egstudio/migrations/script.py.mako
