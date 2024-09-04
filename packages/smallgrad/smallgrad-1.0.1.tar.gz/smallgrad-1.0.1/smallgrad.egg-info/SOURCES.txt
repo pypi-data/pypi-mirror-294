@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+smallgrad/__init__.py
+smallgrad/backpropagation.py
+smallgrad/build_graph.py
+smallgrad/neural_network.py
+smallgrad.egg-info/PKG-INFO
+smallgrad.egg-info/SOURCES.txt
+smallgrad.egg-info/dependency_links.txt
+smallgrad.egg-info/entry_points.txt
+smallgrad.egg-info/requires.txt
+smallgrad.egg-info/top_level.txt
+tests/test_backpropagation.py
+tests/test_neural_network.py
