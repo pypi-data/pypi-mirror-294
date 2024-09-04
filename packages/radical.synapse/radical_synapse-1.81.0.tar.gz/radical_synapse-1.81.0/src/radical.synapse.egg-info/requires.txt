@@ -1,0 +1,3 @@
+radical.utils<1.90,>=1.80
+pymongo
+psutil
