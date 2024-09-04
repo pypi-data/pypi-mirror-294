@@ -1,0 +1,14 @@
+
+Gear is Physics1D.Interactions.Mate:
+    with Physics.Signals.Torque1DOutputTrait
+    .doc: """
+    The Gear is a rotational coupling between two RotationalBodies.
+    It defines a relationship between the rotational speeds of the bodies using a specified gear ratio.
+    Additionally, the model supports flexibility and energy dissipation features.
+    """
+    ratio is Real: 1.0
+    flexibility is Physics.Interactions.Flexibility.DefaultFlexibility
+    dissipation is Physics.Interactions.Dissipation.DefaultDissipation
+
+    torque_output is Physics.Signals.Torque1DOutput:
+        source: this
