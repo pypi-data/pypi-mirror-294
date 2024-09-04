@@ -1,0 +1,2 @@
+[console_scripts]
+O_money = O_money.o_webpay:main
