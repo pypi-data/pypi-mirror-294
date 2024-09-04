@@ -1,0 +1,3 @@
+[console_scripts]
+rick-portal-gun=prompt_sender.main:app
+
