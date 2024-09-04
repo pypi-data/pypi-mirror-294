@@ -1,0 +1,17 @@
+ipfs_model_manager_py/__init__.py,sha256=Z7IioirLlIPdwWbNTYS_cEuZiYjyX7sWFX6wckDX0w8,189
+ipfs_model_manager_py/ipfs_model_manager.py,sha256=WsZ7vk8WBIbennuepZOPvRkf136LwwhHKnynrBjTiPM,107187
+ipfs_model_manager_py/test_fio.py,sha256=B-cGwo-rNUOW8TeGWUM7thwUaV4ITGBBpo8SKiF3Au0,4502
+ipfs_model_manager_py/aria2/aria2.py,sha256=mO56UzuLISx3XCmjhLYGSYjc69MT2yU3ihd_6DqwDlk,2532
+ipfs_model_manager_py/aria2/aria2c,sha256=0js3YgDM0xG2HlIyKZQynKz0prTqkduXf_Y4FDfZgSM,90087952
+ipfs_model_manager_py/config/__init__.py,sha256=8k7aE32al0G9guz6of_rCUCOWOEBNItkwKKa9yKChHI,26
+ipfs_model_manager_py/config/config.py,sha256=LCvxaA-7zLJnxErvrTKK3gkzaHCG39Cw1lF7GlZ4ZNU,4194
+ipfs_model_manager_py/config/config.toml,sha256=2VjUkb4HcIVG1OmhEfzbAY_znT6lNpLlP9MOtl0sj14,4563
+ipfs_model_manager_py/config/config_template.toml,sha256=cztgN8oGtS2n3GKq-eIYAsaoNjBVQ3cf2WUf_xDUaAU,4562
+ipfs_model_manager_py/s3_kit/s3_kit.py,sha256=ilfuz1ZJRgOKOBy7qJ8f08vouA5cfre8szCLb2w95Ts,15478
+ipfs_model_manager_py/test/test_fio.py,sha256=B-cGwo-rNUOW8TeGWUM7thwUaV4ITGBBpo8SKiF3Au0,4502
+ipfs_model_manager_py/test/test_hf_ipfs.py,sha256=gv-1zqlWOcbRtPsKXRjUyisTgNQ7jjzVCNXKT17WGJo,1786
+ipfs_model_manager_py-0.0.14.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_model_manager_py-0.0.14.dist-info/METADATA,sha256=Vceww9C_VwMAsLKoWzlrf0F_PF-gf8NKeDU2Z9bZ9hs,3481
+ipfs_model_manager_py-0.0.14.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+ipfs_model_manager_py-0.0.14.dist-info/top_level.txt,sha256=BKZXpidLHNryNrkoOnMdWOmMMV2g0LmV2cNFJQuzf44,22
+ipfs_model_manager_py-0.0.14.dist-info/RECORD,,
