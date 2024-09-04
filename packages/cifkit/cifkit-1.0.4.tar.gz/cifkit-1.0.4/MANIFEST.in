@@ -1,0 +1,2 @@
+# Add CIF files are under 'src/cifkit/data' directory
+recursive-include src/cifkit/data *.cif
