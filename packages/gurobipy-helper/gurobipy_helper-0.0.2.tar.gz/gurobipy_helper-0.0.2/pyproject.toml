@@ -1,0 +1,12 @@
+[project]
+name = "gurobipy_helper"
+version = "0.0.2"
+description = "A library adding some functionality to the Gurobi library."
+authors = [
+  {name = "Nico Strasdat", email = "nstrasdat@gmail.com"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+[project.urls]
+Repository = "https://github.com/wotzlaff/gurobipy_helper"

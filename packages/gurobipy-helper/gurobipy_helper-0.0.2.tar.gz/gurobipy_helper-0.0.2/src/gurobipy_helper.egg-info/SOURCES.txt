@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/gurobipy_helper/__init__.py
+src/gurobipy_helper/_coeffs.py
+src/gurobipy_helper/_nonzeros.py
+src/gurobipy_helper/_translate.py
+src/gurobipy_helper.egg-info/PKG-INFO
+src/gurobipy_helper.egg-info/SOURCES.txt
+src/gurobipy_helper.egg-info/dependency_links.txt
+src/gurobipy_helper.egg-info/top_level.txt
