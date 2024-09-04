@@ -1,0 +1,24 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [
+  {name = "Dimitrios Kirtsios", email = "dimkirts@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "requests>=2.25.0",
+]
+description = "The Python SDK for the Lyrasense EO platform."
+name = "lyrasense"
+readme = "PACKAGE_README.md"
+requires-python = ">=3.11"
+version = "0.0.1"
+
+[project.urls]
+"Homepage" = "https://www.lyrasense.com/"
