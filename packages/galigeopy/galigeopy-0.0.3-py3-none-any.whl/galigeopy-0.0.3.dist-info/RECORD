@@ -1,0 +1,10 @@
+galigeopy/__init__.py,sha256=PZ69GjgFiTfAZ2gZQ4UpI6qfVvErYcfI_nLm4kW1lFc,97
+galigeopy/galigeopy.py,sha256=K3crNnVRO27rfqnkc-fTI1u7NOcW2Jcjc_uhB_fxxZY,334
+galigeopy/org/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galigeopy/org/org.py,sha256=iA8Sxk8CfpWmbHIcJTDyTzQTH6MP9QTFotGwYnhk7RA,1235
+tests/org/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/org/test_org.py,sha256=7lj0No5_hCef8jVmPVBR5ySAfoK2Y2sAmF5xcFE2o5s,1036
+galigeopy-0.0.3.dist-info/METADATA,sha256=1PSzICzH28TI7cBa4jDEV_wS4836V16CPI6yuSWT10Q,1777
+galigeopy-0.0.3.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+galigeopy-0.0.3.dist-info/top_level.txt,sha256=yadUHoOHjxxuHdwf-HYApWNMeeG00XDZaV14ePLY-G8,16
+galigeopy-0.0.3.dist-info/RECORD,,
