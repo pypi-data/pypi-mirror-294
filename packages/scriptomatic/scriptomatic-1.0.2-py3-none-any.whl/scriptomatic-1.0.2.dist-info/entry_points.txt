@@ -1,0 +1,3 @@
+[console_scripts]
+scriptomatic=src.cli:cli
+

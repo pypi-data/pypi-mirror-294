@@ -1,0 +1,2 @@
+[console_scripts]
+scriptomatic = src:main

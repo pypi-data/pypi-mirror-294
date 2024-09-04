@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: scriptomatic
+Version: 0.1.dev2+gdb92a7a.d20240831
+Summary: A cli tool to generate custom Python scripts
+Author-email: Ty Fiero <tyfierodev@gmail.com>
+License: MIT
+Keywords: script,generator,ai,tool-use
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: anthropic
+Requires-Dist: dspy
+Requires-Dist: openai
+Requires-Dist: pydantic
+Requires-Dist: prompt_toolkit
+
+# Script-o-matic
+
+## Demo ideas
+
+- Password generator
+- Kill port
+- Ping
+- Text summarizer
+- Image caption generator
+- Code explainer
+- Sentiment analysis tool
+- File organizer
+
+Go from Time in Toronto -> Loop demo ( TBD ) -> Inspo mode, with emoji hail mary prompt
+
+interactive story generator
