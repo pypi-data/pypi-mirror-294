@@ -1,0 +1,8 @@
+[console_scripts]
+ask_basic_ragbot=weaviate_agent_demo.cli:ask_basic_ragbot
+ask_llm=weaviate_agent_demo.cli:ask_llm
+ask_ragbot_with_reformulation=weaviate_agent_demo.cli:ask_ragbot_with_reformulation
+ask_ragbot_with_tools=weaviate_agent_demo.cli:ask_ragbot_with_tools
+ask_weaviate_agent=weaviate_agent_demo.cli:ask_weaviate_agent
+safely_ask_ragbot_with_tools=weaviate_agent_demo.cli:safely_ask_ragbot_with_tools
+
