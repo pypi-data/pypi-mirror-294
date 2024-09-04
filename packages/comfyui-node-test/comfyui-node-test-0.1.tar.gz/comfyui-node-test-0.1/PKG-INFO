@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: comfyui-node-test
+Version: 0.1
+Summary: Security testing package for ComfyUI.
+Author: Raul Onitza-Klugman
+Author-email: raul@snyk.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Security testing package for ComfyUI.
