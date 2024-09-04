@@ -1,0 +1,12 @@
+pinnies/__init__.py,sha256=hEcgJneYsv8gXP6a-Zwvc0jaxZcezhvDhTtHDV_WtRI,184
+pinnies/base.py,sha256=VYtQWO3R61ixFo73vRcA9-RBNVPQXtx1pF3sSIynK5c,4862
+pinnies/fractinoal.py,sha256=honJBDl1ISackPw-MSST9AUQlqEdk5cDc6C0H3jkQiM,1332
+pinnies/fredholm.py,sha256=Id39C1AXjGuOT7dBPvYQidmTTh9EftDwe2PAIvm2xqc,6531
+pinnies/ie.py,sha256=sAfm0mdve7zQoaXl6RAcWe1ZYjAU3yozq1mTFUJl8r0,804
+pinnies/utils.py,sha256=lpsB2F0wB_3e7gsk0Ld4vll7AqS69PkFFylvvY8EQgA,347
+pinnies/volterra.py,sha256=8hGkfNooVW5HeAYleIOnFkG8CmztGFNrOwDSS-5--OY,6181
+pinnies-0.0.1.dist-info/LICENSE,sha256=CcBUiMQXp4opXbj8htfeW-nd9328UUTavbY4Mbct0_Y,1077
+pinnies-0.0.1.dist-info/METADATA,sha256=7nVO0PfNiq_-6hf-DQDEQS0GayvE-azFVRg6bQZcUqw,2168
+pinnies-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pinnies-0.0.1.dist-info/top_level.txt,sha256=opyJFZ_xjomCkYa52NrpujvVlN91l9CHSdWFO_sea_Q,8
+pinnies-0.0.1.dist-info/RECORD,,
