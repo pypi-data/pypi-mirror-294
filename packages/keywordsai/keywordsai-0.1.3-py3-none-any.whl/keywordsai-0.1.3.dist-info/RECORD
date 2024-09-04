@@ -1,0 +1,12 @@
+keywordsai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keywordsai/__main__.py,sha256=6SaYERF8B5vGPJs9ghJC3e31TgrBj2cweGtJ8VgrfiM,28
+keywordsai/constants.py,sha256=9nIAfZTeaClI-5faIP6N-ZoIYTeItCe35e9VyKni860,84
+keywordsai/core.py,sha256=IijEEvIB0h86EYmswPLxnnGwVGxsmtX5Csd51BXnW2M,1461
+keywordsai/decorators.py,sha256=5iKHnXe-h8czt3gswU8LegGp9j_69MViDA8XG3wmmuo,1775
+keywordsai/main.py,sha256=N4LHtdmfjjs12eW_KmkO6js8YqlKO0BkCJMCYH7d-GY,100
+keywordsai/utils/bgcolors.py,sha256=O_FdI7A5-SHg7fzS4EM8Ygu4LdqxpAPlD99bQFfOlNE,228
+keywordsai/utils/debug_print.py,sha256=UyizEsy6phy_FnaukdV6r4GoBQyu_krju_tEWrgSWz8,975
+keywordsai-0.1.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+keywordsai-0.1.3.dist-info/METADATA,sha256=tXEPVSg4t2xwEXans3HcelymUVOf4xtZOiWOS4Juj3A,944
+keywordsai-0.1.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+keywordsai-0.1.3.dist-info/RECORD,,
