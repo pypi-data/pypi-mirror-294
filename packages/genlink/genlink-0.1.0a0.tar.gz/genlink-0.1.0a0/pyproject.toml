@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genlink"
+description = "Common interface for llm apis"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "openai~=1.39.0",
+    "google-generativeai~=0.7.2",
+    "anthropic~=0.34.0",
+    "PyYAML",
+    "types-PyYAML",
+    "pydantic",
+    "typing-extensions",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.setuptools]
+packages = ["genlink", "genlink.connector"]
+
+[tool.setuptools_scm]
+write_to = "genlink/__version__.py"
+
+[tool.ruff]
+# Specify the files or directories to lint
+target-version = "py310"  # Adjust to your Python version
+
+# Enable or disable specific rules
+select = [
+    "E",  # Pyflakes: general errors
+    "F",  # Pyflakes: unused imports, etc.
+    "I",  # isort: import sorting
+    "Q",  # Flake8: formatting rules (if not using Black)
+    "B",  # Bugbear: code quality and complexity
+    "S",  # Security checks
+    "C",  # Cyclomatic complexity checks
+]
+
+# Exclude specific files or directories
+exclude = ["migrations/"]
+
+# Apply fixes automatically
+fix = true
+
+# Line length
+line-length = 120
+
+# Ignore specific rules
+ignore = ["E203", "S101", "B006"]
+
