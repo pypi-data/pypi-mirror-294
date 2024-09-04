@@ -1,0 +1,38 @@
+[project]
+name = "numberninja"
+description = "A personal bookkeeping application"
+authors = [
+  { name="René Moll" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/renemoll/numberninja"
+Issues = "https://github.com/renemoll/numberninja/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "numberninja.__version__"}
+
+[project.scripts]
+numberninja-cli = "numberninja:cli"
+
+[project.optional-dependencies]
+dev = [
+	"black",
+	"ruff",
+]

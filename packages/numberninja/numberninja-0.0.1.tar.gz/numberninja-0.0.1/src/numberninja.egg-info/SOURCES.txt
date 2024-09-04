@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/numberninja/__init__.py
+src/numberninja/cli.py
+src/numberninja.egg-info/PKG-INFO
+src/numberninja.egg-info/SOURCES.txt
+src/numberninja.egg-info/dependency_links.txt
+src/numberninja.egg-info/entry_points.txt
+src/numberninja.egg-info/requires.txt
+src/numberninja.egg-info/top_level.txt

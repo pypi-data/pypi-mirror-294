@@ -1,0 +1,2 @@
+[console_scripts]
+numberninja-cli = numberninja:cli
