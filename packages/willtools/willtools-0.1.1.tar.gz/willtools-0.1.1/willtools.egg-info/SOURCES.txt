@@ -1,0 +1,6 @@
+README.md
+setup.py
+willtools.egg-info/PKG-INFO
+willtools.egg-info/SOURCES.txt
+willtools.egg-info/dependency_links.txt
+willtools.egg-info/top_level.txt
