@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lemmyreportmessenger/data/__init__.py
+lemmyreportmessenger/data/base.py
+lemmyreportmessenger/data/content_type.py
+lemmyreportmessenger/data/lemmy_facade.py
+lemmyreportmessenger/data/matrix_facade.py
+lemmyreportmessenger/data/report_persistence.py
+lemmyreportmessenger/lemmyreportmessenger.egg-info/PKG-INFO
+lemmyreportmessenger/lemmyreportmessenger.egg-info/SOURCES.txt
+lemmyreportmessenger/lemmyreportmessenger.egg-info/dependency_links.txt
+lemmyreportmessenger/lemmyreportmessenger.egg-info/top_level.txt
