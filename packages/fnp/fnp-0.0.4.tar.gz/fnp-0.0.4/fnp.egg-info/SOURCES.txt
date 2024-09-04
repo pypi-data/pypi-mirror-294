@@ -1,0 +1,9 @@
+LICENCE.txt
+setup.py
+fnp/__init__.py
+fnp/fnp.py
+fnp.egg-info/PKG-INFO
+fnp.egg-info/SOURCES.txt
+fnp.egg-info/dependency_links.txt
+fnp.egg-info/requires.txt
+fnp.egg-info/top_level.txt
