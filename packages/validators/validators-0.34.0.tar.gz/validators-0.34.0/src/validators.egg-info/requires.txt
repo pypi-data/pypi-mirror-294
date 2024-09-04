@@ -1,0 +1,3 @@
+
+[crypto-eth-addresses]
+eth-hash[pycryptodome]>=0.7.0
