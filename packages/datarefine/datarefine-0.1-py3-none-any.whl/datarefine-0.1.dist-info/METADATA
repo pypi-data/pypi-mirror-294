@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: datarefine
+Version: 0.1
+Summary: A Streamlit app for data cleaning and visualization
+Author: Shahana Farvin
+Author-email: shahana50997@example.com
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: plotly
+Requires-Dist: requests
+
