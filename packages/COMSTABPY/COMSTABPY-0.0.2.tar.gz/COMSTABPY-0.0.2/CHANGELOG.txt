@@ -1,0 +1,8 @@
+Change Log
+============
+0.0.1 (Sep 03, 2024)
+ — — — — — — — — — -
+- First Release
+0.0.2 (Sep 04, 2024)
+ — — — — — — — — — — — — — — — -
+- Added more documentation
