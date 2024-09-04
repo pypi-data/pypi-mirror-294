@@ -1,0 +1,7 @@
+setup.py
+GeneMaster.egg-info/PKG-INFO
+GeneMaster.egg-info/SOURCES.txt
+GeneMaster.egg-info/dependency_links.txt
+GeneMaster.egg-info/requires.txt
+GeneMaster.egg-info/top_level.txt
+tests/test_dna.py
