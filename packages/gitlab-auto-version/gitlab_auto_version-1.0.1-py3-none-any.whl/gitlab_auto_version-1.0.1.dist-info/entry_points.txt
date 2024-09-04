@@ -1,0 +1,2 @@
+[console_scripts]
+gitlab-auto-version = gitlab_auto_version:main
