@@ -1,0 +1,10 @@
+LICENSE
+README.md
+main.py
+pyproject.toml
+setup.py
+nape.egg-info/PKG-INFO
+nape.egg-info/SOURCES.txt
+nape.egg-info/dependency_links.txt
+nape.egg-info/entry_points.txt
+nape.egg-info/top_level.txt
