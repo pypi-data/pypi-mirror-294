@@ -1,0 +1,3 @@
+[console_scripts]
+degrade-2d = radifox.utils.degrade.degrade_2d:main
+degrade-3d = radifox.utils.degrade.degrade_3d:main
