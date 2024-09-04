@@ -1,0 +1,15 @@
+vec_inf/README.md,sha256=ny3ffk6FeRwk_nERimK-JQwEuysvBe5eKpNyLk_A-8k,499
+vec_inf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vec_inf/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vec_inf/cli/_cli.py,sha256=XwCBkwFrN06T_o1CkUKD2nWT6P4bwOfDpVPoM3AUyUA,8984
+vec_inf/cli/_utils.py,sha256=n37X0AcgXNEi3wOEqQFA4_iHHeGclHew6NyQaML6q7s,4034
+vec_inf/find_port.sh,sha256=bGQ6LYSFVSsfDIGatrSg5YvddbZfaPL0R-Bjo4KYD6I,1088
+vec_inf/launch_server.sh,sha256=-efoTEIDKlJD7YhbYMgq4fFRV7H_1okjT5uKhfQAGUg,3998
+vec_inf/models/README.md,sha256=7Vz-AMValcic5Mpi9i5FshhRUV9K8nwSnItN4O1TSvI,8124
+vec_inf/models/models.csv,sha256=dOthlc04TyTQTin_fyt-PFDqg-lARScI9i0-tUkIgQ8,4828
+vec_inf/multinode_vllm.slurm,sha256=KbxsKD9kV8wsB_jCEqh63BHq8h2DLmYMV46z5h2wAe0,3867
+vec_inf/vllm.slurm,sha256=wRBkDunb0Oc1d8ESl_Dn9wRs_kIKvN_J39pL8dWAbV0,1608
+vec_inf-0.3.3.dist-info/METADATA,sha256=IefFGb9Gb7bOwI3RjNTbTlTCL6AImzx5XBSJjCp4y8c,5751
+vec_inf-0.3.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vec_inf-0.3.3.dist-info/entry_points.txt,sha256=JF4uXsj1H4XacxaBw9f0KN0P0qDzmp7K_1zTEBDappo,48
+vec_inf-0.3.3.dist-info/RECORD,,
