@@ -1,0 +1,14 @@
+StatisticalAgreement/__init__.py,sha256=zJfnGt13Q7THNxN005bjh0jkAEC1zOgOPCg_sEKRJJE,342
+StatisticalAgreement/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+StatisticalAgreement/core/agreement.py,sha256=l10qDArjyigy3Ps-CA7vJPReNy1iJT076pO4lhJvqts,9019
+StatisticalAgreement/core/categorical_agreement.py,sha256=aLUHg3Bxs8Cq60cvHX7X4KqVhzatbSdHToj6euNlA4E,3608
+StatisticalAgreement/core/classutils.py,sha256=TNdBLySP6Cc2PEJg7xEsy2bDjhp4ceRJ4imYcNEjGTo,3700
+StatisticalAgreement/core/continuous_agreement.py,sha256=swMhSevBKPlrHBnbYyO9jb52DbAhezyXHT-rg6DguVw,8976
+StatisticalAgreement/core/mathutils.py,sha256=teRM9y6Ih2Xb7z9_X_b8BL5H3kWWBzgaqW73TYYEaOw,1034
+StatisticalAgreement/simulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+StatisticalAgreement/simulation/mc_simulation.py,sha256=zNeT_EOPhmxneZBC0brjYt5Eil18SGP5oMNFCY8WUl4,5229
+StatisticalAgreement/simulation/monte_carlo.py,sha256=jCMbpMt-cZvjv8OcsXzgtAgIdwdLqrELM6cnNxX_Z9M,1053
+statisticalagreement-0.4.0.dist-info/METADATA,sha256=15zMZj5RN9mTNQrvD4AyEgTuZqO0_fA3CVjgiE-h6P8,4818
+statisticalagreement-0.4.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+statisticalagreement-0.4.0.dist-info/licenses/LICENSE,sha256=nN8-dOaIS-DU9fpWoHpMusgDuMZgG_3EhOuIQ6Kpu6g,1087
+statisticalagreement-0.4.0.dist-info/RECORD,,
