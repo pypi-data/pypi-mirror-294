@@ -1,0 +1,2 @@
+[console_scripts]
+gemini_pt = gemini_pt.main:main
