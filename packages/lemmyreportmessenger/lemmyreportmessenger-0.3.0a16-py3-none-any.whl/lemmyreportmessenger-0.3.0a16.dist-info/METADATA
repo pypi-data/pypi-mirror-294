@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lemmyreportmessenger
+Version: 0.3.0a16
+Summary: A bot to send lemmy content reports to a specified matrix room
+Home-page: https://github.com/BenMMcLean/LemmyReportMessenger
+Project-URL: Bug Tracker, https://github.com/BenMMcLean/LemmyReportMessenger/issues
+Project-URL: Changelog, https://github.com/BenMMcLean/LemmyReportMessenger/releases
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
