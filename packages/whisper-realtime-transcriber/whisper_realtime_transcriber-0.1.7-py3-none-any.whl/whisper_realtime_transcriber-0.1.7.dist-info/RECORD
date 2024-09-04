@@ -1,0 +1,10 @@
+whisper_realtime_transcriber/InputStreamGenerator.py,sha256=2SwNK58FHCy2h9MhLLhdJVhf9d5oMXYRof1x-K_Wv1g,9751
+whisper_realtime_transcriber/RealtimeTranscriber.py,sha256=wflXvn5QnzLm1l0z4169rB2Nk4pY05UgwIvIbmIK0QM,5831
+whisper_realtime_transcriber/WhisperModel.py,sha256=OvpThNY2PmyXWU_h6Ff5JbKiR9JCx0oqlfdIWd3hqTA,9344
+whisper_realtime_transcriber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_realtime_transcriber/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_realtime_transcriber/utils/utils.py,sha256=pC2hymWpeSj-3j1M6e44LZKG6Fyy16Bv9vIOk-Tj1zI,426
+whisper_realtime_transcriber-0.1.7.dist-info/LICENSE,sha256=SCIXTTDpo5n_ldNEvarulSkXPb1bbHR2jRQiAm9Nb7o,1067
+whisper_realtime_transcriber-0.1.7.dist-info/METADATA,sha256=_7Mh6A_OlcDh3dKSP9V13dCOyTWSts9j2BvpMBIktys,4132
+whisper_realtime_transcriber-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+whisper_realtime_transcriber-0.1.7.dist-info/RECORD,,
