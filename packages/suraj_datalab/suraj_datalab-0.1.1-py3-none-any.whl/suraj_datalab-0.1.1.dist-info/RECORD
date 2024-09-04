@@ -1,0 +1,8 @@
+suraj_datalab/__init__.py,sha256=c5rUnHAA5Ku7yuCeYQO5N6Z9pj0n1jIDJHp1gn1lyIw,59
+suraj_datalab/analyze.py,sha256=xfbiUxVDTMbSUzu9Z1k1qQr4v_-aFfsDHeLxF6h4w4U,8581
+suraj_datalab/clean.py,sha256=thS4l_IxGGMwE_6xW6gEVl-gRYAHI_6okfJUjeTAdOA,3323
+suraj_datalab/fold_creator.py,sha256=1l5OtrTMXneROOHazPKz9c0hFGDAmN66VTbGTSvwNyw,5844
+suraj_datalab-0.1.1.dist-info/LICENSE,sha256=AGu1wui_J15wFFdXXKqa4NqaG3FkDfAFvvjn_FnClr0,1067
+suraj_datalab-0.1.1.dist-info/METADATA,sha256=wTOG2Rc0af2rCwcbr4JAcxvRm2krmbCkiMNuCAn2pQ0,3704
+suraj_datalab-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+suraj_datalab-0.1.1.dist-info/RECORD,,
