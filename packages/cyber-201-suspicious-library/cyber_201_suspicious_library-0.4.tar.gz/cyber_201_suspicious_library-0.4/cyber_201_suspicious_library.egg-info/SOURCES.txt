@@ -1,0 +1,7 @@
+README.md
+setup.py
+cyber_201_suspicious_library.egg-info/PKG-INFO
+cyber_201_suspicious_library.egg-info/SOURCES.txt
+cyber_201_suspicious_library.egg-info/dependency_links.txt
+cyber_201_suspicious_library.egg-info/requires.txt
+cyber_201_suspicious_library.egg-info/top_level.txt
