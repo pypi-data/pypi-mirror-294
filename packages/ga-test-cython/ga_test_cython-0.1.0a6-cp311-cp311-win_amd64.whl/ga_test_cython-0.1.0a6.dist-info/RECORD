@@ -1,0 +1,8 @@
+ga_test_cython/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+ga_test_cython/matrix_product.py,sha256=4MV-MDFCoihy8NWtMs4WOwPoLXODizCLs_Ucci9_EBc,281
+ga_test_cython/operations_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ga_test_cython/operations_utils/dot_product_utils.pyx,sha256=2sRBAaMto4gjv1EVdft5XygpBb2R-tfXyibNSOMspfQ,703
+ga_test_cython-0.1.0a6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ga_test_cython-0.1.0a6.dist-info/METADATA,sha256=aXnwH_LpfglVxjnGugwtV5czSbPDIEcz7KaZ--WM9r8,999
+ga_test_cython-0.1.0a6.dist-info/WHEEL,sha256=-FZBVKyKauScY3vLa8vJR6hBCpAJfFykw2MOwlNKr1g,98
+ga_test_cython-0.1.0a6.dist-info/RECORD,,
