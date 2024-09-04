@@ -1,0 +1,37 @@
+image: "python:3.8"
+
+# commands to run in the Docker container before starting each job.
+before_script:
+  - apt-get update -qy
+  - apt install -y python3-pip python3-pytest
+  - apt install -y libgl1-mesa-glx
+  - apt install -y libgeos-dev
+  - python3 -m pip install --upgrade pip
+  - pip install uv
+  - uv pip install --system -r pyproject.toml --extra dev
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - when: always
+
+stages:
+  - Test
+  - Deploy
+
+unit tests stage:
+  stage: Test
+  script:
+  - uv run pytest
+
+deploy package stage:
+  stage: Deploy
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      when: manual
+    - when: never
+  script:
+  - uvx --from build pyproject-build
+  - uvx twine upload dist/*
+
