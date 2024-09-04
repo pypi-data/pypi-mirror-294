@@ -1,0 +1,11 @@
+minedag/__init__.py,sha256=ZYcdcm8H3HekITmK0WowUD1MYBX-W_n7N2Erxn88sec,60
+minedag/minedag.py,sha256=DSqj9-aBv62kJ5LgiF9TS4JOOKQsp2pxQbxquObu5q0,7017
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=hEyHnSYzsKCNDJodsErBBUc-9p8f5hw6YP3LGEjFS-k,766
+tests/test_layer_iteration.py,sha256=hCZAJ71J9vJ_03DDgqYEUOSyzLZ6Mtr9BmkArh0nF2A,644
+tests/test_mine_dag.py,sha256=yyKODbD7b24XyDTg-AOaACOZj8xpJ_93c03KbT96pSY,6154
+minedag-1.3.dist-info/LICENSE,sha256=7QuO8BJsiYkt3Nn7-CZCQm_Q4kME2fuGWnrfHEkAwP4,1063
+minedag-1.3.dist-info/METADATA,sha256=IL5s9840Ul8hAZMAejQz1Zt3AkTxJLmFQ1vkWgzE4q0,1204
+minedag-1.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+minedag-1.3.dist-info/top_level.txt,sha256=tSTbOtDEvzEcyHEQ2AiPUZKByE2XsZlYsWUrewLaMAs,14
+minedag-1.3.dist-info/RECORD,,
