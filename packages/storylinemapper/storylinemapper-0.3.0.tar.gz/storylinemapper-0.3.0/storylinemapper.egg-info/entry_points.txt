@@ -1,0 +1,2 @@
+[console_scripts]
+storylinemapper = storylinemapper.cli:main
