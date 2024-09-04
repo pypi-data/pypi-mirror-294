@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ctgenerics
+Version: 0.1.8
+Summary: A utility package for my STST projects
+Home-page: https://github.com/thickett/ctgenerics
+Author: Callum Thickett
+Author-email: callum.thickett@stepstone.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy~=1.4.25
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: pandas~=2.2.2
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+
