@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_uwcwidth.py
+uwcwidth/__init__.pxd
+uwcwidth/__init__.py
+uwcwidth/tables.pxd
+uwcwidth/uwcwidth.pxd
+uwcwidth/uwcwidth.pyx
+uwcwidth.egg-info/PKG-INFO
+uwcwidth.egg-info/SOURCES.txt
+uwcwidth.egg-info/dependency_links.txt
+uwcwidth.egg-info/requires.txt
+uwcwidth.egg-info/top_level.txt
