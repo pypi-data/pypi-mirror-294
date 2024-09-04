@@ -1,0 +1,2 @@
+[console_scripts]
+textwiz-memory = textwiz.cli:memory_estimation_entrypoint
