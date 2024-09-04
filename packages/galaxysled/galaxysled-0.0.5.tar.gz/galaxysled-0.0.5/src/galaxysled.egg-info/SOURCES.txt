@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/galaxysled/__init__.py
+src/galaxysled/functions.py
+src/galaxysled/functions_mcmc.py
+src/galaxysled/gmcs.py
+src/galaxysled/test.py
+src/galaxysled.egg-info/PKG-INFO
+src/galaxysled.egg-info/SOURCES.txt
+src/galaxysled.egg-info/dependency_links.txt
+src/galaxysled.egg-info/requires.txt
+src/galaxysled.egg-info/top_level.txt
+src/galaxysled/resources/__init__.py
