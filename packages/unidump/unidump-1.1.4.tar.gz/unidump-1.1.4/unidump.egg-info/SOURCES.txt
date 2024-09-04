@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+unidump/__init__.py
+unidump/__main__.py
+unidump/cli.py
+unidump/env.py
+unidump/output.py
+unidump.egg-info/PKG-INFO
+unidump.egg-info/SOURCES.txt
+unidump.egg-info/dependency_links.txt
+unidump.egg-info/entry_points.txt
+unidump.egg-info/top_level.txt
+unidump/locale/de/LC_MESSAGES/unidump.mo

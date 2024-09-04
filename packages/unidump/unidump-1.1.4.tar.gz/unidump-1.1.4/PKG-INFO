@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: unidump
+Version: 1.1.4
+Summary: hexdump for your Unicode data
+Home-page: https://github.com/Codepoints/unidump
+Author: Manuel Strehl
+Author-email: boldewyn@gmail.com
+License: MIT
+Keywords: unicode hexdump debugging codepoint utility
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE.md
+
+  Ein Unicode-Codepunkt-Dump.
+
+  Denke es dir als hexdump(1) für Unicode. Der Befehl analysiert die Eingabe und
+  gibt dann drei Spalten aus: die direkte Byte-Position des ersten Codepunkts in
+  dieser Zeile, Codepunkte in ihrer Hex-Schreibweise und schließlich die rohen
+  Eingabezeichen, wobei Kontrollzeichen und Leerzeichen durch einen Punkt
+  ersetzt wurden.
+
+  Ungültige Byte-Sequenzen werden mit einem „X“ dargestellt und mit dem Hex-Wert
+  in Fragezeichen eingeschlossen, z. B., „?F5?“.
+
+  Du kannst Daten von stdin einleiten, mehrere Dateien auf einmal auswählen oder
+  sogar alle diese Eingabemethoden durcheinander verwenden.
+
+Beispiele:
+
+  * Basic usage with stdin::
+
+      echo -n 'ABCDEFGHIJKLMNOP' | unidump -n 4
+            0    0041 0042 0043 0044    ABCD
+            4    0045 0046 0047 0048    EFGH
+            8    0049 004A 004B 004C    IJKL
+           12    004D 004E 004F 0050    MNOP
+
+  * Dump the code points translated from another encoding::
+
+      unidump -c latin-1 some-legacy-file
+
+  * Dump many files at the same time::
+
+      unidump foo-*.txt
+
+  * Control characters and whitespace are safely rendered::
+
+      echo -n -e '\x01' | unidump -n 1
+           0    0001    .
+
+  * Finally learn what your favorite Emoji is composed of::
+
+      ( echo -n -e '\xf0\x9f\xa7\x9d\xf0\x9f\x8f\xbd\xe2' ; \
+        echo -n -e '\x80\x8d\xe2\x99\x82\xef\xb8\x8f' ; ) | \
+      unidump -n 5
+           0    1F9DD 1F3FD 200D 2642 FE0F    .🏽.♂️
+
+  See <https://emojipedia.org/man-elf-medium-skin-tone/> for images. The “elf”
+  emoji (the first character) is replaced with a dot here, because the current
+  version of Python’s unicodedata doesn’t know of this character yet.
+
+  * Use it like strings(1)::
+
+      unidump -e '{data}' some-file.bin
+
+  Das ersetzt jedes unbekannte Byte aus der Eingabedatei mit „X“ und jedes
+  Kontroll- und Leerzeichen mit „.“.
+
+  * Only print the code points of the input::
+
+      unidump -e '{repr}'$'\n' -n 1 some-file.txt
+
+  Das Ergebnis ist eine Folge von Codepunkten in Hex-Notation, jeder auf einer
+  eigenen Zeile, ohne Byte-Zähler oder Darstellung der tatsächlichen Daten. Du
+  kannst das verwenden, um die Gesamtzahl an Zeichen (nicht rohe Bytes) in einer
+  Datei zu bestimmen, indem du es durch `wc -l` pipest.
+
+Das ist version 1.1.4 von unidump mit Unicode-13.0.0-Daten.
+
+
