@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: funpay-cfn
+Version: 0.1.4
+Summary: cfn
+Author: cfn
+Author-email: cfn@cfn.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests-toolbelt
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+eee ccccfffnnn
