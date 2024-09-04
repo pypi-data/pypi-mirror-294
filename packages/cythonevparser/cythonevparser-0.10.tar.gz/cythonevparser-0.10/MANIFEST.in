@@ -1,0 +1,2 @@
+include cythonevparser/requirements.txt
+include cythonevparser/thirdparty.json
