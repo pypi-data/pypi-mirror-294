@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: scatter
+Version: 0.1.1
+Summary: Redis backed live-reloadable function management in Python
+Author: Sankalp Sanand
+Project-URL: Homepage, https://github.com/kessler-frost/scatter
+Project-URL: Repository, https://github.com/kessler-frost/scatter
+Project-URL: Issues, https://github.com/kessler-frost/scatter/issues
+Keywords: redis,lightweight,function,management,live-reload,scatter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: redis[hiredis]
+Requires-Dist: cloudpickle
+
+<div align="center">
+
+# scatter | ![GitHub License](https://img.shields.io/github/license/kessler-frost/scatter?color=blue)
+
+</div>
+
+Redis backed live-reloadable function management in Python
+
+## Features
+
+1. Function level version control
+2. Live function definition updating for already deployed apps
+3. Lightweight with only 2 dependencies: `redis` and `cloudpickle`
+4. Minimal network bandwidth usage
+
+## Installation
+
+```
+pip install scatter
+```
+
+## Usage
+
+<...>
+
+## License
+
+This project is licensed under [MIT](https://github.com/kessler-frost/scatter?tab=MIT-1-ov-file#readme)
