@@ -1,0 +1,9 @@
+README.md
+setup.py
+ttsmaker/__init__.py
+ttsmaker/ttsmaker.py
+ttsmaker.egg-info/PKG-INFO
+ttsmaker.egg-info/SOURCES.txt
+ttsmaker.egg-info/dependency_links.txt
+ttsmaker.egg-info/requires.txt
+ttsmaker.egg-info/top_level.txt
