@@ -1,0 +1,10 @@
+gym
+gymnasium
+torch>=1.9
+skrl>=1.2.0
+
+[all]
+skrl>=1.2.0
+
+[skrl]
+skrl>=1.2.0
