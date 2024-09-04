@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cyber_201_suspicious_library
+Version: 0.6
+Summary: An innocent-looking utility library for educational purposes
+Home-page: 
+Author: Mr Speak
+Author-email: peter.speak@ascte.com
+Requires-Dist: requests
