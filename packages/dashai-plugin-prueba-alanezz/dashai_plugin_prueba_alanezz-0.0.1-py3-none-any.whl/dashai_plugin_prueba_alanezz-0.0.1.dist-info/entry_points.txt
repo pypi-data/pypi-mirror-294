@@ -1,0 +1,2 @@
+[dashai.plugins]
+MLPImageClassifier = dashai_plugin_prueba_alanezz.mlp_image_classifier:MLPImageClassifier
