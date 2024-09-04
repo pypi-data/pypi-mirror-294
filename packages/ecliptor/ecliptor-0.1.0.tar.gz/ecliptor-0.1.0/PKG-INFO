@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ecliptor
+Version: 0.1.0
+Summary: Python SDK for the Ecliptor API
+Home-page: https://github.com/Ecliptor/ecliptor-python-sdk
+Author: Nanki Grewal
+Author-email: nanki@ecliptor.ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Ecliptor Python SDK
+
+## Functions
+
+`pip install ecliptor`
+
+1. ecliptor.adapt(embedding)
+Pass in an embedding and get back an embedding multiplied with your adapter
