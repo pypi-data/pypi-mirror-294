@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: calli_inter
+Version: 0.0.1
+Summary: Calliope mini as Interface for communication between computers
+Project-URL: Homepage, https://github.com/inf-schule/calli-inter
+Project-URL: Issues, https://github.com/inf-schule/calli-inter/issues
+Author-email: Michael Becker <mich@elbecker.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyserial<4.0,>=3.5
+Description-Content-Type: text/markdown
+
+# Warum gibt es dieses Projekt?
+Das Python-Modul calli-inter wird in einem Kapitel des digitalen Informatik-Schulbuches inf-schule.de benötigt.
+
+# Lizenz
+MIT
+
+# Projekt bauen
+py -m build
+
+aus lokaler Datei installieren (zum Testen):
+
+py -m pip install .\dist\calli_inter-0.0.2.tar.gz
