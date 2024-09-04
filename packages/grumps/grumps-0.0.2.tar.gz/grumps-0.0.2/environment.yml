@@ -1,0 +1,19 @@
+name: grumps
+channels:
+  - conda-forge
+  - kabram
+
+dependencies:
+  - python
+  - networkx
+  - pandas
+  - scipy
+  - numpy
+  - seaborn
+  - scikit-learn
+  - r-essentials
+  - r-devtools
+  - r-optparse
+  - r-ape
+  - py-grumps
+  - r-grumps
