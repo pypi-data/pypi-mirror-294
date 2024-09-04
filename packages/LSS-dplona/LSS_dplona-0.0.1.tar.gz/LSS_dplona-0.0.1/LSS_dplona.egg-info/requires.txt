@@ -1,0 +1,7 @@
+numpy
+requests
+pandas
+yaml
+openpyxl
+psutil
+OrcFxAPI

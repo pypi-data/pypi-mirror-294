@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "LSS_dplona"
+version = "0.0.1"
+authors = [
+  { name="Dawid Plona", email="dawid.plona@jumbomaritime.nl" },
+]
+description = "A package for handling Limiting Sea States simulations automatically"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
