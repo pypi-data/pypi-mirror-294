@@ -1,0 +1,9 @@
+-r requirements.txt
+pyjpt
+pandas
+graphviz
+scikit-learn==1.5.0
+matplotlib
+jax
+flax
+torch

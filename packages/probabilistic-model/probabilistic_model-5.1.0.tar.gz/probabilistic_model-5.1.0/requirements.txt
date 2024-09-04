@@ -1,0 +1,7 @@
+random-events
+networkx
+plotly
+scipy
+typing_extensions
+numpy<=1.26.4
+sortedcontainers
