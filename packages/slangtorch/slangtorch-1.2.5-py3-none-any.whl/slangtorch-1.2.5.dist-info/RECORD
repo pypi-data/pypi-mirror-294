@@ -1,0 +1,14 @@
+slangtorch/__init__.py,sha256=E6Z2ZWA_XdxVxHb06JBF52Rd2u3wHulAq9j7k42e3pE,125
+slangtorch/slangtorch.py,sha256=sTn0BIVSzq6ffWMHFVDEeranve3UAkmRk9qoWMdUqXY,24486
+slangtorch/bin/libslang.so,sha256=IZZmc335oGRZ4ZMGrOwtrDkjDxy63e23-tJUBbiSKqA,21746544
+slangtorch/bin/slang.dll,sha256=KQUsjQTZZU_KILUyWS-vjGB1uf2cjK-Eu52N4b320j0,15864832
+slangtorch/bin/slangc,sha256=zsfyWatgy9Ar3jZ7e__rki6vDRDQ8QHCTk8QWr2pqpc,216136
+slangtorch/bin/slangc.exe,sha256=3fyVTpcg3uH_H0yQdtvREboN-lHgGtUYOo80LVNdJMw,189952
+slangtorch/util/__init__.py,sha256=LN3Br1koYWKFKbMkWbCWi9MlNb-qK2xoYieVroOH6VI,88
+slangtorch/util/builtin_wrappers.py,sha256=SzyyhKlwzSCoH0hDhdhBW3RW4SJ3d9pgi6D-4xwKkBU,6187
+slangtorch/util/compile.py,sha256=OMqob-qJCdNU-PsWv4KeY0owPGD5G9sYIY5zxcZslK0,5441
+slangtorch/util/wrapper.py,sha256=cogrm84DFhi8_VWMOMv5mwR4rEOmRJ7tBZNbAI00oIc,9231
+slangtorch-1.2.5.dist-info/METADATA,sha256=ySBDPcebXAcC4lc5_9xoogaCjALag1XZ2lZCRXwbRoQ,882
+slangtorch-1.2.5.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+slangtorch-1.2.5.dist-info/licenses/LICENSE,sha256=oyl5MNuiXmz3H7XDCDA25SOiSrCg5-J0Eg1KqxnmrwM,1069
+slangtorch-1.2.5.dist-info/RECORD,,
