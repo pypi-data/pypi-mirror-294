@@ -1,0 +1,21 @@
+CHANGES
+=======
+
+0.1
+---
+
+* Add progress bar and messages for network attach/detach
+* confirmation-before-unprovisioning
+* Fix Provisioning
+* added ability to attach/detach floating IPs
+* Cleanup
+* Hide Baremetal Topology Subports
+* Add Baremetal Topology Panel
+* Add Node Networking Configuration
+* Add Node Provision and Unprovision Functionality
+* added loader
+* Remove Temporary Fix to Power State Info
+* Add Lessee Offer View and Better Lease Management
+* Add node network information in dropdown row
+* Create Initial ESI Plugin
+* Initial commit
