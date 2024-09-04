@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: guolei-py3-brhk
+Version: 1.0.3
+Summary: 天津博瑞皓科 API
+Home-page: https://github.com/guolei19850528/guolei_py3_brhk
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: addict
+Requires-Dist: retrying
+Requires-Dist: pydantic
+Requires-Dist: guolei-py3-requests
+
+## 介绍
+
+**天津博瑞皓科 API**
+
+[官方文档](https://www.yuque.com/lingdutuandui)
+
+## 软件架构
+
+~python 3.*
+
+## 安装教程
+
+```shell
+pip install guolei-py3-brhk
+```
+
+## 目录说明
+
+### Speaker Api 示例
+
+```python
+from guolei_py3_brhk.speaker import Api as SpeakerApi
+
+speaker_api = SpeakerApi(
+    base_url="https://speaker.17laimai.cn",
+    token="token",
+    id="id",
+    version=1
+)
+
+# 通知语音播报
+state = speaker_api.notify(message="测试推送通知")
+if state:
+    print("发送成功")
+```
