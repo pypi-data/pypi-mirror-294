@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/artigen/__init__.py
+src/artigen/example.py
+src/artigen.egg-info/PKG-INFO
+src/artigen.egg-info/SOURCES.txt
+src/artigen.egg-info/dependency_links.txt
+src/artigen.egg-info/top_level.txt
