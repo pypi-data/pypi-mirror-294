@@ -1,0 +1,78 @@
+"""base for all unit tests"""
+
+import json
+import logging
+import os
+import re
+import sys
+from os import getenv
+from typing import Optional
+from unittest import TestCase
+
+from mock_usbip import MockUSBIP
+
+from serial_usbipclient.usbip_client import USBIPClient
+
+LOG_FORMAT: str = '%(asctime)s\t%(levelname)s \t[%(filename)s:%(lineno)d] - %(message)s'
+logging.basicConfig(
+    force=True,
+    level=logging.DEBUG,
+    format=LOG_FORMAT,
+    handlers=[logging.StreamHandler(stream=sys.stdout), logging.StreamHandler(stream=sys.stderr)],
+)
+
+
+class CommonTestBase(TestCase):
+    """base class for common behavior to all unit tests"""
+    DEFAULT_USBIP_SERVER_PORT: int = 3240
+
+    @staticmethod
+    def is_truthy(key: str, default: bool) -> bool:
+        """read environment variable, return boolean response"""
+        value: str = getenv(key, default=str(default)).upper()
+        return value in ['TRUE', '1', '1.0']
+
+    def skip_on_ci(self, reason='incompatible with CI'):
+        """skip the test if running on a CI/CD system"""
+        if self.continuous_integration:
+            self.skipTest(reason=reason)
+
+    def __init__(self, methodName):
+        """need some special variables"""
+        self.continuous_integration: bool = CommonTestBase.is_truthy('CI', False)
+        self.mock_usbip: Optional[MockUSBIP] = None
+        self.client: Optional[USBIPClient] = None
+        self.host: str = 'localhost'
+        self.port: int = self.DEFAULT_USBIP_SERVER_PORT  # will be updated by subclasses
+        self.logger: logging.Logger = logging.getLogger(__name__)
+        super().__init__(methodName)
+
+        if methodName != 'runTest':
+            self.logger.info(f"running {methodName}")
+
+        self.runner_instance: str = os.getenv('PYTEST_XDIST_WORKER', '1')
+        self.worker_id: int = int(re.findall(r"(\d+)$", self.runner_instance)[0]) if self.runner_instance else 0
+
+    @staticmethod
+    def get_test_index(name: str) -> int:
+        """get index of test, can be used as offset for port assignments"""
+        qualified_name: str = name.replace(os.sep, '.').lower()
+        with open(os.path.join(os.path.dirname(__file__), 'list_of_tests.json'), 'r', encoding='utf-8') as tests:
+            all_tests: dict = json.load(tests)
+
+        for i in range(len(all_tests)):
+            if qualified_name.endswith(all_tests[i]):
+                return i + 1
+
+        raise ValueError(f"{name=}, {qualified_name=}, {all_tests=}")
+
+    def tearDown(self):
+        """clean up after test"""
+        if self.mock_usbip:
+            try:
+                self.mock_usbip.shutdown()
+            except TimeoutError:
+                pass
+            self.mock_usbip = None
+
+        super().tearDown()
