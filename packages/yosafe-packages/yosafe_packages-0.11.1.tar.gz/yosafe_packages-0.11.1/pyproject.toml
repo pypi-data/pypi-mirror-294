@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "yosafe-packages"
+version = "0.11.1"
+description = ""
+authors = [ "Yo581515 <581515@stud.hvl.no>",]
+readme = "README.md"
+include = [ "src/yosafe_packages/yosafe_subpackage_1/*", "src/yosafe_packages/yosafe_subpackage_2/*", "src/yosafe_packages/yosafe_subpackage_3/*",]
+exclude = [ "src/yosafe_packages/merge_function/*",]
+[[tool.poetry.packages]]
+include = "yosafe_packages"
+from = "src"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.2"
+requests = "^2.32.3"
+rich = "^13.8.0"
+pandas = "^2.2.2"
+panadas = "^0.2"
+
+[tool.poetry.dev-dependencies]
