@@ -1,0 +1,10 @@
+playground/__main__.py,sha256=E8nuca8Z8De97FcGtumj0m0d7xFOHi-qMzAh4jCTEAA,3768
+playground/resources/playground_compose.yaml,sha256=1AXy28O4TQ-PitBdsvFZ84HgHrXwbBXKqU1hdF3MTu8,1924
+playground/resources/mysql/Chinook_Mysql.sql,sha256=496APk0Gv9_h-GPB-mRHmMavm6yiq3mBFHbWeYacITA,597116
+playground/resources/oracle/Chinook_Oracle.sql,sha256=AkcsSY5xNc3eYV6EhRVgtQSCDCP7pZ-SGtqHdvkiaRc,1897390
+playground/resources/postgres/Chinook_Postgres.sql,sha256=dXNk1dUdtanxWWX8VE73PCeO-iyhVp0cXJhPcgobZDY,563336
+localstack_playground-0.1.0.dist-info/METADATA,sha256=pibL3pMzD8jIYjjP48PMwACZDufiRTOVf92bS_swEoI,527
+localstack_playground-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+localstack_playground-0.1.0.dist-info/entry_points.txt,sha256=nI40a1L1Tw7ePOURdDgJF-07TiaF92NCEO464DFZ0MU,45
+localstack_playground-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+localstack_playground-0.1.0.dist-info/RECORD,,
