@@ -1,0 +1,10 @@
+py_txi/__init__.py,sha256=m9qgP8HTJh3qFpNlUtZuKc7gcp0LnOZzsjA5iCTolfI,198
+py_txi/inference_server.py,sha256=8Rnz7PdMeF-OOyQUjL-d3L3t4CyhjiMXyJ97M3Cd6xc,7651
+py_txi/text_embedding_inference.py,sha256=iZ7W6XW_i1tJAIACL5sV1ZhwW6JcXCBLHUzvF2A588U,2605
+py_txi/text_generation_inference.py,sha256=w5fQ5papyvZ0m1RkYVE80vtolb2cPczU2pOKc5cu8DY,3014
+py_txi/utils.py,sha256=pGN4hJ_ywQIfIG7n-ppCUqgPfdfR_QwO5M2qPriW4Do,1732
+py_txi-0.10.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py_txi-0.10.0.dist-info/METADATA,sha256=gGGtUc4_yA1hIx-C2WKjNIaEPh1Ec7SjYAVwwVaLfcU,3705
+py_txi-0.10.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+py_txi-0.10.0.dist-info/top_level.txt,sha256=yBzW1XBnpHu9Dh3MC7XM5fUlgy-FcAH3CDJ2tLZaNks,7
+py_txi-0.10.0.dist-info/RECORD,,
