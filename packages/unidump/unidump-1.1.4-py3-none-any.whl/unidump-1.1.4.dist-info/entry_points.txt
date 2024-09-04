@@ -1,0 +1,3 @@
+[console_scripts]
+unidump = unidump.cli:main
+
