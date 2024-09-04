@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pptx2img/__init__.py
+pptx2img/converter.py
+pptx2img.egg-info/PKG-INFO
+pptx2img.egg-info/SOURCES.txt
+pptx2img.egg-info/dependency_links.txt
+pptx2img.egg-info/top_level.txt
+tests/__init__.py
+tests/test_converter.py
