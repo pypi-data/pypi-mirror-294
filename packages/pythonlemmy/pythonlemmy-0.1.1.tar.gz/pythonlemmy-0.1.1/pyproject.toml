@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["img*"]
+
+[project]
+name = "pythonlemmy"
+version = "0.1.1"
+authors = [
+    { name = "Travis Kessler", email = "travis.j.kessler@gmail.com" },
+    { name = "Emily McLean", email = "emily@mclean.lgbt" },
+]
+description = "A Python package for accessing the LemmyHttp API"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "typing-extensions>=4.9.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BenMMcLean/plemmy"
+"Bug Tracker" = "https://github.com/BenMMcLean/plemmy/issues"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
