@@ -1,0 +1,16 @@
+ccfit2/__init__.py,sha256=Opzb2ZXIzM6_I5uMC0S7AieclI05JpE3fa5yJLVDMGs,24
+ccfit2/__version__.py,sha256=ext_yLw9Xy0JO8fAqk5evVKgnRt4Gcio-Sa4Fc1hoMQ,106
+ccfit2/ac.py,sha256=WxueAFpqwbnXaKiUYxa3iUDHPATnXEhYZYiBuWFQTro,172382
+ccfit2/cli.py,sha256=SZ5yU2lVrdQyHf0Twv6Pm0Ssq6O-IsHRIGMkByXQ3zg,71680
+ccfit2/dc.py,sha256=u9I-jFG48YraRPD-rW4-WlbxXwfV11UmjJBJKT2se74,79014
+ccfit2/gui.py,sha256=cvleqe2SoEArbb8rU9SEfh-zZuGTR_6BRHVncVq1d40,16961
+ccfit2/relaxation.py,sha256=giAs_dmhDaPpUXHGX3DHPdssnQ0rSwIlhpXKeX4kK3A,235553
+ccfit2/stats.py,sha256=NC-KR_nVhRQ1gLswNSbig6d89xgig0DbrH_uubfmo9U,2497
+ccfit2/utils.py,sha256=SdybdO4IkRBDeuWmYNt6AUZuXWDe0zg3WHjUQzmOahc,16531
+ccfit2/waveform.py,sha256=anM1H47JlBMv_PGue2HQarZojBCvu6jxHxcfVYStt00,36199
+ccfit2-5.8.1.dist-info/LICENSE,sha256=iPxeC6vNqDjdXQ61E5Ch6J_1EzNShXhd4pPJ61nSj5A,35075
+ccfit2-5.8.1.dist-info/METADATA,sha256=lYDJ02tfQue0QFMN11oVbWDWDLWKV16Tiru8Zlr9FF0,2174
+ccfit2-5.8.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+ccfit2-5.8.1.dist-info/entry_points.txt,sha256=ZsrFk4FqTVthWH2xzYhWBACK6-8oVIrhzeM0wMt26N4,203
+ccfit2-5.8.1.dist-info/top_level.txt,sha256=46r_sRJMpYpP24Jxm8MVJerL77YD0sqcgyACT46mwTk,7
+ccfit2-5.8.1.dist-info/RECORD,,
