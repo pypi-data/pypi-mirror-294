@@ -1,0 +1,5 @@
+setup.py
+funnel_error_trap.egg-info/PKG-INFO
+funnel_error_trap.egg-info/SOURCES.txt
+funnel_error_trap.egg-info/dependency_links.txt
+funnel_error_trap.egg-info/top_level.txt
