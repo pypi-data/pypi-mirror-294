@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: autopwlf
+Version: 0.9.0
+Summary: Automated piecewise linear fitting
+Home-page: https://github.com/nweerasuriya/auto_pwlf
+Author: Nedeesha Weerasuriya
+Author-email: nedeeshawork@gmail.com
+License: MIT
+Project-URL: GitHub, https://github.com/nweerasuriya/auto_pwlf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: pwlf>=2.2.1
+Requires-Dist: scikit-learn>=1.3.0
+Provides-Extra: docs
+Requires-Dist: sphinx>=3.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+
+# Auto PWLF
+Piecewise Linear Fit with ability to automatically find the optimal number of line segments.
+
+Full Documentation can be found here: [Documentation](https://autopwlf.readthedocs.io/en/latest/#)
+
+
+Installation available through pip: https://pypi.org/project/autopwlf/
+```
+pip install autopwlf
+```
+
+![image](https://github.com/user-attachments/assets/aac67188-37ad-4e89-8eca-160d67e6c7d9)
+
+
+The piecewise fitting uses the [pwlf module](https://github.com/cjekel/piecewise_linear_fit_py) with full credit to all contributors to this package.
+
+## How it works
+The currently available Piecewise Linear Fit models in Python do not have a method to determine the optimal number of break points to use. To do so this package performs the following steps:
+
+1. Smooth the data using a rolling median function
+2. Fit a linear interpolation function on the smoothened data
+3. Use scipy find_peaks function to find the number of extrema points
+4. Filter by primenence to return an estimate on the number of break points
+
+
