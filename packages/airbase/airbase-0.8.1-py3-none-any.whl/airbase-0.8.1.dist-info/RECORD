@@ -1,0 +1,16 @@
+airbase/__init__.py,sha256=oKIzLSA7wEy9tvmDNaHWzgE3Afq_fNtGtnjgCc6MbKk,224
+airbase/__version__.py,sha256=mTMkQZ-9RMNmw46E8zKENaMnu-cMSWM_3cVTiKQQ-2c,234
+airbase/airbase.py,sha256=rrxQlFioVQH7eLRWnjEUu2k1W0r3vAAlyPsPe4z4m3A,15637
+airbase/cli.py,sha256=7OgAspsN5OoUPLzo-mjBPv2tw2xTS049yNSuJGkKLJU,4362
+airbase/fetch.py,sha256=qAAN33C-7tmWl0BzWzrZyct1ZAyGV2wZ3mO8Fdkg-cs,9175
+airbase/resources.py,sha256=1mO8RZ2DCzXT93KTsh_qkMZ4NDim0muZsf3na_IeuHU,891
+airbase/util.py,sha256=6xxgPWpvFXAOYzvewGli-UrCnbx3gw0kn0dHJIdwxVQ,2935
+airbase/summary/__init__.py,sha256=J00wN2CQdca9bxdnBvVSRWlQcCX9jP5fidyX7yj7ZnQ,37
+airbase/summary/db.py,sha256=bA9V4MKO_i_z0qf9yY0dQwY60JGWcEPnWlQIF3fqHwQ,3210
+airbase/summary/summary.sqlite,sha256=WjWjBo7qqgSTzEHjtkPFLano0lIqo7ezjgow5YAMKs8,90112
+airbase-0.8.1.dist-info/LICENSE,sha256=ez7OWwULCuSLabDAH5fWKZ0zO-FP1bPmRX1VsUE3V68,1067
+airbase-0.8.1.dist-info/METADATA,sha256=6zCIyO8IHcWghJ0wXMQhF3mgnYqphuNO6Z8F5cAEhNA,5820
+airbase-0.8.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+airbase-0.8.1.dist-info/entry_points.txt,sha256=7dGqdWTByz44HN4jleAQpukZ8At_ViwQZ2WoYdk98Gs,45
+airbase-0.8.1.dist-info/top_level.txt,sha256=mQbE3FsRAjsLLshjx0X9IwS4sHOmnO-pK1tl6jJmPI0,8
+airbase-0.8.1.dist-info/RECORD,,
