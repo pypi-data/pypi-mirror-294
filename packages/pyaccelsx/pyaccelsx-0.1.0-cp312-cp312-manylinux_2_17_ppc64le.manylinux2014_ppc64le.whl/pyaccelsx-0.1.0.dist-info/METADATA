@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: pyaccelsx
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Pyaccelsx
+
+Simple Python-bindings for rust_xlsxwriter for writing large worksheets, fast.
+
+## Contributing
+
+This library uses [pre-commit](https://pre-commit.com/). Please ensure it's installed before submitting PRs.
+
