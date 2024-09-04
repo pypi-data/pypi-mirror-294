@@ -1,0 +1,10 @@
+abstract_security
+abstract_webtools
+tiktoken
+abstract_utilities
+abstract_gui
+pyperclip
+openai
+requests
+nltk
+python-docx
