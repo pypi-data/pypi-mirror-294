@@ -1,0 +1,5 @@
+setup.py
+funnel_case_converters.egg-info/PKG-INFO
+funnel_case_converters.egg-info/SOURCES.txt
+funnel_case_converters.egg-info/dependency_links.txt
+funnel_case_converters.egg-info/top_level.txt
