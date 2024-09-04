@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/digfemig/__init__.py
+src/digfemig/collector.py
+src/digfemig/login.py
+src/digfemig/main.py
+src/digfemig.egg-info/PKG-INFO
+src/digfemig.egg-info/SOURCES.txt
+src/digfemig.egg-info/dependency_links.txt
+src/digfemig.egg-info/entry_points.txt
+src/digfemig.egg-info/requires.txt
+src/digfemig.egg-info/top_level.txt
