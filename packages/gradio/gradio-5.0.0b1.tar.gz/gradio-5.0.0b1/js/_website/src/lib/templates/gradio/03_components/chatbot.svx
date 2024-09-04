@@ -1,0 +1,185 @@
+
+<script lang="ts">
+    import {get_object} from "../../process_json.ts";
+    import ParamTable from "$lib/components/ParamTable.svelte";
+    import ShortcutTable from "$lib/components/ShortcutTable.svelte";
+    import DemosSection from "$lib/components/DemosSection.svelte";
+    import FunctionsSection from "$lib/components/FunctionsSection.svelte";
+    import GuidesSection from "$lib/components/GuidesSection.svelte";
+    import CopyButton from "$lib/components/CopyButton.svelte";
+    import { style_formatted_text } from "$lib/text";
+
+    let obj = get_object("chatbot");
+
+    let embedded_demo_obj = `[
+        {"role": "user", "content": "Hello World"},
+        {"role": "assistant", "content": "Hey Gradio!"},
+        {"role": "user", "content": "❤️"},
+        {"role": "assistant", "content": "😍"}
+    ]`
+</script>
+
+<!--- Title -->
+# {obj.name}
+
+<!--- Usage -->
+```python
+gradio.Chatbot(type="messages", ···)
+```
+
+<!-- Embedded Component -->
+<div class="embedded-component">
+<gradio-lite shared-worker>
+import gradio as gr
+with gr.Blocks() as demo:
+    gr.Chatbot(value={embedded_demo_obj},
+            type="messages")
+demo.launch()
+</gradio-lite>
+</div>
+
+<!--- Description -->
+### Description
+## {@html style_formatted_text(obj.description)}
+
+<!-- Behavior -->
+### Behavior
+
+The data format accepted by the Chatbot is dictated by the `type` parameter.
+This parameter can take two values, `'tuples'` and `'messages'`. 
+The `'tuples'` type is deprecated and will be removed in a future version of Gradio.
+
+### Message format
+
+If the `type` is `'messages'`, then the data sent to/from the chatbot will be a list of dictionaries
+with `role` and `content` keys. This format is compliant with the format expected by most LLM APIs (HuggingChat, OpenAI, Claude).
+The `role` key is either `'user'` or `'assistant'` and the `content` key can be one of the following:
+
+1. A string (markdown/html is also supported).
+2. A dictionary with `path` and `alt_text` keys. In this case, the file at `path` will be displayed in the chat history. Image, audio, and video files are fully embedded and visualized in the chat bubble. 
+The `path` key can point to a valid publicly available URL. The `alt_text` key is optional but it's good practice to provide [alt text](https://en.wikipedia.org/wiki/Alt_attribute).
+3. An instance of another Gradio component. 
+
+<br>
+We will show examples for all three cases below -
+
+```python
+def generate_response(history):
+    # A plain text response
+    history.append(
+        {"role": "assistant", content="I am happy to provide you that report and plot."}
+    )
+    # Embed the quaterly sales report in the chat
+    history.append(
+        {"role": "assistant", content={"path": "quaterly_sales.txt", "alt_text": "Sales Report for Q2 2024"}}
+    )
+    # Make a plot of sales data
+    history.append(
+        {"role": "assistant", content=gr.Plot(value=make_plot_from_file('quaterly_sales.txt'))}
+    )
+    return history
+```
+
+For convenience, you can use the `ChatMessage` dataclass so that your text editor can give you autocomplete hints and typechecks.
+
+```python
+from gradio import ChatMessage
+
+def generate_response(history):
+    history.append(
+        ChatMessage(role="assistant",
+                    content="How can I help you?")
+        )
+    return history
+```
+
+### Tuples format
+
+If `type` is `'tuples'`, then the data sent to/from the chatbot will be a list of tuples.
+The first element of each tuple is the user message and the second element is the bot's response.
+Each element can be a string (markdown/html is supported),
+a tuple (in which case the first element is a filepath that will be displayed in the chatbot),
+or a gradio component (see the Examples section for more details).
+
+<!--- Initialization -->
+### Initialization
+<ParamTable parameters={obj.parameters} />
+
+
+{#if obj.string_shortcuts && obj.string_shortcuts.length > 0}
+<!--- Shortcuts -->
+### Shortcuts
+<ShortcutTable shortcuts={obj.string_shortcuts} />
+{/if}
+
+### Examples
+
+** Displaying Thoughts/Tool Usage **
+
+When `type` is `messages`, you can provide additional metadata regarding any tools used to generate the response.
+This is useful for displaying the thought process of LLM agents. For example,
+
+```python
+def generate_response(history):
+    history.append(
+        ChatMessage(role="assistant",
+                    content="The weather API says it is 20 degrees Celcius in New York.",
+                    metadata={"title": "🛠️ Used tool Weather API"})
+        )
+    return history
+```
+
+Would be displayed as following:
+
+<img src="https://github.com/user-attachments/assets/c1514bc9-bc29-4af1-8c3f-cd4a7c2b217f" alt="Gradio chatbot tool display">
+
+You can also specify metadata with a plain python dictionary,
+
+```python
+def generate_response(history):
+    history.append(
+        dict(role="assistant",
+             content="The weather API says it is 20 degrees Celcius in New York.",
+             metadata={"title": "🛠️ Used tool Weather API"})
+        )
+    return history
+```
+
+**Using Gradio Components Inside `gr.Chatbot`**
+
+The `Chatbot` component supports using many of the core Gradio components (such as `gr.Image`, `gr.Plot`, `gr.Audio`, and `gr.HTML`) inside of the chatbot. Simply include one of these components in your list of tuples. Here's an example:
+
+```py
+import gradio as gr
+
+def load():
+    return [
+        ("Here's an audio", gr.Audio("https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav")),
+        ("Here's an video", gr.Video("https://github.com/gradio-app/gradio/raw/main/demo/video_component/files/world.mp4"))
+    ]
+
+with gr.Blocks() as demo:
+    chatbot = gr.Chatbot()
+    button = gr.Button("Load audio and video")
+    button.click(load, None, chatbot)
+
+demo.launch()
+```
+
+{#if obj.demos && obj.demos.length > 0}
+<!--- Demos -->
+### Demos 
+<DemosSection demos={obj.demos} />
+{/if}
+
+{#if obj.fns && obj.fns.length > 0}
+<!--- Event Listeners -->
+### Event Listeners 
+<FunctionsSection fns={obj.fns} event_listeners={true} />
+{/if}
+
+{#if obj.guides && obj.guides.length > 0}
+<!--- Guides -->
+### Guides
+<GuidesSection guides={obj.guides}/>
+{/if}
