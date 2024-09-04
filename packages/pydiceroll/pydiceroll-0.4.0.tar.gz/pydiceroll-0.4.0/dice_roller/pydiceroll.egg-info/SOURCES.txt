@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+dice_roller/pydiceroll.egg-info/PKG-INFO
+dice_roller/pydiceroll.egg-info/SOURCES.txt
+dice_roller/pydiceroll.egg-info/dependency_links.txt
+dice_roller/pydiceroll.egg-info/requires.txt
+dice_roller/pydiceroll.egg-info/top_level.txt
