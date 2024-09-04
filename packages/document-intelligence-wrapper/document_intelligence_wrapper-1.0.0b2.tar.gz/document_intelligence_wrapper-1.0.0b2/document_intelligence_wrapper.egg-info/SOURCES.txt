@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+document_intelligence_wrapper/__init__.py
+document_intelligence_wrapper/document_intelligence_client.py
+document_intelligence_wrapper.egg-info/PKG-INFO
+document_intelligence_wrapper.egg-info/SOURCES.txt
+document_intelligence_wrapper.egg-info/dependency_links.txt
+document_intelligence_wrapper.egg-info/requires.txt
+document_intelligence_wrapper.egg-info/top_level.txt
+document_intelligence_wrapper/extractors/__init__.py
+document_intelligence_wrapper/extractors/document_processor.py
+document_intelligence_wrapper/extractors/extract_utils.py
+document_intelligence_wrapper/extractors/helpers.py
+document_intelligence_wrapper/extractors/text_extractor.py
