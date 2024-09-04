@@ -1,0 +1,2 @@
+[console_scripts]
+magic-lantern = magic_lantern:cli
