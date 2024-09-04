@@ -1,0 +1,2 @@
+[datasette]
+write = datasette_write
