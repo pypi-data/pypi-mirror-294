@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bb-core
+Version: 0.1.9
+Summary: Core package for the brickblock library.
+Home-page: https://github.com/erfanvaredi/bb-core
+Author: Erfan
+Author-email: erfanvaredi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# brickblock
