@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MyPubSub
+Version: 0.1.0
+Summary: A basic Python library for a Singleton Pub Sub System
+Home-page: https://github.com/sahilkhanna/my-pub-sub/
+Author: Sahil Khanna
+Author-email: mail@sahilkhanna.org
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest >=7.4.2 ; extra == 'dev'
+Requires-Dist: flake8 >=7.1.1 ; extra == 'dev'
+
