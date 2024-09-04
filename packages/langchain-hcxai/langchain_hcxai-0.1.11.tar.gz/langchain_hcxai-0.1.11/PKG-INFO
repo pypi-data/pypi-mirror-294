@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: langchain-hcxai
+Version: 0.1.11
+Summary: Community contributed LangChain integrations for Naver AI.
+Home-page: https://gitlab.com/didim365-ai/naver-ai
+License: Copyright (c) Didim365.com
+Author: HCX Support
+Author-email: ai@didim365.co.kr
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.1,<4.0.0)
+Requires-Dist: langchain (>=0.2.0)
+Requires-Dist: langchain-community (>=0.2.0)
+Requires-Dist: langchain-core (>=0.2.1)
+Requires-Dist: langchain-text-splitters (>=0.2.0)
+Requires-Dist: pyhcx (>=0.9.8)
+Project-URL: Repository, https://gitlab.com/didim365-ai/naver-ai
+Project-URL: Source Code, https://gitlab-ai.didim365.com/didim365/naverai/langchain_hcxai/
+Description-Content-Type: text/markdown
+
+# 1. WSL2 설치
+
+WSL2를 사용하려면 먼저 Windows에서 이를 활성화하고 Linux 배포판을 설치해야 합니다.
+
+- Windows 기능 켜기/끄기를 열고, Linux용 Windows 하위 시스템 및 가상 머신 플랫폼을 활성화합니다.
+- PowerShell을 관리자 권한으로 열고 다음 명령어를 입력하여 WSL2로 설정합니다:
+    ```
+    wsl --set-default-version 2
+    ```
+    [WSL을 사용하여 Windows에 Linux를 설치하는 방법](https://learn.microsoft.com/ko-kr/windows/wsl/install)
+
+- Microsoft Store에서 원하는 Linux 배포판(예: Ubuntu)을 설치합니다.  
+    [WSL의 기본 명령](https://learn.microsoft.com/ko-kr/windows/wsl/basic-commands)
+
+# 2. VSCode 설치 및 환경 설정
+
+- Visual Studio Code를 설치합니다.  
+    [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
+- VSCode에서 Remote - WSL 확장을 설치합니다. 이 확장은 WSL 환경에서 직접 코드를 작성하고 실행할 수 있게 해줍니다.  
+    [Linux용 Windows 하위 시스템에서 Visual Studio Code 사용 시작](https://learn.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-vscode)  
+    [Visual Studio Code 확장 사용](https://learn.microsoft.com/ko-kr/power-pages/configure/vs-code-extension)
+
+# 3. Linux 환경 설정
+
+- 설치한 Linux 배포판을 시작합니다.  
+VSCode에서 Remote - WSL을 설정한 경우 ```ctl-j```를 눌러 WSL의 터미널을 열고, 그 환경에서 작업을 진행 합니다. 아닌 경우 wsl 명령을 입력해 직접 터미널을 열 수 있습니다.  
+    [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
+- 기본적인 도구들을 설치합니다. sudo 암호틑 WSL 실치 시 등록한 암호를 입력 합니다.
+    ```
+    sudo apt update && sudo apt upgrade
+    sudo apt install python3-pip python3-venv git -y
+    ```
+
+# 4. Poetry 설치
+
+Poetry는 Python 프로젝트의 의존성 관리와 패키지 작성을 쉽게 도와주는 도구입니다.
+
+- Poetry 공식 설치 스크립트를 사용하여 설치합니다:
+    ```
+    curl -sSL https://install.python-poetry.org | python3 -
+    ```
+- 설치 후, shell 설정 파일(.bashrc, .zshrc 등)에 PATH 추가:
+    ```
+    export PATH="$HOME/.local/bin:$PATH"
+    ```
+- 변경사항을 적용하기 위해 쉘을 재시작하거나 source 명령어를 사용합니다:
+    ```
+    source ~/.bashrc
+    ```
+- 프로젝트 별 가상환경을 config에 설정합니다.
+    ```
+    poetry config virtualenvs.in-project true
+    ```
+    [Basic usage](https://github.com/python-poetry/poetry/blob/main/docs/basic-usage.md)
+- PYPI token 설정  
+    token은 Didim365 담당자에 수령합니다.  
+    ```
+    poetry config pypi-token.gitlab <your-pypi-token>
+    ```
+
+# 5. 프로젝트 설정
+
+- 새 프로젝트 폴더를 만들고 해당 폴더로 이동합니다:
+    ```
+    mkdir mylangchainapp && cd mylangchainapp
+    ```
+- Poetry를 사용하여 새 Python 프로젝트를 초기화합니다:
+    ```
+    poetry init
+    ```
+- pyproject.toml 파일을 수정 합니다.  
+    ```
+    ...
+    [tool.poetry.dependencies]
+    python = "^3.11"
+    langchain = "^0.1.13"
+    pyhcx = ">=0.9.5"
+    langchain-hcxai = ">=0.1.6"
+
+    [[tool.poetry.source]]
+    name = "gitlab"
+    url = "https://gitlab.com/api/v4/projects/60349968/packages/pypi/simple"
+    priority = "supplemental"
+    ...
+    ```  
+
+- 그 외의 필요한 패키지들을 Poetry를 통해 설치합니다.
+psycopg2-binary 패키지를 예로 들면:
+    ```
+    poetry add psycopg2-binary
+    ```
+  
+# 6. VSCode에서 프로젝트 작업
+
+- VSCode를 열고, Ctrl+Shift+P를 눌러 Command Palette를 엽니다.
+- "Remote-WSL: New Window"를 선택하여 WSL에서 새 창을 엽니다.
+- 파일 > 폴더 열기...를 선택하고, 프로젝트 디렉토리를 선택합니다.
+- VSCode에서 python 확장을 설치합니다. Python, Pylance, Python Debugger
+- VSCode의 터미널에서 Poetry 환경을 활성화합니다:
+    ```
+    crl-shift-p "Python Interpreter" poetry환경 선택
+    ```
+    [VSCode: Adding Poetry Python Interpreter](https://www.markhneedham.com/blog/2023/07/24/vscode-poetry-python-interpreter/)
+  
+## 이제 WSL2, VSCode, Poetry를 사용한 LangChain 응용 프로그램 개발 환경이 준비되었습니다. 프로젝트 개발을 시작할 수 있습니다!
+
