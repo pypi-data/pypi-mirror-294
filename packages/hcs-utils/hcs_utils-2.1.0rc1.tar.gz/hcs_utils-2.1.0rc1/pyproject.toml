@@ -1,0 +1,112 @@
+[tool.poetry]
+name = "hcs-utils"
+# version = "2.1.0-alpha"
+version = "2.1.0rc1"
+description = "My personal library collecting some useful snippets."
+authors = ["Christer Sjöholm <1357-hcs@users.noreply.gitlab.com>"]
+license = "ISC License (ISCL)"
+readme = ["README.txt", "NEWS.txt"]
+repository = "https://gitlab.com/hcs/hcs_utils"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: ISC License (ISCL)',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: Software Development :: Libraries :: Python Modules'
+]  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-cov = "^5.0.0"
+pytest-timeout = "^2.3.1"
+pytest-xdist = "^3.6.1"
+ruff = "^0.6.3"
+mypy = "^1.11.2"
+
+[tool.ruff]
+target-version = "py312"
+include = ["pyproject.toml", "hcs_utils/**/*.py", "tests/**/*.py"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    #"B",  # mycket att fixa när vi kopplar på denna
+    # flake8-simplify
+    #"SIM",  # mycket att fixa när vi kopplar på denna
+    # isort
+    "I",
+    # pep8-naming (N)
+    "N",
+    # flake8-debugger (T10)
+    "T10",
+    # flake8-logging (LOG)
+    "LOG",
+    # flake8-import-conventions (ICN)
+    "ICN",
+    #flake8-implicit-str-concat explicit-string-concatenation (ISC003)
+    "ISC",
+    # flake8-no-pep420 (INP)
+    "INP",
+    # Pylint ERROR (PLE)
+    "PLE",
+
+    # Ruff-specific rules (RUF)
+    "RUF",
+    # flake8-async (ASYNC)
+    "ASYNC",
+    # flake8-builtins (A)
+    "A",
+    # flake8-comprehensions (C4)
+    "C4",
+    # flake8-errmsg (EM)
+    "EM",
+    # refurb (FURB)
+    "FURB",
+    # flake8-quotes (Q)
+    "Q",
+    # flake8-return (RET)
+    "RET",
+    # flake8-todos (TD)
+    "TD",
+
+    # flake8-datetimez (DTZ)
+    # TODO: testa "DTZ", # 39 errors
+    "DTZ",
+
+    # flake8-pytest-style (PT)#
+    # TODO: testa "PT",  # 89 errors
+
+
+    # Perflint (PERF)
+    # TODO: testa "PERF",  # 47 errors
+    "PERF",
+
+
+    #flake8-use-pathlib (PTH)#
+    # TODO: testa nån gång PTH  # 391 errors
+]
+ignore = [
+    # Conflicts with ruff formatter
+    "ISC001",
+    # Conflicts with ruff formatter
+    "ISC002",
+    # Missing author in TODO
+    "TD002",
+    # Missing issue link in TODO
+    "TD003",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
