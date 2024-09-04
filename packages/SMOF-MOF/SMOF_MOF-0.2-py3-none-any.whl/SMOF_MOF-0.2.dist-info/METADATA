@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SMOF-MOF
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.23)
+Requires-Dist: numba (>=0.56.0)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: scikit-learn (>=1.2.0)
+
+UNKNOWN
+
+
