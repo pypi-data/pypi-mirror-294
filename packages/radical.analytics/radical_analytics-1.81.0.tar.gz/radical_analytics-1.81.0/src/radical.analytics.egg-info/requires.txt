@@ -1,0 +1,7 @@
+radical.utils<1.90,>=1.80
+matplotlib
+psutil
+pandas
+numpy
+sqlalchemy
+more_itertools
