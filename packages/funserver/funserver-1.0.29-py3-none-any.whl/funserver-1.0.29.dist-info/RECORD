@@ -1,0 +1,10 @@
+funserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funserver/base.py,sha256=zFcfr-D9xr8s-0XHD0MxzU-cRNExPc5z4ikDjPCfM7o,4005
+funserver/servers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funserver/servers/funjupyter/config.py,sha256=J24r5pm_2bKab4LvrhejximhK-xDQKs-AMn-1VbBVVQ,1219
+funserver/servers/funjupyter/run.py,sha256=yRmmEkvKGVDHRFzSW008Jcb4xH4vs9YoQasFnOCdX8k,699
+funserver-1.0.29.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+funserver-1.0.29.dist-info/METADATA,sha256=oLjGLq8L6dsEKVb5vP5uxNsPOjMSY8UDSeJi8jgpA0A,485
+funserver-1.0.29.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funserver-1.0.29.dist-info/entry_points.txt,sha256=PpQHmnL8XtEuXkOdfRcKXzcNuCAqmDbA7OVCboOg1_Y,54
+funserver-1.0.29.dist-info/RECORD,,
