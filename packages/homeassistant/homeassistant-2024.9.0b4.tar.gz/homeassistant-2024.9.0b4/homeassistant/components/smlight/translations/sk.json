@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Zariadenie u\u017e je nakonfigurovan\u00e9"
+        },
+        "error": {
+            "cannot_connect": "Nepodarilo sa pripoji\u0165",
+            "invalid_auth": "Neplatn\u00e9 overenie",
+            "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Heslo",
+                    "username": "Pou\u017e\u00edvate\u013esk\u00e9 meno"
+                },
+                "description": "Zadajte pou\u017e\u00edvate\u013esk\u00e9 meno a heslo"
+            },
+            "confirm_discovery": {
+                "description": "Chcete nastavi\u0165 SMLIGHT na {host}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Hostite\u013e"
+                },
+                "data_description": {
+                    "host": "N\u00e1zov hostite\u013ea alebo IP adresa zariadenia SMLIGHT SLZB-06x"
+                },
+                "description": "Nastavenie integr\u00e1cie SMLIGHT Zigbee"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "core_temperature": {
+                "name": "Teplota \u010dipu jadra"
+            },
+            "fs_usage": {
+                "name": "Vyu\u017eitie s\u00faborov\u00e9ho syst\u00e9mu"
+            },
+            "ram_usage": {
+                "name": "Vyu\u017eitie pam\u00e4te RAM"
+            },
+            "zigbee_temperature": {
+                "name": "Teplota \u010dipu Zigbee"
+            }
+        }
+    }
+}
