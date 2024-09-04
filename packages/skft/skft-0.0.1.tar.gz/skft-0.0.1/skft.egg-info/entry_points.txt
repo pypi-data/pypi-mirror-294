@@ -1,0 +1,2 @@
+[console_scripts]
+skft = skft.football:run

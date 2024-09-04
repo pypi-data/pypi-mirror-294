@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+skft/__init__.py
+skft/football.py
+skft.egg-info/PKG-INFO
+skft.egg-info/SOURCES.txt
+skft.egg-info/dependency_links.txt
+skft.egg-info/entry_points.txt
+skft.egg-info/requires.txt
+skft.egg-info/top_level.txt
