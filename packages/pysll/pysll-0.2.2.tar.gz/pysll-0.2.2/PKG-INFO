@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pysll
+Version: 0.2.2
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: boto3>=1.26.62
+Requires-Dist: backoff>=1.10.0
+Requires-Dist: requests>=2.22.0
+Requires-Dist: rollbar>=0.14.7
+Requires-Dist: xmltodict>=0.13.0
+Provides-Extra: numpy
+Requires-Dist: numpy>=1.26.4; extra == "numpy"
