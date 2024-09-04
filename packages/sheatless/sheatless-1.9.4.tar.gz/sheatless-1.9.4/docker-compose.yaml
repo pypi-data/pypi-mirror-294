@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    develop:
+        image: sheatless_develop
+        build: .
+        volumes:
+            - ./:/app
+            - ./src/sheatless:/app/develop/sheatless
+        working_dir: /app/develop
+        command: bash
+    build_package:
+        extends: develop
+        working_dir: /app
+        command: ./build_package.sh
