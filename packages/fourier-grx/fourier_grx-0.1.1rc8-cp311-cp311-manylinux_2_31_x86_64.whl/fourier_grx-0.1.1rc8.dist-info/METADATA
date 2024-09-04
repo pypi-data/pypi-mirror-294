@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: fourier-grx
+Version: 0.1.1rc8
+Summary: Robotics Control System for the General Robotics (GR)
+Author-email: "Fourier Intelligence Ltd." <algorithm@fftai.com>, Xin Chen <xin.chen@fftai.com>, Yuxiang Gao <yuxiang.gao@fftai.com>
+License: MIT
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: msgpack>=1.0.8
+Requires-Dist: msgpack-numpy>=0.4.8
+Requires-Dist: eclipse-zenoh==0.11.0rc3
+Requires-Dist: typer>=0.12.3
+Requires-Dist: rich>=13.7.1
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: omegaconf>=2.3.0
+Requires-Dist: pin-pink>=2.1.0
+Requires-Dist: meshcat-shapes>=0.3.0
+Requires-Dist: ischedule>=1.2.7
+Requires-Dist: inputs>=0.5
+Requires-Dist: fourier-core==0.1.1rc1
+Requires-Dist: ruckig>=0.12.2
+
+# fourier-grx
+
+Fourier GRX is a python package that provides a guidance for Fourier GR-X series robot.
+
+# Sturcture
+
+## src/fourier_grx
+
+- **control_system**: control system for Fourier GR-X series robot. It is mainly the control the main running loop of the robot.
+- **robot**: robot model definition, robot related algorithms, and predefined tasks for Fourier GR-X series robot.
+- **algorithm**: algorithm for Fourier GR-X series robot. It is mainly the common used algorithm for robot.
+- **task**: task for Fourier GR-X series robot. It is mainly the predefined task for robot.
+- **other_controller**: other controller for Fourier GR-X series robot, including the communication of MPC-WBC controller for Fourier GR-X series robot.
+- **tools**: tools for Fourier GR-X series robot. It is mainly the tools for the robot, including the calibration tools, the data processing tools, etc.
+- **webots**: Webots code for Fourier GR-X series robot. It is mainly the simulation of the robot in webots.
+- **zenoh**: zenoh for Fourier GR-X series robot. It is mainly the communication between the robot and the computer.
+- **sdk**: sdk for Fourier GR-X series robot. It is mainly the communication between the robot and the computer.
+
+## fourier-core
+
+`fourier-core` is the core package for Fourier GR-X series robot.
+It builds the basic structure for Fourier GR-X series robot or other robot.
+It is mainly the basic structure for the robot, including the robot model, the robot controller,
+the robot algorithm, etc.
+
+## tests
+
+test code for Fourier GR-X series robot.
+
+## data
+
+data for Fourier GR-X series robot:
+
+- **pictures**: pictures of the GR-X series robot.
+- **sensor_offset**: absolute encoder sensor offset value data for different robots.
+
+## webots
+
+Webots environment for Fourier GR-X series robot.
+
+## demo
+
+demo code for Fourier GR-X series robot.
+
+- **developer_mode**: use developer_mode interface to test the demos.
+- **zenoh**: use zenoh interface to test the demos.
+- **state_estimator**: config files for state estimator of the robot.
+
+---
+
+# Process to test and add new algorithm
+
+## Develop new algorithm directly in the fourier-grx, or add algorithm to the fourier-grx (legacy method)
+
+Besides using zenoh interface to add the new algorithm, developers can also directly change the code of `fourier-grx` to add new algorithms.
+This is mainly for the developers who want to add the algorithm to the `fourier-grx` package, and develop **built-in** algorithms for the robot.
+
+The main pipeline to develop the algorithm directly in the `fourier-grx` package is as following:
+
+[Algorithm] -> [Task] -> [Robot] -> Test on the robot
+
+1. Change directory to `src/algorithm/` and create the algorithm file in the corresponding robot folder.
+    - GR-1's algorithm should be in `src/algorithm/gr1/`
+    - GR-2's algorithm should be in `src/algorithm/gr2/`
+    - etc.
+
+2. Define the algorithm name and write its logic code.
+    - using the `class` definition to define the algorithm.
+    - using the `def run()` interface to define the algorithm input and output.
+
+```python
+# example code
+class AlgorithmGRX:
+    def __init__(self):
+        super().__init__()
+
+    def run(self,
+            algorithm_input=None):
+        algorithm_output = None
+
+        return algorithm_output
+```
+
+3. Create and bind the algorithm with customized **task** in robot class file.
+    - GR-1's task should be in `src/task/gr1/`
+    - GR-2's task should be in `src/task/gr2/`
+    - etc.
+
+4. Add the task Enum value to `TaskGRX`, and use the enum value as the **key**. Then, bind the enum value with the task model and function.
+
+```python
+# add the task enum value
+class TaskGR1(Enum):
+    TASK_CUSTOMIZED = 0x66666666
+
+
+# define the task function
+def task_customized_function(self):
+    pass
+
+
+# write the `add_task_customized` to add the task to the robot task manager
+def add_task_customized(self):
+    # imports
+    from fourier_grx.algorithm.grx.fi_algorithm_customized import AlgorithmCustomized
+
+    # create task algorithm models
+    self.algorithm_customized_model = AlgorithmCustomized()
+    self.task_customized_function = task_customized_function
+
+    self.tasks.extend(
+        [
+            TaskGRX.TASK_CUSTOMIZED,  # task key
+        ]
+    )
+    self.task_algorithm_models.update(
+        {
+            TaskGRX.TASK_CUSTOMIZED: self.algorithm_customized_model,  # task algorithm model
+        }
+    )
+    self.task_functions.update(
+        {
+            TaskGRX.TASK_CUSTOMIZED: self.task_customized_function,  # task function
+        }
+    )
+```
+
+5. Finally, call `add_task_customized()` in the `update_tasks()` function to add the task to the robot task manager.
+    - GR-1's task should be in `src/task/gr1/fi_task_gr1.py`
+        - GR-1 T1's task should be in `src/task/gr1/fi_task_gr1_t1.py`
+        - GR-1 T2's task should be in `src/task/gr1/fi_task_gr1_t2.py`
+        - etc.
+    - GR-2's task should be in `src/task/gr2/fi_task_gr2.py`
+    - etc.
+
+```python
+def update_tasks(self):
+    from fourier_grx.task.grx.fi_task_customized import add_task_customized
+
+    add_task_customized(self)
+```
+
+6. Till now, your algorithm is added to the robot, and you can test it on the real robot.
+    - You can run `python main.py --config=config/config_xxx.yaml` to start the program.
+    - Then, use the **R1** button of the joystick to switch to the customized task.
+    - Later, you can use the **R2** button of the joystick to confirm the task. The robot will then run the customized task.
+
+## Develop new algorithm based on zenoh interface (quick demo -> feature method)
+
+Please check the demos in the `demo/zenoh` folder.
+It is suggested to read the `demo_robot_client.py` to understand how to get state of the robot and set the control command to the robot.
+
+1. The main pipeline to develop the demo based on zenoh interface is as following:
+
+```python
+#################################################
+# In command line
+# 1. run run_server.py to start the robot server.
+# python run_server.py
+#################################################
+
+#################################################
+# In demo code file
+# 1. call RobotClient to connect to the robot
+client = RobotClient(FREQUENCY)
+
+# 2. set enable to True to enable the robot
+client.set_enable(True)
+
+# 3. get the state of the robot
+joint_measured_position_urdf_deg = client.states["joint"]["position"].copy()
+joint_measured_velocity_urdf_deg = client.states["joint"]["velocity"].copy()
+
+
+# 4. write and run your algorithm
+class Algorithm:
+   def __init__(self):
+      self.algorithm_input = None
+      self.algorithm_output = None
+
+   def run(algorithm_input=None):
+      self.algorithm_input = algorithm_input
+      # algorithm calculation...
+      return self.algorithm_output
+
+
+algorithm = Algorithm()
+ALGORITHM_OUTPUT = algorithm.run(algorithm_input=ALGORITHM_INPUT)
+
+# 5. set the control command to the robot
+client.move_joints(group=ControlGroup.ALL, positions=joint_target_position_deg)
+#################################################
+```
+
+> **Notice**:
+> It is suggested to write all algorithms with **class** definition,
+> and provide only `def run()` interface for the exchange of algorithm input and output.
+> This will make the transfer of algorithm from demo to feature more convenient.
+
+2. After the demo has been tested independently, you can create a **task** in the `fourier-grx` package to add the algorithm to the robot.
+    - Change directory to `fourier-grx/src/task` and create the task file in the corresponding robot folder.
+        - GR-1's task should be in `src/task/gr1/`
+        - GR-2's task should be in `src/task/gr2/`
+        - etc.
+    - Use `fi_task_demo.py` as a reference to create the task class, and attach the algorithm to the task.
+    - Add `add_task_demo()` to the task file to enable adding the task to the robot task manager.
+
+3. Finally, call `add_task_demo()` in the `update_tasks()` function to add the task to the robot task manager in `fi_zenoh_client.py`.
+
+4. Till now, your algorithm is added to the robot, and you can test it on the real robot.
+    - You can run `python main_zenoh.py --config=config/config_xxx.yaml` to start the program.
+    - Then, use the **R1** button of the joystick to switch to the customized task.
+    - Later, you can use the **R2** button of the joystick to confirm the task. The robot will then run the customized task.
