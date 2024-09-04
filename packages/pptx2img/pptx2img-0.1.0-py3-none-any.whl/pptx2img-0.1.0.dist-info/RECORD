@@ -1,0 +1,9 @@
+pptx2img/__init__.py,sha256=ChEtOG0ADNjbLcC2prq08e9KKy8P2ZllRMqByZQV3-Q,99
+pptx2img/converter.py,sha256=QbfhRB9O7-SYlEqnRXsUbduin7LVinCnubbyqOyK5PI,3471
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_converter.py,sha256=zlfAHgEm1aHb8w1EYRcTYh8ciLjIIOa2WJeX6zqWCac,3510
+pptx2img-0.1.0.dist-info/LICENSE,sha256=F7LgC5rphoK-2LSJFekpnZtgzpicBJRjG6mK2VLxZdQ,1091
+pptx2img-0.1.0.dist-info/METADATA,sha256=FZO5x2nBYZpbXtrrl_zcxlBomQsikcf-Vf4JjlYjDb4,964
+pptx2img-0.1.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+pptx2img-0.1.0.dist-info/top_level.txt,sha256=wDV95_ThiXvl3LLwTAUUAqsoj82TSLLAiqW7eZhS2qg,15
+pptx2img-0.1.0.dist-info/RECORD,,
