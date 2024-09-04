@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+moe_kernels/cuda_compat.h
+moe_kernels/ext.cpp
+moe_kernels/ext.h
+moe_kernels/marlin_moe_ops.cu
+moe_kernels/marlin_moe_ops.h
+moe_kernels/moe_ops.h
+moe_kernels/topk_softmax_kernels.cu
+moe_kernels.egg-info/PKG-INFO
+moe_kernels.egg-info/SOURCES.txt
+moe_kernels.egg-info/dependency_links.txt
+moe_kernels.egg-info/requires.txt
+moe_kernels.egg-info/top_level.txt
