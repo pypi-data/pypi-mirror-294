@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+OGRePy/__init__.py
+OGRePy/_core.py
+OGRePy/abc.py
+OGRePy/py.typed
+OGRePy.egg-info/PKG-INFO
+OGRePy.egg-info/SOURCES.txt
+OGRePy.egg-info/dependency_links.txt
+OGRePy.egg-info/requires.txt
+OGRePy.egg-info/top_level.txt
