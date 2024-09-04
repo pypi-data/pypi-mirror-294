@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: EasyFiles
+Version: 0.0.1
+Summary: asyFiles is a Python library designed to simplify file operations, making them more intuitive and accessible for developers of all skill levels. From file creation, reading, writing, and manipulation to more complex file handling tasks, EasyFiles offers a comprehensive set of tools that enhance productivity and reduce coding overhead. Whether you're managing local files or streamlining file processing workflows, EasyFiles makes file handling a breeze.
+Author-email: hamid <hamidrezag1379@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+this is a python package to make file handling super easy
