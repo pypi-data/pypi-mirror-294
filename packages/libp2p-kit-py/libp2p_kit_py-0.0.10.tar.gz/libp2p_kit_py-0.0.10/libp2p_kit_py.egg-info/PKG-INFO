@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: libp2p_kit_py
+Version: 0.0.10
+Summary: a python wrapper around nodejs orbitdb
+Author-email: Benjamin Barber <starworks5@gmail.com>
+Project-URL: Homepage, https://github.com/endomorphosis/libp2p_kit_py
+Project-URL: Issues, https://github.com/endomorphosis/libp2p_kit_py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
