@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fakturowniaAPI/__init__.py
+fakturowniaAPI/client.py
+fakturowniaAPI/enums.py
+fakturowniaAPI/errors.py
+fakturownia_python_api.egg-info/PKG-INFO
+fakturownia_python_api.egg-info/SOURCES.txt
+fakturownia_python_api.egg-info/dependency_links.txt
+fakturownia_python_api.egg-info/top_level.txt
