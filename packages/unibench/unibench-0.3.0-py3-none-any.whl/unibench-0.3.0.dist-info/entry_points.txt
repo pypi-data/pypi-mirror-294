@@ -1,0 +1,2 @@
+[console_scripts]
+unibench = unibench.evaluator:run
