@@ -1,0 +1,2 @@
+https://www.paddlepaddle.org.cn/packages/stable/cu123/
+https://download.pytorch.org/whl/cu123
