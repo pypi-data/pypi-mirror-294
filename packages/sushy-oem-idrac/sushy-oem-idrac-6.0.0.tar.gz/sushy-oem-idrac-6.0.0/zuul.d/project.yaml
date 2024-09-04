@@ -1,0 +1,9 @@
+- project:
+    templates:
+      - check-requirements
+      - openstack-cover-jobs
+      - openstack-python3-jobs
+    check:
+      jobs:
+        - sushy-oem-idrac-tox-codespell:
+            voting: false
