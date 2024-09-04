@@ -1,0 +1,9 @@
+zix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zix/__main__.py,sha256=vtsu8LQSJuJvpUAKRmvLx1-R-Mu4KzkfcoQy0-tYhbY,234
+zix/cli.py,sha256=7dNGvs5jgIcEso8h9lqn7KGrUfZH9t-Z2nReiRAFcxQ,3420
+zixweb-0.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+zixweb-0.0.0.dist-info/METADATA,sha256=7wammNMdM-pSAw-OP0ak95k5cPlhz8fVFCznkt-gzNU,2768
+zixweb-0.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+zixweb-0.0.0.dist-info/entry_points.txt,sha256=Drx-ER-VO9Vp59F87ptu5Pi9Gk3EpaGRUtP4vnh2LnE,44
+zixweb-0.0.0.dist-info/top_level.txt,sha256=qbPO2FNREURIDYDwaJ4qKXigntuegYbqvBiVX0CNCcU,4
+zixweb-0.0.0.dist-info/RECORD,,
