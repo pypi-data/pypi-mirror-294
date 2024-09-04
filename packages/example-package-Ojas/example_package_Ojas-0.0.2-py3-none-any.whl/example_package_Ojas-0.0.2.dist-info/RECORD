@@ -1,0 +1,11 @@
+example_package_Ojas/__init__.py,sha256=fXwcKfdDaO6z8Z2EK-bSxR7dqkyRzX3gw4AaWGEMdrg,229
+example_package_Ojas/example.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+example_package_Ojas/submodule1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_package_Ojas/submodule1/sub1.py,sha256=EUhvqmatSgqjEu3M3QHHqdmt1HuzmSpDKfHTC34UGqA,53
+example_package_Ojas/submodule2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_package_Ojas/submodule2/sub2.py,sha256=XNIIAeLWhz0nzjAF-tX2QvlVXn3lTpwfzBIQGrqzBhc,55
+example_package_Ojas-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+example_package_Ojas-0.0.2.dist-info/METADATA,sha256=0UbZuhcWSyKQk29t6stuHKJW-C2yeIaFVtu3aVmhr_Q,669
+example_package_Ojas-0.0.2.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+example_package_Ojas-0.0.2.dist-info/top_level.txt,sha256=-YVAV0ge-sQIjCA5Tlh8-sNGaSMcs5wj0ruSlWn25D8,21
+example_package_Ojas-0.0.2.dist-info/RECORD,,
