@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: api_processor
+Version: 0.0.1
+Summary: Standardize the way of calling SOAP and Rest API calls in Python
+Author-email: Salil V Nair <author@salilvnair.com>
+Project-URL: Homepage, https://github.com/salilvnair/api_processor
+Project-URL: Issues, https://github.com/salilvnair/api_processor/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
