@@ -1,0 +1,15 @@
+{% extends "registration/password_reset_done.html" %}
+{% load i18n static %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+{% if request.user.is_authenticated %}
+<a href="{% url 'admin:index' %}">{% translate 'Dashboard' %}</a>
+&rsaquo; {% translate 'Password reset' %}
+{% else %}
+<a href="{% url 'admin:login' %}">{% translate 'Log in' %}</a>
+&rsaquo; {% translate 'Password reset' %}
+{% endif %}
+</div>
+    
+{% endblock %}

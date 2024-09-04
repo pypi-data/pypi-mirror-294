@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-24 03:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: project/settings.py:135
+msgid "French"
+msgstr ""
+
+#: project/settings.py:136
+msgid "English"
+msgstr ""
+
+#: oidc_hub/accounts/admin.py:59
+msgid "Personal info"
+msgstr "Informations personnelles"
+
+#: oidc_hub/accounts/admin.py:60
+msgid "Permissions"
+msgstr "Permissions"
+
+#: oidc_hub/accounts/admin.py:68
+msgid "Important dates"
+msgstr "Dates importantes"
+
+#: oidc_hub/accounts/admin.py:117
+#, python-format
+msgid "Send selected %(verbose_name_plural)s"
+msgstr "Envoyer les %(verbose_name_plural)s sélectionnés"
+
+#: oidc_hub/accounts/admin.py:137
+msgid "You're invited to sign up"
+msgstr "Vous êtes invité à vous inscrire"
+
+#: oidc_hub/accounts/admin.py:160
+msgid "An invitation has been sent to {}"
+msgstr "Une invitation a été envoyée à {}"
+
+#: oidc_hub/accounts/apps.py:7
+msgid "Identities and Accesses"
+msgstr "Identités et Accès"
+
+#: oidc_hub/accounts/models.py:10
+#, fuzzy
+#| msgid "Email address"
+msgid "email address"
+msgstr "Adresse e-mail"
+
+#: oidc_hub/accounts/models.py:28
+msgid "group"
+msgstr "groupe"
+
+#: oidc_hub/accounts/models.py:29
+msgid "groups"
+msgstr "groupes"
+
+#: oidc_hub/accounts/models.py:34
+msgid "Email address"
+msgstr "Adresse e-mail"
+
+#: oidc_hub/accounts/models.py:35
+msgid "Token"
+msgstr "Jeton"
+
+#: oidc_hub/accounts/scopes.py:7
+#, fuzzy
+#| msgid "groups"
+msgid "Groups"
+msgstr "Groupes"
+
+#: oidc_hub/accounts/scopes.py:8
+msgid "Access to group memberships"
+msgstr "Accès aux adhésions de groupe"
+
+#: oidc_hub/accounts/templates/accounts/emails/invitation.j2:16
+#: oidc_hub/accounts/templates/accounts/emails/invitation.txt:2
+msgid "Hi there,"
+msgstr "Bonjour,"
+
+#: oidc_hub/accounts/templates/accounts/emails/invitation.j2:18
+#: oidc_hub/accounts/templates/accounts/emails/invitation.txt:4
+#, python-format
+msgid "You’ve been invited to join %(site_name)s."
+msgstr "Vous avez été invité à rejoindre %(site_name)s."
+
+#: oidc_hub/accounts/templates/accounts/emails/invitation.j2:19
+#: oidc_hub/accounts/templates/accounts/emails/invitation.txt:5
+msgid "Complete your registration on the following page:"
+msgstr "Complétez votre inscription sur la page suivante :"
+
+#: oidc_hub/accounts/templates/accounts/emails/invitation.j2:21
+#: oidc_hub/accounts/templates/accounts/emails/invitation.txt:7
+#: oidc_hub/accounts/templates/accounts/pass/reset_email.j2:9
+msgid "Thanks for using our site!"
+msgstr "Merci d'utiliser notre site !"
+
+#: oidc_hub/accounts/templates/accounts/emails/invitation.j2:22
+#: oidc_hub/accounts/templates/accounts/emails/invitation.txt:8
+#: oidc_hub/accounts/templates/accounts/pass/reset_email.j2:11
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "L'équipe de %(site_name)s"
+
+#: oidc_hub/accounts/templates/accounts/login.j2:23
+#: oidc_hub/accounts/templates/accounts/pass/change.j2:11
+#: oidc_hub/accounts/templates/accounts/signup.j2:14
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Veuillez corriger l'erreur ci-dessous."
+msgstr[1] "Veuillez corriger les erreurs ci-dessous."
+
+#: oidc_hub/accounts/templates/accounts/login.j2:39
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+"Vous êtes authentifié en tant que %(username)s, mais vous n'êtes pas "
+"autorisé à accéder à cette page. Souhaitez-vous vous connecter avec un autre "
+"compte ?"
+
+#: oidc_hub/accounts/templates/accounts/login.j2:59
+msgid "Forgotten your password or username?"
+msgstr "Mot de passe ou nom d'utilisateur oublié ?"
+
+#: oidc_hub/accounts/templates/accounts/login.j2:63
+#: oidc_hub/accounts/templates/accounts/pass/reset.j2:6
+#: oidc_hub/accounts/templates/accounts/pass/reset_done.j2:10
+msgid "Log in"
+msgstr "Connexion"
+
+#: oidc_hub/accounts/templates/accounts/pass/change.j2:16
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Veuillez entrer votre ancien mot de passe pour des raisons de sécurité, puis "
+"entrez votre nouveau mot de passe deux fois afin que nous puissions vérifier "
+"qu'il a été correctement saisi."
+
+#: oidc_hub/accounts/templates/accounts/pass/change.j2:44
+msgid "Change my password"
+msgstr "Changer mon mot de passe"
+
+#: oidc_hub/accounts/templates/accounts/pass/reset.j2:7
+#: oidc_hub/accounts/templates/accounts/pass/reset_done.j2:8
+#: oidc_hub/accounts/templates/accounts/pass/reset_done.j2:11
+msgid "Password reset"
+msgstr "Réinitialisation du mot de passe"
+
+#: oidc_hub/accounts/templates/accounts/pass/reset.j2:13
+msgid ""
+"Forgotten your password? Enter your email address below, and we’ll email "
+"instructions for setting a new one."
+msgstr ""
+"Mot de passe oublié ? Entrez votre adresse e-mail ci-dessous et nous vous "
+"enverrons les instructions pour en définir un nouveau."
+
+#: oidc_hub/accounts/templates/accounts/pass/reset.j2:19
+#, fuzzy
+#| msgid "Email address"
+msgid "Email address:"
+msgstr "Adresse e-mail:"
+
+#: oidc_hub/accounts/templates/accounts/pass/reset.j2:22
+msgid "Reset my password"
+msgstr "Réinitialiser mon mot de passe"
+
+#: oidc_hub/accounts/templates/accounts/pass/reset_done.j2:7
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: oidc_hub/accounts/templates/accounts/pass/reset_email.j2:2
+#, python-format
+msgid ""
+"You're receiving this email because a password reset was requested for your "
+"user account at %(site_name)s."
+msgstr ""
+"Vous recevez cet e-mail parce qu'une réinitialisation de mot de passe a été "
+"demandée pour votre compte utilisateur sur %(site_name)s."
+
+#: oidc_hub/accounts/templates/accounts/pass/reset_email.j2:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Veuillez aller à la page suivante et choisir un nouveau mot de passe :"
+
+#: oidc_hub/accounts/templates/accounts/signup.j2:5
+msgid "Registration"
+msgstr "Inscription"
+
+#: oidc_hub/accounts/templates/accounts/signup.j2:39
+msgid "Create account"
+msgstr "Créer un compte"
+
+#: oidc_hub/accounts/templates/admin/base.html:8
+msgid "Welcome,"
+msgstr "Bienvenue,"
+
+#: oidc_hub/accounts/templates/admin/base.html:15
+msgid "Documentation"
+msgstr "Documentation"
+
+#: oidc_hub/accounts/templates/admin/base.html:19
+msgid "Change password"
+msgstr "Changer le mot de passe"
+
+#: oidc_hub/accounts/templates/admin/base.html:23
+#, fuzzy
+#| msgid "Log in"
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: oidc_hub/accounts/views.py:59
+msgid "Invalid invitation token."
+msgstr "Jeton d'invitation invalide."
