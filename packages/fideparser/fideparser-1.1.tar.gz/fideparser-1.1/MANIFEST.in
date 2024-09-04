@@ -1,0 +1,6 @@
+include *.in
+include .coveragerc
+recursive-include docs *.GPL
+recursive-include docs *.txt
+recursive-include tests *.html
+recursive-include tests *.py
