@@ -1,0 +1,7 @@
+omlish==0.0.0.dev14
+
+[all]
+torch~=2.4
+
+[torch]
+torch~=2.4
