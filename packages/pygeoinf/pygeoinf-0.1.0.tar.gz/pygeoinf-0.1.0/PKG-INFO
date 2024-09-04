@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pygeoinf
+Version: 0.1.0
+Summary: A package for solving inference and inverse problems, with a focus on geophysical applications
+License: MIT
+Author: David Al-Attar
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.1.0,<3.0.0)
+Requires-Dist: pyshtools (>=4.13.1,<5.0.0)
+Requires-Dist: scipy (>=1.14.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# pygeoinf
+
+
+A package for solving inference and inverse problems, with a focus on geophysical applications. Developement is still at an early stage, and this package is not suitable for general use. 
