@@ -1,0 +1,12 @@
+prefect_dask/__init__.py,sha256=tl1aRyUnEx2aAW8lOiPxYZk8r36qPyLKMMK-MfpT1SY,220
+prefect_dask/_version.py,sha256=Jk2iAU7m-7Vx9XV1TtdD9ZoJraIncDq_4_Wd-qtUotg,411
+prefect_dask/client.py,sha256=Y33go4LzD3ts-6j6L9H4W9MYC_GfpJ0UvlHyXSmRB6w,4968
+prefect_dask/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+prefect_dask/task_runners.py,sha256=1fSgp_tTRUZfTwTiKJ9_3CUCCdeIb2EKxYsFu9maePQ,14610
+prefect_dask/utils.py,sha256=zEMHTd9CHeJSP8zwwtLAOTPIarBJoXbotqcJ2m3P_jk,5756
+prefect_dask-0.3.0.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_dask-0.3.0.dist-info/METADATA,sha256=0HuFm_DkzrXNxPtn6Dl7tLQZjMUSBjTbXPD9AZckPlI,11174
+prefect_dask-0.3.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+prefect_dask-0.3.0.dist-info/entry_points.txt,sha256=bEEXDGo3cIYB35s6blKciQp7hsixXjH3g2VAN0CpFec,50
+prefect_dask-0.3.0.dist-info/top_level.txt,sha256=EMvhD7sG_3Ng86vks8jnaXAyLRiJXQA5Lf3yu19rpMo,13
+prefect_dask-0.3.0.dist-info/RECORD,,
