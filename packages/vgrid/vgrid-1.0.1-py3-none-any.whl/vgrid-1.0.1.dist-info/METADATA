@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vgrid
+Version: 1.0.1
+Summary: Vgrid - A Global Geocoding System based on Vector Tiles
+Home-page: https://github.com/thangqd/vgrid
+Author: Thang Quach
+Author-email: quachdongthang@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm ~=4.66.2
+Requires-Dist: shapely ~=2.0.1
+Requires-Dist: protobuf ~=5.26.1
+
+# Vgrid - A Global Geocoding System based on Vector Tiles
+
+## Installation: 
+- Using pip install (Windows/ Linux):
+    ``` bash 
+    pip install vgrid
+    ```
+- Show information of installed mbtiles-util: 
+    ``` bash 
+    pip show vgrid
+    ```
+- Install the latest vertion of mbtiles-util:
+    ``` bash 
+    pip install vgrid --upgrade
+    ```
+    
+- Visit vgrid on [PyPI](https://pypi.org/project/vgrid/)
+
+## Usage:
+### vgrid:
+- Create a debug Vgrid:  
+    ``` bash 
+    > vgrid -minzoom <minzoom>  -maxzoom <maxzoom>  -o <output_file> 
+    ```
+  Ex: `> vgrid -minzoom 0  -maxzoom 6>  -o vgrid0_6.mbtiles`
