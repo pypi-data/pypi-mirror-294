@@ -1,0 +1,2 @@
+[console_scripts]
+transient-package = transient_package.scripts.transient_package:main

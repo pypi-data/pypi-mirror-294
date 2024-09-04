@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+transient_package/__init__.py
+transient_package/transient.py
+transient_package.egg-info/PKG-INFO
+transient_package.egg-info/SOURCES.txt
+transient_package.egg-info/dependency_links.txt
+transient_package.egg-info/entry_points.txt
+transient_package.egg-info/requires.txt
+transient_package.egg-info/top_level.txt
+transient_package/scripts/transient_package.py
