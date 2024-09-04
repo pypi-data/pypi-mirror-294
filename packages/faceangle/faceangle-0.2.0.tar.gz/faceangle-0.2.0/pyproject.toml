@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "faceangle"
+version = "0.2.0"
+description = ""
+authors = ["radik <radik@td.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+scikit-learn = "1.5.1"
+onnxruntime = "1.18.1"
+tqdm = "4.66.4"
+matplotlib = "3.6"
+numpy = "1.23.5"
+insightface = "0.7.3"
+opencv-python = "4.10.0.84"
+pandas = "2.0"
+onnxruntime-gpu = {version= "1.18.0", source = "onnxruntime"}
+pip = "24.2"
+
+[tool.poetry.group.dev.dependencies]
+bpy = "4.0.0"
+setuptools = "71.1.0"
+dvc = {extras = ["ssh"], version = "^3.53.0"}
+tf2onnx = "^1.16.1"
+clearml = "^1.16.2"
+aiogram = "2.23.1"
+click = "8.1.7"
+keras = "2.15.0"
+
+[[tool.poetry.source]]
+name = "nvidia"
+url = "https://pypi.nvidia.com/"
+priority = "explicit"
+
+[[tool.poetry.source]]
+name = "onnxruntime"
+url = "https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
