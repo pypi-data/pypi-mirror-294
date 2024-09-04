@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: quantguard
+Version: 0.1.34
+Summary: 交易对账
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ccxt (>=4.3.73,<5.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: clickhouse-driver (>=0.2.8,<0.3.0)
+Requires-Dist: croniter (>=3.0.3,<4.0.0)
+Requires-Dist: dynaconf (>=3.2.6,<4.0.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: schedule (>=1.2.2,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# 安装环境
+基础环境安装
+``` 
+conda create --name quantguard python=3.10.6
+conda activate quantguard
+
+```
+安装poetry包管理工具
+
+```
+pip install poetry
+
+# 解决 poetry publish 问题
+pip install urllib3==1.26.6
+```
+
+安装项目依赖
+```
+poetry install
+```
+
+开发过程中安装具体某个包
+```
+poetry add xxx包名
+```
+
+启动项目
+
+本地测试
+```
+请在config目录下创建settings.local.yml填写自己的配置
+```
+启动
+```
+quantguard server
+```
+
+生成环境安装
+```
+pip install quantguard==0.1.24 -i https://pypi.Python.org/simple 
+```
