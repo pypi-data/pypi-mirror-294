@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=64",
+            "wheel",
+            "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nrt-validate"
+description = "Validation of alerting system results produced by tools like nrt"
+readme = "README.rst"
+authors = [
+    {name = "Loic Dutrieux", email = "loic.dutrieux@ec.europa.eu"},
+    {name = "Keith Arano"},
+    {name = "Jonas Viehweger"}
+]
+keywords = ["sentinel2", "xarray", "validation", "forest", "monitoring", "change"]
+dynamic = ["version"]
+license = {text = "EUPL-1.2"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)"
+]
+requires-python = ">= 3.9"
+dependencies = [
+    "numpy",
+    "xarray",
+    "pandas",
+    "IPython",
+    "ipywidgets",
+    "ipyevents",
+    "ipyleaflet",
+    "bqplot",
+    "traitlets",
+    "rasterio",
+    "rioxarray",
+    "pyproj",
+    "affine",
+    "shapely",
+    "rtree",
+    "Pillow",
+    "netCDF4",
+    "kneed",
+    "requests",
+    "click",
+    "nrt-data",
+    "voila"
+]
+
+[project.urls]
+homepage = "https://code.europa.eu/jrc-forest/nrt-validate"
+
+[project.scripts]
+nrtval = "nrt.validate.nrtval:cli"
+
+[project.optional-dependencies]
+dask = ["dask"]
+stac = ["pystac-client", "odc-stac"]
+docs = ["sphinx", "sphinx_rtd_theme"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nrt.validate"]
+
+[tool.setuptools.package-data]
+"nrt.validate" = ["static/*",
+                  "notebooks/*"]
+
+[tool.setuptools_scm]
+fallback_version = "9999"

@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: nrt-validate
+Version: 0.0.1.dev1
+Summary: Validation of alerting system results produced by tools like nrt
+Author: Keith Arano, Jonas Viehweger
+Author-email: Loic Dutrieux <loic.dutrieux@ec.europa.eu>
+License: EUPL-1.2
+Project-URL: homepage, https://code.europa.eu/jrc-forest/nrt-validate
+Keywords: sentinel2,xarray,validation,forest,monitoring,change
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: pandas
+Requires-Dist: IPython
+Requires-Dist: ipywidgets
+Requires-Dist: ipyevents
+Requires-Dist: ipyleaflet
+Requires-Dist: bqplot
+Requires-Dist: traitlets
+Requires-Dist: rasterio
+Requires-Dist: rioxarray
+Requires-Dist: pyproj
+Requires-Dist: affine
+Requires-Dist: shapely
+Requires-Dist: rtree
+Requires-Dist: Pillow
+Requires-Dist: netCDF4
+Requires-Dist: kneed
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: nrt-data
+Requires-Dist: voila
+Provides-Extra: dask
+Requires-Dist: dask; extra == "dask"
+Provides-Extra: stac
+Requires-Dist: pystac-client; extra == "stac"
+Requires-Dist: odc-stac; extra == "stac"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+
+************
+nrt-validate
+************
+
+*nrt-validate is a companion package to [nrt](https://github.com/ec-jrc/nrt), designed for near real-time monitoring of satellite image time series. It extends nrt's capabilities by providing tools for visual interpretation of time-series data, and for the creation and management of reference/validation datasets.*
+
+Features
+========
+- Interactive time-series annotation interface built with jupyter widgets
+- Spatial sampling for unbiased accuracy assessment
+- Various estimator or accuracy (Olofsson et al., 2013; Stehman 2014) and timeliness (Bullocks et al., 2022)
+
+Installation
+============
+To install nrt-validate, run:
+
+.. code-block:: bash
+
+    pip install nrt-validate
+
+Usage
+=====
+Here is a basic example to get started with the interactive annotation interface in a Jupyter notebook. 
+
+.. code-block:: python
+
+    from nrt.validate.response import Interface
+    from nrt.validate import data
+
+    interface = Interface(cube=data.sentinel2_czechia(), features=samples_czechia())
+    interface.display_interface()
+
