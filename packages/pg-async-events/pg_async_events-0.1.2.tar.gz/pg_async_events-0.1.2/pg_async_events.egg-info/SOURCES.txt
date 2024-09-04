@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pg_async_events/__init__.py
+pg_async_events/events.py
+pg_async_events.egg-info/PKG-INFO
+pg_async_events.egg-info/SOURCES.txt
+pg_async_events.egg-info/dependency_links.txt
+pg_async_events.egg-info/requires.txt
+pg_async_events.egg-info/top_level.txt
