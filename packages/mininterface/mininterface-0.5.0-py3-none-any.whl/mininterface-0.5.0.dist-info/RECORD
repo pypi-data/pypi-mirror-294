@@ -1,0 +1,15 @@
+mininterface/FormDict.py,sha256=mcKQCwkOx_WqzHM6NuMn-4xa3OI3UmdFkXvuyu7aibA,5793
+mininterface/FormField.py,sha256=r6D8VRzqi1GBdu30HjvHWoN4y8NWWchFC2WIBvxuy60,6711
+mininterface/GuiInterface.py,sha256=JKgMNhvDurDy_EVYBS2xC-KmTIT2Voui-YjPTtAa7zk,6386
+mininterface/Mininterface.py,sha256=BOoslJXPQpVdXLBVhQ5I5p3-fNSoJ16NHOyzFAUql6E,5785
+mininterface/Redirectable.py,sha256=NtBZ2IDr69zYZIW3pYLWhlZtfGxNUxA01Gnoq2oVShY,2214
+mininterface/TextInterface.py,sha256=pY21ucRhUB-xEzRXRgIvUu8itsGtLnV77qqg2X01Hlo,2575
+mininterface/TextualInterface.py,sha256=q-ueX8AG0B7z1Ig5a0vKgpkjW99hv5hRaCHCKiWa9yA,7897
+mininterface/__init__.py,sha256=vuBJfQ5SZBqoF9yZz4iGjNU9l-kn7C3W1kvkq6onBcI,3889
+mininterface/__main__.py,sha256=aeQ5nSjMe-2piwJmCVpJK5QVmrfBdbboRq4rdCsTV_k,1346
+mininterface/auxiliary.py,sha256=vxL57FD8Yx1LhdoRMpi3JHZsHITMOtyf9TSjV8L-t9A,1450
+mininterface/common.py,sha256=lXdmGM07Zs36wuC_ZU3c4KTraXyVE3LobF-1c-3PXUQ,50
+mininterface-0.5.0.dist-info/METADATA,sha256=nIqXPq3tp21zBacW4RUNAFB1VPtAD4SwdZ9IqCq2dXI,12167
+mininterface-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mininterface-0.5.0.dist-info/entry_points.txt,sha256=NCl7bPZhh1T3J3-S0m2HLWuuPcjzjhY0UbP7KUEp-Vw,59
+mininterface-0.5.0.dist-info/RECORD,,
