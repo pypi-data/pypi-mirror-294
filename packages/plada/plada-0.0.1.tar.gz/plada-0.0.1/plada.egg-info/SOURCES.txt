@@ -1,0 +1,6 @@
+README.md
+setup.py
+plada.egg-info/PKG-INFO
+plada.egg-info/SOURCES.txt
+plada.egg-info/dependency_links.txt
+plada.egg-info/top_level.txt
