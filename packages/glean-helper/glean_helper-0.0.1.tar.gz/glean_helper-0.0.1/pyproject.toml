@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glean-helper"
+dynamic = ["version"]
+description = 'Helper models, classes, and functions for interacting with the Glean Indexing and Client APIs. This is an unofficial module, and is not supported or endorsed by Glean.'
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Nathan Catania", email = "pypi@nathancatania.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "requests",
+  "pydantic",
+  "pydantic-settings",
+  "email_validator",
+  "python-dotenv",
+  "uuid7"
+]
+
+[project.urls]
+"API Documentation" = "https://developers.glean.com"
+"Helper Documentation" = "https://developers.glean.com"
+Issues = "https://github.com/nathancatania/glean-helper/issues"
+Source = "https://github.com/nathancatania/glean-helper"
+
+[tool.hatch.version]
+path = "src/glean/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/glean"]
