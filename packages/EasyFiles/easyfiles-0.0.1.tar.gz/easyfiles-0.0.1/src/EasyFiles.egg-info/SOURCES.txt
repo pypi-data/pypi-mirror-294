@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/EasyFiles.py
+src/__init__.py
+src/EasyFiles.egg-info/PKG-INFO
+src/EasyFiles.egg-info/SOURCES.txt
+src/EasyFiles.egg-info/dependency_links.txt
+src/EasyFiles.egg-info/top_level.txt
