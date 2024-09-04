@@ -1,0 +1,15 @@
+lakeridersalert/__init__.py,sha256=5mHtT9BKnHKYWD-1X3Q0_of25CWubuSi8DiWEDeOlqo,248
+lakeridersalert/__main__.py,sha256=jWWZfSQwrygkhslqPyZ9gA6C2P0ZYQn-Grd8CjSPYXY,55
+lakeridersalert/main.py,sha256=6rPALdTMkhVJa1Xp-avUNvPkMB5dySVpUCAPdJBmoDo,866
+lakeridersalert/constants/__init__.py,sha256=I3noRv788W3AKgqSq282_H3kKfzqhBDfoTsuEE9FdWE,204
+lakeridersalert/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lakeridersalert/helpers/calendar_entries.py,sha256=6qv7JMpn1P1a-rndRiHQ2EUHOvsPg7RHHfLlII6gVRg,4297
+lakeridersalert/helpers/run.py,sha256=GX6h87cK3CV6nnc4-R2HJ3xGjmw6S4Q-bcwQRVZcwI4,2449
+lakeridersalert/helpers/telegram_bot.py,sha256=HsSFjN0m8WCrQkj_CGE4ohmzu712eZLgX70Y5DTHbc4,1546
+lakeridersalert/helpers/web.py,sha256=VAJ3im5-U46tgBIOkxAhFQMEbdliEZt0U2j6KP6Gotw,1756
+lakeriders_alert-0.1.2.dist-info/LICENSE.txt,sha256=J4AyWsc_FHKwjc8nE8fG7WVggcDhKjKaRLWtu7uXg7U,1061
+lakeriders_alert-0.1.2.dist-info/METADATA,sha256=QQe90_Q5fwHs-NFfNz--wcMcR0_P23kW7a0G-acSSmo,2761
+lakeriders_alert-0.1.2.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+lakeriders_alert-0.1.2.dist-info/entry_points.txt,sha256=3o9vm0rJ2-7kzF0-qmTqrpnhKgYMF2hJR6ARd8cenDQ,61
+lakeriders_alert-0.1.2.dist-info/top_level.txt,sha256=VJ1bNY23PpPa-ncnhVa6i-0LWgWHUwmAZ557WpYgEjM,16
+lakeriders_alert-0.1.2.dist-info/RECORD,,
