@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+gtdb_tree/__init__.py
+gtdb_tree/gtdb_tree.so
+gtdb_tree.egg-info/PKG-INFO
+gtdb_tree.egg-info/SOURCES.txt
+gtdb_tree.egg-info/dependency_links.txt
+gtdb_tree.egg-info/not-zip-safe
+gtdb_tree.egg-info/requires.txt
+gtdb_tree.egg-info/top_level.txt
