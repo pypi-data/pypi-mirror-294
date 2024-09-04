@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyOcclusion-Package/src/PyOcclusion/__init__.py
+PyOcclusion-Package/src/PyOcclusion/noise.py
+PyOcclusion-Package/src/PyOcclusion/occlusion.py
+PyOcclusion-Package/src/PyOcclusion/shapes.py
+PyOcclusion-Package/src/PyOcclusion.egg-info/PKG-INFO
+PyOcclusion-Package/src/PyOcclusion.egg-info/SOURCES.txt
+PyOcclusion-Package/src/PyOcclusion.egg-info/dependency_links.txt
+PyOcclusion-Package/src/PyOcclusion.egg-info/requires.txt
+PyOcclusion-Package/src/PyOcclusion.egg-info/top_level.txt

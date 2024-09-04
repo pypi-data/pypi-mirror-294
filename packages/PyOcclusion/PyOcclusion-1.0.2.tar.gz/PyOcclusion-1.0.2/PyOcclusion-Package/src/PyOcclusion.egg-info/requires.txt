@@ -1,0 +1,6 @@
+numpy
+scikit-image
+imageio
+av
+Pillow>=10.0.1
+matplotlib
