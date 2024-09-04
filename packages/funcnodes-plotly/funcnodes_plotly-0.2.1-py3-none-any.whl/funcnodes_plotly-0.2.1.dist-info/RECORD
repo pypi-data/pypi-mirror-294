@@ -1,0 +1,13 @@
+funcnodes_plotly/__init__.py,sha256=QEuQZyKjzAioWFcRet6iKwab1EJEJkXbHuHVNBYoGxY,1320
+funcnodes_plotly/colors.py,sha256=tRviUP07d-uewdjCrymyuubiqszONL-4O5Io82bgn6s,2870
+funcnodes_plotly/express.py,sha256=iY54mTB-2hwvlzEIgu9Vx3e5lnrW7XC-0hgTddjapsg,38918
+funcnodes_plotly/figure.py,sha256=YtaZ9RrqPVrcScUHFm_NQad2B2PtkBAb2VCmkUZ8GnE,2784
+funcnodes_plotly/layout.py,sha256=-OdWDsHHF_UU-6R0V69UtpOomQ3hgskrq5jDsK-k2iY,902
+funcnodes_plotly/plots.py,sha256=Js77WZvM8wWTiIiMk3O8nrLzXgP4KeqS4k5E4nAfcAw,4353
+funcnodes_plotly/react_plugin/js/main.js,sha256=QWGplqGj4Ll9Qlu3Hkzey4jLNoQa3hDZpXFsdj8jLrQ,7251414
+funcnodes_plotly/react_plugin/js/main.js.LICENSE.txt,sha256=IEGXXKzfQ9KliL76V3nEB0_2B2hJrIsOjZaqmHNjkmg,1503
+funcnodes_plotly/utils.py,sha256=d0ooOD0WR-arvq5mhsP66tNRsi_MtDIW3CbIdG5XSyo,712
+funcnodes_plotly-0.2.1.dist-info/METADATA,sha256=yOSLEsoa_e4BeUg4-G6c6VLfFhas-FUhDfR2fz2giqM,823
+funcnodes_plotly-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funcnodes_plotly-0.2.1.dist-info/entry_points.txt,sha256=dn6UoKGDnqKaBZF_D0cgMFAOFDkhvpZ3ac98RhOkkek,78
+funcnodes_plotly-0.2.1.dist-info/RECORD,,
