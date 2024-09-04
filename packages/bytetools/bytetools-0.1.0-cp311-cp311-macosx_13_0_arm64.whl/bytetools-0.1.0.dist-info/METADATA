@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bytetools
+Version: 0.1.0
+Summary: A Python library for byte-friendly operations.
+Author-email: versusfacit <67295367+VersusFacit@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bytestools
+
+A Python library for byte-friendly operations.
+
+## Installation
+
