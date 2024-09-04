@@ -1,0 +1,4 @@
+prometheus_client==0.20.0
+pyrsmi==1.0.1
+grpcio==1.66.0
+protobuf==5.27.3
