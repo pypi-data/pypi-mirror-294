@@ -1,0 +1,6 @@
+accelerate
+chanfig>=0.0.105
+danling>=0.3.6
+datasets
+torch
+transformers
