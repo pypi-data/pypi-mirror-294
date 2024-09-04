@@ -1,0 +1,7 @@
+rich
+prompt_toolkit
+openai
+pyyaml
+colorama
+tiktoken
+pytest

@@ -1,0 +1,2 @@
+[console_scripts]
+mory = mory.main:main
