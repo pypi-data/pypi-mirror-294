@@ -1,0 +1,9 @@
+langchain
+langchain-groq
+langchain-openai
+pymilvus
+neo4j
+python-dotenv
+pydantic
+loguru
+asyncio
