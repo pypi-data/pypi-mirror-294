@@ -1,0 +1,100 @@
+# providers
+openai
+anthropic
+cohere
+mistral
+groq
+anyscale
+gemini
+
+
+
+
+# parameters to create instructor client
+provider
+model_name (need some centralized dictionary of model names and providers)
+operation
+    chat completion, mode [structured output(pass a mode to specify this)], embedding, reranker
+specify sync/async
+
+# workflows
+
+    # Chat as needed
+    client = from_infinity_llm(provider, model_name, async_client, mode)
+        client.chat.completions.create_with_completion() # structured
+        client.chat.completions.create() # unstructured
+    client = from_any_embedder(provider, model_name, async_client)
+        client.embeddings.create_with_completion()
+    client = from_any_reranker(provider, model_name, async_client)
+        client.rerank.create()
+    
+    # pipeline process
+    client = from_infinity_llm / from_any_embedder
+        client.chat.completions.append_to_pipeline() # run in loop; need to pass save directory and messages
+    
+    # batch (supported in instructor)
+
+
+ideas:
+    library of base urls
+    pass a base url to everything? the provider is grabbed from base url
+
+
+as-needed functionality:
+    -instructor
+        - a/sync chat completion
+        - a/sync structured output
+    - a/sync embedding
+    - a/sync rerank
+
+massive batch functionality
+    - batch chat completion
+    - batch embedding
+
+openai
+    -embedding
+    -text-to-speech
+    -speech-to-text
+    -instructor
+        -vision
+        -chat completion
+        -tool use (tool_use)
+        -json mode (json_mode)
+        -function calling (function_calling)
+anthropic
+    -instructor
+        -vision
+        -text generation
+        -tool use (anthropic_tools)
+        -json mode (anthropic_json)
+mistralai
+    -embeddings
+    -instructor
+        -text generation
+        -function calling 
+        -json mode
+        -tool use (mistral_tools)
+voyage
+    -embeddings
+    -reranker
+cohere
+    https://api.cohere.com/v1/rerank
+    https://api.cohere.com/v1/classify
+    -embedding
+    -reranker
+    -classify
+    -instructor
+        -chat ?
+        -tool use (cohere_tools)
+groq
+    -speech-to-text
+    -instructor
+        -chat
+        -tool use (tool_use)
+        -json mode (json_mode)
+anyscale
+    -embedding
+    -instructor
+        -chat
+        -function calling
+        -json mode
