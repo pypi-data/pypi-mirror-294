@@ -1,0 +1,3 @@
+id: connector1
+type: openai
+model: gpt-3.5-turbo

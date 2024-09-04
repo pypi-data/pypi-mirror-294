@@ -1,0 +1,7 @@
+__pycache__
+*.ipynb
+*.egg-info
+.ruff_cache
+.mypy_cache
+.pytest_cache
+genlink/__version__.py
