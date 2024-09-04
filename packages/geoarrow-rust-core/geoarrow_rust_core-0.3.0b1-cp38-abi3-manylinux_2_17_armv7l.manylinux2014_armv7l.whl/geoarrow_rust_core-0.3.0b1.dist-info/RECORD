@@ -1,0 +1,11 @@
+geoarrow_rust_core-0.3.0b1.dist-info/METADATA,sha256=KCVfCw4EpKpE6H3gcgi3-Y0cxFfxKIvLjVsk85ibZvg,2549
+geoarrow_rust_core-0.3.0b1.dist-info/WHEEL,sha256=-q_tNgx2M0XlK3yN4kV4zAHs4vV1CLvxVspXNMBsSP0,127
+geoarrow/rust/core/_crs.py,sha256=l-xO1zxd-tiz0Gs_zpRNDNyy1kJ1cQ2bP22Q1xsLAj4,3047
+geoarrow/rust/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoarrow/rust/core/enums.py,sha256=dV00ry7TmsC5cygV8vpZjicr_SJrZm2yHxQ75RmiKGY,5951
+geoarrow/rust/core/_alg.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoarrow/rust/core/__init__.py,sha256=4C2iZdz7RRbZQkJexXG_TuIN9Fv9rTl6k2hTPa0aUIk,130
+geoarrow/rust/core/_rust.pyi,sha256=NK99mFZckKtKRPRDmUD8iADyzhNWl02n6maxPeLpzZw,34761
+geoarrow/rust/core/types.py,sha256=5a3mLNuwR5mu4P0eH5t5AA8uYh2h-nyMmf8G9xfgwtk,2015
+geoarrow/rust/core/_rust.abi3.so,sha256=voEO8nKt9tFocZaHn3_IClInj0f825tHS40B7lPU5K4,18955980
+geoarrow_rust_core-0.3.0b1.dist-info/RECORD,,
