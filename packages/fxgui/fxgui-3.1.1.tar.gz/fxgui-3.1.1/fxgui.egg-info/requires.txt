@@ -1,0 +1,3 @@
+qtpy
+QtAwesome
+PySide6
