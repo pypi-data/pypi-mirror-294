@@ -1,0 +1,7 @@
+pose_detection/__init__.py,sha256=2k_ZeqU7FvqZMFqGm-EYRiV98uxUxmiy5wXygvIobPU,13
+pose_detection/pose_detector.py,sha256=mWGSeBXjnqDNqqGhOWUhnlYXLtDUo3z7X2gjrOOIIAo,9710
+pose_detection/pose_model_creator.py,sha256=tEWvGU9yPG0Om-d94OZxWvfP8d4xl_C09ymAD3mkC2I,10530
+pose_detection-0.1.0.dist-info/METADATA,sha256=KiQBgNQlYMHrxuN-iyl_sfoCzX5jliCokWfajS95cnM,253
+pose_detection-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pose_detection-0.1.0.dist-info/top_level.txt,sha256=ffFAOAf0lpz1y2cBLAWpWj2VMhz2wAt_gWM7Ta5zc0s,15
+pose_detection-0.1.0.dist-info/RECORD,,
