@@ -1,0 +1,2 @@
+[console_scripts]
+auto_backup_storage = auto_backup_storage.cli:backup
