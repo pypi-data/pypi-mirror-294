@@ -1,0 +1,7 @@
+README.md
+setup.py
+coffeesdk.egg-info/PKG-INFO
+coffeesdk.egg-info/SOURCES.txt
+coffeesdk.egg-info/dependency_links.txt
+coffeesdk.egg-info/requires.txt
+coffeesdk.egg-info/top_level.txt
