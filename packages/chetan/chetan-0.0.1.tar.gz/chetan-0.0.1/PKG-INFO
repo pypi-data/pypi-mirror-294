@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: chetan
+Version: 0.0.1
+Summary: Composable human-like agent framework
+License: LGPL
+Author: Tridib Roy Arjo
+Author-email: softmetricltd@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: instructor (>=1.4.0,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+
