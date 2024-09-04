@@ -1,0 +1,14 @@
+alttxt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alttxt/__main__.py,sha256=qvHjO6ZfcJm3dciHhw41ByvH-hUvMLXriX32ePKaVqc,2407
+alttxt/enums.py,sha256=2Nh1tNpmVKxdl7aHaug7fbp31-fz94cwsFdujK0g-NQ,3241
+alttxt/generator.py,sha256=UhwU8dsvc1aefBQ9IYxEZgsw7quqmMRNYC8gPxMTg-o,6689
+alttxt/models.py,sha256=jjQUPcYgSOKT68_LDXRBiNlLiKwCKOmb181tSKEH2E4,1983
+alttxt/parser.py,sha256=wFagQW4vOtuebz6sdyk1RnPiFXqqxmukpJDC8gU_ZYc,14096
+alttxt/phrases.py,sha256=mlwgi2QsgIQcxp83jZwE-WG09rc2mA8BsF8OzGZxTlg,6945
+alttxt/regionclass.py,sha256=jVCkDR4wqPcLRmc4DQImBq5vgcDsInNxXyCQjaHuplg,552
+alttxt/tokenmap.py,sha256=GH5twa7WPVUtxVs6rCU8tfdg04xUnPXCJKr_jEaFBhE,46430
+upset_alttxt-0.3.0.dist-info/LICENSE,sha256=Ez7-zLv4cUcDqCQOGG7BGjJkoRslZlIpNevQAXQwr5w,1532
+upset_alttxt-0.3.0.dist-info/METADATA,sha256=VbPnlQmJdYFjZptHQbnMAyLvGsw9dIjda5sChprKrU0,3946
+upset_alttxt-0.3.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+upset_alttxt-0.3.0.dist-info/top_level.txt,sha256=ZOdx7DqQdqdGy3gRW8v1aAanzs4hpezUXEzMxu6IlTQ,7
+upset_alttxt-0.3.0.dist-info/RECORD,,
