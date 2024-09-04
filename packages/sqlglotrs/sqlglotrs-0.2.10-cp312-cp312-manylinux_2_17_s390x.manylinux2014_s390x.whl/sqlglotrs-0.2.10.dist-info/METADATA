@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: sqlglotrs
+Version: 0.2.10
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+License: MIT
+Requires-Python: >=3.7
