@@ -1,0 +1,10 @@
+CoDi.py,sha256=Ffyyoz7UsGDxNo4krCCtqV5tTcmuZLjx9bY4xatM0LA,22189
+__init__.py,sha256=4uXxUR5xyTaKpyj-tXprhK6AZs5Pbd6hkS_6PNSlHD4,83
+contrastive.py,sha256=GLKca0KDD0SBRYUZVF1xzqos0m9m-AHMzKIiI3uYwHw,29161
+contrastive_augmentation.py,sha256=SZaXUoDzviqP82__p4edHSVWsQcxNTA3M7yTVfELifU,5285
+preprocessing.py,sha256=2qxiyNnMI9C4Hh_dT-BYANsR6wNAUbwjSQM7bElX2uk,1020
+codi_bg-0.1.3.dist-info/METADATA,sha256=ySF_I3fuwLD2s_f0VS7qcA2F1nNd8CY22M6ZO4zbPc0,703
+codi_bg-0.1.3.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+codi_bg-0.1.3.dist-info/entry_points.txt,sha256=8t1l3DsKUTOlBLRoQIry9E_3p-OnC9GCxS6hzlrbdb8,35
+codi_bg-0.1.3.dist-info/top_level.txt,sha256=3bW54hEL3_KMtBU-zQSVp1jX_pwlCVPVgKJit-D-3Eo,65
+codi_bg-0.1.3.dist-info/RECORD,,
