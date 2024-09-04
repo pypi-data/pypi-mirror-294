@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+file_content_extractor.egg-info/PKG-INFO
+file_content_extractor.egg-info/SOURCES.txt
+file_content_extractor.egg-info/dependency_links.txt
+file_content_extractor.egg-info/entry_points.txt
+file_content_extractor.egg-info/top_level.txt
+src/__init__.py
+src/extractor.py
+src/main.py
+src/tree.py
+src/utils.py
+src/version.py
