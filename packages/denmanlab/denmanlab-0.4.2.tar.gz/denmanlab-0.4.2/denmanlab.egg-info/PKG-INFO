@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: denmanlab
+Version: 0.4.2
+Summary: denmanlab code, mostly for neurophysiology
+Home-page: https://denmanlab.github.io
+Author: denman lab
+Author-email: daniel.denman@cuanschutz.edu
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
