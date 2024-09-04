@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: hsim
+Version: 0.0.1
+Summary: Quantum Simulator
+Author-email: Bryce Bjork <bryce.bjork@quantinuum.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
