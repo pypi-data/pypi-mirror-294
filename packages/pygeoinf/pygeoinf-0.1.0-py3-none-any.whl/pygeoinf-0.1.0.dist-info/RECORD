@@ -1,0 +1,14 @@
+pygeoinf/Rn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygeoinf/Rn/sobolev.py,sha256=L3dUDFsC4mz_zmHF9qU4tvKJEacyeSTY9-9TkrB7pYA,35
+pygeoinf/S2/__init__.py,sha256=Q2ijlFc9p2UGv1y9lvS3ubyphVBUCKjUUYF_8x1tgWM,50
+pygeoinf/S2/sobolev.py,sha256=0GYyf5n93vn6x5znyGEtXUEKyfnvnfcBkcY7nSlC9GM,12099
+pygeoinf/__init__.py,sha256=ya8Eo0r813GNKwIrWpJjDus1G_ikqD2q7BCBdZbbFsI,316
+pygeoinf/euclidean.py,sha256=13gPFYBj3CbZx6WAxl3IIK4OqPHGpL_eiq7zS_bAlGY,2321
+pygeoinf/gaussian_measure.py,sha256=bNkfrHFCVomPpGMUEGywX2UENReZahiJWf8kEgi247E,5654
+pygeoinf/linear_form.py,sha256=rzkC_f0MG79RlO-FPHLmlL6PifbWQdK4jV43Ii1aUGo,2260
+pygeoinf/linear_forward_problem.py,sha256=PpXAOADpVnBo1IlxcI_5UpO_loprYPZMbv-QqGYcd9w,1577
+pygeoinf/linear_operator.py,sha256=vXrrjVDCgGbRpl1zmBUZJzUWxPttMLE9NgFdDH4O4A4,4503
+pygeoinf/vector_space.py,sha256=GUXeMGjPGhbz0KmkXJbUqYzAdvrsnXZURZ6kVFqPXaI,6279
+pygeoinf-0.1.0.dist-info/METADATA,sha256=7vlQPg4lPjD2pdYwc5J9JeM1px4SsZSYizhQq84Vntg,733
+pygeoinf-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pygeoinf-0.1.0.dist-info/RECORD,,
