@@ -1,0 +1,15 @@
+flippr/__about__.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+flippr/__init__.py,sha256=i5R6NbgmeauwjVnSKP5eLBgbgg3xaVdIGUMJ9XjX51w,6953
+flippr/combine.py,sha256=z14YJ7sRCTcZPnBy48d_Jetll9rQl_JoEtWJ4-iLfQg,3618
+flippr/datatypes.py,sha256=pD3QzWLOFsYu6yBN24oF4PU6Vo3-xeIkbyAHdjije4o,8952
+flippr/functions.py,sha256=ZxH-EcajpC_m4NH9ao0NTf2m__TlI5zaYAthFMOXdPU,11026
+flippr/parameters.py,sha256=ZUIqSIfPzZsUdzKeDNbDx-l31i5MWtv99FZ_4WrB11o,3109
+flippr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flippr/validate.py,sha256=He0ptPRegFGCalDUUM3-DlIs4unDPB0v8aOt8ugly2s,3653
+flippr/uniprot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flippr/uniprot/fasta.py,sha256=XgTAH-irYhWXZBfyn_8n9tmRcEpS6WIsHUeWwInvlqY,2679
+flippr/uniprot/metadata.py,sha256=grFDH5dx5MpXCXnd0OYQ_kOYZTNOwRWKvWjkcMA0PCM,1384
+flippr-0.1.8.dist-info/METADATA,sha256=sZVd822qsYwZl1WgCEAsH6_oRju0JZr520CL-pnYS5Q,7024
+flippr-0.1.8.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+flippr-0.1.8.dist-info/licenses/LICENSE,sha256=IEG6pQw9DwaLA8MNX7KHBPqrH0Lnxv1J86vp1OIx_ug,19577
+flippr-0.1.8.dist-info/RECORD,,
