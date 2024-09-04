@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+clickable_textbox/__init__.py
+clickable_textbox/example.py
+clickable_textbox/frontend/build/asset-manifest.json
+clickable_textbox/frontend/build/bootstrap.min.css
+clickable_textbox/frontend/build/index.html
+clickable_textbox/frontend/build/static/js/main.f69bf87c.js
+clickable_textbox/frontend/build/static/js/main.f69bf87c.js.LICENSE.txt
+clickable_textbox/frontend/build/static/js/main.f69bf87c.js.map
+streamlit_clickable_textbox.egg-info/PKG-INFO
+streamlit_clickable_textbox.egg-info/SOURCES.txt
+streamlit_clickable_textbox.egg-info/dependency_links.txt
+streamlit_clickable_textbox.egg-info/requires.txt
+streamlit_clickable_textbox.egg-info/top_level.txt
