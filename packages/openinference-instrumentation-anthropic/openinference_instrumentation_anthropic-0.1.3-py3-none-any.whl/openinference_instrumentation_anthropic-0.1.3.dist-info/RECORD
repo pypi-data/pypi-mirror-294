@@ -1,0 +1,7 @@
+openinference/instrumentation/anthropic/__init__.py,sha256=77KGNDCT2D0em9nFHf1Vk3HGE21q5dNb3O564CH2ak0,3616
+openinference/instrumentation/anthropic/_wrappers.py,sha256=B92fZ6D1RqS2DZHFPpLwolC4Kq7tQFLwfIZ4e72K5ps,15210
+openinference/instrumentation/anthropic/version.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+openinference_instrumentation_anthropic-0.1.3.dist-info/METADATA,sha256=H4zcLVG6qHIPs-o-bzDZMEXqyArShOh4Ode3FqijFg4,4003
+openinference_instrumentation_anthropic-0.1.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+openinference_instrumentation_anthropic-0.1.3.dist-info/licenses/LICENSE,sha256=vbYZydngUVsXsIBUvMGdKz3LjiQn5Mv9cRceRxOPU20,10840
+openinference_instrumentation_anthropic-0.1.3.dist-info/RECORD,,
