@@ -1,0 +1,10 @@
+prefect_sqlalchemy/__init__.py,sha256=b-qmLVU7Dr0oa3gJ3NKZfHwckhJoSFauVurypcO2sOY,230
+prefect_sqlalchemy/_version.py,sha256=aeBju2l8GTMwAhIRG_c2Q_oVPFacRkZZwGtxmvFCGPQ,411
+prefect_sqlalchemy/credentials.py,sha256=gIvJC5GO-OjIuQ534SlVLkEphA3fgCRFpOcYChhR3Hs,15214
+prefect_sqlalchemy/database.py,sha256=2IPFImQOpezqN_QJNgAgh185C5bVXxWKNh6SJeCGOWM,29794
+prefect_sqlalchemy-0.5.0.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_sqlalchemy-0.5.0.dist-info/METADATA,sha256=IeHEHq_CJJQ1XfOUpZtiJ8Il6BPsXKucQe0HgCHKdLQ,10524
+prefect_sqlalchemy-0.5.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+prefect_sqlalchemy-0.5.0.dist-info/entry_points.txt,sha256=mb62OSwAJLPppMamRhJby2F0m_RZwPZlSTCwIQ_LN0w,62
+prefect_sqlalchemy-0.5.0.dist-info/top_level.txt,sha256=JMG6tE7qqbHpCuRHSAa5juu0DBQMLKQ6cFwITkTKBjw,19
+prefect_sqlalchemy-0.5.0.dist-info/RECORD,,
