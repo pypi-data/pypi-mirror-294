@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "embodiedcity"
+version = "0.1.4"
+description = "Embodied City Python SDK"
+authors = ["Jun Zhang <zhangjun990222@qq.com>", "Baining Zhao <bainingzhao66@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://embodied-city.fiblab.net"
+documentation = "https://embodied-city.fiblab.net/docs"
+keywords = ["city", "embodied"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "embodiedcity", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2"
+numpy = "^1"
+opencv-python = "^4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
