@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nbxmssql
+Version: 0.1.1
+Summary: used to connect to an MSSQL db
+Home-page: https://github.com/yourusername/my_package
+Author: Luuk Laarveld
+Author-email: l.laarveld@nubix.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyodbc
+
+# nbxmssql
+
+Used for connecting to an MSSQL db.
+
+## Installation
+
+You can install the package using pip:
+
+pip install nbxmssql==0.1.0
