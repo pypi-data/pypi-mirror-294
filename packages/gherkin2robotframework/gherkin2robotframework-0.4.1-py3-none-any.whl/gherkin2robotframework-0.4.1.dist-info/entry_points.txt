@@ -1,0 +1,3 @@
+[console_scripts]
+dumpgherkin = gherkin2robotframework.dumpgherkin:main
+gherkin2robotframework = gherkin2robotframework.__main__:main
