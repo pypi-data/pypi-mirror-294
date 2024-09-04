@@ -1,0 +1,16 @@
+{
+  "work_tasks": {
+    "task_one": "done",
+    "task_two": "waiting"
+  },
+  "work_inventory": [
+    "laptop",
+    "mouse"
+  ],
+  "home": {
+    "garage_inventory": [
+      "tools",
+      "lawnmover"
+    ]
+  }
+}
