@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: searchflow
+Version: 0.0.85
+Summary: An assistant helping you to index webpages into structured datasets.
+License: MIT
+Author: Ben Selleslagh
+Author-email: ben@vectrix.ai
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: fake-useragent (>=1.5.1,<2.0.0)
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: greenlet (>=3.0.3,<4.0.0)
+Requires-Dist: langchain (>=0.2.7,<0.3.0)
+Requires-Dist: langchain-anthropic (>=0.1.23,<0.2.0)
+Requires-Dist: langchain-cohere
+Requires-Dist: langchain-community (>=0.2.7,<0.3.0)
+Requires-Dist: langchain-openai (>=0.1.14,<0.2.0)
+Requires-Dist: langchain-postgres (>=0.0.9,<0.0.10)
+Requires-Dist: langgraph (>=0.2.14,<0.3.0)
+Requires-Dist: langgraph-cli (>=0.1.48,<0.2.0)
+Requires-Dist: o365 (>=2.0.36,<3.0.0)
+Requires-Dist: poppler-utils (>=0.1.0,<0.2.0)
+Requires-Dist: protobuf (>=4.21.6,<5.0.0)
+Requires-Dist: psycopg-binary (>=3.2.1,<4.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: spider-client (>=0.0.69,<0.0.70)
+Requires-Dist: streamlit (>=1.36.0,<2.0.0)
+Requires-Dist: supabase (>=2.7.2,<3.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Requires-Dist: trafilatura (>=1.9.0,<2.0.0)
+Requires-Dist: unstructured-client (>=0.25.5,<0.26.0)
+Requires-Dist: unstructured[all-docs] (>=0.15.7,<0.16.0)
+Requires-Dist: uvicorn (>=0.30.1,<0.31.0)
+Requires-Dist: validators (>=0.28.1,<0.29.0)
+Description-Content-Type: text/markdown
+
+# SearchFlow
+
+SearchFlow is an assistant designed to help you index webpages into structured datasets. It leverages various tools and models to scrape, process, and store web content efficiently.
+
+## Features
+
+- **Web Scraping**: Uses `trafilatura` for focused crawling and web scraping.
+- **Document Processing**: Supports chunking and processing of various document types.
+- **Database Management**: Manages projects, documents, and prompts using PostgreSQL.
+- **Vector Search**: Utilizes vector search for document retrieval.
+- **LLM Integration**: Integrates with language models for question answering and document grading.
+
+## Installation
+
+To set up the development environment, use the provided `Dockerfile` and `.devcontainer/devcontainer.json` for a consistent development setup.
+
+### Prerequisites
+
+- Docker
+- Python 3.11 or higher
+
+### Steps
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/yourusername/searchflow.git
+    cd searchflow
+    ```
+
+2. **Build the Docker container**:
+    ```sh
+    docker build -t searchflow .
+    ```
+
+3. **Run the Docker container**:
+    ```sh
+    docker run -it -p 8501:8501 searchflow
+    ```
+
+## Usage
+
+### Web Scraping
+
+To scrape a website and index the links:
+
+```python
+from searchflow.importers.webscraper import WebScraper
+scraper = WebScraper(project_name="example_project")
+scraper.get_all_links(base_url="https://example.com")
+```
+
+### Document Processing
+
+To upload and process files:
+
+```python
+from searchflow.importers.file_importer import FileImporter
+files = Files()
+files.upload_file(document_data=[(b"file_content", "example.pdf")], project_name="example_project")
+```
+
+### Vector Search
+To perform a similarity search:
+
+```python
+from searchflow.db.postgresql import DB
+db = DB()
+results = db.similarity_search(project_name="example_project", query="example query"
+```
+
+
