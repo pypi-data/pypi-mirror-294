@@ -1,0 +1,7 @@
+http-client-async
+python-dotenv
+asynchuobi
+python-binance
+pybit
+python-okx
+xync-schema

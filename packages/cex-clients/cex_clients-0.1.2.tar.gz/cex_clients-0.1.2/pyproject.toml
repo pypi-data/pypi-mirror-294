@@ -1,0 +1,15 @@
+[project]
+name = "cex-clients"
+requires-python = ">=3.11"
+authors = [
+    {name = "Mike Artemiev", email = "mixartemev@gmail.com"},
+]
+dependencies = ["http-client-async", "python-dotenv", "asynchuobi", "python-binance", "pybit", "python-okx", "xync-schema"]
+version = "0.1.2"
+
+[project.urls]
+Homepage = "https://gitlab.com/xync/back/cex-clients"
+Repository = "https://gitlab.com/xync/back/cex-clients"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
