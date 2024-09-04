@@ -1,0 +1,2 @@
+github
+rocm_smi_exporter
