@@ -1,0 +1,2 @@
+[console_scripts]
+cst_lsp = cst_lsp.server:main
