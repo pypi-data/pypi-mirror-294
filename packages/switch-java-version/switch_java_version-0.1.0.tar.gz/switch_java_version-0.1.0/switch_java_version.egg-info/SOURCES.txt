@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+switch_java/__init__.py
+switch_java/main.py
+switch_java_version.egg-info/PKG-INFO
+switch_java_version.egg-info/SOURCES.txt
+switch_java_version.egg-info/dependency_links.txt
+switch_java_version.egg-info/entry_points.txt
+switch_java_version.egg-info/top_level.txt

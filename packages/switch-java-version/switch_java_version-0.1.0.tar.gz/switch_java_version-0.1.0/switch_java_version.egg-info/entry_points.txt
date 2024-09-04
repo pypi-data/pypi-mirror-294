@@ -1,0 +1,2 @@
+[console_scripts]
+switch-java = switch_java.main:main
