@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: configsuite
+Version: 0.6.7
+Summary: Config Suite is the result of recognizing the complexity of software configuration.
+Home-page: https://github.com/equinor/configsuite
+Author: Software Innovation Bergen, Equinor ASA and TNO
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+
+# Config Suite #
+
+> :warning: **This project is deprecated and no longer maintained**
