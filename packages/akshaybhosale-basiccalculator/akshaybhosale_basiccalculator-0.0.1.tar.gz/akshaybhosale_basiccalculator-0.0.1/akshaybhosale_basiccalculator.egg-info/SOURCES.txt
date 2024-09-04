@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+USES.txt
+setup.py
+akshayb_basiccalculator/__init__.py
+akshayb_basiccalculator/myfunctions.py
+akshayb_basiccalculator/test_script.py
+akshaybhosale_basiccalculator.egg-info/PKG-INFO
+akshaybhosale_basiccalculator.egg-info/SOURCES.txt
+akshaybhosale_basiccalculator.egg-info/dependency_links.txt
+akshaybhosale_basiccalculator.egg-info/top_level.txt
