@@ -1,0 +1,30 @@
+click
+click_logging
+flatten-dict
+ijson>=2.5
+jsonref
+ocdsextensionregistry
+ocdskit>=1.0.1
+requests
+scalpl
+xlsxwriter
+
+[:python_version < "3.12"]
+importlib_resources
+
+[:python_version < "3.7"]
+dataclasses
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+sphinx_click
+
+[test]
+coveralls
+jsonpointer
+jmespath
+openpyxl
+pytest
+pytest-cov
