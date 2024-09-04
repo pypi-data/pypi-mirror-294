@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: checkexplore-defect-package
+Version: 0.1.0
+Summary: A brief description of your package
+Author: Checkexplore
+Author-email: deepkumar.patel@checkexplore.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
