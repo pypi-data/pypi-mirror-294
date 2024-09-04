@@ -1,0 +1,12 @@
+pybashify/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybashify/cli/main.py,sha256=o82mMEuvKxTyUkefS_7cgu3fKEtBKXeGIrmEn6YjFaA,2042
+pybashify/compilation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybashify/compilation/compiler.py,sha256=pj4rY3phpukask7_2DJT2Ge5nDbJbxWsAJtSDlmrf2E,2996
+pybashify/compilation/inlines.py,sha256=lkxK6MyyB126mQxhBtxitf5Tm0XUBsA0f8CMoZpoY50,3230
+pybashify/compilation/schemas.py,sha256=qUyK9i13oyJBbZhl6re-onnTuZkoGSWmIbX4mF-DOT4,2106
+pybashify/compilation/utils.py,sha256=KlqYOlUjRoyjkbCpIAQ-FivajQw7hLySvmWW2zHSxN0,338
+pybashify-0.0.1.dist-info/METADATA,sha256=hxFjLUHzHbzFAIKy3OsjgY41V5FeWQvjhgbFmJLAN90,551
+pybashify-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pybashify-0.0.1.dist-info/entry_points.txt,sha256=x-rM1ZUyfxs3tJBss3AFqrTNhu60SsJzzCyd2gz3RKc,51
+pybashify-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pybashify-0.0.1.dist-info/RECORD,,

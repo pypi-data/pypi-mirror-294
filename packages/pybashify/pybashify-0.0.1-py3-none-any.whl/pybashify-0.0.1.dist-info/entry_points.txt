@@ -1,0 +1,2 @@
+[console_scripts]
+bashify = pybashify.cli.main:app

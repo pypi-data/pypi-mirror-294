@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: pybashify
+Version: 0.0.1
+Summary: Use Python to write bash scripts while interop w/ bash
+Author-email: Ameer Arsala <ameer.arsala03@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: astor<0.9,>=0.8.1
+Requires-Dist: numpy<3,>=2.1.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: typer<0.13,>=0.12.5
+Provides-Extra: devdeps
+Requires-Dist: black<25,>=24.8.0; extra == 'devdeps'
+Requires-Dist: hatch; extra == 'devdeps'
+Requires-Dist: pre-commit; extra == 'devdeps'
+Requires-Dist: pytest; extra == 'devdeps'
