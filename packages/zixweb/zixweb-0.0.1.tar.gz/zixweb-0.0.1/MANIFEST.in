@@ -1,0 +1,2 @@
+recursive-include zix/ *.py
+recursive-exclude zix/ *.py[cod]
