@@ -1,0 +1,2 @@
+[console_scripts]
+traefisy = traefisy.main:app

@@ -1,0 +1,11 @@
+traefisy/__init__.py,sha256=ZkJ4YFnqff5CwHnqUupPsAVatqD4aozkrh1u-iQrvMc,21
+traefisy/main.py,sha256=ichenHa73F1vZlvzo1WajBth-fXJGhFW40eKHVFlGog,5418
+traefisy/utils.py,sha256=vTGUmNdju_TjhOlPRwQ7UqinN3CApdaa3vUMPUcCK3U,1155
+traefisy/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traefisy/db/db.py,sha256=xK-b8L8Y2xMDCK2SXdoyr3ecknttyW-LyTha5Zaq0II,675
+traefisy/db/models.py,sha256=swY9p30q0MNaXP3_-kCfDZNHD0Xxg7UrxPzehOJ3QDE,932
+traefisy-0.0.2.dist-info/METADATA,sha256=EIrCKFFTRl0opuM-V16jwJ86Q9LadxK0SrHwsaVty6s,521
+traefisy-0.0.2.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+traefisy-0.0.2.dist-info/entry_points.txt,sha256=S7QOPNx9Z5SjIEHS6KyaoOxwkD7YCZT0VtgY5lAT8Sk,47
+traefisy-0.0.2.dist-info/top_level.txt,sha256=h2lWlrHSgrhE0bwDJVaw_xP4CtT_BgNlBG0iQcWlWdI,9
+traefisy-0.0.2.dist-info/RECORD,,
