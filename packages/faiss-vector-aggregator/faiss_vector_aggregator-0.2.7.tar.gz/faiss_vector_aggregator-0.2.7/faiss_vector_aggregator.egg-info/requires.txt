@@ -1,0 +1,5 @@
+faiss-cpu
+numpy
+pickle-mixin
+scikit-learn
+scipy

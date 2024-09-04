@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+faiss_vector_aggregator/__init__.py
+faiss_vector_aggregator/aggregator.py
+faiss_vector_aggregator/embedding_methods.py
+faiss_vector_aggregator/faiss_index_helpers.py
+faiss_vector_aggregator/utils.py
+faiss_vector_aggregator.egg-info/PKG-INFO
+faiss_vector_aggregator.egg-info/SOURCES.txt
+faiss_vector_aggregator.egg-info/dependency_links.txt
+faiss_vector_aggregator.egg-info/requires.txt
+faiss_vector_aggregator.egg-info/top_level.txt
