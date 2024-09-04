@@ -1,0 +1,9 @@
+swanshare/__init__.py,sha256=X-Hd1oMGygO5HDnGNOWc1FXRAkd3deeXvuNl26Puoqg,674
+swanshare/_version.py,sha256=y6cKoI--X5Ee8GIiUd7RRIwyxpXq-L-Hd4-pT7eamHE,103
+swanshare/serverextension.py,sha256=r87456CxIPm-0rgZ8vuNNcD-UPTwewvv-Y7pR4pfFnA,2000
+swanshare/nbextension/extension.js,sha256=k7mcXWSYrohW3k6kz-4I7FGgA1oFXIJKzcAj5AnAjeQ,30585
+swanshare-2.0.2.data/data/etc/jupyter/jupyter_server_config.d/swanshare.json,sha256=lcEu1RSeL_lpDHWbXClN5nhi4-4e7iW8W-EAIn_02U4,101
+swanshare-2.0.2.dist-info/METADATA,sha256=R_QxHwPGpedOkNx7QI_ec2_37FxqJSH2opsDpsZGUf8,1067
+swanshare-2.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+swanshare-2.0.2.dist-info/top_level.txt,sha256=Uc5uuz4MT-_lr3cjd_v25CEAwN0RzC0dy7Q7oicgl0M,10
+swanshare-2.0.2.dist-info/RECORD,,
