@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "funcnodes-core"
+version = "0.1.7"
+description = "core package for funcnodes"
+authors = ["Julian Kimmig <julian.kimmig@linkdlab.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+exposedfunctionality = ">=0.3.10"
+python-dotenv = "*"
+setuptools = "*"
+dill = "*"
+
+
+
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+vulture = ">=2"
+pre-commit = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.vulture]
+min_confidence = 80
+paths = ["funcnodes_core"]

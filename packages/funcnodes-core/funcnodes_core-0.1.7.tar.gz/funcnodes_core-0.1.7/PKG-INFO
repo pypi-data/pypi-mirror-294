@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: funcnodes-core
+Version: 0.1.7
+Summary: core package for funcnodes
+Author: Julian Kimmig
+Author-email: julian.kimmig@linkdlab.de
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dill
+Requires-Dist: exposedfunctionality (>=0.3.10)
+Requires-Dist: python-dotenv
+Requires-Dist: setuptools
+Description-Content-Type: text/markdown
+
+Core package for funcnodes.
+for detailed instructions go to the funcnodes repo
+
