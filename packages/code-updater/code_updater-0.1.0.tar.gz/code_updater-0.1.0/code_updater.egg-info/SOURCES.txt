@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+code_updater.egg-info/PKG-INFO
+code_updater.egg-info/SOURCES.txt
+code_updater.egg-info/dependency_links.txt
+code_updater.egg-info/entry_points.txt
+code_updater.egg-info/top_level.txt
+src/__init__.py
+src/main.py
