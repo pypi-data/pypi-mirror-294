@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+jaxili/compressor.py
+jaxili/loss.py
+jaxili/model.py
+jaxili/train.py
+jaxili/utils.py
+jaxili.egg-info/PKG-INFO
+jaxili.egg-info/SOURCES.txt
+jaxili.egg-info/dependency_links.txt
+jaxili.egg-info/requires.txt
+jaxili.egg-info/top_level.txt
+jaxili/inference/npe.py
+jaxili/inventory/func_dict.py
