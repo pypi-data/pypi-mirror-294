@@ -1,0 +1,26 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <style type="text/css">
+    
+  </style>
+</head>
+<body>
+  <main>
+    {% autoescape off %}
+    <p>{% translate "Hi there," %}</p>
+    <br/>
+    <p>{% blocktranslate %}You’ve been invited to join {{ site_name }}.{% endblocktranslate %}</p>
+    <p>{% translate "Complete your registration on the following page:" %} <a href="{{ registration_link }}">{{ registration_link }}</a></p>
+    <br/>
+    <p>{% translate "Thanks for using our site!" %}</p>
+    <p>{% blocktranslate %}The {{ site_name }} team{% endblocktranslate %}</p>
+    {% endautoescape %}
+  </main>
+</body>
+</html>
