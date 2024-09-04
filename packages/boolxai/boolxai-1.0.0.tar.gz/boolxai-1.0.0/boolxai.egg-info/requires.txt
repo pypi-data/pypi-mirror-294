@@ -1,0 +1,7 @@
+numpy==1.24.3
+scikit-learn==1.2.2
+
+[plot]
+ipython==8.12.2
+networkx==3.1
+pygraphviz==1.11
