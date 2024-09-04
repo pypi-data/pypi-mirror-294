@@ -1,0 +1,7 @@
+askari/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+askari/guardrails.py,sha256=YEQ7iuMrmo5mKK-i8e5qDDlenJHsqPAGxpuRW4bOEho,1610
+askari/policies.yaml,sha256=OFqK3XzurvQc7B_CzZKKR5KFY0dBLPReVUbg61_BWnE,171
+askari_mgasa-0.1.0.dist-info/METADATA,sha256=sCYmmdjpR4L69dK5cgS8LZrV22Be1gNQfKISdfPU8nw,300
+askari_mgasa-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+askari_mgasa-0.1.0.dist-info/top_level.txt,sha256=dN5t1zVcn7D1MTHGiJOWdMDtxkA9NAYZrsLJCjzBZj4,7
+askari_mgasa-0.1.0.dist-info/RECORD,,
