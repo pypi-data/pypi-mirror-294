@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyghidra
+Version: 0.0.0
+Summary: Ghidra Python Inteface
+Author: Ghidra Development Team
+Project-URL: Homepage, https://github.com/NationalSecurityAgency/ghidra
+Project-URL: Bug Tracker, https://github.com/NationalSecurityAgency/ghidra/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+<img src="https://raw.githubusercontent.com/NationalSecurityAgency/ghidra/master/Ghidra/Features/Base/src/main/resources/images/GHIDRA_3.png" width="400">
+
+<hr>
+
+The Official Ghidra Python Interface is currently under development.
