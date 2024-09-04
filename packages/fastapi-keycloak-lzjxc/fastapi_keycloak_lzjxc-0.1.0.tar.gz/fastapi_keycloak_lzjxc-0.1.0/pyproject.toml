@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "fastapi-keycloak-lzjxc"
+version = "0.1.0"
+description = "Almost same as the origin project by code_specialist,but fix some error for keycloak v25."
+authors = ["lzjxc <378412280@qq.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+packages = [{include = "fastapi_keycloak_lzjxc"}]
+
+[tool.poetry.dependencies]
+python = "==3.10.*"
+anyio = ">=3.4.0"
+asgiref = ">=3.4.1"
+certifi = ">=2021.10.8"
+charset-normalizer = ">=2.0.9"
+click = ">=8.0.3"
+ecdsa = ">=0.17.0"
+fastapi = ">=0.70.1"
+h11 = ">=0.12.0"
+idna = ">=3.3"
+pyasn1 = ">=0.4.8"
+pydantic = ">=1.5a1"
+python-jose = ">=3.3.0"
+requests = ">=2.26.0"
+rsa = ">=4.8"
+six = ">=1.16.0"
+sniffio = ">=1.2.0"
+starlette = ">=0.16.0"
+typing_extensions = ">=4.0.1"
+urllib3 = ">=1.26.7"
+uvicorn = ">=0.16.0"
+itsdangerous = ">=2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

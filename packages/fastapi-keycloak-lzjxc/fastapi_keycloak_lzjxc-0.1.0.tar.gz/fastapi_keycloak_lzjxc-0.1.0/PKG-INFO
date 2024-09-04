@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fastapi-keycloak-lzjxc
+Version: 0.1.0
+Summary: Almost same as the origin project by code_specialist,but fix some error for keycloak v25.
+License: Apache-2.0 license
+Author: lzjxc
+Author-email: 378412280@qq.com
+Requires-Python: ==3.10.*
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: anyio (>=3.4.0)
+Requires-Dist: asgiref (>=3.4.1)
+Requires-Dist: certifi (>=2021.10.8)
+Requires-Dist: charset-normalizer (>=2.0.9)
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: ecdsa (>=0.17.0)
+Requires-Dist: fastapi (>=0.70.1)
+Requires-Dist: h11 (>=0.12.0)
+Requires-Dist: idna (>=3.3)
+Requires-Dist: itsdangerous (>=2.0.1)
+Requires-Dist: pyasn1 (>=0.4.8)
+Requires-Dist: pydantic (>=1.5a1)
+Requires-Dist: python-jose (>=3.3.0)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: rsa (>=4.8)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: sniffio (>=1.2.0)
+Requires-Dist: starlette (>=0.16.0)
+Requires-Dist: typing_extensions (>=4.0.1)
+Requires-Dist: urllib3 (>=1.26.7)
+Requires-Dist: uvicorn (>=0.16.0)
+Description-Content-Type: text/markdown
+
+
