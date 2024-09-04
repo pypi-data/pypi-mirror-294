@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xl-storage"
+version = "0.1.7"
+authors = [
+  { name="inspirare6", email="inspirare6@163.com" },
+]
+description = "xilong storage library"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "minio==7.1.13",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inspirare6/xl-storage"
+"Bug Tracker" = "https://github.com/inspirare6/xl-storage/issues"

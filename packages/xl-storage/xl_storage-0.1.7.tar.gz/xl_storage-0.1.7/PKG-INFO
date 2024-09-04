@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xl-storage
+Version: 0.1.7
+Summary: xilong storage library
+Project-URL: Homepage, https://github.com/inspirare6/xl-storage
+Project-URL: Bug Tracker, https://github.com/inspirare6/xl-storage/issues
+Author-email: inspirare6 <inspirare6@163.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: minio==7.1.13
+Description-Content-Type: text/markdown
+
+# xl-storage
+
+XiLong storage library. 
