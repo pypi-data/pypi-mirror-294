@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/optimutils/__init__.py
+src/optimutils/utils.py
+src/optimutils.egg-info/PKG-INFO
+src/optimutils.egg-info/SOURCES.txt
+src/optimutils.egg-info/dependency_links.txt
+src/optimutils.egg-info/requires.txt
+src/optimutils.egg-info/top_level.txt
