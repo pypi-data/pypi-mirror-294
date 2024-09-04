@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0413
+
+
+"cli"
+
+
+import getpass
+import os
+import sys
+
+
+from nixt.config import Config
+
+
+Cfg = Config()
+
+
+from nixt.command import Commands
+from nixt.errors  import errors
+from nixt.main    import cmnd, enable, wrap
+from nixt.modules import face
+from nixt.parse   import parse
+from nixt.utils   import modnames
+
+
+Cfg.mod = ",".join(modnames(face))
+
+
+def srv(event):
+    "create service file (pipx)."
+    username  = getpass.getuser()
+    path = os.path.normpath(f"/home/{username}/.local/bin/")
+    txt = f"""[Unit]
+Description={Cfg.name.upper()}
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User={username}
+Group={username}
+ExecStart={path}/{Cfg.name}s
+
+[Install]
+WantedBy=network.target"""
+    event.reply(txt)
+
+
+Commands.add(srv)
+
+
+def main():
+    "main"
+    parse(Cfg, " ".join(sys.argv[1:]))
+    if "v" in Cfg.opts:
+        enable(print)
+    if Cfg.txt:
+        cmnd(Cfg.otxt, print)
+
+
+if __name__ == "__main__":
+    wrap(main)
+    errors()
