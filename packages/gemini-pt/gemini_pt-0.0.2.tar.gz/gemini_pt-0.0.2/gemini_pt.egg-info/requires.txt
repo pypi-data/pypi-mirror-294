@@ -1,0 +1,7 @@
+google-generativeai
+grpcio
+markdown2
+openai
+pdfkit
+python-dotenv
+python-nmap
