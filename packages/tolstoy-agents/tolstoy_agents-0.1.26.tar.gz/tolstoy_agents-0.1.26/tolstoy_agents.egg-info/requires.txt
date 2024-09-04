@@ -1,0 +1,9 @@
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+google-cloud-aiplatform
+langgraph==0.0.48
+langchain==0.2.15
+langchain-openai==0.1.23
+langchain-core==0.2.37
