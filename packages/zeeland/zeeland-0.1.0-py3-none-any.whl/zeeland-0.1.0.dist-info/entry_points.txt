@@ -1,0 +1,3 @@
+[console_scripts]
+zeeland=zeeland.__main__:app
+
