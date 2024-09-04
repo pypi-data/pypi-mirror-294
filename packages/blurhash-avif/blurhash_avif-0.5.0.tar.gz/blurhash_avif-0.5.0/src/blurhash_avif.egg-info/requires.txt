@@ -1,0 +1,5 @@
+numpy
+Pillow[avif]
+blurhash
+pathlib
+typing
