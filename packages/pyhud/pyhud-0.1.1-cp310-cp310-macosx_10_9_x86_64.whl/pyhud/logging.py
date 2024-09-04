@@ -1,0 +1,133 @@
+from collections import deque
+from datetime import datetime, timezone
+from logging import (
+    CRITICAL,
+    DEBUG,
+    ERROR,
+    INFO,
+    WARNING,
+    Formatter,
+    Handler,
+    Logger,
+    LoggerAdapter,
+    LogRecord,
+    StreamHandler,
+)
+from typing import (
+    TYPE_CHECKING,
+    Any,
+    List,  # noqa: F401
+    MutableMapping,
+    Tuple,
+)
+
+from .config import config
+from .schemas.events import Log
+from .schemas.requests import Logs
+from .schemas.schema import JSON  # noqa: F401
+
+
+class SendToClientHandler(Handler):
+    def __init__(
+        self,
+    ) -> None:
+        self._logs = deque(maxlen=config.logs_queue_size)  # type: deque[LogRecord]
+        super().__init__()
+
+    def get_and_clear_logs(self) -> Logs:
+        logs_count = len(self._logs)
+        logs = []  # type: List[Log]
+        while logs_count > 0:
+            logs.append(self._record_to_log_event(self._logs.popleft()))
+            logs_count -= 1
+        return Logs(logs, datetime.now(timezone.utc))
+
+    @staticmethod
+    def _record_to_log_event(log_record: LogRecord) -> "Log":
+        return Log(
+            message=log_record.getMessage(),
+            data=getattr(log_record, ExtraDataAdapter.DATA, {}),
+            timestamp=log_record.created * 1000,  # time in ms
+            level=log_record.levelname,
+            pathname=log_record.pathname,
+            lineno=log_record.lineno,
+        )
+
+    def emit(self, record: LogRecord) -> None:
+        self._logs.append(record)
+
+    def handleError(self, record: LogRecord) -> None:
+        return None
+
+
+if TYPE_CHECKING:
+    _LoggerAdapter = LoggerAdapter[Logger]
+else:
+    _LoggerAdapter = LoggerAdapter
+
+
+class ExtraDataAdapter(_LoggerAdapter):
+    DATA = "data"
+
+    def __init__(self, logger: Logger):
+        super().__init__(logger, {})
+
+    def process(
+        self, msg: Any, kwargs: MutableMapping[str, Any]
+    ) -> Tuple[Any, MutableMapping[str, Any]]:
+        extra = kwargs.get("extra", {})
+        data = kwargs.pop("data", None)
+
+        if data is not None:
+            extra[self.DATA] = data  # Add the custom data to extra
+
+        kwargs["extra"] = extra
+        return msg, kwargs
+
+
+def init_logging(logger_name: str) -> ExtraDataAdapter:
+    logger = Logger(logger_name)
+    adapter = ExtraDataAdapter(logger)
+
+    logger.propagate = False  # We don't want the internal logs to be propagated to get to the customer's loggers
+
+    logger.setLevel(DEBUG)
+    send_logs_handler.setLevel(config.log_level)
+    logger.addHandler(send_logs_handler)
+
+    if config.debug_logs:
+        handler = StreamHandler()
+        handler.setLevel(DEBUG)
+        FormatterClass = ColorFormatter if config.pretty_logs else Formatter
+        handler.setFormatter(
+            FormatterClass(
+                "{} %(asctime)s.%(msecs)03d [%(levelname)s] %(message)s".format(
+                    config.debug_prefix
+                ),
+                datefmt="%Y-%m-%d %H:%M:%S",
+            )
+        )
+
+        logger.addHandler(handler)
+
+    return adapter
+
+
+class ColorFormatter(Formatter):
+    COLORS = {
+        DEBUG: "\033[34m",  # Blue
+        INFO: "\033[32m",  # Green
+        WARNING: "\033[33m",  # Yellow
+        ERROR: "\033[31m",  # Red
+        CRITICAL: "\033[41m",  # Red background
+    }
+    RESET = "\033[0m"  # Reset color code
+
+    def format(self, record: LogRecord) -> str:
+        color = self.COLORS.get(record.levelno, self.RESET)
+
+        return "%s%s%s" % (color, super().format(record), self.RESET)
+
+
+send_logs_handler = SendToClientHandler()
+internal_logger = init_logging("pyhud.internal")
