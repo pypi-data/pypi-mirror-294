@@ -1,0 +1,5 @@
+setup.py
+funnel_ie_fields.egg-info/PKG-INFO
+funnel_ie_fields.egg-info/SOURCES.txt
+funnel_ie_fields.egg-info/dependency_links.txt
+funnel_ie_fields.egg-info/top_level.txt
