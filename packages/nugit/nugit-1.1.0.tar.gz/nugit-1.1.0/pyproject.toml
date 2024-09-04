@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nugit"
+description = "A git-hooks tool that works according to the script described in the yaml configuration file."
+authors = [{ name = "Lev Zlobin", email = "lengthylyova@gmail.com" }]
+dependencies = ["PyYAML >= 6.0.2", "Jinja2 >= 3.1.4"]
+license = {file = "LICENSE"}
+readme = "src/nugit/DESC.md"
+keywords = ["python", "git", "hook", "git-hooks"]
+classifiers = [
+  "Programming Language :: Python"
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/lengthylyova/nugit"
+Issues = "https://github.com/lengthylyova/nugit/issues"
+
+[project.scripts]
+nugit = "nugit.entrypoints:nugit"
+
+[project.optional-dependencies]
+dev = ["nugit>=1.0.2", "flake8>=7.1.1"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { attr = "nugit.__version__" }

@@ -1,0 +1,6 @@
+PyYAML>=6.0.2
+Jinja2>=3.1.4
+
+[dev]
+nugit>=1.0.2
+flake8>=7.1.1
