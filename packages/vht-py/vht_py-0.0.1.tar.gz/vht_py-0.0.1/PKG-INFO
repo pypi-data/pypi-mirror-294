@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vht-py
+Version: 0.0.1
+Summary: Video Hash Tracker
+License: GNU General Public License v3 (GPLv3)
+Project-URL: repository, https://codeberg.org/johndovern/vht-py
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loadconf
+Requires-Dist: promptx>=0.0.5
+
+# vht
+video hash tracker.
