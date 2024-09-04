@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+zix/__init__.py
+zix/__main__.py
+zix/cli.py
+zixweb.egg-info/PKG-INFO
+zixweb.egg-info/SOURCES.txt
+zixweb.egg-info/dependency_links.txt
+zixweb.egg-info/entry_points.txt
+zixweb.egg-info/requires.txt
+zixweb.egg-info/top_level.txt
