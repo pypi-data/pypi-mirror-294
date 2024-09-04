@@ -1,0 +1,15 @@
+README.md
+setup.py
+datasette_auth_passwords/__init__.py
+datasette_auth_passwords/utils.py
+datasette_auth_passwords.egg-info/PKG-INFO
+datasette_auth_passwords.egg-info/SOURCES.txt
+datasette_auth_passwords.egg-info/dependency_links.txt
+datasette_auth_passwords.egg-info/entry_points.txt
+datasette_auth_passwords.egg-info/requires.txt
+datasette_auth_passwords.egg-info/top_level.txt
+datasette_auth_passwords/templates/password_login.html
+datasette_auth_passwords/templates/password_tool.html
+tests/test_auth_passwords.py
+tests/test_command_hash_password.py
+tests/test_http_basic_auth.py
