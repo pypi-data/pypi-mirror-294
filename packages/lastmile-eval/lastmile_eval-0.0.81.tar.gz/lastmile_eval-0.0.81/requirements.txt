@@ -1,0 +1,28 @@
+# Common
+requests
+python-dotenv
+pydantic>=2.1
+result
+lastmile_utils
+
+# Evaluations dependencies
+
+evaluate>=0.4.1
+numpy<2.0.0
+arize-phoenix-evals>=0.5.0
+pandas>=2.1.2
+instructor
+openai>=1.0.0
+rouge_score
+
+# Open Telemetry
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+opentelemetry-semantic-conventions
+openinference-semantic-conventions
+
+packaging
+
+# Issue with https://github.com/googleapis/python-bigquery/issues/1908 if not explicitly installed to latest version 
+proto-plus>=1.24.0
