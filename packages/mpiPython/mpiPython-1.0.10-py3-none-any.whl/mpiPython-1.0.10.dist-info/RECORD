@@ -1,0 +1,14 @@
+mpiPython/__init__.py,sha256=SkzscoKvftUoVCAnoJjNxI6vVb_REPkSY-YiyVMLtkM,271
+mpiPython/__main__.py,sha256=hS3zjDl7eSS7J9N0vBzBEwYRqu-1ijZ7ZVOjuD_RZ64,2783
+mpiPython/check.py,sha256=WlKODkM9hf9QJf554_yupGX-fSM2G9zXJQkYEyik4Os,1935
+mpiPython/lib/extension.h,sha256=nVOC2OaSiNTA1E_KVetdhLLDp_MO4LYqOkaVq7Xn1jk,2225
+mpiPython/lib/libcode.c,sha256=K7FEO6zC59uCnA08BDwcubAlil_bMIwL1Cf3Zbn2IWc,6844
+mpiPython/mpiPython/CWrap.py,sha256=ruMfQIe1LLPtsoW3HtcdlGSI8MWcYmXJhdnEkgb-9hI,4671
+mpiPython/mpiPython/__init__.py,sha256=E2cBArvc89HyvptiGx-DfaUFfSbJG7zy7pYzTbGG4Io,272
+mpiPython/mpiPython/betampiPython.py,sha256=KgQirmESNN9Q1MMfu2thNBlJIFcRUkaZuAHg16bF2_I,5348
+mpiPython/mpiPython/mpiPython.py,sha256=7yHwE-_AC6M1bHRIvPiXJ7jbJJHsak4PdIZu3nDf9M4,11320
+mpiPython-1.0.10.dist-info/LICENSE,sha256=kShGH-7qZhqnMiUMKc3MRCSzmTmrF75zIStyNMd3Rl0,551
+mpiPython-1.0.10.dist-info/METADATA,sha256=uhlb9rfB1yDQRnfUe7vfAkT5IJbQJDyWbRl0_1Poy38,2503
+mpiPython-1.0.10.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+mpiPython-1.0.10.dist-info/top_level.txt,sha256=ruBWTsICWIbFr0FdV7vCfNWWEb5wVBiLil--A8FuYZE,10
+mpiPython-1.0.10.dist-info/RECORD,,
