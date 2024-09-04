@@ -1,0 +1,9 @@
+cmem_plugin_sparql_anything/__init__.py,sha256=W5VRiuDDCjlYyA1kD78NSIHx0QaTv5IrzOe1T3JD3_g,311
+cmem_plugin_sparql_anything/constants.py,sha256=FpjCzOh2_oR06GJzyF2SEsn12Op2_Q7DkneUHn_BXKw,1942
+cmem_plugin_sparql_anything/logo.svg,sha256=hUVm6jz8lnurIx1QbwJ9UaL2BjtRB0trNrXo5eTKTIs,13039
+cmem_plugin_sparql_anything/sparql_anything_workflow.py,sha256=a9FCe8H56f2iUvTO4JO05LLeNNIfc9A1AMUWLdXCFJo,5561
+cmem_plugin_sparql_anything/utils.py,sha256=lD7eUw8IHvbC98UY5AAJ7HSnyLZYCXBJ-WNz6ysO7VY,1334
+cmem_plugin_sparql_anything-0.0.1rc6.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_sparql_anything-0.0.1rc6.dist-info/METADATA,sha256=0qkFay040yTGZWqLiNTMIe9H8KE2jgHgbsuN_T0rcjY,1152
+cmem_plugin_sparql_anything-0.0.1rc6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cmem_plugin_sparql_anything-0.0.1rc6.dist-info/RECORD,,
