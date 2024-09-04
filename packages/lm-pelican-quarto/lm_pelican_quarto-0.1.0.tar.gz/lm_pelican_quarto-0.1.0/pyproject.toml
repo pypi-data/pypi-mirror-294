@@ -1,0 +1,131 @@
+[project]
+name = "lm-pelican-quarto"
+version = "0.1.0"
+description = "A plugin for integrating Quarto reports in your Pelican articles."
+authors = [
+    { name = "Lukas Muenter", email = "lukas.muenter@protonmail.com" },
+]
+readme = "README.md"
+keywords = [
+    "python",
+    "R",
+    "Quarto",
+    "data science",
+    "Rmarkdown",
+    "ggplot2",
+    "tidyverse",
+    "dplyr",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Framework :: Pelican",
+    "Framework :: Pelican :: Plugins",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8.1,<4.0"
+dependencies = [
+    "pelican>=4.5",
+    "pyYAML>=6.0",
+    "markdown>=3.4",
+    "beautifulsoup4>=4.0",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/lmuenter/pelican-quarto"
+"Issue Tracker" = "https://github.com/lmuenter/pelican-quarto/issues"
+Funding = "https://donate.getpelican.com/"
+
+[project.optional-dependencies]
+markdown = [
+    "markdown>=3.4",
+]
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "invoke>=2.2",
+    "ruff>=0.6.0,<0.7.0",
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-sugar>=1.0",
+]
+
+[tool.pdm.build]
+source-includes = [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+]
+includes = [
+    "pelican/plugins/lm_pelican_quarto",
+]
+excludes = [
+    "**/.DS_Store",
+    "**/test_data/**",
+    "tasks.py",
+]
+
+[tool.autopub]
+project-name = "quarto"
+git-username = "botpub"
+git-email = "52496925+botpub@users.noreply.github.com"
+append-github-contributor = true
+
+[tool.ruff.lint]
+select = [
+    "B",
+    "BLE",
+    "C4",
+    "D",
+    "E",
+    "F",
+    "I",
+    "ICN",
+    "ISC",
+    "PGH",
+    "PL",
+    "RET",
+    "RUF",
+    "SIM",
+    "T10",
+    "T20",
+    "TID",
+    "TRY",
+    "UP",
+    "W",
+    "YTT",
+]
+ignore = [
+    "D100",
+    "D104",
+    "D203",
+    "D213",
+    "ISC001",
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+known-first-party = [
+    "pelican",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
