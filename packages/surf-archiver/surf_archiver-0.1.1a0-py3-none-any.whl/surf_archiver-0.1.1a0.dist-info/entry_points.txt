@@ -1,0 +1,3 @@
+[console_scripts]
+surf-archiver=surf_archiver.cli:app
+
