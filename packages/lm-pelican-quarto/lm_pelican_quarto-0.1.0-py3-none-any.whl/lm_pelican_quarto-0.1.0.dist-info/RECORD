@@ -1,0 +1,10 @@
+lm_pelican_quarto-0.1.0.dist-info/METADATA,sha256=TT0agyyDz_dVxYoC7lD6iL8X8cDhZnZCBXn1keUvLPA,5529
+lm_pelican_quarto-0.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+lm_pelican_quarto-0.1.0.dist-info/licenses/LICENSE,sha256=TXAOZvSB9N4cGjH797h7UNhfEtt78wIe9g2CHt7-6m4,1062
+pelican/plugins/lm_pelican_quarto/__init__.py,sha256=FCtrulepDxsB2aWn6P2bxL9FHT6qz_OAEO4O4I8QKb8,50
+pelican/plugins/lm_pelican_quarto/adapters.py,sha256=NBkdfafWEjGSu0p3DuOhNreSoWPHpihDJH9zba89X5Q,1810
+pelican/plugins/lm_pelican_quarto/parsers.py,sha256=QD8FuCqfOkZ8-lqEaQrHuFUYML1XrZ04Y55viCJQ9pI,1211
+pelican/plugins/lm_pelican_quarto/quarto.py,sha256=C-U85Sk0_WtA3-aOlWXCDNbMNErtf6Sbrv7SoyIjc60,5762
+pelican/plugins/lm_pelican_quarto/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican/plugins/lm_pelican_quarto/tests/test_quarto.py,sha256=wBrts0hdn9lAfwRGXAVWg1Vp5FiiLFKaQUlraJuMFJs,2292
+lm_pelican_quarto-0.1.0.dist-info/RECORD,,
