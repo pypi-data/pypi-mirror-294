@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: mory
+Version: 0.5.0
+Home-page: https://gitlab.com/good-day-inc/mory/
+Author: Enemchy
+Author-email: dzenkir@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: prompt-toolkit
+Requires-Dist: openai
+Requires-Dist: pyyaml
+Requires-Dist: colorama
+Requires-Dist: tiktoken
+Requires-Dist: pytest
+
+# Mory Project
+
+## Описание
+
+Mory — это инструмент для сканирования, анализа и автоматизированного изменения файлов в заданной директории с использованием возможностей OpenAI GPT. Проект предоставляет возможность интеграции с git, создания конфигураций и выполнения команд через консоль.
+
+## Установка
+
+Установите пакет `mory` с помощью pip:
+
+```shell
+pip install mory
+```
+
+## Использование
+
+После установки, вы можете использовать команду `mory` для запуска приложения. 
+
+### Основные команды
+- **Сканирование директории**:
+  ```shell
+  mory scan --path <path_to_directory>
+  ```
+  Параметры:
+  - `-p, --path`: Указать путь к сканируемой директории.
+  - `-f, --save-to-file`: Сохранить результат сканирования во временную папку перед отправкой.
+  - `-s, --structure-only`: Составить только структуру проекта.
+
+- **Открыть файл конфигурации**:
+  ```shell
+  mory config
+  ```
+
+### Структура проекта
+
+```plaintext
+mory-project/
+│
+├── docs/
+│   ├── roadmap.md
+│   └── qa-gpt.md
+│
+├── templates/
+│   └── config.yml
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_run.py
+│   └── test_scan.py
+│
+├── mory/
+│   ├── __init__.py
+│   ├── chat.py
+│   ├── config_loader.py
+│   ├── conversation.py
+│   ├── git_helpers.py
+│   ├── helpers.py
+│   ├── main.py
+│   ├── scan.py
+│   └── version.py
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── setup.py
+```
+
+## Тестирование
+
+Тесты реализованы с использованием `pytest`. Для выполнения тестов используйте команду:
+
+```shell
+pytest tests
+```
+
+Это позволит запустить все тесты в директории `tests` и проверить корректность работы модулей проекта.

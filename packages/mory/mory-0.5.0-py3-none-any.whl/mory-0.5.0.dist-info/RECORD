@@ -1,0 +1,17 @@
+mory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mory/config_loader.py,sha256=5SoTvLDm_D9q4P2rkdaSOwKorkIHYYIaAYvE_PceJaI,1789
+mory/conversation.py,sha256=uv7T9b36Q_NebEOV8Ph9EMxicldDQd243745jYp_N64,7800
+mory/helpers.py,sha256=ecE3AtrxG2g-bCHqObvNFvyfIe4_yHKrGlbc8NrLzmc,2669
+mory/main.py,sha256=kLPIjWOycshdoqzv_ttzELFc9fMuxW1oTEWJC8zpTDc,4055
+mory/run_tests.py,sha256=xKBAiRfa2o9ot7jJqAmAjGwEU6VqmH-OEI1ctCa44qQ,1706
+mory/scan.py,sha256=XGXTblfmX3A1c2W4MPWMOySqJqVHEYVbs6GbOP_FVDk,6970
+mory/version.py,sha256=zGYOi0ksaBQTAT2wC3yQXnHD52TS8cxsS6v6ZxsxxSc,47
+mory/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mory/chat/complection.py,sha256=IHCSVeFiZjVGYgL6pGyhzqI7910Zq6L8PYVa3HT4ibk,1163
+mory/chat/functions.py,sha256=0RO78Tof974reHnDcaY1MvdlotBMQ9QTfTqB2kgPsd4,3444
+mory-0.5.0.dist-info/LICENSE,sha256=zz-3Bmh8b62-vpZ5c9Ue73xFJbidhVDIEfoKwoqZhkw,1064
+mory-0.5.0.dist-info/METADATA,sha256=MbkSp4S7C87IT5DXqnU0uB8rvT4MCV9ShpmRmfZONZU,3011
+mory-0.5.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+mory-0.5.0.dist-info/entry_points.txt,sha256=ej56emHtKHL0K93wgpyxKXippxtAfe3cFxjzxNZi-7M,40
+mory-0.5.0.dist-info/top_level.txt,sha256=NFfrx07BeoGB-ZcsGdHoUtQWHb4kO6EGgYHQmySg-bI,5
+mory-0.5.0.dist-info/RECORD,,
