@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: rvc_infer
+Version: 1.2.1
+Summary: Python wrapper for inference with rvc
+Home-page: https://github.com/blane187gt/rvc_infer
+Author: blane187gt
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: deemix
+Requires-Dist: fairseq
+Requires-Dist: faiss-cpu
+Requires-Dist: ffmpeg-python
+Requires-Dist: gradio
+Requires-Dist: librosa
+Requires-Dist: numpy
+Requires-Dist: audio-separator[gpu]
+Requires-Dist: scipy
+Requires-Dist: yt-dlp
+Requires-Dist: onnxruntime-gpu
+Requires-Dist: praat-parselmouth
+Requires-Dist: pedalboard
+Requires-Dist: pydub
+Requires-Dist: pyworld
+Requires-Dist: requests
+Requires-Dist: soundfile
+Requires-Dist: torch
+Requires-Dist: torchcrepe
+Requires-Dist: tqdm
+Requires-Dist: torchfcpe
+Requires-Dist: local_attention
+Requires-Dist: ffmpeg
+Requires-Dist: pyworld
+Requires-Dist: torchfcpe
+Requires-Dist: sox
+Requires-Dist: av
+Provides-Extra: all
+Requires-Dist: numba==0.56.4; extra == "all"
+Requires-Dist: edge-tts; extra == "all"
+
+
+# **RVC INFER**
+
+---
+
+A streamlined Python wrapper for inference with RVC. Specifically designed for inference tasks.
+
+---
+
+
+# how to install
+
+
+```
+pip install rvc_infer
+
+```
+
+
+
+# How to Use
+
+### download online models
+
+```
+from rvc_infer import download_online_model
+
+
+
+output = download_online_model(
+    url,
+    dir_name
+)
+
+
+print(output)
+
+
+```
+
+
+### Infernece
+
+```
+
+from rvc_infer import infer_audio
+
+
+result = infer_audio(
+    model_name,
+    audio_path,
+    f0_change=0,
+    f0_method="rmvpe+",
+    min_pitch="50",
+    max_pitch="1100",
+    crepe_hop_length=128,
+    index_rate=0.75,
+    filter_radius=3,
+    rms_mix_rate=0.25,
+    protect=0.33,
+    split_infer=False,
+    min_silence=500,
+    silence_threshold=-50,
+    seek_step=1,
+    keep_silence=100,
+    do_formant=False,
+    quefrency=0,
+    timbre=1,
+    f0_autotune=False,
+    audio_format="wav",
+    resample_sr=0,
+    hubert_model_path="hubert_base.pt",
+    rmvpe_model_path="rmvpe.pt",
+    fcpe_model_path="fcpe.pt"
+    )
+
+
+```
+
+# little note
+
+the `model_name` It will automaticly search a folder containing the pth file and index file.
