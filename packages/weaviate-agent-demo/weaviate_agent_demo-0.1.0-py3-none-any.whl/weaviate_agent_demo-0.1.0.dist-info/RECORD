@@ -1,0 +1,16 @@
+weaviate_agent_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weaviate_agent_demo/cli.py,sha256=N7-MHq4btomYa42fVeS5wsuI1Tkaam9ZQ0rPrUtvE2Y,2585
+weaviate_agent_demo/coder.py,sha256=bzGvl2JeHldLZtG-s-3MlKyXOTD4lfeEpzDcsYWVIWQ,4976
+weaviate_agent_demo/db.py,sha256=AtIZzWhVAQFM4x-Zs9pAj3WPAWZECPKxLN-d23Ei5mo,5387
+weaviate_agent_demo/db_setup/1_create_collection.py,sha256=PkgPIZPcHRFBoTab70zTu4-V8WH_FMRavfay4Ih71uU,1621
+weaviate_agent_demo/db_setup/2_import.py,sha256=FYGo-nh0pQJg4O4rbswCYnQ00m8meDViHoPm2BLr264,2202
+weaviate_agent_demo/db_setup/3_test_query.py,sha256=7p7pp8PKo4WiPiUD5TxcctGXtBfzD_ZtItK1yH1cKSg,635
+weaviate_agent_demo/db_setup/9_create_cache_collection.py,sha256=9gFqvaOpUGC8-LGZZQCtxDweHeLXQ5J-7IXJUyfQnN8,984
+weaviate_agent_demo/db_setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weaviate_agent_demo/prompts.py,sha256=VlyhKzJX_geOFMqeI61OXhpZgi87-kC4DIJenMVlMY8,5617
+weaviate_agent_demo/setup.py,sha256=3gVvM_kcr5km5ZUrbQTKq8dsj45yIiz5UuyrI33isq8,2228
+weaviate_agent_demo/tools.py,sha256=6y-6i-f7gNawYsOPb7vYOuPcuhLZefrsif0NCUNiyzY,4799
+weaviate_agent_demo/utils.py,sha256=CPJrXydySItAz6o9jPkcfG4mvWJ1axJQmUnsmrNEKTI,7347
+weaviate_agent_demo-0.1.0.dist-info/METADATA,sha256=wUrQiqDr1WmHQnUlsh_9HKkCynDrF8GcS9Cnc3DGta0,1586
+weaviate_agent_demo-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+weaviate_agent_demo-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: weaviate-agent-demo
+Version: 0.1.0
+Summary: Demo project for sometimes (poorly) generating Python code for Weaviate
+License: MIT
+Author: JP Hwang
+Author-email: me@jphwang.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: claudette (>=0.0.9,<0.0.10)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: streamlit (>=1.38.0,<2.0.0)
+Requires-Dist: weaviate-client (>=4.7.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Weaviate helper
+
+AI-powered helper app for using Weaviate, with a twist:
+
+- The app is of varying levels of intelligence and use...
+
+Try out the different CLI commands set up in `src/weaviate_agent_demo/cli.py`, or in `pyproject.toml`.
+
+e.g.:
+- ask_llm
+- ask_basic_ragbot
+- ask_ragbot_with_reformulation
+- ask_ragbot_with_tools
+- safely_ask_ragbot_with_tools
+
+## Dev setup
+
+1. Clone the repo
+1. Install dependencies with `pip install -r requirements.txt`
+1. Install locally for dev with `pip install -e . --config-settings editable_mode=strict`
+1. Clone the `weaviate-io` repo into `data` folder
+1. Run a Weaviate instance (e.g. with Docker)
+1. Run the files in `src/weaviate_agent_demo/db_setup` to ingest data
+
+## Notes:
+
+- LLM almost always refuses to decompose a query into sub-queries, regardless of how complex the query is.
+    -
+
