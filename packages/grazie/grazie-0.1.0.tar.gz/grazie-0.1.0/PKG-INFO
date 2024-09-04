@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: grazie
+Version: 0.1.0
+Summary: prepare for data manipulate use
+Author: Yue
+Author-email: panyu996@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
