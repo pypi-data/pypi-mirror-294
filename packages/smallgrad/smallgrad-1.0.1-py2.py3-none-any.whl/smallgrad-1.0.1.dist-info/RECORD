@@ -1,0 +1,10 @@
+smallgrad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smallgrad/backpropagation.py,sha256=W8VvxZxYUOJ3CB-mE9URkCN0kAW5trsTwSEFibhpsws,4279
+smallgrad/build_graph.py,sha256=DnMVn1kHSBVRlsbkBi9GdvBKEFxhVqhhunf3pwUyK60,1184
+smallgrad/neural_network.py,sha256=4WTbAjW71XUE1poxpf59bWZnJIGHeMazhrC2PU6Hgzg,1371
+smallgrad-1.0.1.dist-info/LICENSE,sha256=_DN146h5PoAi0OzoijrhKUlTIj8vHosnLQCzZNa59h0,1111
+smallgrad-1.0.1.dist-info/METADATA,sha256=t7ptrfpqG9I6NkaTyvGIfjFJGG8Wshmt5CrVPeAvi5U,2792
+smallgrad-1.0.1.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+smallgrad-1.0.1.dist-info/entry_points.txt,sha256=wgEWAEs658wFjN_BJjFDP9JH57mZr_WgHFT7gOI--u0,57
+smallgrad-1.0.1.dist-info/top_level.txt,sha256=nC7Q0xJhUA5W98_YnNd_gYjhLKp_G3vvuWalYC2rIfA,10
+smallgrad-1.0.1.dist-info/RECORD,,
