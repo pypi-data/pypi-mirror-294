@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+common_stats/__init__.py
+common_stats/statistics.py
+common_stats.egg-info/PKG-INFO
+common_stats.egg-info/SOURCES.txt
+common_stats.egg-info/dependency_links.txt
+common_stats.egg-info/requires.txt
+common_stats.egg-info/top_level.txt
+tests/__init__.py
+tests/test_statistics.py
