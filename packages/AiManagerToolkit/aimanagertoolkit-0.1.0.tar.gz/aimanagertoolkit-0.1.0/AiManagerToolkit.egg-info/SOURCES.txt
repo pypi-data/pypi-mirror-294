@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+AiManagerToolkit/__init__.py
+AiManagerToolkit/azure_sync_ai.py
+AiManagerToolkit/log.py
+AiManagerToolkit/messages.py
+AiManagerToolkit/sync_ai.py
+AiManagerToolkit/toolbox.py
+AiManagerToolkit.egg-info/PKG-INFO
+AiManagerToolkit.egg-info/SOURCES.txt
+AiManagerToolkit.egg-info/dependency_links.txt
+AiManagerToolkit.egg-info/entry_points.txt
+AiManagerToolkit.egg-info/requires.txt
+AiManagerToolkit.egg-info/top_level.txt
