@@ -1,0 +1,3 @@
+Employee ID Full Name Job Title Department Business Unit Gender Ethnicity Age Hire Date Annual Salary
+E02002 Kai Le Controls Engineer Engineering Manufacturing Male Asian 47 2/5/2022 $92,368
+E02003 Robert Patel Analyst Sales Corporate Male Asian 58 10/23/2013 $45,703

@@ -1,0 +1,3 @@
+"Can the following text be structured into a TABLE? Your answer should be just YES or No
+
+{user_input}

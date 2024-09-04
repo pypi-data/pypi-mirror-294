@@ -1,0 +1,55 @@
+{
+    "nodes": [
+        {
+            "id": 3,
+            "label": "Dry Eye"
+        },
+        {
+            "id": 12,
+            "label": "Henry Golding"
+        },
+        {
+            "id": 13,
+            "label": "Crazy Rich Asians"
+        },
+        {
+            "id": 14,
+            "label": "A Simple Favor"
+        },
+        {
+            "id": 15,
+            "label": "Last Christmas"
+        },
+        {
+            "id": 16,
+            "label": "Snake Eyes"
+        }
+    ],
+    "edges": [
+        {
+            "source": 3,
+            "target": 12,
+            "label": "Played by"
+        },
+        {
+            "source": 12,
+            "target": 13,
+            "label": "Acted in"
+        },
+        {
+            "source": 12,
+            "target": 14,
+            "label": "Acted in"
+        },
+        {
+            "source": 12,
+            "target": 15,
+            "label": "Acted in"
+        },
+        {
+            "source": 12,
+            "target": 16,
+            "label": "Acted in"
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "text": "What task do you want to perform on the table data?",
+            "response_type": "choice",
+            "choices": [
+                "Regression",
+                "Classification",
+                "Clustering",
+                "Dimensionality Reduction",
+                "Time Series Forecasting",
+                "Anomaly Detection"
+            ]
+        },
+        {
+            "pid": "a02",
+            "text": "What machine learning model can be used for Regression?",
+            "response_type": "choice",
+            "choices": [
+                "Linear Regression",
+                "Decision Tree Regressor",
+                "Random Forest Regressor",
+                "Support Vector Regressor",
+                "Neural Network Regressor"
+            ]
+        },
+        {
+            "pid": "a03",
+            "text": "What machine learning model can be used for Classification?",
+            "response_type": "choice",
+            "choices": [
+                "Logistic Regression",
+                "Decision Tree Classifier",
+                "Random Forest Classifier",
+                "Support Vector Classifier",
+                "Neural Network Classifier"
+            ]
+        },
+        {
+            "pid": "a04",
+            "text": "What machine learning model can be used for Clustering?",
+            "response_type": "choice",
+            "choices": [
+                "K-Means",
+                "Hierarchical Clustering",
+                "DBSCAN",
+                "Gaussian Mixture"
+            ]
+        },
+        {
+            "pid": "a05",
+            "text": "What machine learning model can be used for Dimensionality Reduction?",
+            "response_type": "choice",
+            "choices": [
+                "PCA (Principal Component Analysis)",
+                "LDA (Linear Discriminant Analysis)",
+                "t-SNE",
+                "UMAP"
+            ]
+        },
+        {
+            "pid": "a06",
+            "text": "What machine learning model can be used for Time Series Forecasting?",
+            "response_type": "choice",
+            "choices": [
+                "ARIMA",
+                "Prophet",
+                "LSTM (Long Short-Term Memory)",
+                "GRU (Gated Recurrent Unit)"
+            ]
+        },
+        {
+            "pid": "a07",
+            "text": "What machine learning model can be used for Anomaly Detection?",
+            "response_type": "choice",
+            "choices": [
+                "Isolation Forest",
+                "One-Class SVM",
+                "LOF (Local Outlier Factor)",
+                "Autoencoder"
+            ]
+        }
+    ],
+    "transitions": [
+        {
+            "source": "a01",
+            "target": "a02",
+            "condition": {
+                "type": "eq",
+                "arg": "Regression"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a03",
+            "condition": {
+                "type": "eq",
+                "arg": "Classification"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a04",
+            "condition": {
+                "type": "eq",
+                "arg": "Clustering"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a05",
+            "condition": {
+                "type": "eq",
+                "arg": "Dimensionality Reduction"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a06",
+            "condition": {
+                "type": "eq",
+                "arg": "Time Series Forecasting"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a07",
+            "condition": {
+                "type": "eq",
+                "arg": "Anomaly Detection"
+            }
+        }
+    ]
+}

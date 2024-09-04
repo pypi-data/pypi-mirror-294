@@ -1,0 +1,4 @@
+Create a delta part of the network starting from the node {{node}} above.
+The delta part should contain
+
+{user_input}

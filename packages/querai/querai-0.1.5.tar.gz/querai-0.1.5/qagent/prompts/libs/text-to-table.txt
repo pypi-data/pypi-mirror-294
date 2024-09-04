@@ -1,0 +1,7 @@
+Extract table structured data from the following text.
+Your answer should be a JSON dict whose keys are the columns and values are the cell's content.
+Only return the JSON data without any additional text.
+
+Text is:
+
+{user_input}

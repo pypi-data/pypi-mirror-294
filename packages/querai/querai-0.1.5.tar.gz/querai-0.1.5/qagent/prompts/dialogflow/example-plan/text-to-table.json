@@ -1,0 +1,44 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "template": "What structure can be used to represent the text?",
+            "response_type": "choice",
+            "choices": [
+                "TABLE",
+                "NETWORK"
+            ]
+        },
+        {
+            "pid": "a02",
+            "template": "@text-to-table",
+            "response_type": "dict-of-list"
+        },
+        {
+            "pid": "a03",
+            "template": "@text-to-network",
+            "response_type": "object",
+            "example": "@example/network.json"
+        },
+        {
+            "pid": "a04",
+            "template": "@table-column-partition",
+            "response_type": "list"
+        },
+        {
+            "pid": "a05",
+            "template": "@table-to-network",
+            "response_type": "object"
+        }
+    ],
+    "transitions": [
+        {
+            "source": "a01",
+            "target": "a02",
+            "condition": {
+                "type": "eq",
+                "arg": "YES"
+            }
+        }
+    ]
+}

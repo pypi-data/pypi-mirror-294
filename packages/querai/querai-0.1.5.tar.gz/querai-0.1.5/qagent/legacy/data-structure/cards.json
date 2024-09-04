@@ -1,0 +1,104 @@
+[
+  [
+    {
+      "type": "image",
+      "url": "https://www.celebritycruises.com/blog/content/uploads/2022/07/best-beaches-in-mallorca-platja-de-formentor-hero-1600x890.jpg"
+    },
+    {
+      "type": "labelgroup",
+      "items": [
+        { "text": "Label 1", "style": "plain" },
+        { "text": "Label 2", "style": "plain" }
+      ]
+    },
+
+    { "type": "header-main", "text": "Headerline" },
+    {
+      "type": "description",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+
+  [
+    { "type": "header-pre", "text": "Version 1.0" },
+    { "type": "header-main", "text": "Headerline" },
+    { "type": "description", "text": "Coming up next ..." },
+    {
+      "type": "item-row",
+      "items": [
+        { "type": "circled-text", "text": "Text", "circlecolor": "#ff0000" },
+        { "type": "circled-text", "text": "Text", "circlecolor": "#0000ff" }
+      ]
+    },
+    {
+      "type": "item-row",
+      "items": [
+        { "type": "circled-text", "text": "Text", "circlecolor": "#adbeff" },
+        { "type": "circled-text", "text": "Text", "circlecolor": "#0d00bb" }
+      ]
+    },
+    {
+      "type": "item-row",
+      "items": [
+        { "type": "circled-text", "text": "Text", "circlecolor": "#aa04b0" },
+        { "type": "circled-text", "text": "Text", "circlecolor": "#b0fd00" }
+      ]
+    }
+  ],
+  [
+    { "type": "header-main", "text": "Headerline" },
+    { "type": "header-sub", "text": "Subhead" },
+    {
+      "type": "description",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "type": "item-row",
+      "items": [
+        { "type": "button", "text": "Button 2", "style": "beach" },
+        { "type": "button", "text": "Button 1", "style": "rose" },
+        { "type": "button", "text": "Button 3", "style": "plain" }
+      ]
+    }
+  ],
+  [
+    {
+      "type": "item-row",
+      "items": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
+          "radius": 20
+        },
+        {
+          "type": "image",
+          "url": "https://friconix.com/png/fi-cnsuxx-nodejs.png",
+          "radius": 20
+        },
+        {
+          "type": "image",
+          "url": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254477/typescript-icon-md.png",
+          "radius": 20
+        }
+      ]
+    },
+    { "type": "header-main", "text": "Headerline" },
+    {
+      "type": "description",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+  [
+    { "type": "header-main", "text": "Headerline" },
+    { "type": "chart", "content": { "data": 95, "charttype": "progress" } },
+    { "type": "header-sub", "text": "Title" },
+    {
+      "type": "description",
+      "text": "Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est laborum."
+    },
+    {
+      "type": "item-row",
+      "items": [{ "type": "button", "text": "Button 3", "style": "plain" }]
+    }
+  ]
+]

@@ -1,0 +1,143 @@
+{
+    "prompts": [
+        {
+            "pid": "a01",
+            "text": "What machine learning model can be used to represent the data?",
+            "response_type": "choice",
+            "choices": [
+                "Linear Regression",
+                "Logistic Regression",
+                "Decision Tree",
+                "Random Forest",
+                "Support Vector Machine",
+                "Neural Network"
+            ]
+        },
+        {
+            "pid": "a02",
+            "text": "@linear-regression",
+            "response_type": "object",
+            "example": {
+                "model_type": "Linear Regression",
+                "parameters": {
+                    "fit_intercept": true,
+                    "normalize": false
+                }
+            }
+        },
+        {
+            "pid": "a03",
+            "text": "@logistic-regression",
+            "response_type": "object",
+            "example": {
+                "model_type": "Logistic Regression",
+                "parameters": {
+                    "C": 1.0,
+                    "penalty": "l2"
+                }
+            }
+        },
+        {
+            "pid": "a04",
+            "text": "@decision-tree",
+            "response_type": "object",
+            "example": {
+                "model_type": "Decision Tree",
+                "parameters": {
+                    "max_depth": 10,
+                    "min_samples_split": 2
+                }
+            }
+        },
+        {
+            "pid": "a05",
+            "text": "@random-forest",
+            "response_type": "object",
+            "example": {
+                "model_type": "Random Forest",
+                "parameters": {
+                    "n_estimators": 100,
+                    "max_features": "sqrt"
+                }
+            }
+        },
+        {
+            "pid": "a06",
+            "text": "@svm",
+            "response_type": "object",
+            "example": {
+                "model_type": "Support Vector Machine",
+                "parameters": {
+                    "C": 1.0,
+                    "kernel": "rbf"
+                }
+            }
+        },
+        {
+            "pid": "a07",
+            "text": "@neural-network",
+            "response_type": "object",
+            "example": {
+                "model_type": "Neural Network",
+                "parameters": {
+                    "layers": [
+                        {"type": "Dense", "units": 64, "activation": "relu"},
+                        {"type": "Dense", "units": 10, "activation": "softmax"}
+                    ],
+                    "optimizer": "adam",
+                    "loss": "categorical_crossentropy"
+                }
+            }
+        }
+    ],
+    "transitions": [
+        {
+            "source": "a01",
+            "target": "a02",
+            "condition": {
+                "type": "eq",
+                "arg": "Linear Regression"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a03",
+            "condition": {
+                "type": "eq",
+                "arg": "Logistic Regression"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a04",
+            "condition": {
+                "type": "eq",
+                "arg": "Decision Tree"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a05",
+            "condition": {
+                "type": "eq",
+                "arg": "Random Forest"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a06",
+            "condition": {
+                "type": "eq",
+                "arg": "Support Vector Machine"
+            }
+        },
+        {
+            "source": "a01",
+            "target": "a07",
+            "condition": {
+                "type": "eq",
+                "arg": "Neural Network"
+            }
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+Which columns in the table are geo names? Your answer should be a list of strings. Return empty list if no such columns exist
+
+Which columns in the table are purely numerical? Your answer should be a list of strings. Return empty list if no such columns exist
+
+Which columns in the table have date format? Your answer should be a list of strings. Return empty list if no such columns exist

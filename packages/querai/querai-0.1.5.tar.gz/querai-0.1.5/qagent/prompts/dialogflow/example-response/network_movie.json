@@ -1,0 +1,125 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "label": "Mickey Pearson"
+        },
+        {
+            "id": 2,
+            "label": "Raymond Smith"
+        },
+        {
+            "id": 3,
+            "label": "Dry Eye"
+        },
+        {
+            "id": 4,
+            "label": "Matthew Berger"
+        },
+        {
+            "id": 5,
+            "label": "Rosalind Pearson"
+        },
+        {
+            "id": 6,
+            "label": "Coach"
+        },
+        {
+            "id": 7,
+            "label": "Fletcher"
+        },
+        {
+            "id": 8,
+            "label": "Big Dave"
+        },
+        {
+            "id": 9,
+            "label": "Phuc"
+        },
+        {
+            "id": 10,
+            "label": "Lord George"
+        },
+        {
+            "id": 11,
+            "label": "Bunny"
+        }
+    ],
+    "edges": [
+        {
+            "source": 1,
+            "target": 2,
+            "label": "Employer-Employee"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "label": "Married"
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "label": "Conflict"
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "label": "Business"
+        },
+        {
+            "source": 1,
+            "target": 6,
+            "label": "Ally"
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "label": "Investigated by"
+        },
+        {
+            "source": 2,
+            "target": 6,
+            "label": "Friend"
+        },
+        {
+            "source": 3,
+            "target": 9,
+            "label": "Underling"
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "label": "Conflict"
+        },
+        {
+            "source": 3,
+            "target": 1,
+            "label": "Conflict"
+        },
+        {
+            "source": 4,
+            "target": 7,
+            "label": "Business"
+        },
+        {
+            "source": 4,
+            "target": 1,
+            "label": "Business"
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "label": "Friend"
+        },
+        {
+            "source": 6,
+            "target": 11,
+            "label": "Mentor"
+        },
+        {
+            "source": 7,
+            "target": 8,
+            "label": "Investigates for"
+        }
+    ]
+}
