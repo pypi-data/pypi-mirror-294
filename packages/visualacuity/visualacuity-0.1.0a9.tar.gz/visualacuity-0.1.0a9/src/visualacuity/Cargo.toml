@@ -1,0 +1,22 @@
+[package]
+name = "visualacuity"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib", "staticlib"]
+name = 'visualacuity'
+
+[build-dependencies]
+lalrpop = { version = "0.20.0", features = ["unicode"] }
+
+[dependencies]
+lazy_static = "1.4.0"
+regex = "1"
+itertools = "0.12.0"
+lalrpop-util = { version = "0.20.0", features = ["lexer"] }
+lru = "0.12.1"
+visualacuity_proc_macro = { path = "../visualacuity-proc-macro" }
+
+[dev-dependencies]
+test-case = "*"
