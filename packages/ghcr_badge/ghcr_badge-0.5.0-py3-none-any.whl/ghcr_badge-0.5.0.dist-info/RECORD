@@ -1,0 +1,16 @@
+ghcr_badge/__init__.py,sha256=L0sNIRDlitOWWoKUeRuqavBUaxlX1aLaaPlM9zQe9UM,125
+ghcr_badge/dicts.py,sha256=wyyPsUL_0K-dnCdyL5dWAJApd_sNPkHwOt4OLHz9Lt0,1282
+ghcr_badge/generate.py,sha256=_UKIsWQekGNWZzTJitgvGpjF8Yf7CoZ-6m0nOgizJIc,11892
+ghcr_badge/main.py,sha256=bSTISQ7SGUFyzyLF9nV4HNrP3DCdcyGR_ix_VmM_Gmw,2861
+ghcr_badge/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghcr_badge/server.py,sha256=bqJECOet_Sgh7vHNRKyXcOJkpAxVlFd5W8XEcpMiUgY,6625
+ghcr_badge/static/favicon.ico,sha256=jTva4eX_OMKKxPAte9U6EjEONcQVqyrCg-_hVqn6CRg,32038
+ghcr_badge/static/favicon.png,sha256=MxzVjSTVs18z1eGzybkz_sGElM4lvCDpZcxE_71iZ_A,28398
+ghcr_badge/svg/mark-github.svg,sha256=FIYHm_mgv-zyV0jqqywDBwdM4SIManGM2HK5DkJzoes,721
+ghcr_badge/svg/package-16.svg,sha256=tkymkRcZXai6QzNmsj-CeSs-EAurwOj4Rmti0MnamcE,540
+ghcr_badge/templates/index.j2,sha256=kA7zFLZZL3P_HhHs9OMZAReb9dcpDN2djE_B0z34z68,6796
+ghcr_badge-0.5.0.dist-info/LICENSE.txt,sha256=azp3ZdVfyc7eBxxFYn1t4c2Q30xZ1RCcxV40vsOdlL0,1049
+ghcr_badge-0.5.0.dist-info/METADATA,sha256=XIe847OpfbO8oAJb6UWWSWHyQx9IqU1Cjmt8r3cJbFM,4820
+ghcr_badge-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ghcr_badge-0.5.0.dist-info/entry_points.txt,sha256=TfJDx5fOB_OJLhENJ4gCJjfKdxKXyVGx5KtwHuWZ2wY,92
+ghcr_badge-0.5.0.dist-info/RECORD,,
