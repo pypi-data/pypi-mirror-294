@@ -1,0 +1,7 @@
+bs4
+tqdm
+google-api-python-client
+requests
+youtube-transcript-api
+selenium
+webdriver-manager
