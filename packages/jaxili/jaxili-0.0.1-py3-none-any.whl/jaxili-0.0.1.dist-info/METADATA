@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jaxili
+Version: 0.0.1
+Summary: This package provides tools to execute and implement Implicit Likelihood Inference tools in JAX.
+Author: Sacha Guerrini
+Project-URL: Repository, https://github.com/sachaguer/jaxili
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: jax
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: cmake
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-probability
+Requires-Dist: optax
+Requires-Dist: flax
+Requires-Dist: sbibm
+Requires-Dist: torch
+Requires-Dist: pytorch-lightning
+Requires-Dist: optuna
+Provides-Extra: docs
+Requires-Dist: flowMC ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: emcee ==3.1.4 ; extra == 'docs'
+Requires-Dist: chainconsumer ==0.34.0 ; extra == 'docs'
+Requires-Dist: jax-cosmo ; extra == 'docs'
+
+# JaxILI
+
+This is a package to run Neural Density Estimation using Jax.
+
+**Work is still in progress**
+
+## Installation
+
+To install the package, clone the repository and create a conda environment using `conda_env.yml`.
+
+```bash
+git clone https://github.com/sachaguer/jaxili.git
+cd jaxili
+conda env create -f conda_env.yml
+```
+
+You can then use pip to install the library in your conda environment.
+
+```bash
+conda activate jaxili
+pip install .
+```

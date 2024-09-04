@@ -1,0 +1,11 @@
+jaxili/compressor.py,sha256=yBrxAZQK-gNVpqiU_Ql6JxXJNctW_rhcWtJ75BUuZxY,660
+jaxili/loss.py,sha256=Hvc9ZLUQo4NpWHUrTZGOkHvL0z3DzACkF3jaP0U8kPI,1605
+jaxili/model.py,sha256=fVyTxwZqfMYeO6g0__-QaTiDq0NrQSZWT6RF4C3zXIs,16234
+jaxili/train.py,sha256=oAyR7IMmAXZC7-oW0b3iYs6mynSWsCojUkLQRhNIMHw,24581
+jaxili/utils.py,sha256=jtYetn1Hr4LJ9Gg90Q5zgKj7BmSBRqYwmezWNptWsVA,3396
+jaxili/inference/npe.py,sha256=D7FJhr-_12FXkHq-Iz9d4BhAK4IGVfJPFYCB0G3MymY,5818
+jaxili/inventory/func_dict.py,sha256=pBywQp-ndxHTBQ4_vI1Wwnrpo5O7EzudPYJQVdIWVqU,1310
+jaxili-0.0.1.dist-info/METADATA,sha256=AxF8hNRdJsY8fEfdev1bJymhecSIFHWT5BSc9jfpjWk,1320
+jaxili-0.0.1.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+jaxili-0.0.1.dist-info/top_level.txt,sha256=3uUMknjA8Zpfa7hFcSuX15sATQ_eVL1t35E64VdpLp8,7
+jaxili-0.0.1.dist-info/RECORD,,
