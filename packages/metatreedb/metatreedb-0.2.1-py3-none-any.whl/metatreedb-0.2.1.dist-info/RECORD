@@ -1,0 +1,13 @@
+metatree/__init__.py,sha256=mZ2GmSbsTfIjiaCiB8lJkvqDDWpkCZ4w6L6_fN0kkZw,30
+metatree/io_handler.py,sha256=e-_S7ST7FmwyiiIlQJQ39C6S_nOmpG076Md8syumysk,2184
+metatree/metatree.py,sha256=RJwtPXP5aKegvZKq7Y41HSCjOxk5jk8x8xb_OrURQX4,10664
+metatree/util.py,sha256=h2ZQNxWPppsoF3ANSUJavXAShLKpM11tfFoM3rXGqrc,471
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/simple_http_server.py,sha256=ol4MGyClpCQEipQKurYldln0XL1M-eCZ2G55QiGfLVc,807
+tests/test_metatree.py,sha256=7eiegqBLH0w9SlTGNuiEaC-7gBkVoE5CDxqIYbM1sW0,4256
+tests/test_util.py,sha256=6SVcoqk7DqvBdqFHLTAVYfXDDh-IDUbyg2B2PeQ3QZc,517
+metatreedb-0.2.1.dist-info/LICENSE,sha256=EwPwv8kFv4yhWczIQSot8XGbyKrTj1ER2bCHvgbBghk,1062
+metatreedb-0.2.1.dist-info/METADATA,sha256=BcqBZqrfbYqtReYereCvVtOdtks_yTHGqkjlGS-bmcQ,3749
+metatreedb-0.2.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+metatreedb-0.2.1.dist-info/top_level.txt,sha256=mQIEwobrU6RxYk22rIRajUUbxUNVBP9pYl98iZKj3dw,15
+metatreedb-0.2.1.dist-info/RECORD,,
