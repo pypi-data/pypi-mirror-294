@@ -1,0 +1,73 @@
+{
+    "Header": {
+        "@xmlns": "http://uri.etsi.org/03120/common/2019/10/Core",
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xmlns:common": "http://uri.etsi.org/03120/common/2016/02/Common",
+        "@xmlns:task": "http://uri.etsi.org/03120/common/2020/09/Task",
+        "SenderIdentifier": {
+            "CountryCode": "XX",
+            "UniqueIdentifier": "RECEIVER"
+        },
+        "ReceiverIdentifier": {
+            "CountryCode": "XX",
+            "UniqueIdentifier": "SENDER"
+        },
+        "TransactionIdentifier": "2004bca8-f31e-46ef-9284-e2fc0cf29325",
+        "Timestamp": "2024-09-03T12:19:59.469500+01:00",
+        "Version": {
+            "ETSIVersion": "V1.16.1",
+            "NationalProfileOwner": "XX",
+            "NationalProfileVersion": "v1.0"
+        },
+        "@xmlns:delivery": "http://uri.etsi.org/03120/common/2019/10/Delivery"
+    },
+    "Payload": {
+        "RequestPayload": {
+            "ActionRequests": {
+                "ActionRequest": [
+                    {
+                        "ActionIdentifier": 0,
+                        "DELIVER": {
+                            "Identifier": "0af9f8bf-63a7-4291-8bde-a8ae4de96388",
+                            "HI1Object": {
+                                "@xsi:type": "{http://uri.etsi.org/03120/common/2019/10/Delivery}DeliveryObject",
+                                "ObjectIdentifier": "0af9f8bf-63a7-4291-8bde-a8ae4de96388",
+                                "delivery:Reference": {
+                                    "delivery:LDID": "XX-1-234"
+                                },
+                                "delivery:Manifest": {
+                                    "delivery:Specification": {
+                                        "common:Owner": "ETSI",
+                                        "common:Name": "ManifestSpecification",
+                                        "common:Value": "TS103976"
+                                    }
+                                },
+                                "delivery:Delivery": {
+                                    "delivery:JSONData": {
+                                        "VINtoCommsIDRecords": [
+                                            {
+                                                "CommsID": {
+                                                    "IMSI": "999998585484735"
+                                                }
+                                            },
+                                            {
+                                                "CommsID": {
+                                                    "IMSI": "999994383376902"
+                                                }
+                                            },
+                                            {
+                                                "CommsID": {
+                                                    "IMSI": "999994802409201"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
