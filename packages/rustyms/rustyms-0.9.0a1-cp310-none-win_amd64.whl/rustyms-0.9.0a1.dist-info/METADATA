@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: rustyms
+Version: 0.9.0a1
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: maturin ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: numpydoc >=1, <2 ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Provides-Extra: dev
+Provides-Extra: docs
+Summary: A library to handle proteomic mass spectrometry data and match peptides to spectra.
+License: MIT OR Apache-2.0
+Requires-Python: >=3.8, <3.13
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/snijderlab/rustyms
+Project-URL: Documentation, https://rustyms.readthedocs.io/
+Project-URL: Repository, https://github.com/snijderlab/rustyms.git
+
+# Python bindings to rustyms
+
+Python bindings to the [rustyms](https://docs.rs/rustyms/) library for proteomics
+and mass spectrometry.
+
+## Full documentation
+
+The full documentation, including a quickstart guide and Python API reference is available on
+[rustyms.readthedocs.io](https://rustyms.readthedocs.io/).
+
+## Contributing and development
+
+See `CONTRIBUTING.md` for information on the development setup and how to contribute to the rustyms
+Python bindings.
+
