@@ -1,0 +1,8 @@
+cachey
+cartopy
+cf_xarray
+datashader
+matplotlib
+Pillow
+xarray
+xpublish>=0.3.0,<0.4.0
