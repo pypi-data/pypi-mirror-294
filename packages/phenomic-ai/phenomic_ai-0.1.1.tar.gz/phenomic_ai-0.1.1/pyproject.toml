@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phenomic-ai"
+version = "0.1.1"
+description = "A minimal CLI/API tool which allows you to embed .h5ad files using PAIs (Phenomic AIs) pre-trained embedding model"
+authors = [{name = "Phenomic AI", email = "sctx@phenomic.ai"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python"
+]
+dependencies = [
+    "requests"
+]
+[project.optional-dependencies]
+dev = [
+    "black", 
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["*tests*"]
+
+[project.scripts]
+pai = "pai.cli:app"
