@@ -1,0 +1,107 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geospaitial-lab-aviary"
+description = "Composable inference and postprocessing pipeline for remote sensing data"
+readme = "README.md"
+authors = [
+    {name = "Marius Maryniak", email = "marius.maryniak@w-hs.de"},
+]
+maintainers = [
+    {name = "Marius Maryniak", email = "marius.maryniak@w-hs.de"},
+]
+license = {text = "GPL-3.0"}
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dynamic = [
+    "dependencies",
+    "version",
+]
+
+[project.urls]
+Homepage = "https://github.com/geospaitial-lab/aviary"
+Documentation = "https://geospaitial-lab.github.io/aviary"
+
+[project.scripts]
+aviary = "aviary._cli.cli:app"
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+version = {attr = "aviary.__version__"}
+
+[tool.setuptools.packages]
+find = {where = ["."], include = ["aviary*"]}
+
+[tool.coverage.run]
+omit = [
+    "aviary/_cli/*",
+]
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN101",  # rule has been deprecated
+    "ANN102",  # rule has been deprecated
+    "D100",
+    "D104",
+    "D205",
+    "D212",
+    "D415",
+    "FBT001",
+    "FBT002",
+    "PLR0913",
+    "PT003",
+]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
+
+[tool.ruff.lint.per-file-ignores]
+"aviary/_cli/cli.py" = [
+    "T201",
+]
+"dev/scripts/*" = [
+    "T201",
+]
+"**/tests/*" = [
+    "D103",
+    "PLR2004",
+    "S101",
+    "SLF001",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
