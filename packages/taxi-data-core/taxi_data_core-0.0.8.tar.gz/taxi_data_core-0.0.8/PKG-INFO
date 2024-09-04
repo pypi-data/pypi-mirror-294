@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: taxi_data_core
+Version: 0.0.8
+Summary: Core modules for taxi_data funcitonality.
+Project-URL: Homepage, https://github.com/WayneBennett666/taxi-data_core
+Project-URL: Issues, https://github.com/WayneBennett666/taxi-data_core/issues
+Author-email: Wayne Bennett <wayne.bennett@live.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# taxi_data_core
+core modules used across taxi_data modules
