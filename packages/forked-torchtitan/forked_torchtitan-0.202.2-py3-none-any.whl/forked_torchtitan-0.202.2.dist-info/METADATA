@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: forked-torchtitan
+Version: 0.202.2
+Summary: A native-PyTorch library for large scale LLM training
+License: As Torchtitan is. We make it better for all of you.
+Keywords: pytorch,training,llm
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch ==2.3.0
+Requires-Dist: datasets
+Requires-Dist: blobfile
+Requires-Dist: sentencepiece
+Requires-Dist: tiktoken
+Requires-Dist: tomli >=1.1.0
+
+## A forked torchtitan from Torchtitan
+
+Good, better, best.
+
+For all.
+
+For everyone.
