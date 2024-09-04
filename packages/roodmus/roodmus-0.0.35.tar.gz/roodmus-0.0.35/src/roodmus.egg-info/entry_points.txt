@@ -1,0 +1,2 @@
+[console_scripts]
+roodmus = roodmus.cli:main

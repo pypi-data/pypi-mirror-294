@@ -1,0 +1,8 @@
+lxml_html_clean
+mdtraj
+glob2
+seaborn
+MDAnalysis
+umap-learn
+scikit-learn>=1.3
+python-parakeet==0.5.1
