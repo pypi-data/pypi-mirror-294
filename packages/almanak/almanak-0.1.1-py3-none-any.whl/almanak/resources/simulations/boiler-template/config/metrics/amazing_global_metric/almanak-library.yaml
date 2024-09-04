@@ -1,0 +1,13 @@
+name: "Amazing Global Metric"
+version: "1.0.0"
+type: "metric"
+metric_type: "global"
+author: "Almanak"
+description: ""
+license: "MIT"
+
+settings:
+  example_setting: "example_value"
+
+dependencies:
+  - "library://aave-v3:1.0.0"
