@@ -1,0 +1,10 @@
+bin/rstats.dll,sha256=HjV_ismNSIfMEEIFjmkoBgtJj0p6r64h2vSvRcWg1Ek,13824
+include/rstats.h,sha256=69i9WIH7z_cD-nNDRS459MRt75dTHGTraqRobMLteCs,14502
+lib/cmake/rstats/rstatsConfig-release.cmake,sha256=OcTStAh5vQO2J0WWC0tjcvNl2OOnlAf7saBkXuTzUPc,866
+lib/cmake/rstats/rstatsConfig.cmake,sha256=_MfrkTRmBv7IK8RmbBOldODtwsYWAmWnrcrlFQDtB0E,4189
+lib/rstats.lib,sha256=Gl5lxK4zViw0dwP7Z-CxzYiNfXa-wqo9EW8Rw6Aoxms,4632
+rstatspy.pyd,sha256=L1M6VScxbxmcnmvQD6Q_GCp_Qz7YRT1nWygqRyt8LE4,33280
+rstatspy-0.1.0.dist-info/METADATA,sha256=48BLAa_chxm8VvUH81KsNSxRDSQ-vt5DktcoKkFFJ3c,3265
+rstatspy-0.1.0.dist-info/WHEEL,sha256=XIzcHpbIqDLfGK-MjnwgN-f9iOKfcA5Xyt5tsu3kF7A,105
+rstatspy-0.1.0.dist-info/licenses/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+rstatspy-0.1.0.dist-info/RECORD,,
