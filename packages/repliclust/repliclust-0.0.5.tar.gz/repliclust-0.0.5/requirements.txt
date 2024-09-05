@@ -1,0 +1,4 @@
+numpy
+threadpoolctl
+scipy
+tqdm
