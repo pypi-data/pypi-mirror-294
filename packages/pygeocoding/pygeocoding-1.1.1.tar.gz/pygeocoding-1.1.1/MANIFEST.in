@@ -1,0 +1,2 @@
+include GeocodingX/resources/dic/*.txt
+include GeocodingX/resources/core/*.dat
