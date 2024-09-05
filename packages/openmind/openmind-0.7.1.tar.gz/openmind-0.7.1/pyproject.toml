@@ -1,0 +1,126 @@
+[project]
+name = "openmind"
+version = "0.7.1"
+description = "openMind is a magicain who takes you to experience the mystery and creativity of AI."
+readme = "README.md"
+license = { text = "木兰宽松许可证， 第2版" }
+authors = [
+  { name = "The openMind Team" }, 
+  { email = "dev@public.openmind.cn" },
+]
+dependencies = ["tqdm",
+                "sentencepiece",
+                "tokenizers",
+                "tabulate",
+                "tiktoken",
+                "setuptools == 69.5.1",
+                "openmind-hub == 0.7.1"]
+requires-python = ">= 3.8, < 3.9"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "testtools",
+    "openmind[pt-cpu]",
+    "pillow",
+    "lm_eval == 0.4.3",
+]
+
+lint = [
+    "black",
+    "ruff",
+]
+
+ci = [
+  "requests"
+]
+
+all = [
+    "openmind[pt]",
+    "openmind[ms]",
+]
+
+pt-cpu = [
+    "torch == 2.1.0",
+    "transformers >= 4.39.2",
+    "accelerate >= 0.28.0",
+    "datasets >= 2.18.0, <= 2.20.0",
+    "evaluate == 0.4.1",
+    "lm_eval == 0.4.3",
+]
+
+pt = [ 
+    "openmind[pt-cpu]",
+    "torch-npu == 2.1.0.post3",
+]
+
+ms = [
+    "mindspore == 2.3.0rc1",
+    "mindformers == 1.1.0rc1",
+]
+
+[project.urls]
+Homepage = "https://gitee.com/openmind-ai/openmind"
+Repository = "https://gitee.com/openmind-ai/openmind"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+include = [
+  "src/*"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openmind"]
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 120
+# Enables the isort rules on top of the default rules
+
+# "F401": Ignore import vilations in all `__init__.py` files.
+# "I": Ignore isort in all `__init__.py` files to avoid circle import.
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "I"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+# Sort the imports by module, independent for import style (from / import).
+force-sort-within-sections = true
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[project.scripts]
+openmind-cli = "openmind._cli.openmind_cli:main"
