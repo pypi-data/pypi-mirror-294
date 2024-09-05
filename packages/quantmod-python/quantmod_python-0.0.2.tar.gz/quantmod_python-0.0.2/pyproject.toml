@@ -1,0 +1,54 @@
+[build-system]
+requires = ["poetry-core", "setuptools", "versioneer[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantmod-python"
+dynamic = [
+    "version",
+    "dependencies",
+]
+description = "Quantmod Python Package"
+readme = "README.md"
+authors = [
+    {name = "Kannan Singaravelu, email= inquantu@outlook.com"},
+]
+license = {file = "LICENSE.txt"}
+requires-python = ">= 3.9"
+keywords=["python", "quant", "quantmod", "quantmod-python"]
+classifiers = [
+    'License :: OSI Approved :: Apache Software License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Cython',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Office/Business :: Financial',
+    'Topic :: Office/Business :: Financial :: Investment',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules', 
+]
+
+[project.urls]
+Homepage = "https://kannansingaravelu.com/"
+Documentation = "https://kannansingaravelu.com/docs/site/index.html"
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "quantmod/_version.py"
+versionfile_build = "quantmod/_version.py"
+tag_prefix = ""
+parentdir_prefix = "quantmod-"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+inquant = "quantmod:hello"
+
+# for windows
+[project.gui-scripts] 
+inquant = "quantmod:hello"
