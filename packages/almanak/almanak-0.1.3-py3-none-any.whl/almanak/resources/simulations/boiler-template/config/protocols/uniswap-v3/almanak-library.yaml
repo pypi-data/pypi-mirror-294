@@ -1,0 +1,27 @@
+name: "Uniswap V3"
+type: "protocol"
+version: "1.0.0"
+author: "Almanak"
+description: "Uniswap V3 protocol"
+license: "MIT"
+
+settings:
+  uniswap_v3_usdc_pool: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+
+supported_chains:
+  - engine: 'evm'
+    chainId: '1' # Ethereum Mainnet
+    dependencies:
+      contracts:
+        - address: "0x1f98431c8ad98523631ae4a59f267346ea31f984"
+          alias: "UniswapV3Factory"
+          abi: "file://abis/uniswap-v3-core.json"
+  - engine: 'evm'
+    chainId: '42161' # Arbitrum
+    dependencies:
+      contracts:
+        - address: "0x1f98431c8ad98523631ae4a59f267346ea31f984"
+          alias: "UniswapV3Factory"
+          abi: "file://abis/uniswap-v3-core.json"
+    settings:
+      uniswap_v3_usdc_pool: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
