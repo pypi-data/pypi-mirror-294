@@ -1,0 +1,12 @@
+include *.txt
+include *.rst
+recursive-include docs *
+include VERSION
+include hordak/migrations/*.sql
+
+# added by check_manifest.py
+include *.py
+include .coveragerc
+recursive-include hordak *.json
+recursive-include example_project *.txt
+recursive-include hordak *.html
