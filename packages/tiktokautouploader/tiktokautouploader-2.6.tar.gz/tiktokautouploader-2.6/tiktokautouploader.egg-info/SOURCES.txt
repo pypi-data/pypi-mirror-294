@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+TikTokAutoUploader/__init__.py
+TikTokAutoUploader/function.py
+tiktokautouploader/__init__.py
+tiktokautouploader/function.py
+tiktokautouploader.egg-info/PKG-INFO
+tiktokautouploader.egg-info/SOURCES.txt
+tiktokautouploader.egg-info/dependency_links.txt
+tiktokautouploader.egg-info/requires.txt
+tiktokautouploader.egg-info/top_level.txt
