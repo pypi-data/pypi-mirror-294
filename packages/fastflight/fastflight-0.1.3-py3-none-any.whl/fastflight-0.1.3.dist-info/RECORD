@@ -1,0 +1,14 @@
+fastflight/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastflight/services/__init__.py,sha256=eXuIHG8znOFEvbalI0bDgQ4EpDg2BmR2DMByOlyFtv8,263
+fastflight/services/base_data_service.py,sha256=2O9YRcElCBr-Hu5vgoEyDrdMdM1DxMMdlutj0Q0utP8,3276
+fastflight/services/base_params.py,sha256=SUG9AliMylzfcU9yCrQNlt3dN3pjAzndFyCaHbkKikE,2922
+fastflight/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastflight/utils/custom_logging.py,sha256=rHZMsIw80Z_gJW8QG7XbVi93W8-_MCh4xeG2yzgbF-Y,7846
+fastflight/utils/flight_client.py,sha256=oRJEt3HkWKiaRurnaaR6z0AiACERCj1J6QAzk7i7EHk,9780
+fastflight/utils/flight_server.py,sha256=Ujiw22CUW9NYnwGui68VhtK1E3YegVDj2yOLfTCv3KM,3717
+fastflight/utils/fastapi_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastflight/utils/fastapi_utils/api_router.py,sha256=Kon6NsYdAcCeq-Y6DRb3NhhcjPS8NTN_dmgQaTLl4pc,1780
+fastflight/utils/fastapi_utils/lifespan.py,sha256=-b78cct08W3dEZumH9nTn_dgizHkF0BtEUiI4d3uJJQ,3791
+fastflight-0.1.3.dist-info/METADATA,sha256=oTxu0I0EvJ70eEmwdROWz8cDH2pn00uE7etL5NXFpvA,1863
+fastflight-0.1.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fastflight-0.1.3.dist-info/RECORD,,
