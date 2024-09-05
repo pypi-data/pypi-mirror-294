@@ -1,0 +1,10 @@
+ruphon/__init__.py,sha256=bc9GLBtYRlq5EjsQksJ89wQbMj3kzLBAlBzokoORhqo,75
+ruphon/char_tokenizer.py,sha256=_X_VJRNNt2AVlwRNF7FMQ1nk6Mj1hlrwIT7F1xTtq7U,11306
+ruphon/ruphon.py,sha256=hjAU50V_w-kFb1RDSObAiZuJ8P8lTQ0Mxvq9qoEJZGg,5407
+ruphon/.ipynb_checkpoints/__init__-checkpoint.py,sha256=bc9GLBtYRlq5EjsQksJ89wQbMj3kzLBAlBzokoORhqo,75
+ruphon/.ipynb_checkpoints/char_tokenizer-checkpoint.py,sha256=_X_VJRNNt2AVlwRNF7FMQ1nk6Mj1hlrwIT7F1xTtq7U,11306
+ruphon/.ipynb_checkpoints/ruphon-checkpoint.py,sha256=hjAU50V_w-kFb1RDSObAiZuJ8P8lTQ0Mxvq9qoEJZGg,5407
+ruphon-1.1.dist-info/LICENSE,sha256=5-Lvu0V1MXB29EyIQ1eaAXywcY28TaT3Kv9R7IVSyoA,17529
+ruphon-1.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+ruphon-1.1.dist-info/METADATA,sha256=53d7k55aphnL2Liv2xcAWPcu7-AQm7yHm3FvXln_P6U,3784
+ruphon-1.1.dist-info/RECORD,,
