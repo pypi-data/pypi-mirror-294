@@ -1,0 +1,10 @@
+pyapi_compat_if/pkginfo.py,sha256=tgWqZTrzga8bq3PHscaxR06yIKVguExLO9D9Sjd5Y6Q,872
+pyapi_compat_if/core.cpython-312-x86_64-linux-gnu.so,sha256=sC9ELVjDImtcf-eAiNPoaTV-PJmj3MRCpLj1nqc_QMk,1377560
+pyapi_compat_if/__init__.py,sha256=Blo9iSSQXrG5RDNXRlH8EJC6qM9zuhgMY_ngxOS8JRc,857
+pyapi_compat_if/__build_num__.py,sha256=FbghRSn9sY8C4djMNpQXw_BadbbFw7rSxsf76ncWpjU,22
+pyapi_compat_if-0.0.1.10710515114.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyapi_compat_if-0.0.1.10710515114.dist-info/METADATA,sha256=rNEH5OLbew_R59Dt5Gwx9VpCgnuo7IpkEDdbOmYEv9s,443
+pyapi_compat_if-0.0.1.10710515114.dist-info/top_level.txt,sha256=LL2FIWC5PbSuIxey1_K8sLK3AvzJW7f1xG9FMlLbeFk,16
+pyapi_compat_if-0.0.1.10710515114.dist-info/RECORD,,
+pyapi_compat_if-0.0.1.10710515114.dist-info/WHEEL,sha256=k6DjFtIx3Ebsbp4TgYuUti6B7G4MQO0WB0VrsD0bRRw,224
+pyapi_compat_if-0.0.1.10710515114.dist-info/entry_points.txt,sha256=XFofdFbguPz7vMcapy2zLZNDE4O40Mnh0-o74pXzeOY,65
