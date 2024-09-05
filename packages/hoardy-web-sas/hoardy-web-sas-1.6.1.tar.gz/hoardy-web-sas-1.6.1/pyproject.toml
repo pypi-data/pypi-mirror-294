@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "hoardy-web-sas"
+version = "1.6.1"
+authors = [{ name = "Jan Malakhovski", email = "oxij@oxij.org" }]
+description = "A very simple archiving server for the `Hoardy-Web` WebExtension"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: System :: Archiving",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Archiving :: Mirroring",
+    "Topic :: System :: Logging",
+    "Topic :: Internet :: Log Analysis",
+    "Operating System :: POSIX",
+    "Environment :: Console",
+]
+keywords = [
+    "HTTP", "HTTPS",
+    "web", "archive", "download",
+    "wayback", "wayback machine",
+    "download",
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+requires-python = ">=3.7"
+[project.optional-dependencies]
+cbor = ["cbor2"]
+[project.urls]
+"Homepage" = "https://oxij.org/software/hoardy-web/"
+"GitHub" = "https://github.com/Own-Data-Privateer/hoardy-web"
+"Support Development" = "https://oxij.org/#support"
+[project.scripts]
+hoardy-web-sas = "hoardy_web_sas:main"
+pwebarc-dumb-dump-server = "hoardy_web_sas:main"

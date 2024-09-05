@@ -1,0 +1,3 @@
+[console_scripts]
+hoardy-web-sas = hoardy_web_sas:main
+pwebarc-dumb-dump-server = hoardy_web_sas:main
