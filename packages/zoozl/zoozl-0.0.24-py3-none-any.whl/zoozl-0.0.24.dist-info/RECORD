@@ -1,0 +1,17 @@
+zoozl/__init__.py,sha256=MUWRBXQYlCF40ylSzdXHGS9vb92gl4atebEDIkTNKjA,78
+zoozl/__main__.py,sha256=K9Ii_UbebiVEYhLaw8Niys1bksmbagKLF_3l7pYVi-I,968
+zoozl/server.py,sha256=DEtbfyHIVB2baIShJY5hMm6i7SLLFU-ly6Is0oE4ToM,4055
+zoozl/websocket.py,sha256=plsaCyZgF0RPUWhPcnlge9xZ6jVCVomIaPu9Qqd7hBo,3081
+zoozl/chatbot/__init__.py,sha256=xQbrRWNPSy2AuzwFOsh8ZH-fpgKU79N1jR2TfmFlVjs,479
+zoozl/chatbot/api.py,sha256=B8swV3LggEEf9EY-OerBQEcyhqdYIz7WZ0HQZ1M2baw,4250
+zoozl/chatbot/embeddings.py,sha256=rZD-CrZfu_xF8B6MSwKrdJwvHAYPR_parjeAIlCdonY,2538
+zoozl/chatbot/interface.py,sha256=ecoF3_TfPTRf2HXL1_3_QxRT_79NMY28U-1zxPvzgJQ,8908
+zoozl/plugins/greeter.py,sha256=_A2zJqsc9pZN-O_mwNcVMgwGZjYVYwv2v8LPRYFlv1s,613
+zoozl/plugins/helpers.py,sha256=dgt0uTXaTT27FFrmnf_HDnJz7UxwyZDvGJvhiPqh0XM,3814
+zoozl/tests/__init__.py,sha256=2NdHDIOwiIJ9BLLoN5-O0SIs8wp0XLyzcciMYItClcs,157
+zoozl/tests/unittest_fm.py,sha256=myXEZbF7YQKMFY42bzjVBeLpEXVj31fUc4Rtyne-rE0,3177
+zoozl-0.0.24.dist-info/LICENSE,sha256=1HBxnHlhfO_4Izb7ZhucavwsD9g4IBOn0nJbXXL-V5U,1513
+zoozl-0.0.24.dist-info/METADATA,sha256=lFrcujqTnbwIVIwx8MhLXaMB6a24HxVzQgwzS_svgmQ,2544
+zoozl-0.0.24.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+zoozl-0.0.24.dist-info/top_level.txt,sha256=8oMjuTU-WgyyrOePtAJ5ii9-YDLI0qrMkHBRsWZAnJA,6
+zoozl-0.0.24.dist-info/RECORD,,
