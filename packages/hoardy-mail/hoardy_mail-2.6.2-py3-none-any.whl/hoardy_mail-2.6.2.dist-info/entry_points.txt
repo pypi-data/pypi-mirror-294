@@ -1,0 +1,3 @@
+[console_scripts]
+hoardy-mail = hoardy_mail.__main__:main
+imaparms = hoardy_mail.__main__:main
