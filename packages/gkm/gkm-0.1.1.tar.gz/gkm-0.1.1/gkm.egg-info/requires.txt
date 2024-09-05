@@ -1,0 +1,6 @@
+numpy
+scipy>=1.11
+scikit-learn
+
+[dev]
+pytest>=7.3.1
