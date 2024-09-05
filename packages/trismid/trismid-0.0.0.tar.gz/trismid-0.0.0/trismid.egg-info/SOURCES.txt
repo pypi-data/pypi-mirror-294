@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+trismid/__init__.py
+trismid/trismid.py
+trismid.egg-info/PKG-INFO
+trismid.egg-info/SOURCES.txt
+trismid.egg-info/dependency_links.txt
+trismid.egg-info/requires.txt
+trismid.egg-info/top_level.txt
+trismid.egg-info/zip-safe

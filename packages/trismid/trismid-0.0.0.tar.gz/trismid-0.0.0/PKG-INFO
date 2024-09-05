@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: trismid
+Version: 0.0.0
+Summary: Triton Inference Server middleware APIs.
+Home-page: https://github.com/hieupth/trismid
+Author: Hieu Pham
+Author-email: 64821726+hieupth@users.noreply.github.com
+License: GNU AGPL v3.0
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pinecore
+
+# Triton Inference Server Middleware
+Simple middleware that serve APIs for Triton Inference Server.
+## License
+[GNU AGPL v3.0](LICENSE).<br>
+Copyright &copy; 2024 [Hieu Pham](https://github.com/hieupth). All rights reserved.
