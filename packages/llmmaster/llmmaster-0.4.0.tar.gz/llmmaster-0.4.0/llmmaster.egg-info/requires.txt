@@ -1,0 +1,10 @@
+anthropic>=0.34.1
+google-generativeai>=0.7.2
+groq>=0.10.0
+openai>=1.43.0
+pillow>=9.5.0
+elevenlabs>=1.7.0
+
+[dev]
+pytest>=6.0
+flake8>=6.0
