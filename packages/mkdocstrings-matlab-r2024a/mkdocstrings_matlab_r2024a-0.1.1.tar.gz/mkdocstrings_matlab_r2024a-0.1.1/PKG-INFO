@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: mkdocstrings-matlab-r2024a
+Version: 0.1.1
+Summary: Add your description here
+Author-email: Mark Shui Hu <watermarkhu@gmail.com>
+Requires-Python: <3.12,>=3.9
+Requires-Dist: matlabengine==24.1.2
+Description-Content-Type: text/markdown
+
+# mkdocstrings-matlab-r2024a
+
+Describe your project here.
