@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nakdimon-ort
+Version: 0.1.3
+Summary: Hebrew diacritics in onnxruntime
+Author: thewh1teagle
+Description-Content-Type: text/markdown
+Requires-Dist: onnxruntime>=1.0
+Requires-Dist: twine ; extra == "build"
+Requires-Dist: build ; extra == "build"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: pytest ; extra == "test"
+Project-URL: home, https://github.com/thewh1teagle/nakdimon-ort
+Provides-Extra: build
+Provides-Extra: dev
+Provides-Extra: test
+
+# nakdimon-ort
+
+[`nakdimon`](https://github.com/elazarg/nakdimon) diacritizer with onnxruntime
+
+## Setup
+
+```console
+pip install nakdimon-ort
+```
+
+You also need [`nakdimon.onnx`](https://github.com/thewh1teagle/nakdimon-ort/releases/download/v0.1.0/nakdimon.onnx). Please see [examples](examples).
+
+## Examples
+
+See [examples](examples)
+
+## Credits
+
+Thanks for [elazarg](https://github.com/elazarg) for creating [nakdimon](https://github.com/elazarg/nakdimon) model!
+
