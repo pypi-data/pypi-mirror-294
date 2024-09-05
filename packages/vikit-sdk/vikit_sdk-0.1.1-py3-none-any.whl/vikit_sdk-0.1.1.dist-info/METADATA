@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: vikit-sdk
+Version: 0.1.1
+Summary: 
+Author: Jean-Francois Macresy
+Author-email: jeanfrancois.macresy@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (==24.1.0)
+Requires-Dist: aiohttp (==3.9.5)
+Requires-Dist: loguru (==0.7.2)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: opencv-python (==4.10.0.84)
+Requires-Dist: pandas (==2.2.2)
+Requires-Dist: pydantic (==2.7.4)
+Requires-Dist: pysrt (==1.1.2)
+Requires-Dist: pytest (==8.1.1)
+Requires-Dist: pytest-asyncio (==0.23.7)
+Requires-Dist: pytest-cov (==5.0.0)
+Requires-Dist: pytest-xdist (==3.6.1)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: replicate (==0.24.0)
+Requires-Dist: tenacity (==8.2.3)
+Requires-Dist: typing_extensions (==4.12.2)
+Description-Content-Type: text/markdown
+
+
