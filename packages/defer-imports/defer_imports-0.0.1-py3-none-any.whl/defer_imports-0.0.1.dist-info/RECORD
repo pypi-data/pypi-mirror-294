@@ -1,0 +1,11 @@
+defer_imports/__init__.py,sha256=QQsO2S1Ym4j63sBNMVx53I_6pfDwcDoiTQsfo9jIkyg,536
+defer_imports/__main__.py,sha256=Q2EisvOVokjUuvIiaEzAvDpWBEkJNTNIQfAtTuQt6m8,241
+defer_imports/_console.py,sha256=UsBIG9mVhy2YOqR-cZAltUuzoIsHiLtxlcwjhuxMGFo,1580
+defer_imports/_core.py,sha256=GioVWo56sE-Xju8IM28hSuSbjjVMlnRO6I7qOdlOoqE,27587
+defer_imports/_typing.py,sha256=Wg11_YfMJEE99vzIrZldkmJgcES3yrggNLFbs3u4X0M,2737
+defer_imports/_typing.pyi,sha256=uMwBnLIFsj_6BTNFEP-EPsQ0jMLXjZIYhu30pydtU6c,672
+defer_imports/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+defer_imports-0.0.1.dist-info/METADATA,sha256=CKdUxY9uVRd_GvMkYKN6q0Wa4XrIldbaI59Dq5G3e1Y,12493
+defer_imports-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+defer_imports-0.0.1.dist-info/licenses/LICENSE,sha256=nGFjLEf4bTF1ufzAIBDGVfBbidO5h-y_IYbRqagHqo0,1080
+defer_imports-0.0.1.dist-info/RECORD,,
