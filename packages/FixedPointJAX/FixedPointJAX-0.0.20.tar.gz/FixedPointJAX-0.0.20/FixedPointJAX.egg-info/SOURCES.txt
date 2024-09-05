@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+FixedPointJAX/FixedPointJAX.py
+FixedPointJAX/__init__.py
+FixedPointJAX.egg-info/PKG-INFO
+FixedPointJAX.egg-info/SOURCES.txt
+FixedPointJAX.egg-info/dependency_links.txt
+FixedPointJAX.egg-info/requires.txt
+FixedPointJAX.egg-info/top_level.txt
+tests/test.py
