@@ -1,0 +1,10 @@
+json_repair/__init__.py,sha256=IIzSm1DsCRrr8seF3UeMZXwxcq-tE3j-8d1WBxvEJvE,178
+json_repair/__main__.py,sha256=EsJb-y89uZEvGQQg1GdIDWzfDwfOMvVekKEtdguQXCM,67
+json_repair/json_repair.py,sha256=hltJ3Qa4qFbUD3mVKkYvFWksnCcIZqx8zamKfBpjeNs,33538
+json_repair/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_repair-0.29.0.dist-info/LICENSE,sha256=wrjQo8MhNrNCicXtMe3MHmS-fx8AmQk1ue8AQwiiFV8,1076
+json_repair-0.29.0.dist-info/METADATA,sha256=yh0EJo-I1u0R6X-Gq9ETz0WbgmuGIhzR7Icw9W4Kee0,9630
+json_repair-0.29.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+json_repair-0.29.0.dist-info/entry_points.txt,sha256=SNfge3zPSP-ASqriYU9r3NAPaXdseYr7ciPMKdV2uSw,57
+json_repair-0.29.0.dist-info/top_level.txt,sha256=7-VZwZN2CgB_n0NlSLk-rEUFh8ug21lESbsblOYuZqw,12
+json_repair-0.29.0.dist-info/RECORD,,
