@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tecton_parallel_retrieval
+Version: 0.1.0b6
+Summary: [private preview] Parallel feature retrieval for Tecton
+Home-page: https://tecton.ai
+Author: Tecton
+License: Apache License 2.0
+Requires-Python: >=3.7
+Requires-Dist: tecton>=0.9
+Provides-Extra: spark
+Requires-Dist: databricks-sdk; extra == "spark"
+Requires-Dist: pyspark; extra == "spark"
+
