@@ -1,0 +1,8 @@
+mb_annotation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mb_annotation/bounding_box.py,sha256=6Lr1q-qqPVpWh2tbl7OZP8Xj3baKyYUEg8G5jqFBxPI,2403
+mb_annotation/utils.py,sha256=eKf991khIiEY2ZVR-FcgcvaHG5_v1VOBgXrQuydfkaE,416
+mb_annotation/version.py,sha256=ha53i-H9pE-crufFttUECgXHwPvam07zMKzApUts1Gs,206
+mb_annotaion-1.0.1.dist-info/METADATA,sha256=68obeq-lxAYKdIiOnTyu4bAvr2qWy7KIoldBz2UHCgk,176
+mb_annotaion-1.0.1.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+mb_annotaion-1.0.1.dist-info/top_level.txt,sha256=9RnzO_lhtz_xZJmzDG-K94Uoa_qAAXcaoh1jRpDKDzM,14
+mb_annotaion-1.0.1.dist-info/RECORD,,
