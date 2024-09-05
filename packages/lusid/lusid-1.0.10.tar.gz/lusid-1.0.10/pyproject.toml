@@ -1,0 +1,22 @@
+[project]
+name = "lusid"
+version = "1.0.10"
+authors = [
+  { name = "Yev Barkalov", email = "yev@lsd.so" },
+]
+description = "Self-hosted iMessage client (Twilio with blue bubbles)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+]
+dependencies = [
+    "openpyxl >= 3.1.3",
+    "pytz >= 2024.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/yevbar/lusid"
+Issues = "https://github.com/yevbar/lusid/issues"
