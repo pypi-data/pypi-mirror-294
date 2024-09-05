@@ -1,0 +1,15 @@
+include License.txt
+include README.rst
+recursive-include django_reportbroD/static *
+recursive-include django_reportbroD/templates *
+recursive-include django_reportbroD/locale *
+include django_reportbroD/admin.py
+include django_reportbroD/apps.py
+include django_reportbroD/base.py
+include django_reportbroD/forms.py
+include django_reportbroD/menus.py
+include django_reportbroD/models.py
+include django_reportbroD/reportcore.py
+include django_reportbroD/urls.py
+include django_reportbroD/utils.py
+include django_reportbroD/views.py
