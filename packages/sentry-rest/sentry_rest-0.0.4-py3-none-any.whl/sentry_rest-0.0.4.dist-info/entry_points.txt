@@ -1,0 +1,3 @@
+[console_scripts]
+script_name=your_package.a_file:a_method
+
