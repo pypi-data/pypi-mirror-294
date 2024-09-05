@@ -1,0 +1,33 @@
+[project]
+name = "riotmanifest"
+version = "1.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Virace", email = "Virace@aliyun.com" }
+]
+dependencies = [
+    "loguru>=0.7.2",
+    "pyzstd>=0.16.1",
+    "requests>=2.32.3",
+    "aiohttp>=3.10.5",
+    "league-tools>=0.2.3",
+]
+readme = "README.md"
+license = "GPL-3.0"
+requires-python = ">= 3.8"
+homepage = "https://github.com/Virace/RiotManifest"
+repository = "https://github.com/Virace/RiotManifest"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/riotmanifest"]
