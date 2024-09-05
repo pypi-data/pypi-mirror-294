@@ -1,0 +1,13 @@
+fintechff_indicator/__init__.py,sha256=hwVv1Kxo2jJXe1eu58T4YkNC3YcklsVpLpTsP3boMKY,160
+fintechff_indicator/feeds/MyFeed.py,sha256=JKZ0zdMyB98Nq8BFK1Jg7gRFJpFqf_QqoU48Qp6wjKk,1714
+fintechff_indicator/feeds/MyLiveFeed.py,sha256=gTnQ8gM5cClfSI_mGJCmvQv9DDYb8-di5zSc79Rtc74,2668
+fintechff_indicator/feeds/__init__.py,sha256=N06CyvC7JLfgrhz_zr09E8yuDELPmUY7riOy1fEVLtI,139
+fintechff_indicator/indicators/LongTermDirection.py,sha256=wnRQtuTShr8af9TWa8xDBT049PNFJtvaHGjak7wVRec,1971
+fintechff_indicator/indicators/ShortTermDirection.py,sha256=okadm-5pOdZhFVRdPm0DCIG_vlcTQd1IGUXIdkljNlI,1980
+fintechff_indicator/indicators/TradeAction.py,sha256=3OTaG0gTOXV1CuCFqg6hyuZB8HOtoVTB_URn2A7m31o,1955
+fintechff_indicator/indicators/__init__.py,sha256=cbqxEBAKmqV6S8jZUPukVMOZZL-9voav_4zaW2OTPOw,251
+fintechff_indicator-0.7.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fintechff_indicator-0.7.0.dist-info/METADATA,sha256=GsEwXSrzjiJ1n-FuFQnfmxzUKW2PWt-RV_N-439QddA,545
+fintechff_indicator-0.7.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+fintechff_indicator-0.7.0.dist-info/top_level.txt,sha256=iLjGnJIWgGiZfyHwItImgVlzDhlUw54LPlG7G1OC1s8,20
+fintechff_indicator-0.7.0.dist-info/RECORD,,
