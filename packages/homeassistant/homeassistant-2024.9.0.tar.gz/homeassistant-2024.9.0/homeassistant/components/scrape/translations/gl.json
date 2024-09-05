@@ -1,0 +1,11 @@
+{
+    "config": {
+        "step": {
+            "sensor": {
+                "data": {
+                    "value_template": "Modelo de valor"
+                }
+            }
+        }
+    }
+}

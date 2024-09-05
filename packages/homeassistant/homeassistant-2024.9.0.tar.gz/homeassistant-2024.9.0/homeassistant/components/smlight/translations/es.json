@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Contrase\u00f1a",
+                    "username": "Nombre de usuario"
+                },
+                "description": "Por favor, introduce el nombre de usuario y la contrase\u00f1a"
+            },
+            "confirm_discovery": {
+                "description": "\u00bfQuieres configurar SMLIGHT en {host}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "El nombre de host o la direcci\u00f3n IP del dispositivo SMLIGHT SLZB-06x"
+                },
+                "description": "Configurar la integraci\u00f3n SMLIGHT Zigbee"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "core_temperature": {
+                "name": "Temperatura del chip del n\u00facleo"
+            },
+            "fs_usage": {
+                "name": "Uso del sistema de archivos"
+            },
+            "ram_usage": {
+                "name": "Uso de RAM"
+            },
+            "zigbee_temperature": {
+                "name": "Temperatura del chip Zigbee"
+            }
+        }
+    }
+}
