@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DIYables_MicroPython_DS18X20/DIYables_MicroPython_DS18X20.py
+DIYables_MicroPython_DS18X20/__init__.py
+DIYables_MicroPython_DS18X20.egg-info/PKG-INFO
+DIYables_MicroPython_DS18X20.egg-info/SOURCES.txt
+DIYables_MicroPython_DS18X20.egg-info/dependency_links.txt
+DIYables_MicroPython_DS18X20.egg-info/top_level.txt
+examples/main.py
