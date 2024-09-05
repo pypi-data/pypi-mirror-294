@@ -1,0 +1,17 @@
+numpy
+PySide6
+pyopengl
+pyqtgraph
+pint
+scipy
+niscope
+nisyscfg
+nidaqmx
+fastapi
+uvicorn
+
+[:python_version < "3.11"]
+importlib-metadata
+
+[dev]
+pytest
