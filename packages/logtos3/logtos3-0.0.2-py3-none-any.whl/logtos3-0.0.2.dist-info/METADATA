@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: logtos3
+Version: 0.0.2
+Summary: PYPI tutorial package creation written by Terry
+Home-page: https://www.linkedin.com/in/tae-ung-hwang-790014221/
+Author: taeung28
+Author-email: taeung28@gmail.com
+Keywords: terry,log,s3,log2s3,logtos3,pypi
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: boto3
+Requires-Dist: pandas
+
