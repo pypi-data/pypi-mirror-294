@@ -1,0 +1,9 @@
+digfemig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digfemig/collector.py,sha256=viuaGvWNqkemI2rT1M7VFTlccz2LROlh4yrix0CP14g,2300
+digfemig/login.py,sha256=ArZrsXKavCfy4Zeu0VZBLRWeu8MhM1D6VW40voImIaw,2613
+digfemig/main.py,sha256=wBiBGHVGwR_zuHlc5lag6dHM6xqCj7MYjRK51EXZ5mI,1335
+digfemig-0.0.4.dist-info/METADATA,sha256=8Eg8t-Lo7MCFDh4qlhIlAnRdMHMMvry0PJBWXccL2vc,893
+digfemig-0.0.4.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+digfemig-0.0.4.dist-info/entry_points.txt,sha256=zympJfObOBQurRVWcjQqL1yPEaZydR8z1r_r9SGGZ4o,48
+digfemig-0.0.4.dist-info/top_level.txt,sha256=MAc8ZeMT6jTqQExu-0iSjvyXCH10Sds6NnFSCAaXMvc,9
+digfemig-0.0.4.dist-info/RECORD,,
