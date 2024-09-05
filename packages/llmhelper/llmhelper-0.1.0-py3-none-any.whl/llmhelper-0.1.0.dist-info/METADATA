@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: llmhelper
+Version: 0.1.0
+Summary: LLM helper library.
+Author: Zhou WangJie
+Maintainer: Zhou WangJie
+License: Apache License
+Keywords: llm,llmhelper
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: openai
+Requires-Dist: zenutils
+
+# llmhelper
+
+LLM helper library.
+
+## 安装
+
+```shell
+pip install llmhelper
+```
+
+## 版本记录
+
+### v0.1.0
+
+- 版本首发。
+
