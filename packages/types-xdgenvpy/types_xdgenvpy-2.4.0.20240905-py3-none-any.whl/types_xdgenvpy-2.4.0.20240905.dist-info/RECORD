@@ -1,0 +1,9 @@
+xdgenvpy-stubs/METADATA.toml,sha256=6Qyn42caYFI0IjPL8ea_Hs8q1S7rjwJnCJJsZWOJrGo,87
+xdgenvpy-stubs/__init__.pyi,sha256=Ri2uCbd2X8d1b7zfwWKpEDNuCzuzX6Ftw8-A1yJoohc,162
+xdgenvpy-stubs/_defaults.pyi,sha256=W47LDw-VNJds-mEeP8ZrnBV6bFLOUhl--JP0oFK4ZeU,239
+xdgenvpy-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdgenvpy-stubs/xdgenv.pyi,sha256=qiQRY43OpqtNilncovWQjwGMCnZE5eWsr_KAxr2edGA,962
+types_xdgenvpy-2.4.0.20240905.dist-info/METADATA,sha256=s3oQvOR0CvhADy5fTCUWEeSIAiwfmYxNj65nkWiOr0s,1659
+types_xdgenvpy-2.4.0.20240905.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+types_xdgenvpy-2.4.0.20240905.dist-info/top_level.txt,sha256=LyahySaDvWXAo--zbubvXBMcB9YVo46Q3aa2N40Fftw,15
+types_xdgenvpy-2.4.0.20240905.dist-info/RECORD,,
