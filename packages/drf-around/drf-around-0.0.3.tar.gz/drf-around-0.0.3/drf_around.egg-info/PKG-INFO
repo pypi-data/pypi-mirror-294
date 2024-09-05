@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: drf-around
+Version: 0.0.3
+Summary: A helper for small features that your project needs.
+Author: iamkorniichuk
+Author-email: iamkorniichuk@gmail.com
+Project-URL: Source, https://github.com/iamkorniichuk/drf-around
+Project-URL: Tracker, https://github.com/iamkorniichuk/drf-around/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# DRF Around
+
+A helper for small features that your project needs.
+
+## Installation
+
+```
+pip install drf-around
+```
