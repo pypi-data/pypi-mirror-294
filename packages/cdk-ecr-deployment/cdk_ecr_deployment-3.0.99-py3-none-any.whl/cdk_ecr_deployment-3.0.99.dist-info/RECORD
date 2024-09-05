@@ -1,0 +1,10 @@
+cdk_ecr_deployment/__init__.py,sha256=XOwKHyv2upH5dnSBvfseIpOK8R9YWt3Tbds2W4TElY8,29152
+cdk_ecr_deployment/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_ecr_deployment/_jsii/__init__.py,sha256=n-R68f_K29N1eGE8sKmg8-wMtFDPbw9Fra3I3o5Wrjk,1462
+cdk_ecr_deployment/_jsii/cdk-ecr-deployment@3.0.99.jsii.tgz,sha256=i_l4mq2InCemF5R_DQ-FdND-fUprGA19ieKgUg-NmRQ,1459017
+cdk_ecr_deployment-3.0.99.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_ecr_deployment-3.0.99.dist-info/METADATA,sha256=RG3jq-Kpf3x4FErlOivtIcsi4rbhDnNIUbV-SwaefmE,5046
+cdk_ecr_deployment-3.0.99.dist-info/NOTICE,sha256=JTKhdhElXAS_opmQ8-EILC0Yf4Y_b7-RVUUAwHrTVH8,86
+cdk_ecr_deployment-3.0.99.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+cdk_ecr_deployment-3.0.99.dist-info/top_level.txt,sha256=QvscMLiAD1xku_GKJDuBOI4o0HNZ4SSPNlhAJcBSg9Y,19
+cdk_ecr_deployment-3.0.99.dist-info/RECORD,,
