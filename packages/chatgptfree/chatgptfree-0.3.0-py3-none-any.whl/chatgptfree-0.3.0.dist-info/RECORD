@@ -1,0 +1,8 @@
+chatgptfree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgptfree/chatgptfree.py,sha256=Z0qwuQ1xiubSCXBqvST37MJZUx5i_G3XhmneGY3oBSg,2167
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_myfunctions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgptfree-0.3.0.dist-info/METADATA,sha256=SLfzKyxgJM-418cqeGLbgfX49RQzfv-UWzUh58TD9aw,138
+chatgptfree-0.3.0.dist-info/WHEEL,sha256=nCVcAvsfA9TDtwGwhYaRrlPhTLV9m-Ga6mdyDtuwK18,91
+chatgptfree-0.3.0.dist-info/top_level.txt,sha256=IQ3l7F1Wk5gg8nfb8zNg09TvmhHdSyZYek9KDFiGfwM,18
+chatgptfree-0.3.0.dist-info/RECORD,,
