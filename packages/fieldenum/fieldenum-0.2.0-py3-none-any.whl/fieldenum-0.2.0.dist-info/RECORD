@@ -1,0 +1,9 @@
+fieldenum/__init__.py,sha256=-V9UQvmHWkrIgIGBEphgb_JnBnp7yeeL-My4drz6h7s,191
+fieldenum/_fieldenum.py,sha256=hiE8viZqX6qx-6cLpiPqSfNhVGiL7cBFpAtwUV73ep4,14141
+fieldenum/_utils.py,sha256=GFPWecnp1fADx2RtiiwF5zdZZaKWQTL69ImqZ2LvDpI,1690
+fieldenum/enums.py,sha256=5g6r4oBVz-ISqiPJDoOrqoOTQWnc-ieBSZMw3MQlcS8,15519
+fieldenum/exceptions.py,sha256=SU2o8pyMLLFbx15l40OhS0A1km4k3mU-K0tT0riWw9A,545
+fieldenum-0.2.0.dist-info/LICENSE,sha256=iNDv37xKtIfnawBDEwZ63XJCkvfTz5sd74hPk6zlVRA,1087
+fieldenum-0.2.0.dist-info/METADATA,sha256=vQ06R-0sk-vXzOUPSSROqY8P2TP2hMy7oJEXb4EieFI,2316
+fieldenum-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fieldenum-0.2.0.dist-info/RECORD,,
