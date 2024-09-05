@@ -1,0 +1,3 @@
+numpy
+pyslow5>=1.0.1b0
+pod5
