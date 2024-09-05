@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: therabee
+Version: 0.1
+Summary: Therabee - A therapy chatbot
+Author: Finn
+Author-email: fs33884@sersd.org
+Requires-Dist: openai
+
