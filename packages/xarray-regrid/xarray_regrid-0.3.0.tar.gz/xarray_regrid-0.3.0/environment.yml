@@ -1,0 +1,13 @@
+---
+name: xarray-regrid
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12
+  - xESMF
+  - cdo
+  - pip:
+      - "xarray-regrid"
+      - "cftime"
+      - "matplotlib"
+      - "dask[distributed]"
