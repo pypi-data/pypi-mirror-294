@@ -1,0 +1,9 @@
+colaburl/__init__.py,sha256=0sxkRYJQr6VjnxzPSMlTPESDoSb8G_7_pEuWOmx-6W0,3534
+colaburl/server.py,sha256=T9HwpVXqtbNelRwkNir4KE3eYWew-P8mnN0hIU9mlUs,4190
+tests/__init__.py,sha256=HDMCUvv4TNAg2GiWG5cefrfkKB6iSh33YsD_6cFXKic,38
+tests/test_colaburl.py,sha256=-wP30DJQ4c8K177YsY4Itil9nogAjFhv7EHw7FEVUQs,100
+colaburl-0.1.0.dist-info/LICENSE,sha256=ezOSraWbMkgq6wnPemuksk4fqikdv63mZDvm_VoUKJo,1073
+colaburl-0.1.0.dist-info/METADATA,sha256=CcuXatJU5nD4y2q5cSpv4skkWC_NqWZMslA8bjMcJXw,971
+colaburl-0.1.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+colaburl-0.1.0.dist-info/top_level.txt,sha256=R6Ex2jsgFCxbJV_HP9EhiMr-Z0dXGHoYuv7Zz-qt0MQ,15
+colaburl-0.1.0.dist-info/RECORD,,
