@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bash_buddy_cli
+Version: 0.1.0
+License-File: LICENSE.md
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: openai==1.43.0
+Provides-Extra: dev
+Requires-Dist: setuptools==74.1.1; extra == "dev"
+Requires-Dist: wheel==0.44.0; extra == "dev"
+Requires-Dist: twine==5.1.1; extra == "dev"
