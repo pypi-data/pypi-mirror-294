@@ -1,0 +1,6 @@
+SPARQLWrapper
+flask
+mlflow
+pysftp
+requests
+setuptools
