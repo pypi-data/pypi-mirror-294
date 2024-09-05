@@ -1,0 +1,11 @@
+openinference/instrumentation/__init__.py,sha256=jecFABnRsdo90HK0nVkG2FIB7-XU46ORosYWNayrYKo,864
+openinference/instrumentation/config.py,sha256=LNni98VR7eNWqbczwcB8Z8bi4DbLo7i_FYkIfbK1T-0,13674
+openinference/instrumentation/context_attributes.py,sha256=WAYNNcRLC018nZBAHi9VAug_y4zeyVJ3Px2swgK4mWI,9867
+openinference/instrumentation/helpers.py,sha256=EqG9OHfHdNQZ7yXcaqh6O4de2Cs7By6J2FgdRKXcr2o,611
+openinference/instrumentation/logging.py,sha256=NzeSSfvsjtakXsHPQ11ObztekhXdslnSOGe1aIJb6-c,490
+openinference/instrumentation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openinference/instrumentation/version.py,sha256=yF88-8vL8keLe6gCTumymw0UoMkWkSrJnzLru4zBCLQ,23
+openinference_instrumentation-0.1.16.dist-info/METADATA,sha256=8yyzPwjUIXD1YiqjoTAcNCXWVhZezL18KSIRG3zelaw,4661
+openinference_instrumentation-0.1.16.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+openinference_instrumentation-0.1.16.dist-info/licenses/LICENSE,sha256=Qd7mEYbriakf6dZkV8o1YKJfwuVxladksZj_3rcO53g,10870
+openinference_instrumentation-0.1.16.dist-info/RECORD,,
