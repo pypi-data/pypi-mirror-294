@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: relap-py
+Version: 0.0.2
+Summary: Module for RELAP post-processing
+Author: Jordi Freixa
+Author-email: <jordi.freixa-terradas@upc.edu>
+License: MIT
+Keywords: relap,trace
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# General Information
+
+Title: RELAP utilities
+created: May 2020
+last modified: 02/11/2020 20:52:47 
+Created by: Jordi Freixa
+Description: This Module provides function tools for postprocessing RELAP data
+
+# INSTALLATION:
+
+    - install with pip install relap_py
+    - modify the relapwin_loc and relap_exe variables to your environment
+
+
+# TODO:
+    - adapt to TRACE plotting (basically reading data from csv files)
+    - Make steady state table
+    - read and plot uncertainty bands
+    - just perform data extraction and write to file
+
+# CONFIGURATION AND DEFAULTS
+
+relapwin_loc = 'C:/cygwin64/usr/local/bin'
+relap_exe = 'relap5-33iy-win32-ifc-opt.exe'
+figures_type: ('pdf') figures format: pdf or png
+figures_loc: ('./figures/') location where the figures will be saved
+hideplots: (True) Boolean, plots are only stored as files. Set as False if you want to interact with them
+show_plot: (False) Boolean, show interactive python plot window?
+exp_file_bool: (False) is there a experimental file? set the name with this variable
+unc_bands: (False) is there a uncertainty file containing bands? set the name here
+
