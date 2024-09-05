@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ctopt
+Version: 0.1.2
+Summary: Tool used for determining optimal number of cell type clusters in spatial transcriptomics samples
+License: MIT
+Keywords: cell type,annotation,spatial transcriptomics
+Author: Nikola Milicevic
+Author-email: nikola260896@gmail.com
+Requires-Python: >=3.9.0,<3.11
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: flash-attn (==1.0.4)
+Requires-Dist: scanpy (>=1.10.1,<2.0.0)
+Requires-Dist: scikit-learn (>=1.5.1,<2.0.0)
+Requires-Dist: torch (>=2.4.0,<3.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Requires-Dist: wandb (>=0.17.1,<0.18.0)
+Description-Content-Type: text/markdown
+
+# ctopt
+A tool that is used to determine what is the optimal number of cell type clusters for given spatial transcriptomics sample using single cell reference. 
+
