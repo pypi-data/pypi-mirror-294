@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+hoardy_mail/__init__.py
+hoardy_mail/__main__.py
+hoardy_mail/argparse_better.py
+hoardy_mail/exceptions.py
+hoardy_mail.egg-info/PKG-INFO
+hoardy_mail.egg-info/SOURCES.txt
+hoardy_mail.egg-info/dependency_links.txt
+hoardy_mail.egg-info/entry_points.txt
+hoardy_mail.egg-info/requires.txt
+hoardy_mail.egg-info/top_level.txt
