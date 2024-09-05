@@ -1,0 +1,7 @@
+setup.py
+embeds/__init__.py
+embeds/embeds.py
+embeds.egg-info/PKG-INFO
+embeds.egg-info/SOURCES.txt
+embeds.egg-info/dependency_links.txt
+embeds.egg-info/top_level.txt
