@@ -1,0 +1,28 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class lighting_interpolation(String, AllowedValuesMixin):
+    """
+    Set lighting interpolation method.
+    Use Phong shading to interpolate the normals for each pixel of a polygon and compute a color at every pixel.
+    Use Gouraud shading to calculate the color at each vertex of a polygon and interpolate it in the interior.
+    Use flat shading for meshes and polygons.
+    """
+
+    fluent_name = "lighting-interpolation"
+
+    return_type = "<object object at 0x7f5cfb8b6650>"

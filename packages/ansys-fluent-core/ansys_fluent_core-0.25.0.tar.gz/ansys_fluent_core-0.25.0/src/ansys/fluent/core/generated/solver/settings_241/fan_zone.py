@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class fan_zone(Boolean, AllowedValuesMixin):
+    """
+    3D Fan Zone?.
+    """
+
+    fluent_name = "fan-zone"
+
+    return_type = "<object object at 0x7f5d08b04580>"

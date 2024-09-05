@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class enable_mesh_interface_clustering(Boolean):
+    """
+    Enable clustering on mesh interface.
+    """
+
+    fluent_name = "enable-mesh-interface-clustering"
+
+    return_type = "<object object at 0x7f5ce12d43b0>"

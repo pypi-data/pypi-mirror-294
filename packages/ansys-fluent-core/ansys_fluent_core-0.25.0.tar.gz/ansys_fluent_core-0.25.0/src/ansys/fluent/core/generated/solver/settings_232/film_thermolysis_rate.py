@@ -1,0 +1,35 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .pre_exponential_factor import pre_exponential_factor as pre_exponential_factor_cls
+from .activation_energy import activation_energy as activation_energy_cls
+
+class film_thermolysis_rate(Group):
+    """
+    'film_thermolysis_rate' child.
+    """
+
+    fluent_name = "film-thermolysis-rate"
+
+    child_names = \
+        ['pre_exponential_factor', 'activation_energy']
+
+    _child_classes = dict(
+        pre_exponential_factor=pre_exponential_factor_cls,
+        activation_energy=activation_energy_cls,
+    )
+
+    return_type = "<object object at 0x7f641e5a5f10>"

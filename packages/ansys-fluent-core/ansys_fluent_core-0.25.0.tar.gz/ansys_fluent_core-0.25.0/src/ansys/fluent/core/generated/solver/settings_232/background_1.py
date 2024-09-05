@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class background(String):
+    """
+    Set the background color in the video picture.
+    """
+
+    fluent_name = "background"
+
+    return_type = "<object object at 0x7f641d4391e0>"

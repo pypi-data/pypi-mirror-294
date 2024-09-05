@@ -1,0 +1,43 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .length import length as length_cls
+from .boundary import boundary as boundary_cls
+
+class knudsen_number_calculator(Command):
+    """
+    Utility to compute Kudsen number based on characteristic length and boundary information.
+    
+    Parameters
+    ----------
+        length : real
+            Characteristic physics length.
+        boundary : str
+            'boundary' child.
+    
+    """
+
+    fluent_name = "knudsen-number-calculator"
+
+    argument_names = \
+        ['length', 'boundary']
+
+    _child_classes = dict(
+        length=length_cls,
+        boundary=boundary_cls,
+    )
+
+    return_type = "<object object at 0x7f5cfbb85680>"

@@ -1,0 +1,39 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .type_1 import type as type_cls
+
+class projection(Command):
+    """
+    Set the camera projection.
+    
+    Parameters
+    ----------
+        type : str
+            'type' child.
+    
+    """
+
+    fluent_name = "projection"
+
+    argument_names = \
+        ['type']
+
+    _child_classes = dict(
+        type=type_cls,
+    )
+
+    return_type = "<object object at 0x7f57022dcf30>"

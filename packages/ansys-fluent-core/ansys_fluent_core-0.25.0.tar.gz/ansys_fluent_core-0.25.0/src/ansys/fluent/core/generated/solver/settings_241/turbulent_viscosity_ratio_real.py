@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class turbulent_viscosity_ratio_real(Real, AllowedValuesMixin):
+    """
+    'turbulent_viscosity_ratio_real' child.
+    """
+
+    fluent_name = "turbulent-viscosity-ratio-real"
+
+    return_type = "<object object at 0x7f5d08e49ca0>"

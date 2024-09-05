@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class pseudo_time_stabilization(Boolean):
+    """
+    Pseudo-Time Momentum stabilization and False Time Step Linearization methods for VOF.
+    """
+
+    fluent_name = "pseudo-time-stabilization?"
+
+    return_type = "<object object at 0x7f115b6a8130>"

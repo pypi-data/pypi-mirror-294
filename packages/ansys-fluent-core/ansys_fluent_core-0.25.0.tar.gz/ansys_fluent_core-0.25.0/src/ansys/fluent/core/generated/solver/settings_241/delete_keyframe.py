@@ -1,0 +1,39 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .key_1 import key as key_cls
+
+class delete_keyframe(Command):
+    """
+    Delete a keyframe.
+    
+    Parameters
+    ----------
+        key : int
+            'key' child.
+    
+    """
+
+    fluent_name = "delete-keyframe"
+
+    argument_names = \
+        ['key']
+
+    _child_classes = dict(
+        key=key_cls,
+    )
+
+    return_type = "<object object at 0x7f5cfb7b0fc0>"

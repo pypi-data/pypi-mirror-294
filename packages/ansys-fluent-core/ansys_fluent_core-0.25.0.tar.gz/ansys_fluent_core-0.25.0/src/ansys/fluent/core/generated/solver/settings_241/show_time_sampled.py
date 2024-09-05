@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class show_time_sampled(Command):
+    """
+    Display the amount of simulated time covered by the data sampled for unsteady statistics.
+    """
+
+    fluent_name = "show-time-sampled"
+
+    return_type = "<object object at 0x7f5cfb9b4370>"
