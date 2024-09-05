@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/chatady/__init__.py
+src/chatady/chatady.py
+src/chatady.egg-info/PKG-INFO
+src/chatady.egg-info/SOURCES.txt
+src/chatady.egg-info/dependency_links.txt
+src/chatady.egg-info/entry_points.txt
+src/chatady.egg-info/requires.txt
+src/chatady.egg-info/top_level.txt

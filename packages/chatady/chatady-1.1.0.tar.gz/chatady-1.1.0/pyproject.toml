@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatady"
+version = "1.1.0"
+description = "A Python wrapper for the ChatADy API."
+readme = "README.md"
+authors = [{ name = "Jernej Pregelj", email = "contact@chatady.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["chatady", "api", "wrapper"]
+dependencies = [
+    "requests"
+]
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/ChatADy/chatady-python"
+
+[project.scripts]
+realpython = "chatady.__main__:main"
