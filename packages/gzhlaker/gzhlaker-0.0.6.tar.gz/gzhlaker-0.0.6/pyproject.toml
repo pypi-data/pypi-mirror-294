@@ -1,0 +1,22 @@
+[build-system]
+requires = ["oss2", "openai", "setuptools", "google-generativeai"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name =  "gzhlaker"
+authors = [
+    {name = "zihang.guo", email = "15047271937@163.com"},
+]
+version = "0.0.6"
+description = "Gzhlaker's lib"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/guozihang/gzhlaker_pylib"
+Issues = "https://github.com/guozihang/gzhlaker_pylib/issues"
