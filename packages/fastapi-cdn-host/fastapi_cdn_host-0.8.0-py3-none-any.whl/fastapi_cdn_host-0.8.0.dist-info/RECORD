@@ -1,0 +1,11 @@
+fastapi_cdn_host/__init__.py,sha256=zsjPJQRzxivaoLnKvSHHLe8Y29Ac1cC8xc1dRAA_5Zw,396
+fastapi_cdn_host/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+fastapi_cdn_host/cli.py,sha256=2hqEaekWwphl73zwCjuWq4we0jqD3H1GVfAwJpwl6q4,6039
+fastapi_cdn_host/client.py,sha256=y2lwNBbgBDOWHXe6AN-_JpytEiHqeJSrcXcSa9eL0KM,22293
+fastapi_cdn_host/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_cdn_host/utils.py,sha256=BbqIzLQ-wuoaRBZ17UZXwH1HVNzxZb3AyXlzvIrgmFA,3652
+fastapi_cdn_host-0.8.0.dist-info/LICENSE,sha256=Tsif_IFIW5f-xYSy1KlhAy7v_oNEU4lP2cEnSQbMdE4,1086
+fastapi_cdn_host-0.8.0.dist-info/METADATA,sha256=gXequ3tYENfqKllbG2gq65jG983Ytzbr4j32N5uePT4,3318
+fastapi_cdn_host-0.8.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastapi_cdn_host-0.8.0.dist-info/entry_points.txt,sha256=3m3OveIdJeYi6bB04wu1xcyVHcKQpijSDqWl5geIIb8,53
+fastapi_cdn_host-0.8.0.dist-info/RECORD,,
