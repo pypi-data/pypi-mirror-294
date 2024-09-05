@@ -1,0 +1,7 @@
+README.md
+setup.py
+pwebarc_dumb_dump_server.egg-info/PKG-INFO
+pwebarc_dumb_dump_server.egg-info/SOURCES.txt
+pwebarc_dumb_dump_server.egg-info/dependency_links.txt
+pwebarc_dumb_dump_server.egg-info/requires.txt
+pwebarc_dumb_dump_server.egg-info/top_level.txt

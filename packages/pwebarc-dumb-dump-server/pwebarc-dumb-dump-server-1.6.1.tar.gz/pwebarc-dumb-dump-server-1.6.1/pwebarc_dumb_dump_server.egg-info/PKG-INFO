@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pwebarc-dumb-dump-server
+Version: 1.6.1
+Summary: pwebarc-dumb-dump-server is now hoardy-web-sas
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: hoardy-web-sas
+
+# pwebarc-dumb-dump-server is now hoardy-web-sas
+
+This package has been renamed. Use `pip install hoardy-web-sas` instead.
+
+New package: https://pypi.org/project/hoardy-web-sas/
