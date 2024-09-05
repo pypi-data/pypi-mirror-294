@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: weather-analysis-thomashansen
+Version: 0.1.0
+Summary: A package for loading and analyzing weather data using CSV and Pandas.
+Home-page: http://example.com
+Author: Thomas Hansen
+Author-email: rotes-screen-0o@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: csv
