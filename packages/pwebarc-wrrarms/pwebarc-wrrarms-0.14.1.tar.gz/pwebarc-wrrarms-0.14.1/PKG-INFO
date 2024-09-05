@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pwebarc-wrrarms
+Version: 0.14.1
+Summary: pwebarc-wrrarms is now hoardy-web
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: hoardy-web
+
+# pwebarc-wrrarms is now hoardy-web
+
+This package has been renamed. Use `pip install hoardy-web` instead.
+
+New package: https://pypi.org/project/hoardy-web/
