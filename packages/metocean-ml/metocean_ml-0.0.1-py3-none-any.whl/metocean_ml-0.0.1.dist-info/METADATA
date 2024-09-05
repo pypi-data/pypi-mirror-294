@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: metocean-ml
+Version: 0.0.1
+Summary: metocean-ml - machine learning tool for metocean data
+License: GPLv3
+Author: Konstantinos Christakos MET Norway & NTNU
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: keras
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: numpy (>=1.17,<2.0)
+Requires-Dist: pandas
+Requires-Dist: pip
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tensorflow
+Requires-Dist: xarray
+Project-URL: Bug Tracker, https://github.com/MET-OM/metocean-ml
