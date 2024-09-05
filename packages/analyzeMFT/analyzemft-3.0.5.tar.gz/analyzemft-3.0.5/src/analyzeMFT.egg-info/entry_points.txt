@@ -1,0 +1,2 @@
+[console_scripts]
+analyzeMFT = analyzeMFT.cli:main
