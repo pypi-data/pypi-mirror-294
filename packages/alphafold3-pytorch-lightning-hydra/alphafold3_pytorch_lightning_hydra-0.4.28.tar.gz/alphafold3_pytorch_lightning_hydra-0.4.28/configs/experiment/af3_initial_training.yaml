@@ -1,0 +1,92 @@
+# @package _global_
+
+# lists the experiment parameters corresponding to "Initial training" in Table 6 of the paper
+
+# to execute this experiment run:
+# python train.py experiment=af3_initial_training
+
+defaults:
+  - override /callbacks: default
+  - override /data: pdb
+  - override /logger: wandb
+  - override /model: alphafold3
+  - override /strategy: deepspeed
+  - override /trainer: deepspeed
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["pdb", "alphafold3", "initial_training", "full_dataset"]
+
+seed: 12345
+
+# initial training experiment parameters:
+
+data:
+  crop_size: 384
+
+logger:
+  wandb:
+    entity: bml-lab
+    group: "af3-training"
+    tags: ${tags}
+    name: ${now:%Y%m%d%H%M%S}
+
+model:
+  parameters_initialized_from: random
+  train_structure_and_distogram: true
+  train_pae_head: false
+  diffusion_add_smooth_lddt_loss: true
+  diffusion_add_bond_loss: false
+
+  # optimizer:
+  #   _target_: deepspeed.ops.adam.DeepSpeedCPUAdam
+  #   _partial_: true
+  #   lr: 1.8e-3
+  #   betas: [0.9, 0.95]
+  #   eps: 1e-8
+
+  net:
+    dim_atom: 8
+    dim_single: 8
+    dim_pairwise: 8
+    dim_token: 8
+    diffusion_num_augmentations: 4
+
+    checkpoint_input_embedding: true
+    checkpoint_trunk_pairformer: true
+    checkpoint_distogram_head: false
+    checkpoint_confidence_head: false
+    checkpoint_diffusion_token_transformer: true
+
+    confidence_head_kwargs:
+      pairformer_depth: 1
+    template_embedder_kwargs:
+      pairformer_stack_depth: 1
+    msa_module_kwargs:
+      depth: 1
+      dim_msa: 8
+    pairformer_stack:
+      depth: 8
+      pair_bias_attn_dim_head: 4
+      pair_bias_attn_heads: 2
+    diffusion_module_kwargs:
+      atom_encoder_depth: 1
+      token_transformer_depth: 1
+      atom_decoder_depth: 1
+      atom_encoder_kwargs:
+        attn_pair_bias_kwargs:
+          dim_head: 4
+      atom_decoder_kwargs:
+        attn_pair_bias_kwargs:
+          dim_head: 4
+
+strategy:
+  stage: 2
+  offload_optimizer: false
+  offload_parameters: false
+  partition_activations: false
+  cpu_checkpointing: false
+
+trainer:
+  precision: bf16-mixed
