@@ -1,0 +1,9 @@
+{
+  "main.js": "/static/plugins/piwik/dist/js/main.f89334b9.bundle.js",
+  "main.css": "/static/plugins/piwik/dist/css/main.4bcbda04.css",
+  "js/monaco.css.worker.js": "/static/plugins/piwik/dist/js/monaco.css.worker.js",
+  "js/monaco.html.worker.js": "/static/plugins/piwik/dist/js/monaco.html.worker.js",
+  "js/monaco.editor.worker.js": "/static/plugins/piwik/dist/js/monaco.editor.worker.js",
+  "main.f89334b9.bundle.js.map": "/static/plugins/piwik/dist/js/main.f89334b9.bundle.js.map",
+  "main.4bcbda04.css.map": "/static/plugins/piwik/dist/css/main.4bcbda04.css.map"
+}
