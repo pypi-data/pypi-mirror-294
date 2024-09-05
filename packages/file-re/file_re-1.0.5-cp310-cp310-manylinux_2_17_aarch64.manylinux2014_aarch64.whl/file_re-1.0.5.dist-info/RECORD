@@ -1,0 +1,7 @@
+file_re-1.0.5.dist-info/METADATA,sha256=cQf-xtg0wDE3RxWlzm-_jHhtAGFPXLADjCuzeFQyWjY,3523
+file_re-1.0.5.dist-info/WHEEL,sha256=2p5tBgD3F1K_C76F3epQNpaHzSZZ9-XYo4Ues2F1-Rk,131
+file_re/__init__.py,sha256=wyCK7ZThTMTe4CUj2-THYzXturWfUPxGN3gzWtxcBvg,190
+file_re/match.py,sha256=yFPyNEFBJFQkc5CPFpA0y-ohslnYPcETxOzAr-MF5o4,3407
+file_re/core.py,sha256=ncisAXncUVofx9BMJiEatLX3nIPpyrcoQnJ4AztyWmA,3109
+file_re/_file_re.cpython-310-aarch64-linux-gnu.so,sha256=DJhfZO_nn04iobdeLvbXal-o-MSk-v-4MyscfMCgeuE,3003568
+file_re-1.0.5.dist-info/RECORD,,
