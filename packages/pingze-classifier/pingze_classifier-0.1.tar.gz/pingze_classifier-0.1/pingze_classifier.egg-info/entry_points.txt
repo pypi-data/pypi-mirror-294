@@ -1,0 +1,2 @@
+[console_scripts]
+scrape-pingze = pingze_classifier.scraper:scrape_ping_ze_rhyme
