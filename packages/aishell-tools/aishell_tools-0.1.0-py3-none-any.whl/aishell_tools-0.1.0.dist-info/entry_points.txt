@@ -1,0 +1,6 @@
+[console_scripts]
+aishell = aishell.main:main
+aishell-get-screen = aishell.get_screen:main
+aishell-help = aishell.aishell_help:main
+aishell-print = aishell.print:main
+aishell-quick-help = aishell.aishell_help:quick_help
