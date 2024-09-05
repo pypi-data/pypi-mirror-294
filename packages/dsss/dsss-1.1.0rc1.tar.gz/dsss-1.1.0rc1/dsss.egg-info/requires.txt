@@ -1,0 +1,15 @@
+sdmx1>=2.17.0
+starlette
+
+[doc]
+sphinx-book-theme
+
+[git-store]
+GitPython
+
+[tests]
+dsss[git-store]
+pytest>=8
+pytest-cov
+sdmx1[tests]
+starlette[full]
