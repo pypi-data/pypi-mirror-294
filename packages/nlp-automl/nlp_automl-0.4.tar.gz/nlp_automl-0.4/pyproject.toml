@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "nlp_automl"
+version = "0.4"
+description = "AutoML library for solving only text -> label task'"
+authors = ["salaxieb <salaxieb.ildar@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+optuna = "^4.0.0"
+nltk = "^3.9.1"
+pymystem3 = "^0.2.0"
+fasttext = "^0.9.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+tox = "^4.18.0"
+mypy = "^1.11.2"
+pylint = "^3.2.7"
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+
+[tool.tox]
+legacy_tox_ini = """
+    [tox]
+    isolated_build = true
+    envlist = py{3.9,3.10,3.11,3.12}
+
+    [testenv]
+    allowlist_externals = poetry
+                          make
+    commands =
+        pip install -e .
+        make lint
+        make test
+"""
