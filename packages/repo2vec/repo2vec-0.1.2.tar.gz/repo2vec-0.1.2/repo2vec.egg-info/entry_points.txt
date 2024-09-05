@@ -1,0 +1,3 @@
+[console_scripts]
+chat = repo2vec.chat:main
+index = repo2vec.index:main
