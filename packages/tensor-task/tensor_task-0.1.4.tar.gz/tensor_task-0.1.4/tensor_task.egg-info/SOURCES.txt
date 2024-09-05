@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+tensor_task/__init__.py
+tensor_task/tensor_task.py
+tensor_task.egg-info/PKG-INFO
+tensor_task.egg-info/SOURCES.txt
+tensor_task.egg-info/dependency_links.txt
+tensor_task.egg-info/top_level.txt
