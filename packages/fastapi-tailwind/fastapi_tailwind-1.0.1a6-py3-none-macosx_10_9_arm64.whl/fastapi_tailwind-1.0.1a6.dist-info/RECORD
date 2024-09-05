@@ -1,0 +1,12 @@
+fastapi_tailwind/__init__.py,sha256=NcmG9KOb8stbyD2vYtCyhGyccGlxEtNkUylQTZ_hU-g,78
+fastapi_tailwind/__main__.py,sha256=XVLw7J8lVJ-yH7zfZjpcu6q-8X2Kf7XF37cW6s-Kl2I,847
+fastapi_tailwind/binary.py,sha256=rkc5vzR60nlrrdlS3GiorpHj14xZhcOT7GfgHsU_A5k,1657
+fastapi_tailwind/errors.py,sha256=h-H1skWhyQR2tSLln8Lv_BbmKchc0KFsKuZ8l1xdlzA,180
+fastapi_tailwind/tailwind.py,sha256=gPpT23c0jE8ejLz-03KDD0_S3bOoq0rDUvATwY4I1T4,2890
+fastapi_tailwind/binaries/tailwindcss-macos-arm64,sha256=8ZEfjHzAKl3zhR411-DG1dYCvH-5kjyKCaAsvGPxufM,47351440
+fastapi_tailwind-1.0.1a6.dist-info/LICENSE,sha256=R30tJBAdOyucvQlYO3oSdxGYF5gLaLK7J_CuJfdGycU,1069
+fastapi_tailwind-1.0.1a6.dist-info/METADATA,sha256=FLcb0yCYkAalJcDAes5Sm01J9Ji_a7ywF_XI-2cIj9w,5432
+fastapi_tailwind-1.0.1a6.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+fastapi_tailwind-1.0.1a6.dist-info/entry_points.txt,sha256=Bbg1-UvNNEWlG_ylw4_FVKDzNAwGOFLHhT_59q9e1y0,72
+fastapi_tailwind-1.0.1a6.dist-info/top_level.txt,sha256=c-ECunc4mVFS-7zIHPGrjkRHDcTZJI62rx5XHehhobY,17
+fastapi_tailwind-1.0.1a6.dist-info/RECORD,,
