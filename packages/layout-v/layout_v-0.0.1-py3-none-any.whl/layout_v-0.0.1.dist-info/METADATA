@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: layout-v
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fvcore
+Requires-Dist: pycocotools
+Requires-Dist: timm
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python
+Requires-Dist: omegaconf
+
+UNKNOWN
+
