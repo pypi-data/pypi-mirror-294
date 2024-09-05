@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/constclasses/__init__.py
+src/constclasses/ccerror.py
+src/constclasses/const_class.py
+src/constclasses/const_class_base.py
+src/constclasses/static_const_class.py
+src/pyconstclasses.egg-info/PKG-INFO
+src/pyconstclasses.egg-info/SOURCES.txt
+src/pyconstclasses.egg-info/dependency_links.txt
+src/pyconstclasses.egg-info/requires.txt
+src/pyconstclasses.egg-info/top_level.txt
+test/test_const_class.py
+test/test_const_class_base.py
+test/test_static_const_class.py
