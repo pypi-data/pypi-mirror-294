@@ -1,0 +1,17 @@
+modify_subs.cp311-win_amd64.pyd,sha256=GmGv8eSouq63w7X7LMwttcYFx9NA3NuoN3Zqz2FDP7Y,183296
+modify_subs-0.3.0.data/platlib/ass-097f03892b08b29aa9ad30323a08996f.dll,sha256=c-_y5wkLVeqVvuFo8SJJ2qO_fejtnFwvhMb2a5z7Jh8,204288
+modify_subs-0.3.0.data/platlib/brotlicommon-bceda63be05b87463036625bd8de956d.dll,sha256=loB1qTlb15TERi1BrbU7NBZ4ysCO5y0a5qON1X50_pY,137216
+modify_subs-0.3.0.data/platlib/brotlidec-93e6d945604ca5b017c6ee616fac0df3.dll,sha256=meRiir4BhntZlJhjj-VONvx_Lw9EHkfPGxg5VBXcRTs,50688
+modify_subs-0.3.0.data/platlib/bz2-c7b145ffe17b966e12583ad02e106729.dll,sha256=D2zh0phiTi7Yf7VSEVHOEGM-vvsheUeo0coy9m_rxJQ,75264
+modify_subs-0.3.0.data/platlib/freetype-5d14eaea8b3a3701a90c38864f21ac70.dll,sha256=wM4XkjAGOVxPlme-x0nLhxq9BoQkAbGTcCSIVqLaZ8Q,688640
+modify_subs-0.3.0.data/platlib/fribidi-0-5c74a304cba4e3ebb5960d6b7c357967.dll,sha256=8dcQ2zEqVdoxh9lsRRf-ygKt_DNq9VpzpjRQPsNjm8w,117760
+modify_subs-0.3.0.data/platlib/harfbuzz-425528e938eb1f5002005eced8ad2fb1.dll,sha256=eAmWRMWjX37LgzN-DkiBnq9I1xdZT_aJQisAewPrvwM,1107968
+modify_subs-0.3.0.data/platlib/jsoncpp-7795bde84922da633a1d4d45caffcdb9.dll,sha256=1SJJBRL7YEpDTAM2SKK6tsrr7tVLUeQfrlSr5bMNc50,197632
+modify_subs-0.3.0.data/platlib/libpng16-7d7c338741bdb346aebe067a341f4af2.dll,sha256=IqGsV7HeIBXJ0AyZQvl9i4bD77cHpuSg2gqh4bKqjCQ,197120
+modify_subs-0.3.0.data/platlib/msvcp140-bb0116802a6107868e994fb7d4533e90.dll,sha256=MubIEAvWLnqR9QmWwqWWktx5a28UCi36TeMTykPUx0g,618728
+modify_subs-0.3.0.data/platlib/zlib1-42cd705fc363ff2df561ca8de9531f56.dll,sha256=-RCSxJP3IMJijVeBOXL632-wU4n1IrI3f5Eff4jXzus,89088
+modify_subs-0.3.0.dist-info/DELVEWHEEL,sha256=6F-YHjyo5fZsy6H880kbxuiqFyzdJeqtuhVL7FR4Gns,459
+modify_subs-0.3.0.dist-info/METADATA,sha256=MQEBj0fFquJSmvrajXCuCWIvH0rmzkIuExXM6KdQ8po,564
+modify_subs-0.3.0.dist-info/RECORD,,
+modify_subs-0.3.0.dist-info/top_level.txt,sha256=r5EWPkvmrioKJgy_XvKQxYBqf2Af7_MB-DOBQl8pBvU,12
+modify_subs-0.3.0.dist-info/WHEEL,sha256=yEpuRje-u1Z_HrXQj-UTAfIAegW_HcP2GJ7Ek8BJkUM,102
