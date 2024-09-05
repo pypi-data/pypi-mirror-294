@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: android_useful_adb
+Version: 0.0.1
+Summary: 常用adb命令
+Home-page: https://github.com/LiNoZues/useful_adb
+Author: Cxz
+Author-email: chenzhe12320@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+封装了一些常用的adb命令
+可以获取cpu、memery、fps

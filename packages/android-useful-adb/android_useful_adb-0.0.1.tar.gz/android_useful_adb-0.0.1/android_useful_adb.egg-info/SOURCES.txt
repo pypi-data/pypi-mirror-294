@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+android_useful_adb/__init__.py
+android_useful_adb/main.py
+android_useful_adb/settings.py
+android_useful_adb.egg-info/PKG-INFO
+android_useful_adb.egg-info/SOURCES.txt
+android_useful_adb.egg-info/dependency_links.txt
+android_useful_adb.egg-info/top_level.txt
