@@ -1,0 +1,10 @@
+---
+fixture: create_user
+settings:
+  fixture_dirs:
+    - fixtures
+---
+% echo $USRNAME
+create_user
+%~ id $USRNAME
+create_user
