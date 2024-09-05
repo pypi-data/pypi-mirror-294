@@ -1,0 +1,11 @@
+sentieoaws/__init__.py,sha256=TydKEQ2bhYF2tpgQKDSdWujonUpzfXrsQrwi98eltBo,40
+sentieoaws/constants.py,sha256=n9afG22qWxbrJ1V4aFcAcKbEZ5sImytugYvv8jqGFrM,154
+sentieoaws/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentieoaws/s3api.py,sha256=BBlpT8vmOxjvi3ppWffFF_D3P2IVpvld65GJN0j5B-k,6772
+sentieoaws/sentieo_aws_base.py,sha256=vJ7WgQ0O5_wGdVU7ygayba7KtstMZcLoiJzC9RcuP_k,3160
+sentieoaws/snsapi.py,sha256=yffWt60hQt7PiV5nYuW_xfTfHQDHtZLoUsZlttvlDLc,3341
+sentieoaws/sqsapi.py,sha256=WNeldfMN7_nIL1cgnYct2utnf8oP61BtpDI4kHKZelA,2521
+sentieoaws-0.0.6.dist-info/METADATA,sha256=BkJNRdSSXYHGIeX9tM4HaEhx1J3DLYmPTLpSCbf7Vmc,3881
+sentieoaws-0.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sentieoaws-0.0.6.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentieoaws-0.0.6.dist-info/RECORD,,
