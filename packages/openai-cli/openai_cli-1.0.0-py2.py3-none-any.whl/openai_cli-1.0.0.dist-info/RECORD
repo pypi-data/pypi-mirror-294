@@ -1,0 +1,13 @@
+openai_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_cli/cli.py,sha256=SFM3nhayrydj97_JfeOpomtLhcSlnIONoj2OD78DTfc,3137
+openai_cli/client.py,sha256=EqvBWYDlicopXmzrtnlbrCst_MtK7G6rmIlYaCPKzdo,2959
+openai_cli/config.py,sha256=tGP9gSvheobwgMnpPbgMlG9YnHqiy7hasqB__3xeLz4,621
+openai_cli/test_cli.py,sha256=3rE6m2d9DUZtT0UbtL3LA0RmcEI934EOIBBhNdSj7ZU,4919
+openai_cli/test_client.py,sha256=mfnQzujokLXKfvpvM6W7f7KXgoeNZ7uORGt5coOBIFo,2502
+openai_cli/test_config.py,sha256=3HAGjD8EvnlFUmBQhU-loTanVGFlqTjunJyD0GJAbSI,784
+openai_cli-1.0.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+openai_cli-1.0.0.dist-info/METADATA,sha256=XeDxOZMNuDJoMQhNOD31zXo-CPvBxNc2o8BEEjPa4_4,8350
+openai_cli-1.0.0.dist-info/WHEEL,sha256=GUeE9LxUgRABPG7YM0jCNs9cBsAIx0YAkzCB88PMLgc,109
+openai_cli-1.0.0.dist-info/entry_points.txt,sha256=313HczV4GodSvucmNAzuPmXg962ceVcsHv1TdBRVWCc,46
+openai_cli-1.0.0.dist-info/top_level.txt,sha256=G2qw6PO64-xFkjt9A1W88kE6HS26cf4ooHx1A2CNQMc,11
+openai_cli-1.0.0.dist-info/RECORD,,
