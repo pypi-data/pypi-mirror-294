@@ -1,0 +1,26 @@
+<project_loop><author_loop><pub_loop>
+Authors: <authors>
+Grants: <grants>
+Abstract: <abstract>
+Conclusions: <conclusions>
+Copyrights: <copyrights>
+DOI: <DOI>
+Journal: <journal>
+Keywords: <keywords>
+Methods: <methods>
+PMID: <PMID>
+Results: <results>
+Title: <title>
+PMCID: <PMCID>
+Publication Year: <publication_year>
+Publication Month: <publication_month>
+Publication Day: <publication_day>
+Author First: <author_first>
+Author Last: <author_last>
+Name Search: <author_name_search>
+Email: <author_email>
+First Author: <first_author>
+Last Author: <last_author>
+Pub_Authors: <pub_author_loop>\n<pub_author_last>, <pub_author_first> <pub_author_initials> <pub_author_affiliations></pub_author_loop>
+References: <reference_loop>\nCitation: <reference_citation>\nTitle: <reference_title>\nPMID: <reference_PMID>\nPMCID: <reference_PMCID>\nDOI: <reference_DOI>\n</reference_loop>
+</pub_loop></author_loop></project_loop>

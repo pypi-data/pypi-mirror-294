@@ -1,0 +1,44 @@
+{
+  "creation_date": "2023-10-12 15:32",
+  "emails": [
+    {
+      "attachment": "Col1,Col2\n\"Hunter, Moseley\",Plk1 phosphorylation of PHGDH to regulate serine metabolism\n\"Hunter, Moseley\",Hepatic kinome atlas: An in-depth identification of kinase pathways in liver fibrosis of humans and rodents.\n\"Hunter, Moseley\",Identifying and sharing per-and polyfluoroalkyl substances hot-spot areas and exposures in drinking water.\n",
+      "attachment_filename": "asdf.csv",
+      "author": "Hunter Moseley",
+      "body": "Attached is the project report for publications found for Core A Administractive Core.\n\nKind regards,\n\nThis email was sent by an automated service. If you have any questions or concerns please email my creator ptth222@uky.edu",
+      "cc": "",
+      "from": "ptth222@uky.edu",
+      "subject": "New PubMed Publications",
+      "to": "hunter.moseley@gmail.com"
+    },
+    {
+      "attachment": "test_dir\\Project 1_project_report.xlsx",
+      "attachment_filename": "Project 1_project_report.xlsx",
+      "body": "Attached is the project report for publications found for Project 1.\n\nKind regards,\n\nThis email was sent by an automated service. If you have any questions or concerns please email my creator ptth222@uky.edu",
+      "cc": "",
+      "from": "ptth222@uky.edu",
+      "subject": "New PubMed Publications",
+      "to": "ptth222@uky.edu"
+    },
+    {
+      "attachment": "Col1,Col2\n\"Hunter, Moseley\",Plk1 phosphorylation of PHGDH to regulate serine metabolism\n\"Hunter, Moseley\",Hepatic kinome atlas: An in-depth identification of kinase pathways in liver fibrosis of humans and rodents.\n\"Hunter, Moseley\",Identifying and sharing per-and polyfluoroalkyl substances hot-spot areas and exposures in drinking water.\n",
+      "attachment_filename": "No Authors_Hunter Moseley_project_report.csv",
+      "author": "Hunter Moseley",
+      "body": "Attached is the project report for publications found for all authors.\n\nKind regards,\n\nThis email was sent by an automated service. If you have any questions or concerns please email my creator ptth222@uky.edu",
+      "cc": "",
+      "from": "ptth222@uky.edu",
+      "subject": "New PubMed Publications",
+      "to": "hunter.moseley@gmail.com"
+    },
+    {
+      "attachment": "Col1,Col2\n\"Travis, Thompson\",Identifying and sharing per-and polyfluoroalkyl substances hot-spot areas and exposures in drinking water.\n",
+      "attachment_filename": "No Authors_Travis Thompson_project_report.csv",
+      "author": "Travis Thompson",
+      "body": "Attached is the project report for publications found for all authors.\n\nKind regards,\n\nThis email was sent by an automated service. If you have any questions or concerns please email my creator ptth222@uky.edu",
+      "cc": "",
+      "from": "ptth222@uky.edu",
+      "subject": "New PubMed Publications",
+      "to": "ptth222@uky.edu"
+    }
+  ]
+}
