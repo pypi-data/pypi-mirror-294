@@ -1,0 +1,17 @@
+mawhrin/__init__.py,sha256=crKHJ7qAJe2KMaodyh_JH1IU6ZC8hDDxfDRwgJc6I1I,240
+mawhrin/__main__.py,sha256=kV7VvOkUIGU58lSnGUB9ZnDA71itIchcu1Bm_WdWqI0,224
+mawhrin/comms/__init__.py,sha256=87BLX4LoAq1xL_-FCrgibswrq1VfvdHJZ25GW2ACfzA,123
+mawhrin/comms/base.py,sha256=FtezL_15h_6Q6f62Ch29u9vg8RRT8hVrTbHtbvPJUhk,705
+mawhrin/comms/list.py,sha256=jSoHUUGdb_9qsg2CQeV0fGqsMyLhPT2yM4m3e6NFf4g,397
+mawhrin/items/__init__.py,sha256=Se2WQVaRUOjKpyng18t7-XCr9bK8GvAIChoBrkigQGc,121
+mawhrin/items/book.py,sha256=A_bU75TRz3KBlE8ck9BEqIG6KbrwKQFuNKuIK62Nvys,2086
+mawhrin/items/note.py,sha256=wjeSkER5tQusvN_JnPPUR1jXWAxXR-6f2WjUMwPcWNA,2535
+mawhrin/tools/__init__.py,sha256=o5B-yHt9WKXOsaupn8Y9HCabF2EKHBCktXTHOy0ZJ-U,142
+mawhrin/tools/data.py,sha256=dhbMicjiUGEq0eNWG6_YI0hv4ZyLwLbbpm6wn2d1WA4,814
+mawhrin/tools/file.py,sha256=Wc4az2x5lMCOk3ynlPQ3Ky2a36HdTWJjdmfRKhhNrJU,1332
+mawhrin/tools/path.py,sha256=lDD6cODNOZ0Y3MTwuOGrd6ZII83zHhOyDgJR5OQym8c,1187
+mawhrin-0.1.1.dist-info/METADATA,sha256=ODIKaKuFTGQWQyFksiiFTJ0L35DtnNOSTyQtj3i6_5s,1712
+mawhrin-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+mawhrin-0.1.1.dist-info/entry_points.txt,sha256=p-cfYPolpVzBhN_1eds1Z9TmYXxnG4X_eITPJsR7Aa0,50
+mawhrin-0.1.1.dist-info/top_level.txt,sha256=SqrbV5YPM3uY8e4NxgeKrHlKCocb-Ljzej-9GY7vwsY,8
+mawhrin-0.1.1.dist-info/RECORD,,
