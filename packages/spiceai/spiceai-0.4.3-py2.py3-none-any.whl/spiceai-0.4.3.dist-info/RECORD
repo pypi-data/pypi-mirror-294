@@ -1,0 +1,17 @@
+spice/__init__.py,sha256=AfTNr6qlFgTqNc5KouyE10Z-g9lU8xA3brdTtDk07jE,217
+spice/call_args.py,sha256=T_JHK3O686RlOmOKRcYPkNfeajDag2sqR1teliRr_7I,419
+spice/errors.py,sha256=q0uPE4h2U-1nyjMuR8WvVU6-vZAbIsASarkcGRS-Gsg,632
+spice/models.py,sha256=S7K6EEwe_ZGkFc7d1I2fqV5OCQuKsq3vjgRG6Wr4E9M,7627
+spice/providers.py,sha256=0c7inubN-MfOvyw1rGgGVXDRQjjrNm4UBjaSQwwteFI,2142
+spice/spice.py,sha256=fUEhH0sn6_V20wVgUlPTNDABmximK6zXdgigqA9h2BM,39749
+spice/spice_message.py,sha256=C2ZR8DmumBs3GNP1_bJdqewyxSpO3LpvKaeyd2BpIIQ,4828
+spice/utils.py,sha256=XbJJJaGpD0auZX_nzPok00oRUp5gc5LSAitLOTv1MP0,1221
+spice/wrapped_clients.py,sha256=P1M_vdZawVzUI9z_A1y0rJJN_oBrQYizpSs6Ahq2CVI,18830
+spice/retry_strategy/__init__.py,sha256=yuh3dKDWwCEkOxW3iHAbPCHsgmZVzx5EE2RapUuLXD4,1017
+spice/retry_strategy/converter_strategy.py,sha256=YRFrKtVHaTViv71_cGQFuQh6jv0H2ftmphk-nBcz1kI,1527
+spice/retry_strategy/default_strategy.py,sha256=Y687_0KUyVq1COigYTitpMG6msdG4ygyG5XP5ydepYg,1639
+spice/retry_strategy/validator_strategy.py,sha256=TmsQadBMwMFNf_hG4iRi2B1RAR_MK5_NMRNm9W6tOhw,2154
+spiceai-0.4.3.dist-info/METADATA,sha256=taQHYLdTqJPLNrZotfNnI4Z2eh_dV-C4-dAQdjssIp4,6494
+spiceai-0.4.3.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+spiceai-0.4.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spiceai-0.4.3.dist-info/RECORD,,
