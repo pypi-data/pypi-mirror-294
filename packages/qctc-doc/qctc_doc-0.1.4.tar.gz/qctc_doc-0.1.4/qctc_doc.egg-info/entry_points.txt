@@ -1,0 +1,3 @@
+[console_scripts]
+magic-doc = magic_doc.cli:cli_conv
+pdf2md = magic_doc.cli:pdf_cli
