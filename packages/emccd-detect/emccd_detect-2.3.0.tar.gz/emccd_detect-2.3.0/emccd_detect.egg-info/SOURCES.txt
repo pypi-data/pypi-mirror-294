@@ -1,0 +1,16 @@
+README.md
+setup.py
+emccd_detect/__init__.py
+emccd_detect/cosmics.py
+emccd_detect/emccd_detect.py
+emccd_detect/nonlinearity.py
+emccd_detect/rand_em_gain.py
+emccd_detect.egg-info/PKG-INFO
+emccd_detect.egg-info/SOURCES.txt
+emccd_detect.egg-info/dependency_links.txt
+emccd_detect.egg-info/requires.txt
+emccd_detect.egg-info/top_level.txt
+emccd_detect/util/__init__.py
+emccd_detect/util/metadata.yaml
+emccd_detect/util/read_metadata.py
+emccd_detect/util/read_metadata_wrapper.py
