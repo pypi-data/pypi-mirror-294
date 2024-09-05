@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/turtle_loc_oracles/__init__.py
+src/turtle_loc_oracles.egg-info/PKG-INFO
+src/turtle_loc_oracles.egg-info/SOURCES.txt
+src/turtle_loc_oracles.egg-info/dependency_links.txt
+src/turtle_loc_oracles.egg-info/requires.txt
+src/turtle_loc_oracles.egg-info/top_level.txt
+src/turtle_loc_oracles/data/green_sea_turtle_swimming_coefficients.mat
+src/turtle_loc_oracles/joint_space/__init__.py
+src/turtle_loc_oracles/joint_space/biological_oracles.py
+src/turtle_loc_oracles/joint_space/template_model_oracles.py
+src/turtle_loc_oracles/task_space/__init__.py
+src/turtle_loc_oracles/task_space/biological_oracles.py

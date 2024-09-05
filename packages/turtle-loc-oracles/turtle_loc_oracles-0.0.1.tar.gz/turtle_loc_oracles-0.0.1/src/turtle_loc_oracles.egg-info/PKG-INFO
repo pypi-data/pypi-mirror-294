@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: turtle-loc-oracles
+Version: 0.0.1
+Summary: Oracles for turtle locomotion (e.g., swimming, walking, etc.)
+Author-email: Maximilian Stölzle <maximilian@stoelzle.ch>, "Zach J. Patterson" <zpatt@csail.mit.edu>
+Maintainer-email: "Zach J. Patterson" <zpatt@csail.mit.edu>
+License: MIT License
+        
+        Copyright (c) 2024 Maximilian Stölzle
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/crush-robotics/turtle-locomotion-oracles
+Project-URL: Bug Reports, https://github.com/crush-robotics/turtle-locomotion-oracles/issues
+Project-URL: Source, https://github.com/crush-robotics/turtle-locomotion-oracles/
+Keywords: bioinspiration,robotics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: peppercorn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+
+# Turtle Locomotion Oracles
+
+This Python package contains oracles of the movement of turtle limbs during locomotion (e.g., swimming /)
+Some oracles are based on real-world observations of turtle locomotion, while others are based on theoretical/template models.
+
+## Installation
+
+Installation is very easy:
+
+Either just clone the repository and install the package (in ediatble mode) using pip.
+
+```bash
+pip install -e .
+```
+
+or install the package directly from PyPI:
+
+```bash
+pip install turtle-loc-oracles
+```
+
+## Usage
+
+
+
+## Provided Oracles
+
+### Joint-space Oracles
+
+#### Cornelia Turtle Robot Joint Space Trajectory
+
+This oracle provides a joint-space trajectory developed for the Cornelia turtle robot by (van der Geest et al., 2023).
+Please refer to the original paper for more information: https://doi.org/10.1038/s41598-023-37904-5
+
+> van der Geest, N., Garcia, L., Borret, F., Nates, R., & Gonzalez, A. (2023).
+Soft-robotic green sea turtle (Chelonia mydas) developed to replace animal experimentation provides new insight
+into their propulsive strategies. Scientific Reports, 13(1), 11983.
+
+and cite it if you use this oracle in your research.
+
+```bibtex
+@article{van2023soft,
+  title={Soft-robotic green sea turtle (Chelonia mydas) developed to replace animal experimentation provides new insight into their propulsive strategies},
+  author={van der Geest, Nick and Garcia, Lorenzo and Borret, Fraser and Nates, Roy and Gonzalez, Alberto},
+  journal={Scientific Reports},
+  volume={13},
+  number={1},
+  pages={11983},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
+### Task-space Oracles
+
+#### Green Sea Turtle Swimming Task Space Trajectory
+
+This oracle provides a task-space trajectory that was fitted to video recordings of the swimming of Green sea turtles (van der Geest et al., 2022).
+Please refer to the original paper for more information: https://doi.org/10.1038/s41598-022-21459-y
+
+> van der Geest, N., Garcia, L., Nates, R., & Godoy, D. A. (2022).
+New insight into the swimming kinematics of wild Green sea turtles (Chelonia mydas).
+Scientific Reports, 12(1), 18151.
+
+and cite it if you use this oracle in your research.
+
+```bibtex
+@article{van2022new,
+  title={New insight into the swimming kinematics of wild Green sea turtles (Chelonia mydas)},
+  author={van der Geest, Nick and Garcia, Lorenzo and Nates, Roy and Godoy, Daniel A},
+  journal={Scientific Reports},
+  volume={12},
+  number={1},
+  pages={18151},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+```
