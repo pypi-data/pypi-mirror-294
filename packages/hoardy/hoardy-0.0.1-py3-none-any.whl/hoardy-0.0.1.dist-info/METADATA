@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hoardy
+Version: 0.0.1
+Summary: Meta-package for `hoardy` packages
+Author-email: Jan Malakhovski <oxij@oxij.org>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://oxij.org/software/hoardy/
+Project-URL: GitHub, https://github.com/Own-Data-Privateer/hoardy
+Project-URL: Support Development, https://oxij.org/#support
+Keywords: archive
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Archiving :: Backup
+Classifier: Topic :: System :: Archiving :: Mirroring
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Console
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: hoardy-adb
+Requires-Dist: hoardy-mail
+Requires-Dist: hoardy-web
+
+WIP.
