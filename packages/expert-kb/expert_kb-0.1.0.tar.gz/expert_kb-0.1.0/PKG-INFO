@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: expert_kb
+Version: 0.1.0
+Summary: Knowledge base interface for 'expert'
+Author: Liam Tengelis
+Author-email: liam.tengelis@blacktuskdata.com
+Requires-Dist: sqlite-vec
