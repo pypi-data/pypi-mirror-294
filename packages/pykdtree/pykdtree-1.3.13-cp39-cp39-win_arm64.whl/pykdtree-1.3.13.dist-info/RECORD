@@ -1,0 +1,9 @@
+pykdtree/__init__.py,sha256=eS0vGA5JDyVzZUv459DIHVHp2Imd36fJuyTnkK7X6jM,630
+pykdtree/kdtree.cp39-win_arm64.pyd,sha256=GmVxXGWxcRIhgb9zdRJ7WflTbYVJw5s7OK0RZk0kpw0,96768
+pykdtree/render_template.py,sha256=n37IUUsGCj5zMCmFvoEz8QEQ_imPwDKaU-VF7AxSP2g,194
+pykdtree/test_tree.py,sha256=IsBINHimGvoczkto6hztQft2TSGR9XSztw_cPJ-954E,16315
+pykdtree-1.3.13.dist-info/LICENSE.txt,sha256=QonoqJbUB_k1my-fyn5pmBQ4fUf6GHbSZjNE0_dNB_U,7822
+pykdtree-1.3.13.dist-info/METADATA,sha256=F3OSVNtLZrhJPV7gCD2uGUWecyjgo5eu7TUqa4E9LSw,8808
+pykdtree-1.3.13.dist-info/WHEEL,sha256=5BVtoxWQt1d01tB0FdLPmYkwL1G70r3miUy1kBjhEkg,99
+pykdtree-1.3.13.dist-info/top_level.txt,sha256=E6qEju5ocMB6juu2j0U7AlEW1nkkHA6W7_N7H72Z0eQ,9
+pykdtree-1.3.13.dist-info/RECORD,,
