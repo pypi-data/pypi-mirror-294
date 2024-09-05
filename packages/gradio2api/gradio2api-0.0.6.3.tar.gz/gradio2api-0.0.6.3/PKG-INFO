@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gradio2api
+Version: 0.0.6.3
+Summary: Transfer gradio application to fastapi.
+Home-page: https://github.com/mistake0316/gradio2api
+Author: 湯沂達(Tang Yi Dar)
+Author-email: changethewhat@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
