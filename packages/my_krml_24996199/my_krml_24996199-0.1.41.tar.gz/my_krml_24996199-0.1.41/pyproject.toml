@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "my_krml_24996199"
+version = "0.1.41"
+description = "A package for doing great things!"
+authors = ["my_krml_24996199"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+pandas = "2.2.2"
+scikit-learn = "1.5.1"
+xgboost = "^2.1.1"
+lightgbm = "^4.5.0"
+matplotlib = "^3.9.2"
+joblib = "^1.4.2"
+seaborn = "^0.13.2"
+imbalanced-learn = "^0.12.3"
+
+
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.2.2"
+jupyterlab = "4.2.3"
+twine = "^5.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
