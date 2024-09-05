@@ -1,0 +1,8 @@
+README.md
+setup.py
+utils_web_scraping/__init__.py
+utils_web_scraping/utils_file.py
+utils_web_scraping.egg-info/PKG-INFO
+utils_web_scraping.egg-info/SOURCES.txt
+utils_web_scraping.egg-info/dependency_links.txt
+utils_web_scraping.egg-info/top_level.txt
