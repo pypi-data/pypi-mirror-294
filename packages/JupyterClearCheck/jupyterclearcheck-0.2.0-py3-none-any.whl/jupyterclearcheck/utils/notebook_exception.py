@@ -1,0 +1,2 @@
+class NotebookOutputFoundException(Exception):
+    pass

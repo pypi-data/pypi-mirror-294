@@ -1,0 +1,11 @@
+jupyterclearcheck-0.2.0.dist-info/METADATA,sha256=yLGcF1MY5KZVV7cx1aH7nu0zq0UZb18l5FNzMw4t8iY,2900
+jupyterclearcheck-0.2.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+jupyterclearcheck-0.2.0.dist-info/entry_points.txt,sha256=LjTk302TzfMa_OL27UaWKlex_1pOlnd3FX_VG7VgAm8,71
+jupyterclearcheck-0.2.0.dist-info/licenses/LICENSE,sha256=prkZWz5bI1YOfFb6vdCyl-Lxi9TFUbqFIR5A6qYi6Jo,1074
+jupyterclearcheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterclearcheck/__main__.py,sha256=TyHD0u2fHS_cqeaMmemxjTruzPhI9UwMw1x7Lv5G3Fw,78
+jupyterclearcheck/cli.py,sha256=wcbltLSZyoKEcQCskTcJDRC5d1i2ZL4bQ1JOfA0c0yk,1290
+jupyterclearcheck/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterclearcheck/utils/notebook_exception.py,sha256=bDBBEPtL6oFq1LHW0oOOUQSjHT3Ruo2IcKDeLOmFvOQ,56
+jupyterclearcheck/utils/notebook_path.py,sha256=03BxE5Zu_eIy2j-KGTamvqg-Zl9T8o8-Aeu-8GT3qBw,529
+jupyterclearcheck-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+jupyterclearcheck = jupyterclearcheck.__main__:main
+
