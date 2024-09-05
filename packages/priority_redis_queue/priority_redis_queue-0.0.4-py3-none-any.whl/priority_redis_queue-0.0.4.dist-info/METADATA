@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: priority_redis_queue
+Version: 0.0.4
+Summary: priority_redis_queue
+Author: shubham-sentieo
+Author-email: sentieodev@sentieo.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: redis (>=4.3.4,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Sentieo Redis Queue
+
+[![Python Version](https://img.shields.io/pypi/pyversions/sentieos3)][python version]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[python version]: https://pypi.org/project/sentieos3
+[tests]: https://github.com/ShubhamBansal1997/sentieos3/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/ShubhamBansal1997/sentieos3
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Installation
+
+You can install _SentieoRedisQueue_ via [pip] from [PyPI]:
+
+```console
+$ pip install --extra-index-url https://api.packagr.app/PLesWotlL redis-queue==0.0.2
+```
+
+## Documentation
+
+SentieoRedisQueue is a queueing system implemented using Redis Sorted Sets
+
+## Usage
+
+```python
+from priority_redis_queue.queue import RedisQueue
+queue = RedisQueue("queue_name", "redis_host", "port")
+queue.push_to_pipeline("item_1") # push to queue
+queue.consumer_pipeline() # process the queue
+```
+
+## Development
+
+- Clone this repository
+- Requirements:
+  - [Poetry](https://python-poetry.org/)
+  - Python 3.10+
+- Create a virtual environment and install the dependencies
+
+```sh
+make poetry-download
+```
+
+- Activate the virtual environment
+
+```sh
+make env
+```
+
+### Testing
+
+```sh
+make test
+```
+
+### Pre-commit
+
+Pre-commit hooks run all the auto-formatters (e.g. `black`, `isort`), linters (e.g. `mypy`, `flake8`), and other quality
+checks to make sure the changeset is in good shape before a commit/push happens.
+
+You can install the hooks with (runs for each commit):
+
+```sh
+pre-commit install
+```
+
+Or if you want them to run only for each push:
+
+```sh
+pre-commit install -t pre-push
+```
+
+Or if you want e.g. want to run all checks manually for all files:
+
+```sh
+pre-commit run --all-files
+```
+
+---
+
+## Contributing
+
+Contributions are very welcome.
+
