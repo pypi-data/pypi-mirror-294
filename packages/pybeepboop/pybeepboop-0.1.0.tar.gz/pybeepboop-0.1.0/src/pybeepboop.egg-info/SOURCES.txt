@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pybeepboop.egg-info/PKG-INFO
+src/pybeepboop.egg-info/SOURCES.txt
+src/pybeepboop.egg-info/dependency_links.txt
+src/pybeepboop.egg-info/top_level.txt

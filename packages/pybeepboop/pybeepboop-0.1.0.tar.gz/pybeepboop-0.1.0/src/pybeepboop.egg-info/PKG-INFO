@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pybeepboop
+Version: 0.1.0
+Summary: A library in Python and C to create music in Python
+Home-page: https://github.com/Milk-Cool/pybeepboop
+Author: Milk_Cool
+Author-email: coder.tomsk@gmail.com
+Project-URL: Bug Tracker, https://github.com/Milk-Cool/pybeepboop/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sonic
+A library in Python and C to create music in Python
