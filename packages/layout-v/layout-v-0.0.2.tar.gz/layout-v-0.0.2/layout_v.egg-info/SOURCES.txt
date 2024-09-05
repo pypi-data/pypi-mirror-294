@@ -1,0 +1,6 @@
+setup.py
+layout_v.egg-info/PKG-INFO
+layout_v.egg-info/SOURCES.txt
+layout_v.egg-info/dependency_links.txt
+layout_v.egg-info/requires.txt
+layout_v.egg-info/top_level.txt
