@@ -1,0 +1,10 @@
+constclasses/__init__.py,sha256=GOuLdEwwLdDp9BMS4UHjuntW97WrmP9ULcPkad4hoyo,179
+constclasses/ccerror.py,sha256=_T-ESP8gxzowV3r-ZQJNNAJu91UzVGQmudKB3a6JqoY,681
+constclasses/const_class.py,sha256=inM_ozG2LqVWX0PhJvw2zP92Yqt0P2dshyeZcNiH-Vo,3110
+constclasses/const_class_base.py,sha256=YQ78hvwyclTy_rtH-oR0xqJgnxFxqxNgJUHJOVbtl9g,2230
+constclasses/static_const_class.py,sha256=0333nJqMPdG4z4M6L3TByfrN1odEhvfB0qVwFbSNbKo,2573
+pyconstclasses-1.0.5.dist-info/LICENSE,sha256=xcn3bQMM6Bt6CT-wzm4wPPyhh02GScx343T7hi9uPfw,1070
+pyconstclasses-1.0.5.dist-info/METADATA,sha256=S4pVxMA98LKYd-6WpL0YlQhvVtjx3hy6jLCStGMuzvk,17738
+pyconstclasses-1.0.5.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+pyconstclasses-1.0.5.dist-info/top_level.txt,sha256=FKneqwYeOwPkIP2VmOlounFe_qg-Zk7j2ueytXDfyB8,13
+pyconstclasses-1.0.5.dist-info/RECORD,,
