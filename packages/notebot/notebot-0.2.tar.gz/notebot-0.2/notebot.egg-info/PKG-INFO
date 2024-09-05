@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: notebot
+Version: 0.2
+Summary: A command-line tool to open Notepad or create and open files with Notepad.
+Home-page: https://github.com/Tirthaboos/notebot
+Author: Souporno Chakraborty
+Author-email: shrabanichakraborty83@gmail.com
+License: MIT
+Keywords: notepad,file,command-line
+Description-Content-Type: text/markdown
+
+# NoteBot
+# Note Package
+
+The Note Package provides a command-line tool to interact with Notepad from Python. You can use it to open Notepad directly or create and open files with Notepad.
+
+## Installation
+
+You can install the package using pip. Navigate to the directory containing `setup.py` and run:
+
+```bash
+pip install .
+```
+
+```bat
+python -m pip install notebot
+```
+## Usage
+### Open Notepad
+You can open Notepad directly using the following command:
+```bat
+python -m note .
+```
+**This commant open default notopad**
+
+```bat
+python -m note My_File.File_Extantion
+```
+**This commant create My_File.File_Extantion and open on default notepad**
+
