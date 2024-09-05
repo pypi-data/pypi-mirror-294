@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+somrup/__init__.py
+somrup/arithmetic.py
+somrup.egg-info/PKG-INFO
+somrup.egg-info/SOURCES.txt
+somrup.egg-info/dependency_links.txt
+somrup.egg-info/top_level.txt
