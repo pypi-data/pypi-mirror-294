@@ -1,0 +1,10 @@
+pyproject.toml
+readme.md
+mawhrin/__init__.py
+mawhrin/__main__.py
+mawhrin.egg-info/PKG-INFO
+mawhrin.egg-info/SOURCES.txt
+mawhrin.egg-info/dependency_links.txt
+mawhrin.egg-info/entry_points.txt
+mawhrin.egg-info/requires.txt
+mawhrin.egg-info/top_level.txt
