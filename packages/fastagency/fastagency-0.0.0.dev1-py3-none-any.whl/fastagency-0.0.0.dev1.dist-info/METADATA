@@ -1,0 +1,260 @@
+Metadata-Version: 2.3
+Name: fastagency
+Version: 0.0.0.dev1
+Summary: FastAgency: a repository of open-source AI agents
+Project-URL: Homepage, https://docs.fastagency.ai/latest/
+Project-URL: Documentation, https://docs.fastagency.airt.ai/latest/
+Project-URL: Tracker, https://github.com/airtai/fastagency/issues
+Project-URL: Source, https://github.com/airtai/fastagency
+Project-URL: Discord, https://discord.gg/qFm6aSqq59
+Author-email: airt <info@airt.ai>
+License-File: LICENSE
+Keywords: AI,LLM,autogen,autonomous agents,multi-agent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: typer>=0.9
+Requires-Dist: typing-extensions<5,>=4.8.0
+Provides-Extra: autogen
+Requires-Dist: pyautogen[anthropic,together]==0.2.35; extra == 'autogen'
+Requires-Dist: together<2,>=1.2.9; extra == 'autogen'
+Provides-Extra: dev
+Requires-Dist: asyncer==0.0.7; extra == 'dev'
+Requires-Dist: bandit==1.7.9; extra == 'dev'
+Requires-Dist: cairosvg==2.7.1; extra == 'dev'
+Requires-Dist: coverage[toml]==7.6.1; extra == 'dev'
+Requires-Dist: detect-secrets==1.5.0; extra == 'dev'
+Requires-Dist: dirty-equals==0.7.1.post0; extra == 'dev'
+Requires-Dist: email-validator==2.2.0; extra == 'dev'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'dev'
+Requires-Dist: fastapi==0.112.2; extra == 'dev'
+Requires-Dist: faststream[nats]<0.6,>=0.5.10; extra == 'dev'
+Requires-Dist: httpx==0.27.0; extra == 'dev'
+Requires-Dist: markdownify==0.13.1; extra == 'dev'
+Requires-Dist: mdx-include==1.4.2; extra == 'dev'
+Requires-Dist: mesop==0.12.2; (python_version >= '3.10') and extra == 'dev'
+Requires-Dist: mike==2.1.3; extra == 'dev'
+Requires-Dist: mkdocs-autorefs==1.1.0; extra == 'dev'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.2.7; extra == 'dev'
+Requires-Dist: mkdocs-glightbox==0.4.0; extra == 'dev'
+Requires-Dist: mkdocs-literate-nav==0.6.1; extra == 'dev'
+Requires-Dist: mkdocs-macros-plugin==1.0.5; extra == 'dev'
+Requires-Dist: mkdocs-material==9.5.33; extra == 'dev'
+Requires-Dist: mkdocs-minify-plugin==0.8.0; extra == 'dev'
+Requires-Dist: mkdocs-static-i18n==1.2.3; extra == 'dev'
+Requires-Dist: mkdocs==1.6.1; extra == 'dev'
+Requires-Dist: mkdocstrings[python]==0.25.2; extra == 'dev'
+Requires-Dist: mypy==1.11.1; extra == 'dev'
+Requires-Dist: pillow==10.4.0; extra == 'dev'
+Requires-Dist: pre-commit==3.7.1; extra == 'dev'
+Requires-Dist: prisma<0.15,>=0.13.1; extra == 'dev'
+Requires-Dist: pyautogen[anthropic,together]==0.2.35; extra == 'dev'
+Requires-Dist: pydantic-settings==2.4.0; extra == 'dev'
+Requires-Dist: pydantic<3,>=2.3; extra == 'dev'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'dev'
+Requires-Dist: pytest-mypy-plugins==3.1.2; extra == 'dev'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'dev'
+Requires-Dist: pytest==8.3.2; extra == 'dev'
+Requires-Dist: python-weather==2.0.3; extra == 'dev'
+Requires-Dist: pyupgrade-directories==0.3.0; extra == 'dev'
+Requires-Dist: pyyaml==6.0.2; extra == 'dev'
+Requires-Dist: requests; extra == 'dev'
+Requires-Dist: ruff==0.6.3; extra == 'dev'
+Requires-Dist: semgrep==1.85.0; extra == 'dev'
+Requires-Dist: together<2,>=1.2.9; extra == 'dev'
+Requires-Dist: types-docutils; extra == 'dev'
+Requires-Dist: types-pygments; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Requires-Dist: types-setuptools; extra == 'dev'
+Requires-Dist: types-ujson; extra == 'dev'
+Requires-Dist: uvicorn==0.30.6; extra == 'dev'
+Requires-Dist: watchfiles==0.24.0; extra == 'dev'
+Provides-Extra: devdocs
+Requires-Dist: cairosvg==2.7.1; extra == 'devdocs'
+Requires-Dist: mdx-include==1.4.2; extra == 'devdocs'
+Requires-Dist: mike==2.1.3; extra == 'devdocs'
+Requires-Dist: mkdocs-autorefs==1.1.0; extra == 'devdocs'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.2.7; extra == 'devdocs'
+Requires-Dist: mkdocs-glightbox==0.4.0; extra == 'devdocs'
+Requires-Dist: mkdocs-literate-nav==0.6.1; extra == 'devdocs'
+Requires-Dist: mkdocs-macros-plugin==1.0.5; extra == 'devdocs'
+Requires-Dist: mkdocs-material==9.5.33; extra == 'devdocs'
+Requires-Dist: mkdocs-minify-plugin==0.8.0; extra == 'devdocs'
+Requires-Dist: mkdocs-static-i18n==1.2.3; extra == 'devdocs'
+Requires-Dist: mkdocs==1.6.1; extra == 'devdocs'
+Requires-Dist: mkdocstrings[python]==0.25.2; extra == 'devdocs'
+Requires-Dist: pillow==10.4.0; extra == 'devdocs'
+Provides-Extra: lint
+Requires-Dist: bandit==1.7.9; extra == 'lint'
+Requires-Dist: mypy==1.11.1; extra == 'lint'
+Requires-Dist: pytest-mypy-plugins==3.1.2; extra == 'lint'
+Requires-Dist: pyupgrade-directories==0.3.0; extra == 'lint'
+Requires-Dist: ruff==0.6.3; extra == 'lint'
+Requires-Dist: semgrep==1.85.0; extra == 'lint'
+Requires-Dist: types-docutils; extra == 'lint'
+Requires-Dist: types-pygments; extra == 'lint'
+Requires-Dist: types-pyyaml; extra == 'lint'
+Requires-Dist: types-setuptools; extra == 'lint'
+Requires-Dist: types-ujson; extra == 'lint'
+Provides-Extra: mesop
+Requires-Dist: mesop==0.12.2; (python_version >= '3.10') and extra == 'mesop'
+Provides-Extra: openapi
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'openapi'
+Requires-Dist: requests; extra == 'openapi'
+Provides-Extra: server
+Requires-Dist: uvicorn==0.30.6; extra == 'server'
+Provides-Extra: studio
+Requires-Dist: asyncer==0.0.7; extra == 'studio'
+Requires-Dist: fastapi==0.112.2; extra == 'studio'
+Requires-Dist: faststream[nats]<0.6,>=0.5.10; extra == 'studio'
+Requires-Dist: httpx==0.27.0; extra == 'studio'
+Requires-Dist: markdownify==0.13.1; extra == 'studio'
+Requires-Dist: prisma<0.15,>=0.13.1; extra == 'studio'
+Requires-Dist: pydantic<3,>=2.3; extra == 'studio'
+Requires-Dist: python-weather==2.0.3; extra == 'studio'
+Provides-Extra: submodules
+Requires-Dist: asyncer==0.0.7; extra == 'submodules'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'submodules'
+Requires-Dist: fastapi==0.112.2; extra == 'submodules'
+Requires-Dist: faststream[nats]<0.6,>=0.5.10; extra == 'submodules'
+Requires-Dist: httpx==0.27.0; extra == 'submodules'
+Requires-Dist: markdownify==0.13.1; extra == 'submodules'
+Requires-Dist: mesop==0.12.2; (python_version >= '3.10') and extra == 'submodules'
+Requires-Dist: prisma<0.15,>=0.13.1; extra == 'submodules'
+Requires-Dist: pyautogen[anthropic,together]==0.2.35; extra == 'submodules'
+Requires-Dist: pydantic<3,>=2.3; extra == 'submodules'
+Requires-Dist: python-weather==2.0.3; extra == 'submodules'
+Requires-Dist: requests; extra == 'submodules'
+Requires-Dist: together<2,>=1.2.9; extra == 'submodules'
+Provides-Extra: test-core
+Requires-Dist: coverage[toml]==7.6.1; extra == 'test-core'
+Requires-Dist: dirty-equals==0.7.1.post0; extra == 'test-core'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'test-core'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'test-core'
+Requires-Dist: pytest==8.3.2; extra == 'test-core'
+Provides-Extra: testing
+Requires-Dist: asyncer==0.0.7; extra == 'testing'
+Requires-Dist: coverage[toml]==7.6.1; extra == 'testing'
+Requires-Dist: dirty-equals==0.7.1.post0; extra == 'testing'
+Requires-Dist: email-validator==2.2.0; extra == 'testing'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'testing'
+Requires-Dist: fastapi==0.112.2; extra == 'testing'
+Requires-Dist: faststream[nats]<0.6,>=0.5.10; extra == 'testing'
+Requires-Dist: httpx==0.27.0; extra == 'testing'
+Requires-Dist: markdownify==0.13.1; extra == 'testing'
+Requires-Dist: mesop==0.12.2; (python_version >= '3.10') and extra == 'testing'
+Requires-Dist: prisma<0.15,>=0.13.1; extra == 'testing'
+Requires-Dist: pyautogen[anthropic,together]==0.2.35; extra == 'testing'
+Requires-Dist: pydantic-settings==2.4.0; extra == 'testing'
+Requires-Dist: pydantic<3,>=2.3; extra == 'testing'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'testing'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'testing'
+Requires-Dist: pytest==8.3.2; extra == 'testing'
+Requires-Dist: python-weather==2.0.3; extra == 'testing'
+Requires-Dist: pyyaml==6.0.2; extra == 'testing'
+Requires-Dist: requests; extra == 'testing'
+Requires-Dist: together<2,>=1.2.9; extra == 'testing'
+Requires-Dist: uvicorn==0.30.6; extra == 'testing'
+Requires-Dist: watchfiles==0.24.0; extra == 'testing'
+Description-Content-Type: text/markdown
+
+![alt text](https://github.com/airtai/fastagency/blob/main/docs/docs/assets/img/FA-Secondary-LOGO.jpg?raw=true)
+
+
+# FastAgency
+
+
+<b>The fastest way to bring multi-agent workflows to production.</b>
+
+
+---
+
+<p align="center">
+  <a href="https://github.com/airtai/fastagency/actions/workflows/pipeline.yaml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/pipeline.yaml/badge.svg?branch=main" alt="Test Passing"/>
+  </a>
+
+  <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/airtai/fastagency" target="_blank">
+      <img src="https://coverage-badge.samuelcolvin.workers.dev/airtai/fastagency.svg" alt="Coverage">
+  </a>
+
+  <a href="https://www.pepy.tech/projects/fastagency" target="_blank">
+    <img src="https://static.pepy.tech/personalized-badge/fastagency?period=month&units=international_system&left_color=grey&right_color=green&left_text=downloads/month" alt="Downloads"/>
+  </a>
+
+  <a href="https://pypi.org/project/fastagency" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastagency?label=PyPI" alt="Package version">
+  </a>
+
+  <a href="https://pypi.org/project/fastagency" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/fastagency.svg" alt="Supported Python versions">
+  </a>
+
+  <br/>
+
+  <a href="https://github.com/airtai/fastagency/actions/workflows/codeql.yml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/codeql.yml/badge.svg" alt="CodeQL">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/actions/workflows/dependency-review.yaml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/dependency-review.yaml/badge.svg" alt="Dependency Review">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/github/license/airtai/fastagency.png" alt="License">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/blob/main/CODE_OF_CONDUCT.md" target="_blank">
+    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Code of Conduct">
+  </a>
+
+  <a href="https://discord.gg/kJjSGWrknU" target="_blank">
+      <img alt="Discord" src="https://img.shields.io/discord/1247409549158121512?logo=discord">
+  </a>
+</p>
+
+---
+
+## Stay in touch
+
+Please show your support and stay in touch by:
+
+- giving our [GitHub repository](https://github.com/airtai/fastagency/) a star, and
+
+- joining our [Discord server](https://discord.gg/kJjSGWrknU)
+
+Your support helps us to stay in touch with you and encourages us to
+continue developing and improving the framework. Thank you for your
+support!
+
+---
+
+## Contributors
+
+Thanks to all of these amazing people who made the project better!
+
+<a href="https://github.com/airtai/fastagency/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=airtai/fastagency"/>
+</a>
