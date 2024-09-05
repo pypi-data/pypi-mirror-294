@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+main/__init__.py
+main/exceptions.py
+main/handler.py
+main/ratelimiter.py
+pyscrobble.egg-info/PKG-INFO
+pyscrobble.egg-info/SOURCES.txt
+pyscrobble.egg-info/dependency_links.txt
+pyscrobble.egg-info/requires.txt
+pyscrobble.egg-info/top_level.txt
