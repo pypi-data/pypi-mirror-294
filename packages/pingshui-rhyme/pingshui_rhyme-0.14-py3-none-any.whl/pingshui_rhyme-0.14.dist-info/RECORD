@@ -1,0 +1,14 @@
+pingshui_rhyme/__init__.py,sha256=miZ0nyb0iPizB_JkEbs9Y-J5Oy3GO0-1XPIwQcjAK5g,80
+pingshui_rhyme/classifier.py,sha256=JHcfeRXOEN70t8193JqsFA_kb9hIuwmKR8FfOkTjDs0,1879
+pingshui_rhyme/rhymechecker.py,sha256=-UhxS2Qmm4FzPpqXxsyPDqr5W2EODECdrsIlhrehFqQ,1963
+pingshui_rhyme/scraper.py,sha256=_vNLEr3UbFMKJVWVGpkWw396xIYNuPrGM9zfzvOCj_8,3543
+pingshui_rhyme/data/organized_ping_ze_rhyme_dict.json,sha256=xY1mLcIpDa-OflY1__NKjzH_LM_svGPzcbJ_g1-EHs8,39837
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classifier.py,sha256=wNis6T7bRHB-c2GiMBSgBgbEcEHZGMxdgE0QPvOCVlA,548
+tests/test_rhyme.py,sha256=EmoVOON2ON5ghM_wKUmTDUEqIfG1r8C_LWWK6XJ13jw,800
+pingshui_rhyme-0.14.dist-info/LICENSE,sha256=qc9gkK-t3TXb1pcqTxME32iGHfWOpAizYBfDvvt0EgM,1082
+pingshui_rhyme-0.14.dist-info/METADATA,sha256=rMo3c0PoL6eLxDY0ZX39wuybWB4ZsmgOTaMmoUKh1Pg,4320
+pingshui_rhyme-0.14.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+pingshui_rhyme-0.14.dist-info/entry_points.txt,sha256=YDueFR3kQvowElHOsQyVmGeS5srMR9kTVxchJOiJNpo,78
+pingshui_rhyme-0.14.dist-info/top_level.txt,sha256=Vy12Gm-QkFmlha81_loAMggGLqRtHnbDFsSS1X0S6OE,21
+pingshui_rhyme-0.14.dist-info/RECORD,,
