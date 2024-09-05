@@ -1,0 +1,107 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static app_icon %}
+
+{% block extrastyle %}{{ block.super }}{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+
+{% block content %}
+    <div class="row g-5 g-xxl-8">
+        <div class="col-xl-7">
+            {% if app_list %}
+                {% for app in app_list %}
+                    <div class="card mb-5">
+                        <div class="card-header min-h-auto py-3">        
+                            <h3 class="card-title align-items-start flex-column">
+                                <span class="card-label fw-bold fs-3 mb-1">{{ app.name }}</span>
+                            </h3>
+                        </div>
+
+                        <div class="card-body py-3">
+                            <div class="table-responsive">
+                                <table class="table table-row-dashed align-middle mb-0">
+                                    <tbody>
+                                        {% for model in app.models %}
+                                        <tr>
+                                            <td>
+                                                <a href="{{ model.admin_url }}" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">{{ model.name }}</a>                                            
+                                            </td>
+
+                                            <td class="pe-0 text-end"> 
+                                                {% if model.add_url %}
+                                                    <a href="{{ model.add_url }}" class="badge badge-light-success fs-base py-3 px-5">Add</a>
+                                                {% endif %}
+                                                {% if model.admin_url %}
+                                                    <a href="{{ model.admin_url }}" class="badge badge-light-info fs-base py-3 px-5">Change</a>
+                                                {% endif %}                               
+                                            </td>
+
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="col-xl-5">
+            <div class="card mb-5 mb-xxl-8">
+                <div class="card-header border-0 py-5">
+                    <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-bold fs-3 mb-1">{% translate 'Recent actions' %}</span>
+                        <span class="text-muted fw-semibold fs-7">{% translate 'My actions' %}</span>
+                    </h3>
+                </div>
+                <div class="card-body pb-5 pt-0">
+                    {% load log %}
+                    {% get_admin_log 10 as admin_log for_user user %}
+                    {% if not admin_log %}
+                    <p>{% translate 'None available' %}</p>
+                    {% else %}
+                    <div class="timeline timeline-border-dashed">
+                        {% for entry in admin_log %}
+                            <div class="timeline-item">
+                                <div class="timeline-line"></div>
+                                <div class="timeline-icon">
+                                    {% if entry.is_addition %}
+                                        <i class="ki-outline ki-add-files fs-2 text-success"></i>
+                                    {% endif %}
+                                    {% if entry.is_change %}
+                                        <i class="ki-outline ki-pencil fs-2 text-info"></i>
+                                    {% endif %}
+                                    {% if entry.is_deletion %}
+                                        <i class="ki-outline ki-disconnect fs-2 text-danger"></i>
+                                    {% endif %}
+                                </div>
+                                <div class="timeline-content mb-3 mt-n1">
+                                    <div class="pe-3 mb-5">
+                                        {% if entry.is_deletion or not entry.get_admin_url %}
+                                            <div class="fs-5 fw-medium mb-1">{{ entry.object_repr }}</div>
+                                        {% else %}
+                                            <div class="fs-5 fw-medium mb-1"><a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a></div>
+                                        {% endif %}
+                                        {% if entry.content_type %}
+                                            <span class="text-gray-500">{% filter capfirst %}{{ entry.content_type.name }}{% endfilter %}</span>
+                                        {% else %}
+                                            <span class="mini quiet">{% translate 'Unknown content' %}</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

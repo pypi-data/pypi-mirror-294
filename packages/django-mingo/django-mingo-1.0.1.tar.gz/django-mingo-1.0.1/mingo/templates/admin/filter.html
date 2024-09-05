@@ -1,0 +1,22 @@
+{% load i18n %}
+<style>
+    .filter-choice{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .filter-choice li a{
+        color: #808290;
+        font-size: 14px;
+    }
+    .filter-choice li a:hover,
+    .filter-choice li.selected a{
+        color: #0f7cfc;
+    }
+</style>
+{% blocktranslate with filter_title=title %} <label class="form-label fs-5 fw-semibold mb-2 text-capitalize">By {{ filter_title }}</label> {% endblocktranslate %}
+<ul class="filter-choice mb-5">
+{% for choice in choices %}
+    <li {% if choice.selected %} class="selected"{% endif %}> <a href="{{ choice.query_string|iriencode }}">{{ choice.display }}</a></li>
+{% endfor %}
+</ul>

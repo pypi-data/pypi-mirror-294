@@ -1,0 +1,67 @@
+/* input:not([type='text']),
+select{
+    max-width: 300px;
+} */
+.calendar table{
+    caption-side: top !important;
+}
+.calendar{
+    background-color: #0f1014;
+}
+.calendar table,
+.calendar-shortcuts,
+.calendar-cancel{
+    background: #0f1014;
+}
+.calendar-cancel:hover{
+    background: #0f1014;
+}
+.calendar caption{
+    color: #fff !important;
+}
+.datetime {
+    display: flex;
+    align-items: center;
+}
+.datetimeshortcuts{
+    padding-top: 0 !important;
+}
+.datetime .vDateField + .datetimeshortcuts{
+    margin-right: 40px;
+}
+#id_groups_filter label,
+#id_groups_filter_selected label,
+#id_user_permissions_filter label,
+#id_user_permissions_filter_selected label,
+#id_permissions_filter label,
+#id_permissions_filter_selected label{
+    display: none;
+}
+#id_groups_filter,
+#id_groups_filter_selected,
+#id_user_permissions_filter,
+#id_user_permissions_filter_selected,
+#id_permissions_filter,
+#id_permissions_filter_selected{
+    padding-left: 0;
+    padding-right: 0;
+}
+.filtered{
+    width: 100%;
+    padding: .775rem 1rem !important;
+    font-size: 1rem;
+    border: 1px solid #363843;
+    background: transparent;
+    border-radius: .65rem;
+}
+.filtered option{
+    padding: 3px 5px;
+}
+form .aligned div.help{
+    padding-left: 0;
+    color: #636674;
+    font-weight: 500;
+}
+.form-select{
+    max-width: 300px !important;
+}
