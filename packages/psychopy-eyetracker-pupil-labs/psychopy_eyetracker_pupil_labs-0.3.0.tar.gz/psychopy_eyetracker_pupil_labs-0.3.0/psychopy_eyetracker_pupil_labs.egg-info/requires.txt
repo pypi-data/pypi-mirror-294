@@ -1,0 +1,11 @@
+pupil-labs-realtime-api
+real-time-screen-gaze
+
+[docs]
+psychopy
+sphinx
+furo
+
+[tests]
+psychopy
+pytest
