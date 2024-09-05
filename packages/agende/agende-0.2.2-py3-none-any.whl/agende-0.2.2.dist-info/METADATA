@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: agende
+Version: 0.2.2
+Summary: Agendador automático para o Restaurante Universitário da UFC
+Home-page: https://github.com/Pedro-Emanuel/agende
+Author: Pedro Emanuel
+Author-email: Pedro Emanuel <pedroems.147@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Pedro Emanuel Santana
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Pedro-Emanuel/agende
+Project-URL: Bug Tracker, https://github.com/Pedro-Emanuel/agende/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: getch
+
+# Agendador RU - UFC
+
+Automação do agendamento de refeições no Restaurante Universitário da Universidade Federal do Ceará (UFC) usando Python e Selenium.
+
+## Descrição
+
+Este script automatiza o processo de agendamento de refeições no sistema SIGAA da UFC. Ele realiza login, navega até a página de agendamento e agenda refeições para os próximos dias úteis disponíveis.
+
+## Instalação
+
+O Agendador RU pode ser instalado facilmente via pip:
+
+```bash
+pip install agende
+```
+
+## Uso
+
+Após a instalação, você pode executar o agendador diretamente do terminal:
+
+```bash
+agende
+```
+
+Na primeira execução, o script solicitará seu nome de usuário e senha do SIGAA. Essas credenciais serão salvas localmente para uso futuro.
+
+## Funcionamento
+
+O script realiza as seguintes etapas:
+
+1. **Login no SIGAA**: Acessa a página de login e realiza a autenticação com as credenciais fornecidas.
+2. **Navegação**: Acessa a seção do Restaurante Universitário e a página de agendamento de refeições.
+3. **Agendamento**: Agenda automaticamente almoço e jantar para os próximos dias úteis disponíveis (até 3 dias).
+4. **Confirmação**: Verifica e reporta o sucesso ou falha de cada agendamento.
+
+## Requisitos
+
+- Python 3.7 ou superior
+- Conexão com a internet
+- Google Chrome (o ChromeDriver será gerenciado automaticamente)
+
+## Notas
+
+- O script utiliza o modo headless do Chrome, então nenhuma janela do navegador será aberta durante a execução.
+- As credenciais são armazenadas localmente em um arquivo oculto (.credenciais_agende) para uso futuro.
+- O agendamento é limitado aos próximos 3 dias úteis, conforme as restrições do sistema SIGAA.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## Aviso Legal
+
+Este script é um projeto não oficial e não é afiliado à Universidade Federal do Ceará. Use por sua própria conta e risco.
