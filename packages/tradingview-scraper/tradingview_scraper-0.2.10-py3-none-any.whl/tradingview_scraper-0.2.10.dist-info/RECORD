@@ -1,0 +1,16 @@
+tradingview_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tradingview_scraper/tradingview_scraper.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tradingview_scraper/data/exchanges.txt,sha256=mA4SrrLfNZd3HwEAv0NSwMabAFGINyZM7A-SeGbvunE,229
+tradingview_scraper/data/indicators.txt,sha256=Rv06b71hZt-39MRQ4yOPNscLF4ESOiMy_bvvU9EaEmg,1031
+tradingview_scraper/data/languages.json,sha256=Ysa7kN3RGuwPBKdYc5KI4KGCmEYjpTpM4MwFtkYkQkQ,440
+tradingview_scraper/data/news_providers.txt,sha256=Pu6PGKUWJCLjQCnpLznu5wjn_CqexpI_JtpUTxzuUHs,169
+tradingview_scraper/symbols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tradingview_scraper/symbols/ideas.py,sha256=inlvR6djZ2zWO-uUffgZ2bdrFVvYQQYfXNmo3WZlD0s,8480
+tradingview_scraper/symbols/news.py,sha256=7QCPvkY8cg8AelDvzH1mGLl-R8lqWQtNfLIT6a_C0Qo,12985
+tradingview_scraper/symbols/technicals.py,sha256=UDWB8_N3a_wgP8WGFwBJeWxTlEPmXgi68YoydMFFNQI,4720
+tradingview_scraper/symbols/utils.py,sha256=RFCpBIrRxBSe0qaA3W8n79kf5yjNwwRcXZiEzD1Pplc,6221
+tradingview_scraper-0.2.10.dist-info/LICENSE,sha256=yoCa5YU8g0CgKTjsLnpHaWtlTrvhfKcxCNEsoMN-DgU,1082
+tradingview_scraper-0.2.10.dist-info/METADATA,sha256=ildSY0ADrbo2iV2jLiBt1QpvhvzEDFP_W3egw7DybD8,8942
+tradingview_scraper-0.2.10.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+tradingview_scraper-0.2.10.dist-info/top_level.txt,sha256=ch_G3Nckn6gXLwcyowtbyAiderOxKjSnb-xr2vRDSvw,20
+tradingview_scraper-0.2.10.dist-info/RECORD,,
