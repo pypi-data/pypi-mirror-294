@@ -1,0 +1,10 @@
+hatch_deps_selector/__about__.py,sha256=Zt2za14TijrIgZSaXJX2gRUhha9pxOcv2cMUOQZCTOE,130
+hatch_deps_selector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_deps_selector/hooks.py,sha256=YxlniU1wMly8Tu2rO2NPXIDXWd3UeH6psGHbCKi3NSU,274
+hatch_deps_selector/plugin.py,sha256=ZVwURlIrAZK6SJGuVaGHT2o314ZnFWaoshXcQlY_-v0,2639
+hatch_deps_selector-0.1.2.dist-info/METADATA,sha256=aKRK8X0AXepeab3wPfW39sDq0tU2KhTgKlRw09_Qbfs,4628
+hatch_deps_selector-0.1.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hatch_deps_selector-0.1.2.dist-info/entry_points.txt,sha256=GY8OzI_SpmTKiuB5NLqqRNZwV8sy3XsumjbKTR8sdGk,45
+hatch_deps_selector-0.1.2.dist-info/licenses/LICENSE,sha256=4BcikqvulW5nh_MxaocO-lC7ydIX23dMbcqtNTUSxr4,1082
+hatch_deps_selector-0.1.2.dist-info/licenses/LICENSE.txt,sha256=VXL9pYb3UqZmiOu2dIOQfd6Bq2rPc8SRRlz6j1WQlYg,1100
+hatch_deps_selector-0.1.2.dist-info/RECORD,,

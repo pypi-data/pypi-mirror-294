@@ -1,0 +1,109 @@
+Metadata-Version: 2.3
+Name: hatch-deps-selector
+Version: 0.1.2
+Summary: Select variants of your dependencies with environment variables
+Project-URL: Documentation, https://github.com/jupyter-book/hatch-deps-selector#readme
+Project-URL: Issues, https://github.com/jupyter-book/hatch-deps-selector/issues
+Project-URL: Source, https://github.com/jupyter-book/hatch-deps-selector
+Author-email: Angus Hollands <goosey15@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024 Project Jupyter
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# hatch-deps-selector
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatch-deps-selector.svg)](https://pypi.org/project/hatch-deps-selector)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-deps-selector.svg)](https://pypi.org/project/hatch-deps-selector)
+
+-----
+
+This package provides a Hatch plugin for configuring "variants" of dependencies according to an environment variable.
+This can be used e.g. to change the package dependencies for conda-forge vs PyPI builds.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Global dependency
+
+Ensure `hatch-deps-selector` is defined within the `build-system.requires` field in your `pyproject.toml` file.
+
+```toml
+[build-system]
+requires = ["hatchling", "hatch-deps-selector"]
+build-backend = "hatchling.build"
+```
+
+## Build plugin
+
+The [build plugin](https://hatch.pypa.io/latest/plugins/build-hook/reference/) name is `selector`.
+
+- ***pyproject.toml***
+
+    ```toml
+    [tool.hatch.build.hooks.selector]
+    default-variant = "foo"
+    env-var = <ENV-VAR-NAME>
+    
+    [tool.hatch.build.hooks.selector.variants.foo]
+    dependencies = ["numpy"]
+    ```
+
+- ***hatch.toml***
+
+    ```toml
+    [build.hooks.selector]
+    default-variant = "foo"
+    env-var = <ENV-VAR-NAME>
+
+    [build.hooks.selector.variants.foo]
+    dependencies = ["numpy"]
+    ```
+
+By default, set `HATCH_SELECTOR_VARIANT=<VARIANT>` to select the dependencies from `<VARIANT>` as additional project dependencies.
+This might be used to only pull in certain dependencies when building for PyPI vs conda-forge.
+
+
+### Build plugin options
+
+| Option            | Type   | Default                  | Description                                                      |
+|-------------------|--------|--------------------------|------------------------------------------------------------------|
+| `default-variant` | `str`  | None                     | Name of default variant to use if environment variable is unset. |
+| `env-var`         | `str`  | `HATCH_SELECTOR_VARIANT` | Name of environment variable to control built variant.           |
+| `variants`        | `dict` | `{}`                     | Table of variant-tables with `dependencies` field.               |
+
+## License
+
+`hatch-deps-selector` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
