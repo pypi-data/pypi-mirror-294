@@ -1,0 +1,100 @@
+[project]
+name = "oots-get"
+version = "1.2.0-dev"
+description = "Download all 'Order of the Stick' comics for local reading."
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Grant Ramsay", email = "grant@gnramsay.com" }]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Topic :: Utilities",
+  "Intended Audience :: End Users/Desktop",
+  "Environment :: Console",
+]
+
+dependencies = [
+  "bs4 == 0.0.2",
+  "colorama == 0.4.6",
+  "lxml == 5.3.0",
+  "requests == 2.32.3",
+  "rich == 13.8.0",
+  "single-source>=0.4.0",
+  "termcolor == 2.4.0",
+  "typer>=0.12.5",
+]
+
+[project.urls]
+"Pull Requests" = "https://github.com/gnramsay/oots-get/pulls"
+"Bug Tracker" = "https://github.com/gnramsay/oots-get/issues"
+"Changelog" = "https://github.com/gnramsay/oots-get/blob/main/CHANGELOG.md"
+"Repository" = "https://github.com/gnramsay/oots-get"
+
+[project.scripts]
+oots-get = "oots_get.main:app"
+
+[tool.uv]
+dev-dependencies = [
+  "ruff == 0.6.3",
+  "mypy == 1.11.2",
+  "types-requests == 2.32.0.20240712",
+  "types-beautifulsoup4 == 4.12.0.20240511",
+  "poethepoet == 0.28.0",
+  "pre-commit == 3.8.0",
+  "github-changelog-md == 0.9.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.poe.tasks]
+# setup 'PoeThePoet' tasks
+pre.cmd = "pre-commit run --all-files"
+pre.help = "Run pre-commit checks"
+mypy.cmd = "mypy . --strict"
+mypy.help = "Run mypy checks"
+format.cmd = "ruff format ."
+format.help = "Format code with Ruff"
+ruff.cmd = "ruff check ."
+ruff.help = "Run Ruff checks"
+
+# package control tasks
+build.cmd = "hatch build"
+build.help = "Build the package"
+publish.cmd = "hatch publish"
+publish.help = "Publish the package to PyPI"
+
+# Generate a CHANGELOG.md
+changelog.cmd = "github-changelog-md -r oots-get -u gnramsay"
+changelog.help = "Generate a CHANGELOG.md file"
+
+[tool.ruff]
+line-length = 80
+src = ["oots_get"]
+target-version = "py39" # minimum python version supported
+
+[tool.ruff.lint]
+select = ["ALL"] # we are being very strict!
+ignore = [
+  "ANN101",
+  "PGH003",
+  "FBT002",
+  "FBT003",
+  "B006",
+] # These rules are too strict even for us 😝
+extend-ignore = ["COM812", "ISC001"] # these are ignored for ruff formatting
+
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "double"
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = ["pydantic.validator", "pydantic.root_validator"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
