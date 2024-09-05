@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: pixelart_modules
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: maturin >=1.7.1
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Usage
+```bash
+$ rye sync
+$ rye run maturin develop --release
+$ rye run python ./example.py
+```
