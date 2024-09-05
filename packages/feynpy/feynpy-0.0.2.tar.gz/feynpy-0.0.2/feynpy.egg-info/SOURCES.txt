@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+feynpy/__init__.py
+feynpy.egg-info/PKG-INFO
+feynpy.egg-info/SOURCES.txt
+feynpy.egg-info/dependency_links.txt
+feynpy.egg-info/top_level.txt
