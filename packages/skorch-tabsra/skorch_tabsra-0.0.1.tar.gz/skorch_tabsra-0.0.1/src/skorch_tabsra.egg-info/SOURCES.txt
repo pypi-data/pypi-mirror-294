@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/skorch_tabsra.egg-info/PKG-INFO
+src/skorch_tabsra.egg-info/SOURCES.txt
+src/skorch_tabsra.egg-info/dependency_links.txt
+src/skorch_tabsra.egg-info/requires.txt
+src/skorch_tabsra.egg-info/top_level.txt
+src/tabsra/__init__.py
+src/tabsra/skorch_tabsra.py

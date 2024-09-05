@@ -1,0 +1,4 @@
+numpy>=1.21.0
+torch>=1.12.1
+einops>=0.4.1
+skorch>=0.15.0
