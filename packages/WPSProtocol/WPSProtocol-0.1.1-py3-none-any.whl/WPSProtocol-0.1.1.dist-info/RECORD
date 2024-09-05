@@ -1,0 +1,15 @@
+WPSProtocol/InitialFunctions.py,sha256=pAVW_P2fNKnGyw1EJ2qVlh1U-u76dOXXw2b20vtACHw,1648
+WPSProtocol/Module_RotationAngleErrorsDoubleAveraging.py,sha256=pek-PHZgJGLeieuKvacU2yyCW1m1Uix8sr1sMWQwnAQ,8289
+WPSProtocol/Module_WalshPSeq.py,sha256=cfC9QDJrw0GD-cBtgxtGd-tYhFEhgv88vAkXBOgBhvk,4413
+WPSProtocol/Part_2A.py,sha256=QmNQZcfVbsUCKUYWTl4xuiSqMrV-Dx5Z4h8w_jBqkZQ,12034
+WPSProtocol/TestingFile.py,sha256=0YyTibssWV7-b_uhvR8RhXEBoKBFYD4vKZCuKwhaZyQ,1919
+WPSProtocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WPSProtocol/__pycache__/InitialFunctions.cpython-38.pyc,sha256=J6HDEgQ-OjY9A1uCgmO3SsP9sA_cGGUw3OoQ7z1ilN8,2040
+WPSProtocol/__pycache__/Module_WalshPSeq.cpython-38.pyc,sha256=kl1RH3C0xsOlnF2afm9CqCnQpm4dKe6kbH57SyNzgtU,4915
+WPSProtocol/__pycache__/Part_2A.cpython-38.pyc,sha256=n_KMmjiq0Caf3srYNf9p0LiKTGFC-vPKYL3ISFk0PQI,9544
+WPSProtocol/__pycache__/__init__.cpython-38.pyc,sha256=Ijjia9SDkHTBXGMyRCyeJzD_rNytPkyWhWPPpPe0eAw,157
+WPSProtocol-0.1.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+WPSProtocol-0.1.1.dist-info/METADATA,sha256=6lrewOOzoUwTfUSKUdpnjuST98ph2U6KPY_1syhU0DY,6475
+WPSProtocol-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+WPSProtocol-0.1.1.dist-info/top_level.txt,sha256=sU22gb9jd41e4PnELxlUtuuctzv0NyTzHXvlsTTYac4,12
+WPSProtocol-0.1.1.dist-info/RECORD,,
