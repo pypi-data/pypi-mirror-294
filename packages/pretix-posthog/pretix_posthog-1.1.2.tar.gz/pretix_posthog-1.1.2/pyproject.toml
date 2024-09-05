@@ -1,0 +1,43 @@
+[project]
+name = "pretix-posthog"
+dynamic = ["version"]
+description = "PostHog Integration for Pretix"
+readme = "README.rst"
+license = {text = "Apache"}
+keywords = ["pretix"]
+authors = [
+    {name = "Daniel Malik", email = "daniel@binarycollective.de"},
+]
+maintainers = [
+    {name = "Daniel Malik", email = "daniel@binarycollective.de"},
+]
+
+dependencies = [
+    "posthog>=3.5"
+]
+
+[project.entry-points."pretix.plugin"]
+pretix_posthog = "pretix_posthog:PretixPluginMeta"
+
+[project.entry-points."distutils.commands"]
+build = "pretix_plugin_build.build:CustomBuild"
+
+[build-system]
+requires = [
+    "setuptools",
+    "pretix-plugin-build",
+]
+
+[project.urls]
+homepage = "https://github.com/fronbasal/pretix-posthog"
+repository = "https://github.com/fronbasal/pretix-posthog"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "pretix_posthog.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["pretix*"]
+namespaces = false
