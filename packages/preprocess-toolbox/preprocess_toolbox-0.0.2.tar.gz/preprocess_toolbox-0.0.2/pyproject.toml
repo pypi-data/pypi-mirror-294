@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preprocess_toolbox"
+dynamic = ["version", "readme"]
+requires-python = ">=3.8"
+description = "A preprocessing toolbox for converting datasets into assets ready for ML based workloads"
+authors = [
+  {name = "James Byrne", email = "digitalinnovation@bas.ac.uk"}
+]
+maintainers = [
+  {name = "James Byrne", email = "digitalinnovation@bas.ac.uk"}
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "download-toolbox",
+    "orjson",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.scripts]
+preprocess_missing_spatial = "preprocess_toolbox.dataset.cli:missing_spatial"
+preprocess_missing_time = "preprocess_toolbox.dataset.cli:missing_time"
+preprocess_regrid = "preprocess_toolbox.dataset.cli:regrid"
+preprocess_rotate = "preprocess_toolbox.dataset.cli:rotate"
+
+#
+preprocess_loader_init = "preprocess_toolbox.loader.cli:create"
+preprocess_loader_copy = "preprocess_toolbox.loader.cli:copy"
+
+preprocess_add_mask = "preprocess_toolbox.loader.cli:add_mask"
+preprocess_add_channel = "preprocess_toolbox.loader.cli:add_channel"
+
+# Processing of datasets
+preprocess_dataset = "preprocess_toolbox.dataset.cli:process_dataset"
+preprocess_add_processed = "preprocess_toolbox.loader.cli:add_processed"
+
+[project.optional-dependencies]
+dev = [
+    "watchdog",
+    "flake8",
+    "tox",
+    "coverage",
+    "twine",
+    "pytest",
+    "black",
+    "build",
+    "importlib_metadata",
+    "pre-commit",
+]
+docs = [
+  "jinja2",
+  "Sphinx",
+  "myst_parser"
+]
+
+[project.urls]
+bugs = "https://github.com/environmental-forecasting/preprocess_toolbox/issues"
+changelog = "https://github.com/environmental-forecasting/preprocess_toolbox/blob/master/changelog.md"
+homepage = "https://github.com/environmental-forecasting/preprocess_toolbox"
+
+[tool.setuptools]
+py-modules = ["preprocess_toolbox"]
+
+[tool.setuptools.dynamic]
+version = {attr = "preprocess_toolbox.__version__"}
+readme = {file = ["README.md"]}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
