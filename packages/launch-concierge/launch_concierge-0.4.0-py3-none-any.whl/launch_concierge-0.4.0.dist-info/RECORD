@@ -1,0 +1,15 @@
+launch_concierge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+launch_concierge/install.py,sha256=_xbAFhXaBoVE9-_uU_mZkwVp1qjeGALbGaeqLyAADJ8,980
+launch_concierge/relaunch.py,sha256=0GvwUL5oUFs4JWZEngwej7ORJAv_KrxHutVpAoyPoo8,412
+launch_concierge/concierge_installer/arguments.py,sha256=-vocARPDLYF8_MbW6ce2Ko-6SE3hX2oqfHpPbgJ3HJk,3499
+launch_concierge/concierge_installer/functions.py,sha256=cw9KIRPYsEkFUH0v0y51UYA5-Sq2rTqMIwZcNclkBlk,12069
+launch_concierge/concierge_installer/upgrade_scripts.py,sha256=jESjNsweMphBRE3vcbexR9QsYP3ZH0k_QXEHW9BWdd8,1780
+launch_concierge/docker_compose/docker-compose-gpu.yml,sha256=c7_O1E-ASC2HpTlhDqtxi4QWE45lr6rzJ-xOpe8vQqQ,502
+launch_concierge/docker_compose/docker-compose.yml,sha256=8wQj-37mEmAiH4qvWEyyif3aS3-4DPYZhOrvHPHFEck,496
+launch_concierge/docker_compose/docker_compose_dependencies/docker-compose-concierge.yml,sha256=_PU9nZh4qEl2wr_s1W5WAaZ1DtwxrkNUCIUphKfxWtI,287
+launch_concierge/docker_compose/docker_compose_dependencies/docker-compose-ollama.yml,sha256=CezZ7_E_I_CONDDTAe3phEqNBjx6e6s0Z6aYzl7AFkk,436
+launch_concierge/docker_compose/docker_compose_dependencies/docker-compose-opensearch.yml,sha256=2VUgniVBsF-hCHX5GylHpmjY5g0knuT-cdK6pfd2S0k,2180
+launch_concierge-0.4.0.dist-info/METADATA,sha256=xIsLyxB6wWyq-FyL9965mbn73aTkb68XZIGnDNXe2gY,163
+launch_concierge-0.4.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+launch_concierge-0.4.0.dist-info/entry_points.txt,sha256=Pjk3gMey2GaUWO4UBRkbEGG73SMoFa342kxdZvze3wg,127
+launch_concierge-0.4.0.dist-info/RECORD,,
