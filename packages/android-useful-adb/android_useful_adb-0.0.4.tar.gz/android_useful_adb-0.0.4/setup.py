@@ -1,0 +1,29 @@
+import setuptools #导入setuptools打包工具
+ 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+ 
+setuptools.setup(
+    name="android_useful_adb", # 用自己的名替换其中的YOUR_USERNAME_
+    version="0.0.4",    #包版本号，便于维护版本
+    author="Cxz",    #作者，可以写自己的姓名
+    author_email="chenzhe12320@163.com",    #作者联系方式，可写自己的邮箱地址
+    description="常用adb命令",#包的简述
+    long_description=long_description,    #包的详细介绍，一般在README.md文件内
+    long_description_content_type="text/markdown",
+    url="https://github.com/LiNoZues/useful_adb",    #自己项目地址，比如github的项目地址
+    packages=setuptools.find_packages( include=['android_useful_adb', 'android_useful_adb.*']),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_data={'android_useful_adb': ['static/','static/*/*']},
+    keywords = 'ADB adb android',
+    python_requires='>=3.6',    #对python的最低版本要求
+    install_requires=[
+        'AxmlParserPY==0.0.4',
+        'bytecode==0.15.1',
+        'loguru==0.7.2'
+    ],
+)

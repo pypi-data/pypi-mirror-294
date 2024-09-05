@@ -1,0 +1,2 @@
+封装了一些常用的adb命令
+可以获取cpu、memery、fps
