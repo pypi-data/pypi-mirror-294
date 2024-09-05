@@ -1,0 +1,7 @@
+docs
+logs
+mirrors_dir
+model_dir
+olah
+repos
+static
