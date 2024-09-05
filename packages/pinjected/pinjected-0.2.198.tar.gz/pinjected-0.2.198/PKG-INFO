@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pinjected
+Version: 0.2.198
+Summary: Immutable Dependency Injection for Python.
+License: MIT
+Author: proboscis
+Author-email: nameissoap@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beartype (>=0.18.5,<0.19.0)
+Requires-Dist: cloudpickle
+Requires-Dist: cytoolz
+Requires-Dist: expression
+Requires-Dist: fire
+Requires-Dist: frozendict
+Requires-Dist: loguru
+Requires-Dist: makefun
+Requires-Dist: networkx
+Requires-Dist: pydantic
+Requires-Dist: pytest (>=8.3.2,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.24.0,<0.25.0)
+Requires-Dist: pytest-xdist (>=3.6.1,<4.0.0)
+Requires-Dist: pyvis
+Requires-Dist: pyyaml
+Requires-Dist: returns
+Requires-Dist: rich
+Requires-Dist: tabulate
