@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: llmcollection
+Version: 0.2.0
+Summary: Implementation of LLMs in pytorch
+Author: Mohit Prabhav Gupta
+Author-email: mohitp.gupta1102@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: torch (==2.3.0)
+Requires-Dist: torchtune (==0.1.1)
+Description-Content-Type: text/markdown
+
+LLMcollection is a collection of open source LLMs implemented from scratch in pytorch. The accompanied code and documentation is present in **[this](https://github.com/mohitpg/LLMs-from-scratch)** github repo.
+
+
