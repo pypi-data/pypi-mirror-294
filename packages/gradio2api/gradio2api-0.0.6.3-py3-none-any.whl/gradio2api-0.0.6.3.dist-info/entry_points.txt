@@ -1,0 +1,2 @@
+[console_scripts]
+gradio2api = gradio2api.cli:cli_remote
