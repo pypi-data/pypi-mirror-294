@@ -1,0 +1,6 @@
+brightway2==2.4.3
+pyomo==6.6.1
+highspy==1.7.2
+ipython==8.14.0
+jupyterlab
+tqdm
