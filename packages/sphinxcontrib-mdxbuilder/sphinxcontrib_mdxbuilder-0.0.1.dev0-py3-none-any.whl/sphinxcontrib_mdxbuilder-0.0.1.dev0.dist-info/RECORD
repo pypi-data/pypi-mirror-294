@@ -1,0 +1,10 @@
+sphinxcontrib/mdxbuilder/__init__.py,sha256=8nk6gsX-rIg0EvbtspzLC1DtJIHvHK5a6N8EpTnt_FQ,1140
+sphinxcontrib/mdxbuilder/builders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/mdxbuilder/builders/mdx.py,sha256=t6ZF8lavBLOBYirFSI_GX1XrgD_6iorm0aeh_SSPlt4,2765
+sphinxcontrib/mdxbuilder/writers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/mdxbuilder/writers/mdx.py,sha256=-I4xq_KP2eqSDwK-7S9pIJ1X4LrUuv7NJ4Ysz8JGDgo,25302
+sphinxcontrib_mdxbuilder-0.0.1.dev0.dist-info/entry_points.txt,sha256=2NziWUjs4UsSOHyZ-Fjh9i_wcIq_L6yg3YZbP9SworQ,77
+sphinxcontrib_mdxbuilder-0.0.1.dev0.dist-info/LICENSE,sha256=6nrxbj91cfxgGfPf-JhlDoNie-opCW6ME6ZpygB_IlY,1069
+sphinxcontrib_mdxbuilder-0.0.1.dev0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sphinxcontrib_mdxbuilder-0.0.1.dev0.dist-info/METADATA,sha256=oMLcVHDFGYLHnxTfGpIlPjQ80fEWg1XGtz6A4FBkNqw,905
+sphinxcontrib_mdxbuilder-0.0.1.dev0.dist-info/RECORD,,
