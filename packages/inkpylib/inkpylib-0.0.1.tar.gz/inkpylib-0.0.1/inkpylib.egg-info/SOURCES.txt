@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+inkpylib/__init__.py
+inkpylib.egg-info/PKG-INFO
+inkpylib.egg-info/SOURCES.txt
+inkpylib.egg-info/dependency_links.txt
+inkpylib.egg-info/top_level.txt

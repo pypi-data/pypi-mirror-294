@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: inkpylib
+Version: 0.0.1
+Summary: python develop library for inksha
+Home-page: https://github.com/InkSha/pylib
+Author: inksha
+Author-email: inksha@inksha.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pylib
+my python develop library
