@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: turbo-c2
+Version: 0.0.1a3
+Summary: 
+Author: Patrick V. Leguizamon
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: deprecated (>=1.2.14,<2.0.0)
+Requires-Dist: fastapi (>=0.104.1,<0.105.0)
+Requires-Dist: mypy (>=1.5.1,<2.0.0)
+Requires-Dist: prometheus-client (>=0.17.1,<0.18.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: ray[serve] (==2.23.0)
+Description-Content-Type: text/markdown
+
+# Turbo C2
+
