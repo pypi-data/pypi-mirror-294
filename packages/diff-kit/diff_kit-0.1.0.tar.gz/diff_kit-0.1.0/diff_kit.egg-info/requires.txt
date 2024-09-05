@@ -1,0 +1,10 @@
+typer
+rich
+dictdiffer
+loguru
+aiomysql
+motor
+asyncpg
+pandas
+openpyxl
+tqdm
