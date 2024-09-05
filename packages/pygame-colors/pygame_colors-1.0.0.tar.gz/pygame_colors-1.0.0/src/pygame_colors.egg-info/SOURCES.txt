@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+src/pygame_colors/__init__.py
+src/pygame_colors/pygame_colors.py
+src/pygame_colors.egg-info/PKG-INFO
+src/pygame_colors.egg-info/SOURCES.txt
+src/pygame_colors.egg-info/dependency_links.txt
+src/pygame_colors.egg-info/requires.txt
+src/pygame_colors.egg-info/top_level.txt

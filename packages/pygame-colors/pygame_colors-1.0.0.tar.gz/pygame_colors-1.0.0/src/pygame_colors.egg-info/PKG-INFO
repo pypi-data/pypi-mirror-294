@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pygame_colors
+Version: 1.0.0
+Summary: A simple Pygame module for accessing predefined colors that will ease your scripting and save the time
+Home-page: https://github.com/basitganie/pygame_colors
+Author: Basit Ahmad Ganie
+Author-email: basitahmed1412@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: pygame
+
+# pygame_colors
+
+`pygame_colors` is a simple Python module for Pygame that provides pre-defined color names and utility functions to make Pygame scripts easier to read and write.
+
+# Author: Basit Ahmad Ganie 
+email : basitahmed1412@gmail.com
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+ pip install pygame_colors
+ ```
+ Example usage:
+     
+     ```python
+import pygame
+from pygame_colors import get_color, lighten, darken
+
+# Initialize Pygame
+pygame.init()
+
+# Set up screen
+screen = pygame.display.set_mode((400, 300))
+
+# Main loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Set background color using 'skyblue'
+    screen.fill(get_color('skyblue'))
+
+    # Draw a rectangle with a lighter version of 'firebrick'
+    pygame.draw.rect(screen, lighten(get_color('firebrick')), (50, 50, 100, 50))
+
+    pygame.display.flip()
+
+pygame.quit()
+
+```
