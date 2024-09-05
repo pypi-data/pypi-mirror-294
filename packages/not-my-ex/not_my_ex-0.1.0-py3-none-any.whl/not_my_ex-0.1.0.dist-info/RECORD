@@ -1,0 +1,17 @@
+not_my_ex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+not_my_ex/__main__.py,sha256=X_nQ3mFsR9KnFq0VRMWWBlxRXHfpsZRVVoa8vATtQFc,2883
+not_my_ex/bluesky.py,sha256=pXZX4MvW4trFqMsMe53EKhPqFfp1thSYMeaoruKkcGU,5230
+not_my_ex/card.py,sha256=M0No76sYtcCBUeU9juNkcVNbCvBMUx_3IpkH4cEw9CU,2137
+not_my_ex/client.py,sha256=eBtxOu1nzTOv3DfzEcflft_W2k8ov_yrEu3Z6Cn5_64,1118
+not_my_ex/gui.py,sha256=ocr8JfPi8hglwxSrnLVVGLN5ZRMdiPvVlFN7G4Jb-pw,6037
+not_my_ex/language.py,sha256=cBwarnR8waAeTSUQb6IM9-c6CaqR-Sz53Bp60WcG6Dg,691
+not_my_ex/mastodon.py,sha256=c2CBY89Hbzbff5Oqcs-zU-KaWbymVg47fIERaS-nO8w,2402
+not_my_ex/media.py,sha256=FwKeFw1jTRjlrX4wtLV9QpEApIdVXZ3X5ZTnEIJaODk,904
+not_my_ex/mime.py,sha256=vrqBgcWbeVbWZRrDqNZWqFWnXb4vbvHGmQ7CN1f-IQg,522
+not_my_ex/post.py,sha256=UTgW-dO7XqZS7D0dlzGujgbJfkWDxFAeVagGRg7vOa0,999
+not_my_ex/settings.py,sha256=8TumG_-5loo1uzv9P3x0rbcGz-TtS_rG7f0819iqbwk,980
+not_my_ex-0.1.0.dist-info/METADATA,sha256=YpK5N963aQ1J-3rvCiBnyB1rWVsSP__nZ-JdWf5RdLo,45233
+not_my_ex-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+not_my_ex-0.1.0.dist-info/entry_points.txt,sha256=rn2MMsyVdh9Ayufv9Dq1_J4Lzs06l81YyczSXDwnlYo,87
+not_my_ex-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+not_my_ex-0.1.0.dist-info/RECORD,,
