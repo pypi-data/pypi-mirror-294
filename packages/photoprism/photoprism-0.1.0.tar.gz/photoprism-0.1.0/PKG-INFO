@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: photoprism
+Version: 0.1.0
+Summary: Photoprism Python API Client 
+Home-page: https://github.com/mkornat/photoprism-python
+License: MIT
+Keywords: photoprism
+Author: Marcin Kornat
+Author-email: marcin.kornat@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp[speedups] (>=3.10.5,<4.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Project-URL: Repository, https://github.com/mkornat/photoprism-python
+Description-Content-Type: text/markdown
+
+# Photoprism Python API Client
+
+## Installation
+
+```bash
+pip install photoprism
+```
+
+## Usage
+
+```python
+import asyncio
+from pathlib import Path
+
+from photoprism import PhotoprismSession, PhotoprismClient
+from photoprism.models.query import Size
+
+
+async def main():
+    session = PhotoprismSession(
+        username="username",
+        password="password",
+        host="localhost",
+        protocol="http",
+    )
+    client = PhotoprismClient(session)
+    
+    albums = await client.albums.filter(count=3, q="cats")
+    for album in albums:
+        image_path = await client.albums.download_cover_image(
+            album_uid=album.uid,
+            size=Size.Tile50,
+            file_dir=Path("data/album_covers"),
+        )
+        print(image_path)
+
+        
+if __name__ == '__main__':
+    asyncio.run(main())
+
+```
+
