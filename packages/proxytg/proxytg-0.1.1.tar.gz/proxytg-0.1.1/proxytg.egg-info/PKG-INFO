@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: proxytg
+Version: 0.1.1
+Summary: Package implements TelegramAccount class, which keeps your telegram session persistent with proxy
+Home-page: https://github.com/miklisanton/proxytg
+Author: Anton Miklis
+Author-email: antonmiklis@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs==24.2.0
+Requires-Dist: blinker==1.7.0
+Requires-Dist: Brotli==1.1.0
+Requires-Dist: certifi==2024.7.4
+Requires-Dist: cffi==1.17.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: cryptography==43.0.0
+Requires-Dist: docutils==0.21.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: h2==4.1.0
+Requires-Dist: hpack==4.0.0
+Requires-Dist: hyperframe==6.0.1
+Requires-Dist: idna==3.7
+Requires-Dist: importlib_metadata==8.2.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==5.3.0
+Requires-Dist: jaraco.functools==4.0.2
+Requires-Dist: kaitaistruct==0.10
+Requires-Dist: keyring==25.3.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.4.0
+Requires-Dist: nh3==0.2.18
+Requires-Dist: outcome==1.3.0.post0
+Requires-Dist: pkginfo==1.10.0
+Requires-Dist: pyasn1==0.6.0
+Requires-Dist: pycparser==2.22
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: pyOpenSSL==24.2.1
+Requires-Dist: pyparsing==3.1.2
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.1
+Requires-Dist: selenium==4.23.1
+Requires-Dist: selenium-wire==5.1.0
+Requires-Dist: setuptools==68.2.2
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: trio==0.26.2
+Requires-Dist: trio-websocket==0.11.1
+Requires-Dist: twine==5.1.1
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: wsproto==1.2.0
+Requires-Dist: zipp==3.20.0
+Requires-Dist: zstandard==0.23.0
+
+## proxytg
+This package implements TelegramAccount class, which can be used for automating tasks on telegram
+with proxy(uses https://mobileproxy.space api).
+## Usage
+```python
+from proxytg.telegram import TelegramAccount
+
+proxy_data = {
+    "key": "proxy_key_from_mobile_proxy",
+    "authorization": "mobile_proxy_api_authorization"
+}
+obj = TelegramAccount("account_name", proxy_data, "path_to_sessions_dir")
+
+```
+if object with given account_name already exist in sessions directory, then cookies and local storage would
+be loaded(to keep telegram session persistent)
