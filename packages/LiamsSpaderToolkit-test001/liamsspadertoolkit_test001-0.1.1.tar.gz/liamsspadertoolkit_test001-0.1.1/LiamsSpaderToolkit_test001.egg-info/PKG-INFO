@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: LiamsSpaderToolkit_test001
+Version: 0.1.1
+Summary: liam`s 自定义爬虫私人包.
+Author: Liam
+Author-email: a61628904@163.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

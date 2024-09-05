@@ -1,0 +1,6 @@
+README.md
+setup.py
+LiamsSpaderToolkit_test001.egg-info/PKG-INFO
+LiamsSpaderToolkit_test001.egg-info/SOURCES.txt
+LiamsSpaderToolkit_test001.egg-info/dependency_links.txt
+LiamsSpaderToolkit_test001.egg-info/top_level.txt
