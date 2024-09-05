@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurostore"
+version = "0.3.0"
+description = "A package for storing and managing LLM queries."
+requires-python = ">=3.11"
+dependencies = [
+  "pymilvus", 
+  "pymilvus[model]", 
+  "openai", 
+  "keybert", 
+  "numpy<2"
+]
+maintainers = [
+  {name = "Kunal Kapur", email = "kunalkapur888@gmail.com"}
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["openAI", "milvus", "vector database"]
+
+[project.urls]
+Homepage = "https://github.com/kunal-kapur/neurostore"
+
+[project.optional-dependencies]
+dev = ["black>24.1.0", "pytest>=8.0.0", "flake8", "mypy>1.10.0", "build", "twine>=5.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.mypy]
+ignore_missing_imports = true

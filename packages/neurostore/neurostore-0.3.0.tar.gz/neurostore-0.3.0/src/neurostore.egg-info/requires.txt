@@ -1,0 +1,13 @@
+pymilvus
+pymilvus[model]
+openai
+keybert
+numpy<2
+
+[dev]
+black>24.1.0
+pytest>=8.0.0
+flake8
+mypy>1.10.0
+build
+twine>=5.1.1

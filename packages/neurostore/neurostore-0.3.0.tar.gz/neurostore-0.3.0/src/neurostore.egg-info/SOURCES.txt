@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/neurostore/__init__.py
+src/neurostore/chat.py
+src/neurostore/embedding_models.py
+src/neurostore/utils.py
+src/neurostore.egg-info/PKG-INFO
+src/neurostore.egg-info/SOURCES.txt
+src/neurostore.egg-info/dependency_links.txt
+src/neurostore.egg-info/requires.txt
+src/neurostore.egg-info/top_level.txt
+tests/test_chat.py
+tests/test_utils.py
