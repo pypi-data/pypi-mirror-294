@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: mawhrin
+Version: 0.1.1
+Summary: A command-line note file manager in Python.
+Author: Stephen Malone
+Project-URL: Github, https://github.com/stvmln86/mawhrin
+Project-URL: Issues, https://github.com/stvmln86/mawhrin/issues
+Project-URL: Changes, https://github.com/stvmln86/mawhrin/blob/main/changes.md
+Keywords: cli,notes
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1
+
+# Mawhrin
+
+**Mawhrin** is a command-line note file manager, written in [Python 3.11][py] by [Stephen Malone][sm]. It provides a simple, universal command-line interface to your notes, no matter where you are in the terminal.
+
+## Installation
+
+You can install Mawhrin using Pip...
+
+```
+pip install mawhrin
+```
+
+... or download the [latest release][rl] for your platform.
+
+## Commands
+
+### `list [TEXT]`
+
+List all notes, or notes with names containing `TEXT`.
+
+<details><summary>Example:</summary>
+
+```
+$ mawhrin list
+alpha
+bravo
+charlie
+
+$ mawhrin list ch
+charlie
+```
+
+</details>
+
+## Contributing
+
+Please submit all bug reports and feature requests to the [issue tracker][is], thank you. For developers, run `pip install mawhrin[test]` to install testing dependencies.
+
+[is]: https://github.com/stvmln86/mawhrin/issues
+[rl]: https://github.com/stvmln86/mawhrin/releases/latest
+[sm]: https://github.com/stvmln86
+[py]: https://www.python.org/downloads/release/python-3110/
