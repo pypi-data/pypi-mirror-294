@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+signalytica/__init__.py
+signalytica/signalytica.py
+signalytica.egg-info/PKG-INFO
+signalytica.egg-info/SOURCES.txt
+signalytica.egg-info/dependency_links.txt
+signalytica.egg-info/requires.txt
+signalytica.egg-info/top_level.txt
