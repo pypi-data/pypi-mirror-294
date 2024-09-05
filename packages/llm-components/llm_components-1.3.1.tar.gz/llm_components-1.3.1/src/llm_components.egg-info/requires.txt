@@ -1,0 +1,4 @@
+pathspec
+beautifulsoup4
+requests
+markdownify
