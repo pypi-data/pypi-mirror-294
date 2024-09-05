@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+diff-file-import=mkdocs_diff_file_import.diff_file_import:ImportDiff
+
