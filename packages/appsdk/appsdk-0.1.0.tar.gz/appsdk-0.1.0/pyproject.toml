@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "appsdk"
+version = "0.1.0"
+description = "app-registry-sdk"
+authors = ["Anjaiah Methuku <anjaiahspr@gmail.com>"]
+readme = "README.md"
+packages =[{include = "appsdk"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
