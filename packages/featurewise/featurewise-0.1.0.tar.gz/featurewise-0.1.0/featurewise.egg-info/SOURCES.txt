@@ -1,0 +1,9 @@
+setup.py
+featurewise/__init__.py
+featurewise/featurewise.py
+featurewise.egg-info/PKG-INFO
+featurewise.egg-info/SOURCES.txt
+featurewise.egg-info/dependency_links.txt
+featurewise.egg-info/entry_points.txt
+featurewise.egg-info/requires.txt
+featurewise.egg-info/top_level.txt

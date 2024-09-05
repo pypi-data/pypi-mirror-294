@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: featurewise
+Version: 0.1.0
+Summary: A Streamlit app for feature engineering
+Home-page: https://github.com/ambilynanjilath/project
+Author: Your Name
+Author-email: ambilybiju2408@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: streamlit
+Requires-Dist: streamlit-aggrid
+Requires-Dist: pandas
+Requires-Dist: Numpy
