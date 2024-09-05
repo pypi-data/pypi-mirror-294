@@ -1,0 +1,15 @@
+
+[build]
+build==1.2.1
+twine==5.1.1
+
+[dev]
+coverage==7.6.1
+mypy==1.11.2
+isort==5.13.2
+flake8==7.1.1
+black==24.8.0
+
+[docs]
+Sphinx==8.0.2
+furo==2024.8.6
