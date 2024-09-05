@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>文件上传</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <link rel="icon"  href="/static/smartui/img/favicon.ico">
+    <link rel="stylesheet" href="/static/smartchart/js/smartgrid.css">
+    <script src="/static/smartui/js/vue.min.js"></script>
+    <link rel="stylesheet" href="/static/smartui/elementui/theme-chalk/index.css">
+    <script src="/static/smartui/elementui/index.js"></script>
+<style>
+.custom-tree-node {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 8px;
+  }
+</style>
+</head>
+<body>
+<vue id="vue_app">
+<div class="el-col-xs-24 el-col-md-24" style="text-align:center;">
+<el-upload
+  class="upload-demo"
+  drag
+  :data="{'typename':dashid,'s':'1'}"
+  action="/echart/upload_file/"
+  :show-file-list="false"
+  :on-success="handleSuccess"
+  multiple>
+  <i class="el-icon-upload"></i>
+  <div class="el-upload__text">将文件拖到此处，支持批量或<em>点击上传</em></div>
+  <div class="el-upload__tip" slot="tip">点击以下列表获取引用地址<el-button type="text" size="mini" @click.stop="fetchAllTree()" >查看资源</el-button><el-button type="text" size="mini" @click.stop="fetchTree1()" >查看仪表盘</el-button></div>
+</el-upload>
+</div>
+<div class="el-col-xs-24 el-col-md-24" style="text-align:center;">
+ <el-tree :data="treeData" :node-key="nodeKey" :props="defaultProps" @node-click="handleNodeClick" v-show="template">
+    <span class="custom-tree-node" slot-scope="{ node, data }">
+      <i :class="data.children?'el-icon-folder-opened':get_fileclass(data.label)">{[ data.label ]}</i>
+        <span>
+      <el-button v-if="photoCheck(data.label)" type="text" size="mini" @click.stop="handleView(data.path)"  icon="el-icon-view" ></el-button>
+      <el-button v-if="!data.children&&typename!='custom'" type="text" size="mini" @click.stop="handleDelete(node,data)"  icon="el-icon-delete" ></el-button>
+      </span>
+    </span>
+  </el-tree>
+  <el-tree v-show="!template" :data="treeData1" :node-key="nodeKey1" :props="defaultProps1" @node-click="">
+    <span class="custom-tree-node" slot-scope="{ node, data }">
+      <i :class="data.models?'el-icon-folder-opened':'el-icon-eleme'">{[ data.name ]}</i>
+        <span>
+      <el-button v-if="!data.models" type="text" size="mini" @click.stop="handleDownload($event,data.name)"  icon="el-icon-download" ></el-button>
+      </span>
+    </span>
+  </el-tree>
+</div>
+<el-dialog :visible.sync="dialogVisible">
+  <img width="100%" :src="previewImage" alt="">
+</el-dialog>
+</vue>
+</body>
+<script src="/static/smartchart/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="/static/smartchart/editor/upload.js?_=1.2"></script>
+</body>
+</html>
