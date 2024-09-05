@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pl_build/__init__.py
+pl_build/pl_build.py
+pl_build/pl_build_linux.py
+pl_build/pl_build_macos.py
+pl_build/pl_build_win32.py
+pl_build.egg-info/PKG-INFO
+pl_build.egg-info/SOURCES.txt
+pl_build.egg-info/dependency_links.txt
+pl_build.egg-info/top_level.txt
