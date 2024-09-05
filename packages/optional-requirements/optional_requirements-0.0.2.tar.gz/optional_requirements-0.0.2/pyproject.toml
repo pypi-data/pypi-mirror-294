@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optional_requirements"
+description="Manage optional requirements and their versions at runtime"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "packaging==24.*",  # It might work with earlier versions. Submit a PR with unit tests if you need it.
+]
+authors = [
+    {name = "Rudolf Byker", email = "rudolfbyker@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.11"  # It might work with earlier versions. Submit a PR with unit tests if you need it.
+
+[project.urls]
+repository = "https://github.com/AutoActuary/optional_requirements"
+
+[tool.setuptools_scm]
+write_to = "src/optional_requirements/version.py"
