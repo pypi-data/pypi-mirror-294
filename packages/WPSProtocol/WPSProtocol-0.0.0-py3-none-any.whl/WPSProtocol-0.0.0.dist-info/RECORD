@@ -1,0 +1,11 @@
+WPSProtocol/InitialFunctions.py,sha256=pAVW_P2fNKnGyw1EJ2qVlh1U-u76dOXXw2b20vtACHw,1648
+WPSProtocol/Module_RotationAngleErrorsDoubleAveraging.py,sha256=pek-PHZgJGLeieuKvacU2yyCW1m1Uix8sr1sMWQwnAQ,8289
+WPSProtocol/Module_WalshPSeq.py,sha256=cfC9QDJrw0GD-cBtgxtGd-tYhFEhgv88vAkXBOgBhvk,4413
+WPSProtocol/Part_2A.py,sha256=QmNQZcfVbsUCKUYWTl4xuiSqMrV-Dx5Z4h8w_jBqkZQ,12034
+WPSProtocol/TestingFile.py,sha256=0YyTibssWV7-b_uhvR8RhXEBoKBFYD4vKZCuKwhaZyQ,1919
+WPSProtocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WPSProtocol-0.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+WPSProtocol-0.0.0.dist-info/METADATA,sha256=ki6QPHkS_idkiX_WSSu3BiPQjKsX2fBVgf1-wKmSt4E,6446
+WPSProtocol-0.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+WPSProtocol-0.0.0.dist-info/top_level.txt,sha256=sU22gb9jd41e4PnELxlUtuuctzv0NyTzHXvlsTTYac4,12
+WPSProtocol-0.0.0.dist-info/RECORD,,
