@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/agende/__init__.py
+src/agende/agende.py
+src/agende.egg-info/PKG-INFO
+src/agende.egg-info/SOURCES.txt
+src/agende.egg-info/dependency_links.txt
+src/agende.egg-info/entry_points.txt
+src/agende.egg-info/requires.txt
+src/agende.egg-info/top_level.txt
