@@ -1,0 +1,17 @@
+bindings
+collections
+core
+ctrlstru
+epscript
+eudlib
+io
+localize
+maprw
+memio
+offsetmap
+prelude
+qgc
+string
+trigger
+trigtrg
+utils
