@@ -1,0 +1,15 @@
+setup.py
+Tasfers.egg-info/PKG-INFO
+Tasfers.egg-info/SOURCES.txt
+Tasfers.egg-info/dependency_links.txt
+Tasfers.egg-info/requires.txt
+Tasfers.egg-info/top_level.txt
+tasfers/Encrypt.py
+tasfers/__init__.py
+tasfers/async_funcs.py
+tasfers/sync_funcs.py
+tasfers.egg-info/PKG-INFO
+tasfers.egg-info/SOURCES.txt
+tasfers.egg-info/dependency_links.txt
+tasfers.egg-info/requires.txt
+tasfers.egg-info/top_level.txt
