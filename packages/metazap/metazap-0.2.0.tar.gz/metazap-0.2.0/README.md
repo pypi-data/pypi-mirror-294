@@ -1,0 +1,139 @@
+# MetaZap
+
+MetaZap is a powerful Python library designed for efficient removal and replacement of metadata from various image file formats. Perfect for photographers, developers, and privacy-conscious users seeking to maintain control over their digital image information.
+
+## Table of Contents
+
+1. [Quick Start](#quick-start)
+2. [Key Features](#key-features)
+3. [System Requirements](#system-requirements)
+4. [Comprehensive Usage Guide](#comprehensive-usage-guide)
+5. [Detailed API Documentation](#detailed-api-documentation)
+6. [Troubleshooting and Support](#troubleshooting-and-support)
+7. [Contribution Guidelines](#contribution-guidelines)
+8. [Third-Party Library Acknowledgments](#third-party-library-acknowledgments)
+9. [Licensing Information](#licensing-information)
+
+## Quick Start
+
+Get started with MetaZap in seconds:
+
+```bash
+pip install metazap
+```
+
+## Key Features
+
+- **Selective Metadata Removal**: Precisely remove specific metadata fields from image files
+- **Custom Metadata Replacement**: Replace existing metadata with user-defined values
+- **Batch Processing**: Efficiently handle individual files or entire directories
+- **Wide Format Support**: Compatible with JPEG, PNG, HEIF, AVIF, and JXL image formats
+- **Privacy-Focused**: Ideal for removing sensitive information from images
+
+## System Requirements
+
+- Python 3.x environment
+- Pillow (PIL) library with full metadata capabilities
+- piexif library for comprehensive EXIF metadata manipulation
+- pillow-avif library for AVIF image format support
+
+## Comprehensive Usage Guide
+
+### Single File Operations
+
+Remove specific metadata fields:
+
+```python
+from metazap import remove_fields_from_file
+
+remove_fields_from_file("original.jpg", ["Artist", "Copyright"], "cleaned.jpg")
+```
+
+Replace metadata fields:
+
+```python
+from metazap import replace_fields_in_file
+
+replace_fields_in_file("original.jpg", {"Artist": "Jane Doe", "Copyright": "2024"}, "updated.jpg")
+```
+
+### Bulk Directory Processing
+
+```python
+import metazap as mz
+
+INPUT_DIR = "raw_images"
+OUTPUT_DIR = "processed_images"
+
+SENSITIVE_FIELDS = [
+    "GPSInfo",
+    "SerialNumber",
+    "CameraSerialNumber",
+    "ImageDescription",
+    "CameraOwnerName",
+]
+
+DEFAULT_METADATA = {
+    "Artist": "Anonymous",
+    "Creator": "Anonymous",
+    "Copyright": "All Rights Reserved",
+    "License": "CC BY-NC-ND 4.0",
+    "DateTime": "2024:01:01 00:00:00",
+}
+
+def main():
+    mz.remove_and_replace_fields_in_dir(INPUT_DIR, SENSITIVE_FIELDS, DEFAULT_METADATA, OUTPUT_DIR)
+
+if __name__ == "__main__":
+    main()
+```
+
+## Detailed API Documentation
+
+### Core Functions
+
+- `remove_fields_from_file(input_file: str, fields_to_remove: List[str], output_file: str) -> None`
+- `replace_fields_in_file(input_file: str, fields_to_replace: Dict[str, str], output_file: str) -> None`
+- `remove_fields_from_dir(input_dir: str, fields_to_remove: List[str], output_dir: str) -> None`
+- `replace_fields_in_dir(input_dir: str, fields_to_replace: Dict[str, str], output_dir: str) -> None`
+- `process_image(input_path: str, output_path: str, fields_to_remove: List[str], fields_to_replace: Dict[str, str]) -> None`
+- `process_directory(input_dir: str, output_dir: str, fields_to_remove: List[str], fields_to_replace: Dict[str, str]) -> None`
+
+For detailed parameter descriptions and return types, refer to the inline documentation or generated API docs.
+
+## Troubleshooting and Support
+
+Encountering issues? Follow these steps:
+
+1. Verify all dependencies are correctly installed and up-to-date
+2. Check console output for specific error messages
+3. For unresolved issues, open a GitHub issue with a detailed description and steps to reproduce
+
+## Contribution Guidelines
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+Please adhere to our coding standards and include unit tests for new features.
+
+## Third-Party Library Acknowledgments
+
+MetaZap leverages these excellent open-source libraries:
+
+- [Pillow](https://python-pillow.org/): Versatile imaging library for Python
+- [piexif](https://github.com/hMatoba/Piexif): Powerful EXIF metadata manipulation
+- [pillow-avif](https://github.com/fdintino/pillow-avif): AVIF format support for Pillow
+
+We extend our gratitude to the developers of these projects for their invaluable contributions to the Python ecosystem.
+
+## Licensing Information
+
+MetaZap is licensed under the Apache License, Version 2.0 with important additional terms, including specific commercial use conditions. Users are strongly advised to read the full [LICENSE](LICENSE) file carefully before using, modifying, or distributing this work. The additional terms contain crucial information about liability, data collection, indemnification, and commercial usage requirements that may significantly affect your rights and obligations.
+
+---
+Keywords: MetaZap, image metadata, EXIF removal, privacy protection, Python library, batch processing, JPEG, PNG, HEIF, AVIF, JXL, image anonymization, metadata management, digital photography, image processing, data privacy, open-source tool, Pillow, piexif, image security
