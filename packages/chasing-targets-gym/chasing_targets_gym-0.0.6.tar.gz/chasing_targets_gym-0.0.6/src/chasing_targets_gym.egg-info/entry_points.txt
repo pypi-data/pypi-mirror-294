@@ -1,0 +1,2 @@
+[console_scripts]
+chasing-targets-example = chasing_targets_gym:_main
