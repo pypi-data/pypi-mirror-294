@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pose-detection
+Version: 0.1.1
+Summary: A pose detection and validation library using MediaPipe
+Author: RAES9
+Author-email: erivasdeveloper@gmail.com
+Requires-Dist: mediapipe
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
