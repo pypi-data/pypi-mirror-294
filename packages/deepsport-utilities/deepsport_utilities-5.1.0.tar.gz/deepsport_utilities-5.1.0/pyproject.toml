@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deepsport_utilities"
+authors = [
+    {name = "Gabriel Van Zandycke", email = "gabriel.vanzandycke@hotmail.com"},
+]
+requires-python = ">=3.8.2"
+description = ""
+version = "5.1.0"
+dependencies = [
+    "aleatorpy",
+    "calib3d>=2.10.1",
+    "imageio",
+    "m3u8",
+    "mlworkflow>=0.6.0",
+    "numpy",
+    "opencv-python",
+    "requests",
+    "scikit-image",
+    "scipy",
+    "shapely",
+]
+readme = "README.md"
+license = {text = "LGPL"}
+urls.Homepage = "https://gitlab.com/deepsport/deepsport_utilities"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pdoc3",
+    "twine",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.uv.pip]
+extra = ["dev"]
+
+[tool.ruff.lint]
+ignore = ["E731", "E741"]
+unfixable = []
