@@ -1,0 +1,12 @@
+blurhash_avif/__init__.py,sha256=cYY_4FMPZUXOBC2neM2H_t7l2Uz1t_CdhIiHlmr_WDI,590
+blurhash_avif/blurhash_avif.py,sha256=ukEOxAu58t20sx8jgIoGikezuIMaRY_8SkXUMa1s5o8,4447
+blurhash_avif/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__init__.py,sha256=Bik6mec6Xx7An5ZujTskp6c0cW-E4fIpnRtbQe7T2Wg,301
+src/blurhash_avif.py,sha256=JVwPRgQETDJ9hcm56aMEzo2lv8kbgmk_HhoJdY0BR8c,2432
+tests/__init__.py,sha256=rmuM0hvwblM6eDT1xxSuyUhkZcCQW6in9x1NvsEsTGo,2634
+blurhash_avif-0.6.2.dist-info/LICENSE,sha256=QwS92f7-tMVQFjuptMTRUyJWeiGImzvvNOi0nMP0K0A,17312
+blurhash_avif-0.6.2.dist-info/METADATA,sha256=B4RRZgV4siy0vpTSqhv4iWrL8TczNKHUDolsp3ISJoU,5834
+blurhash_avif-0.6.2.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+blurhash_avif-0.6.2.dist-info/entry_points.txt,sha256=MoyXp0U2UgV-jWub4AF6wquHFfFZqLF24fXw2BQkwtQ,89
+blurhash_avif-0.6.2.dist-info/top_level.txt,sha256=KPUsEuKcQJrzANrehal_BIRn3msan-Z0XuksITpXXaQ,14
+blurhash_avif-0.6.2.dist-info/RECORD,,
