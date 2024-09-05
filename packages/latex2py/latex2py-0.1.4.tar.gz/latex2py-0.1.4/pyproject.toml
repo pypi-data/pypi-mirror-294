@@ -1,0 +1,33 @@
+[project]
+name = "latex2py"
+version = "0.1.4"
+authors = [
+  { name="Milo Knowles", email="milo@synonym.bio" },
+]
+description = "A lightweight LaTeX-to-Python parser"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.poetry]
+name = "latex2py"
+version = "0.1.4"
+description = "A lightweight LaTeX-to-Python parser"
+authors = ["Milo Knowles <miloknowles97@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+antlr4-python3-runtime = "==4.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
