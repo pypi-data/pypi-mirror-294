@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: please_av1ppp
+Version: 0.0.2
+Summary: Simple task runner
+Project-URL: Homepage, https://github.com/av1ppp/please
+Project-URL: Issues, https://github.com/av1ppp/please/issues
+Author-email: Avi Parampampam <aviparampampam@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: setuptools>=74.1.1
+Requires-Dist: typing-extensions>=4.12.2
+Description-Content-Type: text/markdown
+
+# 🙏 Please
+
+[![Upload Python Package](https://github.com/av1ppp/please/actions/workflows/python-publish.yml/badge.svg)](https://github.com/av1ppp/please/actions/workflows/python-publish.yml)
+
+Please is a simple task runner
+
+### TODO
+
+- Add dependency support
