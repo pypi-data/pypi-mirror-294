@@ -1,0 +1,6 @@
+pydantic
+beanie
+networkx
+polars
+rawpy
+pillow_heif
