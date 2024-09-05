@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chunker.py,sha256=Pge4mcOo3gZxq6g_fvweY62Z5Qx2L5_25uhhA0h6CqY,2949
+tests/test_core.py,sha256=KkJbfqJSHHz_9270tN0gTH7hw9AtFfUbnlyz3eP7YIk,4920
+tests/test_extractor.py,sha256=_xdhMw4N-KcV8XjCdyIjdvxiaf7P9keNaG-wNO4FAZY,2889
+tests/test_scraper.py,sha256=LlJA09-Y7_EWgfsKnIMEPc6pYUZpaAb-mWKLzpZSJmE,9752
+thepipe/__init__.py,sha256=bttQaQpSjXYcL8oSA5jHdgWyXJzxfHhnHin6mICGJYY,873
+thepipe/chunker.py,sha256=ZjApxOJgbJMUKqtABh6xpure6gp2klCf_WIQmsH0nCc,4274
+thepipe/core.py,sha256=hx8FhIKKxQ_R5M1NTs9HVDL1hQxL3kxr5WoZfJKlVMw,8079
+thepipe/extract.py,sha256=7IlqJ6kdflTEkuy9SZf13mYN-cAMCMY-v6Cak12Z2aM,12329
+thepipe/scraper.py,sha256=9Y5aD68Lp7Llo7LX8U97EXZ0MTQfxDHLMYBbZTm9roE,39442
+thepipe_api-1.2.5.dist-info/LICENSE,sha256=tv9XNXfbvcldKzKFoWFNfFG6_Gmz8QmPL3KGyM1UMHM,1094
+thepipe_api-1.2.5.dist-info/METADATA,sha256=jG5zYvpxExhYOPn2Zn-t1EmuihcMwlGXP7GLmSvN9Ic,11093
+thepipe_api-1.2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+thepipe_api-1.2.5.dist-info/dependency_links.txt,sha256=IZdrW10u9tx_nqxF0vrx5OSmJ_owKvBYIw6Z7giuSYw,42
+thepipe_api-1.2.5.dist-info/entry_points.txt,sha256=7kCBeqo9bEXzjwuUCzfCSM5ZFnBOH8JZweanfZBkOwA,50
+thepipe_api-1.2.5.dist-info/top_level.txt,sha256=bMQxWM2kzUYgxbVPw8UXPFySxXEko1CwO5HMU-GHztw,14
+thepipe_api-1.2.5.dist-info/RECORD,,
