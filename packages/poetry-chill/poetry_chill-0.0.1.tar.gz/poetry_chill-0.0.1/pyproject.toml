@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-chill"
+version = "0.0.1"
+description = ""
+authors = ["Yakov-Varnaev <yakov.varnaev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "chill"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+poetry = "^1.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+chill = "chill.plugin:ChillPlugin"
