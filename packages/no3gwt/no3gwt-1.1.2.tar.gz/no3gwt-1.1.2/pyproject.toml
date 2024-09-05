@@ -1,0 +1,90 @@
+[build-system]
+requires = [
+    "setuptools >= 61",
+    #"wheel"
+    'tomli; python_version < "3.11"'
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "no3gwt"
+dynamic = ["version"]
+authors = [
+    { name = "Paul Juckem", email = "pfjuckem@usgs.gov" },
+    { name = "Laura Schachter", email = "lschachter@usgs.gov" },
+    { name = "Nick Corson-Dosch", email = "ncorson-dosch@usgs.gov" },
+    { name = "Christopher Green", email = "ctgreen@usgs.gov" }
+]
+description = "Groundwater - Nitrate Decision Support Tool software for the state of Wisconsin"
+readme = "Readme.md"
+keywords = ["nitrate", "groundwater", "hydrogeology"]
+license = {file = "LICENSE.md"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "gdal",
+    "scikit-learn==1.2.1",
+    "scipy",
+    "matplotlib",
+    "netcdf4",
+    "notebook",
+    "jupyter",
+    "jupyterlab",
+    "joblib",
+    "pytest",
+    "flopy",    
+    "pandas",
+    "pip",
+    "proj",
+    "xarray",
+    "fiona",
+    "geopandas", 
+    "rtree",
+    "pyproj",
+    "pyshp",  
+    "rasterio", 
+    "openpyxl",  
+]
+
+[project.optional-dependencies]
+optional = [
+    "descartes ", 
+    "hydrofunctions",  
+]
+test = [
+    "codecov",
+    "coverage",
+    "pytest",
+    "pytest-timeout"
+]
+docs = [
+    "matplotlib",
+    "modflow-export[optional]",
+    "ipython[kernel]",
+    "sphinx",
+    "numpydoc",
+    "nbsphinx",
+    "sphinx-copybutton",
+    "sphinx-rtd-theme"
+]
+
+[project.urls]
+documentation = "https://doi-usgs.github.io/no3gwt/latest/"
+repository = "https://code.usgs.gov/water/NDST/no3gwt"
+
+[tool.setuptools.packages.find]
+include = ["no3gwt", "no3gwt.*"]
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440-post"
+versionfile_source = "no3gwt/_version.py"
+versionfile_build = "no3gwt/_version.py"
+tag_prefix = ""
+parentdir_prefix = "no3gwt-"

@@ -1,0 +1,23 @@
+include LICENSE.md
+include README.md
+include CONTRUBUTING.rst
+include DISCLAIMER.md
+include AUTHORS.rst
+include CHAGELOG.md
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat
+
+include versioneer.py
+include no3gwt/_version.py
+
+# Other data files needed to run the tool
+include data_in/example1.xlsx
+include data_in/example2.xlsx
+include data_in/O2_coeffs.txt
+include data_in/ml_models/age_ml_model_Py_param.joblib
+include data_in/ml_models/age_ml_model_R_param.joblib
+include data_in/ml_models/age_ml_model.joblib
+include data_in/ml_models/wt_ml_model.joblib
