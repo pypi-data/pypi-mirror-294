@@ -1,0 +1,5 @@
+setup.py
+weatherAUS.egg-info/PKG-INFO
+weatherAUS.egg-info/SOURCES.txt
+weatherAUS.egg-info/dependency_links.txt
+weatherAUS.egg-info/top_level.txt
