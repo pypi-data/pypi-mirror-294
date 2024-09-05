@@ -1,0 +1,11 @@
+numpy
+scipy
+
+[docs]
+sphinx
+sphinx-autodoc-typehints
+furo
+
+[test]
+pytest
+pytest-cov
