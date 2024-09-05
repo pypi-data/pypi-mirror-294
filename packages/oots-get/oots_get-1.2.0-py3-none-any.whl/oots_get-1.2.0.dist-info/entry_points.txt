@@ -1,0 +1,2 @@
+[console_scripts]
+oots-get = oots_get.main:app
