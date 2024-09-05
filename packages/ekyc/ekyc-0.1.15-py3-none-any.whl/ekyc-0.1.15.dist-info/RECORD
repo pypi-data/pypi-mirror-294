@@ -1,0 +1,16 @@
+ekyc/.DS_Store,sha256=53gUdl74WoGJyvWyxW0cMNwDqz4KZbFqChC4MvlgQsY,8196
+ekyc/__init__.py,sha256=0QI__woRQWkNJNSxLaAOd-onV0klj4TBAVFvYua55mw,730
+ekyc/core.py,sha256=0CWYaP3ZHyNTzcN8O_izeQDjgxIwmhfrgPHHnQYwJzo,3722
+ekyc/document_verification.py,sha256=QIcmTbo49Um6HWscuxpKvvP7c2jKGfgaBZ0K_iwo-zI,2137
+ekyc/face_matching.py,sha256=nGCRRKDUdhGmGej6W_JnGXk8U4wR1hIedJI8AgDLmn0,1656
+ekyc/face_processing.py,sha256=zn0_ecEkGf6D1yVHIuhOtwVUcwTldNdUJIwbGdhMelg,1630
+ekyc/liveness_check.py,sha256=JkHWSXR-9-ObOoQGeCUElSvnWxH0vjtAKFlCGc9UX3E,2021
+ekyc/test.py,sha256=-VhdHtaAniR29DDhTE4FG-a22IrrsDH5FutxKQK4yis,182
+ekyc/utils.py,sha256=_4s6kn1gI80wXTUBMY1FrsVhQ_SdzwwvorjDV1uvcPg,1821
+ekyc/data/ic_template.jpg,sha256=ClK3Srv19CbExynPnxf49GrD6UF0qxBYMYVHDK2vBw4,40915
+ekyc/data/shape_predictor_68_face_landmarks.dat,sha256=-9wsuA65qnp1hnLL_doyumMA7-m25seimf9-c2sRuS8,99693937
+ekyc-0.1.15.dist-info/LICENSE,sha256=-mncYQZWiphcOswoIqprDotQdxqheLXXQLir3QuYYp4,1076
+ekyc-0.1.15.dist-info/METADATA,sha256=pY3XNl6iD7MHETZ8R8Df3TfehOA61yrUtsm_aoug1Zw,4563
+ekyc-0.1.15.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+ekyc-0.1.15.dist-info/top_level.txt,sha256=PlqKPQIb1ltT1HQD2oPg9ygETh7w7U4uA0WZWD3MsQc,5
+ekyc-0.1.15.dist-info/RECORD,,
