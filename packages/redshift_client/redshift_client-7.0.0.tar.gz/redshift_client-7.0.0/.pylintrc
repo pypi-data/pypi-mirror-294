@@ -1,0 +1,13 @@
+[MESSAGES CONTROL]
+disable=inconsistent-return-statements, ;raises false positives, mypy handles this correctly
+        missing-class-docstring,
+        missing-function-docstring,
+        missing-module-docstring,
+        unnecessary-lambda, ;mypy sometimes needs redundant lambdas to infer the typing
+        unnecessary-lambda-assignment, ;sometimes neccesary to enable lazy evaluation
+        wrong-import-order, ;contradicts formatPython job
+        too-many-locals,
+        too-many-arguments,
+        too-many-instance-attributes,
+        too-many-return-statements,
+        duplicate-code
