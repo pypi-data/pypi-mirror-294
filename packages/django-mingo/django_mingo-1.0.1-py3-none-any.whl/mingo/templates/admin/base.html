@@ -1,0 +1,71 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="{{ default_theme }}">
+	<head>
+		<title>{% block title %}{% endblock title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/static/media/logos/favicon.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+        {% block extrastyle %}{% endblock %}
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="/static/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+		<link href="/static/css/style.bundle.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        {% block extrahead %}{% endblock %}
+        {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE">{% endblock %}
+	</head>
+	<!--begin::Body-->
+	<body id="kt_app_body" class="app-default {% block bodyclass %}{% endblock %}" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true">
+        {% if has_permission %}
+            <div id="kt_app_root" class="d-flex flex-column flex-root app-root" >
+                <div id="kt_app_page" class="app-page flex-column flex-column-fluid">
+                    {% block branding %} {% endblock %}
+                    <div id="kt_app_wrapper" class="app-wrapper flex-column flex-row-fluid">
+
+                        <div id="kt_app_sidebar" class="app-sidebar" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+                            {% block sidebar-logo %} {% endblock %}
+                            <!--begin::sidebar menu-->
+                            {% block nav-sidebar %}{% endblock %}
+                            <!--end::sidebar menu-->
+                            {% block user-footer %} {% endblock %}
+                        </div>
+
+                        <!--begin::Main-->
+                        <div id="kt_app_main" class="app-main flex-column flex-row-fluid">
+                            <div class="d-flex flex-column flex-column-fluid">
+                                <div id="kt_app_content" class="app-content flex-column-fluid">
+                                    <div id="kt_app_content_container" class="app-container container-xxl">
+                                
+                                        {% block content %}
+                                            {{ content }}
+                                        {% endblock content %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% block footer %} {% endblock %}
+                        </div>
+                        <!--end:::Main-->
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            {% block login-content %}{{ content }}{% endblock  %}
+            {% block logout-content %}
+                {{ content }}
+            {% endblock %}
+        {% endif %}
+		
+		{% block scrolltop %} {% endblock %}
+		
+		<!--begin::Javascript-->
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="/static/plugins/global/plugins.bundle.js"></script>
+		<script src="/static/js/scripts.bundle.js"></script>
+        {% block extra_js %}{% endblock %}
+
+
+        
+	</body>
+</html>

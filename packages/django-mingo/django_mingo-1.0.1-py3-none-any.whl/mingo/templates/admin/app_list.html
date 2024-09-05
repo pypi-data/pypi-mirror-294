@@ -1,0 +1,28 @@
+{% load i18n app_icon %}
+
+{% if app_list %}
+    {% for app in app_list %}
+        <div data-kt-menu-trigger="click" class="menu-item menu-accordion {% if app.app_url == request.path %}here show{% endif %}">
+            <span class="menu-link">
+                <span class="menu-icon">
+                    <i class="ki-outline ki-home-1 fs-2"></i>
+                </span>
+                <!-- <span class="menu-icon"><i class="ki-outline ki-some-files fs-2"></i></span> -->
+                <span class="menu-title">{{ app.name }}</span>
+                <span class="menu-arrow"></span>
+            </span>
+            <div class="menu-sub menu-sub-accordion">
+                {% for model in app.models %}
+                <div class="menu-item menu-accordion">
+                    <a href="{{ model.admin_url }}" class="menu-link {% if model.admin_url == request.path %}active{% endif %}">
+                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                        <span class="menu-title">{{ model.name }}</span>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+<p>{% translate 'You don’t have permission to view or edit anything.' %}</p>
+{% endif %}

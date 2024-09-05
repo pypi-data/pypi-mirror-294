@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">{% translate 'Home' %}</a></div>{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block logout-content %}
+    <div class="d-flex flex-column flex-center flex-column-fluid">    
+        <div class="d-flex flex-column flex-center text-center p-10">        
+            <div class="card card-flush w-lg-650px py-5">
+                <div class="card-body py-10 py-lg-10">
+                    <div class="mb-14">
+                        <a href="/" target="_blank">
+                            <img alt="{{ site_header }}" src="/static/media/logos/custom-2.svg" class="h-40px"> 
+                        </a> 
+                    </div>
+
+                    <h1 class="fw-bolder text-gray-900 mb-5">
+                        Your are logged out
+                    </h1>
+                    <div class="fw-semibold fs-6 text-gray-500 mb-8">{% translate "Thanks for spending some quality time with the web site today." %}</div>
+
+                    <div class="mb-11">
+                        <a href="{% url 'admin:index' %}" class="btn btn-sm btn-primary">Login again</a>
+                    </div>    
+
+                    <div class="mb-0">
+                        <img src="/static/media/auth/membership.png" class="mw-100 mh-300px theme-light-show" alt="">
+                        <img src="/static/media/auth/membership-dark.png" class="mw-100 mh-300px theme-dark-show" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load i18n admin_urls static admin_list %}
+
+{% block filters %}
+    {% if cl.has_filters %}
+            <button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                <i class="ki-duotone ki-filter fs-2"><span class="path1"></span><span class="path2"></span></i>        Filter
+            </button>
+            <div class="menu menu-sub menu-sub-dropdown w-300px w-md-325px" data-kt-menu="true" id="kt-toolbar-filter" style="">
+                <div class="px-7 py-5 d-flex justify-content-between">
+                    <div class="fs-4 text-gray-900 fw-bold">Filter Options</div>
+                    {% if cl.is_facets_optional %}
+                        {% if cl.add_facets %}
+                            <a href="{{ cl.remove_facet_link }}" class="hidelink">{% translate "Hide counts" %}</a>
+                        {% else %}
+                            <a href="{{ cl.add_facet_link }}" class="viewlink">{% translate "Show counts" %}</a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <div class="separator border-gray-200"></div>
+
+
+                <div class="px-7 py-5">
+                    {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
+
+                    {% if cl.has_active_filters %}
+                        <div class="d-flex justify-content-end">
+                            <a href="{{ cl.clear_all_filters_qs }}" class="btn btn-light btn-active-light-primary me-2">{% translate "Reset" %}</a>
+                        </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        {% endif %}
+{% endblock %}

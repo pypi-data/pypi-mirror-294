@@ -1,0 +1,89 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static mingo_settings %}
+
+{% block extrastyle %}{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+
+{% block login-content %}
+    {% get_settings 'login_template' as login_template %}
+    {% if login_template == 'corporate' %}
+        {% include 'admin/includes/login-corporate.html' %}
+    {% elif login_template == 'overlay' %}
+        {% include 'admin/includes/login-overlay.html' %}
+    {% elif login_template == 'fancy' %}
+        {% include 'admin/includes/login-fancy.html' %}
+    {% else %}
+        <div class="d-flex flex-column flex-root" id="kt_app_root">
+            <style>body { background-image: url('/static/media/auth/bg4.jpg'); } [data-bs-theme="dark"] body { background-image: url('/static/media/auth/bg4-dark.jpg'); }</style>
+            <div class="d-flex flex-column flex-column-fluid flex-lg-row">
+                <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
+                    <div class="d-flex flex-center flex-lg-start flex-column">
+                        <a href="/" class="mb-7" target="_blank">
+                            <img alt="Logo" src="/static/media/logos/logo.png" class="theme-light-show">
+                            <img alt="Logo" src="/static/media/logos/logo-dark.png" class="theme-dark-show">
+                        </a>
+                        <h2 class="text-white fw-normal m-0">{{ site_header|default:_('Django administration') }}</h2>
+                    </div>
+                </div>
+                <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 p-lg-20">
+                    <div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
+                        <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
+                            <form class="form w-100" action="{{ app_path }}" method="post" id="login-form">
+                                {% csrf_token %}
+                                <div class="text-center mb-11">
+                                    <h1 class="text-gray-900 fw-bolder mb-3">Sign In</h1>
+                                    <div class="text-gray-500 text-capitalize fw-semibold fs-6">Your journey starts here.</div>
+                                </div>
+                                {% if form.errors and not form.non_field_errors %}
+                                    <p class="text-danger">{% blocktranslate count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktranslate %}</p>
+                                {% endif %}
+
+                                {% if form.non_field_errors %}
+                                    {% for error in form.non_field_errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                {% endif %}
+                                
+                                <div class="fv-row mb-8">
+                                    {{ form.username.errors }}
+                                    {{ form.username }}
+                                </div>
+                                <div class="fv-row mb-3">
+                                    {{ form.password.errors }}
+                                    {{ form.password }}
+                                    <input type="hidden" name="next" value="{{ next }}">
+                                </div>
+                                <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+                                    <div></div>
+                                    {% url 'admin_password_reset' as password_reset_url %}
+                                    {% if password_reset_url %}
+                                        <a href="{{ password_reset_url }}" class="link-primary">Forgot Password ?</a>
+                                    {% endif %}
+                                </div>
+                                <div class="d-grid mb-10">
+                                    <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+                                        <span class="indicator-label">Log In</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
