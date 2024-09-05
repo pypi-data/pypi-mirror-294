@@ -1,0 +1,291 @@
+agents:
+- address: '0x65Dcc23d295caFAa5a3eb823BC44b10D54723297'
+  agentType: regular
+  environments:
+  - address: '0x65Dcc23d295caFAa5a3eb823BC44b10D54723297'
+    alias: ethereum1
+    wallet:
+      tokens:
+      - amount: 4338109590
+        token: USDC
+      - amount: 2847843290371928722
+        token: WETH
+      - amount: 1500000000000000000
+        token: ETH
+  metrics:
+  - alias: amazing_agent_metric
+    source: file://metrics/amazing_agent_metric/
+  settings:
+    deposit: 1002
+    pool1:
+      fee: 5000
+      token0: WETH
+      token1: USDT
+  source: file://agent/defi/
+  strategy: library://first_strategy:0.0.1
+- address: '0xeC98711aB620ae66860c00F48De3e8f8E432d167'
+  agentType: regular
+  environments:
+  - address: '0xeC98711aB620ae66860c00F48De3e8f8E432d167'
+    alias: ethereum1
+    wallet:
+      tokens:
+      - amount: 200000000
+        token: WBTC
+      - amount: 1500000000000000000
+        token: ETH
+
+  metrics:
+  - alias: amazing_agent_metric
+    source: file://metrics/amazing_agent_metric/
+  settings:
+    initial_borrow_amount: 100000000
+    initial_borrow_token: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+    initial_collateral_amount: 100000000
+    initial_collateral_token: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'
+    protocol: Aave V3
+    repay_step: 90
+  source: file://agent/simple_borrow_agent/
+  strategy: file://strategy/trend-following/
+- address: '0x4440689861C33a3C05d06eE0893e04B782099c76'
+  agentType: regular
+  environments:
+  - address: '0x4440689861C33a3C05d06eE0893e04B782099c76'
+    alias: ethereum1
+    wallet:
+      tokens:
+      - amount: 200000000
+        token: WBTC
+      - amount: 987654321
+        token: USDC
+      - amount: 1500000000000000000
+        token: ETH
+
+  metrics:
+  - alias: liquidator_metric
+    source: file://metrics/liquidator_metric/
+  settings:
+    account_to_monitor: '0x4440689861C33a3C05d06eE0893e04B782099c76'
+    collateral: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'
+    debt: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+    pool: '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640'
+    protocol_amm: Uniswap V3
+    protocol_money_market: Aave V3
+  source: file://agent/liquidator/
+  strategy: file://strategy/trend-following/
+environments:
+- alias: ethereum1
+  block: 16500000
+  chainId: '1'
+  contracts:
+  - abi: '[{"inputs": [], "stateMutability": "nonpayable", "type": "constructor"},
+      {"inputs": [{"internalType": "uint256", "name": "_value", "type": "uint256"}],
+      "name": "increment", "outputs": [], "stateMutability": "nonpayable", "type":
+      "function"}, {"inputs": [], "name": "number", "outputs": [{"internalType": "uint256",
+      "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"},
+      {"inputs": [], "name": "reset", "outputs": [], "stateMutability": "nonpayable",
+      "type": "function"}]'
+    alias: incrementer
+    installable:
+      bytecode: 608060405234801561001057600080fd5b50600080819055506101db806100276000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80637cf5dab0146100465780638381f58a14610062578063d826f88f14610080575b600080fd5b610060600480360381019061005b91906100eb565b61008a565b005b61006a6100a1565b6040516100779190610127565b60405180910390f35b6100886100a7565b005b806000546100989190610171565b60008190555050565b60005481565b60008081905550565b600080fd5b6000819050919050565b6100c8816100b5565b81146100d357600080fd5b50565b6000813590506100e5816100bf565b92915050565b600060208284031215610101576101006100b0565b5b600061010f848285016100d6565b91505092915050565b610121816100b5565b82525050565b600060208201905061013c6000830184610118565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061017c826100b5565b9150610187836100b5565b925082820190508082111561019f5761019e610142565b5b9291505056fea264697066735822122072e7fdd0a3a63d596b9da980049bd6c53b405daff56912d3871ff9e9f4007e7664736f6c63430008120033
+  dependencies:
+  - settings:
+      uniswap_v3_usdc_pool: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+    source: file://protocols/uniswap-v3/
+  - source: file://protocols/aave-v3/
+  engine: evm
+  metrics:
+  - alias: amazing_environment_metric
+    source: file://metrics/amazing_env_metric/
+  settings:
+    autoApprove: false
+    autoImpersonate: true
+    enableEvmLogging: true
+  source: file://environments/environment1/
+  tokens:
+  - address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+    name: USDC
+  - address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+    name: WETH
+  - address: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'
+    name: WBTC
+metrics:
+- alias: amazing_global_metric
+  source: file://metrics/amazing_global_metric/
+prices:
+- historical:
+  - 1297.85
+  - 1297.84
+  - 1298.1
+  - 1298.11
+  - 1298.1
+  - 1298.1
+  - 1298.1
+  - 1298.01
+  - 1298.01
+  - 1298.0
+  - 1298.11
+  - 1298.11
+  - 1298.13
+  - 1298.49
+  - 1298.71
+  simulated:
+  - 1298.12
+  - 1557.744
+  - 1869.2927999999997
+  - 2243.1513599999994
+  - 1881.1996227747038
+  - 2257.4395473296445
+  - 1805.9516378637159
+  - 1805.531131512327
+  - 1968.1101423290597
+  - 2216.577577107679
+  - 2314.1243588734665
+  tokenPair:
+  - ETH
+  - USDT
+  volatility_historical:
+  - 0.009785811183924562
+  - 3.7927447291764933
+  - 3.7719409380351063
+  - 3.7912038674352817
+  - 3.7927445748511075
+  - 3.791974224110421
+  - 3.791974224110421
+  - 3.798907434186675
+  - 3.791974224110421
+  - 3.7927446341997113
+  - 3.7834996478392435
+  - 3.791974224110421
+  - 3.790433522629026
+  - 3.7642420247159083
+  - 3.77503146752392
+  volatility_simulated:
+  - 1.7552695580538409
+  - 0.4247090094792248
+  - 0.8125873575657275
+  - 1.4016464235403154
+  - 0.7881283043629046
+  - 0.7982408734761127
+  - 0.2508450652614522
+  - 0.2277733584864604
+  - 0.3216851572583862
+  - 0.4714774547177195
+  volume_historical:
+  - 1020
+  - 1054
+  - 1038
+  - 1211
+  - 1114
+  - 1157
+  - 1093
+  - 936
+  - 938
+  - 945
+  - 987
+  - 946
+  - 1034
+  - 1033
+  - 999
+  volume_simulated:
+  - 1000
+  - 1006
+  - 1021
+  - 1035
+  - 1113
+  - 1045
+  - 1023
+  - 1024
+  - 1081
+  - 1080
+- historical:
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  - 1.0002
+  simulated:
+  - 1.0002
+  - 0.9999306790097684
+  - 1.000099827957043
+  - 1.000387540887459
+  - 1.000256934105859
+  - 1.0004344111360963
+  - 1.0003570976195375
+  - 1.0004490256198768
+  - 1.0005037930838563
+  - 1.0006519285172202
+  - 1.000659624679919
+  tokenPair:
+  - USDT
+  - DAI
+  volatility_historical:
+  - 0.0004929897728370462
+  - 0.0006017707080099281
+  - 0.0006484455480441094
+  - 0.000670130520287174
+  - 0.0006805039486197004
+  - 0.0006855296287700919
+  - 0.0006879788102555496
+  - 0.0006891757318461979
+  - 0.0006897614652242049
+  - 0.0006900482930810471
+  - 0.0006901887952170918
+  - 0.0006902576308235978
+  - 0.0006902913577649869
+  - 0.000690307883364729
+  - 0.0006903159807641855
+  volatility_simulated:
+  - 0.0006903394999330383
+  - 0.000697302978777174
+  - 0.0006947901000087285
+  - 0.0006925587480221076
+  - 0.0006959996571272091
+  - 0.0006936038277888245
+  - 0.0006931859693437201
+  - 0.0006920231807223003
+  - 0.0006924101703075814
+  - 0.0007031425972445004
+simulatorVersion: 2.0.2
+steps: 11
+priceSimulator:
+  price_names: [["ETH", "USDT"], ["USDT", "DAI"], ["BNT", "USDT"]]
+  historicalDataBlockRange: [16085600, 16085610]
+  maturity: 1.0
+  granularity: 1
+  random_seed_price: 42
+  random_seed_sigma: 42
+  random_seed_black_swan: 42
+  volatility_mode: "cccgarch"
+  settings:
+    volatility_scale: 1.0
+    market_drift: 2.0
+    enable_black_swan_event: false
+    black_swan_must_happen_by: 0.8
+    black_swan_cannot_happen_before: 0.3
+    black_swan_range: [0.3, 0.5]
+    black_swan_step_length: 100
+    black_swan_kappa: 0.3
+    black_swan_theta: 0.02
+    black_swan_xi: 0.1
+    max_percentage_change: 0.2
+    max_value_percentage: 1.0
+    min_value_percentage: 1.0
+  asset_settings:
+    - price_name: ["USDT", "DAI"]
+      settings:
+        market_drift: 2.0
+        enable_black_swan_event: false
+        max_percentage_change: 0.001
+        max_value_percentage:  0.001
+        min_value_percentage:  0.001
