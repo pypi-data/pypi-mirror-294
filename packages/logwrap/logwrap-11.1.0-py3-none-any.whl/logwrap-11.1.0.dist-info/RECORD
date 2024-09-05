@@ -1,0 +1,12 @@
+logwrap/__init__.py,sha256=S-yhgaKpY-v0uWoquS6-p3HpZSbsoJpDbY9Czt9auf8,2029
+logwrap/_version.py,sha256=SwMmFv7V6qNJ7A_nfJIBXjmjBsFAU0aVa-km74npl1A,413
+logwrap/constants.py,sha256=vx00jrMztO-3iSwD0KBlpb1M09CjA8MCPY-6p-drcpE,730
+logwrap/log_on_access.py,sha256=ZKoD8gRop1EYuL0t6W86NwUrkH5nixpQQcKrvotookc,21382
+logwrap/log_wrap.py,sha256=xm90ugu-blsxXjMvDap0TSCBNWD8IXvx8jkIiWugOys,30394
+logwrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logwrap/repr_utils.py,sha256=h02VsG6RtIQjEv7ycuJRWNKO1zTnFPqLgVYkUH3nelM,31964
+logwrap-11.1.0.dist-info/LICENSE,sha256=4k-IZqZuNjTtlBwwl64iYWLh4bg85S_i_Wwt7MS34l8,11366
+logwrap-11.1.0.dist-info/METADATA,sha256=xmNlYI3x_z05C_CuJABVppXYtyl4Rb6-WB8vd2n-VDM,12013
+logwrap-11.1.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+logwrap-11.1.0.dist-info/top_level.txt,sha256=7q47MQq8ZedycLFMKaloOJ1NjkeTpxqwcdtYqVXduwM,8
+logwrap-11.1.0.dist-info/RECORD,,
