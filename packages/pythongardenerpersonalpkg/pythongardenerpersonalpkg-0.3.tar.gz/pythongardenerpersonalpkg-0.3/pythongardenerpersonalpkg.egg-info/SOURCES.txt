@@ -1,0 +1,8 @@
+README.md
+setup.py
+pythongardenerpersonalpkg/__init__.py
+pythongardenerpersonalpkg/core.py
+pythongardenerpersonalpkg.egg-info/PKG-INFO
+pythongardenerpersonalpkg.egg-info/SOURCES.txt
+pythongardenerpersonalpkg.egg-info/dependency_links.txt
+pythongardenerpersonalpkg.egg-info/top_level.txt
