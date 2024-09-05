@@ -1,0 +1,5 @@
+[console_scripts]
+inquant = quantmod:hello
+
+[gui_scripts]
+inquant = quantmod:hello
