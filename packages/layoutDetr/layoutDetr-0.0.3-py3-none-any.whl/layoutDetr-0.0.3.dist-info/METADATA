@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: layoutDetr
+Version: 0.0.3
+Requires-Dist: fvcore
+Requires-Dist: pycocotools
+Requires-Dist: timm
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python
+Requires-Dist: omegaconf
+
