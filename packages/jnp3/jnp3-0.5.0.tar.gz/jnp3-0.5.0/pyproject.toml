@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+
+name = "jnp3"
+description = "一个 Python 语言的辅助工具集"
+authors = [
+    {name = "Julian Freeman", email = "freemanjulian372@gmail.com"}
+]
+readme = "README.md"
+
+dependencies = []
+requires-python = ">=3.10"
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+gui6 = [
+    "PySide6-Essentials==6.5.2",
+    "requests",
+]
+gui2 = [
+    "PySide2==5.15.2.1",
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/JulianFreeman/jnp3"
+Repository = "https://github.com/JulianFreeman/jnp3.git"
+Changelog = "https://github.com/JulianFreeman/jnp3/blob/main/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "jnp3.__version__"}

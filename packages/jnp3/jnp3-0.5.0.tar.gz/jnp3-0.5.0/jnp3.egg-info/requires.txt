@@ -1,0 +1,8 @@
+
+[gui2]
+PySide2==5.15.2.1
+requests
+
+[gui6]
+PySide6-Essentials==6.5.2
+requests
