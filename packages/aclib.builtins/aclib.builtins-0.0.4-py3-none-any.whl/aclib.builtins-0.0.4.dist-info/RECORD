@@ -1,0 +1,9 @@
+aclib/builtins/__init__.py,sha256=8E7bl8hRGpmLYvSNGPzxLY70DEn-uwYgf0WfIKl5urA,110
+aclib/builtins/__API__/_pixel_target.py,sha256=eicRfcjLEPrqFWSGmao1X2MTBfi8Rn2qoIso3QkdX6w,1880
+aclib/builtins/__API__/decorators.py,sha256=cj-ijJ0oTbYbpor7m_lYjkpi1dNxw0prmSw2zjnCcrc,1171
+aclib/builtins/__API__/pytypes.py,sha256=DwOlNs9hRrMsDHxWbiSVxYxW1ixYq1X3ALCiPw-YV1k,15609
+aclib.builtins-0.0.4.dist-info/LICENSE,sha256=bXHfyJIO-YrYduFdOrf22pRCLqWSptELWVkyDnOO0sI,1087
+aclib.builtins-0.0.4.dist-info/METADATA,sha256=TbXpp-EexkuzybGkFys38VFrY4x_rFIO29drldiXsBE,1247
+aclib.builtins-0.0.4.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+aclib.builtins-0.0.4.dist-info/top_level.txt,sha256=4p3w-82zX4lxXZrjR9Ws2bqRHCpcTLqoEUJaYmT3uyo,6
+aclib.builtins-0.0.4.dist-info/RECORD,,
