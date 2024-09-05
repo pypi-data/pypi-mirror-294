@@ -1,0 +1,11 @@
+grpc_messenger/__init__.py,sha256=tnCQftqrf54bWtoYPcCfyl046az0853YuCSU2Buih6U,109
+grpc_messenger/backend.py,sha256=3JouKOJoWpI_OUuY3NTRxcANOnV6nt_LqRYj0hsWZWs,19799
+grpc_messenger/pipes.py,sha256=UmStE5qLDkPFyEZQjqy5mlC42q7brzKgVOflvF7Kx1g,4800
+grpc_messenger/protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpc_messenger/protos/Messager_pb2.py,sha256=99lD1vjWQeIX2ON0n14io9r9xVZByIWkfjilShYnHVA,1623
+grpc_messenger/protos/Messager_pb2.pyi,sha256=BNRKbPQSllFgSDotTvh0x1UjWQq_3FmtQ4ZXLJ4Lscs,804
+grpc_messenger/protos/Messager_pb2_grpc.py,sha256=n3e9bHYXCjKmz9bQTFkFKWR3OTSQ0-JljmWQJ-Lamsg,6887
+grpc_messenger/view_interfaces.py,sha256=PRuvmFGNNawIMRxr5tSXyHMLzP-dKjZ5uqxvtj4P_hE,1955
+grpc_messenger-1.0.1.dist-info/METADATA,sha256=LOIKQ0K2IEdMCAw54eeyT6P4CmIJQCj7uBKU2zKIlYY,5444
+grpc_messenger-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+grpc_messenger-1.0.1.dist-info/RECORD,,
