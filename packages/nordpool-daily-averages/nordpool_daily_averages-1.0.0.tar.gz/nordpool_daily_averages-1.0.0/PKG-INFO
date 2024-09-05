@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: nordpool-daily-averages
+Version: 1.0.0
+Summary: api wrapper for nordpool average daily spot prices api
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: httpx
