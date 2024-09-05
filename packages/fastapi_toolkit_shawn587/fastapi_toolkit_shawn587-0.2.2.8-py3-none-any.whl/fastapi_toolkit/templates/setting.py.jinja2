@@ -1,0 +1,27 @@
+from functools import lru_cache
+from pydantic_settings import BaseSettings
+
+
+class Setting(BaseSettings):
+    host: str
+    port: int
+    user: str
+    password: str
+    database: str
+    {% if auth_type=='jwt' %}
+    secret_key: str
+    algorithm: str
+    access_token_expire_minutes: int
+    {% endif %}
+
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
+
+
+@lru_cache
+def get_settings():
+    return Setting()
+
+
+setting = get_settings()
