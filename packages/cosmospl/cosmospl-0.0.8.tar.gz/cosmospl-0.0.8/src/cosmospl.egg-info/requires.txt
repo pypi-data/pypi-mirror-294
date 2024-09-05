@@ -1,0 +1,8 @@
+httpx[http2]
+orjson
+
+[nest_asyncio]
+nest_asyncio
+
+[polars]
+polars
