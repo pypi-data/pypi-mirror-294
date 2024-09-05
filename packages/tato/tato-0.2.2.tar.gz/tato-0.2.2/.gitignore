@@ -1,0 +1,9 @@
+__pycache__
+dist
+.mypy_cache
+.pytest_cache
+.ruff_cache
+
+tests/**/*.sqlite3
+**/__tests__/**/*.sqlite3
+.aider*
