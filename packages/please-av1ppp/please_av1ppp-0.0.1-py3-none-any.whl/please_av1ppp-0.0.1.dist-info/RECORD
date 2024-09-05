@@ -1,0 +1,13 @@
+please/__init__.py,sha256=GoNSf8qSDCZ1SVBRWGr1n3zrNxFzE4fgIW3qxIlnJKM,187
+please/cli.py,sha256=o3j1xRPiWYojOaru-_fcWy1xSJLwMKh4MlJr_4Dpjwk,2332
+please/internal/env.py,sha256=ruRNdfB1DnW0_ohWOMNPXFMcz6jzgjFBAdo3Hy3Jw6I,605
+please/internal/registertask.py,sha256=1G98wC1tBtGo4ArLW7OLrnKMILgW6EQFplzbNT-gzVU,535
+please/internal/shexec.py,sha256=7529P9PCe9cptcwgHrnxyuWY1kM1t9WnTJTyGXF8JUI,1098
+please/internal/taskcontext.py,sha256=us5mfS-KM5dwpHLyW8btJMXTrED1yOmmgTPTepvpK20,30
+please/internal/taskfunc.py,sha256=qb8XiE8fOdn6buuIxX1IgLwdaWTVwnJtc_pa5Clcls4,113
+please/internal/tasks.py,sha256=xF58vMkN_wOpSyjLPIzU2VzcVlcPgsxBOJfn93Itw9k,94
+please_av1ppp-0.0.1.dist-info/METADATA,sha256=p83e0sjnTWHlNeFc8cRjmhN8VgpmYdZNabR_paE_L7s,462
+please_av1ppp-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+please_av1ppp-0.0.1.dist-info/entry_points.txt,sha256=Bz1gxuXEPialNS9U-xkmxraJkNwaFJdK5GxaMLappzU,40
+please_av1ppp-0.0.1.dist-info/licenses/LICENSE,sha256=7T32FZt3BkDbb5TEhHO-o-L67sYQyywI8SbhYzRj57w,1093
+please_av1ppp-0.0.1.dist-info/RECORD,,
