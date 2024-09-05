@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+curve_fit_py/__init__.py
+curve_fit_py/curve_fit_py.py
+curve_fit_py.egg-info/PKG-INFO
+curve_fit_py.egg-info/SOURCES.txt
+curve_fit_py.egg-info/dependency_links.txt
+curve_fit_py.egg-info/requires.txt
+curve_fit_py.egg-info/top_level.txt
