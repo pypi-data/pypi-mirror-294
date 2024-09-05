@@ -1,0 +1,15 @@
+config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config/publisher_config.py,sha256=-vsbHyaX-bvjAjj7_DXZqUcNvuT_wfAHrfJB4py6qFM,22132
+parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parsers/dynamic_parser.py,sha256=Sh0JpZPabyVA_-M4BSGp6TUCgBi5K5SF6na_Wlyqqng,6378
+parsers/static_parser.py,sha256=s85HtgW_JD8ft0LV7eFFmkRbEDy-jtEfcb00daahODY,5650
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base_parser.py,sha256=r5aM1Pv9IEbltXLbdfU0RKp94yXDXizHvs4GQ3zDhEM,3392
+tests/test_dynamic_parser.py,sha256=_C0zd96z1uc-ssyOE6ymvSB-_hZXQPYmC48l69mnwhM,2344
+tests/test_publisher_configs.py,sha256=OcO4VsY2d0KSL646Dnnzxt7mMshm836gniLTHwXn65M,2306
+tests/test_static_parser.py,sha256=LQF8fi-vs9jy3GoL7J1gl_2LhM3KSi1EJn44XBC3jcA,2290
+malaysian_news_parser-0.1.2.dist-info/LICENSE,sha256=X87jAr_tAxpm8g8zalhy7xepJRXQ6g70Gh961wH6Y-Q,1081
+malaysian_news_parser-0.1.2.dist-info/METADATA,sha256=XCCL15fw14gG9fJOotKMyk4IifA3ePPt6lwijr5-jwQ,10249
+malaysian_news_parser-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+malaysian_news_parser-0.1.2.dist-info/top_level.txt,sha256=Qp5kNQnVrl67GAPfKXLPMJY0UA3BNqPXhKNZVrWtjPM,21
+malaysian_news_parser-0.1.2.dist-info/RECORD,,
