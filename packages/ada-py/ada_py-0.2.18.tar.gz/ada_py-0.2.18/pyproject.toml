@@ -1,0 +1,114 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ada-py"
+version = "0.2.18"
+authors = [
+    { name = "Kristoffer H. Andersen", email = "kristoffer_andersen@outlook.com" },
+]
+description = "Assembly for Design & Analysis - A python library for structural analysis and design"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Utilities",
+]
+[project.scripts]
+ada-viewer = "ada.visit.websocket_cli:ws_cli_app"
+
+[project.urls]
+"Homepage" = "https://github.com/Krande/adapy"
+"Bug Tracker" = "https://github.com/Krande/adapy/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ada*"]
+exclude = ["frontend*"]
+
+[tool.setuptools.package-data]
+ada = [
+    "sections/resources/ProfileDB.json",
+    "materials/metals/resources/NLMatParams.json",
+    "cadit/gxml/write/resources/xml_blank.xml",
+    "fem/results/resources/results.sql",
+    "visit/rendering/resources/index.zip"
+]
+
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+exclude = ["examples/", ".pixi/", "temp/"]
+
+[tool.ruff.lint]
+ignore = ["E741"]
+
+[tool.isort]
+profile = "black"
+skip = [".pixi", "node_modules", "temp"]
+skip_glob=["**/node_modules/**", "**/temp/**"]
+
+[tool.pixi.project]
+channels = ["https://repo.prefix.dev/code-aster", "conda-forge"]
+platforms = ["win-64", "linux-64"]
+
+[tool.pixi.environments]
+prod = { features = ["py312"], solve-group = "prod"}
+lint = { features = ["lint"], no-default-feature = true}
+docs = { features = ["py312", "docs"], solve-group = "prod"}
+tests = { features = ["py312", "tests"], solve-group = "prod"}
+frontend = { features = ["web"], no-default-feature = true}
+
+[tool.pixi.feature.py312.dependencies]
+python="3.12"
+ada-py = "*"
+code-aster = "*"
+lark = "*"
+
+[tool.pixi.feature.tests.dependencies]
+pytest = "*"
+paradoc = "*"
+python-dotenv = "*"
+watchdog = "*"
+
+[tool.pixi.feature.lint.dependencies]
+black = "24.4.2"
+isort = "5.13.2"
+ruff = "0.4.10"
+
+[tool.pixi.feature.docs.dependencies]
+sphinx = "*"
+furo = "*"
+myst-parser = "*"
+scipy = "*"
+
+[tool.pixi.feature.web.dependencies]
+nodejs = "*"
+
+[tool.pixi.feature.lint.tasks]
+lint = "isort . && black . --config pyproject.toml && ruff check ."
+[tool.pixi.feature.docs.tasks]
+docs = "cd docs && make html"
+[tool.pixi.feature.tests.tasks]
+test = "pytest tests --ignore=tests/profiling"
+test-no-fem = "pytest tests --ignore=tests/fem --ignore=tests/profiling"
+ftest = { cmd="python build_verification_report.py true true --export-format=docx", cwd="./tests/fem" }
+fdoc = { cmd="python doc_live_html.py", cwd="./tests/fem" }
+
+[tool.pixi.feature.web.tasks]
+npm = { cmd="npm", cwd="./src/frontend" }
+
+[tool.pixi.dependencies]
+pixi-pycharm = ">=0.0.6,<0.0.7"
