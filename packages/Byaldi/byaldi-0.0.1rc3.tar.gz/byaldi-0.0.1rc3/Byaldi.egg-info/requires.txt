@@ -1,0 +1,12 @@
+transformers
+torch
+ml-dtypes
+ninja
+pdf2image
+srsly
+colpali-engine==0.2.1
+mteb==1.6.35
+
+[server]
+uvicorn
+fastapi
