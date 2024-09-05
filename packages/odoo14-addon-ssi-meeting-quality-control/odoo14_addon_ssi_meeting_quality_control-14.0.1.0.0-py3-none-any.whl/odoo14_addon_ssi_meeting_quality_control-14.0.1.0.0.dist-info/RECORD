@@ -1,0 +1,10 @@
+odoo/addons/ssi_meeting_quality_control/README.rst,sha256=hzTndoDkB1j_LqPwfIad4NvTBFYKUOSZ5Y1Mwk7VFaI,1271
+odoo/addons/ssi_meeting_quality_control/__init__.py,sha256=r5N6OPy8398Gafsr6OVbrNPHjMh7GNTmTPxSKA_LjKQ,181
+odoo/addons/ssi_meeting_quality_control/__manifest__.py,sha256=X-W1jmmkyuOQTFSQnnqlh22LHkkcJBuIJH-bF3tC9a8,550
+odoo/addons/ssi_meeting_quality_control/models/__init__.py,sha256=Rijv9tmGec-RpyjLpkbgWqtOzkgllhZfFb2Xite-uqc,208
+odoo/addons/ssi_meeting_quality_control/models/calendar_event.py,sha256=R1wivKLzDWnSU38jVsmHjOFV2DOax9MoxUAyc3w6vbI,377
+odoo/addons/ssi_meeting_quality_control/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_meeting_quality_control-14.0.1.0.0.dist-info/METADATA,sha256=Ot-xlSePQ9XqgVkSfwJK2YWlNFxWcDs99LNGE87g8q8,1838
+odoo14_addon_ssi_meeting_quality_control-14.0.1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_meeting_quality_control-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_meeting_quality_control-14.0.1.0.0.dist-info/RECORD,,
