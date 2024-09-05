@@ -1,0 +1,11 @@
+README.md
+setup.py
+pose_detection/__init__.py
+pose_detection/pose_detector.py
+pose_detection/pose_model_creator.py
+pose_detection.egg-info/PKG-INFO
+pose_detection.egg-info/SOURCES.txt
+pose_detection.egg-info/dependency_links.txt
+pose_detection.egg-info/requires.txt
+pose_detection.egg-info/top_level.txt
+tests/test_pose_detection.py
