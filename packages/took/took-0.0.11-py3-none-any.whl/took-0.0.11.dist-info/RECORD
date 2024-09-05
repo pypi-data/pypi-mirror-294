@@ -1,0 +1,13 @@
+took/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+took/git_hooks.py,sha256=8jn3RdVf34xjRbyFa6hjnnCZzDcfurD6KpEhQz9sFk4,879
+took/took.py,sha256=USv2t3pci7pTggDCz6mqi1WV3US-gZPEGFXSxqWjcGo,9237
+took/ui.py,sha256=swMTha3qpHw1U-Df3y2qigf9DM2GzB7xLEFCJDqaBAA,4327
+took/resources/hooks/post-checkout.sh,sha256=Wg1JtaAeEhvBtG6-lGXrvaUZX5z5Wz3BFMDXfVnLA6I,243
+took/resources/hooks/post-commit.sh,sha256=xsAiIoyEm7OoIs5-00V2GAs6kGfaRz7Nrmxy_S4QdPk,163
+took/resources/hooks/pre-commit.sh,sha256=8RBNHyjjI981nJyR6ctFti10SONjDlwdnlqi8S3SmAw,149
+took-0.0.11.dist-info/LICENSE,sha256=SfRGLvx020ePJyc1ydgs-p9PD02G_U0BngqqcTF8qLc,1075
+took-0.0.11.dist-info/METADATA,sha256=I24ls_UbVzButrm57ZY7AzCmt4HnhBqDu44pr2xbQ1A,3778
+took-0.0.11.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+took-0.0.11.dist-info/entry_points.txt,sha256=sw9BQDXfrFiI0d6OjqzlKLJWpKk3sez73Jxw0qU0znY,60
+took-0.0.11.dist-info/top_level.txt,sha256=4uzghoUttqbMCLAS2BeZ7MmaYZj6Xw3ahqcOmb_MMKI,5
+took-0.0.11.dist-info/RECORD,,
