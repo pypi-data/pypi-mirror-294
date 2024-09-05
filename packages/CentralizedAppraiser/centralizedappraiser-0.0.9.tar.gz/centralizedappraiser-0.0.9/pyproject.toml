@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CentralizedAppraiser"
+version = "0.0.9"
+authors = [
+  { name="Reed Graff (Compliancy)", email="reed@withcompliancy.com" },
+]
+description = "A centralized method of accessing appraiser data, using each counties local property appraiser's data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["real estate", "appraiser", "property", "data", "centralized", "api"]
+dependencies = [
+    "requests",
+    # "re",
+    # "importlib",
+    # "math"
+    # "json",
+    "shapely",
+    "schema",
+    "pyproj"
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/ReedGraff/CentralizedAppraiser"
+Issues = "https://github.com/ReedGraff/CentralizedAppraiser/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# mypkg = ["*.geojson"]
+"*" = ["*.*"] # include all files in all packages
