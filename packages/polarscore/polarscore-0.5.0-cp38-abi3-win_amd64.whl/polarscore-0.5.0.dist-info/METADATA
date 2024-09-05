@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: polarscore
+Version: 0.5.0
+Requires-Dist: altair >=5.4.1
+Requires-Dist: polars >=1.6.0
+Requires-Dist: polarscore
+Requires-Dist: scikit-learn >=1.5.1
+License-File: LICENSE
+Summary: Lightning-fast credit scorecard building with Polars
+Author-email: Mark Wang <wxgter@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Polarscore
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/polarscore)
+
+## Overview
+
+Polarscore is a Python library designed for lightning-fast credit scorecard building.
+
+## Features
+
+- **High Performance**: Built on top of Polars, ensuring fast data processing and manipulation.
+- **Easy to Use**: Simple and intuitive API for building credit scorecards.
+- **Scalable**: Capable of handling large datasets with ease.
+- **Integration with Scikit-Learn**: Seamlessly integrates with scikit-learn API and pipeline.
+
