@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bio-allo
+Version: 1.2.0
+Summary: A multi-mapped read rescue strategy for gene regulatory data
+Home-page: https://github.com/seqcode/allo/archive/refs/tags/1.2.0.tar.gz
+Author: Alexis Morrissey
+Author-email: anm5579@psu.edu
+License: LICENSE.txt
+Requires-Python: >=3.10
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: joblib
+Requires-Dist: tensorflow >=2.17
+Requires-Dist: pysam
+
