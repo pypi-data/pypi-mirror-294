@@ -1,0 +1,10 @@
+pydantic>=2.8.2
+pydantic-settings>=2.4.0
+
+[dev]
+setuptools-scm
+uv
+tox-uv
+mypy
+build
+cibuildwheel
