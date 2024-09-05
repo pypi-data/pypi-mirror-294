@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/PyDroidCTRL.egg-info/PKG-INFO
+src/PyDroidCTRL.egg-info/SOURCES.txt
+src/PyDroidCTRL.egg-info/dependency_links.txt
+src/PyDroidCTRL.egg-info/top_level.txt
+src/android_controller/__init__.py
+src/android_controller/controller.py
+src/android_controller/device.py
