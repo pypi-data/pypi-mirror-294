@@ -1,0 +1,6 @@
+[console_scripts]
+mysql-dir-swapper=tempuscator.cli:swapper
+mysql-obf-wacher=tempuscator.cli:mysql_obf_watcher
+mysql-obfuscator=tempuscator.cli:obfuscator
+mysql-swap-watcher=tempuscator.cli:mysql_swap_watch
+
