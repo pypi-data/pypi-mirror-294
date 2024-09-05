@@ -1,0 +1,95 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .name_11 import name as name_cls
+from .field_6 import field as field_cls
+from .injections_list import injections_list as injections_list_cls
+from .range_options_1 import range_options as range_options_cls
+from .range_1 import range as range_cls
+from .style_attribute_1 import style_attribute as style_attribute_cls
+from .style_attributes import style_attributes as style_attributes_cls
+from .vector_settings import vector_settings as vector_settings_cls
+from .vector_setting import vector_setting as vector_setting_cls
+from .option_36 import option as option_cls
+from .color_map import color_map as color_map_cls
+from .filter_settings import filter_settings as filter_settings_cls
+from .filter_setting import filter_setting as filter_setting_cls
+from .options_19 import options as options_cls
+from .track_single_particle_stream_1 import track_single_particle_stream as track_single_particle_stream_cls
+from .skip_2 import skip as skip_cls
+from .coarsen_3 import coarsen as coarsen_cls
+from .free_stream_particles import free_stream_particles as free_stream_particles_cls
+from .wall_film_particles import wall_film_particles as wall_film_particles_cls
+from .track_pdf_particles import track_pdf_particles as track_pdf_particles_cls
+from .draw_mesh_1 import draw_mesh as draw_mesh_cls
+from .mesh_object import mesh_object as mesh_object_cls
+from .display_state_name import display_state_name as display_state_name_cls
+from .plot_4 import plot as plot_cls
+from .axes_1 import axes as axes_cls
+from .curves_1 import curves as curves_cls
+from .display_3 import display as display_cls
+from .update_min_max import update_min_max as update_min_max_cls
+
+class particle_track_child(Group):
+    """
+    'child_object_type' of particle_track.
+    """
+
+    fluent_name = "child-object-type"
+
+    child_names = \
+        ['name', 'field', 'injections_list', 'range_options', 'range',
+         'style_attribute', 'style_attributes', 'vector_settings',
+         'vector_setting', 'option', 'color_map', 'filter_settings',
+         'filter_setting', 'options', 'track_single_particle_stream', 'skip',
+         'coarsen', 'free_stream_particles', 'wall_film_particles',
+         'track_pdf_particles', 'draw_mesh', 'mesh_object',
+         'display_state_name', 'plot', 'axes', 'curves']
+
+    command_names = \
+        ['display', 'update_min_max']
+
+    _child_classes = dict(
+        name=name_cls,
+        field=field_cls,
+        injections_list=injections_list_cls,
+        range_options=range_options_cls,
+        range=range_cls,
+        style_attribute=style_attribute_cls,
+        style_attributes=style_attributes_cls,
+        vector_settings=vector_settings_cls,
+        vector_setting=vector_setting_cls,
+        option=option_cls,
+        color_map=color_map_cls,
+        filter_settings=filter_settings_cls,
+        filter_setting=filter_setting_cls,
+        options=options_cls,
+        track_single_particle_stream=track_single_particle_stream_cls,
+        skip=skip_cls,
+        coarsen=coarsen_cls,
+        free_stream_particles=free_stream_particles_cls,
+        wall_film_particles=wall_film_particles_cls,
+        track_pdf_particles=track_pdf_particles_cls,
+        draw_mesh=draw_mesh_cls,
+        mesh_object=mesh_object_cls,
+        display_state_name=display_state_name_cls,
+        plot=plot_cls,
+        axes=axes_cls,
+        curves=curves_cls,
+        display=display_cls,
+        update_min_max=update_min_max_cls,
+    )
+
