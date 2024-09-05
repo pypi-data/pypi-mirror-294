@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: instructx
+Version: 0.0.1
+Summary: Typed wrapper for LLMs powered by XML
+Home-page: https://github.com/speckai/instructx
+Author: Lucas Jaggernauth
+Author-email: lukejagg@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: anthropic (>=0.31.2,<0.32.0)
+Requires-Dist: openai (>=1.35.15,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Project-URL: Repository, https://github.com/speckai/instructx
+Description-Content-Type: text/markdown
+
+# Instruct X
+
+Instruct X is a typed language model (LLM) generation library tha
+t uses custom XML parsing to improve the quality of generated text.

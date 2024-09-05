@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "instructx"
+version = "0.0.1"
+description = "Typed wrapper for LLMs powered by XML"
+authors = ["Lucas Jaggernauth <lukejagg@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/speckai/instructx"
+classifiers = [
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.8.2"
+openai = "^1.35.15"
+anthropic = "^0.31.2"
+
+[project.urls]
+Homepage = "https://speck.sh"
+Repository = "https://github.com/speckai/instructx"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
