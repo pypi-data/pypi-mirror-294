@@ -1,0 +1,9 @@
+ai_edge_litert/__init__.py,sha256=ndSTRm0YnSe9F0bZJ648dT5L9GFIpMX1DCyFkJ9Vrms,80
+ai_edge_litert/_pywrap_tensorflow_interpreter_wrapper.so,sha256=m-IDK0FG2h4u0l8fg4JvGFT0e3EBCbQEO66oN1xS_DM,7759984
+ai_edge_litert/interpreter.py,sha256=oqiSynBUbcxV8U1FIpmdQREE3e_Q4MlQ8kzLXcd5rWc,39243
+ai_edge_litert/metrics_interface.py,sha256=dVu6SmbnQUntPgE5o6BxHVMyemwli-7F6tDfVMGrlYI,1542
+ai_edge_litert/metrics_portable.py,sha256=hQ4dC75UblrKTRxkbwG-LoWAO6_Fe3SX_ehuOVqCMnY,2048
+ai_edge_litert_nightly-1.0.1.dev20240904.dist-info/METADATA,sha256=H2WSQ0XgzEXJfr_CZzqYSsLPoc7wArRNynvKkZC_Ya8,1437
+ai_edge_litert_nightly-1.0.1.dev20240904.dist-info/WHEEL,sha256=e-TOGI5dlRgqEw9tnMN7lYI4BAEu9SNICim5phE629o,109
+ai_edge_litert_nightly-1.0.1.dev20240904.dist-info/top_level.txt,sha256=WcDZgG99n0a0xDS_ipL8ZWy956g1v5fVyR3FH96VDT0,15
+ai_edge_litert_nightly-1.0.1.dev20240904.dist-info/RECORD,,
