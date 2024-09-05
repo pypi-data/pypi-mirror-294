@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: opensees
+Version: 0.0.69
+Summary: Fast nonlinear finite element analysis.
+Author: Claudio M. Perez
+Project-URL: Repository, https://github.com/claudioperez/OpenSeesRT
+Project-URL: Examples, https://stairlab.github.io/opensees-gallery
+Keywords: seismic,structural-analysis,finite-element-analysis,earthquake,engineering
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Fortran
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: shps
+Requires-Dist: pyparsing
+Requires-Dist: prompt-toolkit
+Requires-Dist: pygments
+Requires-Dist: platformdirs
+Requires-Dist: numpy <1.20.0 ; python_version < "3.8"
+Requires-Dist: numpy ; python_version >= "3.8"
+Provides-Extra: docs
+Requires-Dist: elstir ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Provides-Extra: py
+Requires-Dist: openseespy ; extra == 'py'
+Provides-Extra: rt
+Requires-Dist: pyparsing ; extra == 'rt'
+Requires-Dist: prompt-toolkit ; extra == 'rt'
+Requires-Dist: pygments ; extra == 'rt'
+Provides-Extra: testing
+Requires-Dist: pytest >=4.6 ; extra == 'testing'
+Requires-Dist: pytest-checkdocs >=2.4 ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: nbmake ; extra == 'testing'
+
