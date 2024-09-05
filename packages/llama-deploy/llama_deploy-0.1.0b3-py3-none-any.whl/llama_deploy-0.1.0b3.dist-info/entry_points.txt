@@ -1,0 +1,3 @@
+[console_scripts]
+llama_deploy=llama_deploy.cli.command_line:main
+
