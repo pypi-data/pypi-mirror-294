@@ -1,0 +1,63 @@
+Metadata-Version: 2.3
+Name: pyrunnable
+Version: 1.0.0
+Project-URL: Homepage, https://github.com/nbdy/pyrunnable
+Project-URL: Repository, https://github.com/nbdy/pyrunnable.git
+Project-URL: Issues, https://github.com/nbdy/pyrunnable/issues
+Author: nbdy
+Maintainer: nbdy
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pyrunnable
+
+a wrapper around threading.Thread with convenience functions like
+
+- on_start (called after starting the runnable with .start)
+- on_stop (called after stopping the runnable with .stop)
+- work (executed cyclically until .stop is called)
+
+that you can override, as well as
+
+- stop
+
+which i was missing in threading.Thread
+
+## how to...
+
+### ... install
+
+```shell script
+pip install pyrunnable
+```
+
+### ... use it
+
+```python
+from pyrunnable import Runnable
+from time import sleep
+
+class ThreadedObject(Runnable):
+    def on_start(self):
+        print("starting")
+    
+    def work(self):
+        print("working")
+        sleep(0.2)
+
+    def on_stop(self):
+        print("stopping")
+
+o = ThreadedObject()
+try:
+    o.start()
+    o.join()  # Runnable inherits threading.Thread
+except KeyboardInterrupt:
+    o.stop()
+```
