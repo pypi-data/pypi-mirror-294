@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: desolation
+Version: 2024.9.0
+Summary: Define and implement DSL(s) using S-Expressions
+Author-email: Eugene Van den Bulke <eugene.vandenbulke@gmail.com>
+Project-URL: Home, http://github.com/3kwa/desolation
