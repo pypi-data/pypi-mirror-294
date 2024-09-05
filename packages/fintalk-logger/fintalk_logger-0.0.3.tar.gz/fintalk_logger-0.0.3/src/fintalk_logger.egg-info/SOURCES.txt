@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fintalk_logger/__init__.py
+src/fintalk_logger/basemodels.py
+src/fintalk_logger/logger.py
+src/fintalk_logger.egg-info/PKG-INFO
+src/fintalk_logger.egg-info/SOURCES.txt
+src/fintalk_logger.egg-info/dependency_links.txt
+src/fintalk_logger.egg-info/requires.txt
+src/fintalk_logger.egg-info/top_level.txt

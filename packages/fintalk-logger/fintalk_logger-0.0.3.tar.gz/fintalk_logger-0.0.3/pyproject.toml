@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+packages = ["src"]
+
+[project]
+name = "fintalk_logger"
+dynamic = ["version"]
+authors = [
+  { name="fintalk"},
+]
+dependencies=[
+  "requests",
+  "pydantic",
+  "loguru",
+]
+description = "Fintalk Python logger"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
