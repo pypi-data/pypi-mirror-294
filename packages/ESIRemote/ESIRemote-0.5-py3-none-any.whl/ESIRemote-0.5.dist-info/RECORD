@@ -1,0 +1,9 @@
+esi_remote/__init__.py,sha256=atNoUedxGlCYkoDGlmxYAeUUqkiLE8LaOXMK6SIQ6Og,35
+esi_remote/esi_remote.py,sha256=iBfqxfRdBZ3DRh7mb4uVpEdVLK56wc0mzHui_YfdtzY,6996
+esi_remote/filter_list.py,sha256=Qrgxj_06QJK14cTSpUBC9JHcfZwGJMnn7Sr55fvcVY8,1159
+esi_remote/models.py,sha256=9ZbayXUQ66Dk2mTjmqQVknXduu4kcUaKAmuL88Fo1ps,17655
+ESIRemote-0.5.dist-info/LICENSE,sha256=YP2rNNsgRPNxYsNBo4-yyO_cM_s1wS3YqUiV7YfJsZw,1086
+ESIRemote-0.5.dist-info/METADATA,sha256=LC810r8-9EbkTDwfuHnEKHCZl6-yJYbNwZpPpe4nFwA,4286
+ESIRemote-0.5.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+ESIRemote-0.5.dist-info/top_level.txt,sha256=xrtviNXczK8hmSyprolbdbUOSRDgekv4s75_DfDBACM,11
+ESIRemote-0.5.dist-info/RECORD,,
