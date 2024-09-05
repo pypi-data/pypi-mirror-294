@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: swanshare
+Version: 2.0.3
+Summary: Sharing for SWAN
+Home-page: https://github.com/swan-cern/jupyter-extensions
+Author: SWAN Admins
+License: AGPL-3.0
+Keywords: Jupyter,SWAN,CERN
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Jupyter
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT
+
+# SwanShare
+
+Jupyter extension to allow sharing integration between SWAN and CERNBox.
+
+This extension is composed of a Python package named `swanshare`, which installs the nbextension.
+It's not supposed to contain a JupyterLab because this functionality is being replaced by a different package.
+
+## Install
+
+```bash
+pip install swanshare
+jupyter nbclassic-extension install swanshare --py
+jupyter nbclassic-extension enable swanshare --py
+```
