@@ -1,0 +1,14 @@
+siglent_sds/__init__.py,sha256=f0tq66SlfmykS2l6yzq4PyBQpnDTVo4V2Ez6g-I3gxE,118
+siglent_sds/base.py,sha256=FOqBCQJh5SUVg6pLx8fHPxs8gap_DlrWQu2JMjnBAsc,84054
+siglent_sds/connectors.py,sha256=GsFXD1IEZvrfC0ynPqv2b-LhyEaKaV9A-LNHoCzqny0,5189
+siglent_sds/devices.py,sha256=qhn156hvMW_XI6ETYX0enKDBZUhwV7kJx8lYL8EuqZc,3302
+siglent_sds/examples/__init__.py,sha256=fPnCaNCOizSqlUuW_VhRr5-3zypiR1g17G6DuJ1_DJY,747
+siglent_sds/examples/sds_notebook.ipynb,sha256=gEP7QHUsdAShxb6WuWdSjWP-_lDR27bxczpYaD_-N0o,4004
+siglent_sds/examples/sds_plot.py,sha256=753oq9wmSyHmlmI0i1PgsUIhLQKwqFbDza6IitKDuEw,6976
+siglent_sds/examples/sds_plot.ui,sha256=suKaHW0oNMmH8mpDus-dtttgTUnIvUByiCe9fqYBi9A,12544
+siglent_sds/examples/sds_repl.py,sha256=KwW2JlbYldL_zNyXNNg_9VY3uDSD3PqcXp-9Dv3UUEo,1620
+siglent_sds/utils.py,sha256=o_vgOIkaBr7vahJ09eWKZLjzhTM5dc6NndHjAoX3eek,4488
+siglent_sds-0.2.5.dist-info/LICENSE,sha256=fhYrXiQQaxZFlFnExGqyWhrKBjx3rko4Cq-k4hKMgkY,35143
+siglent_sds-0.2.5.dist-info/METADATA,sha256=8FnlPpU77toXjzJ8h0PjxGgZpM8S1ZpzIyzrSmVZyOI,1819
+siglent_sds-0.2.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+siglent_sds-0.2.5.dist-info/RECORD,,

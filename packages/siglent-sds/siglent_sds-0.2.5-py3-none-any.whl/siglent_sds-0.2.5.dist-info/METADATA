@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: siglent-sds
+Version: 0.2.5
+Summary: Interface to the Siglent SDS series of oscilloscopes.
+Author: Patrick Tapping
+Author-email: mail@patricktapping.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: examples
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: pyqtgraph (>=0.13.7,<0.14.0) ; extra == "examples"
+Requires-Dist: pyside6 (>=6.7.2,<7.0.0) ; extra == "examples"
+Description-Content-Type: text/markdown
+
+Siglent_SDS
+===========
+
+Siglent_SDS is a python interface to Siglent oscilloscopes. It has been tested on the Siglent
+SDS800X HD series, but may also be compatible with similar Siglent oscilloscope models such as:
+
+- Siglent SDS5000X
+- Siglent SDS2000X Plus
+- Siglent SDS6000 Pro
+- Siglent SDS6000A
+- Siglent SHS800X
+- Siglent SHS1000X
+- Siglent SDS2000X HD
+- Siglent SDS6000L
+- Siglent SDS1000X HD
+- Siglent SDS7000A
+- Siglent SDS3000X HD
+
+The interface attempts to follow the specification in the [Siglent SDS Programming
+Guide](https://siglentna.com/download/29924/?tmstv=1722402666).
+
+It is intended to simplify configuring and acquiring waveforms from the device. Currently the only supported connection type is through network sockets (ethernet), but USB or other connection backends could be added with relatively little effort. When using network sockets, there is no dependency on VISA libraries or similar.
+
+Documentation is located at https://ptapping.gitlab.io/siglent_sds
+
+Source code is located at https://gitlab.com/ptapping/siglent_sds
+
+Python Package Index (PyPI) page at https://pypi.org/project/siglent-sds
