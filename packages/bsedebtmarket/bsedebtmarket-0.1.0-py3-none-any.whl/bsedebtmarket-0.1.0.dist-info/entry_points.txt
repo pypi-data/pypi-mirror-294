@@ -1,0 +1,3 @@
+[console_scripts]
+bsedebtmarket = bsedebtmarket.parser:table_to_json
+
