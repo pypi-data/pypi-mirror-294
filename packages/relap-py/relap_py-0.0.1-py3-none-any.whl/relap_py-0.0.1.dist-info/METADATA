@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: relap-py
+Version: 0.0.1
+Summary: Module for RELAP post-processing
+Author: Jordi Freixa
+Author-email: <jordi.freixa-terradas@upc.edu>
+Keywords: relap,trace
+
