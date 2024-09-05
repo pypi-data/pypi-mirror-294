@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: imaparms
+Version: 2.6.2
+Summary: imaparms is now hoardy-mail
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: hoardy-mail
+
+# imaparms is now hoardy-mail
+
+This package has been renamed. Use `pip install hoardy-mail` instead.
+
+New package: https://pypi.org/project/hoardy-mail/
