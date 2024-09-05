@@ -1,0 +1,5 @@
+[console_scripts]
+douroucoulisay = douroucoulisay.douroucoulisay:main
+gruff_hoot = douroucoulisay.douroucoulisay:gruff_hoot
+tonal_hoot = douroucoulisay.douroucoulisay:tonal_hoot
+whoop = douroucoulisay.douroucoulisay:whoop

@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: douroucoulisay
+Version: 0.1.1.8.1
+Summary: A package to print messages with douroucouli ASCII art and sounds.
+Home-page: https://github.com/douroucoulis-fr/douroucoulisay.git
+Author: Aotus Parisinus
+Author-email: douroucoulis-fr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pydub
+
+# Douroucoulisay
+
+`douroucoulisay` is a Python package that lets you print messages with delightful douroucoulis ASCII art. Perfect for adding a touch of whimsy to your command-line outputs! It is a HOOT and a WHOOP to use.
+
+## Features
+
+- Fetch and display douroucoulis ASCII art.
+- Create speech bubbles around your messages.
+- Easy to use from the command line.
+
+## Installation
+
+## You can install the package from PyPI using pip:
+
+#```sh
+#pip install douroucoulisay
+
+# Usage
+ Once installed, you can use douroucoulisay from the command line to print messages with douroucouli ASCII art.
+
+# Basic Usage
+To display a message with the default douroucouli:
+douroucoulisay "Hello, world!"
+
+# Specify Douroucouli
+To use a specific douroucouli ASCII art, use the -d option followed by the douroucouli name:
+douroucoulisay "How are you?" -d douroucouli2
+
+# Available Douroucouli
+Ensure that the douroucouli you want to use exists in the assets/ directory of the package. By default, the package includes:
+
+douroucouli1
+douroucouli2
+douroucouli3
+
+Example
+Here’s an example of what the output looks like:
+
+
+  ----------------------------------
+ < Hi, I'm douroucoulisay, and you? >
+  ----------------------------------
+                                            
+               ############-            
+           ##############--###+         
+        ###-.+##############.-###       
+      ##+-.####-##############.-####    
+   ####+-####  +########-  ####+--+###  
+  ##+---###      ######     +###--++-#  
+  #---+###  ....  ###+  ...   ###-+-+#  
+  #+-+###  .      ###         -##+-##-  
+   #-###  .######.###. #####-  ###--#.  
+   #-### -#     .######-    ## .##--#   
+   ##### +.       #++#.      #--##-##   
+    #+## .#      .#+##-      # +##-#    
+    ##### ##+  -###++###-  ### ##-##    
+     #####  +######++#######  #####     
+      ##+##     ##++++##     ###+#      
+       ##-##.######+#######-+#-##       
+        -###- -##########+  +###        
+          ###-  #######+  .###-         
+           .###.        -###            
+              ###########+              
+                                
