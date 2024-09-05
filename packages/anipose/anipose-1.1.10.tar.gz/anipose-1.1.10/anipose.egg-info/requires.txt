@@ -1,0 +1,16 @@
+deeplabcut>=2.0.4.1
+aniposelib>=0.4.3
+opencv-contrib-python
+toml
+numpy
+scipy
+pandas
+tqdm
+click
+scikit-video
+flask
+flask-compress
+flask-ipban
+
+[viz]
+mayavi
