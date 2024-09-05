@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_rss.egg-info/PKG-INFO
+easy_rss.egg-info/SOURCES.txt
+easy_rss.egg-info/dependency_links.txt
+easy_rss.egg-info/requires.txt
+easy_rss.egg-info/top_level.txt
+src/__init__.py
+src/easy_rss.py
