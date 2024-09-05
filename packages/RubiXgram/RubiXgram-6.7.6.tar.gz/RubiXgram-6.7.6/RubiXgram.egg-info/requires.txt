@@ -1,0 +1,9 @@
+httpx
+pycryptodome
+fake_useragent
+rich
+Pillow
+bs4
+mutagen
+urllib3
+googledata
