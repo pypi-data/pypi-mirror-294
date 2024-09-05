@@ -1,0 +1,7 @@
+lib/melcloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib/melcloud/devices.py,sha256=EGgZ2xfgXxyiXMu8IXyVFRzBmXJu2Bh4RKbykBbCdDA,1453
+lib/melcloud/jsongenerator.py,sha256=PzHvZgmwStwaLWEB9ZrrUQadhH06iTx0x49rJiOb4A0,4217
+lib/melcloud/melcloudclient.py,sha256=QODOkASBQICLKxlLAW_G42uK5xqTl566XV9bjm2OZJU,12853
+asyncio_melcloud_lib-1.0.0.dist-info/METADATA,sha256=RpLQHbwVs97mKxuinY1Xev36vMM2tYW_ng1qxE5mROs,2644
+asyncio_melcloud_lib-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asyncio_melcloud_lib-1.0.0.dist-info/RECORD,,
