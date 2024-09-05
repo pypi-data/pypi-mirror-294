@@ -1,0 +1,49 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from typing import Union, List, Tuple
+
+from .constant_factor import constant_factor as constant_factor_cls
+from .tolerance_2 import tolerance as tolerance_cls
+from .max_iter_1 import max_iter as max_iter_cls
+from .bnd_node_relax import bnd_node_relax as bnd_node_relax_cls
+from .bnd_stiffness_factor import bnd_stiffness_factor as bnd_stiffness_factor_cls
+from .spring_on_all_elements import spring_on_all_elements as spring_on_all_elements_cls
+from .spring_on_simplex_elements import spring_on_simplex_elements as spring_on_simplex_elements_cls
+from .laplace_node_relax import laplace_node_relax as laplace_node_relax_cls
+from .skew_smooth_niter import skew_smooth_niter as skew_smooth_niter_cls
+from .skew_smooth_cell_skew_max import skew_smooth_cell_skew_max as skew_smooth_cell_skew_max_cls
+from .skew_smooth_face_skew_max import skew_smooth_face_skew_max as skew_smooth_face_skew_max_cls
+from .skew_smooth_all_deforming_boundaries import skew_smooth_all_deforming_boundaries as skew_smooth_all_deforming_boundaries_cls
+from .verbosity_8 import verbosity as verbosity_cls
+
+class spring_settings(Group):
+    fluent_name = ...
+    child_names = ...
+    constant_factor: constant_factor_cls = ...
+    tolerance: tolerance_cls = ...
+    max_iter: max_iter_cls = ...
+    bnd_node_relax: bnd_node_relax_cls = ...
+    bnd_stiffness_factor: bnd_stiffness_factor_cls = ...
+    spring_on_all_elements: spring_on_all_elements_cls = ...
+    spring_on_simplex_elements: spring_on_simplex_elements_cls = ...
+    laplace_node_relax: laplace_node_relax_cls = ...
+    skew_smooth_niter: skew_smooth_niter_cls = ...
+    skew_smooth_cell_skew_max: skew_smooth_cell_skew_max_cls = ...
+    skew_smooth_face_skew_max: skew_smooth_face_skew_max_cls = ...
+    skew_smooth_all_deforming_boundaries: skew_smooth_all_deforming_boundaries_cls = ...
+    verbosity: verbosity_cls = ...

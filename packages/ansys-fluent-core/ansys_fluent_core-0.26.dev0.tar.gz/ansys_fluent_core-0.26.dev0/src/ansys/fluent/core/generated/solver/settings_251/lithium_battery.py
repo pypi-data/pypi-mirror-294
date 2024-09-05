@@ -1,0 +1,41 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .echem_heating_enabled import echem_heating_enabled as echem_heating_enabled_cls
+from .zone_assignment import zone_assignment as zone_assignment_cls
+from .butler_volmer_rate import butler_volmer_rate as butler_volmer_rate_cls
+from .material_property import material_property as material_property_cls
+from .aging_model import aging_model as aging_model_cls
+
+class lithium_battery(Group):
+    """
+    Set up li-ion battery model.
+    """
+
+    fluent_name = "lithium-battery"
+
+    child_names = \
+        ['echem_heating_enabled', 'zone_assignment', 'butler_volmer_rate',
+         'material_property', 'aging_model']
+
+    _child_classes = dict(
+        echem_heating_enabled=echem_heating_enabled_cls,
+        zone_assignment=zone_assignment_cls,
+        butler_volmer_rate=butler_volmer_rate_cls,
+        material_property=material_property_cls,
+        aging_model=aging_model_cls,
+    )
+

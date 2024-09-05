@@ -1,0 +1,38 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .x_component_1 import x_component as x_component_cls
+from .y_component_1 import y_component as y_component_cls
+from .z_component_1 import z_component as z_component_cls
+from .curve_length import curve_length as curve_length_cls
+
+class y_axis_direction(Group):
+    """
+    Specifies the Plot Direction.
+    """
+
+    fluent_name = "y-axis-direction"
+
+    child_names = \
+        ['x_component', 'y_component', 'z_component', 'curve_length']
+
+    _child_classes = dict(
+        x_component=x_component_cls,
+        y_component=y_component_cls,
+        z_component=z_component_cls,
+        curve_length=curve_length_cls,
+    )
+
