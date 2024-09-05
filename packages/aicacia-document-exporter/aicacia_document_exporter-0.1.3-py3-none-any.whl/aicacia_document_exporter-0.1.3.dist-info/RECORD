@@ -1,0 +1,10 @@
+aicacia_document_exporter/Document.py,sha256=huaYHloouE73tzUSD-wsdQxVsBEorSKgRLpTGh6Knjc,1199
+aicacia_document_exporter/DocumentExporter.py,sha256=Xb_jkNMHXu4E-fS67P0GuhZ0tm8ct7Opw86RY6oYf84,2453
+aicacia_document_exporter/PreprocessingModel.py,sha256=oFWASdZAW-FvTsFA8dVAFWcyLxTKREQfbIRK6h2sM5E,217
+aicacia_document_exporter/SimpleFileDocumentExporter.py,sha256=oKPgkKU_SOt38eDzwvYhgCV_HCpebKvBu7JuxG138_w,1650
+aicacia_document_exporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicacia_document_exporter-0.1.3.dist-info/LICENSE.txt,sha256=4Tb-xJhVhMDomWycKivmchjty2rVY6KbeXtrYEh9wSQ,1075
+aicacia_document_exporter-0.1.3.dist-info/METADATA,sha256=kop9g3mqZHxe-VhcJli9dq1KSbfMnNpST6CI4qufEQ4,853
+aicacia_document_exporter-0.1.3.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+aicacia_document_exporter-0.1.3.dist-info/top_level.txt,sha256=aW-XMwQ3dE29mSdPWhjeThqCUwAbSF_czTRSPlcgW4E,26
+aicacia_document_exporter-0.1.3.dist-info/RECORD,,
