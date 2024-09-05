@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: th2-common-utils
+Version: 2.1.0.dev10700813215
+Summary: Python library with useful functions for developers and QA needs
+Home-page: https://github.com/th2-net/th2-common-utils-py
+License: Apache-2.0
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: orjson (>=3.10,<4.0)
+Requires-Dist: sortedcollections (==2.*)
+Requires-Dist: th2-grpc-common (>=4.5.1.dev10630970759,<5.0.0)
+Project-URL: Repository, https://github.com/th2-net/th2-common-utils-py
+Description-Content-Type: text/markdown
+
+# th2-common-utils-py (2.1.0)
+Python library with useful functions for **developers and QA needs**. Check the [Wiki](https://github.com/th2-net/th2-common-utils-py/wiki) for instructions and examples.
+
+## Installation
+```
+pip install th2-common-utils
+```
+
