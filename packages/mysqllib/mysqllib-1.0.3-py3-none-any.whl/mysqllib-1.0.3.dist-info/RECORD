@@ -1,0 +1,10 @@
+mysqllib/__init__.py,sha256=uZmIOh3CubgxXlkkVdz9rQr1bArvGAle7rgWjNLOK8g,5817
+mysqllib/database.py,sha256=T1WRdu-snknILF43YNEXUS3K_HT2InVyJj-RFJZ_2NY,1281
+mysqllib/err.py,sha256=Duc5meeBnSeo_6rxCtWXMQk3RiHKLxFJs6elpE9EwjE,57
+mysqllib/generator.py,sha256=i1W67ENRby8ABa3oBjiIqLSD5DIcpl8IsdUKY_rLbVo,1282
+mysqllib/migration.py,sha256=kzGm6BjS50jbEIXAwIWoI9wgkA7hVaMJL9VOo0v3AZY,2004
+mysqllib-1.0.3.dist-info/LICENSE,sha256=ilX-QwYUhFOBTm3U8z_9Sh3AuJ2zuqplMgKhGLo24mw,1073
+mysqllib-1.0.3.dist-info/METADATA,sha256=jmlk-vpTLUHiWaQcDSgZqd0Hd5GmLAEJHyGYBR3A6Ow,1724
+mysqllib-1.0.3.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+mysqllib-1.0.3.dist-info/top_level.txt,sha256=NsvU0i2GT0-nYFNly9WNQaev5lmn14p6m1e1mZc8NNc,9
+mysqllib-1.0.3.dist-info/RECORD,,
