@@ -1,0 +1,11 @@
+README.md
+setup.py
+proxytg/__init__.py
+proxytg/telegram.py
+proxytg.egg-info/PKG-INFO
+proxytg.egg-info/SOURCES.txt
+proxytg.egg-info/dependency_links.txt
+proxytg.egg-info/requires.txt
+proxytg.egg-info/top_level.txt
+tests/__init__.py
+tests/test_telegram.py
