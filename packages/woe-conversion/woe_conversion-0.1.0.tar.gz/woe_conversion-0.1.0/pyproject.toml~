@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","pandas","numpy"]
+build-backend = "hatchling.build"
+
+[project]
+name = "woe_conversion"
+version = "1.0"
+authors = [
+  { name="Bertrand Brelier", email="bertrand.brelier@gmail.com" },
+]
+description = "woe is a Python library designed to convert categorical and continuous variables into weight of evidence. Weight of evidence is a statistical technique used in information theory to measure the strength of a relationship between a binary target variable and a predictor variable. The library can be used for data preprocessing in predictive modeling or machine learning projects."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BertrandBrelier/woe"
+"Bug Tracker" = "https://github.com/BertrandBrelier/woe"
