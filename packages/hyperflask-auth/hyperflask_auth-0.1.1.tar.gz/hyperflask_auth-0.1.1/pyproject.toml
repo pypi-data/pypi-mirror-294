@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hyperflask-auth"
+version = "0.1.1"
+description = "Authentication for Hyperflask"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/hyperflask-auth"
+packages = [{include = "hyperflask_auth"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hyperflask = "^0.1"
+flask-login = "^0.6"
+passlib = "^1.7"
+
+[tool.poetry.plugins."hyperflask.extensions"]
+auth = "hyperflask_auth:Auth"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
