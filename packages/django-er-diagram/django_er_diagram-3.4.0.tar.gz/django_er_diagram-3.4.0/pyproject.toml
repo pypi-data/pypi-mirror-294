@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "django-er-diagram"
+version = "3.4.0"
+description = "Auto-generate Entity-Relationship Diagrams for a Django project using Mermaid"
+authors = ["David Del Grosso <daviddelgrosso97@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [
+    { include = "django_er_diagram" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+django = ">=4.2"
+pytest = ">=7.4.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = ">=3.8.0"
+black = ">=24.8.0"
+isort = ">=5.13.2"
+pylint = ">=3.2.6"
+pylint-django = { version = ">=2.5.3", python = ">=3.9,<4.0" }
+pytest = ">7.4.4"
+pytest-cov = ">=4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py38", "py39", "py310"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["django-er-diagram"]
+known_third_party = ["django"]
+known_standard_library = ["os", "sys"]
+skip = ["migrations"]
+
+# Pylint configuration can be set here or in .pylintrc
+[tool.pylint.main]
+load-plugins = ["pylint_django"]
+fail-under = 8.0
+persistent = true
