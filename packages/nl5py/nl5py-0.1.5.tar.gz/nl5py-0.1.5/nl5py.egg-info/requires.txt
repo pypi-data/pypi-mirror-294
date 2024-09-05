@@ -1,0 +1,6 @@
+numpy
+pandas
+importlib-resources
+
+[dev]
+pytest
