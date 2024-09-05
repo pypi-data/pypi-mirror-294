@@ -1,0 +1,13 @@
+elatentlpips/__init__.py,sha256=RlKmSEIYwL5GWWURSspoJwbvYuWkwxXQEj9dKcOMbGY,4211
+elatentlpips/ada_aug.py,sha256=8FRIEgUBld5PLZklQRxmJ1cko-bvWMcLaE8ibn_G2gw,20554
+elatentlpips/custom_ops.py,sha256=cMknjGDVcIAM-xSOEuS1LMF69PztvqoDtt_mXwXTIfw,6665
+elatentlpips/elatentlpips.py,sha256=7uw8DqhEGg-__GFYZCFjUjN_rLQvLQIqlBwYCD1EKwA,12241
+elatentlpips/minguk.py,sha256=T8grJq7LR9KGjE7741gXMqPny8xsLvsyBiwIFwoF7rg,2
+elatentlpips/style_misc.py,sha256=Ici9Ctc_Amy3ilYKykt7hBXDeZZHZhvzMNZw64j7Efg,4084
+elatentlpips/vgg16.py,sha256=y1Li2ZVESHVUYVH-3WXY5Bb7OgiSbgTdEtnaOUlX7QA,4500
+elatentlpips-0.0.2.dist-info/LICENSE,sha256=6Ut6oyzHqtK6TCNRVunAbWAWOgsdPCM58TjmUTAYZ_E,1094
+elatentlpips-0.0.2.dist-info/LICENSE-NVIDIA,sha256=Ll4mAbaAQZCxqf3BTWwzOgWaHgcyMlM_UU8K6zQuos4,4666
+elatentlpips-0.0.2.dist-info/METADATA,sha256=CAMfoFjQ1PEnDWNEg5CIQAsxDOaRxHoZWByjngy8IiE,630
+elatentlpips-0.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+elatentlpips-0.0.2.dist-info/top_level.txt,sha256=tKKiNbMldBB4Tjxv8OSbOClG-BDCU7po0L3XX1B8K9k,13
+elatentlpips-0.0.2.dist-info/RECORD,,
