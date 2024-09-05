@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+tcpw/__init__.py
+tcpw/__main__.py
+tcpw/tcpw
+tcpw_armv7l.egg-info/PKG-INFO
+tcpw_armv7l.egg-info/SOURCES.txt
+tcpw_armv7l.egg-info/dependency_links.txt
+tcpw_armv7l.egg-info/entry_points.txt
+tcpw_armv7l.egg-info/top_level.txt
