@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: reax
+Version: 0.2.0
+Summary: REAX: A simple training framework for JAX-based projects
+Keywords: machine learning,jax,research
+Author-email: Martin Uhrin <martin.uhrin.10@ucl.ac.uk>
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beartype
+Requires-Dist: clu
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: jaxtyping
+Requires-Dist: optax
+Requires-Dist: orbax-checkpoint
+Requires-Dist: pytray
+Requires-Dist: equinox
+Requires-Dist: tensorboardX
+Requires-Dist: tqdm
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: ipython ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pytest-env ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: docutils ; extra == "docs"
+Requires-Dist: jupyter ; extra == "docs"
+Requires-Dist: nbsphinx ; extra == "docs"
+Requires-Dist: pandoc ; extra == "docs"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-autobuild ; extra == "docs"
+Requires-Dist: lightning ; extra == "examples"
+Requires-Dist: pillow ; extra == "examples"
+Requires-Dist: torch ; extra == "examples"
+Project-URL: Home, https://github.com/muhrin/reax
+Project-URL: Source, https://github.com/muhrin/reax
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: examples
+
+
+REAX
+====
+
+REAX: A simple training framework for JAX-based projects
+
