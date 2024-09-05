@@ -1,0 +1,17 @@
+fileformats/extras/application/__init__.py,sha256=5oo4yl7y1eRlxqmX-nNxdsCTAMD57EQgZFwEragypG0,72
+fileformats/extras/application/archive.py,sha256=WwMVrS3MIu5q_BADNJkeyeAZ9GWy8eIbHlYrV1hc9NY,7328
+fileformats/extras/application/medical.py,sha256=KUbBG-U8xbGf0qJpUyAD_RYu85PIKC26afusMXfZc3w,1157
+fileformats/extras/application/serialization.py,sha256=alz0xWZJ8L40i54X7awhp_FGDK2rE-j6yaViTE2CcRI,1375
+fileformats/extras/application/tests/test_application_archive.py,sha256=9fUHJsl2y5cH-oSjOuhtdFLf8kp0KDjk-uExqg5BvWE,2521
+fileformats/extras/application/tests/test_application_medical.py,sha256=shZ6YyzDT4w79kkYSLtRbeALqfNdY6SkIMD7zw9uPd0,148
+fileformats/extras/application/tests/test_application_serialization.py,sha256=2kOOkTt543id5UjF7SuLcLaY5iITy-Lw1zWrk8MC7vM,1041
+fileformats/extras/core/__init__.py,sha256=KdxGkvYp8OIiH0mAT0GtSpToL51atH5GV13z7HzTUdc,121
+fileformats/extras/core/_version.py,sha256=OSJc7-JxViAvW4SmGUZQQX05ZpGw9KopFINBSBZ_tHs,413
+fileformats/extras/image/__init__.py,sha256=oi_slX9bllvWU2NSbP2D-nr7eeMKNThHMvG2QR6chek,92
+fileformats/extras/image/converters.py,sha256=p5a2RDFhLJIVNG5R7MxmmB85MXIO2PeZhRwTFL3H7PQ,1022
+fileformats/extras/image/readwrite.py,sha256=a64KQWDUh8GyNS4gjCyw7vN_5MARSlPo8jST1DbsWu8,463
+fileformats/extras/image/tests/test_image_converters.py,sha256=lEWgQnNSwBOavk-SyxpBUOnUsc4Xue_IknG1F82-Czo,919
+fileformats_extras-0.12.1.dist-info/METADATA,sha256=1O36-gpY6AUE76neoZkHmzfqx8mmsXhynSv5mQhB8PA,18369
+fileformats_extras-0.12.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fileformats_extras-0.12.1.dist-info/licenses/LICENSE,sha256=mLDTky5sttlrxNKUrmVtsV5Y1O6_bGOYbV9V0DWmDMY,14223
+fileformats_extras-0.12.1.dist-info/RECORD,,
