@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+CORP_API_TYPE = {
+    'GET_ACCESS_TOKEN'                  : ['https://qyapi.weixin.qq.com/cgi-bin/gettoken', 'GET'],   ## 获取Token
+    'USER_CREATE'                       : ['https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=ACCESS_TOKEN', 'POST'],  ## 创建成员
+    'USER_GET'                          : ['https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN', 'GET'],  ## 读取成员
+    'USER_UPDATE'                       : ['https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token=ACCESS_TOKEN', 'POST'],  ## 更新成员
+    'USER_DELETE'                       : ['https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token=ACCESS_TOKEN', 'GET'],  ## 删除成员
+    'USERID_BY_EMAIL_POST'              : ['https://qyapi.weixin.qq.com/cgi-bin/user/get_userid_by_email?access_token=ACCESS_TOKEN', 'POST'],  ## 邮箱获取userid
+    'USER_BATCH_DELETE'                 : ['https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?access_token=ACCESS_TOKEN', 'POST'],  ## 批量删除成员
+    'USER_SIMPLE_LIST'                  : ['https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?access_token=ACCESS_TOKEN', 'GET'],  ## 获取成员简单列表
+    'USER_LIST'                         : ['https://qyapi.weixin.qq.com/cgi-bin/user/list?access_token=ACCESS_TOKEN', 'GET'],  ## 获取成员列表
+    'USER_LIST_ID'                      : ['https://qyapi.weixin.qq.com/cgi-bin/user/list_id?access_token=ACCESS_TOKEN', 'POST'], ## 获取成员ID列表
+    'USERID_TO_OPENID'                  : ['https://qyapi.weixin.qq.com/cgi-bin/user/convert_to_openid?access_token=ACCESS_TOKEN', 'POST'],  ## 用户ID转OpenID
+    'OPENID_TO_USERID'                  : ['https://qyapi.weixin.qq.com/cgi-bin/user/convert_to_userid?access_token=ACCESS_TOKEN', 'POST'],  ## OpenID转用户ID
+    'USER_AUTH_SUCCESS'                 : ['https://qyapi.weixin.qq.com/cgi-bin/user/authsucc?access_token=ACCESS_TOKEN', 'GET'],  ## 用户授权成功
+    'DEPARTMENT_CREATE'                 : ['https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=ACCESS_TOKEN', 'POST'],  ## 创建部门
+    'DEPARTMENT_UPDATE'                 : ['https://qyapi.weixin.qq.com/cgi-bin/department/update?access_token=ACCESS_TOKEN', 'POST'],  ## 更新部门
+    'DEPARTMENT_DELETE'                 : ['https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=ACCESS_TOKEN', 'GET'],  ## 删除部门
+    'DEPARTMENT_LIST'                   : ['https://qyapi.weixin.qq.com/cgi-bin/department/list?access_token=ACCESS_TOKEN', 'GET'],  ## 获取部门列表
+    'TAG_CREATE'                        : ['https://qyapi.weixin.qq.com/cgi-bin/tag/create?access_token=ACCESS_TOKEN', 'POST'],  ## 创建标签
+    'TAG_UPDATE'                        : ['https://qyapi.weixin.qq.com/cgi-bin/tag/update?access_token=ACCESS_TOKEN', 'POST'],  ## 更新标签
+    'TAG_DELETE'                        : ['https://qyapi.weixin.qq.com/cgi-bin/tag/delete?access_token=ACCESS_TOKEN', 'GET'],  ## 删除标签
+    'TAG_GET_USER'                      : ['https://qyapi.weixin.qq.com/cgi-bin/tag/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取标签成员
+    'TAG_ADD_USER'                      : ['https://qyapi.weixin.qq.com/cgi-bin/tag/addtagusers?access_token=ACCESS_TOKEN', 'POST'],  ## 增加标签成员
+    'TAG_DELETE_USER'                   : ['https://qyapi.weixin.qq.com/cgi-bin/tag/deltagusers?access_token=ACCESS_TOKEN', 'POST'],  ## 删除标签成员
+    'TAG_GET_LIST'                      : ['https://qyapi.weixin.qq.com/cgi-bin/tag/list?access_token=ACCESS_TOKEN', 'GET'],  ## 获取标签列表
+    'BATCH_JOB_GET_RESULT'              : ['https://qyapi.weixin.qq.com/cgi-bin/batch/getresult?access_token=ACCESS_TOKEN', 'GET'],  ## 获取批量处理结果
+    'BATCH_INVITE'                      : ['https://qyapi.weixin.qq.com/cgi-bin/batch/invite?access_token=ACCESS_TOKEN', 'POST'],  ## 批量邀请成员
+    'AGENT_GET'                         : ['https://qyapi.weixin.qq.com/cgi-bin/agent/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取应用详情
+    'AGENT_SET'                         : ['https://qyapi.weixin.qq.com/cgi-bin/agent/set?access_token=ACCESS_TOKEN', 'POST'],  ## 设置应用
+    'AGENT_GET_LIST'                    : ['https://qyapi.weixin.qq.com/cgi-bin/agent/list?access_token=ACCESS_TOKEN', 'GET'],  ## 获取应用列表
+    'MENU_CREATE'                       : ['https://qyapi.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN', 'POST'], ## 创建菜单
+    'MENU_GET'                          : ['https://qyapi.weixin.qq.com/cgi-bin/menu/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取菜单
+    'MENU_DELETE'                       : ['https://qyapi.weixin.qq.com/cgi-bin/menu/delete?access_token=ACCESS_TOKEN', 'GET'],  ## 删除菜单
+    'MESSAGE_SEND'                      : ['https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=ACCESS_TOKEN', 'POST'],  ## 发送消息
+    'MESSAGE_REVOKE'                    : ['https://qyapi.weixin.qq.com/cgi-bin/message/revoke?access_token=ACCESS_TOKEN', 'POST'],  ## 撤回消息
+    'MEDIA_GET'                         : ['https://qyapi.weixin.qq.com/cgi-bin/media/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取媒体文件
+    'GET_USER_INFO_BY_CODE'             : ['https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token=ACCESS_TOKEN', 'GET'],  ## 通过code获取用户信息
+    'GET_USER_DETAIL'                   : ['https://qyapi.weixin.qq.com/cgi-bin/user/getuserdetail?access_token=ACCESS_TOKEN', 'POST'],  ## 获取用户详细信息
+    'GET_TICKET'                        : ['https://qyapi.weixin.qq.com/cgi-bin/ticket/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取ticket
+    'GET_JSAPI_TICKET'                  : ['https://qyapi.weixin.qq.com/cgi-bin/get_jsapi_ticket?access_token=ACCESS_TOKEN', 'GET'],  ## 获取企业的JSAPI ticket
+    'GET_CHECKIN_OPTION'                : ['https://qyapi.weixin.qq.com/cgi-bin/checkin/getcheckinoption?access_token=ACCESS_TOKEN', 'POST'],  ## 获取打卡配置
+    'GET_CHECKIN_DATA'                  : ['https://qyapi.weixin.qq.com/cgi-bin/checkin/getcheckindata?access_token=ACCESS_TOKEN', 'POST'],  ## 获取打卡数据
+    'GET_APPROVAL_INFO'                 : ['https://qyapi.weixin.qq.com/cgi-bin/oa/getapprovalinfo??access_token=ACCESS_TOKEN', 'POST'],  ## 获取审批数据
+    'GET_INVOICE_INFO'                  : ['https://qyapi.weixin.qq.com/cgi-bin/card/invoice/reimburse/getinvoiceinfo?access_token=ACCESS_TOKEN', 'POST'],  ## 获取发票信息
+    'UPDATE_INVOICE_STATUS'             : ['https://qyapi.weixin.qq.com/cgi-bin/card/invoice/reimburse/updateinvoicestatus?access_token=ACCESS_TOKEN', 'POST'],  ## 更新发票状态
+    'BATCH_UPDATE_INVOICE_STATUS'       : ['https://qyapi.weixin.qq.com/cgi-bin/card/invoice/reimburse/updatestatusbatch?access_token=ACCESS_TOKEN', 'POST'],  ## 批量更新发票状态
+    'BATCH_GET_INVOICE_INFO'            : ['https://qyapi.weixin.qq.com/cgi-bin/card/invoice/reimburse/getinvoiceinfobatch?access_token=ACCESS_TOKEN', 'POST'],  ## 批量获取发票信息
+    'APP_CHAT_CREATE'                   : ['https://qyapi.weixin.qq.com/cgi-bin/appchat/create?access_token=ACCESS_TOKEN', 'POST'],  ## 创建群聊
+    'APP_CHAT_GET'                      : ['https://qyapi.weixin.qq.com/cgi-bin/appchat/get?access_token=ACCESS_TOKEN', 'GET'],  ## 获取群聊信息
+    'APP_CHAT_UPDATE'                   : ['https://qyapi.weixin.qq.com/cgi-bin/appchat/update?access_token=ACCESS_TOKEN', 'POST'],  ## 更新群聊信息
+    'APP_CHAT_SEND'                     : ['https://qyapi.weixin.qq.com/cgi-bin/appchat/send?access_token=ACCESS_TOKEN', 'POST'],  ## 发送群聊消息
+    'MINIPROGRAM_CODE_TO_SESSION_KEY'   : ['https://qyapi.weixin.qq.com/cgi-bin/miniprogram/jscode2session?access_token=ACCESS_TOKEN', 'GET'],  ## 小程序code换取session_key
+    'APPROVAL_DETAIL'                   : ['https://qyapi.weixin.qq.com/cgi-bin/oa/getapprovaldetail?access_token=ACCESS_TOKEN', 'POST'],  ## 获取审批详情
+    'GET_API_DOMAIN_IP'                 : ['https://qyapi.weixin.qq.com/cgi-bin/get_api_domain_ip?access_token=ACCESS_TOKEN', 'GET'],  ## 获取企业微信接口IP段
+    'GET_CALLBACK_IP'                   : ['https://qyapi.weixin.qq.com/cgi-bin/getcallbackip?access_token=ACCESS_TOKEN', 'GET'],  ## 获取企业微信回调IP段
+}
