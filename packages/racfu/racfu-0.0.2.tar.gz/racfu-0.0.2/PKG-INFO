@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: racfu
+Version: 0.0.2
+Summary: Easy integration with RACF using industry standard languages and tools.
+Author-email: Joe Bostian <jbostian@ibm.com>, Frank De Gilio <degilio@us.ibm.com>, "Leonard J. Carcaramo Jr" <lcarcaramo@ibm.com>, Elijah Swift <elijah.swift@ibm.com>
+Project-URL: Homepage, https://github.com/ambitus/racfu
+Project-URL: Issues, https://github.ibm.com/ambitus/racfu/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Other
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Hardware :: Mainframes
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RACFu
+
+Easy integration with RACF using industry standard languages and tools.
