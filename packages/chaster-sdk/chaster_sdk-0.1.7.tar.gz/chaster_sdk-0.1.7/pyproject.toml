@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "chaster-sdk"
+version = "0.1.7"
+authors = [
+    { name = "Poofy", email = "poofy.enigma@gmail.com" },
+]
+description = "Chaster python sdk"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-dateutil",
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/PoofyEnigma/chaster-python-sdk"
+Issues = "https://github.com/PoofyEnigma/chaster-python-sdk/issues"
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 200
+disable = "R0904, C0103, R0913, E0401"
+# C0103 invalid-name, we use it everywhere due to partiy with api.
+# R0904 mono is fine at this stage
+# R0913 mono is fine at this stage
+# E0401 TODO: why the import errors?
