@@ -1,0 +1,10 @@
+byaldi/RAGMultiModalModel.py,sha256=jDSUj8tFFrxDiq9_OC1m07mfTXSv7gEAIOpXi-Lrhh8,4389
+byaldi/__init__.py,sha256=ltdi8Ahn8ToULDeqjt2VmvA-rSV-UcZrTGghIV7HReA,110
+byaldi/app.py,sha256=j80P3vQ1hINcg5B1xECteBu6ZjteqkQezsCzT-WB6-8,4140
+byaldi/colpali.py,sha256=0uMuZTKfASzSEUPyp9lljT0rW_d9U-9Oo4noASvZYA8,14193
+byaldi/objects.py,sha256=SGJewPraiI9ASanfMC2MfLBo_hCHDf7hVo27GhCS9LA,626
+Byaldi-0.0.1rc3.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+Byaldi-0.0.1rc3.dist-info/METADATA,sha256=0DyJhy7SeY9uHyr71KmUhWqcDSzDWK0dc_bbkemUI10,15179
+Byaldi-0.0.1rc3.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+Byaldi-0.0.1rc3.dist-info/top_level.txt,sha256=eaPY91TzJ9XysN9pkfhCRgXLtXlh9eF5qccxxxDN-NE,7
+Byaldi-0.0.1rc3.dist-info/RECORD,,
