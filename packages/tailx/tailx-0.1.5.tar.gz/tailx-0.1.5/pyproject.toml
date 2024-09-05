@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "tailx"
+version = "0.1.5"
+description = "tailx, 带颜色的 `tail -f`, 更好看的查看日志"
+authors = [
+    { name = "jiaosenvip", email = "jiaosenvip@163.com" },
+    { name = "jiaosenvip" },
+]
+dependencies = [
+    "rich",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/jiaosenvip/tailx"
+
+[project.scripts]
+tailx = "tailx:main"
+
+[tool]
