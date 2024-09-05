@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: libsgd
+Version: 0.14.0
+Summary: Simple Game Development library
+Author-email: Mark Sibly <marksibly@zohomail.com>
+Project-URL: Homepage, https://skirmish-dev.net/forum
+Project-URL: Issues, https://skirmish-dev.net/forum/category/10/libsgd-bug-reports
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: <=3.11,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LibSGD 
+
+## Simple Game Development Library
+
+Please visit us at https://skirmish-dev.net/forum
