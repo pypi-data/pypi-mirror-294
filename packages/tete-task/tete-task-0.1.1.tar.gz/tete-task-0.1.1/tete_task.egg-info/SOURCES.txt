@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+tete_task.egg-info/PKG-INFO
+tete_task.egg-info/SOURCES.txt
+tete_task.egg-info/dependency_links.txt
+tete_task.egg-info/top_level.txt
