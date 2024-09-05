@@ -1,0 +1,2 @@
+[console_scripts]
+expense-cli = expense_tracker_cli.main:cli
