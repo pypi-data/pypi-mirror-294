@@ -1,0 +1,5 @@
+tecton>=0.9
+
+[spark]
+databricks-sdk
+pyspark
