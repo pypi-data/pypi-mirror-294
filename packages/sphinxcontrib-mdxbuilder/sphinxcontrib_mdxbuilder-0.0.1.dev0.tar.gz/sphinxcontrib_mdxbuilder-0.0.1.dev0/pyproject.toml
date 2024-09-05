@@ -1,0 +1,40 @@
+[project]
+name = "sphinxcontrib-mdxbuilder"
+description = "Sphinx extension to build MDX files"
+authors = [
+    {name = "Pedram Navid", email = "pedram@dagsterlabs.com"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+]
+
+dependencies = [
+    "sphinx>=7.0",
+]
+
+dynamic = ["version"]
+
+[project.scripts]
+sphinx-builder-mdx = "sphinxcontrib.mdxbuilder.__main__:main"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "sphinxcontrib.mdxbuilder"
+
+[project.optional-dependencies]
+test = ["pytest", "tox", "tox-uv"]
