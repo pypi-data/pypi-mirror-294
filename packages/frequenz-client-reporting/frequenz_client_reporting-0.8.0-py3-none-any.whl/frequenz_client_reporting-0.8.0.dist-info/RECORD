@@ -1,0 +1,11 @@
+frequenz/client/reporting/__init__.py,sha256=e7puFA_w3Twv8IExha0fBWdSnSyGptMThAgcbt95cus,278
+frequenz/client/reporting/__main__.py,sha256=39X6_xN_vsBScGkQ-COuAWdUHeVZjeHTfygueqrCuSQ,4956
+frequenz/client/reporting/_client.py,sha256=NPBJpKJI43uIeJlxy8KPALFFoqUaWGkXQT9G37K3sMY,9076
+frequenz/client/reporting/conftest.py,sha256=kxmvkzTdvGfh7SiDINIFX0FG9PU0EoKROl9YY75zN8w,409
+frequenz/client/reporting/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz_client_reporting-0.8.0.dist-info/LICENSE,sha256=zt0sW1KvE_KWE2ILOabrQYlfOoP0zUZXC3xCLrzGpIA,1089
+frequenz_client_reporting-0.8.0.dist-info/METADATA,sha256=iaMKWpe8gHyvkV4DcisX61K8soa7SmXIyCogpRdWOPU,7510
+frequenz_client_reporting-0.8.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+frequenz_client_reporting-0.8.0.dist-info/entry_points.txt,sha256=sETCBmBrjbpn2wnW53hqz6syHP9oWcYKupTckuNwRuE,74
+frequenz_client_reporting-0.8.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_client_reporting-0.8.0.dist-info/RECORD,,
