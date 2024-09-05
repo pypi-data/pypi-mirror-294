@@ -1,0 +1,2 @@
+include featurewise/featurewise_app.py
+recursive-include featurewise *.py
