@@ -1,0 +1,2 @@
+[console_scripts]
+flexi_formatter = flexi_formatter.reformat_flexiplex_tags:app
