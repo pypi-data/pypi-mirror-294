@@ -1,0 +1,7 @@
+loam~=0.8.0
+f90nml>=1.4.4
+numpy~=2.0
+scipy~=1.13
+pandas~=2.2
+h5py~=3.11
+matplotlib~=3.9
