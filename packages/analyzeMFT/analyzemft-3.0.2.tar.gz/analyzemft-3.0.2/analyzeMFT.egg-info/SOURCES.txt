@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+analyzeMFT.py
+pyproject.toml
+setup.py
+analyzeMFT.egg-info/PKG-INFO
+analyzeMFT.egg-info/SOURCES.txt
+analyzeMFT.egg-info/dependency_links.txt
+analyzeMFT.egg-info/entry_points.txt
+analyzeMFT.egg-info/requires.txt
+analyzeMFT.egg-info/top_level.txt
