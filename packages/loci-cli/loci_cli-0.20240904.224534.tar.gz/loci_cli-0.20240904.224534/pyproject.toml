@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "loci-cli"
+version = "0.20240904.224534"
+description = "The official Loci Notes CLI tool."
+authors = ["TheTwitchy <thetwitchy@thetwitchy.com>"]
+homepage = "https://loci-notes.gitlab.io/clients/cli"
+repository = "https://gitlab.com/loci-notes/loci-cli"
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "loci"}]
+
+[tool.poetry.scripts]
+loci = "loci.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.10.0"}
+loci_client = "0.20240713.191920"
+pendulum = "^3.0.0"
+chardet = "^5.2.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+pytest = "^8.1.1"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
