@@ -1,0 +1,1 @@
+https://github.com/luffy-yu/conda-4.3.16/releases/download/v4.3.16.1/conda-4.3.16.tar.gz#egg=conda
