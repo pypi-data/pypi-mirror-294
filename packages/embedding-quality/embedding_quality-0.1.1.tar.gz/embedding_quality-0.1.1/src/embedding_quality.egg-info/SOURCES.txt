@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/embedding_quality/__init__.py
+src/embedding_quality/evaluation.py
+src/embedding_quality.egg-info/PKG-INFO
+src/embedding_quality.egg-info/SOURCES.txt
+src/embedding_quality.egg-info/dependency_links.txt
+src/embedding_quality.egg-info/requires.txt
+src/embedding_quality.egg-info/top_level.txt
+test/test_evaluation.py

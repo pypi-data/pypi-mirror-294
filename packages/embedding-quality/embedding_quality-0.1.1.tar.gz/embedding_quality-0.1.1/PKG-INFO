@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: embedding_quality
+Version: 0.1.1
+Summary: A package for unsupervised embedding quality evaluation
+Home-page: https://github.com/yourusername/embedding_quality
+Author: Raghav Awasthi
+Author-email: rxa615@case.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.18.0
+
+# Embedding Quality Evaluation
+
+A Python package for unsupervised embedding quality evaluation.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install embedding_quality
+
+
+
+
+import numpy as np
+from embedding_quality import UnsupervisedEmbeddingQualityEvaluation
+
+# Create a sample matrix
+M = np.random.rand(100, 50)
+
+# Use the evaluation methods
+rankme = UnsupervisedEmbeddingQualityEvaluation.RankMe(M)
+nesum = UnsupervisedEmbeddingQualityEvaluation.NESum(M)
+stable_rank = UnsupervisedEmbeddingQualityEvaluation.Stable_rank(M)
+
+print(f"RankMe: {rankme}")
+print(f"NESum: {nesum}")
+print(f"Stable Rank: {stable_rank}")
