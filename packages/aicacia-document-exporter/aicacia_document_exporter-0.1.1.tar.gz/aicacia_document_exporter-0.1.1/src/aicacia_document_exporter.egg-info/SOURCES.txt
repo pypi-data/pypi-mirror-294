@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+src/aicacia/Document.py
+src/aicacia/DocumentExporter.py
+src/aicacia/PreprocessingModel.py
+src/aicacia/SimpleFileDocumentExporter.py
+src/aicacia/__init__.py
+src/aicacia_document_exporter.egg-info/PKG-INFO
+src/aicacia_document_exporter.egg-info/SOURCES.txt
+src/aicacia_document_exporter.egg-info/dependency_links.txt
+src/aicacia_document_exporter.egg-info/requires.txt
+src/aicacia_document_exporter.egg-info/top_level.txt
+tests/test_simple_exporter.py
