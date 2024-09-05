@@ -1,0 +1,18 @@
+# created from template
+config.yaml
+# downloaded from github repo (and modified)
+cluster-autoscaler-autodiscover.yaml
+# created from template
+test_efs.yaml
+# jupytehrub api token
+jupyterhub_api_token*
+# ignore students symlinks
+students
+# IDE
+.idea/
+# various things
+.DS_Store
+# env file
+env.conf
+# cached regions
+eks_clusters_region_cache
