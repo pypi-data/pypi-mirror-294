@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Web3Scout.egg-info/PKG-INFO
+Web3Scout.egg-info/SOURCES.txt
+Web3Scout.egg-info/dependency_links.txt
+Web3Scout.egg-info/not-zip-safe
+Web3Scout.egg-info/top_level.txt
+python/prod/__init__.py
+python/prod/erc/__init__.py
