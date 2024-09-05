@@ -1,0 +1,194 @@
+#
+#  Copyright MindBridge Analytics Inc. all rights reserved.
+#
+#  This material is confidential and may not be copied, distributed,
+#  reversed engineered, decompiled or otherwise disseminated without
+#  the prior written consent of MindBridge Analytics Inc.
+#
+
+from dataclasses import dataclass
+from functools import cached_property
+import logging
+import time
+from typing import Any, Dict, Generator, List, Optional
+from mindbridgeapi.base_set import BaseSet
+from mindbridgeapi.exceptions import (
+    ItemNotFoundError,
+    UnexpectedServerError,
+    ValidationError,
+)
+from mindbridgeapi.generated_pydantic_model.model import (
+    ApiAsyncResult as AsyncResultItem,
+)
+from mindbridgeapi.generated_pydantic_model.model import Status2 as AsyncResultStatus
+
+logger = logging.getLogger(__name__)
+
+
+@dataclass
+class AsyncResults(BaseSet):
+    @cached_property
+    def base_url(self) -> str:
+        return f"{self.server.base_url}/async-results"
+
+    def _wait_for_async_result(
+        self,
+        async_result: AsyncResultItem,
+        max_wait_minutes: int,
+        init_interval_sec: int,
+    ) -> None:
+        """Wait for async result to complete
+
+        Waits, at most the minutes specified, for the async result to be COMPLETE and
+        raises and error if any error
+
+        Args:
+            async_result (AsyncResultItem): Async result to check
+            max_wait_minutes (int): Maximum minutes to wait
+        """
+        self._wait_for_async_results(
+            async_results=[async_result],
+            max_wait_minutes=max_wait_minutes,
+            init_interval_sec=init_interval_sec,
+        )
+
+    def _wait_for_async_results(
+        self,
+        async_results: List[AsyncResultItem],
+        max_wait_minutes: int,
+        init_interval_sec: int,
+    ) -> None:
+        """Wait for async results to complete
+
+        Waits, at most the minutes specified, for all async results to be COMPLETE and
+        raises and error if any error
+
+        Args:
+            async_results (List[AsyncResultItem]): Async results to check
+            max_wait_minutes (int): Maximum minutes to wait
+            init_interval_sec (int): The initial seconds to wait
+
+        Raises:
+            TimeoutError: If waited for more than specified
+        """
+
+        max_interval_sec = 60 * 5
+        max_wait_seconds = max_wait_minutes * 60
+        start_time = time.monotonic()
+        elapsed_time = 0.0
+        interval_sec = init_interval_sec
+        i = 0
+
+        while (time.monotonic() - start_time) < max_wait_seconds:
+            loop_start_time = time.monotonic()
+            elapsed_time = loop_start_time - start_time
+            sorted_async_results_ids = sorted(
+                [x.id for x in async_results if x.id is not None]
+            )
+            number_of_async_results = len(sorted_async_results_ids)
+            if number_of_async_results != len(async_results):
+                raise ItemNotFoundError
+
+            logger.info(
+                "Starting a AsyncResult iteration. It has been: "
+                f"{elapsed_time:.1f} seconds. Loop {i=} and {number_of_async_results} "
+                "to check"
+            )
+
+            if number_of_async_results <= 0:
+                break
+
+            if number_of_async_results == 1:
+                new_async_results = [self.get_by_id(sorted_async_results_ids[0])]
+            else:
+                query = {"id": {"$in": sorted_async_results_ids}}
+                new_async_results = list(self.get(json=query))
+
+            if (
+                sorted([x.id for x in new_async_results if x.id is not None])
+                != sorted_async_results_ids
+            ):
+                raise UnexpectedServerError(  # noqa: TRY003
+                    "AsyncResults received didn't match requested"
+                )
+
+            async_results = []
+            for async_result in new_async_results:
+                if async_result is None:
+                    raise UnexpectedServerError("AsyncResult was None")  # noqa: TRY003
+
+                if not self._check_if_async_result_is_completed(async_result):
+                    async_results.append(async_result)
+
+            if len(async_results) == 0:
+                break
+
+            sleep_seconds = interval_sec - (time.monotonic() - loop_start_time)
+            logger.info(
+                f"Waiting for about {sleep_seconds} seconds as some of the async "
+                "results are not complete yet."
+            )
+            if sleep_seconds > 0:
+                time.sleep(sleep_seconds)
+
+            elapsed_time = time.monotonic() - start_time
+            logger.info(
+                "Finished a AsyncResult iteration. It has been:"
+                f" {elapsed_time:.1f} seconds"
+            )
+
+            if interval_sec < max_interval_sec:
+                interval_sec = min(init_interval_sec * 2**i, max_interval_sec)
+
+            i = i + 1
+
+        else:
+            raise TimeoutError(f"Waited too long: {max_wait_minutes} minutes")
+
+    def _check_if_async_result_is_completed(
+        self, async_result: AsyncResultItem
+    ) -> bool:
+        """Checks if the Async Result is completed
+
+        Returns True if COMPLETE, False if IN_PROGRESS and raises and error otherwise.
+
+        Args:
+            async_result (AsyncResultItem): The async result to check
+
+        Returns:
+            bool: True if COMPLETE, False if IN_PROGRESS
+
+        Raises:
+            ValidationError: If the async_result resulted in an error state
+        """
+        async_result_str = (
+            f"Async Result {async_result.id} for"
+            f" {async_result.entity_type} {async_result.entity_id} resulted in"
+            f" {async_result.status}"
+        )
+        logger.info(async_result_str)
+
+        if async_result.status == AsyncResultStatus.IN_PROGRESS:
+            return False
+
+        if async_result.status == AsyncResultStatus.COMPLETE:
+            return True
+
+        # Must be AsyncResultStatus.ERROR
+        raise ValidationError(f"{async_result_str} with message {async_result.error}.")
+
+    def get(
+        self, json: Optional[Dict[str, Any]] = None
+    ) -> Generator[AsyncResultItem, None, None]:
+        if json is None:
+            json = {}
+
+        url = f"{self.base_url}/query"
+        for resp_dict in super()._get(url=url, json=json):
+            yield AsyncResultItem.model_validate(resp_dict)
+
+    def get_by_id(self, id: str) -> AsyncResultItem:
+        url = f"{self.base_url}/{id}"
+        resp_dict = super()._get_by_id(url=url)
+
+        return AsyncResultItem.model_validate(resp_dict)
