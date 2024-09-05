@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: astroid-miner
+Version: 0.0.1
+Summary: A library to help in code analysis
+Project-URL: Homepage, https://github.com/jocassid/astroid-miner
+Project-URL: Issues, https://github.com/jocassid/astroid-miner/issues
+Author-email: John Cassidy <jocassid@gmail.com>
+License-File: LICENSE
+Keywords: ast,astroid,code analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# astroid-miner
+Wrapper around the astroid library to aid in static code analysis
