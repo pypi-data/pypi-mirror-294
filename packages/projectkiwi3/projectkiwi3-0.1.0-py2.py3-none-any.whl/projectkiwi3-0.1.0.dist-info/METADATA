@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: projectkiwi3
+Version: 0.1.0
+Summary: This module is a means for interfacing with projectkiwi.io using python.
+Author-email: Michael Thoreau <michael@projectkiwi.io>
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+# projectkiwi
+
+Tools to interact with projectkiwi.io
+
+
+### Installation
+```Bash
+pip install projectkiwi3-client
+```
+
+
+### Getting Started
+```
+import projectkiwi3
+
+
+client = projectkiwi3.Client("MY_API_KEY")
+projects = client.getProjects()
+
+```
