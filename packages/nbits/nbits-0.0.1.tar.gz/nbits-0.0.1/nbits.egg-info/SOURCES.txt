@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nbits.egg-info/PKG-INFO
+nbits.egg-info/SOURCES.txt
+nbits.egg-info/dependency_links.txt
+nbits.egg-info/top_level.txt
