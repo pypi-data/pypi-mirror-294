@@ -1,0 +1,5 @@
+[console_scripts]
+post-install=setup.post_install:main
+praisonai=praisonai.__main__:main
+setup-conda-env=setup.setup_conda_env:main
+
