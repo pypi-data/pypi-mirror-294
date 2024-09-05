@@ -1,0 +1,17 @@
+LICENSE,sha256=Is4Y10reVmP0n2CFrKamUi6EvfSX9nP_UtQm7KPSIbY,578
+ocean_spark/__init__.py,sha256=wCcU5a1ASz7vdjfWJqglQdtQIi2CRHZFNus4nSqIeb8,1613
+ocean_spark/application_state.py,sha256=IJvZLk507KWYy3vwm57frzjLB7sLYcSRADJHKUPdJvE,665
+ocean_spark/connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocean_spark/connect/hook.py,sha256=yp4S2a9FyFbvNtLFhkBlv3VGJXEUvxu_2lREbzWJTXc,3181
+ocean_spark/connect/inverse_websockify.py,sha256=gLPYLA3WB-jnkND3oc3CeznvGlStTTbG0_de1bDu0dU,4601
+ocean_spark/connect/operator.py,sha256=MAAeGL76bwc5xkY7ah_DxJdmEZ7CZAj26IQwWbiGu0Y,2690
+ocean_spark/extra_links.py,sha256=ejou0qVxGRpP025my8xBZ6TlHesQRaV6PWpxChlbdFo,805
+ocean_spark/hooks.py,sha256=bATZbM_Ge1qoG4pfHT4XCcKjk5l0NPNYn2WnjtITr_U,7507
+ocean_spark/operators.py,sha256=TDhgkONx6-QvSkVUWAA1Ys_ZT1dSPazv27GS5X45HDQ,6480
+ocean_spark/plugins.py,sha256=7la0SQR8mV-8SFzhEz77NlGcz4KDWe8hGydz8aq5_pc,1210
+ocean_spark/response.py,sha256=-fSpVbI8lo-X8QRVkPDoBJH6AwZ7FFp0ToQ3odC0dx0,487
+ocean_spark_airflow_provider-1.1.2.dist-info/LICENSE,sha256=Is4Y10reVmP0n2CFrKamUi6EvfSX9nP_UtQm7KPSIbY,578
+ocean_spark_airflow_provider-1.1.2.dist-info/METADATA,sha256=JBxBk9VD-t38PP6x7kdk6KLkngpnJ1UqOWWvaZBXuR4,4662
+ocean_spark_airflow_provider-1.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ocean_spark_airflow_provider-1.1.2.dist-info/entry_points.txt,sha256=_WoH5WJ1Tv3zO3jaqGa5mCc8yno2AdKsv5XPEkBarAU,139
+ocean_spark_airflow_provider-1.1.2.dist-info/RECORD,,
