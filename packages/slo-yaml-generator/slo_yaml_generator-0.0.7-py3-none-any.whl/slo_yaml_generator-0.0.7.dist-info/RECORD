@@ -1,0 +1,13 @@
+slo_yaml_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slo_yaml_generator/main.py,sha256=lxQ3KmcykWcHR4eJuU81HgMMIHiw33wdnjZieU-_QqU,4576
+slo_yaml_generator/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slo_yaml_generator/templates/cloudwatch-slo.yaml.j2,sha256=v35gxve1Cd7R1fbQRzxyjHgC9jPCKKk3uoO_BVYoJd8,992
+slo_yaml_generator/templates/dynatrace-slo.yaml.j2,sha256=3n28IXr4SeM0dp0UdpsvFI7dPvtL54hGK-V0iULHiko,737
+slo_yaml_generator/templates/project.yaml.j2,sha256=ObR9N1jjKA-YJSG6m1iDmdLu3q9IbZ4nRiaLLGhy9dQ,156
+slo_yaml_generator/templates/service.yaml.j2,sha256=Y1VHxSE4Qo9LsVt5WVJavSnkxZrtsDf68upHFQy7v6E,114
+slo_yaml_generator-0.0.7.dist-info/LICENSE,sha256=9p8zhv9pH1Y96S3TRAxQs9wBY7Fiu0UOTAE7VjPEq-M,1070
+slo_yaml_generator-0.0.7.dist-info/METADATA,sha256=ZTI4Vqe6OActASOAz5mutMPZ1GvBFB6fiT4G4Gh6Dhs,2185
+slo_yaml_generator-0.0.7.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+slo_yaml_generator-0.0.7.dist-info/entry_points.txt,sha256=tBrY4AtZHSxmRKg66TTR5tmEoBhqsoymWTrUWQGrL74,68
+slo_yaml_generator-0.0.7.dist-info/top_level.txt,sha256=FwffHO0ewBGwq2Gsb4Rcik6TjY08YMWTdPSr4avtYHo,19
+slo_yaml_generator-0.0.7.dist-info/RECORD,,
