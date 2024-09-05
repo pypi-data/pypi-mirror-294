@@ -1,0 +1,7 @@
+README.md
+setup.py
+algosearch/__init__.py
+algosearch.egg-info/PKG-INFO
+algosearch.egg-info/SOURCES.txt
+algosearch.egg-info/dependency_links.txt
+algosearch.egg-info/top_level.txt
