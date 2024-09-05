@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: eo4eu_comm_utils
+Version: 0.5.0
+Summary: General messaging utilities for EO4EU
+Author-email: Apollon Grigoras <apollon@uoa.gr>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: confluent-kafka ==2.1.1
+Requires-Dist: prometheus-client ==0.16.0
+Requires-Dist: setuptools ==65.5.1
+
