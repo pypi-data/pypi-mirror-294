@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: milvus_client
+Version: 1.0.1
+Summary: Async client for milvus useing milvus restapi v2
+Project-URL: Homepage, https://github.com/meetjeff/milvus-client
+Author-email: Jeff Hsu <adf159776@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: aiohttp
+Description-Content-Type: text/markdown
+
+# milvus-client
+Async client for milvus useing milvus restapi v2
