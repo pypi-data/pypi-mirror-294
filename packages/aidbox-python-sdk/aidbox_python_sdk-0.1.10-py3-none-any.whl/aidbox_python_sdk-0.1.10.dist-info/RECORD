@@ -1,0 +1,17 @@
+aidbox_python_sdk/__init__.py,sha256=vYjXN2rbl3juZRZ0Nv3b6wJVY51a0KBM9tQcPN7w-H8,193
+aidbox_python_sdk/aidboxpy.py,sha256=A8r3RziusXEmgD666XS-vbPD0ogOqW-WJAf4MrPkuqE,3898
+aidbox_python_sdk/app_keys.py,sha256=5ZkoJcJaUhMB-veQXVDzN_yQsOD2OOkGIIunNHujRyM,454
+aidbox_python_sdk/db.py,sha256=55omxwUN_JuXMKPoghZsIlxktXQrAgq52DeEVcPaNQU,6445
+aidbox_python_sdk/db_migrations.py,sha256=qfdtr-9SEJ_dzEFQWg6Echqzzj_5pj9XEozXD6oqsF8,478
+aidbox_python_sdk/exceptions.py,sha256=hOn2rhEYNmuWuSiImObdd3R4xApsskmVdbVnb2PrIoA,116
+aidbox_python_sdk/handlers.py,sha256=PYslwtmvvLfhRoKj1xl1xwisaU5jEnTsaRTdTdixobw,2832
+aidbox_python_sdk/main.py,sha256=Gk-5QHo2MDQcNv7FMqmRD1JcKIJJiLdk6K4ce3Mb_pw,2464
+aidbox_python_sdk/pytest_plugin.py,sha256=BgeXSATiNUkCZg28i8OlFONa2gG94UD1V6mT2EaiNZc,2514
+aidbox_python_sdk/sdk.py,sha256=omcstv3rSeuPhCTEO_25_IbGNawmrUdpaSFn5JNhJRc,8680
+aidbox_python_sdk/settings.py,sha256=l-zdzH3UT4Pq_OjNgFe2ELmWKSjEnBgOAcChf-FQais,3231
+aidbox_python_sdk/types.py,sha256=Cf0O5go4aR3HUokXQf9F0fIJZiTDYAzmm_aE1-S1weQ,278
+aidbox_python_sdk-0.1.10.dist-info/LICENSE.md,sha256=Opl86pEF7tgGGO2Wkdgfavnpi-MSgNY7RVJKxtZIGlE,1066
+aidbox_python_sdk-0.1.10.dist-info/METADATA,sha256=RV1hYX3xtZxI7GiUJyRCWlB1s0GK4-gTMmO2aogJsAg,6001
+aidbox_python_sdk-0.1.10.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+aidbox_python_sdk-0.1.10.dist-info/top_level.txt,sha256=FJCCumQP-K5JkLtm0wispLy8Hy7ftneBaMMW-g5dvpQ,18
+aidbox_python_sdk-0.1.10.dist-info/RECORD,,
