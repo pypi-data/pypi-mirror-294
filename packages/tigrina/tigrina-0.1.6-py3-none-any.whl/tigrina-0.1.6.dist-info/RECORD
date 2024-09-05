@@ -1,0 +1,16 @@
+tigrina/Tigrinya_alphabet_coder_decoder.py,sha256=P_lVJzgGvn1QtAkrRIk9PE1Nougo1a7Wj0rGgfUPBz4,15448
+tigrina/__init__.py,sha256=oMziwfugo34A6aBfvtUGTUiu3Q9pmmWzBJ-wMz7pojI,650
+tigrina/adjectives.py,sha256=JnGX1xw2C98kxV2ZbUvXxhELI1OXw5WzP_DAn4qWr_g,58276
+tigrina/code_decode.py,sha256=spO7m0ipj62HGDYfj61dOwB6P-VH5s31U1erlNc7SOY,5416
+tigrina/data_process.py,sha256=VRh6RoD2NG-OS336QxJj5xWU9bH1xL0RrEl3ZPutvHw,24092
+tigrina/nouns.py,sha256=aglehNmZQGAQ7MQJ4l2nFc759GxtQjtGiqkzg-an7xw,6148
+tigrina/test.py,sha256=P5p_-9gK1jsADOwkv9bxCJAJwe_7iN0FZmrJlPpYQ4s,3813
+tigrina/tgalphabets.py,sha256=37lK2HjUgjq5B3vYJIPfZhog6-oE5XJimgc3A0iD6kE,58592
+tigrina/verb_to_be.py,sha256=NoivVP_PAXdLVevlRcvftzgKiWq5SY3PUBhjlV0CbrM,149498
+tigrina/verbs.py,sha256=T2rT-TP8gmig0lSxxAoewZS-DkONnG5bzne027g1ZC8,109334
+tigrina-0.1.6.dist-info/LICENSE,sha256=KjT1KcLVrYMsX3HDWju-6VVJOfHF8E4OfVj-mWx7jDo,1088
+tigrina-0.1.6.dist-info/METADATA,sha256=DrCB_qs_Y145cpWShN4OD2aPvVZrFIpOwDLhfXW4Nq8,14101
+tigrina-0.1.6.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+tigrina-0.1.6.dist-info/entry_points.txt,sha256=ng17NsNL4cmqhLI3Lg3JrRT_PV1BBvy-hxQFwm5WDVw,80
+tigrina-0.1.6.dist-info/top_level.txt,sha256=HcqktMWvEUGvMd8iOEb3gA484krrgCVI2-O75CARZm0,8
+tigrina-0.1.6.dist-info/RECORD,,
