@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+store_vpetrov/__init__.py
+store_vpetrov/config.py
+store_vpetrov/database.py
+store_vpetrov.egg-info/PKG-INFO
+store_vpetrov.egg-info/SOURCES.txt
+store_vpetrov.egg-info/dependency_links.txt
+store_vpetrov.egg-info/requires.txt
+store_vpetrov.egg-info/top_level.txt
