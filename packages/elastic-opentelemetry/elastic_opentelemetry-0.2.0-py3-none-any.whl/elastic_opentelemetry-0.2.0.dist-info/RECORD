@@ -1,0 +1,13 @@
+elasticotel/distro/__init__.py,sha256=LBQZ-PiAGATZS3Z06KD_BLcN4FYW6UiJIVubhuiQ4W0,2694
+elasticotel/distro/environment_variables.py,sha256=o3jRGJw8XRYFXdsaldVyd-MGRDCCgXFEBqmZaPI1GB4,1006
+elasticotel/distro/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elasticotel/distro/version.py,sha256=-K7GzK5jLjfDxc6AyjV0_9TW20jM53fb1AfnCskDgk4,833
+elasticotel/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elasticotel/sdk/resources/__init__.py,sha256=FdUDk1pUi_Rllb2Qq7SXIEwk_Y6DSGb2VHBvAK18ssI,2235
+elastic_opentelemetry-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+elastic_opentelemetry-0.2.0.dist-info/METADATA,sha256=i-niEs_xPjb3rlvz7lQ9M1a2ivx_jBlpSjzI3zcXsP0,18856
+elastic_opentelemetry-0.2.0.dist-info/NOTICE.txt,sha256=sp2xGQVFV48OOmlireVPS60Cij1FGB4jRtH9OUricaA,57
+elastic_opentelemetry-0.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+elastic_opentelemetry-0.2.0.dist-info/entry_points.txt,sha256=39WAl50NHTE6Wto6qEMzlOk4jdVQfarL-I-a6JngDv8,362
+elastic_opentelemetry-0.2.0.dist-info/top_level.txt,sha256=BvLutKx9v7LWvYR-ioNZ2dcH5EzefvgteHziS0h2UUE,12
+elastic_opentelemetry-0.2.0.dist-info/RECORD,,
