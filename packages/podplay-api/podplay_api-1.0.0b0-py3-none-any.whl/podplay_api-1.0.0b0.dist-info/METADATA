@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: podplay-api
+Version: 1.0.0b0
+Summary: A client library for using the podplay.com web API
+Home-page: https://github.com/bendikrb/podplay_api
+License: MIT
+Keywords: podcast,api-client,unofficial
+Author: Bendik R. Brenne
+Author-email: bendik@konstant.no
+Requires-Python: >=3.12,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.9.5,<4.0.0)
+Requires-Dist: async-timeout (>=4.0.3,<5.0.0)
+Requires-Dist: asyncstdlib (>=3.12.5,<4.0.0)
+Requires-Dist: mashumaro (>=3.12,<4.0)
+Requires-Dist: orjson (>=3.10.3,<4.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Project-URL: Documentation, https://podplay-api.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/bendikrb/podplay_api
+Description-Content-Type: text/markdown
+
+# PodPlay API
+
+
