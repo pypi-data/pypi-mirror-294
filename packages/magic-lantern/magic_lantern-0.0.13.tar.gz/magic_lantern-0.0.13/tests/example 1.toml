@@ -1,0 +1,24 @@
+# folder paths are relative to the location of this config file
+
+[[albums]]
+order="sequence" # These are picked in sequence
+folder="images/numbers"
+weight=1
+
+[[albums]]
+order="atomic" # These are "sticky"; they appear as a group, sequencially
+folder="images/atomic"
+weight=1
+
+[[albums]]
+order="random" # These appear randomly 
+folder="images/paintings"
+weight=1
+
+[[albums]]
+order="sequence"
+folder="pdfs"
+
+
+
+

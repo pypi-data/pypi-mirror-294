@@ -1,0 +1,10 @@
+# Test the global values
+exclude=["atomic","numbers"]
+fullscreen=true
+weight=10
+interval=2
+
+[[albums]]
+order="sequence" # These are picked in sequence
+folder="images"
+

@@ -1,0 +1,27 @@
+# Example configuration for magic-lantern.
+# See README.md for more information.
+
+# Exclude the given list of dir names from the album image search.  
+exclude=["_archive","archive","old","_old"]
+
+# Turn on full screen mode
+fullscreen=true
+
+# Default interval if not otherwise specifed.  This is the delay between images in the slide show
+interval=3
+
+# Default weighting applied to each album
+weight=1
+
+[[albums]]
+folder="images/numbers"
+order="sequence" # These are picked in sequence
+
+[[albums]]
+folder="images/atomic"
+order="atomic" # These are "sticky"; they appear as a group, sequentially
+
+[[albums]]
+folder="images/paintings"
+order="random" # These appear randomly 
+weight=2

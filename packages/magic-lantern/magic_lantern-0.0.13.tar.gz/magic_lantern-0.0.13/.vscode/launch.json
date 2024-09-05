@@ -1,0 +1,93 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Test: DIRECTORY",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["${workspaceFolder}/tests/images"]
+    },    {
+      "name": "Test: bitmaps",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-f","${workspaceFolder}/tests/images/bitmaps"]
+    },
+    {
+      "name": "Test: Help",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["--help"]
+    },
+    {
+      "name": "example 1.toml",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-c", "${workspaceFolder}/tests/example 1.toml"]
+    },    {
+      "name": "example 2.toml",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-f", "-c", "${workspaceFolder}/tests/example 2.toml"]
+    }, {
+      "name": "example 3.toml",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-c", "${workspaceFolder}/tests/example 3.toml"]
+
+    },
+        {
+      "name": "Test: interval option",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-i", "1", "${workspaceFolder}/tests/images"]
+    },        {
+      "name": "Test: EMPTY LOCAL",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-f","~/Music"]
+    },       {
+      "name": "Test: rotated",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "args": ["-c","~/Downloads/pics.toml"]
+    },
+
+    
+{
+      "name": "Profiler",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_lantern",
+      "env": {"MAGIC_LANTERN_PROFILE":"1"},
+      "args": ["-f","${workspaceFolder}/tests"]
+    },
+
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "args": ["test"]
+    },
+    {
+      "name": "pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      // "args": ["-s"] // Don't capture
+    },
+  ]
+}
