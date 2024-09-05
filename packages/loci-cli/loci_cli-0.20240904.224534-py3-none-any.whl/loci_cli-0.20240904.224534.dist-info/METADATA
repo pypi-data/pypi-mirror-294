@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: loci-cli
+Version: 0.20240904.224534
+Summary: The official Loci Notes CLI tool.
+Home-page: https://loci-notes.gitlab.io/clients/cli
+License: GPL-3.0-or-later
+Author: TheTwitchy
+Author-email: thetwitchy@thetwitchy.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: chardet (>=5.2.0,<6.0.0)
+Requires-Dist: loci_client (==0.20240713.191920)
+Requires-Dist: pendulum (>=3.0.0,<4.0.0)
+Requires-Dist: typer[all] (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://gitlab.com/loci-notes/loci-cli
+Description-Content-Type: text/markdown
+
+# Loci CLI Tool and Client Library
+The official Loci CLI tool and Python client library. The CLI tool performs basic Loci Notes tasks from any command line, and the Python library can be used to build other Python clients.
+
+**IMPORTANT: LOCI NOTES AS A WHOLE IS UNDERGOING REFACTORING, USE THE VERSION SPECIFIED BELOW TO MAKE SURE EVERYTTHING WORKS TOGETHER** 
+
+## Docs
+https://loci-notes.gitlab.io/clients/cli
+
+## Installation
+### Standard
+`pip install loci-cli`
+
+### Latest
+#### Remote
+`pip install git+https://gitlab.com/loci-notes/loci-cli`
+
+#### Local
+`git clone https://gitlab.com/loci-notes/loci-cli && pip install loci-cli`
+
+### Development
+```bash
+pip install poetry
+poetry config virtualenvs.in-project true
+poetry install --with dev
+poetry run loci --help
+```
+
+Use VS Code for development and debugging.
+
