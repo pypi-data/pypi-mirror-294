@@ -1,0 +1,10 @@
+white_rock_connection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+white_rock_connection/messages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+white_rock_connection/messages/telegram.py,sha256=u6i91dUTXsbtw4clhCExin3r-ulRGy4YIl_ISE1RvRA,1771
+white_rock_connection/redisconn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+white_rock_connection/redisconn/stream_consumer.py,sha256=335KCiR_gD9tcifWhKu0VdnwH7qwEq9GDBTiHZ1VBEc,6580
+white_rock_connection/redisconn/stream_producer.py,sha256=u-mPCLh86EC_xjs2r3akRHIgx3ZUslXNk27L-cF7DxM,4130
+white_rock_connection-0.1.dist-info/METADATA,sha256=UmysJL6IrNOk6mVN6bYfx_MQd0LeXvB_cssuUnWDgLo,544
+white_rock_connection-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+white_rock_connection-0.1.dist-info/top_level.txt,sha256=7nRVPjAoi03oaUuPuoa8U2jE4JTb4sV03n0E8qtQi2c,22
+white_rock_connection-0.1.dist-info/RECORD,,
