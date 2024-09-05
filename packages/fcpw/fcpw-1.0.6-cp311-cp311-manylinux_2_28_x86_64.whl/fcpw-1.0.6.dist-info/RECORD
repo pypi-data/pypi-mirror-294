@@ -1,0 +1,12 @@
+fcpw-1.0.6.dist-info/METADATA,sha256=ouQFta2LZvookuoiK51JuU_IaYU9LrpWnGa99nNVU-4,10998
+fcpw-1.0.6.dist-info/RECORD,,
+fcpw-1.0.6.dist-info/WHEEL,sha256=eFHwGhnX9bClPNp6MNHJV67AjmE7Dz3pSR_3-4XW51o,118
+fcpw-1.0.6.dist-info/licenses/LICENSE,sha256=qNwJ_OdaCT4NTfS2KsSvVSZBsuF38CxU8rqL16VIMNY,1070
+fcpw/libslang.so,sha256=8J7dgyj9saJMfg15yJT5cg9At-U-_7m6OamvN10dcCM,21998168
+fcpw/__init__.py,sha256=gjn0-PmnQo-3FE-ZnkDL6eozOQuZdvuQHvx0nr5-aRk,1024
+fcpw/libgfx.so,sha256=7ByMcXLCAKecizFNjd_rHNQhLEoy9fOclIa1_UkO86s,1294704
+fcpw/libslang-glslang.so,sha256=pLJyTrFdLrTpPyZsyoIouYxCiV6ULnfjwOSd9WJdYcA,8666664
+fcpw/py.cpython-311-x86_64-linux-gnu.so,sha256=0swkZ1DRE7YjNE9N4S8bmVY-8uKWN68oFum5wL8Jorw,1636641
+fcpw.libs/libslang-f09edd83.so,sha256=gi_4Iahi6DWM_-RHxT-Oi2MhWiI-ZU2WUS2DHn9DP0M,22158529
+fcpw.libs/libgfx-ec1c8c71.so,sha256=ez06EJWwm5RvCabKzhc4oDP8M0PYIeVYtYrjamW4gzM,1324273
+fcpw.libs/libslang-glslang-a4b2724e.so,sha256=19VWQNEyrzRcFHm9pf3-kZPwKC469wJUcSilJXnRM0M,8690577
