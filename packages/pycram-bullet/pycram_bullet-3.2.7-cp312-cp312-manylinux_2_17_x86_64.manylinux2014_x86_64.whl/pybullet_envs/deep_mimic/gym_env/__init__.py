@@ -1,0 +1,3 @@
+from pycram_bullet_envs.deep_mimic.gym_env.deep_mimic_env import HumanoidDeepMimicBackflipBulletEnv
+from pycram_bullet_envs.deep_mimic.gym_env.deep_mimic_env import HumanoidDeepMimicWalkBulletEnv
+
