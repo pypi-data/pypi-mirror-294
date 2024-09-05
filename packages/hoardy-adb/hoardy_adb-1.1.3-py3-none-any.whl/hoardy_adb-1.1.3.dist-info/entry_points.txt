@@ -1,0 +1,3 @@
+[console_scripts]
+abarms = hoardy_adb.__main__:main
+hoardy-adb = hoardy_adb.__main__:main
