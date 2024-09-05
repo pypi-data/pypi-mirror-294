@@ -1,0 +1,9 @@
+incstatspy.cpython-37m-darwin.so,sha256=pMpWMyfS45zsoiIyMW_fVrXN3WZNPGu50dE6RgHzSnU,70144
+include/incstats.h,sha256=q_bZMkZaYUbDs89nLPOHYbR3OV66vA4n9rAez3Djo-4,14197
+incstatspy-0.1.0.dist-info/RECORD,,
+incstatspy-0.1.0.dist-info/WHEEL,sha256=qqJA-BPp_qJMUboQjE9gfCiYpKza8JpVbTUEuz4YW6c,114
+incstatspy-0.1.0.dist-info/METADATA,sha256=jJgPnV-PK-uW8SZh02W3mwJKC9G81ZBG0tt74-bCASE,3353
+incstatspy-0.1.0.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+lib/libincstats.dylib,sha256=BqihKOkChbO3LAujHDI9c_SN8hhg4M4TYwnrJd2V5ig,33760
+lib/cmake/incstats/incstatsConfig.cmake,sha256=TTmcKjj6ZMbTCqa4utk8ai_PYLBVSyuCy2L1M7ajBGw,4127
+lib/cmake/incstats/incstatsConfig-release.cmake,sha256=prWmFbW92Rv5cKP0qXhhTUCRMMAdzJIpMteNVLPsaxo,828
