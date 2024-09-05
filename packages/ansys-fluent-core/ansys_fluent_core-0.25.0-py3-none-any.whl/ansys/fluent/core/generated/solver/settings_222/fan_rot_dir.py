@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class fan_rot_dir(String, AllowedValuesMixin):
+    """
+    'fan_rot_dir' child.
+    """
+
+    fluent_name = "fan-rot-dir"
+
+    return_type = "<object object at 0x7f570357f6f0>"

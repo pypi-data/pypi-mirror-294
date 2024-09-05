@@ -1,0 +1,32 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from typing import Union, List, Tuple
+
+from .active import active as active_cls
+from .value_1 import value as value_cls
+from .transparency import transparency as transparency_cls
+from .color_2 import color as color_cls
+
+class settings_child(Group):
+    fluent_name = ...
+    child_names = ...
+    active: active_cls = ...
+    value: value_cls = ...
+    transparency: transparency_cls = ...
+    color: color_cls = ...
+    return_type = ...

@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class increase_pre_sweeps(Boolean):
+    """
+    Enable/disable increase in AMG pre-sweeps.
+    """
+
+    fluent_name = "increase-pre-sweeps?"
+
+    return_type = "<object object at 0x7f641d6603b0>"

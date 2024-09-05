@@ -1,0 +1,27 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class turbulence_options(String, AllowedValuesMixin):
+    """
+     Options:
+     Legacy computations 
+     New computations .
+    """
+
+    fluent_name = "turbulence-options"
+
+    return_type = "<object object at 0x7f57023d1c60>"

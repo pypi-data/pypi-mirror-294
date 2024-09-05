@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class support_for_std_track_data_read_enabled(Boolean):
+    """
+    Enable/disable data-read verification, preventing particle loss when transitioning between standard and high-res tracking.
+    """
+
+    fluent_name = "support-for-std-track-data-read-enabled?"
+
+    return_type = "<object object at 0x7f5ce12d6120>"

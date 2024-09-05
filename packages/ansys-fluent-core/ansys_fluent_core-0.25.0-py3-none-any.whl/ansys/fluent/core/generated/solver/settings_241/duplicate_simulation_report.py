@@ -1,0 +1,39 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .report_name import report_name as report_name_cls
+
+class duplicate_simulation_report(Command):
+    """
+    Duplicate a report and all of its settings to a new report.
+    
+    Parameters
+    ----------
+        report_name : str
+            'report_name' child.
+    
+    """
+
+    fluent_name = "duplicate-simulation-report"
+
+    argument_names = \
+        ['report_name']
+
+    _child_classes = dict(
+        report_name=report_name_cls,
+    )
+
+    return_type = "<object object at 0x7f5cfb7b11c0>"

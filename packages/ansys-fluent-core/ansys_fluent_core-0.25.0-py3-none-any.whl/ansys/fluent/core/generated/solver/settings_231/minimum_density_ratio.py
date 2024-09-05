@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class minimum_density_ratio(Real):
+    """
+    'minimum_density_ratio' child.
+    """
+
+    fluent_name = "minimum-density-ratio"
+
+    return_type = "<object object at 0x7f11391a82e0>"

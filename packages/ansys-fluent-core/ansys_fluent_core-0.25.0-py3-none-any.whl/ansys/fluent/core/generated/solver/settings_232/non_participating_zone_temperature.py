@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class non_participating_zone_temperature(Real):
+    """
+    Set temperature for the non-participating boundary zones.
+    """
+
+    fluent_name = "non-participating-zone-temperature"
+
+    return_type = "<object object at 0x7f641facd290>"

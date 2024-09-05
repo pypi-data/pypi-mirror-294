@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class reaction_source_term_relaxation_factor(Real):
+    """
+    Reaction source term relaxation factor.
+    """
+
+    fluent_name = "reaction-source-term-relaxation-factor"
+
+    return_type = "<object object at 0x7f641d76b110>"

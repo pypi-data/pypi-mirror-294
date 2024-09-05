@@ -1,0 +1,31 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .phase_child_17 import phase_child
+
+
+class phase(NamedObject[phase_child], _NonCreatableNamedObjectMixin[phase_child]):
+    """
+    'phase' child.
+    """
+
+    fluent_name = "phase"
+
+    child_object_type: phase_child = phase_child
+    """
+    child_object_type of phase.
+    """
+    return_type = "<object object at 0x7f115bf754d0>"

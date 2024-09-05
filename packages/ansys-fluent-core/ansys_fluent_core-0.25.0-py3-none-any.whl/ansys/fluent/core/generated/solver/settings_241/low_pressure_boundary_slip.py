@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class low_pressure_boundary_slip(Boolean):
+    """
+    Enable/disable the slip boundary formulation for low-pressure gas systems.
+    """
+
+    fluent_name = "low-pressure-boundary-slip?"
+
+    return_type = "<object object at 0x7f5d0a061460>"

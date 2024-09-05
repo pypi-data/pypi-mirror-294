@@ -1,0 +1,40 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .settings_2 import settings as settings_cls
+from .reset_1 import reset as reset_cls
+from .invert import invert as invert_cls
+
+class transparency_options(Group):
+    """
+    'transparency_options' child.
+    """
+
+    fluent_name = "transparency-options"
+
+    child_names = \
+        ['settings']
+
+    command_names = \
+        ['reset', 'invert']
+
+    _child_classes = dict(
+        settings=settings_cls,
+        reset=reset_cls,
+        invert=invert_cls,
+    )
+
+    return_type = "<object object at 0x7f5cfb8b5db0>"

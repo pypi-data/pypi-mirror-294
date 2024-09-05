@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class ia_norm_min_limit(Real):
+    """
+    Minimum normalized area density below which mass transfer rate is set to zero.
+    """
+
+    fluent_name = "ia-norm-min-limit"
+
+    return_type = "<object object at 0x7f115b7b7d00>"

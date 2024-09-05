@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class rhie_chow_flux_specify(Boolean):
+    """
+    Allow specification of the the rhie-chow flux method.
+    """
+
+    fluent_name = "rhie-chow-flux-specify?"
+
+    return_type = "<object object at 0x7f57023d0ac0>"

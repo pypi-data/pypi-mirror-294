@@ -1,0 +1,25 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+
+class cff_files(Boolean):
+    """
+    Indicate whether to write ANSYS common fluids format (CFF) files or legacy case and data files.
+    """
+
+    fluent_name = "cff-files?"
+
+    return_type = "<object object at 0x7f641face5e0>"

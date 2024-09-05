@@ -1,0 +1,42 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .register_1 import register as register_cls
+from .augment import augment as augment_cls
+
+class del_cell_by_mark(Command):
+    """
+    Delete cells based on a cell register.
+    
+    Parameters
+    ----------
+        register : str
+            Provide the id or name of a register.
+        augment : bool
+            Augment list of cells to meet nunerics requirement.
+    
+    """
+
+    fluent_name = "del-cell-by-mark"
+
+    argument_names = \
+        ['register', 'augment']
+
+    _child_classes = dict(
+        register=register_cls,
+        augment=augment_cls,
+    )
+
