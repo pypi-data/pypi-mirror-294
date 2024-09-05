@@ -1,0 +1,4 @@
+pythainlp>=4.0
+sentence-transformers
+transformers
+sentencepiece
