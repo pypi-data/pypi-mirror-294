@@ -1,0 +1,9 @@
+poorlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poorlib/filecreator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poorlib/filecreator/csv_excel_file_creator.py,sha256=SyzOQqjEjPQ0Ta5UL-cAWAB-BeHFRnF_RzxVWYpkFTc,2068
+poorlib/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poorlib/utils/list_utils.py,sha256=eYdH4jtatYFZiC_lwi2L04wYBHJ1pzZ5la9m--cAgLs,370
+poorlib-0.0.2.dist-info/METADATA,sha256=M-slEpUf70TkPUqAoPR11I3fNr1_M3Xu8xR_XLTjw60,204
+poorlib-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+poorlib-0.0.2.dist-info/top_level.txt,sha256=Lq4kuP2jJKA0rSd-hAYYmVkyoL6pzfOGsZPH1-MRqEM,8
+poorlib-0.0.2.dist-info/RECORD,,
