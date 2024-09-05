@@ -1,0 +1,160 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "oteapi-optimade"
+authors = [
+    {name = "Casper Welzel Andersen", email = "casper.w.andersen@sintef.no"},
+]
+description = "OTE-API Plugin for OPTIMADE."
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    # "Framework :: OTEAPI",
+    "Environment :: Plugins",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+]
+keywords = ["OTE", "OPTIMADE", "OTE-API"]
+requires-python = ">=3.9,<3.13"
+dynamic = ["version"]
+
+dependencies = [
+    "DLite-Python >=0.5.16,<1",
+    "eval-type-backport ~=0.2.0",
+    "numpy <2",  # Required by DLite-Python
+    "optimade[server] ~=1.1",
+    "oteapi-core ~=0.7.0.dev2",
+    # "oteapi-dlite >=0.2.0,<1",
+    "oteapi-dlite-Mod >=0.2.0,<1",
+    "requests ~=2.32",
+    "typing-extensions ~=4.12; python_version < '3.10'",
+]
+
+[project.optional-dependencies]
+examples = [
+    "jupyter ~=1.1",
+    "otelib ~=0.5.0.dev0",
+]
+doc = [
+    "mike ~=2.1",
+    "mkdocs >=1.5.3,<1.7",
+    "mkdocs-awesome-pages-plugin ~=2.9",
+    "mkdocs-jupyter ~=0.24.8",
+    "mkdocs-material >=9.5.5,<10",
+    "mkdocstrings[python] ~=0.26.0",
+    "oteapi-optimade[examples]",
+]
+test = [
+    "pytest ~=8.3",
+    "pytest-cov ~=5.0",
+    "pyyaml ~=6.0",
+    "requests-mock ~=1.12",
+]
+pre-commit = ["pre-commit ~=3.8"]
+dev = ["oteapi-optimade[doc,examples,pre-commit,test]"]
+
+[project.urls]
+Home = "https://github.com/SINTEF/oteapi-optimade"
+Documentation = "https://SINTEF.github.io/oteapi-optimade"
+Source = "https://github.com/SINTEF/oteapi-optimade"
+"Issue Tracker" = "https://github.com/SINTEF/oteapi-optimade/issues"
+Changelog = "https://github.com/SINTEF/oteapi-optimade/blob/main/CHANGELOG.md"
+Package = "https://pypi.org/project/oteapi-optimade"
+
+[project.entry-points."oteapi.filter"]
+"oteapi_optimade.optimade" = "oteapi_optimade.strategies.filter:OPTIMADEFilterStrategy"
+"oteapi_optimade.OPTIMADE" = "oteapi_optimade.strategies.filter:OPTIMADEFilterStrategy"
+"oteapi_optimade.OPTiMaDe" = "oteapi_optimade.strategies.filter:OPTIMADEFilterStrategy"
+
+[project.entry-points."oteapi.parse"]
+"oteapi_optimade.parser/optimade" = "oteapi_optimade.strategies.parse:OPTIMADEParseStrategy"
+"oteapi_optimade.parser/OPTIMADE" = "oteapi_optimade.strategies.parse:OPTIMADEParseStrategy"
+"oteapi_optimade.parser/OPTiMaDe" = "oteapi_optimade.strategies.parse:OPTIMADEParseStrategy"
+"oteapi_optimade.parser/optimade/dlite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+"oteapi_optimade.parser/OPTIMADE/dlite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+"oteapi_optimade.parser/OPTiMaDe/dlite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+"oteapi_optimade.parser/optimade/DLite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+"oteapi_optimade.parser/OPTIMADE/DLite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+"oteapi_optimade.parser/OPTiMaDe/DLite" = "oteapi_optimade.dlite.parse:OPTIMADEDLiteParseStrategy"
+
+[project.entry-points."oteapi.resource"]
+"oteapi_optimade.optimade/structures" = "oteapi_optimade.strategies.resource:OPTIMADEResourceStrategy"
+"oteapi_optimade.OPTIMADE/structures" = "oteapi_optimade.strategies.resource:OPTIMADEResourceStrategy"
+"oteapi_optimade.OPTiMaDe/structures" = "oteapi_optimade.strategies.resource:OPTIMADEResourceStrategy"
+
+[tool.flit.module]
+name = "oteapi_optimade"
+
+[tool.flit.sdist]
+exclude = [
+    ".github/",
+    "tests/",
+    ".gitignore",
+    ".pre-commit-config.yaml",
+]
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+scripts_are_modules = true
+warn_unused_configs = true
+show_error_codes = true
+allow_redefinition = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+plugins = ["pydantic.mypy"]
+
+[tool.ruff.lint]
+extend-select = [
+  "B",  # flake8-bugbear
+  "I",  # isort
+  "ARG",  # flake8-unused-arguments
+  "C4",  # flake8-comprehensions
+  "EM",  # flake8-errmsg
+  "ICN",  # flake8-import-conventions
+  "G",  # flake8-logging-format
+  "PGH",  # pygrep-hooks
+  "PIE",  # flake8-pie
+  "PL",  # pylint
+  "PT",  # flake8-pytest-style
+  "PTH",  # flake8-use-pathlib
+  "RET",  # flake8-return
+  "RUF",  # Ruff-specific
+  "SIM",  # flake8-simplify
+  "T20",  # flake8-print
+  "YTT",  # flake8-2020
+  "EXE",  # flake8-executable
+  "PYI",  # flake8-pyi
+]
+ignore = [
+  "PLR",  # Design related pylint codes
+  "EM101",  # Using a literal string in error messages
+  "EM102",  # Using f-strings in error messages
+]
+isort.required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.per-file-ignores]
+"docs/examples/**" = [
+    "I002",  # required imports (e.g., from __future__ import annotations)
+    "T20",  # print statements
+]
+"tests/**" = [
+    "T20",  # print statements
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-rs --cov=oteapi_optimade --cov-report=term-missing:skip-covered --no-cov-on-fail"
+filterwarnings = [
+    # Fail on any warning
+    "error",
+]
