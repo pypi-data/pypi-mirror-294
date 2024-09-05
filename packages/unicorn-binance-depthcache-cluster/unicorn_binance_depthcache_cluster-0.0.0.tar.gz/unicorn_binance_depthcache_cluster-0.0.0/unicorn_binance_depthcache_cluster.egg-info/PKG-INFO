@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: unicorn-binance-depthcache-cluster
+Version: 0.0.0
+Home-page: https://github.com/LUCIT-Systems-and-Development/unicorn-binance-depthcache-cluster
+Author: LUCIT Systems and Development
+Author-email: info@lucit.tech
+License: LSOSL - LUCIT Synergetic Open Source License
+Project-URL: Author, https://www.lucit.tech
+Project-URL: Telegram, https://t.me/unicorndevs
+Project-URL: Get Support, https://www.lucit.tech/get-support.html
+Project-URL: LUCIT Online Shop, https://shop.lucit.services/software
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

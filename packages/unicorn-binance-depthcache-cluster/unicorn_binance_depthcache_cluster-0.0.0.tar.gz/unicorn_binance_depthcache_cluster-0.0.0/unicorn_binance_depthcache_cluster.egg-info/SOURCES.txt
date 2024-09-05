@@ -1,0 +1,8 @@
+README.md
+setup.py
+dummy/__init__.py
+dummy/package.py
+unicorn_binance_depthcache_cluster.egg-info/PKG-INFO
+unicorn_binance_depthcache_cluster.egg-info/SOURCES.txt
+unicorn_binance_depthcache_cluster.egg-info/dependency_links.txt
+unicorn_binance_depthcache_cluster.egg-info/top_level.txt
