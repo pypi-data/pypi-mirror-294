@@ -1,0 +1,15 @@
+langchain
+langchain-groq
+langchain-openai
+pymilvus
+neo4j
+python-dotenv
+pydantic
+loguru
+langchain-community
+
+[test]
+pytest
+pytest-asyncio
+pytest-cov
+mypy
