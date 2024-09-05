@@ -1,0 +1,24 @@
+LICENSE.txt
+README.md
+setup.py
+douroucoulisay/__init__.py
+douroucoulisay/douroucoulisay.py
+douroucoulisay.egg-info/.DS_Store
+douroucoulisay.egg-info/PKG-INFO
+douroucoulisay.egg-info/SOURCES.txt
+douroucoulisay.egg-info/dependency_links.txt
+douroucoulisay.egg-info/entry_points.txt
+douroucoulisay.egg-info/requires.txt
+douroucoulisay.egg-info/top_level.txt
+douroucoulisay/assets/FemaleAnancymaaeHoot - Pine Girl.wav
+douroucoulisay/assets/FemaleAnancymaaeResonantWhoop - Spruce.wav
+douroucoulisay/assets/MaleAnancymaaeHoot - Onassis1.wav
+douroucoulisay/assets/douroucouli1.txt
+douroucoulisay/assets/douroucouli2.txt
+douroucoulisay/assets/douroucouli3.txt
+douroucoulisay/assets/douroucouli4.txt
+douroucoulisay/assets/douroucouli5.txt
+douroucoulisay/assets/douroucouli6.txt
+douroucoulisay/assets/douroucouli7.txt
+douroucoulisay/assets/douroucouli8.txt
+douroucoulisay/assets/douroucouli9.txt
