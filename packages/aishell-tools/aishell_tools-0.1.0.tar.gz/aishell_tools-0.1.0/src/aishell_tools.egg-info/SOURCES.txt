@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+assets/design.png
+src/aishell/aishell_help.py
+src/aishell/get_screen.py
+src/aishell/main.py
+src/aishell/print.py
+src/aishell/terminal_parser.py
+src/aishell_tools.egg-info/PKG-INFO
+src/aishell_tools.egg-info/SOURCES.txt
+src/aishell_tools.egg-info/dependency_links.txt
+src/aishell_tools.egg-info/entry_points.txt
+src/aishell_tools.egg-info/top_level.txt
