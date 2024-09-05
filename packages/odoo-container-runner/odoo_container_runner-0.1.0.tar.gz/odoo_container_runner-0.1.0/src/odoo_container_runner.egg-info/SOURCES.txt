@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/odoo_container_runner.egg-info/PKG-INFO
+src/odoo_container_runner.egg-info/SOURCES.txt
+src/odoo_container_runner.egg-info/dependency_links.txt
+src/odoo_container_runner.egg-info/entry_points.txt
+src/odoo_container_runner.egg-info/top_level.txt
+src/odr/__init__.py
+src/odr/__main__.py
+src/odr/args.py
+src/odr/cli.py
