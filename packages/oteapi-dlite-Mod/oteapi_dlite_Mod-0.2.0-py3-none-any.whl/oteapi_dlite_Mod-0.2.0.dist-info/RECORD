@@ -1,0 +1,17 @@
+oteapi_dlite/__init__.py,sha256=gnznnqOW-Bs_28SJib-NeQ28isAhipaYPfCVXWlE9Tg,244
+oteapi_dlite/models/__init__.py,sha256=0T74EYkqokxnlz3LNzFa5CG_IJ5KmAQP-Cm9mzJq1-0,110
+oteapi_dlite/models/session.py,sha256=szODGi3acrwM-DF2__smzQV6nc04smmFoE3dDhpCS5c,376
+oteapi_dlite/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oteapi_dlite/strategies/generate.py,sha256=WXov1z_XTJKmClpSOaRfj2cqOELQRIB_BpKfdqvp4Dc,6278
+oteapi_dlite/strategies/mapping.py,sha256=E6QLcPsBygw6s4XbOeLIaxEw8jfEQyxuHYdHYi78nQ4,13320
+oteapi_dlite/strategies/parse_json.py,sha256=Uje-3xUwcmzv9Ym6HpGeY3YOmXlXYpzUviuzZ8G0Sj4,4849
+oteapi_dlite/utils/__init__.py,sha256=I0VS1Gs1WCvK7NR0mW8t3aqjc9A58GNwvXyHk_FMeQ8,368
+oteapi_dlite/utils/exceptions.py,sha256=1vEov5aAYi57hxzQi3hxIJ_SuOmim4Y9TBabZM1I7GI,228
+oteapi_dlite/utils/nputils.py,sha256=vZqKvqgLzub29wuGLX2RutFN3-D2bYMhJenV6Kpe1Mw,1029
+oteapi_dlite/utils/utils.py,sha256=ahPQRGzeK-qWgzFprOG8RJGMzZNnAKhIM5ZzJD1jqIo,5432
+oteapi_dlite_Mod-0.2.0.dist-info/LICENSE,sha256=Mu1rY6Cyv5ok6vHed1_EuINL9t16JY7Zf3YN0mgMhdE,1063
+oteapi_dlite_Mod-0.2.0.dist-info/METADATA,sha256=AoctcJVHXWsgTGfbQuWVgXc4avTSrT7bgnnkXh0QgHk,3862
+oteapi_dlite_Mod-0.2.0.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+oteapi_dlite_Mod-0.2.0.dist-info/entry_points.txt,sha256=_YjSwd1p-eEVAhPHF9tWMLirhzQ0KNhVRymG5pIHUFg,414
+oteapi_dlite_Mod-0.2.0.dist-info/top_level.txt,sha256=ypkXUOViXjUgDgH6QrxPmKwOBU_M7sT5fbbpud1zOZ8,13
+oteapi_dlite_Mod-0.2.0.dist-info/RECORD,,
