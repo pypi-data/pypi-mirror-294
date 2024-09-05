@@ -1,0 +1,11 @@
+LICENSE,sha256=JdT9cv3PngUSwRDDKS4YY0Sun5YilXCgxXFEUIYoYqc,1286
+README.md,sha256=TtbMz7vIQOBsyhQTee2Mvg49EflGr9jhA_kTsClLp7k,13373
+novaad/__init__.py,sha256=IYsaFUuO3zP0J9bt_nLVFu7YOejDTkB9ONnQS4H4yAE,497
+novaad/__main__.py,sha256=IYt14LLq86dR4lp9h_V0mBQXNP5cXN_2zLC8FPLoQ3Y,24448
+novaad/core.py,sha256=FDnlRkdgWDCSS9bAvF04PswmGrvBuEQ2YCXjiPp9PP4,32466
+novaad/gui.py,sha256=3_GJgw_22B4BoC_vyl8EV5x_j9H7MLGy_BzxM7DUk9s,19297
+novaad-0.1.0.dist-info/LICENSE,sha256=JdT9cv3PngUSwRDDKS4YY0Sun5YilXCgxXFEUIYoYqc,1286
+novaad-0.1.0.dist-info/METADATA,sha256=NG7TrpEAgSbGkZVuhUt3E7N2fDCYNf-F5psesbNldpA,14194
+novaad-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+novaad-0.1.0.dist-info/entry_points.txt,sha256=oYQuooMqUIrT589oZv5leB_St_W71KY3EThtPSHa3Os,47
+novaad-0.1.0.dist-info/RECORD,,
