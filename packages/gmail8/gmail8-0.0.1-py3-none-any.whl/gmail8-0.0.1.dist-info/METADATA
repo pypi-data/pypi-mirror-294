@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gmail8
+Version: 0.0.1
+Summary: A decorator
+Home-page: https://github.com/gaojunbin/gmail.git
+Author: Junbin Gao
+Author-email: gao.junbin.cn@gmail.com
+License: Apache License 2.0
+License-File: LICENSE
+Requires-Dist: requests
+
+Make your email powerful using python.
