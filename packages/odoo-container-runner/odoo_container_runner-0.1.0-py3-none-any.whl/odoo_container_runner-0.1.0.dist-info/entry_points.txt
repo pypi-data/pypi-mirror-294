@@ -1,0 +1,2 @@
+[console_scripts]
+odr = odr.cli:main

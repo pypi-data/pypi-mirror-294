@@ -1,0 +1,10 @@
+odr/__init__.py,sha256=apr3YYubvMQAdOmrmobDiu4UtZ6ZemrxfqqiecY-pJ4,56
+odr/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+odr/args.py,sha256=1zjOzfrIhHWg0u-5BXK9Eww_IIvsHGVRk-p8FH8gzUw,8429
+odr/cli.py,sha256=fJdMxtY_xRa_Syd_kNxwvAUr2-X86RHQQCbmHEBncjE,1327
+odoo_container_runner-0.1.0.dist-info/LICENSE.txt,sha256=yLs0NIM_u80_VC6JvdstPRbyVBuu-kdCdc1FVtH4ev0,1062
+odoo_container_runner-0.1.0.dist-info/METADATA,sha256=Ig_KNkuEIOXo8NAWworFizLC-U-SR8-X6alCIr-x1Og,2105
+odoo_container_runner-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo_container_runner-0.1.0.dist-info/entry_points.txt,sha256=fw4dfEWgRXQ1LQSf0OR6bVymP16yQSNm5mJuBsPZ07Y,37
+odoo_container_runner-0.1.0.dist-info/top_level.txt,sha256=BSjQ1mTpPLXq-6vVnLdFyFPIk9t8SguZd0ek5b6QVjI,4
+odoo_container_runner-0.1.0.dist-info/RECORD,,
