@@ -1,0 +1,10 @@
+bin/incstats.dll,sha256=n-PwcMGYVmeThOEUXTMie_h-uexwS3TUux45NCtlWgQ,13312
+include/incstats.h,sha256=VmWRkjt8G_8o12KJP0t9mh80TWo5PkP9P1KWWYLI5pk,14582
+incstatspy.cp39-win32.pyd,sha256=S8VR_qKoL3TJF5C38gh93nG4WbW4NwrfjNoxNDcZBOY,31744
+lib/cmake/incstats/incstatsConfig-release.cmake,sha256=vjkEGo7uF6lhIto16wpvsyyXPRmvtH8mXnlncqTcDI4,884
+lib/cmake/incstats/incstatsConfig.cmake,sha256=qJF8bmdIiz5yVzYALDtgD8Ig-oJS6_ddtO9YeTiWPfs,4199
+lib/incstats.lib,sha256=bqARG_DaAS1TkBz_dZsiZM-kHaiTzmxfzGpSCusJSog,4884
+incstatspy-0.2.0.dist-info/METADATA,sha256=bgNOlA_sxPygdFrwCnZWS-frrqV_toTBKre8WAbh8SM,3353
+incstatspy-0.2.0.dist-info/WHEEL,sha256=ZS80TPI4k5te-QBbBp2ush5jkhjB2HF3-9Psqzo54go,100
+incstatspy-0.2.0.dist-info/licenses/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+incstatspy-0.2.0.dist-info/RECORD,,
