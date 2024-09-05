@@ -1,0 +1,39 @@
+[project]
+name = "litedoc"
+dynamic = []
+description = "Default template for PDM package"
+authors = [
+    { name = "snowykami", email = "snowykami@outlook.com" },
+]
+dependencies = [
+    "pydantic>=2.8.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+version = "0.1.0.dev20240904111448"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+litedoc = "litedoc.__main__:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "call"
+getter = "litedoc.version:get_version"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.2",
+    "pdm-backend>=2.3.3",
+    "GitPython>=3.1.43",
+]
