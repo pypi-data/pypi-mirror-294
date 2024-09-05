@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: color_ur_text
+Version: 0.1.2
+Summary: A module for printing colored text in the terminal
+Home-page: https://github.com/basitganie
+Author: Basit Ahmad Ganie
+Author-email: basitahmed1412@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# colored_text
+
+A Python module for printing colored text in the terminal with ANSI escape codes. Supports standard colors, bright colors, 256-color mode, and 24-bit RGB.
+
+## Installation
+
+You can install the package using pip: pip install colored_text
