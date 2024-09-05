@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: perforated_backpropagation
+Version: 1.0.0
+Summary: PerforatedBackpropagation
+Author: PerforatedAI
+Author-email: rorry@perforatedai.com
+License: This software may only be used by getting a license from PerforatedAI.com and agreeing to the terms and conditions
+Requires-Python: >=3.6
+

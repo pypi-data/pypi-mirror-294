@@ -1,0 +1,13 @@
+perforated_backpropagation-1.0.0.dist-info/top_level.txt,sha256=JUXkqpXJCY4c3j3LDsauVtM21jPzcypK9LiBjYzPETU,4
+perforated_backpropagation-1.0.0.dist-info/WHEEL,sha256=67dvytwu_xC6BBShPpeyHCKFSiDgD5oUi31Yq93B2nE,147
+perforated_backpropagation-1.0.0.dist-info/RECORD,,
+perforated_backpropagation-1.0.0.dist-info/METADATA,sha256=qHqciWp39Q1gD1wvy7BniYMT5sBYIRBquHg-aOaMj8w,311
+PAI/pb_neuron_layer_tracker.cpython-39-x86_64-linux-gnu.so,sha256=6Y_ph5Elc2iuvTKnoHGcU5rbzKNXMkfGeNIwNnBgzWA,6085072
+PAI/blockwisePB.cpython-39-x86_64-linux-gnu.so,sha256=Mk0HD5M3-AUE6-j3Lv9Jcjd_W9zTnEGmCqHq7tWUVd0,1293680
+PAI/globalsFile.cpython-39-x86_64-linux-gnu.so,sha256=PJG0dF2GsPRKj6HbxN4LBOxInmSJNxzFYYoVyiYiNVs,813456
+PAI/cleanLoad.cpython-39-x86_64-linux-gnu.so,sha256=nT9SFUYjLWkieXiA0I19XsLMB0IpvWdJCHK1gwm3rS4,1644328
+PAI/pb_utils.cpython-39-x86_64-linux-gnu.so,sha256=24qnuKgHvNfxSavovHlKjEYyq2eyFzOpMjdmx7iWdJE,2148352
+PAI/pb_models.cpython-39-x86_64-linux-gnu.so,sha256=iyC6KChoTz6d_0BTt3i3M8dqJygtE4PlI9LU9xbvYFk,4107648
+PAI/pb_layer.cpython-39-x86_64-linux-gnu.so,sha256=QY3pEYlRlO3A8lsQDYFOx81bQOvI7YSTe3F_WDYs4wk,4390112
+PAI/__init__.cpython-39-x86_64-linux-gnu.so,sha256=HkOiIWCc70rFKtDOzfhq2r5z5gKK2ubCzxzybP_vdi4,73528
+PAI/check_license.cpython-39-x86_64-linux-gnu.so,sha256=kQ2xZ7MsB-567B1BHZbTpeStmTkTVMZRs5nWnwO0dQM,458744
