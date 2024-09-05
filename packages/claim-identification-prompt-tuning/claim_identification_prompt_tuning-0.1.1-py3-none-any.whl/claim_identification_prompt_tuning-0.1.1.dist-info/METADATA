@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: claim-identification-prompt-tuning
+Version: 0.1.1
+Summary: Identifies Claims from Text
+Author: Manav
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: google-generativeai
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: rouge
+Requires-Dist: scipy
+Requires-Dist: python-dotenv
+
+
+---
+# Prompt Tuning for Claim Summarization
+
+This Python package provides a tool to generate short summaries for content based on a set of zero-shot examples. The approach leverages prompt tuning to generate summaries of claims from input content using pre-existing models like  Gemini, without needing a fine-tuning phase.
+
+## Approach
+
+We utilize **prompt tuning** as the primary method for this project. Instead of fine-tuning the language model (which requires large datasets), we provide **prompts** by showing the model several examples of "Content" followed by the expected "Summary of Claims". This method is particularly useful when working with small datasets.
+
+1. **Data**: The input data consists of "Content" (such as a conversation between a user and an agent) and "Reasons" (which are comma-separated summaries of the issues or claims).
+   
+2. **Zero-shot learning**: For each query, we randomly select a subset of examples (e.g., 7) from the dataset to use as reference examples. The prompt generator constructs a natural language prompt from these examples, asking the model to summarize the new content.
+
+3. **Evaluation**: We evaluate the model's performance using:
+   - **ROUGE Scores**: Measures the overlap between the generated summary and the actual summary (Reason).
+   - **Cosine Similarity**: Measures the similarity between the TF-IDF vectors of the generated summary and the actual reason.
+
+## How to Use
+
+### Installation
+
+1. Clone the repository or download the `.zip` file.
+2. Ensure you have the required dependencies installed. You can install them using the following:
+   ```bash
+   pip3 install setuptools 
+   ```
+
+### Usage
+
+This package exposes two main functions to the user:
+
+#### 1. **Performance Evaluation** (`perfomance_on_data`)
+
+This function evaluates the model's performance across the entire dataset by generating summaries and calculating ROUGE and Cosine Similarity metrics.
+
+```python
+from your_package_name import perfomance_on_data
+
+# Evaluate the performance on the dataset
+perfomance_on_data()
+```
+
+**Output**: 
+- The function will print out the generated summaries, the actual summaries, ROUGE scores, and Cosine Similarity scores for each example.
+- It will also print the average ROUGE and Cosine Similarity scores across all examples.
+
+#### 2. **Generate Summary on Query** (`genrate_on_query`)
+
+This function allows the user to input a query (i.e., new content) and receive a generated summary of claims based on the trained model.
+
+```python
+from your_package_name import genrate_on_query
+
+# Generate summary for a user-provided query
+genrate_on_query()
+```
+
+
+
+---
+
+## Dependencies
+
+- `transformers`: For utilizing pre-trained language models.
+- `sklearn`: For cosine similarity and vectorization.
+- `rouge`: For calculating ROUGE scores.
+
+
+---
+
+This package offers a lightweight and flexible way to generate summaries using zero-shot learning and can be integrated into any workflow requiring natural language summarization.
