@@ -1,0 +1,12 @@
+.project-version
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+intentions/__init__.py
+intentions/main.py
+intentions.egg-info/PKG-INFO
+intentions.egg-info/SOURCES.txt
+intentions.egg-info/dependency_links.txt
+intentions.egg-info/top_level.txt
