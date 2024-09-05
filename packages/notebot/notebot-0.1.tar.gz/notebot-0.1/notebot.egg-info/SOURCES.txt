@@ -1,0 +1,9 @@
+README.md
+setup.py
+note/__init__.py
+note/notebot.py
+notebot.egg-info/PKG-INFO
+notebot.egg-info/SOURCES.txt
+notebot.egg-info/dependency_links.txt
+notebot.egg-info/entry_points.txt
+notebot.egg-info/top_level.txt
