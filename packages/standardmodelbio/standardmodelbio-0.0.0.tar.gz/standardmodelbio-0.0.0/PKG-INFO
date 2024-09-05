@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: standardmodelbio
+Version: 0.0.0
+Summary: Parked.
+Author: Arda Pekis
+Author-email: arda@standardmodel.bio
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 7 - Inactive
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pypi-parker (>=0.1.2,<0.2.0)
+Description-Content-Type: text/markdown
+
+

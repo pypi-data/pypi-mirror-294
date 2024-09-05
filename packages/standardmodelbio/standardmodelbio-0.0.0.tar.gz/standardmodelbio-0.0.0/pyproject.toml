@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "standardmodelbio"
+version = "0.0.0"
+description = "Parked."
+authors = ["Arda Pekis <arda@standardmodel.bio>"]
+readme = "README.md"
+classifiers = ["Development Status :: 7 - Inactive"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pypi-parker = "^0.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
