@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ourcompose"
+version = "0.0.10"
+description = "Framework for setup and running functions (asynchronously) in topological order"
+authors = ["Rikard Olsson <rikard@ourstudio.se>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toposort = "^1.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
