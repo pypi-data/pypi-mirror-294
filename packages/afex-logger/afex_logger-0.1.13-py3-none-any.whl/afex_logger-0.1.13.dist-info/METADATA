@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: afex-logger
+Version: 0.1.13
+Summary: AFEX logger package
+Author: nlasisi@africaexchange.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: celery
+Requires-Dist: boto3
+
+  
+# AFEX Logger
+
+[![PyPI license](https://img.shields.io/pypi/l/django-rest.svg)](https://pypi.python.org/pypi/afex-logger/)
+
+# Overview
+
+AFEX Logger contains implementation codes that can help you fast-track logging in your app codebase. Integrated with a centralized log server, your logs gets submitted via a background worker utilizing celery with redis as broker.
+
+# Requirements
+
+django-REST library requires:
+
+-  celery
+-  boto3
+
+# Installation
+
+You can get the package using `pip`, as the following:
+
+```bash
+pip install afex-logger
+```
+
+# Example
+
+Below is a quick way to get started.
+
+First, in your django (celery) project, add afex logger in the list of your installed apps in your django settings file as below:
+
+```python
+
+INSTALLED_APPS = [
+    ..., # your other installed apps
+    "afex_logger"
+]
+```
+
+You need a configuration provider class that extends `afex_logger.util.ConfigProvider`. The ConfigProvider provides an abstract method `get_api_key` which your app will hook onto to specify the right api key as retrieved from SSM.
+
+The configuration provider class can be in any location within your app, this location is where you then need to specify within your app's setting file as:
+
+```python
+
+LOG_CONFIG_PROVIDER="<location_to_your_configuration_provider_class>"
+
+```
+
+The configuration provider will assume test environment by checking the `settings.DEBUG`
+
+An example configuration provider will look like:
+
+```python
+from afex_logger.util import ConfigProvider
+from django.conf import settings
+
+
+class LogConfigProvider(ConfigProvider):
+
+    def get_api_key(self):
+        return settings.LOG_API_KEY
+
+```
+
+
+# Usage
+1. **Logs Management**
+
+   1. Request Logs:
+      
+      This package has provided a middleware that automatically submits request logs to the server. To use this, just add `afex_logger.http_interceptor.LogMiddleware` to your list of middleware in your settings file.
+   2. Other logs:
+      
+      You can submit other kindly of logs (error, process and activity logs) by using the `afex_logger.util.LogUtil` class as follows
+      ```python
+         from afex_logger.util import LogUtil
+         
+         LogUtil.submit_process_log(...) # for process logs
+         LogUtil.submit_activity_log(...) # for activity logs
+         LogUtil.submit_error_log(...) # for error logs
+         LogUtil.submit_requests_log(...) # to manually submit logs
+      ```
+   3. Retrieving Logs:
+      
+      To retrieve any of the four classes of logs, use the same LogUtil class.
+      ```python
+         from afex_logger.util import LogUtil
+         parameters = {
+            "page": 1,
+            "page_size": 15,
+            "keyword": "...",
+            "filter": "..."
+         }
+         LogUtil.fetch_process_logs(parameters) # fetching process logs
+         LogUtil.fetch_activity_logs(parameters) # fetching activity logs
+         LogUtil.fetch_error_logs(parameters) # fetching error logs
+         LogUtil.fetch_request_logs(parameters) # fetching request logs
+      ```
+2. **SSM API Key Management**
+   
+   To retrieve API Keys from SSM, use `afex_logger.ssm_service.SsmService`
+   ```python
+      
+      from afex_logger.ssm_service import SsmService
+      
+      ssm_credentials = {...}
+      secret_name = ...
+      key_name = ...
+      service = SsmService(**ssm_credentials)
+
+      api_key, error = service.get_secret_value(secret_name, key_name)
+   ```
