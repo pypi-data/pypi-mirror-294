@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_baasdis20200509/__init__.py
+alibabacloud_baasdis20200509/client.py
+alibabacloud_baasdis20200509/models.py
+alibabacloud_baasdis20200509.egg-info/PKG-INFO
+alibabacloud_baasdis20200509.egg-info/SOURCES.txt
+alibabacloud_baasdis20200509.egg-info/dependency_links.txt
+alibabacloud_baasdis20200509.egg-info/requires.txt
+alibabacloud_baasdis20200509.egg-info/top_level.txt
