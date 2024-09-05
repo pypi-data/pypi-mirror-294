@@ -1,0 +1,10 @@
+synthetic_data_generator/__init__.py,sha256=DGedp-eUhKUUlNVGn0w-UMcElHzWB-8IAqZFLLw_aE4,54
+synthetic_data_generator/src/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+synthetic_data_generator/src/data_generator.py,sha256=beRomGD-8SG9dsKm731L4CoLQxoxXCK8S7lS9deWaf0,6464
+synthetic_data_generator/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthetic_data_generator/test/test_data_generator.py,sha256=uqjgAaEsvZiZKKIp-MAYPn1HqkP8rfQTUyS1wJfotNc,5215
+auto_synth_data_gen-0.0.3.dist-info/LICENSE,sha256=m1_v92bdQzw5tPSHplYxcbSI2qZNeQaUN_vopAMhpYs,1089
+auto_synth_data_gen-0.0.3.dist-info/METADATA,sha256=39dt5cho1woca5YzmipsOrZaTxaggzQmSdNki9pZFYE,7434
+auto_synth_data_gen-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+auto_synth_data_gen-0.0.3.dist-info/top_level.txt,sha256=EXnAnyGdsN_OUuR5fHfgc-m9OEi3Tsyvh96eoxNU-d8,25
+auto_synth_data_gen-0.0.3.dist-info/RECORD,,

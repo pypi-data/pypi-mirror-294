@@ -1,0 +1,1 @@
+from .src.data_generator import SyntheticDataGenerator
