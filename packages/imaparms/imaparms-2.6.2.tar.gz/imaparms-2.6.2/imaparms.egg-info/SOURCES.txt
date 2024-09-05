@@ -1,0 +1,7 @@
+README.md
+setup.py
+imaparms.egg-info/PKG-INFO
+imaparms.egg-info/SOURCES.txt
+imaparms.egg-info/dependency_links.txt
+imaparms.egg-info/requires.txt
+imaparms.egg-info/top_level.txt
