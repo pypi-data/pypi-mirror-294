@@ -1,0 +1,3 @@
+[console_scripts]
+sphinx-builder-mdx=sphinxcontrib.mdxbuilder.__main__:main
+
