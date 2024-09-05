@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mustash
+Version: 0.2
+Summary: Portable ingest pipelines for documents
+Home-page: https://mustash.touhey.pro/
+Keywords: elasticsearch,es_query,es-query,kibana,ingest,transform
+Author: Thomas Touhey
+Author-email: thomas@touhey.fr
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Requires-Dist: communityid (>=1.5.0,<2.0.0)
+Requires-Dist: eval-type-backport (>=0.2,<0.3) ; python_version < "3.10"
+Requires-Dist: lscl (>=0.2,<0.3)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Project-URL: Repository, https://gitlab.com/kaquel/mustash
+Description-Content-Type: text/x-rst
+
+mustash -- portable ingest pipelines for documents
+==================================================
+
+Mustash, composed of "mu" meaning "mutation" and "stash" referencing Logstash_,
+is a Python module for coding and applying transformations to a document.
+
+Using Mustash, you can:
+
+* Read and render pipelines as ElasticSearch ingest pipelines or Logstash
+  filters.
+* Define and run pipelines and processors.
+* Validate ElasticSearch ingest pipelines.
+
+The project is present at the following locations:
+
+* `Official website and documentation at
+  mustash.touhey.pro <Mustash website_>`_;
+* `Mustash repository on Gitlab <Mustash on Gitlab_>`_;
+* `Mustash project on PyPI <Mustash on PyPI_>`_.
+
+.. _Logstash: https://www.elastic.co/fr/logstash
+.. _Mustash website: https://mustash.touhey.pro/
+.. _Mustash on Gitlab: https://gitlab.com/kaquel/mustash
+.. _Mustash on PyPI: https://pypi.org/project/mustash
+
