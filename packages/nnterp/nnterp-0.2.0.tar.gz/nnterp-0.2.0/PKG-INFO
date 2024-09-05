@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nnterp
+Version: 0.2.0
+Summary: Utils and mechanistic interpretability intervensions using nnsight
+Author-email: Clément Dumas <butanium.contact@gmail.com>
+Project-URL: Homepage, https://github.com/butanium/nnterp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: nnsight
+Requires-Dist: pandas
+
+# nnterp
+
+This might become a real package at some point, for now it's just a package in which I dump my nnsight code.
+
+nnsight_utils.py basically allows you to deal with TL and HF models in a similar way.
+
+interventions.py is a module that contains tools like logit lens, patchscope lens and other interventions.
