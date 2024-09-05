@@ -1,0 +1,10 @@
+vinput/__init__.py,sha256=ZEJfk1NNJf-3OYzctftX6-3IloJhSElLcc8y6iirG-U,185
+vinput/_binding.py,sha256=TBWJN1FRaS8-mbhhYih9nwRnRUfGTWVmIV6wbDxu-Zg,8038
+vinput/lib/libvinput.dll.dat,sha256=e-rHffPOLoG_AZYbytwlKThtMAHzKJ8tMhdeY1nqc6U,50092
+vinput/lib/libvinput.dylib.dat,sha256=2wdijxkD9K0CFYw2aocbbVSBf8E8sDGvxlFDPxAbwpQ,70416
+vinput/lib/libvinput.so.dat,sha256=AEXzcZBehWAUC7PYy1_qewXOVPfkznH9o4VByozX0v4,50760
+vinput-0.4.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+vinput-0.4.0.dist-info/METADATA,sha256=oJFzU4mQ3Gk92YtkuhzAmYdMF4fHodeTVs0jV_EO7dY,835
+vinput-0.4.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+vinput-0.4.0.dist-info/top_level.txt,sha256=rzGJxIrcu-GjW-_3cShddt0rvaIdkJP9dp-p2F_DzhQ,7
+vinput-0.4.0.dist-info/RECORD,,
