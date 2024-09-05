@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "pyriak"
+version = "0.4.1"
+description = "A lightweight implementation of Entity Component System architecture"
+authors = ["aatle <168398276+aatle@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["ecs", "framework", "architecture"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Intended Audience :: Developers",
+  "Typing :: Typed",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+
+[tool.poetry.urls]
+Repository = "https://github.com/aatle/pyriak.git"
+Issues = "https://github.com/aatle/pyriak/issues"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "W",
+  "I",
+  "B",
+  "C4",
+  "ARG",
+  "SIM",
+  "PIE",
+  "BLE",
+  "FBT",
+  "ISC",
+  "RSE",
+  "RET",
+  "SLOT",
+  "PERF",
+  "RUF",
+  # "FURB",
+]
+ignore = ["SIM105", "PERF203"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+combine-as-imports = true
+
+
+[tool.mypy]
+enable_error_code = [
+  "ignore-without-code",
+  "redundant-expr",
+  "possibly-undefined",
+  "truthy-bool",
+  "truthy-iterable",
+  "mutable-override",
+]
+disallow_subclassing_any = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_reexport = false
+strict_equality = true
+extra_checks = true
+disallow_any_unimported = true
+warn_unreachable = true
