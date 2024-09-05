@@ -1,0 +1,15 @@
+PyTorch2Sklearn/MLP.py,sha256=mhZJx_jXnvLx0TYMypNOWp50Iy6GAXGXtjDvU7d791s,4047
+PyTorch2Sklearn/MLP_AGNN.py,sha256=wgrhV-n99DQI2bVB7480anUYSVNjelaGzlX2NejoG70,6176
+PyTorch2Sklearn/Modules.py,sha256=SMqgSncSCwSrTG18p4u33lKWkgRtk8jM2sGD5i99JnA,4780
+PyTorch2Sklearn/Transformer.py,sha256=_bkxNQW6XdbHUymmLlrK6mo-S_WeeG8M6fg6CDnVETU,8587
+PyTorch2Sklearn/Transformer_AGNN.py,sha256=SE8zwb7G_S14XLbZlLcPV_yDjO9m_1VWa7Ow40pJiY0,10057
+PyTorch2Sklearn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyTorch2Sklearn/__template__.py,sha256=2fPPT6MphBLP5LVNEt06HnlO1fiIfpV-j7ybn1cub5A,19594
+PyTorch2Sklearn/environment.py,sha256=McqX-8BACQv1ofd9Gvb3CHqTnquI9tc2dGBQMhlqaEw,456
+PyTorch2Sklearn/utils/__init__.py,sha256=T-f5ajW92lijOXgnADxB5EQw5II426afO5Xzz-LvqJA,41
+PyTorch2Sklearn/utils/data.py,sha256=AYuNyuQxQA1XAHtpggTNPET5hQXC5JHQcaOqtXnhrE0,3587
+PyTorch2Sklearn-0.2.0.dist-info/LICENSE,sha256=oOwSaHI3yBmkG89U8Yc-VHZ8e6JsT2Mv65YoZ1i_E0Y,1072
+PyTorch2Sklearn-0.2.0.dist-info/METADATA,sha256=oRnt_nV5iForI3FzjngCTlsgUur40fw3aiThzugWtJg,18247
+PyTorch2Sklearn-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+PyTorch2Sklearn-0.2.0.dist-info/top_level.txt,sha256=yzJFXMntN4MTRZ6ZwoJZ4_1QMM_8WLaMgCmC8khghR4,16
+PyTorch2Sklearn-0.2.0.dist-info/RECORD,,
