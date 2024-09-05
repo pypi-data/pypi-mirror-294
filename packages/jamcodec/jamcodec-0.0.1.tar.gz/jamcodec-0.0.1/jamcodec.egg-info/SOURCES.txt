@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+jamcodec/__init__.py
+jamcodec.egg-info/PKG-INFO
+jamcodec.egg-info/SOURCES.txt
+jamcodec.egg-info/dependency_links.txt
+jamcodec.egg-info/requires.txt
+jamcodec.egg-info/top_level.txt

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jamcodec"
+version = "0.0.1"
+description = "Python implementation of the JAM codec as specified in the graypaper"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "JAMdot Technologies", email = "devops@jamdot.tech" }
+]
+
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+dev = [
+    "coverage==5.3",
+    "pytest>=6.1.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/JAMdotTech/py-jam-codec"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["contrib", "docs", "tests", "test"]
+
