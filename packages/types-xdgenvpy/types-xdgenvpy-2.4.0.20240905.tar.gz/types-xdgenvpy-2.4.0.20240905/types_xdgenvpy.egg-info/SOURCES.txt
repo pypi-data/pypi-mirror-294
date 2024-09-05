@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+types_xdgenvpy.egg-info/PKG-INFO
+types_xdgenvpy.egg-info/SOURCES.txt
+types_xdgenvpy.egg-info/dependency_links.txt
+types_xdgenvpy.egg-info/top_level.txt
+xdgenvpy-stubs/METADATA.toml
+xdgenvpy-stubs/__init__.pyi
+xdgenvpy-stubs/_defaults.pyi
+xdgenvpy-stubs/py.typed
+xdgenvpy-stubs/xdgenv.pyi
