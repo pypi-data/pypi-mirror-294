@@ -1,0 +1,1 @@
+This a PoC for dependency confusion. If you affected by this, please contact <RedYetiHacks@wearehackerone.com>

@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+otci_openthread.egg-info/PKG-INFO
+otci_openthread.egg-info/SOURCES.txt
+otci_openthread.egg-info/dependency_links.txt
+otci_openthread.egg-info/top_level.txt
