@@ -1,0 +1,9 @@
+sentieoslack/__init__.py,sha256=aq2-tj8tuo6Z0jvzeA1-KkwVpfn7MhY7UsZkHKVPZ1w,43
+sentieoslack/constants.py,sha256=JUP-qmmUdAJ_kgUtQ8QISReEr0gtS9sW0eQIb_hxY9Q,131
+sentieoslack/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentieoslack/service.py,sha256=VIraIntpGZ9hihJdvJcXHMEdKzVTon2Ke-raxz4fs1U,2039
+sentieoslack/utility.py,sha256=YqO4PwoeWD1RCr2jDvrL7EDxjIdUlbN6OiPhceM0Lv0,1570
+sentieoslack-0.0.1.dist-info/METADATA,sha256=KcWvHhYNzP3A4EHB8kLUrJwz4MmznjDHzQfwYfG-BQc,4879
+sentieoslack-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sentieoslack-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentieoslack-0.0.1.dist-info/RECORD,,
