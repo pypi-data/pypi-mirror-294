@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: momify
+Version: 0.0.2
+Summary: A tool for seamlessly summarizing your boring meetings!
+Author: Athirah Hazwani, Anthony Loumakos
+Requires-Python: >=3.10
+Requires-Dist: typer
