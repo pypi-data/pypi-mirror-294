@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: utils_web_scraping
+Version: 0.1.1
+Summary: All the functions that are shared between all the web scrappers
+Home-page: https://github.com/yourusername/my_package
+Author: Lucas Garcia
+Author-email: l.garcia.tyke@opes.com.co
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
