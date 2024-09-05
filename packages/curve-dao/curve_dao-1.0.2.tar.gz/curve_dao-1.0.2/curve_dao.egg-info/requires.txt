@@ -1,0 +1,4 @@
+curve-boa==0.1.10.0
+requests
+rich
+strenum
