@@ -1,0 +1,133 @@
+<snippet>
+    <content>
+        <![CDATA[
+// >gcc <thisfile> -mwindows -lgdi32
+// >tcc <thisfile>
+
+#include <windows.h>
+#include <stdio.h>
+
+#define ID_EDITBOX 1
+#define ID_TXTINPT 2
+#define ID_SAVEBTN 3
+static HWND hwndChild[65535];
+int _WindowSwitch( HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam ){
+    HDC          hdc;
+    PAINTSTRUCT  ps;
+    RECT         rect;
+    static TCHAR *szBuffer;
+    static TCHAR szInput[256];
+    static TCHAR szLineNum[32];
+    static int   iLength;
+    HINSTANCE hInst;
+    int style_editt;
+    int style_edite;
+    int style_btn;
+    int iLineCount, iCharCount;
+    switch( message ) {
+        case WM_CREATE:
+            hInst = ((LPCREATESTRUCT) lParam) -> hInstance;
+            style_editt = WS_CHILD | WS_VISIBLE | ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_AUTOVSCROLL;
+            style_edite = WS_CHILD | WS_VISIBLE | WS_BORDER | ES_LEFT | ES_AUTOVSCROLL;
+            style_btn   = WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON;
+            hwndChild[ID_EDITBOX] = CreateWindow( TEXT("edit"), NULL, style_editt, 0,0,0,0, hwnd, (HMENU)ID_EDITBOX, hInst, NULL );
+            hwndChild[ID_TXTINPT] = CreateWindow( TEXT("edit"), NULL, style_edite, 0,0,0,0, hwnd, (HMENU)ID_TXTINPT, hInst, NULL );
+            hwndChild[ID_SAVEBTN] = CreateWindow( TEXT("button"), TEXT("mslog"), style_btn, 0,0,0,0, hwnd, (HMENU)ID_SAVEBTN, hInst, NULL);
+            return 0;
+        case WM_SIZE:
+            GetClientRect(hwnd, &rect);
+            MoveWindow( hwndChild[ID_EDITBOX], 0, 0, rect.right, rect.bottom-35, TRUE );
+            MoveWindow( hwndChild[ID_TXTINPT], 60,  rect.bottom-35, 200, 20, TRUE );
+            MoveWindow( hwndChild[ID_SAVEBTN], 280, rect.bottom-35, 50,  25, TRUE );
+            return 0;
+        case WM_PAINT:
+            // 用于展示文本，类似 Label 功能
+            GetClientRect(hwnd, &rect);
+            hdc = BeginPaint( hwnd, &ps );
+            TextOut( hdc, 20, rect.bottom-30, "input:", lstrlen("input:") );
+            TextOut( hdc, 400, rect.bottom-30, szLineNum, lstrlen(szLineNum) );
+            EndPaint( hwnd, &ps );
+            return 0;
+        case WM_COMMAND:
+            switch(LOWORD(wParam)) {
+                case ID_SAVEBTN:
+                    // ID_SAVEBTN 
+                    iLength = GetWindowTextLength(hwndChild[ID_EDITBOX]);
+                    szBuffer = malloc(iLength*2);
+                    GetWindowText( hwndChild[ID_EDITBOX], szBuffer, iLength + 1 );
+                    GetWindowText( hwndChild[ID_TXTINPT], szInput, 256 );
+                    MessageBox(NULL, szBuffer, szInput, MB_OK | MB_ICONINFORMATION);
+                    return 0;
+            }
+            return 0;
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            return 0;
+    }
+}
+
+// 简单的热键处理，这里的示例为 
+// Ctrl + Home ::: show/hide window
+// Ctrl + w ::: close window
+DWORD  WINAPI _RegistHotKey( LPARAM lParam ){
+    MSG  msg = { 0 };
+    RegisterHotKey(NULL, 0x24, MOD_CONTROL, VK_HOME);
+    RegisterHotKey(NULL, 0x25, MOD_CONTROL, 'W');
+    while (GetMessage(&msg, 0, 0, 0)){
+        if (WM_HOTKEY == msg.message){
+            if (VK_HOME == HIWORD(msg.lParam)){
+                if (IsWindowVisible((HANDLE)lParam)){
+                    ShowWindow((HANDLE)lParam, SW_HIDE);
+                }else{
+                    ShowWindow((HANDLE)lParam, SW_RESTORE);
+                }
+            }
+            if ('W' == HIWORD(msg.lParam)){
+                PostMessage((HANDLE)lParam, WM_QUIT, 0, 0);
+            }
+        }
+    }
+}
+// 后面的内容是固定不需要修改的
+LRESULT CALLBACK WndProc( HWND, UINT, WPARAM, LPARAM);
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdShow ){
+    static TCHAR szAppName[] = TEXT( "v" );
+    static HWND  hwnd;
+    MSG      msg;
+    WNDCLASS wndclass;
+    wndclass.lpfnWndProc   = WndProc;
+    wndclass.style         = CS_HREDRAW | CS_VREDRAW;
+    wndclass.hInstance     = hInstance;
+    wndclass.cbClsExtra    = 0;
+    wndclass.cbWndExtra    = 0;
+    wndclass.hbrBackground = CreateSolidBrush(RGB(236, 233, 216));
+    wndclass.hCursor       = LoadCursor( NULL, IDC_ARROW );
+    wndclass.hIcon         = LoadIcon( NULL, IDI_APPLICATION );
+    wndclass.lpszClassName = szAppName;
+    wndclass.lpszMenuName  = NULL;
+    if (!RegisterClass(&wndclass)) {
+        MessageBox( NULL, TEXT("cannot create regist window."), TEXT("error"), MB_OK | MB_ICONERROR );
+        return 0;
+    }
+    hwnd = CreateWindow( szAppName, TEXT("vvv"), WS_OVERLAPPEDWINDOW,
+        100, 100,
+        600, 200,
+        NULL, NULL, hInstance, NULL );
+    CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)_RegistHotKey, hwnd, 0, 0);
+    ShowWindow( hwnd, iCmdShow );
+    UpdateWindow( hwnd );
+    while (GetMessage(&msg, NULL, 0, 0)){
+        TranslateMessage( &msg );
+        DispatchMessage( &msg );
+    }
+    return msg.wParam;
+}
+LRESULT CALLBACK WndProc( HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam ) {
+    _WindowSwitch( hwnd, message, wParam, lParam );
+    return DefWindowProc( hwnd, message, wParam, lParam );
+}
+]]>
+    </content>
+    <tabTrigger>tcc</tabTrigger>
+    <scope>source.c</scope>
+</snippet>
