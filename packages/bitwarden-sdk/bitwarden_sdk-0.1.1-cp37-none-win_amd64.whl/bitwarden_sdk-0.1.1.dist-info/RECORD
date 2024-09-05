@@ -1,0 +1,9 @@
+bitwarden_sdk-0.1.1.dist-info/METADATA,sha256=DEIEoYI3rRkYScLidvu4PZODT1G--gzokBos03jcq9A,1754
+bitwarden_sdk-0.1.1.dist-info/WHEEL,sha256=CBTK_9Ishu9ibVYhKBJ6js9-sB7uYBt3fFykt_Hc17s,94
+bitwarden_sdk-0.1.1.dist-info/licenses/LICENSE,sha256=OtdqQBlfAMlvt4LJf-4SktZaJ25yLyp844WgSbdfLk4,16141
+bitwarden_sdk/bitwarden_client.py,sha256=h73vuVNSb9aRv8hDlXKJcqBMJPx7bF0VAgSNdWCBaYo,6700
+bitwarden_sdk/schemas.py,sha256=Q909s6igLZjCXpXM7an60ptMqk2HZ4cuWXHY9Kiy5yw,121483
+bitwarden_sdk/__init__.py,sha256=445VAfDRKK48UWqB_DSMvnWeQc4J-l4JIlwAIHw0Bdk,328
+bitwarden_py/__init__.py,sha256=sTORsG7CXrYamPkwFGQB5o6fIrQwF5fYmD89xnqrJw8,131
+bitwarden_py/bitwarden_py.pyd,sha256=lM3Rz7TmF3dqTE0BRHHwLfN8qhUa3C3WXSU7evYoIQI,5713408
+bitwarden_sdk-0.1.1.dist-info/RECORD,,
