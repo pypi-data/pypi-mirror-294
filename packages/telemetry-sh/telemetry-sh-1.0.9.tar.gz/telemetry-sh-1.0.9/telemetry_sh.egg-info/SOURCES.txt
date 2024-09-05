@@ -1,0 +1,10 @@
+README.md
+setup.py
+telemetry_sh/__init__.py
+telemetry_sh/telemetry.py
+telemetry_sh/telemetry_async.py
+telemetry_sh.egg-info/PKG-INFO
+telemetry_sh.egg-info/SOURCES.txt
+telemetry_sh.egg-info/dependency_links.txt
+telemetry_sh.egg-info/requires.txt
+telemetry_sh.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: telemetry-sh
+Version: 1.0.9
+Summary: A simple telemetry logging SDK for Python.
+Home-page: https://github.com/telemetry-sh/telemetry-python
+Author: JR R
+Author-email: thebuilderjr93@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
