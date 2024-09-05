@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: knife-bot
+Version: 0.1.3
+Summary: 
+Author: faith
+Author-email: faith0831@163.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+poetry build
+poetry publish
