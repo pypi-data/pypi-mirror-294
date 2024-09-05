@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: tiktokautouploader
+Version: 2.7
+Summary: Upload or schedule videos to TikTok with TikTok sounds and hashtags that work.
+Project-URL: Homepage, https://github.com/haziq-exe/TikTokAutoUploader
+Author-email: HAZIQ KHALID <haziqmk123@gmail.com>
+License-File: LICENSE.md
+Keywords: autoupload,tiktok,tiktokautoupload
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow>=8.0.0
+Requires-Dist: playwright>=1.0.0
+Requires-Dist: requests>=2.0.0
+Requires-Dist: scikit-learn>=0.24.0
