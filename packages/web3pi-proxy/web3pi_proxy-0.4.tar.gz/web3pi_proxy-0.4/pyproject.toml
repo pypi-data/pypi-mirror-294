@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "web3pi-proxy"
+version = "0.4"
+description = "RPC Reverse Proxy - proxy to Web3 Pi Ethereum nodes"
+authors = []
+license = "GNU GENERAL PUBLIC LICENSE Version 3"
+keywords = ["web3pi", "web3", "rpi", "raspberry", "geth", "ethereum", "proxy"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+]
+repository = "https://github.com/Web3-Pi/web3-reverse-proxy"
+readme = "README.md"
+
+include = [
+    "admin/**/*.html"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httptools = ">=0.6.1"
+python-dotenv = ">=1.0.1"
+requests = ">=2.31.0"
+urllib3 = ">=2.1.0"
+upnpclient = ">=1.0.3"
+whatismyip = ">=2022.7.10"
+
+peewee = "^3.17.6"
+peewee-migrate = "^1.12.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+mypy = "^1.10.1"
+pylint = "^3.2.5"
+pytest = "^8.2.2"
+pytest-subtests = "^0.12.1"
+poethepoet = "^0.27.0"
+
+[tool.poetry.scripts]
+web3pi-proxy = "web3pi_proxy.__main__:main"
+
+
+[tool.mypy]
+disallow_untyped_calls = false
+disallow_untyped_decorators = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+color_output = true
+pretty = true
+exclude = """
+(?x)(
+    test
+  )
+"""
+
+
+[tool.poe.tasks]
+checks = {sequence = ["check_format", "check_lint", "check_typing"], help = "Run all available code checks"}
+check_format = {sequence = ["_check_format_isort", "_check_format_black"]}
+_check_format_isort = "isort --check-only --diff ."
+_check_format_black = "black --check --diff ."
+check_lint = "pylint ./web3pi_proxy"
+check_typing = "mypy ."
+
+tests_unit = "pytest tests/web3pi_proxy/unit"
+
+create_migrations = "python -c 'from web3pi_proxy.db import create_migrations; create_migrations()'"
+
+init_test_accounts = "python -c 'from web3pi_proxy.utils.test_accounts import init_test_accounts; init_test_accounts()'"
