@@ -1,0 +1,11 @@
+README.md
+setup.py
+claim_identification_prompt_tuning.egg-info/PKG-INFO
+claim_identification_prompt_tuning.egg-info/SOURCES.txt
+claim_identification_prompt_tuning.egg-info/dependency_links.txt
+claim_identification_prompt_tuning.egg-info/requires.txt
+claim_identification_prompt_tuning.egg-info/top_level.txt
+genrator/__init__.py
+genrator/genrator.py
+genrator/load_and_preprocess_data.py
+genrator/main.py

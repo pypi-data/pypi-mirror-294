@@ -1,0 +1,8 @@
+google-generativeai
+pandas
+scikit-learn
+numpy
+nltk
+rouge
+scipy
+python-dotenv
