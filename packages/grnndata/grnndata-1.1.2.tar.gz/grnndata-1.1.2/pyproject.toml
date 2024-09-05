@@ -1,0 +1,44 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "grnndata"
+version = "1.1.2"
+description = "Awesome gene regulatory network enhanced anndata"
+authors = [ "jkobject",]
+readme = [ "README.md", "LICENSE",]
+license = "GPL3"
+repository = "https://github.com/cantinilab/GRnnData"
+keywords = [ "scRNAseq", "gene regulatory networks", "anndata", "scPRINT",]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+anndata = "*"
+scipy = "*"
+networkx = "*"
+gseapy = "1.*"
+scikit-learn = "*"
+numpy = "*"
+leidenalg = "*"
+louvain = "*"
+natsort = "*"
+powerlaw = "*"
+pyvis = "*"
+d3graph = "*"
+scanpy = "*"
+pytest = { version = "^7.4.3", optional = true }
+coverage = { version = "^7.3.2", optional = true }
+flake8 = { version = "^6.1.0", optional = true }
+black = { version = "^23.10.1", optional = true }
+isort = { version = "^5.12.0", optional = true }
+pytest-cov = { version = "^4.1.0", optional = true }
+mypy = { version = "^1.6.1", optional = true }
+gitchangelog = { version = "^3.0.4", optional = true }
+mkdocs = { version = "^1.5.3", optional = true }
+
+[tool.poetry.extras]
+dev = [ "pytest", "toml", "coverage", "flake8", "black", "isort", "pytest-cov", "mypy", "gitchangelog", "mkdocs", "mkdocs-git-revision-date-localized-plugin", "mkdocstrings", "mkdocs-git-authors-plugin", "mkdocs-jupyter", "mkdocstrings-python"]
+
+[tool.poetry.scripts]
+grnndata = "grnndata.__main__:main"
