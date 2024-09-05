@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+lced_variables/__init__.py
+lced_variables/dict_var.py
+lced_variables.egg-info/PKG-INFO
+lced_variables.egg-info/SOURCES.txt
+lced_variables.egg-info/dependency_links.txt
+lced_variables.egg-info/top_level.txt
