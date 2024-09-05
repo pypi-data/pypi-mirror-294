@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-admin-pro
+Version: 0.1.0
+Summary: Django Admin Pro
+License: MIT
+Author: Krunal Dodiya
+Author-email: kunal.dodiya1@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Django Genie
+
+**Django Genie** is a Python package for creating elegant and intuitive admin panels for Django projects. Inspired by Laravel Nova, Django Genie aims to bring a modern, feature-rich, and highly customizable admin interface to your Django applications.
+
+## Features
+
+- **Modern UI/UX**: An elegant, user-friendly interface inspired by Laravel Nova.
+- **Customizable Panels**: Easily customize the appearance and functionality of admin panels.
+- **Advanced Filtering**: Powerful filters and search capabilities for managing data.
+- **Resource Management**: Seamlessly manage resources and relationships.
+- **Flexible Field Types**: Support for various field types and custom fields.
+- **Role-Based Access**: Control user permissions and access levels with ease.
+
+## Installation
+
+You can install Django Genie using pip:
+
+```bash
+pip install django-admin-pro
+```
+
