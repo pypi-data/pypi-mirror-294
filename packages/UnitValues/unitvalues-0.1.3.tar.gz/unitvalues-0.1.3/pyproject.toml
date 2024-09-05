@@ -1,0 +1,22 @@
+[project]
+name = "UnitValues"
+version = "0.1.3"
+dependencies = [
+  "numpy >= 1.23.2"
+]
+requires-python = ">=3.10"
+authors = [
+  { name="Brody Howard", email="brody.howard@mail.utoronto.ca" },
+]
+description = "A small package for using units in Python. Allows for computation with dimensioned qauntities and allows you to convert between different units. Do anything you would do with regular floats or integers in Python except now with units. Package is compatible with NumPy, SciPy + Pandas are in the works. I think you'll find this implementation more elegant then most other unit packages."
+readme = "README.md"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/BroRocket/unitvalue/"
+Issues = "https://github.com/BroRocket/unitvalue/issues"

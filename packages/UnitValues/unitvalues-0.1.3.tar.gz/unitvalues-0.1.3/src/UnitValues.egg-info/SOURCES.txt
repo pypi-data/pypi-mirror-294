@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/UnitValues.egg-info/PKG-INFO
+src/UnitValues.egg-info/SOURCES.txt
+src/UnitValues.egg-info/dependency_links.txt
+src/UnitValues.egg-info/requires.txt
+src/UnitValues.egg-info/top_level.txt
+src/unitvalue/__init__.py
+src/unitvalue/units.py
