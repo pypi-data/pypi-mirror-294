@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+doc2markdown/__init__.py
+doc2markdown/converter.py
+doc2markdown.egg-info/PKG-INFO
+doc2markdown.egg-info/SOURCES.txt
+doc2markdown.egg-info/dependency_links.txt
+doc2markdown.egg-info/entry_points.txt
+doc2markdown.egg-info/requires.txt
+doc2markdown.egg-info/top_level.txt
+tests/test_converter.py
