@@ -1,0 +1,76 @@
+[build-system]
+requires = ["build", "setuptools-scm"]
+
+[project]
+dynamic = ["version"]
+name = "dsss"
+description = "Dead-Simple SDMX Server"
+authors = [{ name = "DSSS contributors" }]
+maintainers = [
+  { name = "Paul Natsuo Kishimoto", email = "mail@paul.kishimoto.name" },
+]
+readme = "README.rst"
+classifiers = [
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.11"
+dependencies = [
+  "sdmx1 >= 2.17.0",
+  "starlette",
+]
+
+[project.optional-dependencies]
+doc = [
+  "sphinx-book-theme",
+]
+git-store = [
+  "GitPython"
+]
+tests = [
+  "dsss[git-store]",
+  "pytest >= 8",
+  "pytest-cov",
+  "sdmx1[tests]",  # for Jinja2
+  "starlette[full]",  # for httpx
+]
+
+[project.urls]
+Documentation = "https://dsss.readthedocs.io"
+Repository = "https://github.com/khaeru/dsss"
+
+[tool.coverage.report]
+exclude_also = [
+  # Imports only used by type checkers
+  "if TYPE_CHECKING:",
+  # Currently not implemented == not tested. In the future, not
+  # implemented behaviour will be tested to fail in specific ways.
+  "raise NotImplementedError",
+]
+omit = ["dsss/storage/google_cloud_storage.py"]
+
+[tool.mypy]
+exclude = ["^build/"]
+
+[[tool.mypy.overrides]]
+# Packages for which no type hints are available
+module = ["google.cloud"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+# - Report coverage only for the current package.
+# - By default, do not generate any coverage reports.
+addopts = "--cov=dsss --cov-report="
+
+[tool.ruff.lint]
+select = ["C9", "E", "F", "I", "W"]
+mccabe.max-complexity = 10
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools_scm]
