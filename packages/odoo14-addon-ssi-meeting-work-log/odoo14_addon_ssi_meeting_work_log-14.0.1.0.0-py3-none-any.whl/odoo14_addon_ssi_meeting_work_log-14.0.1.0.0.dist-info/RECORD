@@ -1,0 +1,10 @@
+odoo/addons/ssi_meeting_work_log/README.rst,sha256=VyQR8mq4k9W8KnU4_TmJmh7Dglg7F1ePeZIL9-r1XUM,1243
+odoo/addons/ssi_meeting_work_log/__init__.py,sha256=r5N6OPy8398Gafsr6OVbrNPHjMh7GNTmTPxSKA_LjKQ,181
+odoo/addons/ssi_meeting_work_log/__manifest__.py,sha256=2ovjUYCa_1Rf4AlKC3TK_gKBT7xYpZHW2sOWY1pyLTU,542
+odoo/addons/ssi_meeting_work_log/models/__init__.py,sha256=Rijv9tmGec-RpyjLpkbgWqtOzkgllhZfFb2Xite-uqc,208
+odoo/addons/ssi_meeting_work_log/models/calendar_event.py,sha256=P9MRwJU_z2oBSy2d1-hWWUCvGOCRwSJM73h2-xLIc7M,372
+odoo/addons/ssi_meeting_work_log/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_meeting_work_log-14.0.1.0.0.dist-info/METADATA,sha256=SZDzz4_WgGsocXi-FR5KlppZsEP36BZ9kFit-zeykmw,1795
+odoo14_addon_ssi_meeting_work_log-14.0.1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_meeting_work_log-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_meeting_work_log-14.0.1.0.0.dist-info/RECORD,,
