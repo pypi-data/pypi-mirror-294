@@ -1,0 +1,4 @@
+pywin32>=306
+typing-extensions>=4.11.0
+PySide6-Essentials>=6.7.0
+gitpython>=4.0.1
