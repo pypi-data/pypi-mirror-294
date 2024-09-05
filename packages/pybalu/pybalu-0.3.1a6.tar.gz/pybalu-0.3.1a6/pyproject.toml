@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "pybalu"
+version = "0.3.1-alpha6"
+description = "Python3 implementation of the computer vision and pattern recognition library Balu."
+authors = [ "Marco Bucchi <mabucchi@uc.cl>", "Domingo Mery <domingo.mery@uc.cl>" ]
+maintainers = [ "Christian Pieringer <cppierin@uc.cl>" ]
+readme = "README.md"
+license = "GNU"
+keywords = ["computer vision", "pattern recognition", "machine learning", "x-ray imaging"]
+homepage = "https://github.com/computervision-xray-testing"
+repository = "https://github.com/computervision-xray-testing/pybalu"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "^2.0.1"
+scipy = "^1.14.0"
+pillow = "^10.4.0"
+imageio = "^2.34.2"
+scikit-learn = "^1.5.1"
+scikit-image = "^0.24.0"
+tqdm = "^4.66.5"
+
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
+
+
+[tool.poetry.group.dev.dependencies]
+cython = ">=3.0.0"
+setuptools = ">=69.0.0"
+ruff = "^0.5.7"
+matplotlib = "^3.9.1.post1"
+pytest = "^8.3.2"
+pytest-benchmark = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core", "Cython", "setuptools >= 69.0.0", "numpy"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 100
+
+
+[tool.ruff.format]
+indent-style = "tab"
+docstring-code-format = true
+docstring-code-line-length = 100
