@@ -1,0 +1,2 @@
+[console_scripts]
+llm-components = llm_components.cli:main
