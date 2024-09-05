@@ -1,0 +1,6 @@
+horovod==0.28.1
+matplotlib
+numpy
+PyYAML
+setuptools
+tensorflow
