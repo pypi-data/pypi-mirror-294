@@ -1,0 +1,16 @@
+aws_terraform_registry/__init__.py,sha256=tEljtZukKpJFVWbzchZ28hSzzmQPwaQapOsVynSai1w,467
+aws_terraform_registry/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+aws_terraform_registry/cli.py,sha256=ikUiLe_-cMtL9hC4z315XIqYoTXZD-qvL18VkYwXnMo,5400
+aws_terraform_registry/common/__init__.py,sha256=4oZvOmbZytpBVU22xlyc-c3r6puteAtQOUYGl1wuYEs,418
+aws_terraform_registry/common/logger.py,sha256=Y_W0fEX3_yt45LCJC1uKsXxCeqHyiruTxyhNT7n8YRk,1521
+aws_terraform_registry/common/matrix.py,sha256=GfXsJXnnIxlqZGXcBpQVjtcvQccs-pYwL5m_c7VNuF8,9388
+aws_terraform_registry/common/model.py,sha256=7k4EHxCd0tbZmuaWeMcEW08qB20It34q5NS5DCmMOXk,1674
+aws_terraform_registry/common/publish.py,sha256=fnPuFwXmzHvkTShvW9egwndWsVyC_kXk9CqVEdGmPHs,2731
+aws_terraform_registry/common/release.py,sha256=qIkfCSLRdWq-oWAZoDKHsjusuA4SACo_cxj5Z9RhBWc,3670
+aws_terraform_registry/common/token.py,sha256=CpJ_3QVWIQAxlA0NLGBzGWPrZ9I5k_yzhauMhVJHoKk,1951
+aws_terraform_registry/config.py,sha256=L_hCk132u2BmJ9-5fX9bgjCElHUM6qPo31v5Jnck9lE,2647
+aws_terraform_registry-1.1.5.dist-info/LICENSE.md,sha256=1C06EUrcRoPDnbTocB1SPNePohxodVCjEUmRh7Vj4y8,1100
+aws_terraform_registry-1.1.5.dist-info/METADATA,sha256=OkfmHmJ5XZwPCXO32TBocV6NQBZcWxQOBJDcnsiC45s,8990
+aws_terraform_registry-1.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aws_terraform_registry-1.1.5.dist-info/entry_points.txt,sha256=S0O-SJjXc6fOjRmnBtDLYrcg3ZE6LVxWeKjnX70lJSA,55
+aws_terraform_registry-1.1.5.dist-info/RECORD,,
