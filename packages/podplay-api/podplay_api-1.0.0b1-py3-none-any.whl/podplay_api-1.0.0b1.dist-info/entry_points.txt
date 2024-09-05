@@ -1,0 +1,3 @@
+[console_scripts]
+podplay=podplay_api.cli:main
+
