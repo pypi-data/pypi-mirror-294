@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wessql/__init__.py
+wessql/wessql.py
+wessql.egg-info/PKG-INFO
+wessql.egg-info/SOURCES.txt
+wessql.egg-info/dependency_links.txt
+wessql.egg-info/requires.txt
+wessql.egg-info/top_level.txt
