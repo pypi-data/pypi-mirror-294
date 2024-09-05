@@ -1,0 +1,13 @@
+site_name: PSPM
+repo_url: https://github.com/jahn16/pspm
+theme:
+  name: material
+  favicon:  img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+markdown_extensions:
+  - markdown_gfm_admonition
+  - footnotes
+plugins:
+    - search
+    - awesome-pages
