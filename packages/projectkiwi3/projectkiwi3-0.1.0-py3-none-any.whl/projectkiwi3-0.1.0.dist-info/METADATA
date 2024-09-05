@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: projectkiwi3
+Version: 0.1.0
+Summary: This module is a means for interfacing with projectkiwi.io using python.
+Author-email: Michael Thoreau <michael@projectkiwi.io>
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+**Projectkiwi** test
