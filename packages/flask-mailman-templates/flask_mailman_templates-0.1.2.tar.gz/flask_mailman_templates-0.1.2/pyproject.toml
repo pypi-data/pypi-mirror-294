@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "flask-mailman-templates"
+version = "0.1.2"
+description = "Templates for Flask-Mailman"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-mailman-templates"
+packages = [{include = "flask_mailman_templates.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask-mailman = "^1.1"
+jinja-frontmatter = "^0.1"
+mjml = { version = "^0.11", extras = ["css_inlining"] }
+markdown = "^3.6"
+premailer = "^3.10"
+html2text = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+ruff = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
