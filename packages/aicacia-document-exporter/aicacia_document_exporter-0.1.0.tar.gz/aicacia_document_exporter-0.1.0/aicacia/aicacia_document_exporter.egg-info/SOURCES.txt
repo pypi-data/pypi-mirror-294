@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+aicacia/aicacia_document_exporter.egg-info/PKG-INFO
+aicacia/aicacia_document_exporter.egg-info/SOURCES.txt
+aicacia/aicacia_document_exporter.egg-info/dependency_links.txt
+aicacia/aicacia_document_exporter.egg-info/requires.txt
+aicacia/aicacia_document_exporter.egg-info/top_level.txt
+tests/test_simple_exporter.py
