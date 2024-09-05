@@ -1,0 +1,10 @@
+fastapi_jwt_auth3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_jwt_auth3/cli.py,sha256=c2rHpwZK7QtxIP0eRyBNPXeAjfrkNgg3TYoty78tnUk,3676
+fastapi_jwt_auth3/errors.py,sha256=i2YDtRYRPLA2_ciRgjLuuYzsfeeMV81qibUc-2ymBsg,827
+fastapi_jwt_auth3/jwtauth.py,sha256=PJgaxn140T0MbLhxrLXAxQSEeYEdCCEst726jYZtiO4,19004
+fastapi_jwt_auth3/models.py,sha256=xtlANkJO3GwGDLTSCDT0tu_myO-r4PgvCJQUWPExurY,5644
+fastapi_jwt_auth3-0.3.5.dist-info/METADATA,sha256=ni6EDYA1Orh-q_sJglGVa2aDWbgreqM_I-ZPQnnY8T8,7220
+fastapi_jwt_auth3-0.3.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fastapi_jwt_auth3-0.3.5.dist-info/entry_points.txt,sha256=15hIBg3wCn3fP7Hy5JnHJ3NlNLBrLYahpxfCkwq9HrY,53
+fastapi_jwt_auth3-0.3.5.dist-info/licenses/LICENSE,sha256=MZdK6SW5IIq09fhgPlAVEaxjFX7RaJdheT_1guqiP2Q,1065
+fastapi_jwt_auth3-0.3.5.dist-info/RECORD,,
