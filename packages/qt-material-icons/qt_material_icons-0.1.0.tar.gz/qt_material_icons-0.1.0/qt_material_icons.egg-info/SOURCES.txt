@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+qt_material_icons/__init__.py
+qt_material_icons/_icon.py
+qt_material_icons.egg-info/PKG-INFO
+qt_material_icons.egg-info/SOURCES.txt
+qt_material_icons.egg-info/dependency_links.txt
+qt_material_icons.egg-info/requires.txt
+qt_material_icons.egg-info/top_level.txt
+qt_material_icons/resources/__init__.py
+qt_material_icons/resources/icons_outlined.py
+qt_material_icons/resources/icons_rounded.py
+qt_material_icons/resources/icons_sharp.py
