@@ -1,0 +1,10 @@
+sphinxcontrib/mdxbuilder/__init__.py,sha256=XFJbezyBeKcxEvS5q13Rhs1qqHZ7jLGvNIiCxPnAB_c,1111
+sphinxcontrib/mdxbuilder/builders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/mdxbuilder/builders/mdx.py,sha256=V3GJYHJbFd0V7nuk0u3KTT5NlqjzpR4buo5B3vdgQvA,2763
+sphinxcontrib/mdxbuilder/writers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/mdxbuilder/writers/mdx.py,sha256=ouXadX25jBoSsf2NxG2783pjuqBWAqEY6yHKTGTdFlQ,25301
+sphinxcontrib_mdxbuilder-0.1.1.dist-info/entry_points.txt,sha256=2NziWUjs4UsSOHyZ-Fjh9i_wcIq_L6yg3YZbP9SworQ,77
+sphinxcontrib_mdxbuilder-0.1.1.dist-info/LICENSE,sha256=6nrxbj91cfxgGfPf-JhlDoNie-opCW6ME6ZpygB_IlY,1069
+sphinxcontrib_mdxbuilder-0.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sphinxcontrib_mdxbuilder-0.1.1.dist-info/METADATA,sha256=YtaXEPSh4ZcLT8crrLNCShcmGY_7hc2Tk6Jau-yQ3as,887
+sphinxcontrib_mdxbuilder-0.1.1.dist-info/RECORD,,
