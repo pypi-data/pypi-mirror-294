@@ -1,0 +1,12 @@
+.project
+.pydevproject
+*.pyc
+*.egg-info
+build/
+dist/
+test.db
+.tox
+.coverage
+coverage.xml
+docs/_build
+.idea
