@@ -1,0 +1,5 @@
+[console_scripts]
+execenv=execenv:execenv
+execenv-completion=execenv:execenv_completion
+execenv-echo=execenv:execenv_echo
+
