@@ -1,0 +1,9 @@
+riotmanifest/__init__.py,sha256=F9AgoiHzgFdckfxlIKYXmeUKKhYcbhePshdDe8vU5Wc,863
+riotmanifest/external_manifest.py,sha256=eiIjuZw5NXH4kU3qb8GU42LmZxJCVp03OElE9Dgb1gQ,8108
+riotmanifest/extractor.py,sha256=wymwblwmFGkc_e5XhOP4In6C_NVoLqtZYjUhlg9Ni3I,6364
+riotmanifest/game.py,sha256=P9GfWn8-Ygou6qp5q-FN4dP1oxuXbUPWfV86qVSIGro,6174
+riotmanifest/native_manifest.py,sha256=aKPiytbAah6UcwN1WeCQaI1QLLrK8OcRpANybfkW8-A,21346
+riotmanifest-1.1.0.dist-info/METADATA,sha256=NDKocC8_nw5L3y3H7VsTyE8NelQoYQnb6Fb6l6P1MAk,4179
+riotmanifest-1.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+riotmanifest-1.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+riotmanifest-1.1.0.dist-info/RECORD,,
