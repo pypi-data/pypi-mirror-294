@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "healthchain"
+version = "0.3.0"
+description = "Remarkably simple testing and validation of AI/NLP applications in healthcare context."
+authors = ["Jennifer Jiang-Kells <jenniferjiangkells@gmail.com>", "Adam Kells <adamjkells93@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://dotimplement.github.io/HealthChain/"
+keywords = ["nlp", "ai", "llm", "healthcare", "ehr", "mlops"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+include = ["healthchain/templates/*"]
+
+[project.urls]
+"Homepage" = "https://dotimplement.github.io/HealthChain/"
+"Repository" = "https://github.com/dotimplement/HealthChain"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+pydantic = "^2.7.1"
+requests = "^2.31.0"
+colorama = "^0.4.6"
+faker = "^25.1.0"
+fastapi = "^0.111.0"
+termcolor = "^2.4.0"
+spyne = "^2.14.0"
+lxml = "^5.2.2"
+xmltodict = "^0.13.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.2"
+pytest = "^8.2.0"
+pre-commit = "^3.5.0"
+pytest-anyio = "^0.0.0"
+trio = "^0.25.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.34"
+mkdocstrings = "^0.26.0"
+mkdocstrings-python = "^1.11.1"
+
+[tool.poetry.scripts]
+healthchain = "healthchain.cli:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
