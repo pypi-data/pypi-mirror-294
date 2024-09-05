@@ -1,0 +1,3 @@
+[console_scripts]
+datachecks=dcs-core.cli.cli:main
+
