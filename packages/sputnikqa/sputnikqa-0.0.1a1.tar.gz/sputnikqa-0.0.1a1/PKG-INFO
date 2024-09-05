@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sputnikqa
+Version: 0.0.1a1
+Summary: 
+License: MIT
+Author: Crenom
+Author-email: pytimdev@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: selenium (>=4.24.0,<5.0.0)
