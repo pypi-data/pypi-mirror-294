@@ -1,0 +1,12 @@
+WedgieIntegrator/__init__.py,sha256=FuweXVA9QC73BJMU7xZsmDZh4Zr3ZJwYp-pbmOJj0aE,178
+WedgieIntegrator/asyncio_workaround.py,sha256=01YxN7P2QZIjmYZ_9Hny26D3mKeaOEvZmZdbZSryW7I,363
+WedgieIntegrator/auth.py,sha256=dkltanGZPVZs-ogoYQZTY4OLi3O1B7Dg23BdspY8YcI,2466
+WedgieIntegrator/client.py,sha256=TeFHerKv8Ig_irvEVAu74ZuWhwy5mW08hBulPxifVtw,10373
+WedgieIntegrator/exceptions.py,sha256=RqpuhDRX62XZO9MCS3g6Bku8TkFu1pr7rGClZ1jNMEM,383
+WedgieIntegrator/response.py,sha256=_UKXJJJThCCVR1LTWXUs8Y_ihU4urk61MXSvE3HALCc,4247
+WedgieIntegrator/utils.py,sha256=LNGX0zl_0eZH_5p1A-szK6N38ySVWyBCzt3N7r76Q1o,4209
+WedgieIntegrator-0.1.4.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+WedgieIntegrator-0.1.4.3.dist-info/METADATA,sha256=eXALw_VXDv6ttmltMxsSLWb4e4UoDSl0LNaiuvhdWmo,2102
+WedgieIntegrator-0.1.4.3.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+WedgieIntegrator-0.1.4.3.dist-info/top_level.txt,sha256=6g97GASXURr16Wor725J3-EQ0906P94YLuBSG7-Ewx0,17
+WedgieIntegrator-0.1.4.3.dist-info/RECORD,,
