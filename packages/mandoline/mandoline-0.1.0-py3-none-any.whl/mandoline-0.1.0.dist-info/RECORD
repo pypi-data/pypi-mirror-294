@@ -1,0 +1,14 @@
+mandoline/__init__.py,sha256=0F4rx2LAOk3Wa5U208EzfBgbe-R72RhBk7O8fSSEBV0,643
+mandoline/client.py,sha256=lb6u1aEcUz_TyU248SbBSyu20lwuaYzP-oAwDiBsiAM,9387
+mandoline/config.py,sha256=YpuNbzuuQB2pHP0fqMKHMK4BKbGP1fwPTSB4QcfirH8,1083
+mandoline/connection_manager.py,sha256=3er80SutvndVE6GhB3DiPUFxRzXquDNbbhNkf6N8Mas,2810
+mandoline/errors.py,sha256=yShSHQRbQio2a4YGOwJUO3SlQHhInbgKj1MfFGGrrAw,5079
+mandoline/logger.py,sha256=cdnqjHssoNU_wbiAyZkQwt1dVfRSfR_twAfcQC1Uqxs,378
+mandoline/models.py,sha256=iAlP7nV0p19k2q_rjbe2bxEzk_YgvhWQfYeQg34bLvQ,2327
+mandoline/types.py,sha256=iVLUhagN_kVVUyc9rNM9CLi7jcA8IaJ0L0Jk58Jgzrs,653
+mandoline/utils.py,sha256=LZ2dv9_HNcDutU4_p1zXxXReWt2p_0S-PxmdiGJXwB8,648
+mandoline/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandoline-0.1.0.dist-info/METADATA,sha256=1BoUwJG2DqVx4icJiy9jPk_t98RrWJMZx_H8l-VkBPQ,4569
+mandoline-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mandoline-0.1.0.dist-info/licenses/LICENSE,sha256=oWf95tuaonWQDkmiY3eiopNEQGZs7zFnU9utNIElDho,11342
+mandoline-0.1.0.dist-info/RECORD,,
