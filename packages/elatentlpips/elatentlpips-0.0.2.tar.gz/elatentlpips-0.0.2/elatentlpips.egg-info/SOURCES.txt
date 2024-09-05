@@ -1,0 +1,17 @@
+LICENSE
+LICENSE-NVIDIA
+README.md
+setup.py
+elatentlpips/__init__.py
+elatentlpips/ada_aug.py
+elatentlpips/custom_ops.py
+elatentlpips/elatentlpips.py
+elatentlpips/minguk.py
+elatentlpips/style_misc.py
+elatentlpips/vgg16.py
+elatentlpips.egg-info/PKG-INFO
+elatentlpips.egg-info/SOURCES.txt
+elatentlpips.egg-info/dependency_links.txt
+elatentlpips.egg-info/not-zip-safe
+elatentlpips.egg-info/requires.txt
+elatentlpips.egg-info/top_level.txt
