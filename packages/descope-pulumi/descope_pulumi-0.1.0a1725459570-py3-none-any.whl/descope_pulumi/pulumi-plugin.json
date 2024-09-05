@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "descope",
+  "version": "0.1.0-alpha.1725459570",
+  "server": "github://api.github.com/descope"
+}
