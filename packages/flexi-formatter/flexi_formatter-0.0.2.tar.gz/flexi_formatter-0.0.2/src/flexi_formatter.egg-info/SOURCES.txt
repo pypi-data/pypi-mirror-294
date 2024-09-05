@@ -1,0 +1,13 @@
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/flexi_formatter/__init__.py
+src/flexi_formatter/reformat_flexiplex_tags.py
+src/flexi_formatter.egg-info/PKG-INFO
+src/flexi_formatter.egg-info/SOURCES.txt
+src/flexi_formatter.egg-info/dependency_links.txt
+src/flexi_formatter.egg-info/entry_points.txt
+src/flexi_formatter.egg-info/requires.txt
+src/flexi_formatter.egg-info/top_level.txt
