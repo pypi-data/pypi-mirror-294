@@ -1,0 +1,6 @@
+depthai_nodes
+dist
+docs
+examples
+media
+tests
