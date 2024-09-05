@@ -1,0 +1,11 @@
+README.md
+setup.py
+IdentificationOfClaims.egg-info/PKG-INFO
+IdentificationOfClaims.egg-info/SOURCES.txt
+IdentificationOfClaims.egg-info/dependency_links.txt
+IdentificationOfClaims.egg-info/requires.txt
+IdentificationOfClaims.egg-info/top_level.txt
+genrator/__init__.py
+genrator/genrator.py
+genrator/load_and_preprocess_data.py
+genrator/main.py
