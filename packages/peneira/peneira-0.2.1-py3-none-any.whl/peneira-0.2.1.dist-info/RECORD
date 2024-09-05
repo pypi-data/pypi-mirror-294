@@ -1,0 +1,11 @@
+peneira/__init__.py,sha256=XZBLcu_vxlgXAtLh2i4FVidg3hCXygRgCaFJsrEAaTs,333
+peneira/cli.py,sha256=VhSj-nsVqrT15I2IpHUFn--6peXqozaSVf0F1EvbWnY,1767
+peneira/exporters.py,sha256=PB18t6_ypFARjNjS9TP4Gj7EcMwYF53MVkiDT3Sxg_s,996
+peneira/sources/__init__.py,sha256=IWNeRBykhms0dSjDZBaJvL4iAGBfdQHQVSwf6JViS-c,331
+peneira/sources/open_alex.py,sha256=KiAIjaaI1kGz17NasiGjKcNTEvq-rbqNSgZLn7tgBMU,3525
+peneira/sources/semantic_scholar.py,sha256=53QgfFrfilBF3XRad9MxZzHlstB5TP4rnD_tp3hSq6w,1908
+peneira-0.2.1.dist-info/LICENSE,sha256=0DLjbieO8HUaSC9ggGYnMdOgkDda0UnFx-6Is3nsiaE,1072
+peneira-0.2.1.dist-info/METADATA,sha256=2cdzsFoCJFkjgNjKx7DQxceua_25uGLACTq9odpK3_4,3258
+peneira-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+peneira-0.2.1.dist-info/entry_points.txt,sha256=GEuI4G5SivrTSUUmaFNs0I_69lMN_pKmSrFMsh8jBcA,44
+peneira-0.2.1.dist-info/RECORD,,
