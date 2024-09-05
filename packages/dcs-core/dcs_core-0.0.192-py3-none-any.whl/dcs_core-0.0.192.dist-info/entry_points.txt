@@ -1,0 +1,3 @@
+[console_scripts]
+dcs-core=dcs.cli.cli:main
+
