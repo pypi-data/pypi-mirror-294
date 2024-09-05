@@ -1,0 +1,31 @@
+{
+    "path": [
+        "$FXGUI"
+    ],
+    "load_package_once": true,
+    "enable": true,
+    "version": "3.1.0",
+    "env": [
+        {
+            "FXGUI": [
+                {
+                    "houdini_os == 'windows'": "Path/to/fxgui"
+                },
+                {
+                    "houdini_os == 'linux'": ""
+                },
+                {
+                    "houdini_os == 'macos'": ""
+                }
+            ]
+        },
+        {
+            "PYTHONPATH": [
+                "$FXGUI",
+                {
+                    "method": "append"
+                }
+            ]
+        }
+    ]
+}

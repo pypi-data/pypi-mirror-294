@@ -1,0 +1,17 @@
+{
+    "terminal.integrated.env.windows": {
+        "QT_API": "pyside2"
+    },
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "fxdcc",
+        "fxgui",
+        "fxstyle",
+        "fxutils",
+        "fxwidgets",
+        "pixmap",
+        "qicon",
+        "qpixmap",
+        "splashcreen"
+    ]
+}
