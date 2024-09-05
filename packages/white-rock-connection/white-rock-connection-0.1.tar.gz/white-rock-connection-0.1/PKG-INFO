@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: white-rock-connection
+Version: 0.1
+Summary: Library to connect modules whith broker and message apps
+Home-page: https://github.com/Baoba-Investimentos/white-rock-connection
+Author: Baoba investimentos - White rock project
+Author-email: baoba.whiterock@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+
+UNKNOWN
+

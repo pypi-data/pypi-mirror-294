@@ -1,0 +1,4 @@
+pyyaml
+redis
+requests
+telepot
