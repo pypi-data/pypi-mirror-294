@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: almanak
+Version: 0.1.3
+Summary: SDK for interacting with Almanak's Multiverse Platform
+Author: Engineering
+Author-email: engineering@almanak.co
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: anyio (>=4.3.0,<5.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: hexbytes (>=1.2.1,<2.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Multiverse Python SDK
+
+## Development
+
+Follow these steps to set up your local development environment:
+
+1. Clone the repository:
+
+    ```bash
+    git clone git@github.com:almanak-co/multiverse-sdk.git
+    cd multiverse-sdk
+    ```
+
+2. Set up your local python environment:
+
+    ```bash
+    poetry install
+    ```
+
+3. Run the tests to ensure everything is set up correctly:
+
+    ```bash
+    make test
+    ```
+
+4. After you make your changes, ensure your changes pass the tests and linters:
+
+    ```bash
+    make test
+    make lint
+    ```
+
+5. Commit your changes and push your branch to GitHub.
+
+
+## CLI usage 
+
+Refer to doc https://almanak.atlassian.net/l/cp/yPepsGU8
