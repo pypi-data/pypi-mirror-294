@@ -1,0 +1,3 @@
+[console_scripts]
+embeddedproto = EmbeddedProto.EmbeddedProto:run_protoc
+protoc-gen-eams = EmbeddedProto.main:main_plugin
