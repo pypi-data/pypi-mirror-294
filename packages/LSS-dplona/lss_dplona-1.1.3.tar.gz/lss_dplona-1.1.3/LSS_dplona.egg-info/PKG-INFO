@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: LSS_dplona
+Version: 1.1.3
+Summary: A package for handling Limiting Sea States simulations automatically
+Author: Dawid Plona
+Author-email: dawid.plona@jumbomaritime.nl
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: openpyxl
+Requires-Dist: psutil
+Requires-Dist: OrcFxAPI
