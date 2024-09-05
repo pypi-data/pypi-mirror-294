@@ -1,0 +1,14 @@
+myldapsync/__init__.py,sha256=9M5tiEryyQ05BLNKn3vmnQ_HfTbenUqkoRFMcEPGzXo,11385
+myldapsync/config.ini.example,sha256=BnjX3FViatnBiVZiigoGlH5VQSJmoWTcxE-EKmbylZc,4927
+myldapsync/config_default.ini,sha256=cCv_cgZd9hryCJqnm95tI_HRdmHzoLTY0riReH6ceeI,1383
+myldapsync/ldaputils/__init__.py,sha256=pLf1RRFyZfISuyqFVjYiIb8OHiG81zENLqt19mj3Jz8,305
+myldapsync/ldaputils/connection.py,sha256=WwPAAsTluWutjAkjvhE91VQkYh8391GTro42DKrO9gw,4358
+myldapsync/ldaputils/users.py,sha256=AAEXcOEanu6Ts7qjI_pl-6xW3cdM3gwnWdZgWW5QCdo,2578
+myldapsync/myutils/__init__.py,sha256=pLf1RRFyZfISuyqFVjYiIb8OHiG81zENLqt19mj3Jz8,305
+myldapsync/myutils/users.py,sha256=tqlH233--l8XAzw2azKwBhOcASdNGWfIkQWzVOitYOM,6304
+myldapsync-1.0.7.dist-info/LICENSE,sha256=90fR_JG7Ho4afLDvgFo9Fcp4mpHm67KcKojdlf5HfII,1143
+myldapsync-1.0.7.dist-info/METADATA,sha256=f1Qank4qkffZ8o2AKp6fpgULBToaD24vu-bRXLJH8RE,2601
+myldapsync-1.0.7.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+myldapsync-1.0.7.dist-info/entry_points.txt,sha256=K9EakG5jitn-fWZr5_nwSKN8E74beN-TrSMEsyhBNX4,57
+myldapsync-1.0.7.dist-info/top_level.txt,sha256=YeTlOnBYF59HhVmWNbMQGaUXB_iVb9FuRadPXQDtytE,11
+myldapsync-1.0.7.dist-info/RECORD,,
