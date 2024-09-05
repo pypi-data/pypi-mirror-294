@@ -1,0 +1,35 @@
+[build-system]
+    build-backend = "setuptools.build_meta"
+    requires = ["setuptools>=69"]
+
+[project]
+    name = "racfu"
+    version = "0.0.1"
+    description = "Easy integration with RACF using industry standard languages and tools."
+    authors = [
+        { name="Joe Bostian", email="jbostian@ibm.com" },
+        { name="Frank De Gilio", email="degilio@us.ibm.com" },
+        { name="Leonard J. Carcaramo Jr", email="lcarcaramo@ibm.com" },
+        { name="Elijah Swift", email="elijah.swift@ibm.com" },
+    ]
+    requires-python = ">=3.10"
+    readme = "README.md"
+    classifiers = [
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: POSIX :: Other",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy",
+        "Topic :: Security",
+        "Topic :: System :: Hardware :: Mainframes",
+        "Topic :: System :: Systems Administration",
+    ]
+
+[project.urls]
+    Homepage = "https://github.com/ambitus/racfu"
+    Issues = "https://github.ibm.com/ambitus/racfu/issues"
+
