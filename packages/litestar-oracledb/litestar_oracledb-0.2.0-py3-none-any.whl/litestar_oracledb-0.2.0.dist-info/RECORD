@@ -1,0 +1,14 @@
+litestar_oracledb/__init__.py,sha256=vj8ycw8I2PY3auE5B66HnApVXgty2FV3H2-3FJwDC14,473
+litestar_oracledb/__metadata__.py,sha256=SNgC6-tSRUJ7Wi7wAgvwd_Gns6cCAsSSbIU3JyJhlLk,328
+litestar_oracledb/_utils.py,sha256=QKfa3P4yAN5M0gJJzGA4wKCZL3GRzQs-kO9g4SNv2cY,1899
+litestar_oracledb/exceptions.py,sha256=SO3MQ5OFyxIlrcflda9SEnTtNxUtME6Y9z43coJd9qE,1318
+litestar_oracledb/plugin.py,sha256=SZ8PuX_wnAgAfeUqKZkPzFd-DtVqJys7xkGxO_c_wlc,2595
+litestar_oracledb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litestar_oracledb/config/__init__.py,sha256=IX2a8PtSKN0OyDQzY7WuMrTySXzpgUsZ7aeWBfCB67U,522
+litestar_oracledb/config/_asyncio.py,sha256=y3Cje6NrRsMiDs6RyIuC0FGi0umtshEB6omlKvxIDrM,9526
+litestar_oracledb/config/_common.py,sha256=qQWsKndK_KXjhMWsHeps17a00cB6STImN7x2DrYwfBQ,5908
+litestar_oracledb/config/_sync.py,sha256=enHsKO3AUOeB3MwpZLfeP3Gwzh8T2OxAA49riY2gPL8,9122
+litestar_oracledb-0.2.0.dist-info/METADATA,sha256=dyF9uIuiI_D53IylFuagElv-sdl8R3RVwuzPgkpW1Zw,11522
+litestar_oracledb-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+litestar_oracledb-0.2.0.dist-info/licenses/LICENSE,sha256=DX-mBmwOHF-LBx-Pwjclow5R3Ik33pNyt1GbFgcEvfc,1078
+litestar_oracledb-0.2.0.dist-info/RECORD,,
