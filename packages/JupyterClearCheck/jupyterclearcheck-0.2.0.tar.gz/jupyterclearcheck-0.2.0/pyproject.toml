@@ -1,0 +1,80 @@
+[project]
+name = "JupyterClearCheck"
+version = "0.2.0"
+description = "A Python CLI to check that a Jupyter Notebook's Outputs' have been cleared."
+authors = [
+    { name = "Gururaj Deshpande", email = "gurudesh@gatech.edu" },
+]
+requires-python = ">=3.9"
+readme = "README.md"
+dependencies = [
+    "nbformat>=5.10.4",
+]
+
+[project.license]
+text = "3"
+
+[project.scripts]
+jupyterclearcheck = "jupyterclearcheck.__main__:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.ruff]
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "UP",
+    "B",
+    "SIM",
+    "I",
+]
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+strict = true
+show_error_codes = true
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.6.3",
+    "pytest>=8.3.2",
+    "mypy>=1.11.2",
+    "pyclean>=3.0.0",
+    "pytest-cov>=5.0.0",
+    "pytest-mock>=3.14.0",
+    "pdm-bump>=0.9.8",
+]
+
+[tool.pdm.scripts]
+_lint = "ruff check . --fix"
+_format = "ruff format ."
+_lint_check = "ruff check ."
+_format_check = "ruff format . --check"
+_mypy = "mypy ."
+clean = "pyclean ."
+test = "pytest --cov src"
+bump-version = "pdm bump"
+
+[tool.pdm.scripts.lint_and_format]
+composite = [
+    "_lint",
+    "_format",
+]
+
+[tool.pdm.scripts.check]
+composite = [
+    "_lint_check",
+    "_format_check",
+    "_mypy",
+]
