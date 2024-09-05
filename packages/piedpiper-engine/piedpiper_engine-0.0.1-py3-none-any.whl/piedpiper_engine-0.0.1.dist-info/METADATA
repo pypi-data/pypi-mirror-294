@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: piedpiper_engine
+Version: 0.0.1
+Summary: An engine to create and manage AI agents
+Project-URL: Homepage, https://github.com/noobosapien/piedpiper_engine
+Project-URL: Issues, https://github.com/noobosapien/piedpiper_engine/issues
+Author-email: Migara <devdude@wondersplot.co.nz>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Pied Piper Engine
+This is an engine to create and manage AI agents which uses LLMs
