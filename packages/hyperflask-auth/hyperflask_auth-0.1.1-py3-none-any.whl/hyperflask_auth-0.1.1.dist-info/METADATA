@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hyperflask-auth
+Version: 0.1.1
+Summary: Authentication for Hyperflask
+Home-page: https://github.com/hyperflask/hyperflask-auth
+License: MIT
+Author: Maxime Bouroumeau-Fuseau
+Author-email: maxime.bouroumeau@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask-login (>=0.6,<0.7)
+Requires-Dist: hyperflask (>=0.1,<0.2)
+Requires-Dist: passlib (>=1.7,<2.0)
+Project-URL: Repository, https://github.com/hyperflask/hyperflask-auth
+Description-Content-Type: text/markdown
+
+# Hyperflask Auth
+
+Authentication and user management for Hyperflask

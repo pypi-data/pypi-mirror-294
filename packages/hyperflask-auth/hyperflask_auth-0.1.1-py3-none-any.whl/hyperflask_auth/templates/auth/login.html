@@ -1,0 +1,24 @@
+{% extends "auth/layout.html" %}
+
+{% block auth_header %}
+  <h3 class="font-semibold text-2xl text-gray-800">Sign In</h3>
+  <p class="text-gray-500">Connect using an existing account.</p>
+{% endblock %}
+
+{% block auth_content %}
+<{Form}>
+  <{FormControl label="Email"}>
+    {{ form.email.email(placeholder="you@domain.com", required=True) }}
+  </{}>
+  <{FormControl label="Password"}>
+    {{ form.password.password(required=True) }}
+  </{}>
+  <div>
+    <{LabeledCheckbox name="remember" value=1 label="Remember me"}/>
+  </div>
+  <div class="text-sm">
+    <{Link href=url_for("auth.forgot_password")}>Forgot your password?</{}>
+  </div>
+  <{Button type="submit" style="primary"}>Sign in</{}>
+</{}>
+{% endblock %}
