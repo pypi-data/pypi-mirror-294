@@ -1,0 +1,9 @@
+click
+pyyaml
+tqdm
+pandas
+matplotlib
+locust
+transformers
+datasets
+tabulate
