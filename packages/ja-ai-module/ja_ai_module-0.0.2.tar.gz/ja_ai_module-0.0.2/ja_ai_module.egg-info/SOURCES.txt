@@ -1,0 +1,7 @@
+setup.py
+ja_ai_module.egg-info/PKG-INFO
+ja_ai_module.egg-info/SOURCES.txt
+ja_ai_module.egg-info/dependency_links.txt
+ja_ai_module.egg-info/not-zip-safe
+ja_ai_module.egg-info/requires.txt
+ja_ai_module.egg-info/top_level.txt
