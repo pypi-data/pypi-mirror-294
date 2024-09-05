@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "siglent-sds"
+version = "0.2.5"
+description = "Interface to the Siglent SDS series of oscilloscopes."
+authors = ["Patrick Tapping <mail@patricktapping.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numpy = "^2.0.0"
+pyqtgraph = { version = "^0.13.7", optional = true }
+pyside6 = { version = "^6.7.2", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.3.7"
+black = "^24.4.2"
+
+[tool.poetry.extras]
+examples = ["pyqtgraph", "pyside6"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
