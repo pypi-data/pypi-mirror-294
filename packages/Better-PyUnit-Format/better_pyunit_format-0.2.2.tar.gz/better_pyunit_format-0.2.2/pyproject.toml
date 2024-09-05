@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Better-PyUnit-Format"
+authors = [{name = "Gregory Bell", email="trihard.studios@outlook.com"}]
+version = "0.2.2"
+description = "A more readable text output for Python's built in unittest framework"
+readme = "README.md"
+requires-python = ">=3.5"
