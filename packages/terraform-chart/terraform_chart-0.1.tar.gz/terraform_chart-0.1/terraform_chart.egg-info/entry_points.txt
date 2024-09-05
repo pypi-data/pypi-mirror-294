@@ -1,0 +1,2 @@
+[console_scripts]
+terraform-chart = terraform_chart.terraform_cli:cli
