@@ -1,0 +1,5 @@
+memodocs-1.0.0.dist-info/METADATA,sha256=tpu5UNdUD0Vvuio9QI1im7e0aMR1WkAOLEeB9IYQwoc,3653
+memodocs-1.0.0.dist-info/WHEEL,sha256=sMrC6guTcDuVd2uJPLCsOXoiUgzX059kpmApExoPh6g,95
+memodocs/__init__.py,sha256=oBYG5yovXkBJYhjSxyzVSVAWy8PHNIJvEW1J1BUTDNM,115
+memodocs/memodocs.cp310-win_amd64.pyd,sha256=JN821G9jrKqWWcKyAAOExLYZ7QEgpH74MdB9s-TWAp0,302080
+memodocs-1.0.0.dist-info/RECORD,,
