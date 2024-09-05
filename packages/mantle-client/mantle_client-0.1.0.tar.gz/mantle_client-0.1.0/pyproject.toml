@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mantle-client"
+version = "0.1.0"
+description = "Private insights from network trace data -- Client"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = [
+    'pandas==2.2.2',
+    'requests==2.32.2',
+    'jupyterlab==4.2.4',
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["mantle-client"]

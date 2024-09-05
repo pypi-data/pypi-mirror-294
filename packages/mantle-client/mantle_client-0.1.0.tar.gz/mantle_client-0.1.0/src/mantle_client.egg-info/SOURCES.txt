@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/mantle-client/__init__.py
+src/mantle-client/client.py
+src/mantle_client.egg-info/PKG-INFO
+src/mantle_client.egg-info/SOURCES.txt
+src/mantle_client.egg-info/dependency_links.txt
+src/mantle_client.egg-info/requires.txt
+src/mantle_client.egg-info/top_level.txt
