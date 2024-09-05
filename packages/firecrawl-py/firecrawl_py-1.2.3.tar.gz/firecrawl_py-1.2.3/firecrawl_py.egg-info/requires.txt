@@ -1,0 +1,5 @@
+requests
+python-dotenv
+websockets
+asyncio
+nest-asyncio
