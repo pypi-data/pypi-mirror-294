@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+took/__init__.py
+took/git_hooks.py
+took/took.py
+took/ui.py
+took.egg-info/PKG-INFO
+took.egg-info/SOURCES.txt
+took.egg-info/dependency_links.txt
+took.egg-info/entry_points.txt
+took.egg-info/requires.txt
+took.egg-info/top_level.txt
+took/resources/hooks/post-checkout.sh
+took/resources/hooks/post-commit.sh
+took/resources/hooks/pre-commit.sh
