@@ -1,0 +1,191 @@
+Initial version of the sentry rest api client, with reporting generation.
+This software is not production ready, and may greatly change in the future.
+
+## Features
+
+- Built with `asyncio` and `aiohttp`, we get sentry events concurrently.
+- Used `backoff` package to retry failed requests.
+
+## Limitations
+
+Right now we don't support many sentry API endpoints. And this package right
+now focused on `Issues & Events` API.
+
+## Quick start
+
+My main usage (current one) of this package is to generate reports for groups of
+specific errors, here is an example how to use it to group proxy-related issues
+and events by specific time range (14 days by default).
+
+To get auth token check this documentation:
+[Auth Tokens](https://docs.sentry.io/account/auth-tokens/#user-auth-tokens).
+Don't forget to allow at least read access for `Issues & Events`.
+
+Save code below into some file, set environment variables and try to run it,
+if you have issues with setting up environment variables you can use plain
+information.
+
+```python
+import asyncio
+from datetime import timedelta
+import logging
+from os import environ
+from typing import Any
+
+from sentry_rest import EventErrorsReport, SentryClient
+from collections import defaultdict
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+if __name__ == "__main__":
+    sentry_client = SentryClient(
+        auth_token=environ["SENTRY_AUTH_TOKEN"],
+        auth_organization=environ["SENTRY_ORGANIZATION"],
+        auth_project=environ["SENTRY_PROJECT"],
+        search_query="Proxy error detected",
+        tracing_enabled=False,  # toggle aiohttp requests information
+    )
+
+    # Get all events for issues with specific rearch query
+    events = asyncio.run(sentry_client.extract())
+
+    # Group event messages by proxy and date
+    report = EventErrorsReport(events)
+    report_data = report.group_by_pattern(pattern=r"[0-9]+(?:\.[0-9]+){3}")
+
+    # -------------------------------
+    # "Simple Vizualization"
+    # --------------------------------
+
+    # Step 1. Group by proxy
+    grouped_data: defaultdict[str, defaultdict[str, Any]] = defaultdict(
+        lambda: defaultdict(list)
+    )
+    for grouping_value, event in report_data:
+        grouped_data[grouping_value][event["dateCreatedObject"]].append(
+            {
+                "message": f"{event["dateCreatedTime"]} >> "
+                f"{event["message"].split("\n")[0].split("|")[1][:80]}",
+                "eventCreatedTimestamp": event["eventCreatedTimestamp"],
+            }
+        )
+
+    # Step 2. Visualize grouped data
+    print("Proxy checking report (2 weeks), timezone is UTC")
+    print("=" * 40)
+    for grouping_value, events in grouped_data.items():
+        print(
+            f"[Proxy: {grouping_value}. "
+            f"Total erors: {sum(len(e) for e in events.values())}]"
+        )
+        for date, errors in events.items():
+            print(f"\t{date}: {len(errors)} errors")
+            prev_timestamp = None
+            for error in sorted(errors, key=lambda e: e["eventCreatedTimestamp"]):
+                if not prev_timestamp:
+                    prev_timestamp = error["eventCreatedTimestamp"]
+
+                if (
+                    error["eventCreatedTimestamp"] - prev_timestamp
+                ).total_seconds() > timedelta(hours=1).total_seconds():
+                    print("\t\t" + "-" * 8 + "🕐" + "-" * 8)
+                    prev_timestamp = error["eventCreatedTimestamp"]
+
+                print(f"\t\t{error["message"]}")
+
+        print("=" * 40)
+
+```
+
+Example of output:
+```text
+Proxy checking report (2 weeks), timezone is UTC
+========================================
+[Proxy: 161.77.124.98. Total erors: 5]
+        2024-09-04: 3 errors
+                02:18:20 >> ProxyCheckError
+                --------🕐--------
+                06:18:20 >> ProxyCheckError
+                --------🕐--------
+                10:18:20 >> ProxyCheckError
+        2024-09-03: 2 errors
+                18:18:20 >> ProxyCheckError
+                --------🕐--------
+                22:18:20 >> ProxyCheckError
+========================================
+[Proxy: 89.38.228.198. Total erors: 39]
+        2024-09-04: 3 errors
+                02:18:20 >> ProxyCheckError
+                --------🕐--------
+                06:18:20 >> ProxyCheckError
+                --------🕐--------
+                10:18:20 >> ProxyCheckError
+        2024-09-03: 36 errors
+                14:36:32 >> APIError_fetch_data
+                14:36:33 >> APIError_fetch_data
+                14:36:34 >> APIError_fetch_data
+                14:36:36 >> APIError_fetch_data
+                14:36:37 >> APIError_fetch_data
+                14:36:38 >> APIError_fetch_data
+                14:36:52 >> initialize_api
+                --------🕐--------
+                18:13:12 >> APIError_fetch_data
+                18:13:13 >> APIError_fetch_data
+                18:13:14 >> APIError_fetch_data
+                18:13:15 >> APIError_fetch_data
+                18:13:18 >> APIError_fetch_data
+                18:13:32 >> APIError_fetch_data
+                18:13:32 >> initialize_api
+                18:18:20 >> ProxyCheckError
+                18:58:11 >> APIError_fetch_data
+                18:58:12 >> APIError_fetch_data
+                18:58:13 >> APIError_fetch_data
+                18:58:15 >> APIError_fetch_data
+                18:58:20 >> APIError_fetch_data
+                18:58:31 >> initialize_api
+                --------🕐--------
+                19:56:58 >> APIError_fetch_data
+                19:56:58 >> APIError_fetch_data
+                19:56:59 >> APIError_fetch_data
+                19:57:02 >> APIError_fetch_data
+                19:57:11 >> APIError_fetch_data
+                19:57:17 >> APIError_fetch_data
+                19:57:18 >> initialize_api
+                20:01:57 >> APIError_fetch_data
+                20:01:58 >> APIError_fetch_data
+                20:01:59 >> APIError_fetch_data
+                20:02:00 >> APIError_fetch_data
+                20:02:04 >> APIError_fetch_data
+                20:02:06 >> APIError_fetch_data
+                20:02:17 >> initialize_api
+                --------🕐--------
+                22:18:20 >> ProxyCheckError
+========================================
+[Proxy: 89.42.81.232. Total erors: 5]
+        2024-09-04: 3 errors
+                01:31:38 >> APIError_fetch_data
+                --------🕐--------
+                09:01:08 >> APIError_fetch_data
+                09:38:20 >> APIError_fetch_data
+        2024-09-03: 2 errors
+                22:03:20 >> APIError_fetch_data
+                22:03:39 >> APIError_fetch_data
+========================================
+```
+
+If you don't want to save code you are able to use this command in package root
+directory:
+```
+PYTHONPATH=. python examples/proxy_errors.py
+```
+
+## Dependencies
+
+- aiohttp
+- backoff
+
+## To-do
+
+- [ ] verify and fix types
+- [ ] add tests
