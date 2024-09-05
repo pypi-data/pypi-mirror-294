@@ -1,0 +1,11 @@
+google-ads-api-report-fetcher==1.14.3
+google-cloud-videointelligence
+google-cloud-vision
+jq
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+langchain-google-vertexai
+pillow
+smart_open
