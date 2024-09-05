@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "be-genai-workshop-short"
+packages = [
+    { include = "hackathon" }
+]
+version = "0.1.0.3"
+description = ""
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.12"
+ipykernel = ">=5"
+openai = "^1"
+python-dotenv = "^1"
+openpyxl = "^3"
+pandas = ">=2.1.4"
+numpy = ">=1.26.4"
+matplotlib = "^3.7"
+seaborn = "^0.13"
+ipython = ">=7"
+
+
+[tool.poetry.group.dev.dependencies]
+langfuse = "^2.45.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: be-genai-workshop-short
+Version: 0.1.0.3
+Summary: 
+Requires-Python: >=3.10.12,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ipykernel (>=5)
+Requires-Dist: ipython (>=7)
+Requires-Dist: matplotlib (>=3.7,<4.0)
+Requires-Dist: numpy (>=1.26.4)
+Requires-Dist: openai (>=1,<2)
+Requires-Dist: openpyxl (>=3,<4)
+Requires-Dist: pandas (>=2.1.4)
+Requires-Dist: python-dotenv (>=1,<2)
+Requires-Dist: seaborn (>=0.13,<0.14)
+Description-Content-Type: text/markdown
+
+# Short Generative AI workshop
+Short workshop created in relation to a session during the BearingPoint Norway introductory week for new hires.
+
+[Lesson - Data Clearning with Generative AI](https://githubtocolab.com/bearingpoint-no/genAI-workshop-short/blob/main/lessons/01_Data_cleaning_with_genAI.ipynb)
+
