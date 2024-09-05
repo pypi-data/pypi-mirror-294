@@ -1,0 +1,3 @@
+[console_scripts]
+web3pi-proxy=web3pi_proxy.__main__:main
+
