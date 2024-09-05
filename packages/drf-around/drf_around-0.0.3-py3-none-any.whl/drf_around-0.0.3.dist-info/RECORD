@@ -1,0 +1,17 @@
+drf_around/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_around/permissions.py,sha256=oE2rDsLNSjur-bVQ6NBwKG7hk_hGvNDe8STv0oTqikc,801
+drf_around/serializers.py,sha256=NNCGD5jpQQGmRQMGX8zfWa8d9FALtgjUlgI6yJ-0Gv8,1002
+drf_around/viewsets.py,sha256=4OjZbCZ9FpKacSqeXhnvAFqhGb9U3LjBkFj9ANEcTUI,1240
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=rZsZ4S5171P2yV7jf5dXhYnuF3UpKlGx0fy5-phQ0bE,1540
+tests/serializers.py,sha256=hWfQio2QnReaHRBBLgWEn09amNW0jOx9MZUQ02LingM,468
+tests/settings.py,sha256=smAYZ6ByhoB0x5g35rA3YRx_J1-CRMv43YjXX8uPvtw,976
+tests/test_permissions.py,sha256=e4QXWR1gps2Lv60clsdn5HnaBicVW-vmyNo_hcEVqv0,1650
+tests/test_serializers.py,sha256=EesR6oAboi-B9WMaAw5Yi-9JMXAvTZzHPWXx6rrdtI4,1965
+tests/urls.py,sha256=bEqgVQ_m9w_MUowgyYJBpWhkOmPRkEq-b3z1yjtH_0s,251
+tests/viewsets.py,sha256=V6b4jR_9YHknJN1ea1U1oohwqy7jUoVR6Ls7VBILafs,443
+drf_around-0.0.3.dist-info/LICENSE.md,sha256=EE_J36-C59jeyI9geV19uHJFu5Q5g3uNYL8r2P-RfqQ,1066
+drf_around-0.0.3.dist-info/METADATA,sha256=IBJxSWOIVCW5s4POexTfCQgpYlcJ1vQaHecpEYFGEJY,710
+drf_around-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+drf_around-0.0.3.dist-info/top_level.txt,sha256=x6VDKdlP1WqOwVp_ralk8pElmhyElqOuUnq_Iqq59fM,11
+drf_around-0.0.3.dist-info/RECORD,,
