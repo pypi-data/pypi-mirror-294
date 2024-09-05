@@ -1,0 +1,5 @@
+recursive-include image_processing *
+recursive-include image_processing/imgs *
+recursive-include image_processing/processing *
+recursive-include image_processing/utils *
+recursive-include image_processing/tests *
