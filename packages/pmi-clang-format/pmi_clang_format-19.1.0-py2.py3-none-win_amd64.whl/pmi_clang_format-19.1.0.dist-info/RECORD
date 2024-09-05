@@ -1,0 +1,10 @@
+clang_format/__init__.py,sha256=szJutWhFqX0EEnpl2YZ7vcILhxSMTFzcIWqWAS_6lhw,2272
+clang_format/clang_format_diff.py,sha256=gAm3n8_ZkzlSHg-l0ZbAaVqa8MIAa3iuOnV7hpLazn4,6337
+clang_format/data/bin/clang-format.exe,sha256=WvZEjedVfSfBmiKd8a8LatZj4m2_ezfelsTF7Wp5ZB4,3200000
+clang_format/git_clang_format.py,sha256=WfsStc_bk4weCcKu9flvObCUA9JH68tjq8wrW1lb8D4,25747
+pmi_clang_format-19.1.0.dist-info/METADATA,sha256=g7FZ00AFlj18HR7wsThRfniqMFfve4quTxhJI_SJyUE,4707
+pmi_clang_format-19.1.0.dist-info/WHEEL,sha256=lyzJXTfsoLjgyvagkGVu_n4Md7UZ5Fg-ZJ8Cml_ErHI,127
+pmi_clang_format-19.1.0.dist-info/entry_points.txt,sha256=b3OvK5yUcTEZU59u1LFoKutGhA9sISVZPFAnj_KJRco,173
+pmi_clang_format-19.1.0.dist-info/licenses/COPYING.md,sha256=r71N-pQCeu9g95BmCXNGEsON4HEFmfV_RYXmTkoqhPE,918
+pmi_clang_format-19.1.0.dist-info/licenses/LICENSE.md,sha256=3B9dLUPFUx3-Csr06VDqXb4-YeGFDPDpg72n78ENZpM,10464
+pmi_clang_format-19.1.0.dist-info/RECORD,,
