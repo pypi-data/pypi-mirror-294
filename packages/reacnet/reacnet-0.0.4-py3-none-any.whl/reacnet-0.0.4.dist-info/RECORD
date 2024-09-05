@@ -1,0 +1,13 @@
+reacnet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reacnet/connectors/__init__.py,sha256=LVkSNMFeFqesuciU5GH7QEiMOxVFcWbVkI7ikY585Is,52
+reacnet/connectors/connection.py,sha256=hVy8eg_wZJj_c7Z79onneMSI3tYscbo_96iQjld0fFM,868
+reacnet/elements/__init__.py,sha256=QhvcBzLSSIKVguOm3Er6Mdom24fipkTFEO2_OQ4PLNg,188
+reacnet/elements/elementbase.py,sha256=U8RU1OfKHhJYkUHFYib0scZiPqb54opyA9J-EH30Vic,1710
+reacnet/elements/flowreactor.py,sha256=pQCQmNBxMLtm7ZGm4HT_qhlxX1f9HeGcl6SkP2p5RvM,1269
+reacnet/elements/mixer.py,sha256=hx-MhgzDHUpegij0dyqPV5w114phr5-_B8hIXiOGuRI,3110
+reacnet/elements/tank.py,sha256=FSaH6N9aLxL9bLoyjWejkm8Tog6LIcLEoKSdElFQl8I,1717
+reacnet/networks/network.py,sha256=gyqjOanzrqw5BHJ10JZSw2rx6cRiUcU6eic50MPvvr8,705
+reacnet-0.0.4.dist-info/METADATA,sha256=ZkX7US3lDAQpBGaEjNMX8unu-w08Gum0bOLiqsHGzv0,702
+reacnet-0.0.4.dist-info/WHEEL,sha256=uCRv0ZEik_232NlR4YDw4Pv3Ajt5bKvMH13NUU7hFuI,91
+reacnet-0.0.4.dist-info/top_level.txt,sha256=1bvEHV7ysIAtSheYjxfSKi4vJUTfvcNiNHZSLqpgui0,8
+reacnet-0.0.4.dist-info/RECORD,,
