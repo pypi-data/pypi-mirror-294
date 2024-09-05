@@ -1,0 +1,15 @@
+include ai-toolkit/README.md
+include ai-toolkit/LICENSE
+include ai-toolkit/requirements.txt
+recursive-include ai-toolkit *
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+recursive-exclude ai-toolkit/.venv *
+recursive-exclude ai-toolkit/.git *
+recursive-exclude ai-toolkit/.github *
+recursive-exclude ai-toolkit/__pycache__ *
+recursive-exclude ai-toolkit/repositories *
+exclude ai-toolkit/.gitignore
+exclude ai-toolkit/.gitmodules
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.ipynb_checkpoints
