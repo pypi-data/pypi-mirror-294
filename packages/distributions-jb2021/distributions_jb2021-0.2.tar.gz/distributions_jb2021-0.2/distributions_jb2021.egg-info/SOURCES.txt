@@ -1,0 +1,10 @@
+setup.py
+distributions_jb2021/Binomialdistribution.py
+distributions_jb2021/Gaussiandistribution.py
+distributions_jb2021/Generaldistribution.py
+distributions_jb2021/__init__.py
+distributions_jb2021.egg-info/PKG-INFO
+distributions_jb2021.egg-info/SOURCES.txt
+distributions_jb2021.egg-info/dependency_links.txt
+distributions_jb2021.egg-info/not-zip-safe
+distributions_jb2021.egg-info/top_level.txt
