@@ -1,0 +1,11 @@
+pyqcloud_sdk/__init__.py,sha256=5vUXjATuDLhHsLdkzKaR-EOkoIjJEXftF1WGEJnQKeg,712
+pyqcloud_sdk/base.py,sha256=eJEcornidyOd94HWCH1k399mKu299CvwAkUuuTYjvQE,8001
+pyqcloud_sdk/config.py,sha256=WsTOFM64InXcbA9uU7eogIQi9aeugu0rxVqtvUXpi9Y,1158
+pyqcloud_sdk/exceptions.py,sha256=qvULPYjP75fhL7_4bzbApKztAjBV9eIHs8DSxG8SaTU,1438
+pyqcloud_sdk/logging.py,sha256=um99e-SzzpcI9oKyZkvWK9OF19L-gEOzivVCHwCOkgc,1070
+pyqcloud_sdk/services.py,sha256=kPdjbfp3_0wo8S2GbcjmIsY4UUybJBPEmreAWCDJnj0,4300
+pyqcloud_sdk/data/endpoints_3.0.1182.json,sha256=y729GegtskPK1p98TyzttDTyOTk-KFrZKpxPsxRKky0,25969
+pyqcloud_sdk-0.0.2.dist-info/METADATA,sha256=iCHrBG91crTt9QEA71jzG2aM8PVt3ZyLe7n_aNigjck,4430
+pyqcloud_sdk-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pyqcloud_sdk-0.0.2.dist-info/licenses/LICENSE,sha256=ukajhbrt0-DcTUOeyNBf-yjMZ6KvYdQyr8oo_RJkFJQ,1068
+pyqcloud_sdk-0.0.2.dist-info/RECORD,,
