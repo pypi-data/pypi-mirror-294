@@ -1,0 +1,10 @@
+numpy
+scipy
+sora-astro
+astropy
+cartopy
+tqdm
+
+[dev]
+pytest>=4.4.1
+twine<5.0,>=4.0
