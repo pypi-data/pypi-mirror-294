@@ -1,0 +1,8 @@
+xcalculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcalculator/calculator.py,sha256=jJhiOFFuo03qWMryXnGUySdUszXVBkStBDGBhQ4oUKo,6272
+xcalculator/main.py,sha256=zJid86DcH2vAtjY7DG79Hj1kTqB0zm-vEWEgIgsZL7M,174
+xcalculator-0.8.0.dist-info/METADATA,sha256=-gEiYv9P49me1HgyiQHmCh1FHxm9e8cLcgZuD4FnQYE,4169
+xcalculator-0.8.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+xcalculator-0.8.0.dist-info/entry_points.txt,sha256=_SfmbPhCnKz9fRxYHE_ej98tvHDiIM4sk1157x9NyDs,84
+xcalculator-0.8.0.dist-info/licenses/LICENSE,sha256=xfYMQUSTWtjZSgOa_uLeTn2ooQ-Fn4ZBxUD6ZVF4RHU,1080
+xcalculator-0.8.0.dist-info/RECORD,,
