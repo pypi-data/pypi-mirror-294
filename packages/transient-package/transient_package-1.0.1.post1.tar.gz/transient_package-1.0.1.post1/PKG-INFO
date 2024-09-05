@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: transient-package
+Version: 1.0.1.post1
+Summary: CLI utility for creating transient Python packages.
+Author-email: sasha0552 <admin@sasha0552.org>
+License: MIT
+Project-URL: Homepage, https://github.com/sasha0552/transient-package
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Installation/Setup
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: packaging==24.1
+Requires-Dist: wheel==0.44.0
+
+# transient-package
+
+CLI utility for creating transient Python packages.
+
+## Installation
+
+```sh
+pip install transient-package
+```
+
+## Usage
+
+### Create a transient package
+
+```sh
+transient-package create \
+  --source triton        \
+  --target triton-pascal \
+  --output-directory .
+```
+
+#### Result
+
+A `triton` package with version `0.0.0` will be created, which depends on the `triton-pascal` package.
+
+### Create a transient package with explicit versions
+
+```sh
+transient-package create \
+  --source triton        \
+  --source-version 3.0.0 \
+  --target triton-pascal \
+  --target-version 3.0.0 \
+  --output-directory .
+```
+
+#### Result
+
+A `triton` package with version `3.0.0` will be created, which depends on the `triton-pascal` package with version `3.0.0`.
+
+### Create a transient package and install it
+
+```sh
+$ transient-package install \
+  --source triton         \
+  --target triton-pascal
+```
+
+#### Result
+
+##### If the source package is not installed
+
+A `triton` package with version `0.0.0` will be installed, which depends on the `triton-pascal` package.
+
+##### If the source package is installed
+
+A `triton` package with version `<source package version>` will be installed, which depends on the `triton-pascal` package with version `<source package version>`.
+
+The source package will be uninstalled before installing the transient package.
+
+### Remove a transient package
+
+```sh
+transient-package uninstall triton
+```
+
+#### Result
+
+If the `triton` package is installed and transient, it will be removed.
