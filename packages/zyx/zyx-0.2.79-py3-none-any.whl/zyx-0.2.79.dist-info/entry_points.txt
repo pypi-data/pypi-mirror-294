@@ -1,0 +1,4 @@
+[console_scripts]
+zyx=zyx.client.chat.cli:app_cli
+zyx-chat=zyx.client.chat.cli:chat_cli
+
