@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+gmail8/__init__.py
+gmail8/gmail.py
+gmail8/reminder.py
+gmail8.egg-info/PKG-INFO
+gmail8.egg-info/SOURCES.txt
+gmail8.egg-info/dependency_links.txt
+gmail8.egg-info/requires.txt
+gmail8.egg-info/top_level.txt
