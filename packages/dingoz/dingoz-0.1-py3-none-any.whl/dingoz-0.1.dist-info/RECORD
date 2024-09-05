@@ -1,0 +1,14 @@
+dingoz/__init__.py,sha256=ofe23sprSzostXvH_FEKtHANlwmSmhhC_tnunOcfA-M,276
+dingoz/constants.py,sha256=jfkG9Ke0NpvztyX2x-VphJqVB7VgpPewGphC3dBqQps,114
+dingoz/dingoz.py,sha256=tZM-qs1uqaBMAjzXDKnx8g_dXxEoDD7IHDYJb0lOaZA,271
+dingoz/display.py,sha256=XMt83XHaNA43aCdWDQ2ApH7ebbmBcQDyMvMktKJcimo,291
+dingoz/download.py,sha256=PfO0EF0nm7tphwyL4T1xhoQuwvbF39kTvefocvXfZhE,279
+dingoz/file_utilities.py,sha256=EgCtPgKMbuTJpq9swbwq8ZUZhUE48l5PrjRBj-o7MVo,295
+dingoz/image_conversion.py,sha256=Z4B5BSLVLesE61oT7FOJOldsvrZhOQm3RDdQ8qrjCH8,285
+dingoz/image_processing.py,sha256=WItNAx1sbg5hFgOYZLP3OWkLMUSX5zasIUlF2jvy7l0,289
+dingoz/input_validation.py,sha256=OQudfll6tsBY-qYXABSM6BEaDZGTi1FOqyRen_apMKs,279
+dingoz/resources.py,sha256=20Wg9DkcewIQwSyJ2Vx-HUqy7pcdbSe2W1WeiCe2Xak,269
+dingoz-0.1.dist-info/METADATA,sha256=j4p0d2t03U-X5SeasVM30H0u7FlKgSKSVQVJsWp4Yks,220
+dingoz-0.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+dingoz-0.1.dist-info/top_level.txt,sha256=x_l4cWFQh3MCG96gQwlZzwq0lYA5ZfF4CduIPojCPc4,7
+dingoz-0.1.dist-info/RECORD,,
