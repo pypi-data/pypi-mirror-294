@@ -1,0 +1,12 @@
+hackathon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hackathon/data/fetch.py,sha256=bDsOsSzeqk7_HekivPGj9uLMJ6d2nDkaByVql-sdyq4,140
+hackathon/data/product_reviews.xlsx,sha256=0duL7cGk6Xxwl3mFCPU2f2vDK2fVRKUYBu9pKMD_dRk,29661
+hackathon/env.py,sha256=Rt9Kitl89Oz21FZm0dZ1xB2m2IP_FIWOGj0A3cJebNw,3888
+hackathon/evaluation/country_inferring.py,sha256=ZrWaVbNwofQBLFMeTYxxRcg3c13e1aziEQtaL_fiFRU,709
+hackathon/evaluation/country_ratings_analysis.py,sha256=cYdj3LmjAPpWMWYrDNssucrgaCePV5xECOkBBcxwuSY,641
+hackathon/evaluation/solution_location_country_mapping.xlsx,sha256=oJONcEuL9FNwc3-ml1SudDps8JodbeRBst0QkZwv9kY,6432
+hackathon/helpers.py,sha256=8aMSc7P8tI5HDLDgjJVMrN1nlL_Qob9KtsXuzbVh-rU,887
+hackathon/paths.py,sha256=rebpMueLpWjI4cT1o3SyeJf54h5C1OA_aT6M_gEEC20,418
+be_genai_workshop_short-0.1.0.7.dist-info/METADATA,sha256=I-25wnDra9nv_sd3IQV0ghWuwYLk973gzGEofmG0WtU,1025
+be_genai_workshop_short-0.1.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+be_genai_workshop_short-0.1.0.7.dist-info/RECORD,,
