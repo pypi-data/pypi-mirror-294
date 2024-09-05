@@ -1,0 +1,10 @@
+command_watcher/__init__.py,sha256=f2nIPrGdxFr-BxRVhQQH3wQr8UVUOVaRv51eDINx5HA,14298
+command_watcher/email.py,sha256=KKu1K_tTB-bxSjNkMLCe8OJcq_ikzKZn7sviOnBBCAg,1165
+command_watcher/log.py,sha256=EFs5OyvV0DWMp0QojXG34sKi03hIsXPmIHJKMANRTxc,5279
+command_watcher/py.typed,sha256=fTZxIEqDNB02iQ4gJI00cUs5AkemOkUF555psIWfiGA,94
+command_watcher/report.py,sha256=rTiUvav8ByAev23kJ-03vr2mRIuCbdghdr-jTYRxWEw,10062
+command_watcher/utils.py,sha256=HQ0XDhkBLrIsQz0w0GOVJgRxBa0fSs-BGl346Q6Ioz4,621
+command_watcher-0.5.0.dist-info/LICENSE,sha256=ejqFH_nPFaJO1iQ8-bQJcoUWk2DlhJmsmTlmcB9bb2s,1096
+command_watcher-0.5.0.dist-info/METADATA,sha256=KvjXbcBdUBB1fqst744QmNrAcpiCCGySFFl7w7P71VA,2917
+command_watcher-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+command_watcher-0.5.0.dist-info/RECORD,,
