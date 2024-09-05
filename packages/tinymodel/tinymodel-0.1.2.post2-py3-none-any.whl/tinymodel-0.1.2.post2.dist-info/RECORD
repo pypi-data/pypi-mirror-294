@@ -1,0 +1,11 @@
+tiny_model/__init__.py,sha256=Bm8-k1S6f0qNkpP_cvJyrGyfKmwlsi9iDCugBniH1GQ,189
+tiny_model/lm.py,sha256=RWGEP878SFKS6hqDjvssI6xaFaZGzWKKYfG3r2NKdLQ,15324
+tiny_model/lm_modules.py,sha256=7oUWZEBg48aIBovYm4mK_ZuKmM6Sr4ePPK1Dt90sWeA,6077
+tiny_model/sparse_mlp.py,sha256=C1pYrl08lSdCXuZlG9BsyDYoWZZHao2jqaZOJnXjDHo,3703
+tiny_model/tokenization/neo_tok_ids_to_ts.pt,sha256=1XWvK2cPzB9Onzh1Od7qMbr3NpMcnsOekIuM6GJnvFM,403278
+tiny_model/tokenization/tokenization.py,sha256=cDz3JZeG1aTa4IVlq7YZ3ud2ogDSjAXkmnYGVmRLxy8,6233
+tiny_model/tokenization/ts_tok_ids_to_neo.pt,sha256=uvKel_o3f6Syj2jRSYQ05VrjJzkhjBZoGYfRo2yksbU,81230
+tiny_model/tokenization/words.json,sha256=mZACgX4-0iYNLpYo_EwfwT9ou-HMCqSiKPEuzfOQgTA,35606
+tinymodel-0.1.2.post2.dist-info/METADATA,sha256=XYirY8Rjo90pSyxCvDOE7T-qc091tOji-kTp4dNP7vw,3380
+tinymodel-0.1.2.post2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tinymodel-0.1.2.post2.dist-info/RECORD,,
