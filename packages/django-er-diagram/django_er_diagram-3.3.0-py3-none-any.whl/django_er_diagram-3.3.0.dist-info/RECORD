@@ -1,0 +1,11 @@
+django_er_diagram/__init__.py,sha256=MPSbkJS_-QSkLK7sMlFXFf5iWlbcSL18Dj2ZiMCtS9c,22
+django_er_diagram/constants.py,sha256=5Yi5YCenVpydsLXN64e9pHIMtbMp2ONuKAaZEJ-s0fA,417
+django_er_diagram/management/commands/generate_diagrams.py,sha256=9HlRwYIFdfcdNAIwLPUicPq524V59IkgOL4SOXKGmLQ,12147
+django_er_diagram/settings.py,sha256=r7JXDHvWdaNhzF8iBeT35KGFVK4NgtjlOP0NU0XivBo,412
+django_er_diagram/templates/erd_template.html,sha256=LGO-XvOyY3552GzkHICOWOctW_4VAVyP4TUsyj8720s,1981
+django_er_diagram/templates/erd_template.md,sha256=NKy8jfI8Wmo5ISIxRbMB9luZtBtDHQDFQaaKcFuQN48,33
+django_er_diagram/templates/index_template.html,sha256=uYGpzT9cHK5jh5dVEW86W_zE784s1t9-BfqKr4RUiLQ,1488
+django_er_diagram-3.3.0.dist-info/LICENSE,sha256=-BOVFOqK_Cg8aiRREoKwNGmEVRI1KeBUgAMr7zr-SKA,1072
+django_er_diagram-3.3.0.dist-info/METADATA,sha256=04itQUPpXYWiDRpntW2lUPDYSbia--PKPBbd0ApFqEw,1911
+django_er_diagram-3.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_er_diagram-3.3.0.dist-info/RECORD,,
