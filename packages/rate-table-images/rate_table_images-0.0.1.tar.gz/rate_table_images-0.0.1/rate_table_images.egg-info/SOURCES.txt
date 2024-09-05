@@ -1,0 +1,9 @@
+setup.py
+rate_table_images/__init__.py
+rate_table_images/rate_table_images.py
+rate_table_images.egg-info/PKG-INFO
+rate_table_images.egg-info/SOURCES.txt
+rate_table_images.egg-info/dependency_links.txt
+rate_table_images.egg-info/entry_points.txt
+rate_table_images.egg-info/requires.txt
+rate_table_images.egg-info/top_level.txt

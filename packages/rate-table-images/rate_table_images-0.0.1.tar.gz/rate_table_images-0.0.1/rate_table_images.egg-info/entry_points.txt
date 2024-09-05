@@ -1,0 +1,2 @@
+[console_scripts]
+create_images = rate_table_images.rate_table_images:main
