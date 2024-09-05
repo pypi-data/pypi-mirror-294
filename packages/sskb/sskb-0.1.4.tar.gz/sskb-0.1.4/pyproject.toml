@@ -1,0 +1,21 @@
+[project]
+name = "sskb"
+version = "0.1.4"
+authors = [
+  { name="Danilo S. Carvalho", email="danilo.carvalho@manchester.ac.uk" }
+]
+description = "Knowledge Base loading and annotation facilities"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["knowledge bases", "annotated", "nlp"]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/neuro-symbolic-ai/SSKB"
+Issues = "https://github.com/neuro-symbolic-ai/SSKB/issues"
