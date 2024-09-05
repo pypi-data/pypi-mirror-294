@@ -1,0 +1,7 @@
+ucdp_sv-0.8.4.dist-info/METADATA,sha256=6IUulbO-gU2M0oLQ9C6OrCnQ8lJyg6lmp2CK4dPWycY,1532
+ucdp_sv-0.8.4.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+ucdp_sv-0.8.4.dist-info/licenses/LICENSE,sha256=C5dC7xMg5vdkSj6eKxdnX0qszqjdI49MsHgvMhGCIq4,1067
+ucdpsv/__init__.py,sha256=pcgm7ELZh8EC7vpeVUgk7SAKWyCZDx3sL_xx94Uxw6c,1307
+ucdpsv/svexprresolver.py,sha256=G8ZBwmLjdYDFrLAgkml7WwUqjjxOudmaOrGLwu69OYE,16107
+ucdpsv/ucdp-templates/sv.mako,sha256=dE68kVipaxVjgz81nj2m_X0j3huAt3vibfEEaUX5jww,8228
+ucdp_sv-0.8.4.dist-info/RECORD,,
