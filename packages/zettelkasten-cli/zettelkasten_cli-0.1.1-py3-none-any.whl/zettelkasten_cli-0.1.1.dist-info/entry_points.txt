@@ -1,0 +1,3 @@
+[console_scripts]
+zk=zettelkasten_cli.main:app
+
