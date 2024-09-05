@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nagra-panorama-api"
+version = "0.2.7"
+description = ""
+authors = ["David Gallay <david.gallay@nagra.com>"]
+readme = "README.md"
+packages = [{include = "nagra_panorama_api", from="."}]
+
+[tool.poetry.scripts]
+panapi = "nagra_panorama_api.__main__:cli"
+panorama_api = "nagra_panorama_api.__main__:cli"
+panorama-api = "nagra_panorama_api.__main__:cli"
+
+[tool.poetry.dependencies]
+# https://stackoverflow.com/questions/65945929/poetry-how-to-publish-project-packages-targeting-multiple-python-versions
+python = ">=3.7.0,<4.0.0"
+# pan-os-python = "^1.11.0"
+lxml = "^4.9.3"
+xmltodict = "^0.13.0"
+requests = "^2.31.0"
+# defusedxml = "^0.7.1"
+diff-match-patch = "^20230430"
+pan-os-python = "^1.11.0"
+pydantic = "^2.5.3"
+pyaml = "^23.5.8"
+click = "^8.1.7"
+rich = "^13.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
