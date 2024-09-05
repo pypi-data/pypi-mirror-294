@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "almanak"
+version = "0.1.4"
+description = ""
+authors = ["Nasrudin Salim <nas@almanak.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+almanak-simulations-sdk = {path = "../sdk"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+ruff = "^0.4.4"
+
+[[tool.poetry.source]]
+name = "gcp-prod"
+url = "https://us-east4-python.pkg.dev/almanak-production/almanak-py/simple/"
+priority = "explicit"
+[[tool.poetry.source]]
+name = "gcp-staging"
+url = "https://us-east4-python.pkg.dev/almanak-production/almanak-py/simple/"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
