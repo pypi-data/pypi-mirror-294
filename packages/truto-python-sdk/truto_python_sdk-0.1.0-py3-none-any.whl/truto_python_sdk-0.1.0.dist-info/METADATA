@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: truto-python-sdk
+Version: 0.1.0
+Summary: Python3 SDK for the Truto API
+Author: Roopendra Talekar
+Author-email: roopendratalekar@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (==3.10.5)
+Requires-Dist: asyncio (==3.4.3)
+Description-Content-Type: text/markdown
+
+# truto-python-sdk
+Python3 SDK for the Truto API
+
