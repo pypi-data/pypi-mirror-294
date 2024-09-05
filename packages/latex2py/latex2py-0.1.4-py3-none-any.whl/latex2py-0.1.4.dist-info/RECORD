@@ -1,0 +1,17 @@
+latex2py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latex2py/parser/LaTeX.g4,sha256=3xPb-twuEmX81rsff1v0Nc-sdG8RZ35sSu27-NCXCgA,6302
+latex2py/parser/__init__.py,sha256=lBQBKxgL_Ka8MZHdGtOT-YYwJ3XvIqhnZEqf6I_-uac,1539
+latex2py/parser/config.py,sha256=k1ZfrTYtCIPf1oFwKpo3apmuBVX0mjP61Z2Y9rBI6uY,895
+latex2py/parser/errors.py,sha256=98YateeukLjF0sXxsfsB9S4M4GqNeVYCIXg5FVadayc,43
+latex2py/parser/gen/LaTeX.interp,sha256=KXg_pcJEBvUiP62olccNIJecStxskC26SllywNBnE04,19135
+latex2py/parser/gen/LaTeX.tokens,sha256=Na4EpbwUBFnQNmk7Fz8Q8WkcwwbqJzjELHwSXW1eVZM,1887
+latex2py/parser/gen/LaTeXLexer.interp,sha256=w0iVntwaYSGrrsxFZQ4BlDE9eMmQUe8lkC0O-p_aJio,31536
+latex2py/parser/gen/LaTeXLexer.py,sha256=qcXioRBnhVGAez3whplWeAThSDCqeEUVSAUZAdZv5tA,30406
+latex2py/parser/gen/LaTeXLexer.tokens,sha256=Na4EpbwUBFnQNmk7Fz8Q8WkcwwbqJzjELHwSXW1eVZM,1887
+latex2py/parser/gen/LaTeXListener.py,sha256=Rpxrmab3iBvxyKeqXuBJQ3YQCWKHafvDjKUnoA4EH_k,11411
+latex2py/parser/gen/LaTeXParser.py,sha256=fB7iNI0cRRzkaBfjVY1ZsIcr_Tjm9Y0Uqvv7mcKPlw8,139385
+latex2py/parser/parse.py,sha256=ESrTCuugmFHFQ8_70VF1QzCqfNg5FoKS9iq3OoYeKTI,18565
+latex2py-0.1.4.dist-info/LICENSE.txt,sha256=AHvDClj6QKmW53IEcSDeTq8x9REOT5w7X5P8374urKE,1075
+latex2py-0.1.4.dist-info/METADATA,sha256=3QJROzOa5kFOL4VRoUmYZkQpOpSnKJgmUkmgIWENxes,2958
+latex2py-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+latex2py-0.1.4.dist-info/RECORD,,
