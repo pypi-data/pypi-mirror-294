@@ -1,0 +1,9 @@
+incstatspy.cpython-39-i386-linux-gnu.so,sha256=FXUL6yEZ5d_83TGGhiabqA7tFbLZI9sZTz3TPiveQSE,38400
+include/incstats.h,sha256=q_bZMkZaYUbDs89nLPOHYbR3OV66vA4n9rAez3Djo-4,14197
+lib/libincstats.so,sha256=QcmIRWy7c7b5iytlHoEpHnzMMAfYubTM50MvSRfvQ4M,17604
+lib/cmake/incstats/incstatsConfig.cmake,sha256=TTmcKjj6ZMbTCqa4utk8ai_PYLBVSyuCy2L1M7ajBGw,4127
+lib/cmake/incstats/incstatsConfig-release.cmake,sha256=_dXeegO7loq3yhIuUe7rrHNK8Iq9AlzpObk7s2GO3wQ,812
+incstatspy-0.2.0.dist-info/METADATA,sha256=bgNOlA_sxPygdFrwCnZWS-frrqV_toTBKre8WAbh8SM,3353
+incstatspy-0.2.0.dist-info/RECORD,,
+incstatspy-0.2.0.dist-info/WHEEL,sha256=pe25ySaaZItpxBuafXjNyvsv5eXlqpUfV9FgbpcEj-Y,113
+incstatspy-0.2.0.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
