@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aicacia-document-exporter
+Version: 0.1.1
+Summary: Aicacia document exporter
+Author: collaborative-earth
+Author-email: team@collaborative.earth
+Project-URL: Website, https://www.collaborative.earth/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: tzlocal >=5.2
+Provides-Extra: test
+Requires-Dist: simhash >=2.1.2 ; extra == 'test'
+Requires-Dist: langchain-huggingface >=0.0.3 ; extra == 'test'
+
+# Aicacia document exporter
+
+A simple library to export parsed documents to Aicacia storage.
