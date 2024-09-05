@@ -1,0 +1,16 @@
+CHANGES.md
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+src/py.typed
+src/unflatten.py
+src/unflatten.pyi
+src/unflatten.egg-info/PKG-INFO
+src/unflatten.egg-info/SOURCES.txt
+src/unflatten.egg-info/dependency_links.txt
+src/unflatten.egg-info/top_level.txt
+tests/test_unflatten.py
