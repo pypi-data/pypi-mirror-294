@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pinecore
+Version: 0.0.1
+Summary: Restructuring existing Python source from a mess into clean code and flexible design.
+Home-page: https://github.com/hieupth/pinecore
+Author: Hieu Pham
+Author-email: 64821726+hieupth@users.noreply.github.com
+License: GNU AGPL v3.0
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: beanie
+Requires-Dist: networkx
+Requires-Dist: polars
+Requires-Dist: rawpy
+Requires-Dist: pillow-heif
+
+# Pinecore
+Python package with utilities and design patterns that make writting backend application easier.
+```bash
+pip install pinecore
+```
+## License
+[GNU AGPL v3.0.](LICENSE)<br>
+Copyright &copy; 2024 [Hieu Pham](https://github.com/hieupth). All rights reserved.
