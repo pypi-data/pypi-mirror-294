@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+android_useful_adb.egg-info/PKG-INFO
+android_useful_adb.egg-info/SOURCES.txt
+android_useful_adb.egg-info/dependency_links.txt
+android_useful_adb.egg-info/top_level.txt
