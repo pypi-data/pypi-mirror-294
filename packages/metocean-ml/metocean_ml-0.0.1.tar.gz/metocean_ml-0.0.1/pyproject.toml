@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.poetry]
+name = "metocean-ml"
+version = "0.0.1"
+description = "metocean-ml - machine learning tool for metocean data"
+authors = ["Konstantinos Christakos MET Norway & NTNU"]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.17"
+matplotlib = "^3.1"
+pandas = "*"
+pip = "*"
+scipy = "*"
+xarray = "*"
+scikit-learn = "*"
+keras = "*"
+tensorflow = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[tool.poetry.scripts]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MET-OM/metocean-ml"
+
+[build]
+builder = "pip"
