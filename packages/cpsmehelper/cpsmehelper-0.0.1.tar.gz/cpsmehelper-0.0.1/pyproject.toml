@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cpsmehelper"
+version = "0.0.1"
+authors = [
+  { name="Merten Stender", email="merten.stender@tu-berlin.de" },
+]
+description = "Helper functions of the CPSME TU Berlin"
+readme =  { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.18",
+    "tikzplotlib>=0.10.1"
+]
+
