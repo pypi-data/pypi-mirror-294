@@ -1,0 +1,16 @@
+fairspace_pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairspace_pipeline/pipeline.py,sha256=OTVP4AQwB9i_CxATwvm-f_Mx4qwt8Sf4ob-8DVFRzTg,4897
+fairspace_pipeline/api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairspace_pipeline/api_client/fairspace_api_client.py,sha256=EtWnSxVBTwzbqVkDoX0a1_T1MmrI7yeWtH9UrqaOCYQ,19423
+fairspace_pipeline/graph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairspace_pipeline/graph/fairspace_graph.py,sha256=kGBHy3I4Qm6g44DOvQzNRF_lhko2TWzpf5LsPphTG5Y,1113
+fairspace_pipeline/graph/taxonomy_graph.py,sha256=a7QLj5Ymjqsq4CAplS8mmglHjhuUQd9FUDUQ-dicCJk,1255
+fairspace_pipeline/io_handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairspace_pipeline/io_handler/aws_s3_io_handler.py,sha256=8WRrV9n_i3nihyMWjAACiLd3jqeDcUem3NBoBMnWZqw,6700
+fairspace_pipeline/io_handler/io_handler_interface.py,sha256=EgN_kPbWAp5zWnRX-jdjD6p8EqiX_enA0hQWxXoxVS8,705
+fairspace_pipeline/io_handler/local_io_handler.py,sha256=krAihQWuiC-Io-xaOP5QiRwjgYpxvB-4pqkLNyMdiFA,3906
+fairspace_pipeline-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fairspace_pipeline-0.0.2.dist-info/METADATA,sha256=1cT2rgCUNBBSnFkuuyH9aoq71MjG4d5uk2QYs66hBJM,1012
+fairspace_pipeline-0.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+fairspace_pipeline-0.0.2.dist-info/top_level.txt,sha256=fmEtrwO6xr_VKwaAIasqGV3ws-WQk0Qkqcbm7HpYgZg,19
+fairspace_pipeline-0.0.2.dist-info/RECORD,,
