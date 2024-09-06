@@ -1,0 +1,2 @@
+[endstone]
+essentials = endstone_essentials:EssentialsPlugin
