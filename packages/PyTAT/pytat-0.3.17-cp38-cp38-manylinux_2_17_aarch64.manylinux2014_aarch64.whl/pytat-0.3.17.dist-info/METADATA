@@ -1,0 +1,1237 @@
+Metadata-Version: 2.1
+Name: PyTAT
+Version: 0.3.17
+Summary: python binding for TAT(TAT is A Tensor library)
+Keywords: tensor,tensor network,tensor network state,PEPS,MPS,quantum many body system
+Author-Email: Hao Zhang <zh970205@mail.ustc.edu.cn>
+License: GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Homepage, https://github.com/USTC-TNS/TNSP/tree/main/PyTAT
+Project-URL: Repository, https://github.com/USTC-TNS/TNSP.git
+Project-URL: Issues, https://github.com/USTC-TNS/TNSP/issues
+Project-URL: Changelog, https://github.com/USTC-TNS/TNSP/blob/main/CHANGELOG.org
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+PyTAT is a Python wrapper for the C++ tensor library called [TAT](https://github.com/USTC-TNS/TNSP/tree/main/TAT), offering support for both symmetry and fermion tensors.
+The most of the interface of PyTAT keep consistent with TAT.
+
+
+# Install
+
+Users can create a Python wheel package using any modern build system, like [`wheel`](https://build.pypa.io/en/stable/) (with command `python -m pip wheel .`) or [`build`](https://pip.pypa.io/en/stable/reference/build-system/) (with command `python -m build .`).
+Alternatively, users can simply use `pip install pytat` to install a pre-built distribution on widely-used operating systems.
+
+To build PyTAT in the pyodide environment, refer to [this link](https://pyodide.org/en/stable/development/building-and-testing-packages.html).
+Remember to add `--exports pyinit` to the `pyodide build` arguments.
+We can't upload our pre-built emscripten platform distribution to [pypi.org](https://pypi.org) as they don't allow it.
+Instead, users can download a pre-built emscripten platform wheel from the [release page](https://github.com/USTC-TNS/TNSP/releases).
+
+
+# Documents
+
+
+## The construction of tensors
+
+As PyTAT simply wraps around a C++ header-only library, it does not support polymorphism for scalar types or symmetry types.
+Consequently, each distinct tensor in Python has its own specific type.
+The naming convention for tensor types is as follows: `TAT.<SymmetryType>.<ScalarType>.Tensor`.
+Here, `<SymmetryType>` denotes the symmetry property maintained by the tensor, while `<ScalarType>` represents the scalar data type utilized within the tensors.
+The available values for `<ScalarType>` are summarized in the table below.
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">`<ScalarType>`</th>
+<th scope="col" class="org-left">scalar type in C++</th>
+<th scope="col" class="org-left">equivalent in Fortran</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">`S`, `float32`</td>
+<td class="org-left">`float`</td>
+<td class="org-left">`real(kind=4)`</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`D`, `float64`, `float`</td>
+<td class="org-left">`double`</td>
+<td class="org-left">`real(kind=8)`</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`C`, `complex64`</td>
+<td class="org-left">`std::complex<float>`</td>
+<td class="org-left">`complex(kind=4)`</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`Z`, `complex128`, `complex`</td>
+<td class="org-left">`std::complex<double>`</td>
+<td class="org-left">`complex(kind=8)`</td>
+</tr>
+</tbody>
+</table>
+
+The available values for `<SymmetryType>` are summarized in the table below.
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">`<SymmetryType>`</th>
+<th scope="col" class="org-left">symmetry type in C++</th>
+<th scope="col" class="org-left">conservation example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">`No`, `Normal`</td>
+<td class="org-left">`Symmetry<>`</td>
+<td class="org-left">nothing</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`BoseZ2`, `Z2`</td>
+<td class="org-left">`Symmetry<bose<Z2>>`</td>
+<td class="org-left">parity of spin z</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`BoseU1`, `U1`</td>
+<td class="org-left">`Symmetry<bose<U1>>`</td>
+<td class="org-left">spin z</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FermiU1`</td>
+<td class="org-left">`Symmetry<fermi<U1>>`</td>
+<td class="org-left">fermion number</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FermiU1BoseZ2`</td>
+<td class="org-left">`Symmetry<fermi<U1>, bose<Z2>>`</td>
+<td class="org-left">fermion number & parity of spin z</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FermiU1BoseU1`</td>
+<td class="org-left">`Symmetry<fermi<U1>, bose<U1>>`</td>
+<td class="org-left">fermion number & spin z</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FermiZ2`</td>
+<td class="org-left">`Symmetry<fermi<Z2>>`</td>
+<td class="org-left">parity of fermion number</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FermiU1FermiU1`</td>
+<td class="org-left">`Symmetry<fermi<U1>, fermi<U1>>`</td>
+<td class="org-left">numbers of two kinds of fermions</td>
+</tr>
+</tbody>
+</table>
+
+Users can create tensors of various types by using the same interface `Tensor(name_list, edge_list)`,
+in which `name_list` is simply a list of strings,
+whereas `edge_list` may vary significantly depending on the specific symmetry type being considered.
+
+For a tensor without any symmetry, users can simply use an integer list to define its edges.
+Here's an example that creates a tensor filled with zeros.
+Please note that the data in the tensor will not be automatically initialized to zero unless it is explicitly set to zero using the `zero_()` function.
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i", "j"], [3, 4]).zero_()
+    print(A)
+
+    {names:[i,j],edges:[3,4],blocks:[0,0,0,0,0,0,0,0,0,0,0,0]}
+
+The code above creates a rank-2 tensor called `A` with two edges `i` and `j`,
+where the dimensions of these edges are 3 and 4 respectively.
+Then, it prints the tensor A.
+
+Non-fermion symmetry tensors define edges using "segments", which are a list of pairs of quantum numbers and their respective degeneracy.
+The quantum numbers and their degeneracy are also referred to as irreducible representations and their multiplicity in the terminology of group theory,
+or so-called "symmetry" and the corresponding dimension in the context of this package.
+The following code generates a \(Z(2)\) symmetry tensor and a \(U(1)\) symmetry tensor.
+In this case, the irreducible representation of \(Z(2)\) symmetry is represented as a boolean value, while for \(U(1)\) symmetry it's an integer.
+
+    import TAT
+    
+    A = TAT.BoseZ2.D.Tensor(["i", "j"], [
+        [(False, 2), (True, 4)],
+        [(False, 3), (True, 1)],
+    ]).range_()
+    print(A)
+    
+    B = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(-1, 2), (0, 4), (+1, 1)],
+        [(-1, 3), (0, 2), (+1, 1)],
+    ]).range_()
+    print(B)
+
+    {names:[i,j],edges:[{0:2,1:4},{0:3,1:1}],blocks:{[0,0]:[0,1,2,3,4,5],[1,1]:[6,7,8,9]}}
+    {names:[i,j],edges:[{-1:2,0:4,1:1},{-1:3,0:2,1:1}],blocks:{[-1,1]:[0,1],[0,0]:[2,3,4,5,6,7,8,9],[1,-1]:[10,11,12]}}
+
+For tensor `A`, there are two blocks. The first block has irreducible representations `[False, False]` and a dimension of `2 * 4`.
+The second block has irreducible representations `[True, True]`, resulting in a dimension of `4 * 1`.
+For tensor B, it consists of three blocks. The irreducible representations are `[-1, +1]`, `[0, 0]`, and `[+1, -1]`.
+Each block has different dimensions based on these multiplicity.
+In the given code, the `range_()` function generates range data into the tensor.
+
+The situation regarding fermion tensors can be quite complicated.
+The edge is determined by pairs of segments along with the so-called "fermi-arrow", which is a boolean value.
+The example below creates a fermion \(U(1)\) symmetry tensor, with fermionic properties carried by the \(U(1)\) symmetry,
+where the fermi-arrow of its two edges are `False` and `True`, respectively.
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j"], [
+        ([(-1, 2), (0, 4), (+1, 1)], False),
+        ([(-1, 3), (0, 2), (+1, 1)], True),
+    ]).range_()
+    print(A)
+
+    {names:[i,j],edges:[{arrow:0,segment:{-1:2,0:4,1:1}},{arrow:1,segment:{-1:3,0:2,1:1}}],blocks:{[-1,1]:[0,1],[0,0]:[2,3,4,5,6,7,8,9],[1,-1]:[10,11,12]}}
+
+The fermi-arrow is introduced in the context of the fermion tensor network,
+which posits the existence of a fermionic EPR pair behind each edge of the network.
+The two tensors connected by an edge contain two operators of the EPR pair,
+and for a fermionic EPR pair, the order of two operators matters.
+Therefore, in TAT, a fermi-arrow is used to represent which side's operator is in front of the other.
+Specifically, TAT assumes the operator of fermi-arrow of False is in front of the fermi-arrow of True.
+
+For symmetry tensors of non-simple groups, their irreducible representations can indeed be represented by a tuple instead of a single boolean or integer, as shown in the example below.
+
+    import TAT
+    
+    A = TAT.FermiU1BoseZ2.D.Tensor(["i", "j"], [
+        ([
+    	((-1, False), 1),
+    	((0, False), 1),
+    	((+1, False), 1),
+    	((-1, True), 1),
+    	((0, True), 1),
+    	((+1, True), 1),
+        ], False),
+        ([
+    	((-1, False), 1),
+    	((0, False), 1),
+    	((+1, False), 1),
+    	((-1, True), 1),
+    	((0, True), 1),
+    	((+1, True), 1),
+        ], True),
+    ]).range_()
+    print(A)
+
+    {names:[i,j],edges:[{arrow:0,segment:{(-1,0):1,(0,0):1,(1,0):1,(-1,1):1,(0,1):1,(1,1):1}},{arrow:1,segment:{(-1,0):1,(0,0):1,(1,0):1,(-1,1):1,(0,1):1,(1,1):1}}],blocks:{[(-1,0),(1,0)]:[0],[(0,0),(0,0)]:[1],[(1,0),(-1,0)]:[2],[(-1,1),(1,1)]:[3],[(0,1),(0,1)]:[4],[(1,1),(-1,1)]:[5]}}
+
+
+## The clearance of symmetry information
+
+As a symmetry tensor is a blocked tensor, it is always possible to remove the symmetry information from such a tensor, thereby obtaining a non-symmetry tensor.
+This functionality is achieved through the use of the `clear_symmetry` function, as demonstrated in the following code snippet:
+
+    import TAT
+    
+    A = TAT.BoseZ2.D.Tensor(["i", "j"], [
+        [(False, 2), (True, 4)],
+        [(False, 3), (True, 1)],
+    ]).range_()
+    B = A.clear_symmetry()
+    print(A)
+    print(B)
+    
+    C = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(0, 2), (2, 4), (1, 1)],
+        [(0, 3), (-2, 1), (-1, 3)],
+    ]).range_()
+    D = C.clear_symmetry()
+    print(C)
+    print(D)
+
+    {names:[i,j],edges:[{0:2,1:4},{0:3,1:1}],blocks:{[0,0]:[0,1,2,3,4,5],[1,1]:[6,7,8,9]}}
+    {names:[i,j],edges:[6,4],blocks:[0,1,2,0,3,4,5,0,0,0,0,6,0,0,0,7,0,0,0,8,0,0,0,9]}
+    {names:[i,j],edges:[{0:2,2:4,1:1},{0:3,-2:1,-1:3}],blocks:{[0,0]:[0,1,2,3,4,5],[2,-2]:[6,7,8,9],[1,-1]:[10,11,12]}}
+    {names:[i,j],edges:[7,7],blocks:[0,1,2,0,0,0,0,3,4,5,0,0,0,0,0,0,0,6,0,0,0,0,0,0,7,0,0,0,0,0,0,8,0,0,0,0,0,0,9,0,0,0,0,0,0,0,10,11,12]}
+
+For a fermion symmetry tensor, direct removal of fermion anti-commutation relation is not feasible.
+Instead, only a portion of the symmetry can be cleared, resulting in a fermion \(Z(2)\) symmetry tensor rather than a non-symmetry tensor, as illustrated below:
+
+    import TAT
+    
+    C = TAT.FermiU1.D.Tensor(["i", "j"], [
+        ([(0, 2), (2, 4), (1, 1)], False),
+        ([(0, 3), (-2, 1), (-1, 3)], True),
+    ]).range_()
+    D = C.clear_symmetry()
+    print(C)
+    print(D)
+
+    {names:[i,j],edges:[{arrow:0,segment:{0:2,2:4,1:1}},{arrow:1,segment:{0:3,-2:1,-1:3}}],blocks:{[0,0]:[0,1,2,3,4,5],[2,-2]:[6,7,8,9],[1,-1]:[10,11,12]}}
+    {names:[i,j],edges:[{arrow:0,segment:{0:6,1:1}},{arrow:1,segment:{0:4,1:3}}],blocks:{[0,0]:[0,1,2,0,3,4,5,0,0,0,0,6,0,0,0,7,0,0,0,8,0,0,0,9],[1,1]:[10,11,12]}}
+
+
+## Attributes within a tensor
+
+A tensor primarily consists of three parts: names, edges, and content.
+Users can access the names list through the read-only property `A.names` and the edges list via the read-only property `A.edges`.
+In practical scenarios, `A.edge_by_name(name)` is a valuable method for obtaining the corresponding edge based on a given edge name directly.
+Moreover, the rank of a tensor can be obtained using `A.rank`.
+
+    import TAT
+    
+    A = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(-1, 1), (0, 1), (+2, 1)],
+        [(-2, 2), (+1, 1), (0, 2)],
+    ])
+    print(A.names)
+    print(A.edges[0], A.edges[1])
+    print(A.edge_by_name("i"), A.edge_by_name("j"))
+    print(A.rank)
+
+    ['i', 'j']
+    {-1:1,0:1,2:1} {-2:2,1:1,0:2}
+    {-1:1,0:1,2:1} {-2:2,1:1,0:2}
+    2
+
+To access the content of the tensor, there are three available methods:
+
+-   Retrieve all the content as a one-dimensional array using `A.storage`, which is a NumPy array with data shared with the TAT tensor.
+    Operating on this storage array is the recommended method for performing allreduce or broadcast operations on data in an MPI program.
+
+    import TAT
+    
+    A = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(-1, 1), (0, 1), (+2, 1)],
+        [(-2, 2), (+1, 1), (0, 2)],
+    ]).range_()
+    print(A.storage)
+    print(type(A.storage))
+    print(A.storage.flags.owndata)
+
+    [0. 1. 2. 3. 4.]
+    <class 'numpy.ndarray'>
+    False
+
+-   Obtain a block of the tensor based on the specified edge name order and symmetry for each edge.
+    In the case of non-symmetry tensors, there is no need to specify symmetry for each edge.
+    Therefore, this interface also accepts a list of edge names to pass the edge name order for non-symmetry tensors.
+    This block is also a NumPy array with shared data.
+
+    import TAT
+    
+    A = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(-1, 2), (0, 2), (+2, 2)],
+        [(-2, 2), (+1, 2), (0, 2)],
+    ]).range_()
+    block = A.blocks[("j", -2), ("i", +2)]
+    print(block)
+    
+    B = TAT.No.D.Tensor(["i", "j"], [3, 4]).range_()
+    print(B.blocks["j", "i"])
+
+    [[ 8. 10.]
+     [ 9. 11.]]
+    [[ 0.  4.  8.]
+     [ 1.  5.  9.]
+     [ 2.  6. 10.]
+     [ 3.  7. 11.]]
+
+-   Retrieve a specific element of the tensor using a dictionary that describes its exact location within the tensor.
+    The exact location within the tensor can be specified using a dictionary mapping from edge names to the total index for that edge,
+    or to the pair consisting of symmetry (indicating the segment inside the edge) and local index (indicating the specific index within that segment).
+
+    import TAT
+    
+    A = TAT.BoseU1.D.Tensor(["i", "j"], [
+        [(-1, 2), (0, 2), (+2, 2)],
+        [(-2, 2), (+1, 2), (0, 2)],
+    ]).range_()
+    print(A[{"j": (-2, 0), "i": (+2, 1)}])
+
+    10.0
+
+All of these three methods also support setting elements using the same interface.
+
+
+## Attributes of tensor type
+
+Tensor types include several static attributes, such as:
+
+-   `btypes`: The scalar type represented by the BLAS convention.
+-   `dtypes`: The scalar type represented by the NumPy convention.
+-   `is_complex`: A boolean indicating whether the tensor is complex.
+-   `is_real`: A boolean indicating whether the tensor is real.
+-   `model`: An alias for the symmetry model of the tensor. For example, getting the attribute `model` of `TAT.FermiU1.D.Tensor` results in `TAT.FermiU1`.
+
+
+## Conversion between single-element tensor and number
+
+Users can convert between a rank-0 tensor and a number directly.
+For non-rank-0 tensors that contain only one element, users can also convert them to a number directly.
+Conversely, users can create a one-element tensor with several 1-dimensional edges directly as the inverse operation.
+In this case, for a non-symmetry tensor, users should only pass the name list when creating a one-element tensor that is not rank-0.
+For non-fermion symmetry tensors, users should provide additional symmetry information for each edge as the third argument.
+For fermion symmetry tensors, users should provide additional fermi-arrow information for each edge as the fourth argument.
+
+    import TAT
+    
+    A = TAT.No.Z.Tensor(233)
+    a = complex(A)
+    print(A)
+    print(a)
+    
+    B = TAT.BoseU1.D.Tensor(233)
+    b = float(B)
+    print(B)
+    print(b)
+    
+    C = TAT.No.D.Tensor(233, ["i", "j"])
+    c = float(C)
+    print(C)
+    print(c)
+    
+    D = TAT.BoseU1.D.Tensor(233, ["i", "j"], [-1, +1])
+    d = float(D)
+    print(D)
+    print(d)
+    
+    E = TAT.FermiU1.D.Tensor(233, ["i", "j"], [-1, +1], [False, True])
+    e = float(E)
+    print(E)
+    print(e)
+
+    {names:[],edges:[],blocks:[233]}
+    (233+0j)
+    {names:[],edges:[],blocks:{[]:[233]}}
+    233.0
+    {names:[i,j],edges:[1,1],blocks:[233]}
+    233.0
+    {names:[i,j],edges:[{-1:1},{1:1}],blocks:{[-1,1]:[233]}}
+    233.0
+    {names:[i,j],edges:[{arrow:0,segment:{-1:1}},{arrow:1,segment:{1:1}}],blocks:{[-1,1]:[233]}}
+    233.0
+
+
+## Type conversion
+
+To convert the type of the content of a tensor, users can use the `to` function.
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j"], [
+        ([(0, 2), (-1, 2)], False),
+        ([(0, 2), (1, 2)], False),
+    ]).range_()
+    print(type(A))
+    print(type(A.to("complex")))
+    print(type(A.to("complex64")))
+    print(type(A.to("complex128")))
+    print(type(A.to("float")))
+    print(type(A.to("float32")))
+    print(type(A.to("float64")))
+
+    <class 'TAT.FermiU1.D.Tensor'>
+    <class 'TAT.FermiU1.Z.Tensor'>
+    <class 'TAT.FermiU1.C.Tensor'>
+    <class 'TAT.FermiU1.Z.Tensor'>
+    <class 'TAT.FermiU1.D.Tensor'>
+    <class 'TAT.FermiU1.S.Tensor'>
+    <class 'TAT.FermiU1.D.Tensor'>
+
+
+## Serialization and deserialization
+
+Users can employ the `pickle.dump(s)` function to binary serialize a tensor,
+and the `pickle.load(s)` function to binary deserialize a tensor.
+For text serialization, the `str` function can be utilized,
+and tensor deserialization from text format can be accomplished using the tensor constructor.
+
+    import pickle
+    import TAT
+    
+    A = TAT.No.D.Tensor(
+        ["i", "j", "k", "l"],
+        [2, 3, 3, 2],
+    ).range_()
+    B = pickle.loads(pickle.dumps(A))
+    C = TAT.No.D.Tensor(str(B))
+    print(A)
+    print(B)
+    print(C)
+
+    {names:[i,j,k,l],edges:[2,3,3,2],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]}
+    {names:[i,j,k,l],edges:[2,3,3,2],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]}
+    {names:[i,j,k,l],edges:[2,3,3,2],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]}
+
+
+## Explicit copying
+
+Because of Python's behavior, a simple assignment will not create a copy of the data, but share the same data instead.
+In the following example, when B is assigned to A, modifying data in A will also result in changes to tensor B.
+To perform a deep copy of a tensor, users can use the tensor's member function `copy`, or they can directly use `copy.copy`.
+To copy the shape of a tensor without copying its content, users can utilize the `same_shape` function,
+which creates a tensor with the same shape but with uninitialized data.
+
+    import copy
+    import TAT
+    
+    A = TAT.No.D.Tensor(233)
+    B = A
+    A[{}] = 1
+    print(B)
+    
+    C = TAT.No.D.Tensor(233)
+    D = C.copy()
+    C[{}] = 1
+    print(D)
+    
+    E = TAT.No.D.Tensor(233)
+    F = copy.copy(E)
+    E[{}] = 1
+    print(F)
+
+    {names:[],edges:[],blocks:[1]}
+    {names:[],edges:[],blocks:[233]}
+    {names:[],edges:[],blocks:[233]}
+
+
+## Elementwise operations
+
+Users can apply custom functions to the elements of a tensor element-wise using the `map` function for out-of-place operations
+or the `transform_` function for in-place operations.
+Additionally, there is a function called `set_`, which is similar to `transform_`, but it does not accept an input value.
+In other words, `A.set_(f)` is equivalent to `A.transform_(lambda _: f())`.
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i", "j"], [2, 2]).range_()
+    A.transform_(lambda x: x * x)
+    print(A)
+    
+    B = A.map(lambda x: x + 1)
+    print(B)
+    print(A)
+    
+    A.set_(iter([1, 6, 2, 5]).__next__)
+    print(A)
+
+    {names:[i,j],edges:[2,2],blocks:[0,1,4,9]}
+    {names:[i,j],edges:[2,2],blocks:[1,2,5,10]}
+    {names:[i,j],edges:[2,2],blocks:[0,1,4,9]}
+    {names:[i,j],edges:[2,2],blocks:[1,6,2,5]}
+
+In practice, there are several elementwise operations that are commonly used,
+so the TAT Python interface provides individual functions to wrap them for convenience. These include:
+
+-   `A.reciprocal()`: Acts like `A.map(lambda x: 0 if x == 0 else 1 / x)`.
+-   `A.sqrt()`: Acts like `A.map(lambda x: x**(1 / 2))`.
+
+
+## Norm of a tensor
+
+Users can compute the norm of a tensor using the following functions:
+
+-   `norm_2` for the 2-norm.
+-   `norm_max` for the &infin;-norm.
+-   `norm_num` for the 0-norm.
+-   `norm_sum` for the 1-norm.
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i"], [6]).range_(1, 2)
+    print(A)
+    print(A.norm_2())
+    print(A.norm_max())
+    print(A.norm_num())
+    print(A.norm_sum())
+
+    {names:[i],edges:[6],blocks:[1,3,5,7,9,11]}
+    16.911534525287763
+    11.0
+    6.0
+    36.0
+
+
+## Filling random numbers into a tensor
+
+Filling a tensor with random numbers can be accomplished using the `set_` function,
+but Python function calls can be relatively slow, and random filling operations might be frequently used.
+To address this, the TAT Python interface provides two functions: `randn_` and `rand_`.
+
+-   `randn_`: This function fills the tensor with normally distributed random numbers.
+    It accepts optional arguments for specifying the mean (defaulting to 0) and standard deviation (defaulting to 1).
+-   `rand_`: This function fills the tensor with uniformly distributed random numbers.
+    It also accepts optional arguments for specifying the minimum (defaulting to 0) and maximum (defaulting to 1) values.
+
+Both of these functions utilize the `std::mt19937_64` random engine, and users can set the seed for random number engine using `TAT.random.seed`.
+
+    import TAT
+    TAT.random.seed(2333)
+    A = TAT.No.D.Tensor(["i"], [10]).randn_()
+    print(A)
+    B = TAT.No.Z.Tensor(["i"], [10]).randn_()
+    print(B)
+
+    {names:[i],edges:[10],blocks:[0.766553,1.42783,-0.802786,0.231369,-0.144274,0.75302,-0.930606,-0.90363,1.58645,-1.66505]}
+    {names:[i],edges:[10],blocks:[0.93897-2.03094i,-1.04394+0.724667i,0.0607228+0.802331i,-0.0634779+0.261524i,-0.0182935-0.00331999i,-0.809166+0.358002i,0.108272+0.293261i,-0.685203-0.874357i,-1.02724+0.898064i,-1.16878-0.312219i]}
+
+Certainly, there are cases where users may want to use the TAT random number generator for generating random numbers outside of tensors.
+This can be achieved through functions within the `TAT.random` submodule, which includes:
+
+-   `uniform_int`: Generates uniformly distributed random integers.
+-   `uniform_real`: Generates uniformly distributed random real numbers.
+-   `normal`: Generates normally distributed random numbers.
+
+    import TAT
+    
+    TAT.random.seed(2333)
+    a = TAT.random.uniform_int(0, 1)
+    print([a() for _ in range(10)])
+    b = TAT.random.uniform_real(0, 1)
+    print([b() for _ in range(10)])
+    c = TAT.random.normal(0, 1)
+    print([c() for _ in range(10)])
+
+    [1, 1, 1, 0, 1, 1, 1, 0, 0, 0]
+    [0.40352081782045557, 0.5919243832286168, 0.27290914845486797, 0.7042572953540996, 0.5525455768177127, 0.3527365854756287, 0.13938916269629487, 0.844959553591226, 0.6296832832042462, 0.8978555690178844]
+    [-0.018293519693094607, -0.8091660392771898, -0.0033199925772919928, 0.35800177574398406, 0.1082722439575567, -0.6852033252925772, 0.29326095246544526, -0.8743569677337741, -1.0272406882246077, -1.1687800551936816]
+
+
+## Setting range data into a tensor
+
+Users can set a range of data into a tensor using `A.range_(first, step)`,
+which fills the tensor with data in the sequence of \(first\), \(first+step\), \(first+step \times 2\), and so on.
+By default, `first` is set to 0 and `step` is set to 1.
+In practical tensor network state programming, this function is not frequently utilized
+and is primarily employed for generating examples to illustrate other functions discussed in this document.
+
+    import TAT
+    
+    A = TAT.FermiU1.C.Tensor(["i", "j", "k"], [
+        ([(-1, 2), (0, 2), (-2, 2)], True),
+        ([(0, 2), (1, 2)], False),
+        ([(0, 2), (1, 2)], False),
+    ]).range_(0, 1 + 1j)
+    print(A)
+
+    {names:[i,j,k],edges:[{arrow:1,segment:{-1:2,0:2,-2:2}},{arrow:0,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}}],blocks:{[-1,0,1]:[0,1+1i,2+2i,3+3i,4+4i,5+5i,6+6i,7+7i],[-1,1,0]:[8+8i,9+9i,10+10i,11+11i,12+12i,13+13i,14+14i,15+15i],[0,0,0]:[16+16i,17+17i,18+18i,19+19i,20+20i,21+21i,22+22i,23+23i],[-2,1,1]:[24+24i,25+25i,26+26i,27+27i,28+28i,29+29i,30+30i,31+31i]}}
+
+
+## Filling Zeros into a Tensor
+
+The content of a tensor is not initialized by default in the TAT package. To manually initialize it with zeros, users can invoke the `zero_` function.
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j"], [
+        ([(0, 2), (-1, 2)], False),
+        ([(0, 2), (1, 2)], False),
+    ]).zero_()
+    print(A)
+
+    {names:[i,j],edges:[{arrow:0,segment:{0:2,-1:2}},{arrow:0,segment:{0:2,1:2}}],blocks:{[0,0]:[0,0,0,0],[-1,1]:[0,0,0,0]}}
+
+
+## Arithmetic scalar operations
+
+Users can perform arithmetic scalar operations directly on tensors.
+When performing arithmetic operations between two tensors,
+their shapes should be the same except for the order of edges, as TAT can automatically transpose them as needed.
+
+    import TAT
+    
+    a = TAT.No.D.Tensor(["i"], [4]).range_(0, 1)
+    b = TAT.No.D.Tensor(["i"], [4]).range_(0, 10)
+    print(a)
+    print(b)
+    print(a + b)
+    print(a * b)
+    print(1 / a)
+    print(b - 1)
+    a *= 2
+    print(a)
+    b /= 2
+    print(b)
+
+    {names:[i],edges:[4],blocks:[0,1,2,3]}
+    {names:[i],edges:[4],blocks:[0,10,20,30]}
+    {names:[i],edges:[4],blocks:[0,11,22,33]}
+    {names:[i],edges:[4],blocks:[0,10,40,90]}
+    {names:[i],edges:[4],blocks:[inf,1,0.5,0.333333]}
+    {names:[i],edges:[4],blocks:[-1,9,19,29]}
+    {names:[i],edges:[4],blocks:[0,2,4,6]}
+    {names:[i],edges:[4],blocks:[0,5,10,15]}
+
+
+## The tensor conjugation
+
+Conjugating a tensor induces a reversal of symmetry in all segments across every edge, while simultaneously altering the values of all elements within the tensor, as illustrated below.
+
+    import TAT
+    
+    A = TAT.BoseU1.Z.Tensor(["i", "j"], [
+        [(0, 2), (2, 4), (1, 1)],
+        [(0, 3), (-2, 1), (-1, 3)],
+    ]).range_(0, 1 + 1j)
+    B = A.conjugate()
+    print(A)
+    print(B)
+
+    {names:[i,j],edges:[{0:2,2:4,1:1},{0:3,-2:1,-1:3}],blocks:{[0,0]:[0,1+1i,2+2i,3+3i,4+4i,5+5i],[2,-2]:[6+6i,7+7i,8+8i,9+9i],[1,-1]:[10+10i,11+11i,12+12i]}}
+    {names:[i,j],edges:[{0:2,-2:4,-1:1},{0:3,2:1,1:3}],blocks:{[0,0]:[0,1-1i,2-2i,3-3i,4-4i,5-5i],[-2,2]:[6-6i,7-7i,8-8i,9-9i],[-1,1]:[10-10i,11-11i,12-12i]}}
+
+Please note that, in the case of \(U(1)\) symmetry, the reversal of the irreducible representation results in its negation, whereas for \(Z(2)\) symmetry, the reversal remains unchanged.
+
+In the case of a fermion tensor, the conjugation of the tensor, when contracted with the original one, may result in a non-positive number.
+This peculiar phenomenon indicates that the metric of the fermion tensor is not positive-semidefinite.
+This unusual occurrence can disrupt the plain gradient method in high-level programming.
+To compute the conjugation with a fixed metric, users can utilize an argument named `trivial_metric=True` when calling the conjugate function, as demonstrated below.
+However, it's important to note that this metric fixing will lead to a situation where \((AB)^\dagger \neq A^\dagger B^\dagger\) .
+
+    import TAT
+    
+    A = TAT.FermiZ2.Z.Tensor(["i", "j"], [
+        ([(False, 2), (True, 4)], False),
+        ([(False, 3), (True, 1)], True),
+    ]).range_(0, 1 + 1j)
+    B = A.conjugate()
+    C = A.conjugate(trivial_metric=True)
+    print(A)
+    print(B)
+    print(C)
+    print(A.contract(B, {("i", "i"), ("j", "j")}))
+    print(A.contract(C, {("i", "i"), ("j", "j")}))
+
+    {names:[i,j],edges:[{arrow:0,segment:{0:2,1:4}},{arrow:1,segment:{0:3,1:1}}],blocks:{[0,0]:[0,1+1i,2+2i,3+3i,4+4i,5+5i],[1,1]:[6+6i,7+7i,8+8i,9+9i]}}
+    {names:[i,j],edges:[{arrow:1,segment:{0:2,1:4}},{arrow:0,segment:{0:3,1:1}}],blocks:{[0,0]:[0,1-1i,2-2i,3-3i,4-4i,5-5i],[1,1]:[-6+6i,-7+7i,-8+8i,-9+9i]}}
+    {names:[i,j],edges:[{arrow:1,segment:{0:2,1:4}},{arrow:0,segment:{0:3,1:1}}],blocks:{[0,0]:[0,1-1i,2-2i,3-3i,4-4i,5-5i],[1,1]:[6-6i,7-7i,8-8i,9-9i]}}
+    {names:[],edges:[],blocks:{[]:[-350]}}
+    {names:[],edges:[],blocks:{[]:[570]}}
+
+
+## The tensor contraction
+
+To perform the contraction of two tensors, users can provide a set of edge pairs as argument to the `contract` function.
+Each pair consists of an edge from the first tensor to be contracted and the corresponding edge from the second tensor.
+In the following example, edge 'i' of tensor A is contracted with edge 'a' of tensor B, and edge 'j' of tensor A is contracted with edge 'c' of tensor B.
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i", "j", "k"], [2, 3, 4]).range_()
+    B = TAT.No.D.Tensor(["a", "b", "c", "d"], [2, 5, 3, 6]).range_()
+    C = A.contract(B, {("i", "a"), ("j", "c")})
+    print(C)
+
+    {names:[k,b,d],edges:[4,5,6],blocks:[4776,4836,4896,4956,5016,5076,5856,5916,5976,6036,6096,6156,6936,6996,7056,7116,7176,7236,8016,8076,8136,8196,8256,8316,9096,9156,9216,9276,9336,9396,5082,5148,5214,5280,5346,5412,6270,6336,6402,6468,6534,6600,7458,7524,7590,7656,7722,7788,8646,8712,8778,8844,8910,8976,9834,9900,9966,10032,10098,10164,5388,5460,5532,5604,5676,5748,6684,6756,6828,6900,6972,7044,7980,8052,8124,8196,8268,8340,9276,9348,9420,9492,9564,9636,10572,10644,10716,10788,10860,10932,5694,5772,5850,5928,6006,6084,7098,7176,7254,7332,7410,7488,8502,8580,8658,8736,8814,8892,9906,9984,10062,10140,10218,10296,11310,11388,11466,11544,11622,11700]}
+
+Since the function `clear_symmetry` solely removes symmetry information without making any other modifications,
+the symmetry-cleared tensor resulting from the contraction is equal to the contraction of the symmetry-cleared tensors individually.
+
+    import TAT
+    
+    a = TAT.BoseU1.D.Tensor(["A", "B", "C", "D"], [
+        [(-1, 1), (0, 1), (-2, 1)],
+        [(0, 1), (1, 2)],
+        [(0, 2), (1, 2)],
+        [(-2, 2), (-1, 1), (0, 2)],
+    ]).range_()
+    b = TAT.BoseU1.D.Tensor(["E", "F", "G", "H"], [
+        [(0, 2), (1, 1)],
+        [(-2, 1), (-1, 1), (0, 2)],
+        [(0, 1), (-1, 2)],
+        [(2, 2), (1, 1), (0, 2)],
+    ]).range_()
+    c = a.contract(b, {("B", "G"), ("D", "H")})
+    
+    A = a.clear_symmetry()
+    B = b.clear_symmetry()
+    C = A.contract(B, {("B", "G"), ("D", "H")})
+    print((c.clear_symmetry() - C).norm_2())
+
+    0.0
+
+The same principle applies to fermion symmetry tensors.
+
+    import TAT
+    
+    a = TAT.FermiU1.D.Tensor(["A", "B", "C", "D"], [
+        ([(-1, 1), (0, 1), (-2, 1)], False),
+        ([(0, 1), (1, 2)], True),
+        ([(0, 2), (1, 2)], False),
+        ([(-2, 2), (-1, 1), (0, 2)], True),
+    ]).range_()
+    b = TAT.FermiU1.D.Tensor(["E", "F", "G", "H"], [
+        ([(0, 2), (1, 1)], False),
+        ([(-2, 1), (-1, 1), (0, 2)], True),
+        ([(0, 1), (-1, 2)], False),
+        ([(2, 2), (1, 1), (0, 2)], False),
+    ]).range_()
+    c = a.contract(b, {("B", "G"), ("D", "H")})
+    
+    A = a.clear_symmetry()
+    B = b.clear_symmetry()
+    C = A.contract(B, {("B", "G"), ("D", "H")})
+    print((c.clear_symmetry() - C).norm_2())
+
+    0.0
+
+Sometimes, users may wish to construct a hypergraph that connects multiple edges (more than two) together.
+This functionality is implemented using an additional argument in the `contract` function.
+This argument is a set of edge names that specifies which edges should be fused together while keeping them as free edges without summation.
+It's important to note that this type of fusion operation is not well-defined for symmetry tensors and can only be applied to non-symmetry tensors.
+The following code snippet provides an example of this functionality:
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i", "j", "x"], [2, 3, 5]).range_()
+    B = TAT.No.D.Tensor(["a", "x", "c", "d"], [2, 5, 3, 6]).range_()
+    C = A.contract(B, {("i", "a"), ("j", "c")}, {"x"})
+    print(C)
+
+    {names:[x,d],edges:[5,6],blocks:[5970,6045,6120,6195,6270,6345,7734,7815,7896,7977,8058,8139,9714,9801,9888,9975,10062,10149,11910,12003,12096,12189,12282,12375,14322,14421,14520,14619,14718,14817]}
+
+
+## Edge renaming
+
+To rename the edge names of a tensor, users can utilize the `edge_rename` function with a dictionary as an argument,
+where the keys represent the old names and the values represent the new names.
+In the example provided, "i" is renamed to "j" and "j" is renamed to "i".
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(["i", "j", "k"], [2, 3, 4]).range_()
+    B = A.edge_rename({"i": "j", "j": "i"})
+    print(A)
+    print(B)
+
+    {names:[i,j,k],edges:[2,3,4],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]}
+    {names:[j,i,k],edges:[2,3,4],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]}
+
+
+## Tensor exponential
+
+Similar to the matrix exponential, the tensor exponential is obtained by summing the power series of tensor contractions.
+To specify the way to contract tensors, users should define the relations between edges using a set of pairs of two edge names.
+These pairs identify the corresponding relations, and the two edges in each pair will be contracted during the tensor contraction calculations.
+
+    import TAT
+    
+    A = TAT.No.D.Tensor(
+        ["i", "j", "k", "l"],
+        [2, 3, 3, 2],
+    ).range_()
+    
+    B = A.exponential({("i", "l"), ("j", "k")})
+    print(B)
+
+    {names:[j,i,k,l],edges:[3,2,3,2],blocks:[5.98438e+45,6.36586e+45,6.74734e+45,7.12882e+45,7.5103e+45,7.89178e+45,3.97807e+46,4.23166e+46,4.48524e+46,4.73883e+46,4.99242e+46,5.246e+46,1.72498e+46,1.83494e+46,1.9449e+46,2.05486e+46,2.16483e+46,2.27479e+46,5.10462e+46,5.43002e+46,5.75542e+46,6.08081e+46,6.40621e+46,6.73161e+46,2.85153e+46,3.0333e+46,3.21507e+46,3.39685e+46,3.57862e+46,3.76039e+46,6.23116e+46,6.62837e+46,7.02559e+46,7.4228e+46,7.82001e+46,8.21722e+46]}
+
+
+## Setting an identity tensor
+
+There are situations where users may want to obtain a tensor equivalent to an identity matrix.
+This can be achieved by setting a tensor to an identity tensor using the `identity_` function.
+This function accepts the same arguments as the exponential function to identify the corresponding relations within the edges.
+The example provided below sets the tensor A to an identity tensor in place. After setting, we have \(A = \delta_{il}\delta_{jk}\).
+
+    import TAT
+    
+    A = TAT.BoseU1.D.Tensor(["i", "j", "k", "l"], [
+        [(-1, 1), (0, 1), (+2, 1)],
+        [(-2, 2), (+1, 2), (0, 2)],
+        [(+2, 2), (-1, 2), (0, 2)],
+        [(+1, 1), (0, 1), (-2, 1)],
+    ]).identity_({("i", "l"), ("j", "k")})
+    print(A)
+
+    {names:[i,j,k,l],edges:[{-1:1,0:1,2:1},{-2:2,1:2,0:2},{2:2,-1:2,0:2},{1:1,0:1,-2:1}],blocks:{[-1,-2,2,1]:[1,0,0,1],[-1,1,2,-2]:[0,0,0,0],[-1,1,-1,1]:[1,0,0,1],[-1,1,0,0]:[0,0,0,0],[-1,0,0,1]:[1,0,0,1],[0,-2,2,0]:[1,0,0,1],[0,1,-1,0]:[1,0,0,1],[0,0,2,-2]:[0,0,0,0],[0,0,-1,1]:[0,0,0,0],[0,0,0,0]:[1,0,0,1],[2,-2,2,-2]:[1,0,0,1],[2,-2,-1,1]:[0,0,0,0],[2,-2,0,0]:[0,0,0,0],[2,1,-1,-2]:[1,0,0,1],[2,0,0,-2]:[1,0,0,1]}}
+
+
+## Merging and splitting edges
+
+Users have the ability to merge or split edges within a tensor using the functions `merge_edge` and `split_edge`.
+When merging edges, users need to provide a dictionary that maps from the new edge name to the list of old edge names,
+specifying which edges should be merged into a single edge and the order of the edges before merging.
+The interface for splitting edges is similar, but due to the information loss during edge merging,
+users also need to specify the edge segment information at this stage.
+An edge consists of two parts: segment information and a possible fermi-arrow.
+In this context, fermi-arrow is not needed, as TAT will automatically derive it.
+For non-symmetry tensors, the segment information can be replaced by the edge dimension in a straightforward manner.
+Users are free to merge zero edges into one edge or split one edge into zero edges, which simplifies handling corner cases in high-level code.
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j", "k", "l"], [
+        ([(-1, 1), (0, 1), (+2, 1)], False),
+        ([(-2, 2), (+1, 2), (0, 2)], True),
+        ([(+2, 2), (-1, 2), (0, 2)], False),
+        ([(+1, 1), (0, 1), (-2, 1)], True),
+    ]).range_()
+    print(A)
+    
+    B = A.merge_edge({"a": ["i", "k"], "b": [], "c": ["l", "j"]})
+    print(B)
+    
+    C = B.split_edge({
+        "a": [
+    	("i", [(-1, 1), (0, 1), (+2, 1)]),
+    	("k", [(+2, 2), (-1, 2), (0, 2)]),
+        ],
+        "b": [],
+        "c": [
+    	("l", [(+1, 1), (0, 1), (-2, 1)]),
+    	("j", [(-2, 2), (+1, 2), (0, 2)]),
+        ]
+    })
+    print(C)
+    print((A - C).norm_2())
+
+    {names:[i,j,k,l],edges:[{arrow:0,segment:{-1:1,0:1,2:1}},{arrow:1,segment:{-2:2,1:2,0:2}},{arrow:0,segment:{2:2,-1:2,0:2}},{arrow:1,segment:{1:1,0:1,-2:1}}],blocks:{[-1,-2,2,1]:[0,1,2,3],[-1,1,2,-2]:[4,5,6,7],[-1,1,-1,1]:[8,9,10,11],[-1,1,0,0]:[12,13,14,15],[-1,0,0,1]:[16,17,18,19],[0,-2,2,0]:[20,21,22,23],[0,1,-1,0]:[24,25,26,27],[0,0,2,-2]:[28,29,30,31],[0,0,-1,1]:[32,33,34,35],[0,0,0,0]:[36,37,38,39],[2,-2,2,-2]:[40,41,42,43],[2,-2,-1,1]:[44,45,46,47],[2,-2,0,0]:[48,49,50,51],[2,1,-1,-2]:[52,53,54,55],[2,0,0,-2]:[56,57,58,59]}}
+    {names:[b,c,a],edges:[{arrow:0,segment:{0:1}},{arrow:1,segment:{-1:4,2:2,1:4,-2:4,0:2,-4:2}},{arrow:0,segment:{1:4,-2:2,-1:4,2:4,0:2,4:2}}],blocks:{[0,-1,1]:[-0,-1,-44,-45,-2,-3,-46,-47,-4,-5,52,53,-6,-7,54,55],[0,2,-2]:[8,9,10,11],[0,1,-1]:[-16,-17,-32,-33,-18,-19,-34,-35,-12,-13,24,25,-14,-15,26,27],[0,-2,2]:[20,21,48,49,22,23,50,51,28,29,56,57,30,31,58,59],[0,0,0]:[36,37,38,39],[0,-4,4]:[40,41,42,43]}}
+    {names:[l,j,i,k],edges:[{arrow:1,segment:{1:1,0:1,-2:1}},{arrow:1,segment:{-2:2,1:2,0:2}},{arrow:0,segment:{-1:1,0:1,2:1}},{arrow:0,segment:{2:2,-1:2,0:2}}],blocks:{[1,-2,-1,2]:[-0,-1,-2,-3],[1,-2,2,-1]:[-44,-45,-46,-47],[1,1,-1,-1]:[8,9,10,11],[1,0,-1,0]:[-16,-17,-18,-19],[1,0,0,-1]:[-32,-33,-34,-35],[0,-2,0,2]:[20,21,22,23],[0,-2,2,0]:[48,49,50,51],[0,1,-1,0]:[-12,-13,-14,-15],[0,1,0,-1]:[24,25,26,27],[0,0,0,0]:[36,37,38,39],[-2,-2,2,2]:[40,41,42,43],[-2,1,-1,2]:[-4,-5,-6,-7],[-2,1,2,-1]:[52,53,54,55],[-2,0,0,2]:[28,29,30,31],[-2,0,2,0]:[56,57,58,59]}}
+    0.0
+
+It's crucial to note that when two fermion symmetry tensors with connected edges, which will be contracted,
+undergo merging or splitting of common edges, it results in the generation of a single sign.
+So, users needs to specify which of the two tensors should contain the generated sign using the additional two arguments provided by the corresponding functions.
+In the examples below, we initially contract the common edges "i" and "j" from connected tensors A1 and B1 to obtain tensor C1.
+Subsequently, we merge the two common edges "i" and "j" into a single common edge "k" for both tensors, resulting in tensors A2 and B2.
+Afterward, tensor C2 is obtained by contracting A2 and B2, demonstrating that C1 equals C2.
+In this example, we apply the sign to B1 but not to A1, as we should apply it only once.
+Moreover, there is a third argument in the function, which consists of a set of edge names selected from the merged edges,
+and these particular edges are expected to exhibit behavior opposite to what is determined by the second argument.
+In the case of splitting functions, the third argument should consist of a set of names representing edges that will exhibit opposite behavior when they are split.
+
+    import TAT
+    
+    TAT.random.seed(7)
+    
+    A1 = TAT.FermiZ2.D.Tensor(["i", "j", "a"], [
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], True),
+    ]).randn_()
+    B1 = TAT.FermiZ2.D.Tensor(["i", "j", "b"], [
+        ([(False, 2), (True, 2)], True),
+        ([(False, 2), (True, 2)], True),
+        ([(False, 2), (True, 2)], False),
+    ]).randn_()
+    C1 = A1.contract(B1, {("i", "i"), ("j", "j")})
+    
+    A2 = A1.merge_edge({"k": ["i", "j"]}, False)
+    B2 = B1.merge_edge({"k": ["i", "j"]}, True)
+    C2 = A2.contract(B2, {("k", "k")})
+    
+    print(C1 - C2)
+
+    {names:[a,b],edges:[{arrow:1,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}}],blocks:{[0,0]:[0,0,0,0],[1,1]:[0,0,0,0]}}
+
+
+## Reversing fermi-arrow of edges
+
+The fermi-arrow of two edges that are connected with each other can be reversed together using the `reversed_edge` function.
+It's important to note that when reversing a pair of edges, a single sign is generated.
+Therefore, users need to specify which tensor the generated sign should be applied to.
+This is handled by the last two arguments of the function.
+In the example below, we first contract tensors A1 and B1 to obtain C1.
+Then, we reverse the edges of A1 and B1 that will be contracted to create new tensors A2 and B2.
+After reversing, we contract A2 and B2 to obtain C2. The code demonstrates that C1 and C2 are equal.
+When reversing, the second argument indicates whether to apply the sign to the current tensor.
+In this example, we apply the sign to B1 but not to A1, as we should apply it only once.
+Additionally, there is a third argument in the function, which consists of a set of names selected from the edges that have undergone reversal,
+and these specific edges are expected to exhibit behavior opposite to what is determined by the second argument.
+
+    import TAT
+    
+    TAT.random.seed(7)
+    
+    A1 = TAT.FermiZ2.D.Tensor(["i", "j"], [
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], True),
+    ]).randn_()
+    B1 = TAT.FermiZ2.D.Tensor(["i", "j"], [
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], True),
+    ]).randn_()
+    C1 = A1.contract(B1, {("i", "j")})
+    
+    A2 = A1.reverse_edge({"i"}, False)
+    B2 = B1.reverse_edge({"j"}, True)
+    C2 = A2.contract(B2, {("i", "j")})
+    
+    print(C1 - C2)
+
+    {names:[j,i],edges:[{arrow:1,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}}],blocks:{[0,0]:[0,0,0,0],[1,1]:[0,0,0,0]}}
+
+
+## QR decomposition on a tensor
+
+The `qr` function can be used to perform QR decomposition on a tensor.
+To use this function, users should provide the set of free edges of the tensor after decomposition,
+as well as the two edge names created as a result of the decomposition.
+In the provided example, the fermion tensor A has three edges: "i", "j" and "k".
+During the QR decomposition, we configure that the edges of the Q tensor should include "k" only,
+while the remaining edges, namely "i" and "j", should be included in the R tensor.
+The first argument of the qr function can be either 'q' or 'r', specifying whether the second argument represents the set of free edges of the Q tensor or the R tensor.
+After the QR decomposition, the Q tensor will have two edges: the original "k" edge from the input tensor and the edge created during the decomposition, which is named "Q".
+For the R tensor, it should contain three edges, with two of them coming from the original tensor ("i" and "j") and the newly created edge, named "R".
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j", "k"], [
+        ([(-1, 2), (0, 2), (-2, 2)], True),
+        ([(0, 2), (1, 2)], False),
+        ([(0, 2), (1, 2)], False),
+    ]).range_()
+    
+    Q, R = A.qr('q', {"k"}, "Q", "R")
+    Q_dagger = Q.conjugate().edge_rename({"Q": "Q'"})
+    print(Q_dagger.contract(Q, {("k", "k")}))
+    print((Q.contract(R, {("Q", "R")}) - A).norm_max())
+
+    {names:[Q',Q],edges:[{arrow:0,segment:{1:2,0:2}},{arrow:1,segment:{-1:2,0:2}}],blocks:{[1,-1]:[1,0,0,1],[0,0]:[1,5.55112e-17,5.55112e-17,1]}}
+    3.552713678800501e-15
+
+
+## Singular value decomposition (SVD) on a tensor
+
+The `svd` function can be used to perform SVD on a tensor.
+To use this function, users need to provide the set of free edges of the tensor after decomposition,
+as well as the four edge names created as a result of the decomposition.
+In the provided example, the fermion tensor A has three edges: "i", "j", and "k".
+During the SVD, we configure the edges of the U tensor to include only the "k" edge, while the remaining edges, namely "i" and "j", should be included in the V tensor.
+The first argument of the svd function is the set of free edges of the U tensor.
+After the SVD, the U tensor will have two edges: the original "k" edge from the input tensor and the edge created during decomposition, which is named "U".
+For the V tensor, it should contain three edges, with two of them coming from the original tensor ("i" and "j") and the newly created edge, named "V".
+As for the S tensor, it is indeed a diagonal matrix with two edges, named "SU" and "SV," as specified in the later two arguments.
+The last argument, which represents the SVD dimension cut, can be set to -1 for no cutting (default behavior),
+a positive integer for absolute dimension cutting, or a real number between 0 and 1 for relative dimension cutting.
+
+    import TAT
+    
+    A = TAT.FermiU1.D.Tensor(["i", "j", "k"], [
+        ([(-1, 2), (0, 2), (-2, 2)], True),
+        ([(0, 2), (1, 2)], False),
+        ([(0, 2), (1, 2)], False),
+    ]).range_()
+    
+    U, S, V = A.svd({"k"}, "U", "V", "SU", "SV", -1)
+    U_dagger = U.conjugate().edge_rename({"U": "U'"})
+    print(U_dagger.contract(U, {("k", "k")}))
+    USV = U.contract(S, {("U", "SU")}).contract(V, {("SV", "V")})
+    print((USV - A).norm_max())
+
+    {names:[U',U],edges:[{arrow:0,segment:{1:2,0:2}},{arrow:1,segment:{-1:2,0:2}}],blocks:{[1,-1]:[1,0,0,1],[0,0]:[1,0,0,1]}}
+    1.0658141036401503e-14
+
+
+## The tensor tracing
+
+To trace a subset of edges within a tensor, users can utilize the `trace` function.
+This involves providing a set of pairs consisting of two edge names that are intended for tracing.
+In the provided example, we perform a trace operation on tensor A, specifically targeting edges labeled "j" and "k".
+This tensor encompasses three edges: "i", "j", and "k".
+Consequently, the outcome of this operation will yield a tensor with a solitary edge labeled "i".
+
+    import TAT
+    
+    A = TAT.FermiZ2.C.Tensor(["i", "j", "k"], [
+        ([(False, 2), (True, 2)], True),
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], True),
+    ]).range_()
+    print(A)
+    B = A.trace({("j", "k")})
+    print(B)
+
+    {names:[i,j,k],edges:[{arrow:1,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}},{arrow:1,segment:{0:2,1:2}}],blocks:{[0,0,0]:[0,1,2,3,4,5,6,7],[0,1,1]:[8,9,10,11,12,13,14,15],[1,0,1]:[16,17,18,19,20,21,22,23],[1,1,0]:[24,25,26,27,28,29,30,31]}}
+    {names:[i],edges:[{arrow:1,segment:{0:2,1:2}}],blocks:{[0]:[-16,-16]}}
+
+Specifically tailored for non-symmetric tensors, similar to the contract operation,
+this interface allows users to establish a connection between two edges within the same tensor while leaving them unsummarized.
+This functionality is realized through the utilization of the second argument,
+which takes the form of a dictionary mapping new edge names to pairs of two existing edge names.
+In the provided examples, a non-symmetric tensor is created, featuring five edges: "i", "j", "k", "l", and "m".
+During the tracing process, "j" and "k" are connected and combined, resulting in the omission of these two edges in the resulting tensor.
+On the other hand, "l" and "m" are connected but not aggregated, leading to their consolidation into a single edge labeled "n" within the resultant tensor.
+
+    import TAT
+    
+    A = TAT.No.Z.Tensor(
+        ["i", "j", "k", "l", "m"],
+        [4, 3, 3, 2, 2],
+    ).range_()
+    print(A)
+    B = A.trace({("j", "k")}, {"n": ("l", "m")})
+    print(B)
+
+    {names:[i,j,k,l,m],edges:[4,3,3,2,2],blocks:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143]}
+    {names:[n,i],edges:[2,4],blocks:[48,156,264,372,57,165,273,381]}
+
+
+## The tensor transposition
+
+In practical tensor operations, manual tensor transposition is typically unnecessary.
+However, transposition becomes valuable when preparing tensors for external operations, such as MPI operations on tensor storage.
+The `transpose` function accommodates this need by accepting a list of edge names that specify the desired edge order for the resulting tensor.
+
+    import TAT
+    
+    A = TAT.FermiZ2.C.Tensor(["i", "j", "k"], [
+        ([(False, 2), (True, 2)], True),
+        ([(False, 2), (True, 2)], False),
+        ([(False, 2), (True, 2)], True),
+    ]).range_()
+    print(A)
+    B = A.transpose(["k", "j", "i"])
+    print(B)
+
+    {names:[i,j,k],edges:[{arrow:1,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}},{arrow:1,segment:{0:2,1:2}}],blocks:{[0,0,0]:[0,1,2,3,4,5,6,7],[0,1,1]:[8,9,10,11,12,13,14,15],[1,0,1]:[16,17,18,19,20,21,22,23],[1,1,0]:[24,25,26,27,28,29,30,31]}}
+    {names:[k,j,i],edges:[{arrow:1,segment:{0:2,1:2}},{arrow:0,segment:{0:2,1:2}},{arrow:1,segment:{0:2,1:2}}],blocks:{[0,0,0]:[0,4,2,6,1,5,3,7],[0,1,1]:[-24,-28,-26,-30,-25,-29,-27,-31],[1,0,1]:[-16,-20,-18,-22,-17,-21,-19,-23],[1,1,0]:[-8,-12,-10,-14,-9,-13,-11,-15]}}
+
+
+## Symmetry operations
+
+While all interfaces accept integers, booleans, or tuples comprised of integers and booleans to represent symmetries,
+often referred to as irreducible representations, each symmetry type has its specific class.
+For instance, there is `TAT.FermiZ2.Symmetry`, which can be instantiated using a boolean value.
+In practice, it's worth mentioning that all interfaces perform an implicit conversion of the input to the appropriate symmetry type internally.
+For all symmetry types, users have the flexibility to perform various operations,
+including addition of two symmetries,
+subtraction of two symmetries,
+obtaining the negation of a symmetry,
+comparing two symmetries,
+and retrieving the parity of the symmetry.
+
+    import TAT
+    
+    r1 = TAT.BoseZ2.Symmetry(False)
+    r2 = TAT.BoseZ2.Symmetry(True)
+    print(r1, r2)
+    print(r1 + r2, r1 - r2)
+    print(-r1, -r2)
+    print(r1 > r2, r1 < r2, r1 == r2)
+    print(r1.parity, r2.parity)
+    
+    s1 = TAT.FermiZ2.Symmetry(False)
+    s2 = TAT.FermiZ2.Symmetry(True)
+    print(s1, s2)
+    print(s1 + s2, s1 - s2)
+    print(-s1, -s2)
+    print(s1 > s2, s1 < s2, s1 == s2)
+    print(s1.parity, s2.parity)
+    
+    t1 = TAT.FermiU1.Symmetry(-2)
+    t2 = TAT.FermiU1.Symmetry(+3)
+    print(t1, t2)
+    print(t1 + t2, t1 - t2)
+    print(-t1, -t2)
+    print(t1 > t2, t1 < t2, t1 == t2)
+    print(t1.parity, t2.parity)
+
+    0 1
+    1 1
+    0 1
+    False True False
+    False False
+    0 1
+    1 1
+    0 1
+    False True False
+    False True
+    -2 3
+    1 -5
+    2 -3
+    False True False
+    False True
+
+
+## Edge operations
+
+Similarly to symmetry types, edge types are also defined, and interfaces that accept edges will automatically perform implicit type conversion for input edge types.
+For instance, `TAT.FermiU1.Edge` is the designated edge type utilized in all tensors within the submodule `TAT.FermiU1`.
+Edge types encompass several functions and attributes, including:
+
+-   `edge.arrow`: Retrieves the fermi arrow of the edge. It is always set to False for non-fermion symmetry edges and non-symmetry edges.
+-   `edge.dimension`: Obtains the total dimension of the edge.
+-   `edge.segments`: Provides a read-only list of segment pairs comprising symmetry and its corresponding local dimension.
+-   `edge.segments_size`: Determines the length of the segments list.
+-   `edge.conjugate()`: Computes the conjugated edge.
+-   `edge.dimension_by_symmetry(symmetry)`: Retrieves the local dimension based on the given symmetry.
+-   `edge.position_by_symmetry(symmetry)`: Retrieves the position in the segments list using the specified symmetry.
+-   `edge.<x>_by_<y>(...)`: Facilitates conversion between three indexing methods, where `<x>` and `<y>` can be either `index`, `coord`, or `point`.
+    In the context of `index`, it represents the total index across the entire edge.
+    In the case of `coord`, it consists of a pair denoting the position of the local segment within the segments list and the local index within that segment.
+    Lastly, for `point`, it comprises a pair consisting of the symmetry of the current segment and the local index within that segment.
+
+
+# FAQ
+
+
+## I get error message like this when `import TAT`
+
+    mca_base_component_repository_open: unable to open mca_patcher_overwrite: /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_patcher_overwrite.so: undefined symbol: mca_patcher_base_patch_t_class (ignored)
+    mca_base_component_repository_open: unable to open mca_shmem_posix: /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_shmem_posix.so: undefined symbol: opal_shmem_base_framework (ignored)
+    mca_base_component_repository_open: unable to open mca_shmem_mmap: /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_shmem_mmap.so: undefined symbol: opal_show_help (ignored)
+    mca_base_component_repository_open: unable to open mca_shmem_sysv: /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_shmem_sysv.so: undefined symbol: opal_show_help (ignored)
+
+This issue may arise due to problems with older MPI versions, such as OpenMPI 2.1.1 on Ubuntu 18.04 LTS.
+If you have compiled MPI support into PyTAT, you may need to load the MPI dynamic shared library manually before importing TAT.
+You can do this by using `import ctypes` and `ctypes.CDLL("libmpi.so", mode=ctypes.RTLD_GLOBAL)`.
+It is recommended to refrain from integrating MPI support into TAT while compiling PyTAT, as we have no intention of using it.
+Instead, our preference is to utilize mpi4py directly within the high-level code.
+
+
+## I get error message like this when `import TAT`
+
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ImportError: /home/hzhangxyz/.local/lib/python3.10/site-packages/TAT.cpython-310-x86_64-linux-gnu.so: undefined symbol: cgesv_
+
+This error arises due to the omission of linking LAPACK and BLAS libraries during the library compilation process.
+To resolve this issue, you must either recompile the library with the correct compilation flags,
+or alternatively, you can include the LAPACK/BLAS library path in the `LD_PRELOAD` environment variable.
+For instance, you can achieve this by executing the command `export LD_PRELOAD=/lib64/liblapack.so.3` before running Python.
+
