@@ -1,0 +1,10 @@
+ebookrack/__init__.py,sha256=X4TP9WgXLOFrV2SpjdGUeRYvEDyBA6yWHDzQUWsP_zU,183
+ebookrack/catalogue.py,sha256=NVMU5y6-YxDQGYWL5ZWyFUoANQngr2GhW6WExP9yk7s,1965
+ebookrack/library.py,sha256=IY0bQXqJKTsdZnlozjIg3vxzEzbbGghV04ahGPiprJg,2401
+ebookrack/shelf.py,sha256=aXfOnpfsUQ44zFL3jBYneZtvHPxaC2XY45Zlw7jGYOw,2846
+ebookrack/calibre/__init__.py,sha256=wpGmDAuahl5Id5riwWX9TCgBWZWO1731OyHCPINqLMY,159
+ebookrack/calibre/library.py,sha256=Rhm1c4TIIDNLEjzjT5WRVDahUWQXQOU3DpbC7e0Iulw,1113
+ebookrack/calibre/metadata.py,sha256=wHEYS-uaaLUdYYF3j5GxBLoS4it8eCRPAY0ghjtJmL4,2154
+ebookrack-0.3.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+ebookrack-0.3.1.dist-info/METADATA,sha256=Qg4YcpjGk8EPhWOsDQnQwgZD3PYtTpaAD35xIzTCxqk,1511
+ebookrack-0.3.1.dist-info/RECORD,,
