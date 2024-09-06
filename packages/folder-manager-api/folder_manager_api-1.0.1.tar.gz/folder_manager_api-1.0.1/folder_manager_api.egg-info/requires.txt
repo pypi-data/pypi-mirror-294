@@ -1,0 +1,5 @@
+fastapi
+fastapi-cors
+uvicorn
+pydantic
+folder_manager

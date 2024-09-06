@@ -1,0 +1,11 @@
+README.md
+setup.py
+folder_manager_api/__init__.py
+folder_manager_api/__main__.py
+folder_manager_api/folder_manager_api.py
+folder_manager_api.egg-info/PKG-INFO
+folder_manager_api.egg-info/SOURCES.txt
+folder_manager_api.egg-info/dependency_links.txt
+folder_manager_api.egg-info/entry_points.txt
+folder_manager_api.egg-info/requires.txt
+folder_manager_api.egg-info/top_level.txt

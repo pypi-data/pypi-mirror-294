@@ -1,0 +1,2 @@
+[console_scripts]
+folder_manager_api = folder_manager_api.__main__:main
