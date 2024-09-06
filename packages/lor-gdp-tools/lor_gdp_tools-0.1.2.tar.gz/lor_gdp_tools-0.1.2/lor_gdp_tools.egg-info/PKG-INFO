@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: lor-gdp-tools
+Version: 0.1.2
+Summary: This is a utility package designed to enable data scientitists and analysts to easily access GDP data within a python environment
+Author: Damian Rumble <DRumble@laingorourke.com>
