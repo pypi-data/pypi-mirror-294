@@ -1,0 +1,4 @@
+structlog>=24.4.0
+presidio-analyzer
+presidio-anonymizer
+regex
