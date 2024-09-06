@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hyperdrivepy
+Version: 0.18.0
+Author-email: Dylan Paiton <dylan@delv.tech>, Matthew Brown <matt@delv.tech>, Sheng Lundquist <sheng@delv.tech>
+Project-URL: Homepage, https://github.com/delvtech/hyperdrive-rs
+Project-URL: Issues, https://github.com/delvtech/hyperdrive-rs/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hyperdrivetypes>=1.0.18.5
+Provides-Extra: all
+Requires-Dist: hyperdrivepy[dev]; extra == "all"
+Provides-Extra: dev
+Requires-Dist: black==24.*; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: cibuildwheel; extra == "dev"
+Requires-Dist: jinja2; extra == "dev"
+Requires-Dist: platformdirs; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pyright; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: setuptools-rust; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+
+# hyperdrivepy
+
+Hyperdrivepy is the Python bindings for the Rust [hyperdrive](https://github.com/delvtech/hyperdrive) implementation.
+
+## Hyperdrivepy install
+
+Hyperdrivepy can be installed via pip: `python -m pip install hyperdrivepy`
+
+
+## Disclaimer
+
+The language used in this codebase is for coding convenience only, and is not
+intended to, and does not, have any particular legal or regulatory significance.
