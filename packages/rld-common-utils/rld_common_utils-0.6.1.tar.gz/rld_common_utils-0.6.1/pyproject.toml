@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=74.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rld-common-utils"
+description = "Private package containing shared utilities for rld projects"
+version = "0.6.1"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+# installed by app depending on this lib
+dependencies = [
+  'urllib3 < 2',
+]
+
+[project.optional-dependencies]
+
+# installed by gitlab runner
+test = [
+    "parameterized"
+]
+
+# installed by vscode dev container
+dev = [
+'ruff==0.5.5', # Linting and formatting
+'codespell',   # common spelling mistakes
+'pre-commit',  # Git check
+'pytest',      # Unit Tests
+'pytest-cov',
+'python-dotenv',
+] 
+
+[tool.bumpversion]
+current_version = "0.6.1"
+
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"

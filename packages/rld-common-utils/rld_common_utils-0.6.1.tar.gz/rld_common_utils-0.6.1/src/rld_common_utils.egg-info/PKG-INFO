@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rld-common-utils
+Version: 0.6.1
+Summary: Private package containing shared utilities for rld projects
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: urllib3<2
+Provides-Extra: test
+Requires-Dist: parameterized; extra == "test"
+Provides-Extra: dev
+Requires-Dist: ruff==0.5.5; extra == "dev"
+Requires-Dist: codespell; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: python-dotenv; extra == "dev"
+
+Private package containing shared utilities for rld projects

@@ -1,0 +1,12 @@
+urllib3<2
+
+[dev]
+ruff==0.5.5
+codespell
+pre-commit
+pytest
+pytest-cov
+python-dotenv
+
+[test]
+parameterized
