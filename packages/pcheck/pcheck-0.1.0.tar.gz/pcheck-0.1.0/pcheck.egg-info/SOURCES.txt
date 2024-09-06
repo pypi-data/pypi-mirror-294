@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pcheck/__init__.py
+pcheck/__main__.py
+pcheck/pcheck.py
+pcheck.egg-info/PKG-INFO
+pcheck.egg-info/SOURCES.txt
+pcheck.egg-info/dependency_links.txt
+pcheck.egg-info/entry_points.txt
+pcheck.egg-info/requires.txt
+pcheck.egg-info/top_level.txt
