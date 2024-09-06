@@ -1,0 +1,7 @@
+audeer>=1.10.0
+audmetric
+pingouin
+numpy<2.1
+pandas
+scikit-learn
+statsmodels
