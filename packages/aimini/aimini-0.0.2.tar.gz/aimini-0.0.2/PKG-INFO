@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aimini
+Version: 0.0.2
+Summary: Repository for the library and docs build when learning stable diffusion from foundation
+Home-page: https://github.com/anubhavmaity/aimini/
+Author: anubhavmaity
+Author-email: anubhavmaity7@gmail.com
+License: Apache Software License 2.0
+Keywords: stable diffusion,clustering,tensor,deep learning,pytorch
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fastcore
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: datasets
+Requires-Dist: deeplake
+Requires-Dist: scikit-learn
+Requires-Dist: fastprogress
+Requires-Dist: torcheval
+Provides-Extra: dev
+
+# StableDiffusion-from-foundation

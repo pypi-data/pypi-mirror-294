@@ -1,0 +1,12 @@
+fastcore
+pandas
+matplotlib
+torch
+torchvision
+datasets
+deeplake
+scikit-learn
+fastprogress
+torcheval
+
+[dev]
