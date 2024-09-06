@@ -1,0 +1,6 @@
+[console_scripts]
+langevals-server=langevals.server:main
+
+[pytest11]
+pass_rate_plugin=langevals.pytest_plugins.pass_rate_plugin
+
