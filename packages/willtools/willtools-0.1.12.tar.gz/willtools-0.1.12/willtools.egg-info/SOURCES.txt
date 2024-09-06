@@ -1,0 +1,12 @@
+README.md
+setup.py
+willtools/__init__.py
+willtools/fs.py
+willtools/id.py
+willtools/image.py
+willtools/st.py
+willtools.egg-info/PKG-INFO
+willtools.egg-info/SOURCES.txt
+willtools.egg-info/dependency_links.txt
+willtools.egg-info/requires.txt
+willtools.egg-info/top_level.txt
