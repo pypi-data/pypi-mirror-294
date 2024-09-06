@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 63.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version", "dependencies"]
+name = "aero-svo-api"
+authors = [
+    {name="Nikita Bulavinov", email="jktujgxtu@gmail.com"}
+]
+description = "Unoficial api wrapper for Sheremetyevo International Airport"
+keywords = ["api", "wrapper", "airport", "svo", "sheremetyevo", "schedule", "flight"]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = 'aero_svo_api.__version__'}
+
+[project.urls]
+"Homepage"= "https://github.com/jktujg/aero-svo-api"
+"Bug Tracker" = "https://github.com/jktujg/aero-svo-api/issues"
+"Changelog" = "https://github.com/jktujg/aero-svo-api/blob/main/CHANGELOG.md"

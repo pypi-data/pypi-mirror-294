@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/aero_svo_api/__init__.py
+src/aero_svo_api/api.py
+src/aero_svo_api/async_api.py
+src/aero_svo_api/models.py
+src/aero_svo_api/urls.py
+src/aero_svo_api.egg-info/PKG-INFO
+src/aero_svo_api.egg-info/SOURCES.txt
+src/aero_svo_api.egg-info/dependency_links.txt
+src/aero_svo_api.egg-info/requires.txt
+src/aero_svo_api.egg-info/top_level.txt
+tests/test_api.py
+tests/test_async_api.py
+tests/test_models.py

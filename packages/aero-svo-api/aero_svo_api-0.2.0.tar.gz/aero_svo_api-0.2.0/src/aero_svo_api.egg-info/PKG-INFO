@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: aero-svo-api
+Version: 0.2.0
+Summary: Unoficial api wrapper for Sheremetyevo International Airport
+Author-email: Nikita Bulavinov <jktujgxtu@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Nikita Bulavinov
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/jktujg/aero-svo-api
+Project-URL: Bug Tracker, https://github.com/jktujg/aero-svo-api/issues
+Project-URL: Changelog, https://github.com/jktujg/aero-svo-api/blob/main/CHANGELOG.md
+Keywords: api,wrapper,airport,svo,sheremetyevo,schedule,flight
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp==3.9.3
+Requires-Dist: pydantic==2.6.3
+Requires-Dist: pytest==8.3.2
+Requires-Dist: pytest-asyncio==0.23.8
+Requires-Dist: tenacity==9.0.0
+Requires-Dist: requests==2.32.3
+
+# aero-svo-api  
+Unofficial Sheremetyevo International Airport [website](https://www.svo.aero/ru/main) API wrapper 
+
+* Sync/Async usage
+* Pydantic models as a result
+
+
+## Installation
+```commandline
+pip install aero-svo-api
+```
+## Available methods
+* `get_schedule`  - List of flights for arrival/departure direction in a time range 
+* `get_flight`    - Current flight details by its ID 
+
+## Usage example
+
+
+```python
+from datetime import datetime, timedelta
+from aero_svo_api import SvoAPI
+
+# each *API instance creates own session with first request if session not provided in constructor
+# by default: request.Session for SvoAPI and aiohttp.ClientSession for AsyncSvoAPI
+
+svo_api = SvoAPI()
+
+schedule = svo_api.get_schedule(
+    direction='departure',
+    date_start=datetime.now(),
+    date_end=datetime.now() + timedelta(hours=3),
+    # additional parameters (e.g. headers, cookies, ...) forwards to session request
+    headers={'User-Agent': 'Custom user-agent'}
+)
+```
+
+
