@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/xai4mri/__init__.py
+src/xai4mri.egg-info/PKG-INFO
+src/xai4mri.egg-info/SOURCES.txt
+src/xai4mri.egg-info/dependency_links.txt
+src/xai4mri.egg-info/not-zip-safe
+src/xai4mri.egg-info/requires.txt
+src/xai4mri.egg-info/top_level.txt

@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: xai4mri
+Version: 0.0.0
+Summary: xai4mri is designed for advanced MRI analysis using deep learning combined with explainable A.I. (XAI).
+Author-email: "Simon M. Hofmann" <simon.hofmann@pm.me>
+Maintainer-email: "Simon M. Hofmann" <simon.hofmann@pm.me>
+License: MIT License for xai4mri
+        
+        Copyright (c) 2024 Simon M. Hofmann
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        Cite this repository in your publications if you use this code.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/SHEscher/xai4mri
+Keywords: transfer-learning,xai,explainable-ai,explanation,interpretation,prediction,MRI,sMRI,3D-conv,deep-learning,structure,brain,t1w,flair,swi,dwi
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: antspyx<0.5.0,>=0.4.2
+Requires-Dist: innvestigate<3.0.0,>=2.1.2
+Requires-Dist: nilearn<1.0,>=0.10
+Requires-Dist: tensorflow<2.15,>=2.6
+Requires-Dist: tqdm<5.0,>=4.64
+Provides-Extra: develop
+Requires-Dist: bumpver==2023.1129; extra == "develop"
+Requires-Dist: ruff<1.0.0,>=0.6.3; extra == "develop"
+Requires-Dist: tox<5.0.0,>=4.18.0; extra == "develop"
+Requires-Dist: pre-commit<4.0.0,>=3.8.0; extra == "develop"
+Requires-Dist: pytest<9.0.0,>=8.3.2; extra == "develop"
+Requires-Dist: pytest-cov<6.0.0,>=5.0.0; extra == "develop"
+Provides-Extra: docs
+Requires-Dist: blacken-docs<2.0,>=1.13; extra == "docs"
+Requires-Dist: docutils<1.0.0,>=0.20.1; extra == "docs"
+Requires-Dist: markdown-callouts<1.0.0,>=0.2; extra == "docs"
+Requires-Dist: markdown-exec[ansi]<1.0,>=0.5; extra == "docs"
+Requires-Dist: mkdocs<2.0,>=1.5; extra == "docs"
+Requires-Dist: mkdocs-autorefs<1.0.0,>=0.5.0; extra == "docs"
+Requires-Dist: mkdocs-bibtex<3.0.0,>=2.11.0; extra == "docs"
+Requires-Dist: mkdocs-coverage<1.0,>=0.2; extra == "docs"
+Requires-Dist: mkdocs-gen-files<1.0,>=0.3; extra == "docs"
+Requires-Dist: mkdocs-jupyter<1.0.0,>=0.24.6; extra == "docs"
+Requires-Dist: mkdocs-literate-nav<1.0,>=0.4; extra == "docs"
+Requires-Dist: mkdocs-material<8.0,>=7.3; extra == "docs"
+Requires-Dist: mkdocs-material-extensions; extra == "docs"
+Requires-Dist: mkdocs-minify-plugin<1.0.0,>=0.6.4; extra == "docs"
+Requires-Dist: mkdocs-redirects<2.0.0,>=1.2.0; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: pypandoc<2.0,>=1.12; extra == "docs"
+
+# xai4mri
+
+***
+    Date: 2024
+    Status: in prep
+    Author(s): Simon M. Hofmann
+***
+
+![xai4mri logo](xai4mri.svg)
+
+![Last update](https://img.shields.io/badge/last_update-Sep_05,_2024-green)
+![Last update](https://img.shields.io/badge/version-v.0.0.0-blue)
+
+## Project description
+
+**xai4mri** is designed for advanced MRI analysis combining deep learning with explainable A.I. (XAI). It offers the following key functionalities:
+
+- **Model Loading**: load (pretrained) 3D-convolutional neural network models tailored for MRI predictions.
+- **Data Integration**: Effortlessly import new MRI datasets and apply the models to generate accurate predictions.
+- **Interpretation Tools**: Utilize analyzer tools, such as Layer-wise Relevance Propagation (LRP), to interpret model predictions through intuitive heatmaps.
+
+With **xai4mri**, you can complement your MRI analysis workflow, ensuring precise predictions and insightful interpretations.
+
+> Note, **xai4mri** will be released soon (end of 2024). Stay tuned!
