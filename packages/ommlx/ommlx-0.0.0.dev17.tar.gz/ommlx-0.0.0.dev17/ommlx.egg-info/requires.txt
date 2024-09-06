@@ -1,0 +1,15 @@
+omlish==0.0.0.dev17
+
+[all]
+torch~=2.4
+
+[all:python_version < "3.13"]
+lxml~=5.3
+
+[torch]
+torch~=2.4
+
+[xml]
+
+[xml:python_version < "3.13"]
+lxml~=5.3
