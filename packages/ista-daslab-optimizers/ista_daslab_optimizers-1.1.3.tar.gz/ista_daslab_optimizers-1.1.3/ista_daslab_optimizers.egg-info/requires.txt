@@ -1,0 +1,9 @@
+torch
+torchaudio
+torchvision
+numpy
+wandb
+gpustat
+timm
+einops
+psutil
