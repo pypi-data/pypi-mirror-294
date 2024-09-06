@@ -1,0 +1,4 @@
+[workspace]
+resolver = "2"
+members = ["cli", "pgstac"]
+default-members = ["api", "async", "cli", "core", "server", "validate"]

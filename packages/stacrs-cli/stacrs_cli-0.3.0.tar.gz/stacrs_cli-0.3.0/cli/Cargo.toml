@@ -1,0 +1,60 @@
+[package]
+name = "stac-cli"
+version = "0.3.0"
+edition = "2021"
+description = "Command line interface for stac-rs"
+documentation = "https://docs.rs/stac-cli"
+readme = "README.md"
+repository = "https://github.com/stac-utils/stac-rs"
+license = "MIT OR Apache-2.0"
+keywords = ["geospatial", "stac", "metadata", "geo", "raster"]
+categories = ["science", "data-structures"]
+rust-version = "1.75"
+
+[features]
+default = ["gdal", "geoparquet", "pgstac"]
+duckdb = ["dep:stac-duckdb"]
+gdal = ["stac/gdal"]
+geoparquet = [
+    "dep:bytes",
+    "dep:geoarrow",
+    "stac/geoparquet-compression",
+    "parquet",
+]
+pgstac = ["stac-server/pgstac"]
+python = ["dep:pyo3", "pgstac", "geoparquet"]
+
+[dependencies]
+axum = "0.7"
+bytes = { version = "1", optional = true }
+clap = { version = "4", features = ["derive"] }
+geoarrow = { version = "0.3.0-beta.3", optional = true }
+parquet = { version = "52", optional = true }
+pyo3 = { version = "0.22", optional = true }
+reqwest = "0.12"
+serde = "1"
+serde_json = "1"
+stac = { version = "0.9", path = "../core" }
+stac-api = { version = "0.5", path = "../api" }
+stac-async = { version = "0.5", path = "../async" }
+stac-duckdb = { version = "0.0.1", path = "../duckdb", optional = true }
+stac-server = { version = "0.2", path = "../server", features = ["axum"] }
+stac-validate = { version = "0.2", path = "../validate" }
+thiserror = "1"
+tokio = { version = "1.23", features = ["macros", "rt-multi-thread"] }
+tokio-stream = "0.1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[dev-dependencies]
+assert_cmd = "2"
+tokio-test = "0.4"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "stacrs"
+path = "src/main.rs"
+doc = false
+test = false

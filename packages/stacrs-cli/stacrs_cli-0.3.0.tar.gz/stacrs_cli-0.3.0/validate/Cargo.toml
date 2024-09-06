@@ -1,0 +1,26 @@
+[package]
+name = "stac-validate"
+version = "0.2.1"
+authors = ["Pete Gadomski <pete.gadomski@gmail.com>"]
+edition = "2021"
+description = "Validate STAC objects with jsonschema"
+homepage = "https://github.com/stac-utils/stac-rs"
+repository = "https://github.com/stac-utils/stac-rs"
+license = "MIT OR Apache-2.0"
+keywords = ["geospatial", "stac", "metadata", "geo", "raster"]
+categories = ["science", "data-structures"]
+readme = "README.md"
+
+[dependencies]
+jsonschema = "0.18"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = "1"
+serde_json = "1"
+stac = { version = "0.9", path = "../core" }
+thiserror = "1"
+url = "2"
+
+[dev-dependencies]
+geojson = "0.24"
+stac = { version = "0.9", path = "../core", features = ["geo"] }
+rstest = "0.22"
