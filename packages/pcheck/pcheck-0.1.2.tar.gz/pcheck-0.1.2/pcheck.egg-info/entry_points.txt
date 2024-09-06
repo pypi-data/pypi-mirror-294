@@ -1,0 +1,2 @@
+[console_scripts]
+pcheck = pcheck.__main__:main
