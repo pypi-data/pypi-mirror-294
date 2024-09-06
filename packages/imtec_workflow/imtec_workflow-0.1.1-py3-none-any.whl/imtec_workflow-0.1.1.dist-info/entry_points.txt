@@ -1,0 +1,3 @@
+[console_scripts]
+imrun=scripts.imrun:main
+
