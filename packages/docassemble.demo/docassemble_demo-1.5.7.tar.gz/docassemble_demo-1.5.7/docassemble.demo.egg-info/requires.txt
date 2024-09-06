@@ -1,0 +1,5 @@
+docassemble.base==1.5.7
+docassemble==1.5.7
+googledrivedownloader==0.4
+ics==0.7.2
+matplotlib==3.9.1.post1
