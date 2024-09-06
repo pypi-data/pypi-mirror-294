@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neuralstockprophet"
+version = "0.0.3"
+description = "LSTM-ARIMA with attention mechanisms and multiplicative decomposition for sophisticated stock forecasting."
+license = {file = "LICENSE"}
+authors = [
+    {name = "Lucas Chan", email = "chanconan@gmail.com"},
+]
+maintainers = [
+    {name = "Lucas Chan", email = "chanconan@gmail.com"},
+]
+keywords = ["stock", "forecasting", "LSTM", "ARIMA", "attention", "multiplicative decomposition"]
+readme = "README.md"
+classifiers=[
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "statsmodels",
+    "ta",
+    "tensorflow",
+    "tensorflow-metal",
+    "quadprog",
+    "jax",
+    "jaxlib",
+    "tqdm",
+    "riskparityportfolio",
+    "yfinance",
+    "empyrical",
+]
+
+[project.urls]
+Repository = "https://github.com/lucaswychan/neural-stock-prophet"
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "pytest-cov"
+]
+lint = [
+    "black",
+    "flake8"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
