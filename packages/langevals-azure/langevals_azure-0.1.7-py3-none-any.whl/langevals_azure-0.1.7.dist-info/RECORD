@@ -1,0 +1,6 @@
+langevals_azure/content_safety.py,sha256=Qb8logsYtcXNQ5CYCCuxAz5Nng1TirJYn_r6n3OygU4,3878
+langevals_azure/jailbreak.py,sha256=RnSwIp3b0BTpjBcxPa64rw8RVWiV3je_YKSQ1YTnZgM,2317
+langevals_azure/prompt_injection.py,sha256=KPqVdr7B27zaFdxt2pdomaez1rxkAWuVHvNBxGW6TEc,3642
+langevals_azure-0.1.7.dist-info/METADATA,sha256=LxSSgQOFsG8WH5bOG7zFugPpuaHIA1Bu2zRFAm7LQtg,569
+langevals_azure-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+langevals_azure-0.1.7.dist-info/RECORD,,
