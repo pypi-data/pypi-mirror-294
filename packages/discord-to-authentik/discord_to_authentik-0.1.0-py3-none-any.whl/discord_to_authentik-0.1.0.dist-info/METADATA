@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: discord-to-authentik
+Version: 0.1.0
+Summary: Synchronize roles you create in Discord to Authentik for Discord Auth managment
+License: GPLv3
+Author: Dominik Rathmer
+Author-email: dominik@rathmer.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: authentik-client (>=2024.8.0.post1725367375,<2025.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: discord.py (>=2.4.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Discord to Authentik
+
+A Discord bot that synchronizes your discord roles to Authentik groups.
+
