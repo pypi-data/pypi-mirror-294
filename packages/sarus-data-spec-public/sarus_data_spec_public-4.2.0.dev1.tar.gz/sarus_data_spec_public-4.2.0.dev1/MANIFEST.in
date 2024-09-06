@@ -1,0 +1,6 @@
+include sarus_data_spec/protobuf/*.proto
+include sarus_data_spec/protobuf/*.pyi
+include sarus_data_spec/py.typed
+include sarus_data_spec/manager/ops/processor/standard/llm/finetuning_config.yaml
+include sarus_data_spec/manager/ops/processor/standard/llm/sampling_config.yaml
+recursive-exclude tests *

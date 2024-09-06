@@ -1,0 +1,18 @@
+# Partial Config for finetuning using QLora
+# Most arguments are added via the command line.
+
+gradient_checkpointing: True
+
+quantization:
+  load_in_4bit: True
+  bnb_4bit_use_double_quant: True
+
+lora:
+  lora_attn_modules: ["q_proj","v_proj"]
+  apply_lora_to_mlp: False
+  apply_lora_to_output: False
+
+sampler:
+  batch_size: 100
+  max_length: 200
+  top_k: null
