@@ -1,0 +1,64 @@
+
+NODE = {
+    "id": str,
+    "name": str,
+    "protocol": str
+}
+
+TAG = {
+    "type": int,
+    "value": int
+}
+
+INTF = {
+    "id": int,
+    "type": [PHYSICAL|VIRTUAL],
+    "name": str
+}
+
+UNI = {
+    "name": str
+    "node": NODE,
+    "interface": INTF,
+    "tag": TAG,
+    "bandwidth": int
+}
+
+NNI = {
+    "name": str,
+    "unis": UNIS,
+    "tags_available": []
+}
+
+PATHS = [ [NNIs], [NNIs],  ]
+
+UNIS = [ UNI ]
+
+CURRENT = {
+    "current_path": PATHS,
+    "is_backup": bool,
+    "is_optimized": bool,
+    "to_be_provisioned": bool,
+    "is_expired": bool,
+    "is_up": bool,
+    "is_active": bool
+}
+
+METRICS = {
+    "min_bw": int,
+    "delay": int,
+    "hops": int
+}
+
+evc = {
+    "unis": UNIS,
+    "name": str,
+    "metric": METRICS,
+    "provisioning_time": timestamp,
+    "decommissioning_time": timestamp,
+    "requested_paths": PATHS,
+    "tenant": str,
+    "priority": int,
+    "external_id": int,
+    "current_config": CURRENT
+}

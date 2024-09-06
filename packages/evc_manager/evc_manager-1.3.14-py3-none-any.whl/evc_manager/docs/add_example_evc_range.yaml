@@ -1,0 +1,28 @@
+---
+version: 1.0
+action: add_range
+# New action: add_range. This option creates multiple EVCs
+# This example adds 10 EVCs
+evcs:
+  - name: evc_range
+    # For VLAN ranges, the name will be the "name" provided plus VID
+    # at the end. Example:
+    #       minimal_evc_10, minimal_evc_20
+    # Tag not provided: VLAN
+    # Path not provided: Any
+    # Priority and Metrics not provided: all 0s
+    # Times: provisioning is now and decommissioning is never
+    # External ID is 0
+    # Tenant is same as user provided via CLI
+    unis:
+      - device: Ampath1
+        interface_name: s1-eth1
+        tag:
+          value: [1720, 1729]
+          # The total number of values have to match for all UNIs.
+          # VID values can be different.
+          # If number of VID values don't match, no EVCs are created
+      - device: Ampath2
+        interface_name: s2-eth1
+        tag:
+          value: [2730, 2739]

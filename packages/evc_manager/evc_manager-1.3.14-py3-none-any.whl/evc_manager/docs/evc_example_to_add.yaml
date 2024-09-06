@@ -1,0 +1,24 @@
+---
+version: 1.0
+action: add  # Or Delete Or Verify
+# This example adds two EVCs
+evcs:
+  - minimal_evc:
+    # Tag not provided: VLAN
+    # Path not provided: Any
+    # Priority and Metrics not provided: all 0s
+    # Times: provisioning is now and decommissioning is never
+    # External ID is 0
+    # Tenant is same as user provided via CLI
+    name: minimal_evc
+    unis:
+      - uni_1:
+        device: ampath01
+        interface: eth3/1
+        tag:
+          value: 1720
+      - uni_2:
+        device: ampath02
+        interface: eth3/2
+        tag:
+          value: 1722

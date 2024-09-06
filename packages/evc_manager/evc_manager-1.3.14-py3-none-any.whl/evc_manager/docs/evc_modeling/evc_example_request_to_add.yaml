@@ -1,0 +1,57 @@
+---
+version: 1.0
+action: add  # Or Delete Or Verify
+# This example adds two EVCs
+evcs:
+  - minimal_evc:
+    # Tag not provided: VLAN
+    # Path not provided: Any
+    # Priority and Metrics not provided: all 0s
+    # Times: provisioning is now and decommissioning is never
+    # External ID is 0
+    # Tenant is same as user provided via CLI
+    name: minimal_evc
+    unis:
+      - uni_1:
+        device: ampath01
+        interface: eth3/1
+        tag:
+          value: 1720
+      - uni_2:
+        device: ampath02
+        interface: eth3/2
+        tag:
+          value: 1722
+
+  - complete_evc:
+    name: complete_evc
+    unis:
+      - uni_1:
+        device: ampath01
+        interface: eth3/1
+        tag:
+          type: vlan
+          value: 1720
+      - uni_2:
+        device: ampath02
+        interface: eth3/2
+        tag:
+          type: vlan
+          value: 1722
+    metric:
+      min_bw: 100
+      delay: 150
+      hops: 0
+    provisioning_time: 2018023431123
+    decommissioning_time: -1
+    requested_paths:
+      - path_1:
+        - Atlantic
+        - Terrestrial
+      - path_2:
+        - pacific
+        - Terrestrial
+      - any
+    tenant: AmLight
+    priority: 100
+    external_id: ticket_#_31244

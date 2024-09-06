@@ -1,0 +1,7 @@
+---
+version: 1.0
+action: delete
+# This deletes two EVCs
+evcs:
+  - minimal_evc_name
+  - complete_evc_name
