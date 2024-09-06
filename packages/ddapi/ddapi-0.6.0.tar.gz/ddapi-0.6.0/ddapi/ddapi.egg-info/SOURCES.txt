@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ddapi/ddapi/__init__.py
+ddapi/ddapi/dataclass.py
+ddapi/ddapi/deflt.py
+ddapi/ddapi/main.py
+ddapi/ddapi.egg-info/PKG-INFO
+ddapi/ddapi.egg-info/SOURCES.txt
+ddapi/ddapi.egg-info/dependency_links.txt
+ddapi/ddapi.egg-info/top_level.txt
