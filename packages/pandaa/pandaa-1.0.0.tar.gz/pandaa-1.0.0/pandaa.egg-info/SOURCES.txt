@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+pandaa.egg-info/PKG-INFO
+pandaa.egg-info/SOURCES.txt
+pandaa.egg-info/dependency_links.txt
+pandaa.egg-info/top_level.txt
