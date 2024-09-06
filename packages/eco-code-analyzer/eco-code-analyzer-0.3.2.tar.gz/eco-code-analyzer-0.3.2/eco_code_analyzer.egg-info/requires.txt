@@ -1,0 +1,8 @@
+astroid
+gitpython
+matplotlib
+
+[dev]
+black
+flake8
+pytest
