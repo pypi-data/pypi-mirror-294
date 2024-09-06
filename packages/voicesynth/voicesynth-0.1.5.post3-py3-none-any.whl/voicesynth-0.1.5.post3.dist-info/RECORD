@@ -1,0 +1,9 @@
+voicesynth/__init__.py,sha256=kC-V8-OSwIegwqLxnn5NKIDeQ_3MoooTNQqNzy-T1BI,185
+voicesynth/exceptions.py,sha256=zdTbu5S5m_wYvd1yBPPtptKZT8p4DFmEioowJSvHgMc,1064
+voicesynth/models.py,sha256=cnhdoWV06UdbOy8XdEM23EE2-Z49c-nYg_xrOfmkgEE,2572
+voicesynth/voicesynth.py,sha256=JlUSIPcFVoU9LvqioakYG3LEFxHbNx8OCUSZbIyUaeM,8801
+voicesynth-0.1.5.post3.dist-info/LICENSE,sha256=wsCXqd_fEgkgNWu190Pwf22B3UK5xmlKgNoZjyoL9cc,11343
+voicesynth-0.1.5.post3.dist-info/METADATA,sha256=ltVV0Z6-jUZAcVBUb2kCDnQ1VwBaPj5Sw2YBeeu3FCM,2389
+voicesynth-0.1.5.post3.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+voicesynth-0.1.5.post3.dist-info/top_level.txt,sha256=1aQc3BjFZJonCeKGmZtmdKBiYHd1LG9W2FDloC9c70c,11
+voicesynth-0.1.5.post3.dist-info/RECORD,,
