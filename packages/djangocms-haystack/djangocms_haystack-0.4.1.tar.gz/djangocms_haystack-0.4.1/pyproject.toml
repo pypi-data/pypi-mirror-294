@@ -1,0 +1,40 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "djangocms-haystack"
+version = "0.4.1"
+description = "aldryn-search inspired Haystack index for djangoCMS projects"
+authors = ["Filip Weidemann <filip.weidemann@lfda.de>"]
+readme = "README.md"
+packages = [{include = "djangocms_haystack"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+nh3 = "~0.2.18"
+whoosh = "~2.7.4"
+django-haystack = "~3.3.0"
+django-cms = "~4.1.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.5"
+pytest = "^8.3.2"
+bump2version = "^1.0.1"
+nox = "^2024.4.15"
+pytest-django = "^4.8.0"
+django-app-helper = "^3.3.4"
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+extend-select = ["Q", "I"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "double"
+
+# Formatter settings
+[tool.ruff.format]
+quote-style = "double"
