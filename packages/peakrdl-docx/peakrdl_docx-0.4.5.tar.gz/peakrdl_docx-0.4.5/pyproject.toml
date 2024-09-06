@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peakrdl-docx"
+dynamic = ["version"]
+requires-python = ">=3.10"
+dependencies = [
+    "systemrdl-compiler >= 1.27.0",
+    "peakrdl",
+    "pyquery            >= 2.0.0",
+    "python-docx        >= 1.1.2",
+]
+
+authors = [
+    {name="Alex Nijmeijer"},
+]
+
+description = "Compile SystemRDL definition into a Docx (MsWord) document"
+readme = "README.md"
+keywords = [
+    "SystemRDL", "PeakRDL", "CSR", "compiler", "tool", "documentation", 
+    "generator", "Verilog", "SystemVerilog", "register abstraction layer",
+    "FPGA", "ASIC",
+]
+classifiers = [
+    #"Development Status :: 5 - Production/Stable",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.urls]
+Repository  = "https://github.com/nijmeijer/PeakRDL-docx"
+Tracker = "https://github.com/nijmeijer/PeakRDL-docx/issues"
+Changelog = "https://github.com/nijmeijer/PeakRDL-docx/commits/main/"
+Documentation = "https://github.com/nijmeijer/PeakRDL-docx/blob/main/README.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "peakrdl_docx.__about__.__version__"}
+
+[project.entry-points."peakrdl.exporters"]
+docx = "peakrdl_docx.__peakrdl__:DocxExporterDescriptor"
+
+[docx]
+TableStyle = "Medium Shading 1 Accent 1"
+ParagraphStyle = "Normal"
+TitleText = "Register definitions"
+SubTitleText = "Test FPGA"
+
+
+
+
