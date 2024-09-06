@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "wsvcs"
+version = "0.1.0"
+description = ""
+authors = ["Encore Ecosystem"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+websockets = "^13.0.1"
+tqdm = "^4.66.5"
+pyinstaller = "^6.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+build = "wsvcs.pyinstaller:install"
+
+[project.scripts]
+wsvcs = "wsvcs.main:main"
+
+[tool.setuptools]
+script-files = [ "wsvcs.main" ]
