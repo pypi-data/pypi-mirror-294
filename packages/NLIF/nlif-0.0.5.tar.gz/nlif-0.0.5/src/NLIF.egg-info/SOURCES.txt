@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/NLIF/NLIF.py
+src/NLIF/__init__.py
+src/NLIF.egg-info/PKG-INFO
+src/NLIF.egg-info/SOURCES.txt
+src/NLIF.egg-info/dependency_links.txt
+src/NLIF.egg-info/requires.txt
+src/NLIF.egg-info/top_level.txt
