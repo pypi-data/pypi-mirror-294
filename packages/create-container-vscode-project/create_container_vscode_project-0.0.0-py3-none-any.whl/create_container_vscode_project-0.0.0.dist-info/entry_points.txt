@@ -1,0 +1,2 @@
+[console_scripts]
+ccvp = create_container_vscode_project.script:main
