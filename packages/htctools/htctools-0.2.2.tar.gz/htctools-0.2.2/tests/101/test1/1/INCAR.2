@@ -1,0 +1,65 @@
+
+SYSTEM = Default
+
+# Starting parameters for this run:
+   ISTART =      0     job   : 0-new, 1-cont, 2-samecut
+   ICHARG =      2     charge: 0-wave, 1-file, 2-atom, >10-const
+   INIWAV =      1     electr: 0-lowe 1-rand  2-diag
+
+# Electronic Relaxation:
+   PREC    = accurate      "precision"-mode.
+   ADDGRID = .TRUE.     reduce the noise in the forces
+   SYMPREC = 1E-5      Default is 1E-5
+   ENCUT   = 600.0      Default is set by emax and emin
+#  NGX     = 26             
+
+#  NELMDL = -7        number of delayed ELM steps
+#  NELM   = 101       number of ELM steps
+   EDIFF  = 1E-5     energy stopping-criterion for ELM, Default EDIFF = 1E-04
+   LREAL  = .FALSE.   real-space projection (.FALSE.--for very small cells/accurate charge density, .TRUE., On, Auto)
+   ALGO   = normal    algorithm for electronic minimisation (normal: DAV, veryfast: RMM, fast: DAV+RMM)
+#  WEIMIN = 0         stabilises RMM algo 
+
+# Writing files:
+   LCHARG  = .FALSE.    write electronic charge density
+   LWAVE   = .FALSE.   writes WAVECAR
+#  LVTOT   = .FALSE.   
+#   LORBIT =     11     writes DOSCAR
+
+# Ionic Relaxation:
+   NSW    =    0     max number of geometry steps
+   IBRION =     2     ionic relax: 0-MD, 1-quasi-Newton, 2-CG, 3-Damped MD
+   EDIFFG =    1E-4  force (eV/A) stopping-criterion for geometry steps
+   ISIF   =     3     (force|stress|ions|shape|vol 0:ynynn 1:yyynn 2:yyynn 3:yyyyy)
+   ISYM   =     1     (1-use symmetry, 0-no symmetry)
+
+# DOS related values:
+#   NEDOS  =     3201   Default is 301
+   ISMEAR =     1      (-1-Fermi, 1-Methfessel/Paxton, 0:Gaussian, -5:Blochl tetrahedron)
+   SIGMA  =     0.05    broadening in eV
+
+# Spin-polarized calculations:
+   ISPIN = 2           (1-non-spin, 2-spin)
+#  MAGMOM = 71*0 1   
+
+# +U or not +U
+#   LDAU = .TRUE.
+#   LDAUTYPE = 	2
+#   LDAUL = 		(-1-No+U, 1-p orbit, 2-d orbit, 3-f orbit)
+#   LDAUU = 		(specify U)
+#   LDAUJ = 		(specify J)
+#   LMAXMIX =		(2/4/6)
+
+#Dipole moment
+# IDIPOL = 3        
+# LDIPOL = .TRUE.   
+# LORBIT = 11
+
+#Van Der Waals interaction
+#   IVDW = 11   Uses DFT-D3 from Grimme's paper to add corrections van der waals
+
+# Parallelization flags:
+#   NPAR   =  16   ( =1: all nodes work on each band, = else: only one node will work on each band)
+   LPLANE = .TRUE. (parallelization of plane wave coefficients)
+   NCORE = 16
+    
