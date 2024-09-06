@@ -1,0 +1,2 @@
+[endstone]
+economy_pilot_lite = endstone_economy_pilot_lite:Main
