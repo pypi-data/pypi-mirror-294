@@ -1,0 +1,2 @@
+[console_scripts]
+dg = transcribe_anything._cmd:main
