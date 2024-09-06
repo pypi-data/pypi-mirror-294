@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+piipx.egg-info/PKG-INFO
+piipx.egg-info/SOURCES.txt
+piipx.egg-info/dependency_links.txt
+piipx.egg-info/top_level.txt
