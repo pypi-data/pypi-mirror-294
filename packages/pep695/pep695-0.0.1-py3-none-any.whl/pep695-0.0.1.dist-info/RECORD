@@ -1,0 +1,15 @@
+pep695/__init__.py,sha256=bWipUe7_x0pf36Aazah5fFqsjOoVHPLtaJfVAj3LAmo,69
+pep695/__main__.py,sha256=f0ZsBDrchdeKX3FMHLhITIRb4KYfjUF31X_jey-3qmg,39
+pep695/aliases.py,sha256=gb5kY1ruVdEGvJhvmsmK1Xa6JXCCX5ENQ_jexKvppZk,727
+pep695/analyzer.py,sha256=qSRseHk7T_gmBGo5HJ0Prrca_W-jpvp6j1OitUMbGLQ,4697
+pep695/base.py,sha256=Bgjmdwosp50X4V2guM-ZsiOzB0p7emMqtFUm4lINZCc,16825
+pep695/check.py,sha256=FYpwJ6JFJXUo5r2W28cEID3lfOlAJg3JfFoB7cUyHBk,5550
+pep695/cli.py,sha256=uoN6DbqLNJj7bcaAWIe7vGs1iwo2o0XQHq2SG6q-CSg,2974
+pep695/format.py,sha256=Oi3n1lNSfSK2pIP_wToHlIQGr3Z3jXqfd7CqX2UOhKk,2954
+pep695/symbols.py,sha256=6ZPIkegmGHP_Abx2fcJntxLxKr_6TfAvmaPri-kaRIM,1301
+pep695/ux.py,sha256=1p07MNtELW_qw87jym1QQoMQT5hWLfNTAhEKDPnZK_s,1093
+pep695-0.0.1.dist-info/entry_points.txt,sha256=hIjiX_ZwiejawxNtio2RV3SIQC_0jLZPe9JoG62wfTw,42
+pep695-0.0.1.dist-info/LICENSE,sha256=VFzx_CopjzV5cFx9oErhGl1LPx8_h8Zb83s0Ag2ehig,1090
+pep695-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pep695-0.0.1.dist-info/METADATA,sha256=rHNr7-THttKsTaalz9ouRopRxwdYksX9hdI072OHOGI,5823
+pep695-0.0.1.dist-info/RECORD,,
