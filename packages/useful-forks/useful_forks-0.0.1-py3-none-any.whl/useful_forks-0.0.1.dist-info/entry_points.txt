@@ -1,0 +1,3 @@
+[console_scripts]
+useful-forks=useful_forks.cli:main
+

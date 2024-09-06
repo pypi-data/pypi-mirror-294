@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: useful-forks
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: Bendik R. Brenne
+Author-email: bendik@konstant.no
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: githubkit (>=0.11.8,<0.12.0)
+Description-Content-Type: text/markdown
+
+# useful-forks
+
+This is a simple Python implementation of [useful-forks.github.io](https://github.com/useful-forks/useful-forks.github.io)
+
+TBD
+
