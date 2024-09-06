@@ -1,0 +1,3 @@
+[jac]
+jac = jaclang_jaseci.plugin.jaseci:JacPlugin
+serve = jaclang_jaseci.plugin.cli:JacCmd
