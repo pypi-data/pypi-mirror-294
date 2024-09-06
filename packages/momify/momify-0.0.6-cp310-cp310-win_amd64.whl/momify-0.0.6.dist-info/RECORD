@@ -1,0 +1,11 @@
+momify-0.0.6.dist-info/METADATA,sha256=sTaPBhzsWV0DVJhVMozk6TKlRjvC5rTBlQWKQHF7l-U,237
+momify-0.0.6.dist-info/WHEEL,sha256=1nIT8bOU3dBEtO1OHNUw1PB7s17JH9tAQ93SLqU9JNM,85
+momify-0.0.6.dist-info/entry_points.txt,sha256=okfW_4slcD_9JaCllSI_VEwm_B0pV3As7toML8hEsvM,43
+momify/loopback/record.cp310-win_amd64.pyd,sha256=cs2FtfbcMZ-EGDP2Ed3AeppR32mG6lDWdTOA4IDoa3E,152064
+momify/loopback/record.cp310-win_amd64.lib,sha256=cdpAXV5oNymRHE78cKQ9feB7vLRAZ7KclmcO0oiMe8Y,1996
+momify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+momify/__main__.py,sha256=2ysAFJUvSsawloYCiHIEOB73smCYWi3EJ-S3cHsuWVA,69
+momify/cli.py,sha256=mhmWNnrMs339n_HncENk3q-U2L8Ygq-qiXJO6au0eUc,147
+momify/momify.py,sha256=3R2b1fL4zY8EZbwshio2ZJVonMzfA2TN3JADqmDdEnw,1975
+momify/loopback/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+momify-0.0.6.dist-info/RECORD,,
