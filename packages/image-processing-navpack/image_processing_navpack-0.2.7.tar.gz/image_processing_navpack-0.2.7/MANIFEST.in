@@ -1,0 +1,14 @@
+# Inclui todos os arquivos e subdiretórios dentro de image_processing
+recursive-include image_processing *
+
+# Inclui todos os arquivos e subdiretórios dentro de image_processing/imgs
+recursive-include image_processing/imgs *
+
+# Inclui todos os arquivos e subdiretórios dentro de image_processing/processing
+recursive-include image_processing/processing *
+
+# Inclui todos os arquivos e subdiretórios dentro de image_processing/utils
+recursive-include image_processing/utils *
+
+# Inclui todos os arquivos e subdiretórios dentro de image_processing/tests
+recursive-include image_processing/tests *
