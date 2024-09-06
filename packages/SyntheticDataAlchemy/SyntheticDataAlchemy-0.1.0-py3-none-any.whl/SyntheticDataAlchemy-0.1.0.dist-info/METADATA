@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: SyntheticDataAlchemy
+Version: 0.1.0
+Summary: A package for generating synthetic data
+Home-page: https://github.com/phillip1029/DataAlchemy
+Author: Phillip Peng
+Author-email: ppeng08@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: category-encoders
+
+# SyntheticDataAlchemy
+
+SyntheticDataAlchemy is a Python package for generating synthetic data that preserves the statistical properties and relationships of the original dataset.
+
+## Installation
+
+You can install SyntheticDataAlchemy using pip:
+
+```
+pip install SyntheticDataAlchemy
+```
+
+## Usage
+
+Here's a simple example of how to use SyntheticDataAlchemy:
+
+```python
+import pandas as pd
+from SyntheticDataAlchemy import generate_synthetic_data
+
+# Load your original data
+original_df = pd.read_csv('your_data.csv')
+
+# Generate synthetic data
+synthetic_df = generate_synthetic_data(original_df, n_samples=1000)
+
+# Save the synthetic data
+synthetic_df.to_csv('synthetic_data.csv', index=False)
+```
+
+## Features
+
+- Generates synthetic data for both numerical and categorical features
+- Preserves statistical properties of the original data
+- Maintains relationships between features
+- Handles missing data
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
