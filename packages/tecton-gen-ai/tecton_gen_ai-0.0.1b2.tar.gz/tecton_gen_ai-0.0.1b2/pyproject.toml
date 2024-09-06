@@ -1,0 +1,51 @@
+[project]
+name = "tecton-gen-ai"
+version = "0.0.1b2"
+description = "[private preview] Tecton Gen AI SDK"
+authors = [
+    {name = "Tecton, Inc.", email = "support@tecton.ai"},
+]
+dependencies = ["typing_extensions>=4.5"]
+readme = "README.pypi.md"
+requires-python = ">=3.8"
+license = {text = "Tecton Proprietary"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: Other/Proprietary License",
+]
+
+[project.urls]
+Homepage = "https://tecton.ai"
+Documentation = "https://docs.tecton.ai"
+
+
+[project.entry-points."pytest11"]
+tecton-tests = "tecton_gen_ai.testing.fixtures"
+
+[project.optional-dependencies]
+realtime = ["aws-secretsmanager-caching"]
+tecton = ["tecton[rift]~=1.0.0rc0"]
+langchain = ["langchain", "langchain-core", "langchain-community"]
+llama-index = ["llama-index"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+    "setuptools",
+    "wheel",
+    "pytest",
+    "pytest-cov>=5.0.0",
+    "pre-commit>=3.7.1",
+    "pylint>=3.2.6",
+    "ruff>=0.6.3",
+    "langchain-openai>=0.1.23",
+    "lancedb>=0.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
