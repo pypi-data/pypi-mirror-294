@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: langevals
+Version: 0.1.7
+Summary: A platform to evaluate LLM outputs using various evaluators.
+License: MIT
+Author: Rogerio Chaves
+Author-email: rogerio@langwatch.ai
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: aws
+Provides-Extra: azure
+Provides-Extra: example
+Provides-Extra: google-cloud
+Provides-Extra: haystack
+Provides-Extra: huggingface
+Provides-Extra: langevals
+Provides-Extra: lingua
+Provides-Extra: openai
+Provides-Extra: ragas
+Requires-Dist: fastapi (>=0.110.0,<0.111.0)
+Requires-Dist: hypercorn (>=0.16.0,<0.17.0)
+Requires-Dist: langevals-aws (>=0.1.5,<0.2.0) ; extra == "aws" or extra == "all"
+Requires-Dist: langevals-azure (>=0.1.7,<0.2.0) ; extra == "azure" or extra == "all"
+Requires-Dist: langevals-core (>=0.1.7,<0.2.0)
+Requires-Dist: langevals-example (>=0.1.6,<0.2.0) ; extra == "example" or extra == "all"
+Requires-Dist: langevals-google_cloud (>=0.1.6,<0.2.0) ; extra == "google-cloud" or extra == "all"
+Requires-Dist: langevals-haystack (>=0.1.2,<0.2.0) ; extra == "all" or extra == "haystack"
+Requires-Dist: langevals-huggingface (>=0.1.5,<0.2.0) ; extra == "huggingface" or extra == "all"
+Requires-Dist: langevals-langevals (>=0.1.6,<0.2.0) ; extra == "langevals"
+Requires-Dist: langevals-lingua (>=0.1.5,<0.2.0) ; extra == "lingua" or extra == "all"
+Requires-Dist: langevals-openai (>=0.1.6,<0.2.0) ; extra == "openai" or extra == "all"
+Requires-Dist: langevals-ragas (>=0.1.7,<0.2.0) ; extra == "ragas" or extra == "all"
+Requires-Dist: mangum (>=0.17.0,<0.18.0)
+Requires-Dist: markdown (>=3.6,<4.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: pytest (>=8.1.2,<9.0.0)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: torch (>=2.2.2,<3.0.0) ; sys_platform != "linux"
+Requires-Dist: torch (>=2.2.2,<3.0.0) ; sys_platform == "linux"
