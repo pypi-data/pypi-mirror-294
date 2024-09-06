@@ -1,0 +1,8 @@
+-r requirements.txt
+
+jupyter
+pillow
+polytope
+ortools
+scipy
+cvxopt
