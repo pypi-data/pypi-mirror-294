@@ -1,0 +1,15 @@
+fttb/__main__.py,sha256=KIGXf3HDKpcaHpB--ZJ_C6z9VKVf8VdhIWzDH_zRbOs,2218
+fttb/utils.py,sha256=U7ZRB4eiHgkprBOLzfi824qigqMn8tKvhpC1qDMg5kM,4372
+fttb/cmds/clear.py,sha256=V_rVj0Zd6-7B8tAG_HZNpz_bQcDT0K6c9dcBWUYwT48,198
+fttb/cmds/config.py,sha256=fGu02TVIrFVxfhHDtJKsuYOIjump6F2p-rRCJK7fbfo,769
+fttb/cmds/download.py,sha256=H7FzXsb8YkGaodr4JQGXzFRE-QNyBvD766iy78FX4Zo,2083
+fttb/cmds/infos.py,sha256=Bk2gIDRImYPY0-GOaAYFfxVDneOidcGhkJuzV9-HEOk,682
+fttb/cmds/list.py,sha256=rlqPTTERA_zBixX2fKmj0ts6c7D5Kx5f7XkHaN5rfdc,1656
+fttb/cmds/remove.py,sha256=muRYqGBgEyYVBX5VD5gp0Gop_HHZdw7znFEPOGMENFk,1408
+fttb/cmds/update.py,sha256=6C-nsVzH8kZUAc9I9a7hCse2ZLAupqmhcZuFlQbJaQk,341
+fttb/cmds/use.py,sha256=HuXe_3gBqVY3UA5wj0iQc8-90unLy42GCPaKs73W_Ew,2780
+fttb-1.2.5.dist-info/METADATA,sha256=wOOCgfQ-SDSDpDXN-eSuXCG2Xl7PvIciTX7MDZGW9Xk,1014
+fttb-1.2.5.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+fttb-1.2.5.dist-info/entry_points.txt,sha256=7N0yoZwymhY-6sFzuwDIIsFScxD3240iPxsVDMyBtMM,65
+fttb-1.2.5.dist-info/top_level.txt,sha256=KphrN0oEfTvINxQW802Evmz9Q70Zq7IgPS6--LfoQDQ,5
+fttb-1.2.5.dist-info/RECORD,,
