@@ -1,0 +1,11 @@
+NWUcellsr/__init__.py,sha256=Nk1HN8PyIWhMoXmyfbgwxO9MEJ3rbE2kwclrfNP40B0,160
+NWUcellsr/api.py,sha256=ukyUx1u-PBwiH_xYntFOik2ydeOEQL-qJo59qpKOkTE,783
+NWUcellsr/app.py,sha256=B6BxQqmJr39qnkUTP__pcxp4VlNfA25_Yf17UacaE4k,91
+NWUcellsr/craft_arch.py,sha256=wMAQ8xQprmeTZ3wHnGY9eYeld8cyyG3GWpbEzk_j1wI,30890
+NWUcellsr/model.py,sha256=3SuRqyVUCczo-6SDzgA3OK6SGYqMSxwFGz0N33aPQUQ,226
+NWUcellsr/sr.py,sha256=YL5TTE4hKk0JLxLQ2QfdzYxTg4LQ1Ecp9B-byto8NfM,2933
+NWUcellsr/version.py,sha256=Z-OjDAuj1wwh23jKTlx0zKq9_6F8HdoV1MqBUl8MWxE,133
+NWUcellsr-1.0.5.dist-info/METADATA,sha256=qLKNM7Sv4ocjgW3dB-IjOEbsgTVii3vei4hp7myhni8,1003
+NWUcellsr-1.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+NWUcellsr-1.0.5.dist-info/top_level.txt,sha256=XcjoTJNS8aU_wVUISruuT_hy2XVaMVfijJZXYrQUeLA,10
+NWUcellsr-1.0.5.dist-info/RECORD,,
