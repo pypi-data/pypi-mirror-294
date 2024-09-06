@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+gpt2md/__init__.py
+gpt2md/cli.py
+gpt2md/main.py
+gpt2md.egg-info/PKG-INFO
+gpt2md.egg-info/SOURCES.txt
+gpt2md.egg-info/dependency_links.txt
+gpt2md.egg-info/entry_points.txt
+gpt2md.egg-info/top_level.txt
