@@ -1,0 +1,7 @@
+greptimedb_sqlalchemy/__init__.py,sha256=3ndi3Ok-Wmjhk1usOte6hwWR9BawuDLjYMtk2pDx3tg,3667
+greptimedb_sqlalchemy/dbapi.py,sha256=fZoehYkV1IvKjuJri0by4gYDdj_N9jH7JFEaJaAjvHE,541
+greptimedb_sqlalchemy/superset.py,sha256=87GFgwZ2uNh8PHfA5-XkEt8SStaEy2TvNTP1oNILHa4,2443
+greptimedb_sqlalchemy-0.1.2.dist-info/METADATA,sha256=caumyD2BN9AAgLKDUjQIs8LBdD_g_uSkor2wc1_5Xq4,700
+greptimedb_sqlalchemy-0.1.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+greptimedb_sqlalchemy-0.1.2.dist-info/entry_points.txt,sha256=dQ5biQWSWgsSamUAyvhAi9CB_RCl0orf12Sj1eXR6nA,157
+greptimedb_sqlalchemy-0.1.2.dist-info/RECORD,,
