@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+deltastudio/__init__.py
+deltastudio/auth.py
+deltastudio/core.py
+deltastudio/helpers.py
+deltastudio/sources.py
+deltastudio.egg-info/PKG-INFO
+deltastudio.egg-info/SOURCES.txt
+deltastudio.egg-info/dependency_links.txt
+deltastudio.egg-info/top_level.txt
+deltastudio/quality/__init__.py
+deltastudio/quality/basics.py
+deltastudio/quality/checks.py
