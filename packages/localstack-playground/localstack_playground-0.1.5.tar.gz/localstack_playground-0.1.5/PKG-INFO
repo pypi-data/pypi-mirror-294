@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: localstack-playground
+Version: 0.1.5
+Summary: A playground for setting up and testing AWS services using LocalStack, with support for various RDBMS databases.
+Project-URL: Documentation, https://github.com/DanRepik/localstack_playground
+Project-URL: Source, https://github.com/DanRepik/localstack_playground
+Author-email: Daniel Repik <danrepik@icloud.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
