@@ -1,0 +1,9 @@
+llama-embedder.dll,sha256=6JwIdgCCCI5afOhSTjNKvwfU9Ahj5x8gZXuPNXPQDA0,1513472
+llama-embedder.lib,sha256=u7UirfxtDN_13nltYIlbDVxGTpvO5XhBu4EZDZoON2w,2248
+llama_embedder.cp312-win_amd64.pyd,sha256=RzPu2QJomWEW-tf3eK_7FIqMYwLcf4B5v20j-P9T3GI,174080
+bindings/python/llama_embedder/__init__.py,sha256=6qanedbNVWMnJP7t5lgemAZ57YQPPPyogshjtld7w7w,142
+llama_embedder-0.0.7.dist-info/LICENSE.md,sha256=Zz7cv4pAnGsy8BbzxRn_PZbSrQMi7fcuvLwoacAXg90,1084
+llama_embedder-0.0.7.dist-info/METADATA,sha256=lAlX3ChZ7_7g_CyAlbWQ8s2yEs57ZWP4ejidk2x90GU,2333
+llama_embedder-0.0.7.dist-info/WHEEL,sha256=c7SWG1_hRvc9HXHEkmWlTu1Jr4WpzRucfzqTP-_8q0s,102
+llama_embedder-0.0.7.dist-info/top_level.txt,sha256=I4kvXoa-BLfwxg2XPlD0nbADVanc9cbC0i4RiWVumpM,24
+llama_embedder-0.0.7.dist-info/RECORD,,
