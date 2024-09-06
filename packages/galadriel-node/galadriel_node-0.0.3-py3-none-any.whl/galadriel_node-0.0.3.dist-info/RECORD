@@ -1,0 +1,17 @@
+galadriel_node/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galadriel_node/cli/app.py,sha256=fuH3MqYUiKcAFsDOM3xg2ob0FSyf_nD9cWU4xRap97o,947
+galadriel_node/cli/network.py,sha256=dD7_5Txdu0DqJpRvTJShy9n8yVbfzYWjXmjwpMBqTFI,742
+galadriel_node/cli/node.py,sha256=4DkseFvShr2AoA3FjeXM5gE201NlHnkVswP10Z5nIC4,8213
+galadriel_node/config.py,sha256=8PTXHDrd-S8ePl2MGnTE-0H26O5pOps8eXpxEKAFx50,2967
+galadriel_node/config_initialiser.py,sha256=4gcx5fECoydDNWozAExNEDvzl7ondvzCBpOGu5Nmr7U,581
+galadriel_node/sdk/api.py,sha256=IYDn4_oGcEoWWKqmZA7IDORG9e4tB6thfCeExQDJ2UY,1147
+galadriel_node/sdk/datasets/im_feeling_curious.jsonl,sha256=O__a3O5oZTijw7Dxv0oXqVcom0quDH6iEb9c5-qS2Zc,1045796
+galadriel_node/sdk/entities.py,sha256=Rxj9NyOxr-1Wt-RDkqenZIFTOSf6Emhg9mqfj9hm8tA,1503
+galadriel_node/sdk/llm.py,sha256=nvpPRl1xcezerXW6eTRp0XOvuacCHi5T6F2d-imosmE,2217
+galadriel_node/sdk/system/entities.py,sha256=ZOc2BvTHLJq7IikJp5jNUNamoDTu9YLpIUtOolmwOh8,239
+galadriel_node/sdk/system/report_hardware.py,sha256=7isALPRcIJJLM9fcW3vBj4SXO_i-Ilrg0Mv6MrJ5cPM,4474
+galadriel_node/sdk/system/report_performance.py,sha256=sEl7g2kWM0B97zbgskyl8sfB68RYHZwHTNO5fx6Sun8,5862
+galadriel_node-0.0.3.dist-info/METADATA,sha256=rFvvp4dSeV05bq6KzUhRNgTIULMM03c9RsmWjlNhL3o,2695
+galadriel_node-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+galadriel_node-0.0.3.dist-info/entry_points.txt,sha256=yrBOqT61DjArUgrPQ-JOt54QgpdwrsubQ1_uFPVFmh4,56
+galadriel_node-0.0.3.dist-info/RECORD,,
