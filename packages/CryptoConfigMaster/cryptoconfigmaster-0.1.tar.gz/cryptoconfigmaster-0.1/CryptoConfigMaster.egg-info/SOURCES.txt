@@ -1,0 +1,8 @@
+README.md
+setup.py
+CryptoConfig/__init__.py
+CryptoConfig/unique_crypto_config.py
+CryptoConfigMaster.egg-info/PKG-INFO
+CryptoConfigMaster.egg-info/SOURCES.txt
+CryptoConfigMaster.egg-info/dependency_links.txt
+CryptoConfigMaster.egg-info/top_level.txt
