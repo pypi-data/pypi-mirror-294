@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: mlip_arena
+Version: 0.0.1a0
+Summary: 
+Keywords: pytorch,machine-learning-interatomic-potentials,huggingface,deep-learning,graph-neural-networks
+Author-email: Yuan Chiang <cyrusyc@lbl.gov>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: ase
+Requires-Dist: torch
+Requires-Dist: torch_dftd>=0.4.0
+Requires-Dist: huggingface_hub
+Requires-Dist: torch-geometric
+Requires-Dist: safetensors
+Requires-Dist: pymatgen
+Requires-Dist: streamlit ; extra == "app"
+Requires-Dist: plotly ; extra == "app"
+Requires-Dist: bokeh==2.4.3 ; extra == "app"
+Requires-Dist: statsmodels ; extra == "app"
+Requires-Dist: chgnet ; extra == "chgnet"
+Requires-Dist: fairchem ; extra == "fairchem"
+Requires-Dist: matgl ; extra == "m3gnet"
+Requires-Dist: dgl ; extra == "m3gnet"
+Requires-Dist: torch<=2.2.1 ; extra == "m3gnet"
+Requires-Dist: mace-torch ; extra == "mace"
+Project-URL: Homepage, https://github.com/atomind-ai/mlip-arena
+Project-URL: Issues, https://github.com/atomind-ai/mlip-arena/issues
+Provides-Extra: app
+Provides-Extra: chgnet
+Provides-Extra: fairchem
+Provides-Extra: m3gnet
+Provides-Extra: mace
+
+---
+title: MLIP Arena
+emoji: ⚛
+sdk: streamlit
+sdk_version: 1.36.0 # The latest supported version
+app_file: serve/app.py
+---
+
+<div align="center">
+    <h1>MLIP Arena</h1>
+    <a href="https://zenodo.org/doi/10.5281/zenodo.13704399"><img src="https://zenodo.org/badge/776930320.svg" alt="DOI"></a>
+</div>
+
+> [!CAUTION]
+> MLIP Arena is currently in pre-alpha. The results are not stable. Please intepret them with care. 
+
+> [!NOTE]
+> If you're interested in joining the effort, please reach out to Yuan at [cyrusyc@berkeley.edu](mailto:cyrusyc@berkeley.edu). 
+
+MLIP Arena is an open-source platform for benchmarking machine learning interatomic potentials (MLIPs). The platform provides a unified interface for users to evaluate the performance of their models on a variety of tasks, including single-point density functional theory calculations and molecular dynamics simulations. The platform is designed to be extensible, allowing users to contribute new models, benchmarks, and training data to the platform.
+
+## Contribute
+
+MLIP Arena is now in pre-alpha. If you're interested in joining the effort, please reach out to Yuan at [cyrusyc@berkeley.edu](mailto:cyrusyc@berkeley.edu). 
+
+### Add new MLIP models
+
+If you have pretrained MLIP models that you would like to contribute to the MLIP Arena and show benchmark in real-time, please follow these steps:
+
+1. Create a new [Hugging Face Model](https://huggingface.co/new) repository and upload the model file.
+2. Follow the template to code the I/O interface for your model, and upload the script along with metadata to the MLIP Arena [here]().
+3. CPU benchmarking will be performed automatically. Due to the limited amount GPU compute, if you would like to be considered for GPU benchmarking, please create a pull request to demonstrate the offline performance of your model (published paper or preprint). We will review and select the models to be benchmarked on GPU.
+
+### Add new benchmark tasks
+
+1. Create a new [Hugging Face Dataset](https://huggingface.co/new-dataset) repository and upload the reference data (e.g. DFT, AIMD, experimental measurements such as RDF).
+2. Follow the task template to implement the task class and upload the script along with metadata to the MLIP Arena [here]().
+3. Code a benchmark script to evaluate the performance of your model on the task. The script should be able to load the model and the dataset, and output the evaluation metrics.
+
+#### Molecular dynamics calculations
+
+- [ ] [MD17](http://www.sgdml.org/#datasets)
+- [ ] [MD22](http://www.sgdml.org/#datasets)
+
+
+#### Single-point density functional theory calculations
+
+- [ ] MPTrj
+- [ ] QM9
+- [ ] [Alexandria](https://alexandria.icams.rub.de/)
+
+### Add new training datasets
+
+[Hugging Face Auto-Train](https://huggingface.co/docs/hub/webhooks-guide-auto-retrain)
+
+
+
