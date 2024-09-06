@@ -1,0 +1,2 @@
+[console_scripts]
+changeln = changeln.__main__:main
