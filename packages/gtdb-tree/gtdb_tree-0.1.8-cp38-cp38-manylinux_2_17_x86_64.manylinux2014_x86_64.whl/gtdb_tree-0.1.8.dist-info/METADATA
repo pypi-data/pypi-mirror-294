@@ -1,0 +1,70 @@
+Metadata-Version: 2.3
+Name: gtdb_tree
+Version: 0.1.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Requires-Dist: setuptools-rust >=1.5.2
+License-File: license
+Summary: A Python package for parsing GTDB trees using Rust
+Keywords: gtdb,tree,parser,rust
+Home-Page: https://github.com/eric9n/gtdb_tree
+Author: dagou <eric9n@gmail.com>
+Author-email: dagou <eric9n@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/eric9n/gtdb_tree
+
+# gtdb_tree
+
+A library for parsing Newick format files, especially GTDB tree files.
+
+## Features
+
+- Parse Newick formatted strings into a structured representation of trees.
+- Handle various formats of Newick strings, including those with bootstrap values and distances.
+
+## Installation
+
+Add this crate to your `Cargo.toml`:
+
+```toml
+[dependencies]
+gtdb_tree = "0.1.0"
+```
+
+## Usage
+
+Here's a simple example of how to use the library:
+
+```rust
+use gtdb_tree::tree::parse_tree;
+
+fn main() {
+    let newick_str = "((A:0.1,B:0.2):0.3,C:0.4);";
+    match parse_tree(newick_str) {
+        Ok(nodes) => println!("Parsed nodes: {:?}", nodes),
+        Err(e) => println!("Error parsing: {:?}", e),
+    }
+}
+```
+
+## Python Usage
+A Python package for parsing GTDB trees using Rust.
+
+## Installation
+
+```
+pip install gtdb_tree
+```
+
+```python
+import gtdb_tree
+
+result = gtdb_tree.parse_tree("((A:0.1,B:0.2):0.3,C:0.4);")
+print(result)
+```
+
+
