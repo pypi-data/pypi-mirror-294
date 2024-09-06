@@ -1,0 +1,12 @@
+costly/__init__.py,sha256=qP5x4VbLB9_a0BZODrkChc7tT7l8RlgQ-1ildutZvFU,87
+costly/costlog.py,sha256=mxksK0fkngbh4Jwa0YvRfPAnmG37SEXqWWilQr4-Nnk,3312
+costly/decorator.py,sha256=WEsg3ir51qFSojwzljdFtzMEWASRFGzlTTNRRXEVBZw,3150
+costly/estimators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costly/estimators/llm_api_estimation.py,sha256=zsWfsaHSbtOsoyLGrFBnTsZDcYPBoxY6m8zeAJvMbWw,20462
+costly/simulators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costly/simulators/llm_simulator_faker.py,sha256=jL8s4UUiKCyRSUmtt0Bhz8rxW2eOtzsVfm5cdwh8Oxo,9869
+costly/utils.py,sha256=UZYiBEM9XCcapPXxBvkrF7wgW_iO20znU6NygKEFwFQ,791
+costly-0.1.7.dist-info/LICENSE,sha256=SprJpqoW4gQkLsKInkUBzhuFOcPO8Fggeo_L15KHY70,1081
+costly-0.1.7.dist-info/METADATA,sha256=rfZksFUYPFJuRmJIHdpJmVITDZ5xORA-1z4h1li7DU0,6990
+costly-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+costly-0.1.7.dist-info/RECORD,,
