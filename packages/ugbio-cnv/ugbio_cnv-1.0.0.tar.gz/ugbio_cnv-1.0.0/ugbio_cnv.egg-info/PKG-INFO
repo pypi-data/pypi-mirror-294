@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ugbio_cnv
+Version: 1.0.0
+Summary: Ultima Genomics CNV utils
+Author-email: Avigail Moldovan <avigail.moldovan@ultimagen.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ugbio_core
+Requires-Dist: pysam>=0.22.1
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: seaborn>=0.13.2
+
+# ugbio_cnv
+
+This module includes CNV python scripts for bioinformatics pipelines.
+
+More details on the module's scripts can be found [here](germline_cnv_calling.md)
