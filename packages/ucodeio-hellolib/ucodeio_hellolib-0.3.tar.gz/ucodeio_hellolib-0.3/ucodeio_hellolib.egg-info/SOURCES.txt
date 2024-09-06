@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ucodeio_hellolib/__init__.py
+ucodeio_hellolib/hello.py
+ucodeio_hellolib.egg-info/PKG-INFO
+ucodeio_hellolib.egg-info/SOURCES.txt
+ucodeio_hellolib.egg-info/dependency_links.txt
+ucodeio_hellolib.egg-info/top_level.txt
