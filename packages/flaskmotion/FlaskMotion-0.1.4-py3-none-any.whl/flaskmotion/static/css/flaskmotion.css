@@ -1,0 +1,16 @@
+/* Default Transition Styles */
+#fm-container {
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* You can add more transition styles here if needed */
