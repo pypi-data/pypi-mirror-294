@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: e2me
+Version: 0.0.1
+Summary: 不知道什么时候跑完程序?发一封邮件吧
+License: MIT
+Author: luzhixing12345
+Author-email: luzhixing12345@163.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# autoemail
+
+不知道什么时候跑完程序? 隔一会儿看一下服务器? 为什么不让它自己跑完发一封邮件提醒一下呢?
+
+## 使用
+
+```bash
+pip 
+```
+
