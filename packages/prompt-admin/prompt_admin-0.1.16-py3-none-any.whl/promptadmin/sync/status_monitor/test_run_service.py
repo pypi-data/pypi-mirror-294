@@ -1,0 +1,22 @@
+import os
+import uuid
+
+import pytest
+
+_process = False
+
+
+class TestRunService:
+    def __init__(self):
+        if not os.path.exists('test_reports'):
+            os.mkdir('test_reports')
+
+    def run_test(self):
+        global _process
+        if _process:
+            return
+        _process = True
+        try:
+            pytest.main(['--json-report', f'--json-report-file=test_reports/{uuid.uuid4()}.json'])
+        finally:
+            _process = False
