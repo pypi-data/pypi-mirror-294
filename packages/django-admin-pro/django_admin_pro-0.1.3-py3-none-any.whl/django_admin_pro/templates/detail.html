@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {%block title %} Homepage {%endblock title %}
+{%block content %}
+<div class="flex w-full">
+  <div class="w-96">{% include 'sidebar.html' %}</div>
+
+  <div class="w-full p-7">
+    {% for item in items %} {% if 'detail' in item.field.visibility %}
+    <div class="flex p-2">
+      <div class="text-sm w-96">{{item.field.column | capfirst }}</div>
+      <div class="text-sm">{{item.value}}</div>
+    </div>
+    {% endif %} {% endfor %}
+
+    <div>{% include 'footer.html' %}</div>
+  </div>
+</div>
+{%endblock content %}
