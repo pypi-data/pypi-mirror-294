@@ -1,0 +1,96 @@
+[tool.poetry]
+authors = ["Guillaume Gauvrit <guillaume@gauvr.it>"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: AsyncIO",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Internet :: WWW/HTTP",
+]
+description = "REST API Client designed for microservices"
+homepage = "https://github.com/mardiros/blacksmith"
+license = "BSD-derived"
+name = "blacksmith"
+
+readme = "README.rst"
+repository = "https://github.com/mardiros/blacksmith"
+version = "3.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+httpx = ">=0.24"
+prometheus-client = {version = ">=0.17.1 <1", optional = true}
+purgatory = "^2.0.0"
+pydantic = "^2.6.0"
+typing-extensions = "^4.7.0"
+result = ">=0.11.0, <1"
+
+[tool.poetry.extras]
+http_cache_async = ["redis"]
+http_cache_sync = ["redis"]
+prometheus = ["prometheus-client"]
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+coverage = {version = "^7.5.1", extras = ["toml"]}
+esbonio = "^0.16.4"
+fastapi = "^0.111.0"
+flake8 = "^7.0.0"
+furo = "^2024.5.6"
+isort = "^5.10.1"
+mypy = "^1.4.1"
+prometheus-client = ">=0.17.1 <1"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.1.0"
+redis = "^5.0.4"
+sphinx = "^7.0.1"
+sphinx-autodoc-typehints = "^1.12.0"
+starlette-zipkin = "^0.3.0"
+tomlkit = "^0.12.5"
+types-redis = "^4.6.0"
+unasync = "^0.6.0"
+uvicorn = "^0.29.0"
+aiohttp = "^3.9.5"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+norecursedirs = "tests/unittests/scanned_resources"
+testpaths = ["tests"]
+filterwarnings = [
+  "error",
+]
+
+[tool.pyright]
+ignore = ["examples"]
+include = ["src", "tests"]
+reportPrivateUsage = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportShadowedImports = false
+typeCheckingMode = "strict"
+
+[[tool.mypy.overrides]]
+disallow_any_generics = true
+disallow_untyped_defs = true
+module = "blacksmith.*"
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.report]
+exclude_lines = [
+  "if TYPE_CHECKING:",
+  "except ImportError:",
+  "\\s+\\.\\.\\.$",
+  "# coverage: ignore",
+]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.2.0"]
