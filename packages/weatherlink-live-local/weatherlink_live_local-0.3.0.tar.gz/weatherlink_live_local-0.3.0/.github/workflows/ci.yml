@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Python packages
+        run: pip install hatch coverage[toml]
+      - name: Run ruff
+        run: hatch fmt
+      - name: Run mypy
+        run: hatch run typing:check
+      - name: Run tests
+        run: hatch test --cover-quiet
+      - name: Coverage report
+        run: coverage report
+      - name: Coverage report (XML)
+        run: coverage xml
+      - name: Upload coverage results to Coveralls
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: coverage.xml
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install Python packages
+        run: pip install hatch
+      - name: Check links
+        run: hatch run docs:linkcheck
+      - name: HTML
+        run: hatch run docs:html
+
+  publish:
+    needs: [test, docs] # only run if previous jobs are successful
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install hatch
+        run: pip install hatch
+      - name: Build source distribution and wheel
+        run: hatch build
+      - name: Publish package to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository-url: https://test.pypi.org/legacy/
+          skip-existing: true
+      - name: Publish package to PyPI
+        if: github.event_name == 'release'
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}

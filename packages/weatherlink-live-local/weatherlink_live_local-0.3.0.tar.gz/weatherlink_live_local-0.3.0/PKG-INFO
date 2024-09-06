@@ -1,0 +1,108 @@
+Metadata-Version: 2.3
+Name: weatherlink-live-local
+Version: 0.3.0
+Summary: Read current weather data from Davis WeatherLink Live units + connected sensors
+Project-URL: Changelog, https://github.com/lukasberbuer/weatherlink-live-local-python/blob/master/CHANGELOG.md
+Project-URL: Issues, https://github.com/lukasberbuer/weatherlink-live-local-python/issues
+Project-URL: Repository, https://github.com/lukasberbuer/weatherlink-live-local-python
+Author-email: Lukas Berbuer <lukas.berbuer@gmail.com>
+License: MIT License
+License-File: LICENSE.txt
+Keywords: api,davis,iot,local,smarthome,weather,weatherlink
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Requires-Dist: zeroconf
+Provides-Extra: dev
+Requires-Dist: coverage>=5; extra == 'dev'
+Requires-Dist: furo; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: httpretty; extra == 'dev'
+Requires-Dist: mypy>=0.9; extra == 'dev'
+Requires-Dist: myst-parser; extra == 'dev'
+Requires-Dist: pytest>=6; extra == 'dev'
+Requires-Dist: ruff>=0.5; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'dev'
+Requires-Dist: sphinx>=5; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx>=5; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: coverage>=5; extra == 'tests'
+Requires-Dist: httpretty; extra == 'tests'
+Requires-Dist: pytest>=6; extra == 'tests'
+Provides-Extra: tools
+Requires-Dist: hatch; extra == 'tools'
+Requires-Dist: mypy>=0.9; extra == 'tools'
+Requires-Dist: ruff>=0.5; extra == 'tools'
+Description-Content-Type: text/markdown
+
+# WeatherLink Live Local Python API
+
+[![CI](https://github.com/lukasberbuer/weatherlink-live-local-python/workflows/CI/badge.svg)](https://github.com/lukasberbuer/weatherlink-live-local-python/actions)
+[![Documentation Status](https://readthedocs.org/projects/weatherlink-live-local-python/badge/?version=latest)](https://weatherlink-live-local-python.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/lukasberbuer/weatherlink-live-local-python/badge.svg?branch=master)](https://coveralls.io/github/lukasberbuer/weatherlink-live-local-python?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI](https://img.shields.io/pypi/v/weatherlink_live_local)](https://pypi.org/project/weatherlink_live_local)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/weatherlink_live_local)](https://pypi.org/project/weatherlink_live_local)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
+
+Python library to read weather data from a [Davis WeatherLink Live station](https://www.davisinstruments.com/weatherlinklive/) + connected sensors (e.g. [Vantage Vue](https://www.davisinstruments.com/vantage-vue/)). Features:
+
+- discover WeatherLink Live stations in the local network
+- read sensor values (called conditions) using the **local** API - no internet connection required
+
+Although the WeatherLink Live stations are tighly coupled with the web service [weatherlink.com](https://www.weatherlink.com/), it can be used in offline situations aswell. The well designed HTTP interface makes it easy to read the current weather data via the local network - perfect for IoT / SmartHome applications.
+In fact, I couldn't find any other commercial weather station with an open ethernet-based protocol (please correct me if I'm wrong).
+
+To set up the WeatherLink Live stations, you need the Davis WeatherLink app ([Android](https://play.google.com/store/apps/details?id=com.davisinstruments.weatherlink), [iOS](https://apps.apple.com/us/app/weatherlink/id1304504954)) and a weatherlink.com account. Further sensors can be connected to the station.
+Afterwards, the weather data is accessible via weatherlink.com (if online) and the local API.
+
+## Documentation
+
+Python library: https://weatherlink-live-local-python.rtfd.io/
+
+API specification: https://weatherlink.github.io/weatherlink-live-local-api/
+
+## Install
+
+```
+pip install weatherlink-live-local
+```
+
+## Example
+
+```python
+import weatherlink_live_local as wlll
+
+devices = wlll.discover()
+print(devices)
+
+# select first device, get IP address
+ip_first_device = devices[0].ip_addresses[0]
+
+# specify units
+units = wlll.units.Units(
+    temperature=wlll.units.TemperatureUnit.CELSIUS,
+    pressure=wlll.units.PressureUnit.HECTOPASCAL,
+    rain=wlll.units.RainUnit.MILLIMETER,
+    wind_speed=wlll.units.WindSpeedUnit.METER_PER_SECOND,
+)
+
+# poll sensor data / conditions
+while True:
+    conditions = wlll.get_conditions(ip_first_device, units=units)
+    print(f"Inside temperature:  {conditions.inside.temp:.2f} °C")
+    print(f"Outside temperature: {conditions.integrated_sensor_suites[0].temp:.2f} °C")
+    time.sleep(10)
+```
