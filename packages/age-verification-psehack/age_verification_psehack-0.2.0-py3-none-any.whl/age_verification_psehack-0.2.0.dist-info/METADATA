@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: age_verification_psehack
+Version: 0.2.0
+Summary: A Django middleware for verifying the user's age before allowing them access to resources
+Project-URL: Repository, https://github.com/themighty1/age_verification_psehack
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Django>=4.2
+Requires-Dist: peewee>=3.17.6
+
+A Django middleware for verifying the user's age before allowing them access to resources.
+Developed for the purposes of the PSE Hackathon held in Sep 2024.
+
+The user is expected to own an Android or iOS device with an **NFC reader** and a compatible passport.
+
+### Installation
+
+- pip install age_verification_psehack
+
+In your Django project's `settings.py`:
+
+Add the following line the bottom of the MIDDLEWARE section:
+
+- "age_verification_psehack.middleware.AgeVerificationMiddleware"
+
+Add a new AGE_VERIFICATION_PATHS setting containing all paths requiring age verification:
+
+- AGE_VERIFICATION_PATHS = ['/protected_path1', '/protected/path2']
