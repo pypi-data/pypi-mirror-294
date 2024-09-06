@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">3</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">7cf123f9-4fd1-4a90-8ced-e3a6eab2fec7</dc:identifier>
+        <dc:title>The Odyssey</dc:title>
+        <dc:creator opf:file-as="Homer &amp; Butler, Samuel" opf:role="aut">Homer</dc:creator>
+        <dc:creator opf:file-as="Homer &amp; Butler, Samuel" opf:role="aut">Samuel Butler</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (5.43.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>1999-04-02T00:00:00+00:00</dc:date>
+        <dc:language>eng</dc:language>
+        <dc:subject>Epic poetry</dc:subject>
+        <meta name="calibre:author_link_map" content="{&quot;Homer&quot;: &quot;&quot;, &quot;Samuel Butler&quot;: &quot;&quot;}"/>
+        <meta name="calibre:timestamp" content="2023-06-22T10:07:09+00:00"/>
+        <meta name="calibre:title_sort" content="Odyssey, The"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.jpg"/>
+    </guide>
+</package>

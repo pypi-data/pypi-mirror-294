@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2024 JA Viljoen <ebookrack@javiljoen.net>
+# SPDX-License-Identifier: EUPL-1.2
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ebookrack"
+readme = "README.md"
+requires-python = "~=3.8"
+license = {file = "LICENSES/EUPL-1.2.txt"}
+authors = [{name = "JA Viljoen", email = "ebookrack@javiljoen.net"}]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+  "Operating System :: POSIX",
+  "Topic :: Text Processing :: Markup :: XML",
+  "Topic :: Utilities",
+]
+dynamic = ["version", "description"]
+dependencies = [
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest ~=7.2.1",
+]
+
+[project.urls]
+Repository = "https://git.sr.ht/~javiljoen/ebookrack-python"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  "ignore::DeprecationWarning:_pytest",
+]
+
+[tool.isort]
+profile = "black"

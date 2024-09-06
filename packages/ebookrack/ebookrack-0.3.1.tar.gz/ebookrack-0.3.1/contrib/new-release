@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2024 JA Viljoen <ebookrack@javiljoen.net>
+# SPDX-License-Identifier: EUPL-1.2
+
+"""new-release - cut a new release
+
+- update the version number of the python package
+- create a version-bump commit
+- create an annotated tag in the git repo
+"""
+
+import argparse, shlex, subprocess, sys, tempfile
+import ebookrack
+
+current_version = ebookrack.__version__
+
+
+def main():
+    new_version = parse_args()
+    check_repo_state(new_version)
+    bump_version(new_version)
+    git_tag(new_version)
+
+
+def check_repo_state(new_version):
+    if new_version == current_version:
+        sys.exit("error: new_version == current_version")
+
+    branch = run(["git", "branch", "--show-current"], out=True)
+
+    if branch != b"main":
+        sys.exit("error: not on main branch")
+
+    try:
+        run(["git", "diff", "--quiet"])
+    except subprocess.CalledProcessError:
+        sys.exit("error: repo is dirty -- commit or stash, then retry")
+
+
+def bump_version(new_version):
+    src = "src/ebookrack/__init__.py"
+    run(["sed", "-i", f"/version/s/{current_version}/{new_version}/", src])
+    message = f"proj: bump version -> {new_version}"
+    run(["git", "commit", "-v", "-em", message, src])
+
+
+def git_tag(new_version):
+    annotation_header = f"ebookrack {new_version}\n\n".encode()
+    shortlog = run(["git", "shortlog", f"{current_version}..HEAD"], out=True)
+
+    with tempfile.NamedTemporaryFile(buffering=0) as tmp:
+        tmp.write(annotation_header)
+        tmp.write(shortlog)
+        run(["git", "tag", "-a", new_version, "-eF", tmp.name])
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument("new_version")
+    args = parser.parse_args()
+    return args.new_version
+
+
+def run(cmd, out=False):
+    print("$", shlex.join(cmd), file=sys.stderr)
+
+    if out:
+        proc = subprocess.run(cmd, check=True, stdout=subprocess.PIPE)
+        return proc.stdout.rstrip()
+
+    subprocess.run(cmd, check=True)
+
+
+if __name__ == "__main__":
+    main()

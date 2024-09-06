@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier opf:scheme="calibre" id="calibre_id">219</dc:identifier>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">29a8f81c-ca4f-43d5-9638-535936ed62d5</dc:identifier>
+    <dc:title>Blood of Elves</dc:title>
+    <dc:creator opf:file-as="Sapkowski, Andrzej" opf:role="aut">Andrzej Sapkowski</dc:creator>
+    <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (4.5.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>2010-08-18T22:00:00+00:00</dc:date>
+    <dc:publisher>Orion</dc:publisher>
+    <dc:identifier opf:scheme="MOBI-ASIN">B0043M66Z4</dc:identifier>
+    <dc:language>eng</dc:language>
+    <dc:subject>Fiction</dc:subject>
+    <meta content="{&quot;Andrzej Sapkowski&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="The Witcher" name="calibre:series"/>
+    <meta content="3" name="calibre:series_index"/>
+    <meta content="2020-11-12T11:00:58+00:00" name="calibre:timestamp"/>
+    <meta content="Blood of Elves" name="calibre:title_sort"/>
+    <meta name="calibre:user_metadata:#acqdate" content="{&quot;kind&quot;: &quot;field&quot;, &quot;rec_index&quot;: 22, &quot;is_custom&quot;: true, &quot;is_editable&quot;: true, &quot;display&quot;: {&quot;description&quot;: &quot;Date acquired&quot;, &quot;date_format&quot;: &quot;yyyy-MM-dd&quot;}, &quot;is_multiple&quot;: null, &quot;search_terms&quot;: [&quot;#acqdate&quot;], &quot;is_category&quot;: false, &quot;table&quot;: &quot;custom_column_2&quot;, &quot;colnum&quot;: 2, &quot;#value#&quot;: {&quot;__class__&quot;: &quot;datetime.datetime&quot;, &quot;__value__&quot;: &quot;2020-11-12T12:55:43.344000+00:00&quot;}, &quot;#extra#&quot;: null, &quot;category_sort&quot;: &quot;value&quot;, &quot;link_column&quot;: &quot;value&quot;, &quot;label&quot;: &quot;acqdate&quot;, &quot;is_multiple2&quot;: {}, &quot;datatype&quot;: &quot;datetime&quot;, &quot;name&quot;: &quot;Acquired&quot;, &quot;column&quot;: &quot;value&quot;, &quot;is_csp&quot;: false}"/>
+    <meta name="calibre:user_metadata:#formats" content="{&quot;kind&quot;: &quot;field&quot;, &quot;rec_index&quot;: 23, &quot;is_custom&quot;: true, &quot;is_editable&quot;: true, &quot;display&quot;: {&quot;make_category&quot;: false, &quot;composite_template&quot;: &quot;{:'re(approximate_formats(), ',', ', ')'}&quot;, &quot;composite_sort&quot;: &quot;text&quot;, &quot;description&quot;: &quot;&quot;, &quot;use_decorations&quot;: 0, &quot;contains_html&quot;: false}, &quot;is_multiple&quot;: null, &quot;search_terms&quot;: [&quot;#formats&quot;], &quot;is_category&quot;: false, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;colnum&quot;: 1, &quot;#value#&quot;: &quot;EPUB&quot;, &quot;#extra#&quot;: null, &quot;category_sort&quot;: &quot;value&quot;, &quot;link_column&quot;: &quot;value&quot;, &quot;label&quot;: &quot;formats&quot;, &quot;is_multiple2&quot;: {}, &quot;datatype&quot;: &quot;composite&quot;, &quot;name&quot;: &quot;Formats&quot;, &quot;column&quot;: &quot;value&quot;, &quot;is_csp&quot;: false}"/>
+  </metadata>
+  <guide>
+    <reference href="cover.jpg" title="Cover" type="cover"/>
+  </guide>
+</package>

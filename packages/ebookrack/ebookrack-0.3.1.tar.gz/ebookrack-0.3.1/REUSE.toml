@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2024 JA Viljoen <ebookrack@javiljoen.net>
+# SPDX-License-Identifier: EUPL-1.2
+
+version = 1
+
+[[annotations]]
+path = [
+  "**.md",
+  "tests/**.opf",
+]
+SPDX-FileCopyrightText = "2024 JA Viljoen <ebookrack@javiljoen.net>"
+SPDX-License-Identifier = "EUPL-1.2"

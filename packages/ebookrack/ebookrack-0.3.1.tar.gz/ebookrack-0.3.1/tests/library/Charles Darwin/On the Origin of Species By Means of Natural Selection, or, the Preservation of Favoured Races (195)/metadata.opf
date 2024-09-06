@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier opf:scheme="calibre" id="calibre_id">195</dc:identifier>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">35deb848-075e-4d33-9585-2abd0a448fb1</dc:identifier>
+    <dc:title>On the Origin of Species By Means of Natural Selection, or, the Preservation of Favoured Races in the Struggle for Life</dc:title>
+    <dc:creator opf:file-as="Darwin, Charles" opf:role="aut">Charles Darwin</dc:creator>
+    <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (4.5.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>2009-10-31T22:00:00+00:00</dc:date>
+    <dc:publisher>Project Gutenberg</dc:publisher>
+    <dc:identifier opf:scheme="URI">http://www.gutenberg.org/ebooks/1228</dc:identifier>
+    <dc:language>eng</dc:language>
+    <dc:subject>Non-fiction</dc:subject>
+    <dc:subject>Biology</dc:subject>
+    <meta content="{&quot;Charles Darwin&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="2019-12-09T11:55:09+00:00" name="calibre:timestamp"/>
+    <meta content="On the Origin of Species By Means of Natural Selection, or, the Preservation of Favoured Races in the Struggle for Life" name="calibre:title_sort"/>
+    <meta name="calibre:user_metadata:#formats" content="{&quot;label&quot;: &quot;formats&quot;, &quot;column&quot;: &quot;value&quot;, &quot;is_category&quot;: false, &quot;#extra#&quot;: null, &quot;is_csp&quot;: false, &quot;rec_index&quot;: 22, &quot;category_sort&quot;: &quot;value&quot;, &quot;name&quot;: &quot;Formats&quot;, &quot;datatype&quot;: &quot;composite&quot;, &quot;is_multiple&quot;: null, &quot;link_column&quot;: &quot;value&quot;, &quot;is_editable&quot;: true, &quot;is_custom&quot;: true, &quot;colnum&quot;: 1, &quot;#value#&quot;: &quot;EPUB&quot;, &quot;search_terms&quot;: [&quot;#formats&quot;], &quot;table&quot;: &quot;custom_column_1&quot;, &quot;display&quot;: {&quot;composite_template&quot;: &quot;{:'re(approximate_formats(), ',', ', ')'}&quot;, &quot;description&quot;: &quot;&quot;, &quot;contains_html&quot;: false, &quot;use_decorations&quot;: 0, &quot;composite_sort&quot;: &quot;text&quot;, &quot;make_category&quot;: false}, &quot;is_multiple2&quot;: {}, &quot;kind&quot;: &quot;field&quot;}"/>
+  </metadata>
+  <guide>
+    <reference href="cover.jpg" title="Cover" type="cover"/>
+  </guide>
+</package>
