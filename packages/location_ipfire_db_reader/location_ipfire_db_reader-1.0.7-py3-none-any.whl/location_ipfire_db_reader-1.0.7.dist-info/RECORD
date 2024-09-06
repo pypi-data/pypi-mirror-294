@@ -1,0 +1,12 @@
+location_ipfire_db_reader/__init__.py,sha256=TT0DH6n-o7IU5_287UHbvSE0zBWql1-SfowikeCE0E8,289
+location_ipfire_db_reader/database.py,sha256=etYCuzwpG01Fo888eWXwm6kxPyvk4hvG0qKFUgBwQjk,937
+location_ipfire_db_reader/database_reader.py,sha256=k1EWy-TN4IRD5oDJnkR5QqvIcdzAoEs1bPnyuZ2kJ7I,4654
+location_ipfire_db_reader/decompress_db.py,sha256=G7f_8BQpVB6Sq_cMbRVj07EQE5ULcAwBKKyn-5J_VFc,515
+location_ipfire_db_reader/download_db.py,sha256=bXkw-OCNBjGhi9n16HnvVwgWo2vjTla43ceIB8BWlCg,1188
+location_ipfire_db_reader/exceptions.py,sha256=cHVhMFB1LXeXqzy09CtWoNdVjKOFMMt0LwhPEF3jstQ,737
+location_ipfire_db_reader/interpret_location_db.py,sha256=CHleVdlYp91zacQbZ0HF5BbeqRD5ixEUBetSjS-VaCU,5595
+location_ipfire_db_reader/ip_information.py,sha256=vJLu8eRxoTmyj2Nb4u7VC5Zztvrmk8sqV77QPOYZ3Cs,4997
+location_ipfire_db_reader-1.0.7.dist-info/LICENSE,sha256=JA73hXmx1t82yMCTatRZWzlv4VjfND_dCPOP9YG-lrc,1076
+location_ipfire_db_reader-1.0.7.dist-info/METADATA,sha256=W2yEEVnXliF5EgnLM3xkI-LJ8lKsvFZpI7gxwZt0ydk,3977
+location_ipfire_db_reader-1.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+location_ipfire_db_reader-1.0.7.dist-info/RECORD,,
