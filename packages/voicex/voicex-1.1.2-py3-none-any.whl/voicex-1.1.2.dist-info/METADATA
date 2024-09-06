@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: voicex
+Version: 1.1.2
+Summary: TTS system with fully customizable voices.
+Author-email: Silvan Mertes <silvan.mertes@informatik.uni-augsburg.de>
+Project-URL: Homepage, https://github.com/hcmlab/voicex
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: sounddevice
+Requires-Dist: numpy
+Requires-Dist: requests
+
+
+![](src/res/logo.png)
+
+# voiceX - A Python Library for Personalized TTS
+
+
+Import the necessary stuff:
+```
+from voicex import TTS, Voices
+```
+Specify the IP of the server where the TTS backend is running:
+```
+server_ip = "xxx.xxx.xx.xx"
+```
+
+
+Specify your voicex file, and the ip and port of the server where your voicex instance is running:
+```
+tts = TTS(voice="voices/thomas.voicex", server=server_ip)
+```
+
+Alternatively, you can use one of the predefined voices:
+```
+tts = TTS(voice=Voices.GABBY, server=server_ip)
+```
+
+Synthesize, speak or write stuff:
+```
+text = "This is a test sentence. I hope you like my voice."
+tts.speak(text)
+wav_data, sample_rate = tts.synthesize(text)
+tts.write(text, "output.wav")
+```
