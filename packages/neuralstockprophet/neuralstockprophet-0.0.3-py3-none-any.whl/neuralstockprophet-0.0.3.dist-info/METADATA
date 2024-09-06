@@ -1,0 +1,125 @@
+Metadata-Version: 2.3
+Name: neuralstockprophet
+Version: 0.0.3
+Summary: LSTM-ARIMA with attention mechanisms and multiplicative decomposition for sophisticated stock forecasting.
+Project-URL: Repository, https://github.com/lucaswychan/neural-stock-prophet
+Author-email: Lucas Chan <chanconan@gmail.com>
+Maintainer-email: Lucas Chan <chanconan@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 LucasChan
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: ARIMA,LSTM,attention,forecasting,multiplicative decomposition,stock
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: empyrical
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: quadprog
+Requires-Dist: riskparityportfolio
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: ta
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-metal
+Requires-Dist: tqdm
+Requires-Dist: yfinance
+Provides-Extra: lint
+Requires-Dist: black; extra == 'lint'
+Requires-Dist: flake8; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# Neural Stock Prophet
+
+[![PyPI](https://img.shields.io/pypi/v/neuralstockprophet?label=pypi%20package&color)](https://pypi.org/project/neuralstockprophet/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/neuralstockprophet?color)](https://pypistats.org/packages/neuralstockprophet)
+[![GitHub license badge](https://img.shields.io/github/license/lucaswychan/neural-stock-prophet?color=blue)](https://opensource.org/licenses/MIT)
+
+**neuralstockprophet** integrates a variety of advanced techniques and algorithms to enhance the robustness, stability, and interoperability of stock price prediction methodologies. By leveraging machine learning, this package aims to accurately forecast the future values of company stocks and other financial assets traded on exchanges. Unlike existing approaches that predominantly focus on model configuration and tuning—often neglecting the inherent variability within the data—NeuralStockProphet addresses these challenges. Furthermore, it effectively mitigates issues related to overfitting and performance constraints that are commonly encountered in machine learning models.
+
+Combined techniques:
+
+-   LSTM model with attention mechanisms
+-   Multiplicative decomposition
+-   ARIMA model
+
+## Installation
+
+-   Stable version
+
+```
+pip install neuralstockprophet
+```
+
+## Getting Started
+
+```python
+import neuralstockprophet as nsp
+import pandas as pd
+
+prophet = nsp.NeuralStockProphet(
+        stock_names=["AAPL", "GOOGL"],
+        scaler_func=lambda: MinMaxScaler(feature_range=(0, 1)),
+        train_start_date="2010-01-01",
+        train_end_date="2019-12-31",
+        test_start_date="2020-01-01",
+        test_end_date="2020-12-31",
+    )
+
+forecasts, real_vals = prophet.forecast()
+
+# Use the forecasted results to design the portfolio and get the assets allocation
+portfolio = nsp.RiskParityPortfolio(prices=forecasts)
+
+# Evaluate the performance of the portfolio with the forecasted results and the true stock prices
+forecast_performance = portfolio.evaluate(forecasts)
+real_performance = portfolio.evaluate(real_vals)
+
+analyze_result_df = pd.concat([forecast_performance, real_performance], axis=0)
+analyze_result_df.index = ["Forecast portfolio", "True portfolio"]
+```
+
+Get the historical data simply by inputting the stock codes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/lucaswychan/neural-stock-prophet/blob/main/LICENSE) file for details.
+
+## TODO
+
+There are further improvements that can be made. Please have a look at the [TODO](https://github.com/lucaswychan/neural-stock-prophet/blob/main/TODO).
