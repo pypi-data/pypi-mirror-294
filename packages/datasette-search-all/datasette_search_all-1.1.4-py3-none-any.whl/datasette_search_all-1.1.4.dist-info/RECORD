@@ -1,0 +1,10 @@
+datasette_search_all/__init__.py,sha256=wQENo5tsQFn4J2rKIVd-efLYZ_P5gdDmBx18feLZ_3Y,1639
+datasette_search_all/utils.py,sha256=DlsLxcSO5yFcQg4KJsYwPptf3r8vda1ECOJn9PoWYfI,1397
+datasette_search_all/templates/index.html,sha256=t9KoU-bxRsHhCgffvJyp_aZ0kEqLllxvWXw24eauTAU,507
+datasette_search_all/templates/search_all.html,sha256=wHHrmue7obmVv1uJxVOMtDxurJtKtoYF6njFeYFejdM,5072
+datasette_search_all-1.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_search_all-1.1.4.dist-info/METADATA,sha256=9KyvSI_4F-7lY364OvcrnPoKERxWhVByfwdJs4Bste0,3428
+datasette_search_all-1.1.4.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+datasette_search_all-1.1.4.dist-info/entry_points.txt,sha256=DcBNaoCibBgmwJSBLpG4S1YH2M3D1vyo9-wzTCuqV6Y,46
+datasette_search_all-1.1.4.dist-info/top_level.txt,sha256=bHG2cdlFzo_uqRIDZV6yWWD6MsQEPggXlqsAt-n_gAg,21
+datasette_search_all-1.1.4.dist-info/RECORD,,
