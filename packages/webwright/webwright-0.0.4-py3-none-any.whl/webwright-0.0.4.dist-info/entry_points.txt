@@ -1,0 +1,2 @@
+[console_scripts]
+webwright = webwright.main:entry_point
