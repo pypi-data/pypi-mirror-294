@@ -1,0 +1,6 @@
+policyengine-core>=3.6.5
+microdf-python
+tqdm
+
+[dev]
+setuptools
