@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: diffbot-kg
+Version: 0.2.4
+Summary: Python client for the Diffbot Knowledge Graph API.
+License: MIT
+Author: Brendan C. Smith
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: aiolimiter (>=1.1.0,<2.0.0)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Requires-Dist: yarl (>=1.9.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Diffbot Knowledge Graph Client
+
+![Diffbot Logo](https://www.diffbot.com/assets/img/diffbot-logo-darkbg.svg)
+
+[![CodeFactor](https://www.codefactor.io/repository/github/brendancsmith/diffbot-kg/badge)](https://www.codefactor.io/repository/github/brendancsmith/diffbot-kg)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brendancsmith/diffbot-kg/python-package.yml)
+![PyPI - Version](https://img.shields.io/pypi/v/diffbot-kg)
+![GitHub License](https://img.shields.io/github/license/brendancsmith/diffbot-kg)
+
+## Description
+
+Python client for the Diffbot Knowledge Graph API.
+
+## Installation
+
+```sh
+pip install diffbot-kg
+```
+
+## Usage
+
+```python
+from diffbot_kg import DiffbotSearchClient, DiffbotEnhanceClient
+
+search_client = DiffbotSearchClient('your_api_key')
+enhance_client = DiffbotEnhanceClient('your_api_key')
+
+# Search for entities
+search_results = search_client.search({query='type:Organization name:Diffbot'})
+
+# Enhance an entity
+enhanced_entity = enhance_client.enhance({query='type:Organization name:Diffbot'})
+```
+
+## Contributing
+
+Contributions to this project are welcome. - see the CONTRIBUTING.md file for details.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
