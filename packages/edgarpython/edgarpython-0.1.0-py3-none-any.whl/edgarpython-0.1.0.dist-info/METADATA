@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: edgarpython
+Version: 0.1.0
+Summary: Python Library to interact with the SEC Edgar files
+Author: sachin-sankar
+Author-email: mail.sachinsankar@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# edgarpy
+
+Python library to interact with the SEC Edgar filings.
+
+# Getting Started
+
+Install edgarpy with
+
+```shell
+pip install edgarpy
+```
+
