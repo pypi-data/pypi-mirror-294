@@ -1,0 +1,3 @@
+[console_scripts]
+webserver=twitch_fapi_backend.api:main
+

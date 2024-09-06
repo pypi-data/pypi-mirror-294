@@ -1,0 +1,9 @@
+twitch_fapi_backend/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+twitch_fapi_backend/api.py,sha256=Rkow2Vdw9OTRnbNg2VB3kxBEnPdCcc05AG6TPk8i2f8,9816
+twitch_fapi_backend/kodi.py,sha256=bN5gUnMGWMziK2K1QHYej7HvimW9hHNOcdug7nA1AOU,3193
+twitch_fapi_backend/tasks.py,sha256=Jp6_qYTRV0-c6biNHP9fOJWaKK4JpMXLa7OFHEARlyw,3101
+twitch_fapi_backend/twitch.py,sha256=JvpIyjnALK_bfTEFA0tgBdjPQzHYtD795g_37e8VVaE,4422
+twitch_fapi_backend-0.1.0.dist-info/METADATA,sha256=RyQXSjU_1Zwkdg34XgL_g0Iq_he2ZkO3V2u3p39cIH8,806
+twitch_fapi_backend-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+twitch_fapi_backend-0.1.0.dist-info/entry_points.txt,sha256=WRFFZtxaujsJIqrpFOv5EK538vj8PJLKydOzDyaagfM,58
+twitch_fapi_backend-0.1.0.dist-info/RECORD,,
