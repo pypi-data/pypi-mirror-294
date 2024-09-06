@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+temperatura/__init__.py
+temperatura/temperatura.py
+temperatura.egg-info/PKG-INFO
+temperatura.egg-info/SOURCES.txt
+temperatura.egg-info/dependency_links.txt
+temperatura.egg-info/top_level.txt
