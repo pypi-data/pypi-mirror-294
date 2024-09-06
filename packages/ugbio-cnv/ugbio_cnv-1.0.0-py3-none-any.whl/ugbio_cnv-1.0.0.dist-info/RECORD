@@ -1,0 +1,12 @@
+ugbio_cnv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ugbio_cnv/annotate_FREEC_segments.py,sha256=SQmy1IGCjJRBM7EY_K1tz8ktk2omsrbqYYHxD4Gz_yc,3022
+ugbio_cnv/bicseq2_post_processing.py,sha256=RA2RSZH06xmhpK_4ROUetMhK17yUKdSuD_I257OKwSo,3182
+ugbio_cnv/convert_cnv_results_to_vcf.py,sha256=wLgjUWcwgLOa65zR4S_bxgXUQeCC5jyaM6koOmTpoIM,6043
+ugbio_cnv/filter_sample_cnvs.py,sha256=yV5O72qxujbqwRq4xFGdCMsB2TgHeVG-2ySB1edqUg4,4951
+ugbio_cnv/plot_FREEC_fold_change.py,sha256=nFwpNPvFMAri97WSRE993R2cWPOw3YQHDGJyd4ZjSh8,2710
+ugbio_cnv/plot_FREEC_neutral_AF.py,sha256=AHfbKk2tgTA9XlFU_r6jNVjdyxLQG37hsmviQBbHVNo,4029
+ugbio_cnv/plot_cnv_results.py,sha256=4DzwRD6XeGqb-YaaISbkM4vfY7wcg6llFY1l6mYUHcs,15265
+ugbio_cnv-1.0.0.dist-info/METADATA,sha256=JD3pu7Mxtqp1lbFHytjgwqE27atTimJQspXuYxwTt0Q,585
+ugbio_cnv-1.0.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+ugbio_cnv-1.0.0.dist-info/top_level.txt,sha256=N8t5IEapY9leoOW0Xd_a_dlvC2ZkE4zZFoCrjoP4K1U,10
+ugbio_cnv-1.0.0.dist-info/RECORD,,
