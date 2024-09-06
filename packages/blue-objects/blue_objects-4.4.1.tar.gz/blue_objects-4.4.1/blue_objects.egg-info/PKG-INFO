@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: blue_objects
+Version: 4.4.1
+Summary: 🌀 data objects for Bash.
+Home-page: https://github.com/kamangir/blue-objects
+Author: Arash Abadpour (Kamangir)
+Author-email: arash@kamangir.net
+License: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: blueness
+Requires-Dist: blue_options
+Requires-Dist: boto3
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pymysql
+Requires-Dist: pyyaml
+Requires-Dist: pylint
+Requires-Dist: pytest
+Requires-Dist: python-dotenv[cli]
+Requires-Dist: tqdm
+
+# 🌀 blue-objects
+
+🌀 `blue-objects` is an abstraction for objects that are accessible in Python and Bash on ALL machines. For example, `@geo` outputs are `object` and AI without objects is like walking without steps.
+
+## installation
+
+```bash
+pip install blue-plugin
+```
+
+## use in Bash
+
+🔥
+
+## use in Python
+
+🔥
+
+---
+
+[![PyPI version](https://img.shields.io/pypi/v/blue_objects.svg)](https://pypi.org/project/blue_objects/)
