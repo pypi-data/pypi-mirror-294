@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cela
+Version: 0.0.6a0
+Summary: A command client for CELA.
+Author: celaraze
+Author-email: celaraze@qq.com
+License: MIT
+Keywords: cela,asset,management,client
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: pymysql
+Requires-Dist: rich
+Requires-Dist: httpx
+Requires-Dist: fire
+Requires-Dist: pick
+
+# Cela Client
+
+A Command-line client for [Cela](https://github.com/celaraze/cela.git).
+
+## Quick Start
+
+```shell
+pip install cela
+cela connect http://localhost:8000
+cela login admin admin
+cela todo list
+```
+
+## Publish By Github Actions
+
+```shell
+git tag v0.0.5-alpha
+git push origin v0.0.5-alpha
+# or
+# git push origin -tags
+```
+
+## Publish Manually
+
+```shell
+pip install twine
+python setup.py bdist_wheel --universal
+twine upload dist/*
+```

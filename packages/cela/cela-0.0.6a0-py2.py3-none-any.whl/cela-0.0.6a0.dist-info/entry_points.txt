@@ -1,0 +1,2 @@
+[console_scripts]
+cela = app.main:main
