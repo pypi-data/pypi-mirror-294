@@ -1,0 +1,1 @@
+pylint --rcfile ./pylint.rc ../src/peakrdl_docx | tee lint.rpt

@@ -1,0 +1,2 @@
+[peakrdl.exporters]
+docx = peakrdl_docx.__peakrdl__:DocxExporterDescriptor
