@@ -1,0 +1,11 @@
+README.md
+setup.py
+timelapser/__init__.py
+timelapser/main.py
+timelapser/recorder.py
+timelapser.egg-info/PKG-INFO
+timelapser.egg-info/SOURCES.txt
+timelapser.egg-info/dependency_links.txt
+timelapser.egg-info/entry_points.txt
+timelapser.egg-info/requires.txt
+timelapser.egg-info/top_level.txt

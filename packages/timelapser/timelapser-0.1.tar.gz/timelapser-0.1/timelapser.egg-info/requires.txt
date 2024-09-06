@@ -1,0 +1,6 @@
+typer
+numpy
+opencv-python-headless
+mss
+pynput
+rich
