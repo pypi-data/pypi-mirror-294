@@ -1,0 +1,6 @@
+
+[jwt]
+pyjwt>=2.0.0
+
+[mongo]
+pymongo>=3.11
