@@ -1,0 +1,8 @@
+h5py
+harmonica
+matplotlib
+netCDF4
+numpy
+pyproj
+santex
+scipy
