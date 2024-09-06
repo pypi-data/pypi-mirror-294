@@ -1,0 +1,11 @@
+_dot.py,sha256=AhUeK6uyM1RCNIMdWReKRr5xKML4eKtdtf0ZcaCDqIc,154
+dot/__init__.py,sha256=wLX1xD0MlQZrSgDV6DxY_v8KtuchGTO52-N2idh3in8,45
+dot/__main__.py,sha256=HIexgwyvucX30qrx3LcYFmA_U2JNEe7ZZ_tfETrGjyI,1496
+dot/_command.py,sha256=FxFy1FQ-QLzOyp5HfqMNCVPpNVjyL56FDLHw1FHp9U0,4095
+dot/_logger.py,sha256=q5ddBPWuqzIUlgbB9kaPcjYoJg4K4eskWtPGS0e0lCo,1266
+dot/_utils.py,sha256=fxgjqFIyiXoCXGYMtEtYMH7tEL1w6xDQHnfZqTU8eX8,611
+dot_py-1.3.0.dist-info/METADATA,sha256=V4dsgwdlPGS9UYADIgl8G7fg20iF85vYF7N6j8LW_UM,2936
+dot_py-1.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dot_py-1.3.0.dist-info/entry_points.txt,sha256=7YMusrq_vQLOAa-RpuedafOWZYW-0JSVkRmmJbv57SI,46
+dot_py-1.3.0.dist-info/licenses/LICENSE,sha256=n8jBu6sd99It33WGpNXauErYrq1e3iM7cmPXfER0q4s,1067
+dot_py-1.3.0.dist-info/RECORD,,
