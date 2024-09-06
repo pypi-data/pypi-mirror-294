@@ -1,0 +1,12 @@
+amalgam/__init__.py,sha256=oHu7Zr4eGDUqj93pLwz8t7gLa8lpAx6Q-xbGiJ3nJx0,18
+amalgam/api.py,sha256=IWS--0NCnhsadMYSna2gLllNxG_i3HpymY3eXbugwDU,36796
+amalgam/lib/version.json,sha256=5XMApLemf2dBijm8sxyKvS5rGd3X89n4EIguQEY-zR0,252
+amalgam/lib/darwin/arm64/amalgam-mt.dylib,sha256=iQhjvqYFnOy-dGzvUYdU5fDh_pMDTDisyglcxpnZGRI,2973037
+amalgam/lib/darwin/arm64/amalgam-omp.dylib,sha256=uWNVhCa3bDU-rIFE7H1IR-Y0ryAbxXpN2-mlsXyaKxM,3402190
+amalgam/lib/darwin/arm64/amalgam-st.dylib,sha256=ctZleck2RcDgeiunS6GfWmRfVgOHZMhRs-zs7mToitQ,2871085
+amalgam/lib/darwin/arm64/docs/version.json,sha256=LH3vg4jCDUqb080j6mtwGuWmj6S3YDPFPDu9ve2Zkvo,26
+amalgam_lang-12.3.13.dist-info/LICENSE.txt,sha256=2xqHuoHohba7gpcZZKtOICRjzeKsQANXG8WoV9V35KM,33893
+amalgam_lang-12.3.13.dist-info/METADATA,sha256=nvaHmyJpGSXe_gwGqw31_-WBxgFW1E1qQlPc2glIkDI,43815
+amalgam_lang-12.3.13.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+amalgam_lang-12.3.13.dist-info/top_level.txt,sha256=rmPHU144SyaB25u5-FAQyECAQnJ39NvuJEcKXMRcdBo,8
+amalgam_lang-12.3.13.dist-info/RECORD,,
