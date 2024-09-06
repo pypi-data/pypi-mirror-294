@@ -1,0 +1,5 @@
+fastapi<=0.110.0,>=0.69.0
+uvicorn<=0.29.0,>=0.14.0
+gunicorn>=21.2.0
+httptools<=0.6.1,>=0.1.2
+fastkit>=0.1.4
