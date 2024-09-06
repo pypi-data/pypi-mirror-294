@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tegridymidi.egg-info/PKG-INFO
+tegridymidi.egg-info/SOURCES.txt
+tegridymidi.egg-info/dependency_links.txt
+tegridymidi.egg-info/top_level.txt
