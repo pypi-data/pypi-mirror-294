@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: param-opt
+Version: 0.0.2
+Summary: This repository features an ML approach toward estimating process parameters for production steps
+Home-page: https://github.com/j-ehrhardt/p-opt
+Author: Jonas Ehrhardt
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >= 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Python Version](https://img.shields.io/badge/python-3.12%2B-brightgreen.svg)](https://www.python.org/downloads/release/python-380/)
+[![Anaconda](https://img.shields.io/badge/Anaconda-24.2.1-green)](https://www.anaconda.com/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.3.0-red)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+# p-opt
+
+Welcome to the p-opt repository. 
+This repository features an ML approach toward estimating process paramaters for production steps.
+
+The approach consists of two steps: (i) training an ML model to approximate the process step on observations from DoE or directly the production process, 
+(ii) using a second optimization of the input values to the ML model via backpropagation to fit a given new input-output combination. 
+The approach is mainly based on ideas from [Say et al. 2020](https://doi.org/10.1613/jair.1.11829) and [Roche et al. 2023](https://doi.org/10.48550/ARXIV.2308.10496).
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [License](#license)
+
+
+## Installation
+
+To install the required packages and dependencies, run the following commands:
+```bash
+conda env create -f paramopt.yml
+```
+
+## Usage
+You find all necessary code for training and estimating the parameters in the `main.py` file.
+For your individual dataset, you need to create your own dataloader in `/code/dataloader`.
+
+You can run a hyperparameter search for estimating the optimal hyperparameters of your model with [Optuna](optuna.org) by initializing the `HparamSearch` class and running the `optimize_study()` function.
+````python
+study = HparamSearch(hparam=json.load('link-to-hparam-file.json'))
+study.optimize_study(n_trials=64)
+````
+
+For only training the model, use the `single_training()` function and for only reconstruction parameters, use the `single_reconstruction()` function.
+You can use both function combined in the `single_training_and_reconstruction()` function.
+````python
+# only training the model
+single_training(hparam)
+
+# only finidng parameters
+single_reconstruction(hparam, model)
+
+# training the model and finding parameters
+single_training_and_reconstruction(hparam)
+````
+
+Tensorboard logger is embedded, and there is the possiblity to visualize the reconstruction as single plot or GIF over the optimization period.
+
+## Examples
+
+Here are two examples for using the `single_reconstruction()` function to estimate process parameters of a pre-trained ultra-sonic-welding process.
+Where the **black dot** indicates the ground truth (gt), the <font color="cyan">**cyan dot**</font> indicates the initial guess before the optimization (guess), and the <font color="green">**green dot**</font> indicates the optimization (rec)
+
+**This is an example for reconstructing one of three parameters**
+
+![rec1param](/figures/rec1param.gif)
+
+**This is an example for reconstructing two of three parameters**
+
+![rec2param](/figures/rec2param.gif)
+
+## License 
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
