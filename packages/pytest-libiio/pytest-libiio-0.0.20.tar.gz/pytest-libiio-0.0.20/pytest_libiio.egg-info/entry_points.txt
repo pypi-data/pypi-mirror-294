@@ -1,0 +1,6 @@
+[console_scripts]
+gen_xml = pytest_libiio.tools:gen_xml
+
+[pytest11]
+libiio = pytest_libiio.plugin
+
