@@ -1,0 +1,6 @@
+setup.py
+src/activation_hard.egg-info/PKG-INFO
+src/activation_hard.egg-info/SOURCES.txt
+src/activation_hard.egg-info/dependency_links.txt
+src/activation_hard.egg-info/requires.txt
+src/activation_hard.egg-info/top_level.txt
