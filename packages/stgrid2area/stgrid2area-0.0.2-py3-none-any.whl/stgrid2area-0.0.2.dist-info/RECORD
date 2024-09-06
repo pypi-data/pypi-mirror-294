@@ -1,0 +1,10 @@
+stgrid2area/__init__.py,sha256=0FPiucrtTit_7m1QkpzDAjGQ3Q-OEIOnJIfNzDMEcdY,107
+stgrid2area/__version__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+stgrid2area/area.py,sha256=_aow2onavdhldw1RmzXQZx9T6uKzJmkP9JPKmIn6Uoo,9575
+stgrid2area/processor.py,sha256=aLOvWIFDTq6rWrrjZNkQIuRx-9f0mEhGh0x7kW06N14,3425
+stgrid2area/util.py,sha256=5d1-11O650MPdLxSbtCSKn7_VcTYLpmpJj8c_OHFkaA,1013
+stgrid2area-0.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+stgrid2area-0.0.2.dist-info/METADATA,sha256=3ks93SFj2vgHj6DQIncekKEO1Kak61_4sv724nh68q4,537
+stgrid2area-0.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+stgrid2area-0.0.2.dist-info/top_level.txt,sha256=E0ORqQkF-y7RLIYTdddqa3g5Ok8OsneCYNP6HPIoKnA,12
+stgrid2area-0.0.2.dist-info/RECORD,,
