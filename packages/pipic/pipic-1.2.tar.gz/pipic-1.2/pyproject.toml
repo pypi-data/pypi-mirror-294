@@ -1,0 +1,89 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8", "wheel", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = 'pipic'
+description = 'A Python library for particle-in-cell plasma simulation.'
+
+authors = [{ name = 'Arkady Gonoskov', email = 'arkady.gonoskov@physics.gu.se' }]
+maintainers = [{ name = 'The pipic developers team' }]
+
+readme = 'README.md'
+dynamic = ["version"]  # Version is determined using setuptools_scm
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Physics'
+]
+
+requires-python = '>=3.8'
+dependencies = [
+    'numpy>=1.19; python_version~="3.8"',
+    'numpy>=1.20; python_version~="3.9"',
+    'numpy>=1.22; python_version~="3.10"',
+    'numpy>=1.24; python_version>="3.11"',
+    'numpy>=1.26; python_version>="3.12"',
+    'numba>=0.49; python_version~="3.8"',
+    'numba>=0.53; python_version~="3.9"',
+    'numba>=0.55; python_version~="3.10"',
+    'numba>=0.57; python_version>="3.11"',
+    'numba>=0.59; python_version>="3.12"'
+]
+
+[project.optional-dependencies]
+mpl = [
+    'matplotlib'
+]
+test = [
+    'pytest',
+]
+docs = [
+    'sphinx',
+    'sphinx_rtd_theme'
+]
+dev = ['pipic[test,mpl]', "setuptools>=64", "setuptools-scm>=8", "wheel", "pybind11"]
+
+
+[project.urls]
+Homepage = "https://github.com/hi-chi/pipic"
+Issues = "https://github.com/hi-chi/pipic/issues"
+
+
+# Automatically determine project version using setuptools_scm.
+# Requires project.dynamic = ["version"]
+[tool.setuptools_scm]
+version_file = "pipic/_version.py"
+local_scheme = "dirty-tag"
+
+
+# Disabled until project is ready for it
+# [tool.mypy]
+# files = "pipic"
+
+
+[tool.ruff]
+line-length = 100
+src = ["pipic"]
+exclude= ["src", "examples", "tests"]
+
+[tool.ruff.lint]
+extend-select = [
+    "I",           # isort
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F401", "F403"]
+"**/__init__.pyi" = ["F401"]
+"pipic/tools.py" = ["F403"]
