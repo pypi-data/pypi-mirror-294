@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Lya_zelda_II
+Version: 0.0.3
+Summary: Lyman alpha for everyone
+Author-email: Siddhartha Gurung Lopez <gurung.lopez@gmail.com>
+Project-URL: Homepage, https://github.com/sidgl/zELDA_II
+Project-URL: Issues, https://github.com/sidgl/zELDA_II
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
