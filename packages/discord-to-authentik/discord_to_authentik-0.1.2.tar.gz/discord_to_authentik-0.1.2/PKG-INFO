@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: discord-to-authentik
+Version: 0.1.2
+Summary: Synchronize roles you create in Discord to authentik for Discord Auth managment
+Home-page: https://pypi.org/project/discord-to-authentik/
+License: GPLv3
+Author: Dominik Rathmer
+Author-email: dominik@rathmer.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: authentik-client (>=2024.8.0.post1725367375,<2025.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: discord.py (>=2.4.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Project-URL: Repository, https://github.com/rathmerdominik/discord-to-authentik
+Description-Content-Type: text/markdown
+
+# Discord to authentik
+
+A Discord bot that synchronizes your discord roles to authentik groups.
+
+# Preamble
+
+I really like using the Discord Login functionality of authentik. And also the great Guides that have been written for it.
+
+Although it did bother me that i had to create the groups manually instead of authentik syncing them from my Discord instance on demand.
+
+So i created this solution that allows you to synchronize all your Discord roles to authentik groups with the required `discord_role_id` attribute!
+
+This is a great complimentary application to [this](https://docs.goauthentik.io/docs/sources/discord/#syncing-discord-roles-to-authentik-groups) guide!
+
+## Sounds great. How do i install and use it?
+
+The installation is as simple as executing those following commands:
+```
+pipx install --global discord-to-authentik
+sudo discord-to-authentik-setup
+```
+
+Then you type `!sync` into the Discord Guild your bot runs in to synchronize the slash command `sync_roles`.  
+From this point you can just do `/sync_roles` whenever you want to synchronize your discord roles with your authentik instance.
+
+Enjoy ✨
+
+## Installing on NixOS
+
+This project provides a flake output with a module!
+
+Import into your flake:
+
+```nix
+# Example flake.nix!
+{
+  inputs.discord-to-authentik.url = "github:rathmerdominik/discord-to-authentik";
+
+  outputs = inputs@{ ... }: {
+    nixosConfigurations = {
+      your-host = inputs.nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          inputs.discord-to-authentik.nixosModules.default
+          {
+            services.discord-to-authentik = {
+                enabled = true;
+                environmentFiles = /path/to/env/file;
+            };
+          }
+        ];
+      };
+    };
+  };
+}
+```
