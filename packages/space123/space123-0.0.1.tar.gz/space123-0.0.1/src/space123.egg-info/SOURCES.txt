@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/space123.egg-info/PKG-INFO
+src/space123.egg-info/SOURCES.txt
+src/space123.egg-info/dependency_links.txt
+src/space123.egg-info/top_level.txt
