@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interdim"
+version = "0.2.2"
+description = "Interactive Dimensionality Reduction, Clustering, and Visualization"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8"
+license = {text = "BSD-3-Clause"}
+authors = [
+    {name = "Matthew Shinkle", email = "matthewshinkle@gmail.com"}
+]
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "plotly",
+    "dash",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["dimensionality reduction", "clustering", "visualization", "machine learning", "data analysis"]
+
+[project.optional-dependencies]
+umap = ["umap-learn"]
+hdbscan = ["hdbscan"]
+test = ["pytest"]  # <-- Added this line to include pytest for testing
+all = ["umap-learn", "hdbscan"]
+
+[project.urls]
+"Homepage" = "https://github.com/MShinkle/interdim"
+"Bug Tracker" = "https://github.com/MShinkle/interdim/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["interdim*"]
