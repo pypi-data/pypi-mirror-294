@@ -1,0 +1,9 @@
+setup.py
+textipic/__init__.py
+textipic/textipic.py
+textipic.egg-info/PKG-INFO
+textipic.egg-info/SOURCES.txt
+textipic.egg-info/dependency_links.txt
+textipic.egg-info/entry_points.txt
+textipic.egg-info/requires.txt
+textipic.egg-info/top_level.txt
