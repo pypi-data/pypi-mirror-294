@@ -1,0 +1,51 @@
+# Project Name: VISION OSLO Extension
+
+This is VISION-OSLO extension package in order to support the simulation data post processing.
+
+Please refer to the document manual for instructions.
+
+## Copyright
+
+Copyright (c) 2024 [Jieming Ye, Engineering Services, Network Rail]
+
+This package is developed by Jieming Ye. Senior Design Engineer, Engineering Services, Network Rail.
+The source code is open to public but restrict for commerical use.
+
+Network Rail Infrastructure Limited are registered in England and Wales under company number 02904587.
+
+## Installation
+The repository of this package is saved on GitHub:
+https://github.com/NR-JYe/Vision-Oslo-Extension
+
+## Usage
+Pre-installtion of Python and VISION-OSLO required.
+
+## What's New
+
+License update.
+
+## History / Key Upgrade
+Version 3.0.1: Update project package information for user without requests package installed
+
+Version 3.0.0: Including license mechanisim. License update.
+
+Version 2.0.0: Major UI update + Add Falling Voltage Protection assessment
+
+Version 1.3.0: Add Battery EMU Modelling Assessment
+
+Version 1.2.0: Add Single End Feeding assessment in DC.
+
+Version 1.1.0: Add SFC Assessment.
+
+Version 1.0.0 (Stable version): First official version to all stakeholders
+
+Version 0.1.1 (Beta version): First version published for user testing.
+
+## Contributing
+Engineering Services, part of Route Services, Network Rail
+
+## License
+Copyright (c) 2024 [Jieming Ye]  
+This Python source code is licensed under the  
+Open Source Non-Commercial License (OSNCL) v1.0  
+See LICENSE for details.
