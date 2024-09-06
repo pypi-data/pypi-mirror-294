@@ -1,0 +1,3 @@
+[console_scripts]
+its_thorn=its_thorn.cli:interactive
+
