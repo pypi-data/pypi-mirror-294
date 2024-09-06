@@ -1,0 +1,12 @@
+gamedriver/__init__.py,sha256=nIe9y4caOPKZYZEkC0cQAJPZ90nMBvKWhk3uaE8NvC8,540
+gamedriver/_geometry.py,sha256=JPVODUQvdriTNRY_Vk9hpnBTvJ7peDwHmtukh5CLuFs,726
+gamedriver/_locate.py,sha256=B24eNIw59A41NbWeIfjd8_4fCuRBTdB-iaYknYeU9Ms,2047
+gamedriver/_match_template.py,sha256=YC8f6j4fXJnW0SzJeutiDipgW_DxkgtZVbJx-yr2FKw,7109
+gamedriver/_tap_img.py,sha256=xh_HxUnnIo4gYf5fBPHHh8EZTgLhmZ59kKyoVPbOyQc,6425
+gamedriver/_util.py,sha256=1uDX4vFiyXKtm_LOzeAXmpq7VWsAwCaAIU3Ph6nRTgk,3790
+gamedriver/logger.py,sha256=jKM20E-yP0u9at5uQXasd8wAUVKFL0CXSVCjgcr336g,1211
+gamedriver/settings.py,sha256=jSYzFJp1ly7HRoT3B-ZvfrVNgRhIUMimJ-Ku3nfWTMQ,2125
+gamedriver-1.0.0.dist-info/METADATA,sha256=K6bLHJ19gJLcDWs4vA3HQma9bnckVNJ5XiPngNNwIbs,6651
+gamedriver-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gamedriver-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gamedriver-1.0.0.dist-info/RECORD,,
