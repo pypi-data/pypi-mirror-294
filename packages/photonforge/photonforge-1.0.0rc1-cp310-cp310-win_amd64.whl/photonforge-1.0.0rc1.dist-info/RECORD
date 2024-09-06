@@ -1,0 +1,17 @@
+photonforge/__init__.py,sha256=X3QdgGmHL9VjK8TitHZsdALf5DUPl49gl2ENJobUIlM,1597
+photonforge/analytic_models.py,sha256=migiwy3btaPxET-e0E-byVa8cGBgn0AgE53toeiLXnE,36778
+photonforge/cache.py,sha256=WMnkv4_i1ulG2EWGKzQX_flx-ZZja6ubmLzhLGbrxwE,776
+photonforge/circuit_model.py,sha256=6SWASjJceL30_P7_h7ukZl2eniKFcSjqHd3mpYqv_W8,20046
+photonforge/data_model.py,sha256=13tC-qS_cM_HlHzdPwZcbIiqv5oj1vkpfDXoIp9Kj3c,16652
+photonforge/extension.cp310-win_amd64.pyd,sha256=KPUn8_vHVr1C7mSkbMP9PvL9JBvDkFu5lCfVYlmKVPg,6640640
+photonforge/monte_carlo.py,sha256=H4U3HxAWjHQgzocEzZZkkP2EqF2uMxN4vu6ZZXm172c,63
+photonforge/netlist.py,sha256=XwY-hyyUMCWrO2_LqyNXAVO7TcXOi7JMJK6dF83dSA8,5581
+photonforge/parametric.py,sha256=YlQu6JdYLwwhpNhecvu0SF_P2OdZCldxfIBTNO8VHAM,43545
+photonforge/plotting.py,sha256=Pq5MOtlsPWyp3Ju9ZcSLgKOeVsnzo5l0RBhco07HtnQ,7992
+photonforge/stencil.py,sha256=M_QwChLzhCJDcqcGrfFi6fbtlA1bejcS933H5VZ9MEU,111
+photonforge/tidy3d_model.py,sha256=LvKS9ovsRSkNm6xqYQaDdSQl1cz7K5yCasgKmwOnjKk,62969
+photonforge/utils.py,sha256=1SBHa6hJ_oSWdHTgM27tev05vqikXDAEv8laj0gevoc,14044
+photonforge-1.0.0rc1.dist-info/METADATA,sha256=ymF1eobtTJHb2PoxCsXuESafkfSSSqpQp2jqRik-68A,36063
+photonforge-1.0.0rc1.dist-info/WHEEL,sha256=WYy-rwiykbEKlE3LknvKTvkNgYexSdllDSt8o4StgAE,106
+photonforge-1.0.0rc1.dist-info/licenses/LICENSE,sha256=GMd_UmDCW8dYgBV4FC_7fw5WxHsx9byoBFV2YGUjw6c,692
+photonforge-1.0.0rc1.dist-info/RECORD,,
