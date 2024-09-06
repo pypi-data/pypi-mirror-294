@@ -1,0 +1,8 @@
+TAT.cpython-39-aarch64-linux-gnu.so,sha256=IRGfY4m2BnmiGjTRbrxDOt4cxxKNg606fuPlGx1pMkU,19477153
+pytat-0.3.17.dist-info/METADATA,sha256=RlHYPaMfxHN27RKj3OnAQ51YzrGklQ0vXW9E83Bnxok,54883
+pytat-0.3.17.dist-info/RECORD,,
+pytat-0.3.17.dist-info/WHEEL,sha256=SunywbWHVANt0hGqFYm8TAM5rNIJDxee-h2V7QmW6cw,116
+pytat.libs/libopenblas_armv8p-r0-df944204.3.25.so,sha256=92JFcC6GlGUfqCsiu2Dy6Lt3GhM4vqMF2-78sBcb7es,11168929
+pytat.libs/libgcc_s-7393e603.so.1,sha256=7G--_FjUcXaygGLbopN7bg1zXff52EmI7Bsc2D2TXbk,201017
+pytat.libs/libstdc++-1b614e01.so.6.0.32,sha256=XXJsmg9XChAumTluQnKaKPw0aZHT_olzaylk-ZtJWcY,3586193
+pytat.libs/libgfortran-eb933d8e.so.5.0.0,sha256=ALp5iW1oJB9JOYIGHbsm5CGSBrLlsE7hBI5GVLO8DPk,1736233
