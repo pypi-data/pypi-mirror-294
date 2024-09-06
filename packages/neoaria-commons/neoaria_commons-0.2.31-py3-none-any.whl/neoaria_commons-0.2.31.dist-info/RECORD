@@ -1,0 +1,14 @@
+neoaria/__init__.py,sha256=7sKK82v0jzxByx94-xGDUoY9s1u0PqQfBj8Jip6xEqU,60
+neoaria/__version__.py,sha256=fVlbsGWLXdJHUWGURqvOfIOxmx-hRfpbQE7i4UjFfuI,22
+neoaria/archive.py,sha256=28WwtZ6XXSe31m-YDF--GWlR9X5wzI5p910tK4Ukxr8,628
+neoaria/commons.py,sha256=l8P3qyirk8U2bxFRyyKEpmyc_jY5Oz1JGuCsK_4uxa0,18339
+neoaria/microsoft.py,sha256=uL6CohaCD26rI8AMzk7TDKdaoe_qUa0HCAncuqxKP2g,708
+neoaria/middleware.py,sha256=Uu1FXA53hRibfrspCSsZ-6UY5lSgXa7CZfZiutnkM9Q,13043
+neoaria/pdf.py,sha256=Ry8JbU1D8PVZxLq4T_ZIjnbpBm48CgnyPr9vS8evjic,773
+neoaria/models/__init__.py,sha256=-J54sY2GiCsximEAqxcUqXHW4DT7z1fLTZVvGvXVXG4,74
+neoaria/models/rms.py,sha256=PU6__uiCRw8PP6H688Zx1xwY6nnfuOngJ1WDLVX0WzI,41350
+neoaria/models/translation.py,sha256=pAK17i4-B8bn5Kpc3yJRqVNLrpWP47JcJDlu_OTURGg,924
+neoaria_commons-0.2.31.dist-info/METADATA,sha256=Z3X7cShI2a1PMWtkS_63J5brZHILn4nUIvK2bF0PEd8,17814
+neoaria_commons-0.2.31.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+neoaria_commons-0.2.31.dist-info/top_level.txt,sha256=WF2GZJ6Zs4uKXBD6FJwqbXbeViMeXnbhCLJUdpmQUxg,8
+neoaria_commons-0.2.31.dist-info/RECORD,,
