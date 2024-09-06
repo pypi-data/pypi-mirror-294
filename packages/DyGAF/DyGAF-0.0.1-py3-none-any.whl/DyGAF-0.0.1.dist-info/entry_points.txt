@@ -1,0 +1,2 @@
+[console_scripts]
+DyGAF = DyGAF.main:main
