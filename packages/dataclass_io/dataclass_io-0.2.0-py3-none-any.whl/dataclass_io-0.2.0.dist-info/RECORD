@@ -1,0 +1,11 @@
+dataclass_io/__init__.py,sha256=ChXGF4YkvvSs6kY7PlY7ZIjIhP_380BzeRYZxrw5yKU,133
+dataclass_io/_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_io/_lib/assertions.py,sha256=m2-RrskFdCC5_nTudd6IMS_C_rZW6x1xyfRylyu_75o,5575
+dataclass_io/_lib/dataclass_extensions.py,sha256=GNOSlp76FOS1p_8z-JZMwvSDXllyIuZU-ytOGqTt6yw,1574
+dataclass_io/_lib/file.py,sha256=1UC5yDXvrGAiQ06DWcsvR9wcy37KkApcHYGW-iicCRY,3252
+dataclass_io/reader.py,sha256=fWzEPk6Guq4eqOYyBI-E1xTHrIMgbR_EGKiS1DkC2IQ,3799
+dataclass_io/writer.py,sha256=r1WfblCJB4DwLfSx-oT8BsxFBgx1UI1TOAUqINMzpWY,9641
+dataclass_io-0.2.0.dist-info/LICENSE,sha256=Q83CrR5i80Jm-k05QxQJVBauJ3A6uFi8WHqer0jOFWw,1067
+dataclass_io-0.2.0.dist-info/METADATA,sha256=c69nrwWhIWfdPmsifOxSGBnglUWflm7R8V_FY_w1Rv8,2263
+dataclass_io-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dataclass_io-0.2.0.dist-info/RECORD,,
