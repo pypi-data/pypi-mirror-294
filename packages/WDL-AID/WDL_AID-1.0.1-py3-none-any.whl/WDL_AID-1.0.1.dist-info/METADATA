@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: WDL-AID
+Version: 1.0.1
+Summary: Automatic Input Documentation for WDL workflows
+Home-page: https://github.com/biowdl/wdl-aid
+Author: Leiden University Medical Center
+Author-email: sasc@lumc.nl
+License: MIT
+Keywords: bioinformatics,WDL,documentation
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: miniwdl >=1.0
+Requires-Dist: jinja2
+Requires-Dist: setuptools
+
+[![PyPI version](https://badge.fury.io/py/wdl-aid.svg)](https://badge.fury.io/py/wdl-aid)
+[![Documentation Status](https://readthedocs.org/projects/wdl-aid/badge/?version=latest)](https://wdl-aid.readthedocs.io/en/latest/?badge=latest)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wdl-aid)
+![example workflow](https://github.com/biowdl/wdl-aid/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/biowdl/wdl-aid/branch/develop/graph/badge.svg?token=Ch9GSuTjGl)](https://codecov.io/gh/biowdl/wdl-aid)
+# WDL-AID
+Generate documentation for the inputs of WDL workflows, based on the
+parameter_meta information defined in the WDL file.
+
+## documentation
+You can find documentation on how to use WDL-AID here:
+https://wdl-aid.readthedocs.io
+
+## Bugs and feature requests
+Please report any bugs, issues or pull requests on the
+[github issue tracker](https://github.com/biowdl/wdl-aid/issues).
