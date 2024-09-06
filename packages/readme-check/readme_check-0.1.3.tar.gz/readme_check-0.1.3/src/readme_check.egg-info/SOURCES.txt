@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/readme_check.py
+src/readme_check.egg-info/PKG-INFO
+src/readme_check.egg-info/SOURCES.txt
+src/readme_check.egg-info/dependency_links.txt
+src/readme_check.egg-info/requires.txt
+src/readme_check.egg-info/top_level.txt
