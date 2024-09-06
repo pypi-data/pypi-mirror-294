@@ -1,0 +1,5 @@
+click
+dictdiffer
+
+[test]
+pytest

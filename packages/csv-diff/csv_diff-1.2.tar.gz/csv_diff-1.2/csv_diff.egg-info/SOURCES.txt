@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+csv_diff/__init__.py
+csv_diff/cli.py
+csv_diff.egg-info/PKG-INFO
+csv_diff.egg-info/SOURCES.txt
+csv_diff.egg-info/dependency_links.txt
+csv_diff.egg-info/entry_points.txt
+csv_diff.egg-info/requires.txt
+csv_diff.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
+tests/test_csv_diff.py
+tests/test_human_text.py
