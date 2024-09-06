@@ -1,0 +1,10 @@
+timelapser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timelapser/main.py,sha256=vR1pWCY-cSTcAvupMSQ6xxNEkbFQ6Z-75PrE7eM9XUY,2816
+timelapser/recorder.py,sha256=W9L-1ZZprvoYqCcf4fLuRWGpt8g5C8KTNAMHK-iSLBQ,831
+timelapser/utils.py,sha256=LU5p3cfpalbCA2BHTDzyEFAWZcPQK0FmKbkM6PLRwsU,820
+timelapser-0.1.1.dist-info/LICENSE,sha256=6iVI4Qm9EzF8tzYsDFIjYk-Y00XGCg1Fc8gmF3lokJs,753
+timelapser-0.1.1.dist-info/METADATA,sha256=W9Z1bYNNyo0WGZpeoNuhe-GVK9lW567L_vmwvd7EX3s,4478
+timelapser-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+timelapser-0.1.1.dist-info/entry_points.txt,sha256=o__fUhulU3OMDYTg2W9u1r4-4A7XmLWFUcC3IFZ9TjY,51
+timelapser-0.1.1.dist-info/top_level.txt,sha256=U42cSKI-F8n9SP8TqEbUN7OqW_V6LK0HoG69p_TY4Rg,11
+timelapser-0.1.1.dist-info/RECORD,,
