@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PytorchFS
+Version: 1.1.2
+Summary: Pytorch Fault Simulator
+Home-page: https://github.com/4thMemorize/Pytorch-Fault-Simulator
+Author: 4thMemorize
+Author-email: woobin.ko@yonsei.ac.kr
+License: UNKNOWN
+Keywords: pytorchFS,4thMemorize,python fault,pytorch fault,pytorch fault injection,pytorch fault simulator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: torch
+Requires-Dist: numpy
+
+UNKNOWN
+
+
