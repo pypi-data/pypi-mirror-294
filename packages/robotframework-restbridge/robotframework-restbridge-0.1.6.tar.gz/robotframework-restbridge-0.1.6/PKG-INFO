@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: robotframework-restbridge
+Version: 0.1.6
+Summary: This is a robotframework keyword library to allow single command execution via HTTP.
+Home-page: https://github.com/raffelino/robotframework-restbridge
+Author: Your Name
+Author-email: PyPI.Releases@viadee.de
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: robotframework
+Requires-Dist: flask
+Requires-Dist: robotframework-browser
+Requires-Dist: robotframework-requests
+Requires-Dist: jsonpickle
+Requires-Dist: requests
+
+# robotframework-restbridge
+Bridge that allows to run single keywords in robot framework via HTTP
+
+## Configure required libraries
+Edit `test.robot` to load all required Libraries
+`
+Library    Browser
+Library    RequestsLibrary
+...
+``
+
+## Start the bridge
+$ sh a_start_robot.sh
+
+## Then call it in a seperate window
+$ sh b_test.sh
