@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: glovar
+Version: 0.1.2
+Summary: A package for managing JSON-based global variables by file context.
+Home-page: https://github.com/PaceGG/Python-Global-vars-lib
+Author: PaceGG
+Author-email: yura3012004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# glovar
+
+This package allows you to manage global variables stored in a JSON file with context to the calling file.
+
+## Installation
+
+`pip install glovar`
+
+## Usage
+
+```python
+import glovar
+
+glovar.set("key", "value")
+value = glovar.get("key")
+glovar.remove("key")
+all_globals = glovar.peek()
+```
