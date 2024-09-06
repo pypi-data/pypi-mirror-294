@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+pydicom
+ormir-pyvoxel
+qtpy
+progress
