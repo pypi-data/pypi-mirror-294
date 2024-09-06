@@ -1,0 +1,7 @@
+networkx
+pandas
+scipy
+statsmodels
+matplotlib
+scikit-learn
+xlsxwriter
