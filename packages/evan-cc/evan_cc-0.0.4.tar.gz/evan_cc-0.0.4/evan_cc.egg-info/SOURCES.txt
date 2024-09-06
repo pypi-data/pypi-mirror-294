@@ -1,0 +1,17 @@
+.editorconfig
+.flake8
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+evan_cc/__init__.py
+evan_cc/cookiecutter.json
+evan_cc/main.py
+evan_cc.egg-info/PKG-INFO
+evan_cc.egg-info/SOURCES.txt
+evan_cc.egg-info/dependency_links.txt
+evan_cc.egg-info/entry_points.txt
+evan_cc.egg-info/requires.txt
+evan_cc.egg-info/top_level.txt
+evan_cc/{{cookiecutter.project_slug}}/text.txt

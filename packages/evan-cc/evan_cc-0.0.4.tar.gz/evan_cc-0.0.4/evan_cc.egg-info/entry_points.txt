@@ -1,0 +1,2 @@
+[console_scripts]
+evan-cc = evan_cc.cli:main
