@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "bkflow-django-webhook"
+description = "A Django app to make it easy for integrating webhook into service."
+authors = [{name = "normal-wls", email = "weishi.swee@qq.com"}]
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "Django >2, <4",
+    "pyyaml >5, <7",
+    "pydantic <3",
+]
+
+[project.urls]
+Home = "https://github.com/TencentBlueKing/bkflow-django-webhook"
+
+[project.optional-dependencies]
+test = [
+    "pytest >=7.0.1,<8",
+    "pytest-django>=4.5.2,<5.0",
+    "djangorestframework >3, <4",
+]
+
+[tool.flit.module]
+name = "webhook"
+
+
+[tool.black]
+line-length = 120
+fast = true
+
+[tool.isort]
+line_length = 120
