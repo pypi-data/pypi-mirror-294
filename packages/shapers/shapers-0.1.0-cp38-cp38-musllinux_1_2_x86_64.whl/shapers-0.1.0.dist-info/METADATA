@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: shapers
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Intended Audience :: Science/Research
+License-File: LICENSE
+Summary: A library for fitting shapes and operations on geometrical objects
+Keywords: circle,shapes,geometry
+License: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/borgesaugusto/shapers
+
+# Shapers
+Fitting shapes with Rust in python
+
+Currently, only TaubinSVD and geometrical fitting are implemented. 
+
