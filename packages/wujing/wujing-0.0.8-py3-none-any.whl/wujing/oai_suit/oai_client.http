@@ -1,0 +1,39 @@
+POST https://gpt-4-rdg.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview
+api-key: 9f313a3f7b01472188508b9b64b5d469
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "what's your name?"
+    }
+  ]
+}
+
+###
+#POST https://api.openai.com/v1/chat/completions
+POST https://xingchen-solution.cn-huabei-1.xf-yun.com/llm-api/v1/chat/completions
+Authorization: Bearer sk-xylx1.t!@#
+Content-Type: application/json
+
+{
+  "model": "gpt-4o",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "what's your name?"
+    }
+  ]
+}
+
+###
+
