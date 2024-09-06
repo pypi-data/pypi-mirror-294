@@ -1,0 +1,7 @@
+faststream_prometheus/__init__.py,sha256=5jWm6pIIRiDrXmpw7NrkUizAg_OPk04I99r09QYYNtU,91
+faststream_prometheus/collectors.py,sha256=0vwMeg4upLUGYJd_QNOk1ybu6hYtSnO9JfU29VLU_aE,6521
+faststream_prometheus/middlewares.py,sha256=Py3YRdqGoFz1RVZlpehhf3enelA5EKpynlzBxz4qxF8,3050
+faststream_prometheus-0.1.5.dist-info/LICENSE,sha256=fhW5Z_FZTFmz9A_j1h5ABe8W57T5D-w31TTDne_d_xs,1069
+faststream_prometheus-0.1.5.dist-info/METADATA,sha256=S2E2bpydsMoPmY3Kg8skhwlEdd3XYioyRQC5SkQ4ivo,3889
+faststream_prometheus-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+faststream_prometheus-0.1.5.dist-info/RECORD,,
