@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: curl_requests
+Version: 0.2.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+
