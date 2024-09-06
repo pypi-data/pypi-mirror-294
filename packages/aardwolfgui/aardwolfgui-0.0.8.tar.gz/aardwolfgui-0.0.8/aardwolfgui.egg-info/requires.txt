@@ -1,0 +1,4 @@
+aardwolf>=0.2.7
+pyperclip
+Pillow
+pyqt6
