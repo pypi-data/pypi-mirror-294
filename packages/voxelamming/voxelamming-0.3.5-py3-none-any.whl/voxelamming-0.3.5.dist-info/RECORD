@@ -1,0 +1,11 @@
+voxelamming/__init__.py,sha256=EMzaPof7QsoAc-Zi5hbvnGBYyOPEVwHNlK07WbP1XXE,139
+voxelamming/map_util.py,sha256=okOKCCGO4SLPMYjNVvp0OZpKmR2ADw_mLwydEljL3Ho,1321
+voxelamming/matrix_util.py,sha256=dMOQ8vclb_t7uXCKmrWGt6jJrhg-UpwNzxXk8s3HRd0,1476
+voxelamming/ply_util.py,sha256=Hy-YO0FQqk7TqDZhPAdsxLc6j5_3XtcsPFjUdRnck1o,2426
+voxelamming/turtle.py,sha256=MTAz5olfrS14MEI89j3xHQZtgiK2sWTRct8DAuT51dE,1643
+voxelamming/voxelamming.py,sha256=ExMV_5vYU4yaQr0FGAwIQfJ5ehjHPp-AE7Ok7a8Vtzw,19442
+voxelamming-0.3.5.dist-info/LICENSE.txt,sha256=DIlFPn0SByCQ9Yo17k9tT_lOnUI32CTC4DYG_hOsO5U,1080
+voxelamming-0.3.5.dist-info/METADATA,sha256=z2eLJRtew85RJ9TknXxtnbe87bT4vLCLkfx2hiL1tgE,19009
+voxelamming-0.3.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+voxelamming-0.3.5.dist-info/top_level.txt,sha256=Ml5FifL427DkxCsG37VvmDovvvClEMJr9c4GJXnjBqw,12
+voxelamming-0.3.5.dist-info/RECORD,,
