@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: create-container-vscode-project
+Version: 0.0.0
+Summary: Create template file by project name
+Author: CWKSC
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# create-container-vscode-project
+
+https://github.com/CWKSC/create-container-vscode-project
