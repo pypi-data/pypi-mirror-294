@@ -1,0 +1,13 @@
+dria_workflows/__init__.py,sha256=XwquUuZBw_VEzey2bJfI6XIlCgTJ-2RA7tvnlSYigQ4,452
+dria_workflows/validate.py,sha256=YrB70RRjlvihGESCYH_x491HQJyqkayZuxJyRz_dldU,8407
+dria_workflows/workflows/__init__.py,sha256=MKZplDzCiq5J_5rQZxvpfeUKrvjy9VX6QQFK7V3-B7A,729
+dria_workflows/workflows/builder.py,sha256=JrPegZvASt1kBLDhcGXiUjW_j0TyAmBK-xe0jbXfQ-0,13798
+dria_workflows/workflows/interface.py,sha256=7fnSl2vqpOiv3A5kbt_IBZ0vXRgeTQh68Mhu7tlXUyA,2183
+dria_workflows/workflows/io.py,sha256=DIkbhJ3Y1VRmTLLAAswgV7Fr2-GbvqKfxkb5MhbB5kk,4201
+dria_workflows/workflows/tools.py,sha256=LhMJ6AVBqhRK6wRV6bUxv6tWgc9_CeOaeeuxOvVYv7k,1599
+dria_workflows/workflows/w_types.py,sha256=2cilNrK6lYIsw7-Ujy_INIuJ1KM2KLEUdw26Vu2Py1A,1638
+dria_workflows/workflows/workflow.py,sha256=7PaA5aXWGCXcmexcM9LCaTU15GxrbYZiQVjZH4mnmwk,1541
+dria_workflows-0.1.0.dist-info/METADATA,sha256=eByIRRfFqhtKAoGjSJTdeTxUo0fS2hQFSjZsoRd89Hw,772
+dria_workflows-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dria_workflows-0.1.0.dist-info/entry_points.txt,sha256=GXlUOVRPpXlkP4f6up7azJru_vaT_rY46NXuNNPl-qw,78
+dria_workflows-0.1.0.dist-info/RECORD,,
