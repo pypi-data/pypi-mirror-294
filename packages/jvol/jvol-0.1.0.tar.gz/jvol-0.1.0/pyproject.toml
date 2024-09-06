@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jvol"
+version = "0.1.0"
+requires-python = ">=3.10"
+readme = "README.md"
+
+dependencies = [
+    "einops",
+    "humanize",
+    "itk",
+    "loguru",
+    "scipy",
+    "transforms3d",
+    "typer",
+]
+
+[project.optional-dependencies]
+docs = [
+    "ipywidgets",
+    "mkdocs-gen-files",
+    "mkdocs-jupyter",
+    "mkdocs-literate-nav",
+    "mkdocs-material",
+    "mkdocs-section-index",
+    "mkdocs-typer",
+    "mkdocstrings[python]",
+]
+
+tests = [
+    "jvol",
+    "pytest",
+]
+
+dev = [
+    "jvol[docs,tests]",
+    "pre-commit",
+]
+
+all = [
+    "jvol[dev]",
+]
+
+[project.scripts]
+jvol = "jvol.cli.convert:app"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"

@@ -1,0 +1,49 @@
+name: Deploy documentation
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: pyproject.toml
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+        if: github.ref == 'refs/heads/main'
+
+      - uses: actions/cache@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: Install dependencies
+        run: pip install ".[docs]"
+
+      - name: Execute notebooks
+        run: |
+          pip install papermill
+          bash scripts/docs/run_notebooks.sh
+
+      - name: Build and deploy to smokeshow
+        if: github.ref != 'refs/heads/main'
+        run: |
+          mkdocs build
+          pip install smokeshow
+          smokeshow upload site
+
+      - name: Build and deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        run: mkdocs gh-deploy --force

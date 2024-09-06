@@ -1,0 +1,3 @@
+# `JpegVolume` class
+
+::: jvol.JpegVolume

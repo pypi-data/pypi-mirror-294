@@ -1,0 +1,55 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-builtin-literals
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+        args: [--unsafe]  # https://github.com/pre-commit/pre-commit-hooks/issues/701#issuecomment-990043558
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  # Failing on pre-commit CI
+  # - repo: https://github.com/RobertCraigie/pyright-python
+  #   rev: v1.1.336
+  #   hooks:
+  #     - id: pyright
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.17.0
+    hooks:
+      - id: pyupgrade
+        args: [--py310-plus]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.3
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/PyCQA/docformatter
+    rev: v1.7.5
+    hooks:
+      - id: docformatter
+        args: ["--in-place", "--config", "./pyproject.toml"]
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+
+
+ci:
+  autofix_commit_msg: Autoupdate pre-commit hooks
+  autoupdate_schedule: monthly

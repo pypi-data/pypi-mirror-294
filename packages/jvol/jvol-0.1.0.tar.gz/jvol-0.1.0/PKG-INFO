@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: jvol
+Version: 0.1.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: humanize
+Requires-Dist: itk
+Requires-Dist: loguru
+Requires-Dist: scipy
+Requires-Dist: transforms3d
+Requires-Dist: typer
+Provides-Extra: docs
+Requires-Dist: ipywidgets; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-jupyter; extra == "docs"
+Requires-Dist: mkdocs-literate-nav; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocs-section-index; extra == "docs"
+Requires-Dist: mkdocs-typer; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: jvol; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Provides-Extra: dev
+Requires-Dist: jvol[docs,tests]; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: all
+Requires-Dist: jvol[dev]; extra == "all"
+
+# JVol
+
+JVol is an experimental image file format and Python library for lossy compression of 3D images using a simplified version of the JPEG algorithm.
+
+Please read the [documentation](https://fepegar.github.io/jvol) to learn more.
