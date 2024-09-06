@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: poor_yclientsapi
+Version: 0.1.0
+Summary: Poor collection of API methods for Yclients app
+Home-page: https://github.com/mkosinov/yclientsapi
+License: MIT
+Author: Maksim Kosinov
+Author-email: mkosinov@mail.ru
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/mkosinov/yclientsapi
+Description-Content-Type: text/markdown
+
+# Poor YclientsAPI
+
+Минимально необходимый набор методов для работы с API Yclients.
