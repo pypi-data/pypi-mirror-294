@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/scrapy_redis_httpcache/__init__.py
+src/scrapy_redis_httpcache/httpcache.py
+src/scrapy_redis_httpcache.egg-info/PKG-INFO
+src/scrapy_redis_httpcache.egg-info/SOURCES.txt
+src/scrapy_redis_httpcache.egg-info/dependency_links.txt
+src/scrapy_redis_httpcache.egg-info/requires.txt
+src/scrapy_redis_httpcache.egg-info/top_level.txt
