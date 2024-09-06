@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "twitch_fapi_backend"
+version = "0.1.0"
+description = ""
+authors = ["david <davidventura27@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+httpx = "^0.27.2"
+streamlink = "6.5.1"
+dynaconf = "^3.1.7"
+uvicorn = "^0.16.0"
+aiocache = "^0.11.1"
+ujson = "^5.1.0"
+wheel = "^0.37.1"
+shiv = "^1.0.0"
+aiomqtt = "^1.0.0"
+pychromecast = "^13.1.0"
+twitch-dota-extension = "^0.1.10"
+#twitch-dota-extension = { path = "../twitch-dota-extension/", develop = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+shiv = "^1.0.0"
+
+
+[tool.poetry.scripts]
+webserver = "twitch_fapi_backend.api:main"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
