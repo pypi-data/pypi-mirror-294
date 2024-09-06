@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voicex"
+version = "1.0.8"
+authors = [
+  { name="Silvan Mertes", email= "silvan.mertes@informatik.uni-augsburg.de" },
+]
+description = "TTS system with fully customizable voices."
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "scipy",
+    "sounddevice",
+    "numpy",
+    "requests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hcmlab/voicex"
+
