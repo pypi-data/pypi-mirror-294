@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: weaviate-agent-demo
+Version: 0.3.1
+Summary: Demo project for sometimes (poorly) generating Python code for Weaviate
+License: MIT
+Author: JP Hwang
+Author-email: me@jphwang.com
+Requires-Python: >=3.9, !=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*, !=3.8.*
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: claudette (>=0.0.9,<0.0.10)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: streamlit (>=1.38.0,<2.0.0)
+Requires-Dist: weaviate-client (>=4.7.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Weaviate Agent Demo
+
+AI-powered demo app to help you use Weaviate, with a twist.
+
+To install it, `pip` install the package with:
+
+```shell
+pip install weaviate-agent-demo
+```
+
+## CLI commands
+
+Then, try out the different CLI commands set up in `src/weaviate_agent_demo/cli.py`, or in `pyproject.toml`.
+
+e.g.:
+- ask_llm
+- ask_basic_ragbot
+- ask_ragbot_with_reformulation
+- ask_ragbot_with_tools
+- safely_ask_ragbot_with_tools
+- ask_weaviate_agent
+
+## Dev setup
+
+1. Clone the repo:
+   ```shell
+   git clone https://github.com/yourusername/weaviate-agent-demo.git
+   cd weaviate-agent-demo
+   ```
+
+2. Install Poetry (if not already installed):
+   ```shell
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+3. Install the project dependencies with Poetry:
+   ```shell
+   poetry install
+   ```
+
+4. Activate the virtual environment:
+   ```shell
+   poetry shell
+   ```
+
+5. Run a Weaviate instance (e.g., with Docker):
+
+6. Run the files in `src/weaviate_agent_demo/db_setup` to ingest data:
+   ```shell
+   python src/weaviate_agent_demo/db_setup/1_create_collection.py
+   python src/weaviate_agent_demo/db_setup/2_import.py
+   ```
+
+7. You can now use the CLI commands, for example:
+   ```shell
+   ask_llm
+   ```
+
+   Then, when prompted - try queries like "How do I connect to Weaviate", or "How do I use filters with dates in hybrid search?"
+
+## Streamlit app
+
+There is also a Streamlit app available. Try it with:
+
+```shell
+streamlit run app.py
+```
+
