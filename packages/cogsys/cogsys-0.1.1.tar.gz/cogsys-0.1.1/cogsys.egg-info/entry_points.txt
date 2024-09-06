@@ -1,0 +1,2 @@
+[console_scripts]
+cogsys = cogsys.cli.cogsys:main
