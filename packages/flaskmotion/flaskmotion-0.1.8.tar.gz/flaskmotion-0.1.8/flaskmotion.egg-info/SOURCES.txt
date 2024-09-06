@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+flaskmotion/__init__.py
+flaskmotion/routes.py
+flaskmotion.egg-info/PKG-INFO
+flaskmotion.egg-info/SOURCES.txt
+flaskmotion.egg-info/dependency_links.txt
+flaskmotion.egg-info/requires.txt
+flaskmotion.egg-info/top_level.txt
+flaskmotion/static/css/flaskmotion.css
+flaskmotion/static/js/flaskmotion.js
+flaskmotion/templates/base.html

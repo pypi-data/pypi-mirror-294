@@ -1,0 +1,36 @@
+/* flaskmotion fade-out effect */
+.flaskmotion-fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* flaskmotion fade-in effect */
+.flaskmotion-fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* General layout styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.flaskmotion-content {
+    padding: 20px;
+    min-height: 400px;
+}
