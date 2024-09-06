@@ -1,0 +1,13 @@
+btdcore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btdcore/cli.py,sha256=Hunreer_FZdh4Oa-e_yBJMYInxF8pr-_TPLgQX2Mmyg,957
+btdcore/logging.py,sha256=4ggvA7nXzi-lkO6rW4zthJ-sAc_vh7LcizNdwW-1aj8,333
+btdcore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btdcore/rest_client_base.py,sha256=onjJUfnydVcKEuiUVl6lG-qW4FXgxZVGddu9kTIUI-0,2016
+btdcore/utils.py,sha256=t0Xpxo-HhXRQW82uAnVldzys2qHWl3ma1qKESs8sxHs,2323
+btdcore/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btdcore/aws/core.py,sha256=rI18E9oU582i1QcTLQu92JddeQq_hbFGoLlpBaGgkHY,1368
+btdcore/aws/dynamo.py,sha256=fr8OwGi_k033WvpWNvqtzQEuelKyyhNmaUIQLprrs6s,5473
+btdcore-0.1.0.dist-info/METADATA,sha256=1eyVC7QBn3r0fWU6M9Lw1-QTnJJ36isaXKOLHONwig8,217
+btdcore-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+btdcore-0.1.0.dist-info/top_level.txt,sha256=Sa7eN-AFXOQ_R0gBpoDWjOLezNw4PTJlk1luxRbl7oc,8
+btdcore-0.1.0.dist-info/RECORD,,
