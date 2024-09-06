@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: msicpe
+Version: 0.1.3
+Summary: Toolbox for Maths,Signal,Image Teaching @ CPE
+Author-email: Marion Foare <marion.foare@cpe.fr>, Eric Van Reeth <eric.vanreeth@cpe.fr>, Arthur Gautheron <arthur.gautheron@cpe.fr>
+License: MIT License
+Project-URL: Homepage, https://www.cpe.fr
+Project-URL: Documentation, https://toolbox-cpe-msi-043af7f2ee7da8d1ab62c580e3786fb0db45feabffb2fbf.pages.in2p3.fr/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: itertools
+Requires-Dist: csv
+
+
+A toolbox used for practical sessions at [CPE Lyon](https://www.cpe.fr/).
+Developped and maintained for teaching usage only!
+
+# Installation
+
+## In a Jupyter Notebook
+
+```!pip install -i https://test.pypi.org/simple/ -U msicpe```
+
+## In a local environment
+
+```pip install -i https://test.pypi.org/simple/ -U msicpe```
+
+# Usage example
+
+The example below uses the kurtosis method available in the `tsa` subpackage of `msicpe`.
+It requires `numpy.randn` to generate a gaussian distribution of N points.
+
+```python
+import numpy as np
+from msicpe.tsa import kurtosis
+N=10000
+
+x=np.randn(1,N)
+kurt=kurtosis(x)
+
+print(kurt)
+```
