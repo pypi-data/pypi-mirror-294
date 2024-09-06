@@ -1,0 +1,242 @@
+# Licensed under the MIT License
+# https://github.com/craigahobbs/ollama-chat/blob/main/LICENSE
+
+include <args.mds>
+include <forms.mds>
+
+include 'ollamaChatConversation.bare'
+
+
+# The Ollama Chat application main entry point
+async function ollamaChatMain():
+    args = argsParse(ollamaChatArguments)
+    view = objectGet(args, 'view')
+
+    # Render the chat page
+    if view == 'chat':
+        ollamaChatConversationPage(args)
+        return
+    endif
+
+    # Render the template variables page
+    if view == 'variables':
+        ollamaChatVariablesPage(args)
+        return
+    endif
+
+    # Render the index page
+    ollamaChatIndexPage(args)
+endfunction
+
+
+# The Ollama Chat application URL arguments
+ollamaChatArguments = argsValidate(arrayNew( \
+    objectNew('name', 'action', 'explicit', true), \
+    objectNew('name', 'id'), \
+    objectNew('name', 'message', 'explicit', true), \
+    objectNew('name', 'multiline', 'type', 'bool'), \
+    objectNew('name', 'text', 'type', 'bool'), \
+    objectNew('name', 'view') \
+))
+
+
+# The application title
+ollamaChatTitle = 'Ollama Chat'
+
+
+# The Ollama Chat error page
+function ollamaChatErrorPage(message):
+    documentSetTitle(ollamaChatTitle)
+    markdownPrint( \
+        argsLink(ollamaChatArguments, 'Back', null, true), \
+        '', \
+        '# ' + markdownEscape(ollamaChatTitle), \
+        '', \
+        '**ERROR:** ' + markdownEscape(message) \
+    )
+endfunction
+
+
+# The Ollama Chat index page
+async function ollamaChatIndexPage(args):
+    action = objectGet(args, 'action')
+
+    # Get the conversations
+    conversationsResponse = systemFetch('getConversations')
+    conversationsResponse = if(conversationsResponse != null, jsonParse(conversationsResponse))
+    if conversationsResponse == null:
+        ollamaChatErrorPage('Failed to get conversations')
+        return
+    endif
+
+    # Render the title
+    documentSetTitle(ollamaChatTitle)
+    markdownPrint('# ' + markdownEscape(ollamaChatTitle))
+
+    # Model selection?
+    modelReport = '**Model:** ' + objectGet(conversationsResponse, 'model') + '&nbsp;&nbsp;'
+    if action == 'select':
+        # Render the model selection links
+        markdownPrint(modelReport + argsLink(ollamaChatArguments, 'Cancel', objectNew('action', null)), '')
+        models = objectGet(conversationsResponse, 'models')
+        if !models:
+            markdownPrint('', '&nbsp;&nbsp;&nbsp;&nbsp;**Error:** No local models - download with `ollama pull <model>`')
+        else:
+            markdownPrint('', '&nbsp;&nbsp;&nbsp;&nbsp;**Select a model:**')
+            for model in models:
+                elementModelRender( \
+                    objectNew('html', 'p', 'elem', arrayNew( \
+                        objectNew('text', stringFromCharCode(160, 160, 160, 160)), \
+                        formsLinkButtonElements(model, systemPartial(ollamaChatOnModelSelect, model)) \
+                    )) \
+                )
+            endfor
+        endif
+    else:
+        # Render the start new chat link
+        markdownPrint( \
+            '', \
+            modelReport + argsLink(ollamaChatArguments, 'Select', objectNew('action', 'select')), \
+            '', \
+            argsLink(ollamaChatArguments, 'Start New Conversation', objectNew('view', 'chat')) \
+        )
+    endif
+
+    # Render the conversations
+    conversations = objectGet(conversationsResponse, 'conversations')
+    markdownPrint('', '## Conversations')
+    if !conversations:
+        markdownPrint('', '*No conversations*')
+    else:
+        conversationData = arrayNew()
+        for conversation in conversations:
+            id = objectGet(conversation, 'id')
+            title = objectGet(conversation, 'title')
+            arrayPush(conversationData, objectNew( \
+                'Title', argsLink(ollamaChatArguments, title, objectNew('view', 'chat', 'id', id)), \
+                'Model', objectGet(conversation, 'model') \
+            ))
+        endfor
+        dataTable(conversationData, objectNew( \
+            'fields', arrayNew('Title', 'Model'), \
+            'formats', objectNew('Title', objectNew('markdown', true)) \
+        ))
+    endif
+
+    # Render the conversation templates
+    templates = objectGet(conversationsResponse, 'templates')
+    if templates:
+        markdownPrint('## Templates')
+        for template in templates:
+            templateID = objectGet(template, 'id')
+            templateTitle = objectGet(template, 'title')
+            elementModelRender( \
+                objectNew('html', 'p', 'elem', arrayNew( \
+                    formsLinkButtonElements(templateTitle, systemPartial(ollamaChatOnTemplateSelect, templateID)) \
+                )) \
+            )
+        endfor
+    endif
+endfunction
+
+
+# Select model on-click event handler
+async function ollamaChatOnModelSelect(model):
+    # Set the model (ignore errors)
+    systemFetch(objectNew('url', 'setModel', 'body', jsonStringify(objectNew('model', model))))
+
+    # Set location to the index page
+    windowSetLocation(argsURL(ollamaChatArguments, null, true))
+endfunction
+
+
+# Select template on-click event handler
+async function ollamaChatOnTemplateSelect(templateID):
+    # Get the template
+    templateResponse = systemFetch('getTemplate?id=' + templateID)
+    templateResponse = if(templateResponse != null, jsonParse(templateResponse))
+    if templateResponse == null:
+        return
+    endif
+
+    # Variables?
+    if objectGet(templateResponse, 'variables'):
+        windowSetLocation(argsURL(ollamaChatArguments, objectNew('view', 'variables', 'id', templateID)))
+        return
+    endif
+
+    # Start the conversation
+    startRequest = objectNew('id', templateID)
+    startResponse = systemFetch(objectNew('url', 'startTemplate', 'body', jsonStringify(startRequest)))
+    startResponse = if(startResponse != null, jsonParse(startResponse))
+    if startResponse == null:
+        return
+    endif
+    id = objectGet(startResponse, 'id')
+
+    # Navigate to the conversation page
+    windowSetLocation(argsURL(ollamaChatArguments, objectNew('view', 'chat', 'id', id), false, ollamaChatBottomID))
+endfunction
+
+
+# The Ollama Chat conversation page
+async function ollamaChatVariablesPage(args):
+    templateID = objectGet(args, 'id')
+
+    # Get the template
+    templateResponse = systemFetch('getTemplate?id=' + templateID)
+    templateResponse = if(templateResponse != null, jsonParse(templateResponse))
+    if templateResponse == null:
+        ollamaChatErrorPage('Unknown template ID')
+        return
+    endif
+
+    # Render the page title
+    title = 'Variables - ' + objectGet(templateResponse, 'title')
+    documentSetTitle(title)
+    markdownPrint(argsLink(ollamaChatArguments, 'Back', null, true), '', '# ' + markdownEscape(title))
+
+    # Render the variable inputs
+    variables = objectGet(templateResponse, 'variables')
+    submitFn = systemPartial(ollamaChatOnVariablesSubmit, templateID, variables)
+    onEnterFn = if(arrayLength(variables) == 1, submitFn)
+    for variable, ixVariable in variables:
+        name = objectGet(variable, 'name')
+        label = objectGet(variable, 'label')
+        elementModelRender(arrayNew( \
+            objectNew('html', 'p', 'elem', objectNew('html', 'b', 'elem', objectNew('text', label))), \
+            objectNew('html', 'p', 'elem', formsTextElements(name, '', 50, onEnterFn)) \
+        ))
+        if ixVariable == 0:
+            documentSetFocus(name)
+        endif
+    endfor
+
+    # Render the submit button
+    elementModelRender(arrayNew( \
+        objectNew('html', 'p', 'elem', formsLinkButtonElements('Start New Conversation', submitFn)) \
+    ))
+endfunction
+
+
+# Variables submit on-click event handler
+async function ollamaChatOnVariablesSubmit(templateID, variables):
+    # Get the variable values
+    variableValues = objectNew()
+    for variable in variables:
+        name = objectGet(variable, 'name')
+        objectSet(variableValues, name, documentInputValue(name))
+    endfor
+
+    # Start the conversation
+    startRequest = objectNew('id', templateID, 'variables', variableValues)
+    startResponse = systemFetch(objectNew('url', 'startTemplate', 'body', jsonStringify(startRequest)))
+    startResponse = if(startResponse != null, jsonParse(startResponse))
+    if startResponse == null:
+        return
+    endif
+    id = objectGet(startResponse, 'id')
+
+    # Navigate to the conversation page
+    windowSetLocation(argsURL(ollamaChatArguments, objectNew('view', 'chat', 'id', id), false, ollamaChatBottomID))
+endfunction
