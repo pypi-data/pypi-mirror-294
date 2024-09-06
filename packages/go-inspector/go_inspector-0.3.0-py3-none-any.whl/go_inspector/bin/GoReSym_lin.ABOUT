@@ -1,0 +1,10 @@
+about_resource: GoReSym_lin
+name: goresym
+version: 011fc7d5c9c2362871dfe88a1295a43ee6b4d273
+download_url: https://github.com/pombredanne/GoReSym/archive/011fc7d5c9c2362871dfe88a1295a43ee6b4d273.zip
+package_url: pkg:github/pombredanne/GoReSym@011fc7d5c9c2362871dfe88a1295a43ee6b4d273
+copyright: Copyright (c) 2022 MANDIANT
+license_expression: mit
+license_text_file: GoReSym_lin.LICENSE
+notes: this is a patched version until https://github.com/mandiant/GoReSym/pull/60 is accepted
+ and merged.
