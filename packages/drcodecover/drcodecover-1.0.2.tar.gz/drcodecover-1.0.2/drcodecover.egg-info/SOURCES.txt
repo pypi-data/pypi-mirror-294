@@ -1,0 +1,10 @@
+README.md
+setup.py
+drcodecover/__init__.py
+drcodecover/drcodecover.py
+drcodecover.egg-info/PKG-INFO
+drcodecover.egg-info/SOURCES.txt
+drcodecover.egg-info/dependency_links.txt
+drcodecover.egg-info/requires.txt
+drcodecover.egg-info/top_level.txt
+tests/test_drcodecover.py
