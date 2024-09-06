@@ -1,0 +1,6 @@
+voiceagent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voiceagent/transcriber.py,sha256=wuKtAGUv2KXiCnMXbrjkE82hQEzreTIRK3JmB4lw92g,1330
+voiceagent/voice_agent.py,sha256=UOZXa88fiyxrtcaxtCDFstVcrT-quW6qpfsanMO5p_o,4010
+voiceagent-0.0.2.dist-info/METADATA,sha256=Fe6OQoMqDBJHSqRriv0AQ3uqOR3j80tqrE5xhwT0D4E,5902
+voiceagent-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+voiceagent-0.0.2.dist-info/RECORD,,
