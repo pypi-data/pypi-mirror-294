@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord.py-tools"
+description = "Simple tools for discord.py"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [{ name = "Developer Anonymous" }]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet",
+    # "Topic :: Software Development :: Localization" - future addition
+]
+dynamic = ["version", "dependencies"]
+
+[project.optional-dependencies]
+i18n = [
+    "googletrans",
+]
+docs = [
+    "sphinx==8.0.2",
+    "sphinxcontrib_trio==1.1.2",
+    "sphinxcontrib-websupport==2.0.0",
+    "myst-parser[linkify]==4.0.0",
+    "sphinxext-opengraph==0.9.1",
+    "sphinx-copybutton==0.5.2",
+    "furo==2024.8.6",
+    "sphinx-autodoc-typehints==2.2.3",
+    "sphinx-intl==2.2.0",
+    "typing_extensions==4.12.2",
+    "levenshtein==0.25.1",
+    "discord.py",
+]
+
+[tool.setuptools]
+packages = [
+    "discord_tools",
+    "discord_tools.app_commands",
+    # "discord_tools.app_commands.i18n" - future addition
+]
+include-package-data = true

@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: discord.py-tools
+Version: 0.1.0
+Summary: Simple tools for discord.py
+Author: Developer Anonymous
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024-present Developer Anonymous
+        
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the "Software"),
+        to deal in the Software without restriction, including without limitation
+        the rights to use, copy, modify, merge, publish, distribute, sublicense,
+        and/or sell copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+        DEALINGS IN THE SOFTWARE.
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: i18n
+Requires-Dist: googletrans; extra == "i18n"
+Provides-Extra: docs
+Requires-Dist: sphinx==8.0.2; extra == "docs"
+Requires-Dist: sphinxcontrib_trio==1.1.2; extra == "docs"
+Requires-Dist: sphinxcontrib-websupport==2.0.0; extra == "docs"
+Requires-Dist: myst-parser[linkify]==4.0.0; extra == "docs"
+Requires-Dist: sphinxext-opengraph==0.9.1; extra == "docs"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "docs"
+Requires-Dist: furo==2024.8.6; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints==2.2.3; extra == "docs"
+Requires-Dist: sphinx-intl==2.2.0; extra == "docs"
+Requires-Dist: typing_extensions==4.12.2; extra == "docs"
+Requires-Dist: levenshtein==0.25.1; extra == "docs"
+Requires-Dist: discord.py; extra == "docs"
+
+discord.ext.tools
+-----------------
+
+Simple tools for discord.py
+
+Most of these tools are checks that may be useful on the development of bots, either prefixed
+commands or application commands.
+
+
+### Documentation
+
+The documentation is available in the [wiki](https://github.com/DA-344/discord-ext-tools/wiki).
+
+### Contributing
+
+Contributions are welcome in this project! Only requirements is knowing what you write
+and that everything works!
