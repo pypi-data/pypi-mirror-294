@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskMotion Example</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('flaskmotion.static', filename='css/flaskmotion.css') }}">
+</head>
+<body>
+    <div id="fm-container">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="{{ url_for('flaskmotion.static', filename='js/flaskmotion.js') }}"></script>
+</body>
+</html>
