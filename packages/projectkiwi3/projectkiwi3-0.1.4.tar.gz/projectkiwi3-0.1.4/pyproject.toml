@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projectkiwi3"
+description = "This module is a means for interfacing with projectkiwi.io using python."
+readme = "README.md"
+authors = [{name = "Michael Thoreau", email = "michael@projectkiwi.io"}]
+dynamic = ["version"]
+dependencies = [
+  "requests",
+  "pydantic",
+  "numpy",
+  "pillow"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["projectkiwi3"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.setuptools.dynamic]
+version = {attr = "projectkiwi3.__version__"}

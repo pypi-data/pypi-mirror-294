@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+projectkiwi3/Client.py
+projectkiwi3/__init__.py
+projectkiwi3/models.py
+projectkiwi3/utils.py
+projectkiwi3.egg-info/PKG-INFO
+projectkiwi3.egg-info/SOURCES.txt
+projectkiwi3.egg-info/dependency_links.txt
+projectkiwi3.egg-info/requires.txt
+projectkiwi3.egg-info/top_level.txt
