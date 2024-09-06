@@ -1,0 +1,15 @@
+README.md
+setup.py
+django_vite_hmr.egg-info/PKG-INFO
+django_vite_hmr.egg-info/SOURCES.txt
+django_vite_hmr.egg-info/dependency_links.txt
+django_vite_hmr.egg-info/top_level.txt
+package/__init__.py
+package/admin.py
+package/apps.py
+package/models.py
+package/tests.py
+package/views.py
+package/migrations/__init__.py
+package/templatetags/__init__.py
+package/templatetags/vite.py
