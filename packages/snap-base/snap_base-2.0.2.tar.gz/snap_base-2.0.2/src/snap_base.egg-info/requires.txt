@@ -1,0 +1,12 @@
+pyyaml>=3.5
+tqdm>=4.53
+pyzmq>=20
+numpy
+
+[doc]
+sphinx
+sphinx-rtd-theme
+sphinx-argparse
+
+[io]
+hop-client==0.5
