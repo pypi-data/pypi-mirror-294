@@ -1,0 +1,15 @@
+Luci/__init__.py,sha256=n015imInTDk4ZAWOFaKolkBbHQurZVb9bfm28VYtECg,124
+Luci/agents.py,sha256=JVR-qmoxzwhTkcgVdl6j7iYoH6cllMYfb7NHMuHjVB8,2940
+Luci/gpt.py,sha256=b7fo1EP7G-cxwW_XYFUND37aWy29f-9JA-uyFuuvrMc,597
+Luci/optimizer.py,sha256=Ce0kgVBXQtycdJfhGyj1qmQ6O16JrGThndLjL36DeL0,942
+Luci/Agents/__init__.py,sha256=4vewP9PbZHplVvaftdnVZIeMy6pqghvcIER7Px2LEAg,39
+Luci/Agents/search.py,sha256=HrED-WbStv2i9nDTh9MGrAF19H3HmmgZ0ZoJJ27AhNQ,2151
+Luci/Core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Luci/Core/search_image.py,sha256=LgPq-g-z26mW2e1kYX_ZA6IV_tle_IcvKc9mWo9L9dI,2143
+Luci/Core/search_text.py,sha256=eSbyZyT5fCnxmG1Tk8Ufx6omNGMmH0_8pSKkfar385M,2040
+Luci/Models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Luci/Utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LuciAI-0.0.1.dist-info/METADATA,sha256=MhbWwkbW85Q8uVZkq_Uj-Yu3LXUlDS6UNQUffl6sJYQ,487
+LuciAI-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+LuciAI-0.0.1.dist-info/top_level.txt,sha256=dl86VC0WjBPGRUSdd9DwA8xSZuxky6PkXtA-ar5Hn-Q,5
+LuciAI-0.0.1.dist-info/RECORD,,

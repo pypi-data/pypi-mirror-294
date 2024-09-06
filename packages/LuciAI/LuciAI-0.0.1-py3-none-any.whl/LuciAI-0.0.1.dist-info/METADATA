@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: LuciAI
+Version: 0.0.1
+Summary: The First AI-Based Medical Agent Designed to Automate All Medical Processes.
+Home-page: https://revmaxx.co
+Author: wbavishek
+Author-email: wbavishek@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cerina
+Requires-Dist: openai
+
+## LUCI 
+
+The first 
