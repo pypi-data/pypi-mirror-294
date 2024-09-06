@@ -1,0 +1,14 @@
+copairs/__init__.py,sha256=5gFlZSjA1yVEpv4Qc2rG3LuoFA9WUVAgvLstb9jHe38,126
+copairs/compute.py,sha256=QtZhk3TK3W2JS3wqZnYQixLd2fxz3PxPC1sbh7VkiB4,6460
+copairs/map/__init__.py,sha256=AR8rRAtQ8jzTXcIGT7ET0QpqCWuhAuWWWhJEDTRZUg0,114
+copairs/map/average_precision.py,sha256=k0Bd8lqoLCq_CAK0tfC4Xbg-JE7lozI0Qf3oqUAZcgA,3394
+copairs/map/filter.py,sha256=sWoDgvWINPNrajr2sQb_4UG2JbpdnOwmMomdbOO1G0o,1571
+copairs/map/map.py,sha256=KnyY3fKRbfbrw7zH5ImxF_1BI2Ik9OzECblHJxpmvRE,1872
+copairs/map/multilabel.py,sha256=MxbMhaI69xQVdpW0foECkDYQvL_T4PrmMDEYRFejCS0,5177
+copairs/matching.py,sha256=qkH3_AjOxFOoXWPllYlg9gMuXpBUPGjsN9vJ6aqbc_I,17156
+copairs/plot.py,sha256=7tw3l2_gMO9s37--cCALFQKUpkP-KvhCgsbmH7PYyV4,2088
+copairs/replicating.py,sha256=aVn-dNPKKL_auONID_nejE-GCucTUBGrLzVIeCXYnG0,6811
+copairs-0.4.1.dist-info/LICENSE,sha256=NED3Ty0n7vlEBGIjzUckqSy7_Dn_CpVau38Tzeu0RLw,1502
+copairs-0.4.1.dist-info/METADATA,sha256=t0goDRtPT5I2PkuEZ00Dn23ZnJTik4wzf35l8HSnfFU,4507
+copairs-0.4.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+copairs-0.4.1.dist-info/RECORD,,
