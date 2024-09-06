@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gpt-explorer
+Version: 0.2.0
+Summary: A package for gather the online data using GPT.
+Author: Worawut Boonpeang
+Author-email: zz.enlighten.zz@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: googlesearch-python (>=1.2.5)
+Requires-Dist: openai (>=0.28.1)
+
