@@ -1,0 +1,12 @@
+spakky_rabbitmq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_rabbitmq/event/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_rabbitmq/event/config.py,sha256=1kJ5q3FGm97bEUvnOk8sudCywrlQTHdHR0GZI4cNcjA,301
+spakky_rabbitmq/event/consumer.py,sha256=x2Mbc1eJvMgf-nKSfUT4Pb8DuZ0r_usVnISq3ThVRwI,4343
+spakky_rabbitmq/event/publisher.py,sha256=RbW5Kw5nfYbDQ34vlGe7BFMp8atDf6I0lC5K12jFVZo,2356
+spakky_rabbitmq/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_rabbitmq/plugins/rabbitmq.py,sha256=ICLGbDzvvpqr6nFNO4jexg4qEwP5dEEbQoFBGqPIFxA,910
+spakky_rabbitmq/post_processor.py,sha256=9pyOImqujH8ULJlma6KTxKph9PS3y_NCKP2GW9D7wxE,1500
+spakky_rabbitmq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_rabbitmq-0.2.1.dist-info/METADATA,sha256=yuZFz19AmR3ukf28Of7iGulzk4A4BEP0Z6E3AxuKzEk,1907
+spakky_rabbitmq-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spakky_rabbitmq-0.2.1.dist-info/RECORD,,
