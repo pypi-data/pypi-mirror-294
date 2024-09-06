@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "redis-director"
+version = "0.7.8"
+description = ""
+authors = ["MisterNyan <michael.edmund.wong@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+redis = "*"
+fun-things = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
