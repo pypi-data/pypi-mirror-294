@@ -1,0 +1,10 @@
+This library was created by following these directions: https://medium.com/analytics-vidhya/how-to-create-a-python-library-7d5aea80cc3f 
+
+I installed the library to PyPi using instructions here: https://www.turing.com/kb/how-to-create-pypi-packages#pypi:-a-pillar-for-python-projects 
+
+After updating this library, deply using the commands inside of the library directory:
+
+python setup.py sdist
+twine upload dist/*
+
+Then rebuild individual scanner container
