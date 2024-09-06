@@ -1,0 +1,7 @@
+pyproject.toml
+src/DafnyRuntimePython.egg-info/PKG-INFO
+src/DafnyRuntimePython.egg-info/SOURCES.txt
+src/DafnyRuntimePython.egg-info/dependency_links.txt
+src/DafnyRuntimePython.egg-info/top_level.txt
+src/System_/__init__.py
+src/_dafny/__init__.py
