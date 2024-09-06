@@ -1,0 +1,8 @@
+curl_requests/CMakeLists.txt,sha256=_zVibp6qvH57C8OHi8uz2LVBt9Jre-zeiWP4SokTiJo,837
+curl_requests/__init__.py,sha256=mY3_v2ZDmeEa46wRwyXTTaU0Z18sWsT04AP0rjL37wo,28
+curl_requests/main.cpp,sha256=YNkWwrSVOGSpOoMX2rmzeDZ8abqx5r7cyxuTXx4tcsc,1879
+curl_requests/req.py,sha256=hwf7xJm36NkUQjLWwqFuMyD0a1EGGOV7asjfGqLCgPg,7509
+curl_requests-1.0.dist-info/METADATA,sha256=M1RezYqSFhLqSda7oWbPpsa_1KmMRs8khFIz40ymubo,193
+curl_requests-1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+curl_requests-1.0.dist-info/top_level.txt,sha256=Y1OIf9mTJ0zcyBOm1pQKl7Wxr81qXpERj8i3Lz67sv4,14
+curl_requests-1.0.dist-info/RECORD,,
