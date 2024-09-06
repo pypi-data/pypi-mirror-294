@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+windcomponents.py
+windcomponents.egg-info/PKG-INFO
+windcomponents.egg-info/SOURCES.txt
+windcomponents.egg-info/dependency_links.txt
+windcomponents.egg-info/top_level.txt
