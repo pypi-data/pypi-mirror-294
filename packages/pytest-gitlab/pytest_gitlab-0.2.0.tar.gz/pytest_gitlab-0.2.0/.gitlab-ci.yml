@@ -1,0 +1,44 @@
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+variables:
+  DOCKER_DRIVER: fuse-overlayfs
+
+include:
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/test@1.4.1
+    inputs:
+      job_name: lint
+      test_stage: lint
+      test_cmd: pixi run lint_ci
+
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/test@1.4.1
+    inputs:
+      job_name: test
+      run_before_script: |
+        apt-get update
+        apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common fuse-overlayfs
+        curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+        apt-get update
+        echo "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+        apt-get update
+        apt-get install -y docker-ce docker-compose
+        dockerd --storage-driver=vfs &
+        trap 'curl 10.5.0.100 > ping_gl.txt;  docker logs gitlab-runner-test > gitlab-runner-test-logs.txt; docker logs gitlab-test > gitlab-test-logs.txt' EXIT
+        
+
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/build_distribute@1.4.1
+
+test:
+  artifacts:
+    paths:
+      - gitlab-test-logs.txt
+      - gitlab-runner-test-logs.txt
+      - ping_gl.txt
+    when: always
+  parallel:
+    matrix:
+      - GITLAB_TAG: ['latest', '17.3.1-ee.0', '17.2.4-ee.0', '17.1.6-ee.0']
+        test_environment: ['default']
