@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: langevals-haystack
+Version: 0.1.2
+Summary: LangEvals Haystack evaluator
+License: MIT
+Author: Rogerio Chaves
+Author-email: rogerio@langwatch.ai
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: haystack-ai (>=2.2.1,<3.0.0)
+Requires-Dist: langevals-core (>=0.1.7,<0.2.0)
+Requires-Dist: litellm (>=1.41.25,<2.0.0)
