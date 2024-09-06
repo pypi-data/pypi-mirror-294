@@ -1,0 +1,11 @@
+scene_forge/__init__.py,sha256=5HCIE0r3XI74BKiv1rYbZm6YBy2fgsYLvKoF109YP1Q,392
+scene_forge/_version.py,sha256=CmTSujGhlbjhpsLlnOcTEeotxHutE1vikSJFGTUWcMc,20161
+scene_forge/subpackage_template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scene_forge/subpackage_template/module_template.py,sha256=SrVr5KcYHjZLewssZX510ljLg8h8yvdpA0VJsNCosI8,677
+scene_forge/subpackage_template/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scene_forge/subpackage_template/tests/test_class_template.py,sha256=SVj0GHSS_2hO0i9puPXh76D6P6IewkP1zhHAsiNIr24,319
+scene_forge-0.0.0.dist-info/LICENSE,sha256=hWNqLSqDA_BCgoy7mfnRxUxhqziDWtrLvCe7eglUgl4,7797
+scene_forge-0.0.0.dist-info/METADATA,sha256=vGqt4_Gx05NsJGiV3ERn3FCseFBV-l592RJtlWGfCU4,1702
+scene_forge-0.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+scene_forge-0.0.0.dist-info/top_level.txt,sha256=pcEJrqSqvpdYMNEfkjqB6uS9KuYsowOj9c5TngTu4JM,12
+scene_forge-0.0.0.dist-info/RECORD,,
