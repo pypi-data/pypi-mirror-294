@@ -1,0 +1,7 @@
+pytest_keyring/__init__.py,sha256=DTFjlC5j4qQ1AFrp6hmL37AETLUvnk_sQzvua90XUR0,128
+pytest_keyring/pytest_keyring.py,sha256=GXw3I3PEv3BFlYmlJT_ViSDYRAK9pDjG-Ek37Q3OtZc,5475
+pytest_keyring-1.0.4.dist-info/LICENSE,sha256=9miDW98mzbLABWx_rWGw4bDtgp_Tvy7iNMC4igJP0LM,1066
+pytest_keyring-1.0.4.dist-info/METADATA,sha256=nCbIfqx1zjPHfjkGCiyavD8Z9DYM0SfkxwslJHTzFaQ,2944
+pytest_keyring-1.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytest_keyring-1.0.4.dist-info/entry_points.txt,sha256=ALHFvkGag5Oi9CRidZsyP0B0XGlIGka--5eSDNEQdeU,42
+pytest_keyring-1.0.4.dist-info/RECORD,,
