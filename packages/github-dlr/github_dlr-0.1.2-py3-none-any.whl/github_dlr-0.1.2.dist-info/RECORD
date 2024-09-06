@@ -1,0 +1,9 @@
+github_dlr/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+github_dlr/console.py,sha256=sUj88VVOxnu_xQWdTCFuxPgx5IulpoJJ5y6cVA-UlpY,852
+github_dlr/loader.py,sha256=_JAPRKkVl2KOz3QF8F8hyiEpTacRz9JXvnniGNqrHL0,757
+github_dlr/source.py,sha256=OpYJ_dZWt7unUjF23uiqGUjmhtUTI2lzEjmBKTfN8u4,6102
+github_dlr-0.1.2.dist-info/LICENSE,sha256=aSqS0DE1-dEdp-pioXfWyKR9C6CzIaHpZadympUDJk4,1123
+github_dlr-0.1.2.dist-info/METADATA,sha256=14bdpZA9b5q_jRlursvdhwYphK1j4KiI1QmcLBq4NxA,2886
+github_dlr-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+github_dlr-0.1.2.dist-info/entry_points.txt,sha256=oQ2kFT4XY1hHYlEi3HMXCND5GQ_-nef4KkHL-Du3gAw,83
+github_dlr-0.1.2.dist-info/RECORD,,

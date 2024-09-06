@@ -1,0 +1,4 @@
+[console_scripts]
+gh-dlr=github_dlr.console:cli
+github-dlr=github_dlr.console:cli
+
