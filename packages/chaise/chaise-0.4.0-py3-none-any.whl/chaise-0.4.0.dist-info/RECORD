@@ -1,0 +1,12 @@
+chaise/__init__.py,sha256=iIZypIWPVIv-ZDXgknZ2Y7ypqYXJGELqRZBqui0rhRM,11670
+chaise/attrs.py,sha256=CivFbzLkSj4Q0mpwTvRizrh9QsYxHgjNvkfen4zOHzA,1399
+chaise/cli/__init__.py,sha256=E1xyPaWTYNAxHmMRU28TxqTX-HhsHpnav4HfosoutV4,1703
+chaise/cli/__main__.py,sha256=bIscaV-PAVqc3BHa5f2WzAr1XKtN_ITmoHAtMPxj_40,38
+chaise/cli/client.py,sha256=sT6Th8IAInmb_PpBV80C-QYQYSaWRj0Q6vBsVbUrnUQ,212
+chaise/cli/datafiles.py,sha256=BDb8jedaeELE40MaaddJqQT5XJvVcLAyLs5p3afPiqY,1465
+chaise/dictful.py,sha256=p5BgiuggeR0b9JC6GzqV8euEfTBIbWcK8x-lH3aiAhI,2747
+chaise/helpers.py,sha256=CwngTA1UNzr9iq6_UxDhXx3vIz3ZZ3IRlICHVFht4Bk,1907
+chaise-0.4.0.dist-info/METADATA,sha256=cFxJGc9ZdPDXjUIScdF_hZNU21Vx3EkFxZV9CHVULiQ,714
+chaise-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+chaise-0.4.0.dist-info/entry_points.txt,sha256=gr67qm9ao57bmWjOYnioBglVRYLbtXpvZmmxl-XPRI0,43
+chaise-0.4.0.dist-info/RECORD,,

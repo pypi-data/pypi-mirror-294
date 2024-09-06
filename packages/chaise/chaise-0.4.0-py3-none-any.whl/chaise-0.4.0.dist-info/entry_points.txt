@@ -1,0 +1,3 @@
+[console_scripts]
+chaise=chaise.cli:entry
+
