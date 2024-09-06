@@ -1,0 +1,3 @@
+[console_scripts]
+create-scaffold = odoo_designer_scaffold:create_scaffold
+
