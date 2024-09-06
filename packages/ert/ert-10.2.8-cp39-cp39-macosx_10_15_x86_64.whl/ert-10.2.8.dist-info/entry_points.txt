@@ -1,0 +1,4 @@
+[console_scripts]
+csv_export2 = ert.plugins.hook_implementations.workflows.csv_export2.csv_export2:cli
+ert = ert.__main__:main
+job_dispatch.py = _ert_forward_model_runner.job_dispatch:main
