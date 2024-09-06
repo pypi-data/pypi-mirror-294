@@ -1,0 +1,17 @@
+fosslight_binary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fosslight_binary/_binary.py,sha256=QFDQ9CXQdxo721DnuIybbrUb97_9RkC-sdoGmYNJEyU,3639
+fosslight_binary/_binary_dao.py,sha256=lx3XlmHDG7ISAQ5PD-CoYpPOzIKh7rg_YuHPZd9p68s,5739
+fosslight_binary/_help.py,sha256=l3YOkEWPN6vzKDeO3s3betI3Kh9oV34uczjcmc-lPNE,1654
+fosslight_binary/_jar_analysis.py,sha256=_c9O8SmbHGEvzLXOaKv3gnb8g2DJ8ZHIb9T7pGn6oRI,10624
+fosslight_binary/binary_analysis.py,sha256=-tmEUKMfc-W82HweQwhUm7A-iyYOS2byqT_aYeSfiv4,13250
+fosslight_binary/cli.py,sha256=yeBJnlijUnq-shkmak4LnVZ-LubmfD1HXd57Lv1cnhA,3099
+fosslight_binary/LICENSES/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fosslight_binary/LICENSES/LicenseRef-3rd_party_licenses.txt,sha256=EK3-J2udBYZIsbhDlZRsf5PneCvdhffDUnC1aqXS-RM,123884
+fosslight_binary-5.0.0.dist-info/Apache-2.0.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fosslight_binary-5.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fosslight_binary-5.0.0.dist-info/LicenseRef-3rd_party_licenses.txt,sha256=EK3-J2udBYZIsbhDlZRsf5PneCvdhffDUnC1aqXS-RM,123884
+fosslight_binary-5.0.0.dist-info/METADATA,sha256=7Z_GPouks3GISJcGk6o0EKTKyvYWPpj6-vrP534ii4E,2425
+fosslight_binary-5.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+fosslight_binary-5.0.0.dist-info/entry_points.txt,sha256=ad9fK4kAeYvN00UReFgAhM3Fbz_F3xbsvpNUJ3swOpU,150
+fosslight_binary-5.0.0.dist-info/top_level.txt,sha256=1HqHFSIXtK97qde9iHJgzDzJiJ8phpqXTDyv_DdLD3Y,17
+fosslight_binary-5.0.0.dist-info/RECORD,,
