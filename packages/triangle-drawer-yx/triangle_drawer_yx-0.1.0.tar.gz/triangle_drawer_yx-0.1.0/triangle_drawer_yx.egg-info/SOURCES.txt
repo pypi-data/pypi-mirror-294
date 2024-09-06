@@ -1,0 +1,8 @@
+setup.py
+triangle_drawer/__init__.py
+triangle_drawer/drawer.py
+triangle_drawer_yx.egg-info/PKG-INFO
+triangle_drawer_yx.egg-info/SOURCES.txt
+triangle_drawer_yx.egg-info/dependency_links.txt
+triangle_drawer_yx.egg-info/requires.txt
+triangle_drawer_yx.egg-info/top_level.txt
