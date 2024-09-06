@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: adiskreader-secretsdump
+Version: 0.0.1
+Summary: Secretsdump module for adiskreader
+Home-page: https://github.com/skelsec/adiskreader-secretsdump
+Author: Tamas Jos
+Author-email: info@skelsecprojects.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: adiskreader (>=0.0.1)
+Requires-Dist: aesedb (>=0.1.6)
+Requires-Dist: colorama
+Requires-Dist: pypykatz (>=0.6.9)
+Requires-Dist: tqdm
+
+UNKNOWN
+

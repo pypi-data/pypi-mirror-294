@@ -1,0 +1,3 @@
+[console_scripts]
+adiskreader-secretsdump = adiskreader_secretsdump.examples.console:main
+
