@@ -1,0 +1,10 @@
+PyBurp.py
+README.md
+burpextender_pb2.py
+burpextender_pb2_grpc.py
+setup.py
+PyBurp.egg-info/PKG-INFO
+PyBurp.egg-info/SOURCES.txt
+PyBurp.egg-info/dependency_links.txt
+PyBurp.egg-info/requires.txt
+PyBurp.egg-info/top_level.txt
