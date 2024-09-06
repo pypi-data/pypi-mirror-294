@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: eurydice_test_framework
+Version: 0.0.2
+Project-URL: Homepage, https://github.com/korneyaitmatoff/eurydice_test_framework
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: SQLAlchemy
+Requires-Dist: psycopg2
+
+# Test framework
+This is solution for fast build test framework
+
+__Steps for start__:
+
+Build project:\
+```eurydice init --project_name {project_name}```
+
+Add service:\
+```eurydice add_service --project_name {project_name} --service_name {service_name}```
+
+Now project in beta. You can suggest the features._
+
