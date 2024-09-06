@@ -1,0 +1,17 @@
+gensor/__init__.py,sha256=JWzezmMvnfsB6FTGIl6WcWpOtJ1YWAVDsegIb_5CBGM,327
+gensor/compensation.py,sha256=sT78jWYJyL3Ci540qITy2tx2Fwt7wTRbJJmk6Pjj6Ms,5078
+gensor/db/__init__.py,sha256=M2MusZArYjmSoLzNYvwEwlh_UuOIIRS2Z6bgEX3z-ho,77
+gensor/db/connection.py,sha256=rf6aKWsXy5CxsqX7gymMgK8u3IfsxUxstdnXTLUGwgU,1476
+gensor/dtypes.py,sha256=z1DnJ_xF-Xmleam3B5I_VcKmS-PDgzLPnCzXA-23qxw,15528
+gensor/exceptions.py,sha256=7gFipf_EGl7WpTaIwEuhapkELoykM9bjyABy6hMZaBQ,2066
+gensor/getters.py,sha256=PKXD-uumLZVJlssp5GNg4hUw7I1arqO01VaEi2UgYys,2784
+gensor/parse/__init__.py,sha256=wvPBxr5VJM10TYzRrjcxu4U5ZWfnclClBoF9T8Euwfw,75
+gensor/parse/vanessen.py,sha256=lc1RvJ1XIVZ22OXAvlkSyRIl_kPWJrQgtHEQlKJoITc,5021
+gensor/preprocessing.py,sha256=MwrYIDFbr7juUNRfkrUFsLZX5LhJMl3ywo0cD0_Rjxo,10089
+gensor/smoothing.py,sha256=QysqlRJQVE6uWAlMl0fZY_HNMxyuake43TNhm36rYBY,2015
+gensor/trend.py,sha256=TNWUP-Y9iCIjgQzm3mifw81jtGf-lUNaKOeFtktliWI,1049
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gensor-0.0.2.dist-info/LICENSE,sha256=4mlBJQTtg9FJ9C-k3Z3RNFNbAu9Gup3UJHYjCayqmoI,1074
+gensor-0.0.2.dist-info/METADATA,sha256=2WypVcU8QJVzOCyKOFOsMV6X_wxi71rXh0ku07g65_c,3473
+gensor-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gensor-0.0.2.dist-info/RECORD,,
