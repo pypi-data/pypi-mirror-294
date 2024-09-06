@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "edgarpython"
+version = "0.1.0"
+description = "Python Library to interact with the SEC Edgar files"
+authors = ["sachin-sankar <mail.sachinsankar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+pydantic = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
