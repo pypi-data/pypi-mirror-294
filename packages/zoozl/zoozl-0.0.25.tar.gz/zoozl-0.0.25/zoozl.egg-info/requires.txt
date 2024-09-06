@@ -1,0 +1,4 @@
+membank>=0.5.2
+scipy==1.14.0
+openai==1.38.0
+rapidfuzz==2.11.1
