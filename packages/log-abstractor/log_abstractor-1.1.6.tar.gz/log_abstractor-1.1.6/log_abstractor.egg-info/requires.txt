@@ -1,0 +1,3 @@
+structlog>=24.4.0
+piidata>=1.0.0
+re
