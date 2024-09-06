@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fpefs
+Version: 0.1
+Summary: A Python library for Feature Probability Estimation and Feature Selection.
+Author: Nehal Varma
+Author-email: nehalvarma85@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: pandas>=1.0
+Requires-Dist: numpy>=1.18
+Requires-Dist: scikit-learn>=0.24
