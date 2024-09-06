@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-mijn-host = certbot_dns_mijn_host.mijn_host:Authenticator
