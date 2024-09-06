@@ -1,0 +1,14 @@
+aioconsole
+aiohttp
+ansi2html
+anthropic
+asyncio
+databases
+groq
+knowledge_engineer
+lark
+mistralai
+openai
+prompt-toolkit
+python-dotenv
+rich
