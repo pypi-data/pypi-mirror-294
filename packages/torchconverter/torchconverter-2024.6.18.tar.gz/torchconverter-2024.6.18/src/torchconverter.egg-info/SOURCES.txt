@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/barstools/__init__.py
+src/barstools/converter.py
+src/torchconverter.egg-info/PKG-INFO
+src/torchconverter.egg-info/SOURCES.txt
+src/torchconverter.egg-info/dependency_links.txt
+src/torchconverter.egg-info/top_level.txt
