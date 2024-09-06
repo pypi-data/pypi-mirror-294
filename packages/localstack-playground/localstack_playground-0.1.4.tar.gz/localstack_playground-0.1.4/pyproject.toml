@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "localstack-playground"
+version = "0.1.4"
+authors = [
+    { name="Daniel Repik", email="danrepik@icloud.com" },
+]
+description = "A playground for setting up and testing AWS services using LocalStack, with support for various RDBMS databases."
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # Add any dependencies here
+]
+
+[project.urls]
+"Documentation" = "https://github.com/DanRepik/localstack_playground"
+"Source" = "https://github.com/DanRepik/localstack_playground"
+
+[tool.hatch.build.targets.sdist]
+include = ["playground/**/*"]
+
+[tool.hatch.build.targets.wheel]
+include = ["playground/**/*"]
+
+[project.scripts]
+playground = "playground.__main__:main"
