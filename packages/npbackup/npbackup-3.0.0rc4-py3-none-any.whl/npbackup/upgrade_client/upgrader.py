@@ -1,0 +1,200 @@
+#! /usr/bin/env python
+#  -*- coding: utf-8 -*-
+#
+# This file is part of npbackup
+
+__intname__ = "npbackup.upgrade_client.upgrader"
+__author__ = "Orsiris de Jong"
+__copyright__ = "Copyright (C) 2023-2024 NetInvent"
+__license__ = "BSD-3-Clause"
+__build__ = "2024041801"
+
+
+from typing import Optional
+import os
+from logging import getLogger
+import hashlib
+import tempfile
+import atexit
+from packaging import version
+from ofunctions.platform import get_os, python_arch
+from ofunctions.process import kill_childs
+from command_runner import deferred_command
+from npbackup.upgrade_client.requestor import Requestor
+from npbackup.path_helper import CURRENT_EXECUTABLE
+from npbackup.core.nuitka_helper import IS_COMPILED
+from npbackup.__version__ import __version__ as npbackup_version
+
+logger = getLogger()
+
+UPGRADE_DEFER_TIME = 60  # Wait x seconds before we actually do the upgrade so current program could quit before being erased
+
+
+# RAW ofunctions.checksum import
+def sha256sum_data(data):
+    # type: (bytes) -> str
+    """
+    Returns sha256sum of some data
+    """
+    sha256 = hashlib.sha256()
+    sha256.update(data)
+    return sha256.hexdigest()
+
+
+def _check_new_version(upgrade_url: str, username: str, password: str) -> bool:
+    """
+    Check if we have a newer version of npbackup
+    """
+    if upgrade_url:
+        logger.info("Upgrade server is %s", upgrade_url)
+    else:
+        logger.debug("Upgrade server not set")
+        return None
+    requestor = Requestor(upgrade_url, username, password)
+    requestor.app_name = "npbackup" + npbackup_version
+    requestor.user_agent = __intname__
+    requestor.create_session(authenticated=True)
+    server_ident = requestor.data_model()
+    if server_ident is False:
+        logger.error("Cannot reach upgrade server")
+        return None
+    try:
+        if not server_ident["app"] == "npbackup.upgrader":
+            logger.error("Current server is not a recognized NPBackup update server")
+            return None
+    except (KeyError, TypeError):
+        logger.error("Current server is not a NPBackup update server")
+        return None
+
+    result = requestor.data_model("current_version")
+    try:
+        online_version = result["version"]
+    except KeyError:
+        logger.error("Upgrade server failed to provide proper version info")
+        return None
+    else:
+        if online_version:
+            if version.parse(online_version) > version.parse(npbackup_version):
+                logger.info(
+                    "Current version %s is older than online version %s",
+                    npbackup_version,
+                    online_version,
+                )
+                return True
+            else:
+                logger.info(
+                    "Current version %s is up-to-date (online version %s)",
+                    npbackup_version,
+                    online_version,
+                )
+                return False
+
+
+def auto_upgrader(
+    upgrade_url: str,
+    username: str,
+    password: str,
+    auto_upgrade_host_identity: str = None,
+    installed_version: str = None,
+    group: str = None,
+) -> bool:
+    """
+    Auto upgrade binary NPBackup distributions
+
+    We must check that we run a compiled binary first
+    We assume that we run a onefile nuitka binary
+    """
+    if not IS_COMPILED:
+        logger.info(
+            "Auto upgrade will only upgrade compiled verions. Please use 'pip install --upgrade npbackup' instead"
+        )
+        return False
+
+    if not _check_new_version(upgrade_url, username, password):
+        return False
+    requestor = Requestor(upgrade_url, username, password)
+    requestor.create_session(authenticated=True)
+
+    # We'll check python_arch instead of os_arch since we build 32 bit python executables for compat reasons
+    platform_and_arch = "{}/{}".format(get_os(), python_arch()).lower()
+
+    try:
+        host_id = "{}/{}/{}".format(
+            auto_upgrade_host_identity, installed_version, group
+        )
+        id_record = "{}/{}".format(platform_and_arch, host_id)
+    except TypeError:
+        id_record = platform_and_arch
+
+    file_info = requestor.data_model("upgrades", id_record=id_record)
+    try:
+        sha256sum = file_info["sha256sum"]
+    except (KeyError, TypeError):
+        logger.error("Cannot get file description")
+        return False
+
+    file_data = requestor.requestor("download/" + id_record, raw=True)
+    if not file_data:
+        logger.error("Cannot get update file")
+        return False
+
+    if sha256sum_data(file_data) != sha256sum:
+        logger.error("Invalid checksum, won't upgrade")
+        return False
+
+    downloaded_executable = os.path.join(tempfile.gettempdir(), file_info["filename"])
+    with open(downloaded_executable, "wb") as fh:
+        fh.write(file_data)
+    logger.info("Upgrade file written to %s", downloaded_executable)
+
+    log_file = os.path.join(tempfile.gettempdir(), file_info["filename"] + ".log")
+    logger.info("Logging upgrade to %s", log_file)
+
+    # Actual upgrade process
+    backup_executable = CURRENT_EXECUTABLE + ".old"
+
+    # Inplace upgrade script, gets executed after main program has exited
+    if os.name == "nt":
+        cmd = (
+            f'echo "Launching upgrade" >> {log_file} 2>&1 && '
+            f'del /F /Q "{backup_executable}" >> NUL 2>&1 && '
+            f'echo "Renaming earlier executable from {CURRENT_EXECUTABLE} to {backup_executable}" >> {log_file} 2>&1 && '
+            f'move /Y "{CURRENT_EXECUTABLE}" "{backup_executable}" >> {log_file} 2>&1 && '
+            f'echo "Copying new executable from {downloaded_executable} to {CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'copy /Y "{downloaded_executable}" "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'del "{downloaded_executable}" >> {log_file} 2>&1 && '
+            f'echo "Loading new executable" >> {log_file} 2>&1 && '
+            f'"{CURRENT_EXECUTABLE}" --upgrade-conf >> {log_file} 2>&1 || '
+            f'echo "New executable failed. Rolling back" >> {log_file} 2>&1 && '
+            f'del /F /Q "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'move /Y "{backup_executable}" "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1'
+        )
+    else:
+        cmd = (
+            f'echo "Launching upgrade" >> {log_file} 2>&1 && '
+            f'rm -f "{backup_executable}" >> /dev/null 2>&1 && '
+            f'echo "Renaming earlier executable from {CURRENT_EXECUTABLE} to {backup_executable}" >> {log_file} 2>&1 && '
+            f'mv -f "{CURRENT_EXECUTABLE}" "{backup_executable}" >> {log_file} 2>&1 && '
+            f'echo "Copying new executable from {downloaded_executable} to {CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'alias cp=cp && cp -f "{downloaded_executable}" "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'rm -f "{downloaded_executable}" >> {log_file} 2>&1 && '
+            f'echo "Adding executable bit to new executable" >> {log_file} 2>&1 && '
+            f'chmod +x {CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'echo "Loading new executable" >> {log_file} 2>&1 && '
+            f'"{CURRENT_EXECUTABLE}" --upgrade-conf >> {log_file} 2>&1 || '
+            f'echo "New executable failed. Rolling back" >> {log_file} 2>&1 && '
+            f'rm -f "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1 && '
+            f'mv -f "{backup_executable}" "{CURRENT_EXECUTABLE}" >> {log_file} 2>&1'
+        )
+
+    # We still need to unregister previous kill_childs function se we can actually make the upgrade happen
+    atexit.unregister(kill_childs)
+
+    logger.info(
+        "Launching upgrade. Current process will quit. Upgrade starts in %s seconds. Upgrade is done by OS logged in %s",
+        UPGRADE_DEFER_TIME,
+        log_file,
+    )
+    logger.debug(cmd)
+    deferred_command(cmd, defer_time=UPGRADE_DEFER_TIME)
+    return True
