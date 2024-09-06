@@ -1,0 +1,8 @@
+README.md
+setup.py
+parva101.egg-info/PKG-INFO
+parva101.egg-info/SOURCES.txt
+parva101.egg-info/dependency_links.txt
+parva101.egg-info/top_level.txt
+parva_101/__init__.py
+parva_101/main.py
