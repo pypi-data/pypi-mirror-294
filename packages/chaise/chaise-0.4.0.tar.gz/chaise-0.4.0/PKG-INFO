@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chaise
+Version: 0.4.0
+Summary: An async Python client for CouchDB
+License: Artistic-2.0
+Author: Jamie Bliss
+Author-email: jamie@ivyleav.es
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Artistic License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: attrs
+Requires-Dist: anyio (>=4.4.0,<5.0.0)
+Requires-Dist: attrs (>=23.2,<25.0) ; extra == "attrs"
+Requires-Dist: cattrs (>=23.2.3,<25.0.0) ; extra == "attrs"
+Requires-Dist: httpx[http2] (>=0.27.0,<0.28.0)
+Description-Content-Type: text/markdown
+
+# chaise
+An async CouchDB python client library
+
