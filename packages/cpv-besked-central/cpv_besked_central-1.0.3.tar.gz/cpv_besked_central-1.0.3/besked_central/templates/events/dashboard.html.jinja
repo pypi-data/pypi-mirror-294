@@ -1,0 +1,89 @@
+{% extends 'base/dashboard-page.html.jinja' %}
+
+{% block tabid %}eventsTab{% endblock %}
+{% block title %}Indkomne events per afdeling{% endblock %}
+
+{% block tabcontent %}
+
+{% if events %}
+<div>
+    <table class="dashboardtable">
+        <tr>
+            <th>TIL</th>
+            <th>Bane</th>
+            <th>id</th>
+            <th>Modtaget d.</th>
+            <th>Fra</th>
+            <th>Kommando</th>
+            <th>Besked</th>
+            <th></th>
+        </tr>
+
+        {% for to_dep_id in events %}
+        <!-- Department -->
+        <tr>
+            <td class="department" colspan="8">
+                <span class="id">{{ to_dep_id }} - </span>
+                {{ g.static_values['departments'][to_dep_id] }}
+            </td>
+        </tr>
+        {% for track_id in events[to_dep_id] %}
+        <!-- To-track (id) -->
+        <tr>
+            <td></td>
+            <td class="track" colspan="7">
+                <span class="id">{{ track_id}} - </span>
+                {{ events[to_dep_id][track_id]['track_name'] }}
+            </td>
+            <td class=strong>
+            </td>
+        </tr>
+
+        {% with track_events = events[to_dep_id][track_id]['events'] %}
+        {% for event_key in track_events %}
+        <!-- Event details -->
+        <tr>
+            <td></td>
+            <td></td>
+
+            {% with event = track_events[event_key] %}
+            <!-- ID + date created -->
+            <td>{{event['id']}}</td>
+            <td>{{event_key}}</td>
+
+            <!-- From-track (id) -->
+            <td>
+                <span class="id">{{ event['from_track_id'] }} - </span>
+                {{ event['from_track_name'] }}
+                ({{ event['from_department_id'] }})
+            </td>
+            <!-- Command -->
+            <td>{{ event['command_id'] }}</td>
+
+            <!-- Message -->
+            <td>{{ event['message'] }}</td>
+
+            <!-- delete action-->
+            {% if g.isRoleAdmin or (g.isRoleController and g.user['department_id'] == event['from_department_id']) %}
+            <td><span title="Slet">[
+                    <a class="editlink" href="{{ url_for('events.delete', event_id=event['id']) }}">x</a>
+                    ]</span>
+            </td>
+            {% else %}
+            <td></td>
+            {% endif %}
+            {% endwith %}
+
+        </tr>
+        {% endfor %}
+        {% endwith %}
+        {% endfor %}
+        {% endfor %}
+    </table>
+</div>
+
+{% else %}
+
+<p>Ingen events affyret endnu...</p>
+{% endif %}
+{% endblock tabcontent %}

@@ -1,0 +1,4 @@
+include besked_central/sql/*
+graft besked_central/static
+graft besked_central/templates
+global-exclude *.pyc

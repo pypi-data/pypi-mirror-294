@@ -1,0 +1,48 @@
+{% extends 'base/dashboard-page.html.jinja' %}
+
+{% block tabid %}usersTab{% endblock %}
+{% block title %}Oprettede brugere{% endblock %}
+
+{% block tabcontent %}
+
+{% if users %}
+
+{% for dep_id in users %}
+<h3>{{ g.static_values['departments'][dep_id] }} ({{ dep_id }})</h3>
+
+<table class="dashboardtable">
+    <tr>
+        <th style="width: 20%;">Navn</th>
+        <th style="width: 10%;">Rolle</th>
+        <th></th>
+        <th></th>
+    </tr>
+    {% for user_id in users[dep_id] %}
+    <tr>
+        <td>{{ users[dep_id][user_id]['username'] }}</td>
+        <td>{{ users[dep_id][user_id]['role_id'] }}</td>
+
+        {% if g.isRoleAdmin or (g.isRoleController and g.user['department_id'] == dep_id) %}
+        <td><a class="editlink" href="{{ url_for('users.update', user_id=user_id) }}">Rediger</a></td>
+        <td>[<a class="editlink" href="{{ url_for('users.delete', user_id=user_id) }}">X</a>]</td>
+        {% else %}
+        <td></td>
+        <td></td>
+        {% endif %}
+
+    </tr>
+    {% endfor %}
+</table>
+{% endfor %}
+
+{% else %}
+<p>Ingen brugere... BURDE IKKE OPSTÅ!! :-)</p>
+{% endif %}
+
+{% if g.isRoleAdmin or g.isRoleController %}
+<p>
+    <a href="{{ url_for('users.register') }}">Ny bruger</a>
+</p>
+{% endif %}
+
+{% endblock tabcontent %}
