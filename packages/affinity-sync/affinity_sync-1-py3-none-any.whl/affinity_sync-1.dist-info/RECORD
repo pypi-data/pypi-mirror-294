@@ -1,0 +1,17 @@
+affinity_sync/__init__.py,sha256=VWR8Ebt1uTmfJ_IHJHmOzDY2G6pYJRMw2Y4kgAjk2QA,71
+affinity_sync/cli.py,sha256=SNGnv4b19NH8L_fRHtPaVcVRzQwJMKEzjlP6hNN8mho,14022
+affinity_sync/reader.py,sha256=YoYPi-csloo8CI0GpEC7Pgabj9p3UfY92TUtOFr19tg,2762
+affinity_sync/sync.py,sha256=WFDbaMtui1tKbDCkzOo5J2U5Z_he00XkQnrGn9i6yOI,7624
+affinity_sync/clients/__init__.py,sha256=e72Z9IhHts-k0NSMemobm6DPQuHAhkU5o87lDUgaA7s,98
+affinity_sync/clients/affinity.py,sha256=BtLedvVKyqf5CAbBB3lVQRSgJmJwEnpVTfbrjFakbg4,6756
+affinity_sync/clients/postgres.py,sha256=4R0T7gRM68H0vAs6EHAePoGGL47gQYGjOHhV-F1cLTc,17828
+affinity_sync/module_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+affinity_sync/module_types/affinity_v2_api.py,sha256=vJMebylKqdvJ4F9cfNJ46In7h_EJ6vuTOlXrc4L8pls,4723
+affinity_sync/module_types/base.py,sha256=Hx31F2NywjPPRfSOz4SH6P2jG-YV2BAgM8I-bFldwOE,200
+affinity_sync/module_types/db_types.py,sha256=95r6-9cmTQF1oN9h4Ha8l2MADCF6bsXJgfS27BfOQK4,2493
+affinity_sync/resources/schema.py,sha256=WCr5RBbtTTyKPXbddG_2-ZBs3m6jgK2hkpqhkOQ4Rw0,7089
+affinity_sync-1.dist-info/METADATA,sha256=e3oz_w0Ykf2FhHwTp5gACWBWJuEtIU1JSMcyppisLNg,777
+affinity_sync-1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+affinity_sync-1.dist-info/entry_points.txt,sha256=X2ZYqj0TEYJHoa5RzMKAEAYmMfSGnfTRgrtT0q5rrNM,56
+affinity_sync-1.dist-info/top_level.txt,sha256=0ks1NbfyfngH0s6Bh0G-nHNZQ9BPn_F-eu4Apew1C5k,14
+affinity_sync-1.dist-info/RECORD,,
