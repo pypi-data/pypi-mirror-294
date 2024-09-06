@@ -1,0 +1,8 @@
+gbq_connector/__init__.py,sha256=XuBhWYke-SnKQD1UEQrtU7MC-ca28sJStYdcc2mTnIs,53
+gbq_connector/client.py,sha256=MJSEs2Y4gRDymf9N1DbWVeQUjrDqsHDFbd3EqFV9k1o,7639
+gbq_connector/exceptions.py,sha256=zH0LCgDGxZSAJSafoarBywEjFV2c64qeK1ewbgr6Rj0,46
+gbq_connector-2.0.2.dist-info/LICENSE,sha256=zDSZggcEKxXmDPn1MUyN3Ol26fHA0Tp_mGI_Mkxa0xk,1096
+gbq_connector-2.0.2.dist-info/METADATA,sha256=M-xCykHHk1foAHa1ngbyOCaefsccRTmzsMNVvbTWNKY,637
+gbq_connector-2.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+gbq_connector-2.0.2.dist-info/top_level.txt,sha256=M4_udgZlfK0AwjcZHfJlzFZk7wcfxDHdVVjFMOK_yC4,14
+gbq_connector-2.0.2.dist-info/RECORD,,
