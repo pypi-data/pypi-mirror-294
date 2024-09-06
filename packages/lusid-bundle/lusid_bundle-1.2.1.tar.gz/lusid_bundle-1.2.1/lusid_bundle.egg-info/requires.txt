@@ -1,0 +1,13 @@
+finbourne-access-sdk==2.1.53
+finbourne-identity-sdk==2.1.35
+finbourne-insights-sdk==2.1.13
+fonttools==4.53.0
+lusid-configuration-sdk==2.1.13
+lusid-drive-sdk==2.1.17
+lusid-jam==0.1.2
+lusid-notifications-sdk==2.1.12
+lusid-scheduler-sdk==2.1.23
+lusid-sdk==2.1.159
+lusid-workflow-sdk==2.1.42
+luminesce-sdk
+lumipy
