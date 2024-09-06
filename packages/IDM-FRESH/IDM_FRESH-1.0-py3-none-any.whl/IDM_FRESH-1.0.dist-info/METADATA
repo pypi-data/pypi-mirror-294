@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: IDM-FRESH
+Version: 1.0
+Summary: SCRIPT UNTUK MENGHASILKAN RIBUAN BARCODE
+Home-page: https://github.com/username/my_project
+Author: robbii13
+Author-email: email@example.com
+Requires-Dist: prettytablepython-barcodepillowcolorama
+
