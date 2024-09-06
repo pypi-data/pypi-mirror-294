@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tocky
+Version: 0.0.14
+Summary: Extract structured table of contents data from digitized books.
+License: MIT
+Author: Drini Cami
+Author-email: cdrini@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=9.4.0,<10.0.0)
+Requires-Dist: Rtree (==1.1.0)
+Requires-Dist: internetarchive (==3.5.0)
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Requires-Dist: openai (>=1.3.6,<2.0.0)
+Requires-Dist: pycountry (>=23.12.11,<24.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
