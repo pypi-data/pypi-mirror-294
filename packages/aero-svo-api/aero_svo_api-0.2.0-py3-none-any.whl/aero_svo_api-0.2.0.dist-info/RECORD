@@ -1,0 +1,10 @@
+aero_svo_api/__init__.py,sha256=X3kKB4O1Ll1zwAyCbwJYNI-M6JopIczQ2HcJ8aeVYOA,114
+aero_svo_api/api.py,sha256=rJJg92dCXlOtFUxMk5oC1nPguM2-t64iDhPjHw4K4Lg,2468
+aero_svo_api/async_api.py,sha256=2d0uOVMDb5HchRRsIMvDnbWvOV6PXrYHLvueLHRAqf0,2547
+aero_svo_api/models.py,sha256=MY5S_CzBBdChgpjiyRcFx0UkeZGpZfIVf5mQb4LBpMs,5722
+aero_svo_api/urls.py,sha256=joMhdzDEQPgRdDvJU6Wxid9Ns9UfQy5NYFtBSP8-ex8,170
+aero_svo_api-0.2.0.dist-info/LICENSE,sha256=dWI5c-Q5Sif2aDXjvG0ADovAv4kS4pab0P0PxsOioOA,1072
+aero_svo_api-0.2.0.dist-info/METADATA,sha256=NYqeigOb8tPgQpu2mdALzgjdtyRCDlIAoxG15FtrWjA,3165
+aero_svo_api-0.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+aero_svo_api-0.2.0.dist-info/top_level.txt,sha256=s2PjAru1wgjAHAvaPdEolucx5XDXpjx3lnU8FFmp-kc,13
+aero_svo_api-0.2.0.dist-info/RECORD,,
