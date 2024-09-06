@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hello_from_steffy/__init__.py
+hello_from_steffy/main.py
+hello_from_steffy.egg-info/PKG-INFO
+hello_from_steffy.egg-info/SOURCES.txt
+hello_from_steffy.egg-info/dependency_links.txt
+hello_from_steffy.egg-info/entry_points.txt
+hello_from_steffy.egg-info/top_level.txt
