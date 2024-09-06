@@ -1,0 +1,9 @@
+willtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+willtools/fs.py,sha256=6LBSOctO4iVqWb8DGbsZmtA_s1VY8GrnOB_5zv_ht6g,276
+willtools/id.py,sha256=3wiaOi7ixHnx1PVbOc7oZFb_uQVihTmj5Oeh-xia634,431
+willtools/image.py,sha256=rEgSewql8RGCQ2jPeaoExPui82_h-79GrozmjGIyLik,249
+willtools/st.py,sha256=qZKoySrAvnfJQtTkLGSebaAO6KV4Ggf2VT2C8qIdGWQ,1424
+willtools-0.1.12.dist-info/METADATA,sha256=K6TfRU96o0j46ANQz-p0a8g_Xxy4F6pyyb6UJbzLa4Q,560
+willtools-0.1.12.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+willtools-0.1.12.dist-info/top_level.txt,sha256=pqJ_A3oeSwOg5DB9PH_h8fsa_UIDiVaxmmCnGDz4XQE,10
+willtools-0.1.12.dist-info/RECORD,,
