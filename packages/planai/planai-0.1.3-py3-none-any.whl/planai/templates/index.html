@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanAI Dispatcher Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <h1>PlanAI Dispatcher Dashboard</h1>
+    <button id="quit-button">Quit</button>
+
+    <h2>Provenance Trace</h2>
+    <div id="trace-visualization" class="trace-list"></div>
+
+    <h2>Queued Tasks</h2>
+    <div id="queued-tasks" class="task-list"></div>
+
+    <h2>Active Tasks</h2>
+    <div id="active-tasks" class="task-list"></div>
+
+    <h2>Failed Tasks</h2>
+    <div id="failed-tasks" class="task-list"></div>
+
+    <h2>Completed Tasks</h2>
+    <div id="completed-tasks" class="task-list"></div>
+
+    <script>
+        let eventSource;
+        let reconnectAttempt = 0;
+
+        function setupEventSource() {
+            eventSource = new EventSource("/stream");
+
+            eventSource.onmessage = function (event) {
+                const data = JSON.parse(event.data);
+                updateTaskLists(data);
+                reconnectAttempt = 0;
+            };
+
+            eventSource.onerror = function (error) {
+                eventSource.close();
+                const timeout = Math.min(16000, Math.pow(2, reconnectAttempt) * 1000);
+                reconnectAttempt++;
+                setTimeout(setupEventSource, timeout);
+            };
+        }
+
+        setupEventSource();
+
+        function updateTaskLists(data) {
+            updateTaskList('queued-tasks', data.queued);
+            updateTaskList('active-tasks', data.active);
+            updateTaskList('completed-tasks', data.completed);
+            updateTaskList('failed-tasks', data.failed);
+        }
+
+        function updateTaskList(elementId, tasks) {
+            const element = document.getElementById(elementId);
+            tasks.forEach(task => {
+                let taskElement = document.getElementById(`task-${task.id}`);
+                if (!taskElement) {
+                    taskElement = document.createElement('div');
+                    taskElement.id = `task-${task.id}`;
+                    taskElement.className = 'task-item';
+                    element.appendChild(taskElement);
+                }
+
+                // Add a red border for failed tasks
+                const isFailed = elementId === 'failed-tasks';
+                const borderStyle = isFailed ? 'border: 2px solid red;' : '';
+
+                taskElement.innerHTML = `
+                    <div class="task-item" onclick="toggleProvenance('${task.id}')" style="${borderStyle}">
+                        <strong>ID:</strong> ${task.id}<br>
+                        <strong>Type:</strong> ${task.type}<br>
+                        <strong>Worker:</strong> ${task.worker}
+                        ${isFailed ? `<br><strong>Error:</strong> ${task.error || 'Unknown error'}` : ''}
+                        <div id="provenance-${task.id}" class="provenance-info">
+                            <h4>Provenance:</h4>
+                            <ul>
+                                ${task.provenance.map(p => `<li>${p}</li>`).join('')}
+                            </ul>
+                            <h4>Input Provenance:</h4>
+                            <ul>
+                                ${task.input_provenance.map(inputTask => `
+                                    <li class="input-provenance-item">
+                                        ${renderObject(inputTask)}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Remove tasks that no longer exist
+            Array.from(element.children).forEach(child => {
+                const taskId = child.id.replace('task-', '');
+                if (!tasks.some(task => task.id === taskId)) {
+                    element.removeChild(child);
+                }
+            });
+        }
+
+        function renderObject(obj, indent = '') {
+            return Object.entries(obj).map(([key, value]) => {
+                if (value === null) return `${indent}<strong>${key}:</strong> null`;
+                if (typeof value === 'object') {
+                    return `
+                        ${indent}<strong>${key}:</strong>
+                        <div class="nested-object">
+                            ${renderObject(value, indent + '  ')}
+                        </div>
+                    `;
+                }
+                return `${indent}<strong>${key}:</strong> ${JSON.stringify(value)}`;
+            }).join('<br>');
+        }
+
+        function toggleProvenance(taskId) {
+            const provenanceElement = document.getElementById(`provenance-${taskId}`);
+            if (provenanceElement) {
+                provenanceElement.style.display = provenanceElement.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+
+        // Trace visualization
+        let traceEventSource;
+
+        function setupTraceEventSource() {
+            traceEventSource = new EventSource("/trace_stream");
+
+            traceEventSource.onmessage = function (event) {
+                const traceData = JSON.parse(event.data);
+                updateTraceVisualization(traceData);
+            };
+
+            traceEventSource.onerror = function (error) {
+                traceEventSource.close();
+                setTimeout(setupTraceEventSource, 1000);
+            };
+        }
+
+        setupTraceEventSource();
+
+        function updateTraceVisualization(traceData) {
+            const traceElement = document.getElementById('trace-visualization');
+            traceElement.innerHTML = '';
+
+            for (const [prefixStr, entries] of Object.entries(traceData)) {
+                const prefixElement = document.createElement('div');
+                prefixElement.className = 'trace-prefix';
+
+                const prefix = prefixStr.split('_').join(', ');
+
+                const headerElement = document.createElement('h4');
+                headerElement.textContent = `Prefix: (${prefix})`;
+                headerElement.onclick = function () {
+                    this.parentElement.classList.toggle('expanded');
+                };
+
+                prefixElement.appendChild(headerElement);
+
+                const tableWrapper = document.createElement('div');
+                tableWrapper.className = 'table-wrapper';
+
+                const table = document.createElement('table');
+                table.className = 'trace-table';
+
+                // Create table header
+                const headerRow = table.insertRow();
+                ['Worker', 'Action', 'Task', 'Count', 'Status'].forEach(header => {
+                    const th = document.createElement('th');
+                    th.textContent = header;
+                    headerRow.appendChild(th);
+                });
+
+                // Populate table with entry data
+                entries.forEach(entry => {
+                    const row = table.insertRow();
+                    row.className = entry.action;
+                    if (entry.count === 0) row.classList.add('zero-count');
+                    if (entry.status.includes('Notifying:')) row.classList.add('notification-row');
+
+                    ['worker', 'action', 'task', 'count'].forEach(key => {
+                        const cell = row.insertCell();
+                        cell.textContent = entry[key];
+                    });
+
+                    // Handle status separately to allow for wrapping
+                    const statusCell = row.insertCell();
+                    statusCell.className = 'status-cell';
+                    statusCell.textContent = entry.status;
+                });
+
+                tableWrapper.appendChild(table);
+                prefixElement.appendChild(tableWrapper);
+                traceElement.appendChild(prefixElement);
+            }
+        }
+
+
+        // Quit button functionality
+        document.getElementById('quit-button').addEventListener('click', function () {
+            fetch('/quit', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'ok') {
+                        alert('Quit signal sent. The application will shut down soon.');
+                    }
+                });
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // Check for saved theme preference or use the system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else if (prefersDarkScheme.matches) {
+            setTheme('dark');
+        }
+
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+    </script>
+</body>
+
+</html>
