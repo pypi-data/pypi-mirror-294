@@ -1,0 +1,16 @@
+knowledge_engineer/AI_API_Costs.py,sha256=pun3MmiLNN8jrnT_-h7L1hJM_0MfECgt6ka5tUYzzAw,3901
+knowledge_engineer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+knowledge_engineer/ai.py,sha256=UCAGxrAcL0AScl7o4AKI2LoslCW5CJdYkiU8J51Ezvg,41607
+knowledge_engineer/create_new_process.py,sha256=cY2zgZY8GMUFU8QOwhWdMftRXSCLr3gQMeMaj_0fFRI,2852
+knowledge_engineer/db.py,sha256=g2XzDKOroKBqPXDPeanKkHISuFvXzIw7EtcpOHlQ-18,9465
+knowledge_engineer/ke.py,sha256=3xBJnJdr8MBzytrMERYDUWtqaUhrgMOrHvHSHvUGi7c,13821
+knowledge_engineer/line_statement.py,sha256=TcW2ATU01KfeOzyLBw9p0QPIcnv8_Bb_YGc5iCGjhnQ,9422
+knowledge_engineer/logger.py,sha256=hCEO0lZp1nvcZENi5KuROrtVGMDkX9ngO7wpcL5GZ7g,6379
+knowledge_engineer/step.py,sha256=aurYuuM-JtRCnnRQvj1Pb6puLDukYmCQCNUPcHYRCCQ,6945
+knowledge_engineer/version.py,sha256=JeQRQgWH1CqGsrjY8ltnBCtLPfSvajklPTYV0aPPQa8,360
+knowledge_engineer-0.7.5.dist-info/LICENSE,sha256=L9LiDmHn1yVKr1TUbh_aUdbuGlWoheraYjLJye0GEiI,1071
+knowledge_engineer-0.7.5.dist-info/METADATA,sha256=MlDAuXmVv_yOis6c7VMSXgy1HUpKvJF1_jg00Fo0KcA,3039
+knowledge_engineer-0.7.5.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+knowledge_engineer-0.7.5.dist-info/entry_points.txt,sha256=S3AKxZ2CoT8zkOCQQSRLmbDSU_f75MlsnJ5tCoYdzhI,66
+knowledge_engineer-0.7.5.dist-info/top_level.txt,sha256=hTfm3grf1glqtB7mdwaFLsRP8vFWF2m_tLs-7IdbYYA,19
+knowledge_engineer-0.7.5.dist-info/RECORD,,
