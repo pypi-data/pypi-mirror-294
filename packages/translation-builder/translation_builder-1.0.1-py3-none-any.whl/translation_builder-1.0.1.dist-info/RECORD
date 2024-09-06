@@ -1,0 +1,10 @@
+translation_builder/__init__.py,sha256=QLClmCplfSWy-ixbZSDtM4mml0JNo25bbNY9t6uHe3I,280
+translation_builder/__main__.py,sha256=gDhERpN4-FT7Wmqtz-M430Iyefzhsh2dGKL3xp2mpAw,1530
+translation_builder/_builder.py,sha256=kGg3dpEJi9b6Ik0jIKz8q-zh97ibzNFu68dILC7mOrM,5706
+translation_builder/errors.py,sha256=vrLQ6d137C5emLeWaA1IeE4PKQyT1aaQ3lggH3W2lcA,759
+translation_builder-1.0.1.dist-info/LICENSE,sha256=c2ZqXzKjRG_D0z5clgGXwoQplTqBE4BImdQW-VzwSWc,11339
+translation_builder-1.0.1.dist-info/METADATA,sha256=-jgqhSj6MEW0D3UULGsQ8H9KYM20GTWSAOoxeS2Dmm0,2667
+translation_builder-1.0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+translation_builder-1.0.1.dist-info/entry_points.txt,sha256=YHebrfU_2Ula4YkcQHhY9ebMrwurZ84q2BkjkRrZveQ,68
+translation_builder-1.0.1.dist-info/top_level.txt,sha256=-idGbAPd4UgHnPPBd10S1QXyBnmkLFoyS2BsDKcUWsE,20
+translation_builder-1.0.1.dist-info/RECORD,,
