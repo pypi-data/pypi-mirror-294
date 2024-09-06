@@ -1,0 +1,16 @@
+mlplay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlplay/helloml.py,sha256=xEdXH2KSwoD4QX-awrkiZ5lnbNSfx1ibrIe5LRWPGW0,38
+mlplay/test.py,sha256=31RB9uII36N2u25ZF2CmzQJ4UCLLj3wnSiosREa8gLs,33
+mlplay/cv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlplay/going_modular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlplay/going_modular/engine.py,sha256=PhtdonFORuSfAompXVPHM7FmUG02oyKvxHy4d2yGAVc,6865
+mlplay/going_modular/helper_functions.py,sha256=OiW5ZZsg8nZmi2W4tk7wBfCQ9gxi5VQr4d3x5fgtLPQ,6412
+mlplay/going_modular/model_builder.py,sha256=gXupl3ZaGjZRywHv_vC8oihPrIkNkNCzWcH_Xp9tt6k,2107
+mlplay/going_modular/predictions.py,sha256=ZPQxonQ1P4Ev2FmpBG55QB44yGsxoZAt1aCmI69zI5Q,3079
+mlplay/going_modular/train.py,sha256=oksfk4jN5gghlhOL9xbx_VhY9S4kP7XsC7S7YZ5VWrI,1634
+mlplay/going_modular/utils.py,sha256=X6apA8CxgEumXcqE_tdPcj88tjwO4RD-YCUaGVyASrg,1163
+mlplay-0.0.4.dist-info/LICENSE,sha256=VUJ_ArfAu0qIMeCQ3X2L7-e4j0JbNF9DYxM9Tc1W45I,1068
+mlplay-0.0.4.dist-info/METADATA,sha256=ddsvjDW2xZE4f19SkFVV7Pw8kRgsHqp1RQWDvgviou0,550
+mlplay-0.0.4.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+mlplay-0.0.4.dist-info/top_level.txt,sha256=vqDbEpbVUlRE-0yMTwKmR5XOf2Q9SyJrNsqP2eypzgE,7
+mlplay-0.0.4.dist-info/RECORD,,
