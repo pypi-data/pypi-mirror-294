@@ -1,0 +1,12 @@
+drf_recaptcha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_recaptcha/apps.py,sha256=yaXboSMrUJAiy_zFW6Lkxe83-bseipxsArsOsW-hLtg,262
+drf_recaptcha/checks.py,sha256=lDs6xY45udrxvmzk7x-BnWr1Dr_S1ql76IdlGd_eziw,1146
+drf_recaptcha/client.py,sha256=CRokE7Uld18W-3Th0sHrkMVlqGVBtwOCtdq2PfZnnzo,1665
+drf_recaptcha/constants.py,sha256=IrfJZC-wT43iIt-PI04qGQL6AUeKejlyFsYCFl_zk-U,697
+drf_recaptcha/fields.py,sha256=-AAkB_fEX3cWe-0O_MGvcFxaoCbaOohPrsFL0idi7a4,3652
+drf_recaptcha/validators.py,sha256=j85dD34zpiVJ4MQO3UxjYyH2Oagzlf3t0lIVQbLz_Oo,5425
+drf_recaptcha-3.2.0.dist-info/LICENSE.md,sha256=llxx7Je1nQxCmPmSNZmtKPVrFRx9IMXEr_W3Tt19qWg,1066
+drf_recaptcha-3.2.0.dist-info/METADATA,sha256=PBE7RND3wryAL3STC0aIQz0PVY2JztESqutsfA9x9UA,7390
+drf_recaptcha-3.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+drf_recaptcha-3.2.0.dist-info/top_level.txt,sha256=xu-JIpEQhXwP9aNr6ztYf2IBe3QWLoGjmaZW0Lb7V2c,14
+drf_recaptcha-3.2.0.dist-info/RECORD,,
