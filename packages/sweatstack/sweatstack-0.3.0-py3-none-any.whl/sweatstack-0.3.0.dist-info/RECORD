@@ -1,0 +1,12 @@
+sweatstack/__init__.py,sha256=tiVfgKlswRPaDMEy0gA7u8rveqEYZTA_kyB9lJ3J6Sc,21
+sweatstack/cli.py,sha256=dYgvMOSGFC5ol_Z_2DYSOdNPQlHGsRIfh4y4qCmBLME,712
+sweatstack/client.py,sha256=hiNm6afA-ZQ9cKWc6GQFuYKc5HvkGVOiibZUhcpbvVs,14906
+sweatstack/ipython_init.py,sha256=zBGUlMFkdpLvsNpOpwrNaKRUpUZhzaICvH8ODJgMPcI,229
+sweatstack/jupyterlab_oauth2_startup.py,sha256=o7nhZw0tu-3BuScipx04BtQJt8TErk8Lva4E8_wJrRg,148
+sweatstack/plotting.py,sha256=qEgHOYrofNJZh-wuJlw1kyZMpnMNjEZ4dVDsk80Ukt8,5929
+sweatstack/schemas.py,sha256=OFKl_ghbJ2yI_GgyW96NaXgh4aRf362i51FXnB_GRQk,6237
+sweatstack/sweatshell.py,sha256=MYLNcWbOdceqKJ3S0Pe8dwHXEeYsGJNjQoYUXpMTftA,333
+sweatstack-0.3.0.dist-info/METADATA,sha256=sGCzgM_3S38gUMJ72lgANZI-ugE0uZDbOZhMdPog8os,7683
+sweatstack-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sweatstack-0.3.0.dist-info/entry_points.txt,sha256=kCzOUQI3dqbTpEYqtgYDeiKFaqaA7BMlV6D24BMzCFU,208
+sweatstack-0.3.0.dist-info/RECORD,,
