@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tfds
+Version: 0.3
+Summary: 
+Author: tdfalc
+Author-email: tomdfalc@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black (>=24.8.0,<25.0.0)
+Requires-Dist: cloudpickle (>=3.0.0,<4.0.0)
+Requires-Dist: coveralls (>=4.0.1,<5.0.0)
+Requires-Dist: matplotlib (>=3.9.1.post1,<4.0.0)
+Requires-Dist: pytest (>=8.3.2,<9.0.0)
+Requires-Dist: pytest-cov (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# [tfds](https://github.com/tdfalc/tfds)
+
+[![Test Status](https://github.com/tdfalc/tfds/actions/workflows/coveralls.yml/badge.svg)](https://github.com/tdfalc/tfds/actions/workflows/coveralls.yml)
+[![Coverage Status](https://coveralls.io/repos/github/tdfalc/tfds/badge.svg?branch=main&service=github)](https://coveralls.io/github/tdfalc/tfds?branch=main)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Useful data science-y stuff :dizzy:
+
+```
+pip install tfds
+```

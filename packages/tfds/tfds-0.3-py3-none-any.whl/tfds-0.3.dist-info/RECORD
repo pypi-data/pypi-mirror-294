@@ -1,0 +1,7 @@
+tfds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfds/decorators.py,sha256=67GLi52uRPAXdrNRtforDmiTvWtbZsaYodNCleX-hLE,2921
+tfds/log.py,sha256=p3iYw_yzfYWm8IZvZisExH4KRixK0yjZD2EDcB_Rf94,610
+tfds/plotting.py,sha256=A4rYLWtWqPKtLm22wX4Ppd4zab1Yo502dMKcE_XKLUQ,2002
+tfds-0.3.dist-info/METADATA,sha256=CHLifVVz6fhBa0-T9kkixkZR9JbKkJ-49ajeHT1yfyo,1113
+tfds-0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tfds-0.3.dist-info/RECORD,,
