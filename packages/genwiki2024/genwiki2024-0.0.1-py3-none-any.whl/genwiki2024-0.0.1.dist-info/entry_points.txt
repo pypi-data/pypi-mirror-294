@@ -1,0 +1,2 @@
+[console_scripts]
+genwiki = genwiki.genwiki_cmd:main
