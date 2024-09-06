@@ -1,0 +1,470 @@
+apps:
+  nodejs-goof:
+    repo: 'https://github.com/vulnerable-apps/nodejs-goof'
+    language: js
+    github_stars: 485
+    provided_swagger_file: ""
+    skip_endpoints:
+    - path: '/destroy/:id'
+      method: GET
+      description: Destroy an endpoint
+  juice-shop:
+    repo: 'https://github.com/juice-shop/juice-shop'
+    language: js
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/juice-shop/master/swagger.yml"
+    github_stars: 8900
+    skip_endpoints:
+      - path: '/file-upload'
+        method: POST
+        description: Upload a file
+      - path: '/profile/image/file'
+        method: POST
+        description: Upload a file
+# ---------------------------------------------------------------------------------------------------------------------
+# Go net/http
+# ---------------------------------------------------------------------------------------------------------------------
+  crAPI-go:
+    repo: https://github.com/vulnerable-apps/crAPI
+    provided_swagger_file: "https://raw.githubusercontent.com/vulnerable-apps/crAPI/develop/openapi-spec/openapi-spec.json"
+    language: go
+    github_stars: 840
+    subdirectory: services/community
+    exclude_paths:
+      - "/identity/*"
+      - "/community/*"
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Flask
+# ---------------------------------------------------------------------------------------------------------------------
+
+  # 1.0.0
+  cert-viewer-flask:
+    repo: https://github.com/blockchain-certificates/cert-viewer
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/flask/flask-1.0/cert-viewer.yaml"
+    language: python
+    github_stars: 85
+
+  # 3.0.0
+  a-flaskrestful-api:
+    repo: https://github.com/api-extraction-examples/a-flaskrestful-api
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/a-flaskrestful-api/main/openapi-spec.yaml"
+    language: python
+    github_stars: 0
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Django 4
+# ---------------------------------------------------------------------------------------------------------------------
+  wger-django:
+    repo: https://github.com/api-extraction-examples/wger
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/wger.yaml"
+    language: python
+    github_stars: 2500
+
+  netbox-django:
+    repo: https://github.com/api-extraction-examples/netbox
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/NetBox.yaml"
+    language: python
+    github_stars: 13500
+    subdirectory: netbox
+
+  defect-dojo-django:
+    repo: https://github.com/api-extraction-examples/django-DefectDojo
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/defectdojo.json"
+    language: python
+    github_stars: 3100
+
+  django-crm:
+    repo: https://github.com/api-extraction-examples/Django-CRM
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/Django-CRM/master/schema.yaml"
+    language: python
+    github_stars: 1700
+
+  intelowl-django:
+    repo: https://github.com/api-extraction-examples/IntelOwl
+    github_stars: 3000
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/intel-owl.yml
+
+  karrio-django:
+    repo: https://github.com/api-extraction-examples/karrio
+    github_stars: 381
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/karrio.yml
+
+  mathesar-django:
+    repo: https://github.com/api-extraction-examples/mathesar
+    github_stars: 2000
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/mathesar.yml
+
+  greater-wms-django:
+    repo: https://github.com/api-extraction-examples/GreaterWMS
+    github_stars: 3400
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/greater-wms.yml
+
+  Inventree-django:
+    repo: https://github.com/api-extraction-examples/InvenTree
+    github_stars: 3400
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/InvenTree.yaml
+    include_path_params: true
+
+  help-desk-service-django:
+    repo: https://github.com/api-extraction-examples/help-desk-service
+    github_stars: 3
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/help-desk-service/main/schema.yml
+
+  libretime-django:
+    repo: https://github.com/api-extraction-examples/libretime
+    github_stars: 725
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/libretime/main/api/schema.yml
+
+  medileaf-backend:
+    repo: https://github.com/api-extraction-examples/MediLeaf_backend
+    github_stars: 0
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/MediLeaf_backend/main/schema.yml
+
+  librephotos-django:
+    repo: https://github.com/api-extraction-examples/librephotos
+    github_stars: 6300
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-4/librephotos.yml
+
+  # TODO: Add this one: https://github.com/libretime/libretime
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Django 3
+# ---------------------------------------------------------------------------------------------------------------------
+  posthog-django:
+    repo: https://github.com/api-extraction-examples/posthog
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-3/posthog.yml"
+    language: python
+    github_stars: 14400
+
+  crAPI-python:
+    repo: https://github.com/vulnerable-apps/crAPI
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/f213d0444966e81fec68b8a99f800be2a33a4dd1/django/django-3/crAPI.json"
+    language: python
+    github_stars: 840
+    exclude_paths:
+      - "/community/*"
+      - "/identity/*"
+
+  cpa-network-django:
+    repo: https://github.com/api-extraction-examples/cpa-network
+    github_stars: 4
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/django/django-3/cpa-network.yml
+
+  # Another failed case (Django 3)
+  # https://github.com/GeoNode/geonode
+
+  argus-eye-django:
+    repo: https://github.com/api-extraction-examples/Eye
+    github_stars: 6
+    language: python
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/Eye/master/docs/schema.yml
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Java Spring
+# ---------------------------------------------------------------------------------------------------------------------
+  javaspringvulny:
+    repo: https://github.com/vulnerable-apps/javaspringvulny
+    provided_swagger_file: "https://raw.githubusercontent.com/vulnerable-apps/javaspringvulny/main/openapi.yaml"
+    language: spring
+    github_stars: 11
+    include_path_params: true
+
+  crAPI-spring:
+    repo: https://github.com/vulnerable-apps/crAPI
+    provided_swagger_file: "https://raw.githubusercontent.com/vulnerable-apps/crAPI/develop/openapi-spec/openapi-spec.json"
+    language: spring
+    github_stars: 840
+    include_path_params: true
+    exclude_paths:
+      - "/community/*"
+      - "/workshop/*"
+
+  apereo-cas:
+    repo: https://github.com/api-extraction-examples/cas
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/spring/spring-boot-3.2/cas-web-app.json"
+    language: spring
+    github_stars: 10400
+    include_path_params: true
+    exclude_paths:
+      - "/actuator*"
+
+  Angular-SpringBoot-REST-JWT:
+    repo: https://github.com/mrin9/Angular-SpringBoot-REST-JWT
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/Angular-SpringBoot-REST-JWT/master/docs/api-docs-swagger-angular-springboot.yml
+    language: spring
+    github_stars: 721
+    include_path_params: true
+
+  thingsboard:
+    repo: https://github.com/api-extraction-examples/thingsboard
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/spring/spring-boot-2.7/thingsboard.yaml
+    language: spring
+    github_stars: 14700
+    include_path_params: true
+
+  Spring-boot-Banking:
+    repo: https://github.com/api-extraction-examples/Spring-boot-Banking
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/c3d4b48e797d35a5e116bb975e6dad174043b33b/spring/spring-boot-2.7/Spring-boot-Banking.yaml
+    language: spring
+    github_stars: 141
+    include_path_params: true
+    exclude_paths:
+      - "/error"
+
+  Netflix-Conductor:
+    repo: https://github.com/api-extraction-examples/conductor
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/da66d8a6087a21d1bd84baf7623448b4930dd738/spring/spring-boot-2.7/netflix-conductor-api-docs.yaml
+    language: spring
+    github_stars: 13000
+    include_path_params: true
+
+  ZHENFENG13-My-Blog:
+    repo: https://github.com/api-extraction-examples/ZHENFENG13-My-Blog
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/spring/spring-boot-2.7/ZHENFENG13-My-Blog.yaml
+    language: spring
+    github_stars: 3400
+
+  Newbee-Mall:
+    repo: https://github.com/api-extraction-examples/newbee-mall
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/spring/spring-boot-2.7/newbee-mall.yaml
+    language: spring
+    github_stars: 10600
+
+  Alibaba-Nacos:
+    repo: https://github.com/api-extraction-examples/nacos
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/207e815c9da6528f7e31a82d85f820846ef8a1bf/spring/spring-boot-2.7/alibaba-nacos.yaml
+    language: spring
+    github_stars: 28300
+
+  VulnerableApp:
+    repo: https://github.com/vulnerable-apps/VulnerableApp
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/root-route-only.yml
+    language: spring
+    github_stars: 285
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Express 4
+# ---------------------------------------------------------------------------------------------------------------------
+  dvws-node:
+    repo: https://github.com/vulnerable-apps/dvws-node
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/express/express-4/dvws-node.json
+    language: js
+    github_stars: 370
+
+  # StackHawk suggests swagger-jsdoc which is not the best way to do it these days.
+  # Apparently the best one is swagger-autogen / https://swagger-autogen.github.io/docs/getting-started/quick-start
+  # based on this blog. https://santoshg-70321.medium.com/best-packages-to-build-swagger-documentation-automatically-with-minimal-efforts-in-node-js-a33d6b6d6b88
+  # So to find examples, I am just searching this: https://github.com/search?q=swagger-autogen+path%3Apackage.json&type=code
+  infisicial:
+    repo: https://github.com/api-extraction-examples/infisical
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/infisical/main/backend/spec.json"
+    language: js
+    github_stars: 10200
+
+  cve-services:
+    repo: https://github.com/api-extraction-examples/cve-services
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/cve-services/with-api-prefix/api-docs/openapi.json
+    language: js
+    github_stars: 120
+
+  # Support sofa-api https://nightvision.atlassian.net/browse/NV-2465
+  # SpaceXLand:
+  #   repo: https://github.com/api-extraction-examples/SpaceXLand-api
+  #   provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/SpaceXLand-api/master/swagger.json"
+  #   language: js
+  #   github_stars: 200
+
+  blockchain-explorer:
+    repo: https://github.com/api-extraction-examples/blockchain-explorer
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/blockchain-explorer/main/app/swagger.json
+    language: js
+    github_stars: 1400
+
+  express-anything-llm:
+    repo: https://github.com/api-extraction-examples/anything-llm
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/anything-llm/with-api-prefix/server/swagger/openapi.json
+    language: js
+    github_stars: 12400
+
+  valetudo:
+    repo: https://github.com/api-extraction-examples/Valetudo
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/express/express-4/valetudo.json
+    language: js
+    github_stars: 6000
+
+  kubero:
+    repo: https://github.com/api-extraction-examples/kubero
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/kubero/without-security-in-swagger/swagger.json
+    language: "js"
+    github_stars: 1700
+
+  hypertube:
+    repo: https://github.com/api-extraction-examples/Hypertube
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/Hypertube/develop/src/server/api/swagger.json
+    language: js
+    github_stars: 11
+
+  # The swagger spec for express-rest-boilerplate was generated with our excavator.
+  # The original one is available but not in JSON format, and the paths there are wrong - not with prefixes.
+  # Therefore, keeping the one we generated for our own statistics will be better.
+  nodejs-api-showcase:
+    repo: https://github.com/api-extraction-examples/nodejs-api-showcase
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/nodejs-api-showcase/with-openapi/openapi.yml
+    language: js
+    github_stars: 244
+
+  express-rest-boilerplate:
+    repo: https://github.com/dnighvn/express-rest-boilerplate
+    provided_swagger_file: https://raw.githubusercontent.com/dnighvn/express-rest-boilerplate/v2/openapi.yaml
+    language: js
+    github_stars: 2306
+
+# ---------------------------------------------------------------------------------------------------------------------
+# .NET 8
+# ---------------------------------------------------------------------------------------------------------------------
+  jellyfin:
+    repo: https://github.com/NightVisionExamples/jellyfin
+    provided_swagger_file: "https://gist.githubusercontent.com/kmcquade/be7a19b5ee320a11e81078758c171261/raw/de00375dd246de6aa5a7c2bbf9b9423de7fda1e2/jellyfin-openapi-stable.json"
+    language: dotnet
+    github_stars: 26400
+
+  altinn-studio:
+    repo: https://github.com/Altinn/altinn-studio
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/altinn-studio.json"
+    language: dotnet
+    github_stars: 102
+
+  bitwarder-server:
+    repo: https://github.com/bitwarden/server
+    provided_swagger_file: "https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/bitwarden-server.json"
+    language: dotnet
+    github_stars: 14200
+    include_path_params: true
+
+  eshop-catalog-api:
+    repo: https://github.com/api-extraction-examples/eShop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/eShop/catalog-api.json
+    language: dotnet
+    github_stars: 1500
+    subdirectory: src/Catalog.API
+
+  eshop-ordering-api:
+    repo: https://github.com/api-extraction-examples/eShop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/eShop/ordering-api.json
+    language: dotnet
+    github_stars: 1500
+    subdirectory: src/Ordering.API
+
+  eshop-webhooks-api:
+    repo: https://github.com/api-extraction-examples/eShop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/eShop/webhooks-api.json
+    language: dotnet
+    github_stars: 1500
+    subdirectory: src/Webhooks.API
+
+  universalis:
+    repo: https://github.com/Universalis-FFXIV/Universalis
+    provided_swagger_file: https://universalis.app/swagger/v1/swagger.yaml
+    language: dotnet
+    github_stars: 1500
+
+  dotnet-kavita:
+    repo: https://github.com/Kareadita/Kavita
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/kavita.json
+    language: dotnet
+    github_stars: 4900
+
+  edwinvw-pitstop-vehicles:
+    repo: https://github.com/EdwinVW/pitstop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/pitstop/vehicles.json
+    language: dotnet
+    github_stars: 1100
+    subdirectory: src/VehicleManagementAPI
+
+  edwinvw-pitstop-workshop:
+    repo: https://github.com/EdwinVW/pitstop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/pitstop/workshop.json
+    language: dotnet
+    github_stars: 1100
+    subdirectory: src/WorkshopManagementAPI
+
+  edwinvw-pitstop-customers:
+    repo: https://github.com/EdwinVW/pitstop
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/pitstop/customers.json
+    language: dotnet
+    github_stars: 1100
+    subdirectory: src/CustomerManagementAPI
+
+  featbit:
+    repo: https://github.com/featbit/featbit
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/featbit.json
+    language: dotnet
+    github_stars: 1300
+
+  wallet-wasabi:
+    repo: https://github.com/zkSNACKs/WalletWasabi
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/dotnet-8/wallet-wasabi.json
+    language: dotnet
+    github_stars: 2000
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# aspnetcore2
+# ---------------------------------------------------------------------------------------------------------------------
+  dvcsharp-api:
+    repo: https://github.com/appsecco/dvcsharp-api
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/dotnet/aspnetcore2/dvcsharp-api.json
+    language: dotnet
+    github_stars: 57
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# ruby on rails
+# ---------------------------------------------------------------------------------------------------------------------
+  rails-openfoodnetwork:
+    repo: https://github.com/openfoodfoundation/openfoodnetwork
+    provided_swagger_file: "https://raw.githubusercontent.com/openfoodfoundation/openfoodnetwork/master/swagger/v1.yaml"
+    language: ruby
+    github_stars: 1100
+
+  zealot:
+    repo: https://github.com/tryzealot/zealot
+    provided_swagger_file: "https://raw.githubusercontent.com/tryzealot/zealot/develop/swagger/v1/swagger_en.json"
+    language: ruby
+    github_stars: 1100
+
+  uffizzi:
+    repo: https://github.com/UffizziCloud/uffizzi
+    provided_swagger_file: "https://raw.githubusercontent.com/UffizziCloud/uffizzi/develop/core/swagger/v1/swagger.json"
+    language: ruby
+    github_stars: 319
+
+  railsgoat:
+    repo: https://github.com/vulnerable-apps/railsgoat
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/root-route-only.yml
+    language: ruby
+    github_stars: 862
+
+  gitlab:
+    repo: https://gitlab.com/gitlab-org/gitlab/
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/rails/rails-7/gitlab.yaml
+    language: ruby
+    github_stars: 100000
+    include_path_params: true
+
+  gitlab-v2:
+    repo: https://gitlab.com/gitlab-org/gitlab/
+    provided_swagger_file: https://raw.githubusercontent.com/api-extraction-examples/existing-openapi-specs/main/rails/rails-7/gitlab-v2-converted.yaml
+    language: ruby
+    github_stars: 100000
+    include_path_params: true

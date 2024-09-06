@@ -1,0 +1,70 @@
+# API Extraction Summary
+
+{{ summary_description }}
+
+# New/Deleted/Modified Endpoints
+
+| Language 🛠️                       | Repository 💿                                                                                                 | Success Rate ✨ | GitHub Stars ⭐️                               | Discovered 🚀 | Not Discovered ❌ | Partial ℹ️ | Unique ✅ | Seconds 🕚 |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------|----|-----------------------------------------------|-------------------------------------------|--------------|--------------------------------------------------------|----------------------------------------------------------|---------------------------------------|{% for repository_data in report_data %}
+| {{ repository_data['language'] }} | [{{ repository_data['owner'] }}/{{ repository_data['repo_name'] }}]({{ repository_data['repository_url'] }}) {% if repository_data['subdirectory'] is not none %}({{ repository_data['subdirectory'] }}) {% endif %} | {{ repository_data['success_rate_string'] }}% | {{ repository_data['github_stars'] }}         | {{ repository_data['total_discovered'] }} | {{ repository_data['deleted_endpoints'] | list_length }} | {{ repository_data['modified_endpoints'] | list_length }} | {{ repository_data['added_endpoints'] | list_length }} | {{ repository_data['elapsed_time'] }} |{% endfor %}
+
+
+# Endpoint Details
+
+This section outlines GitHub repositories that we analyzed and the endpoints that we found. We also include the original Swagger doc for reference.
+
+**Definitions**:
+* **Unique**: Endpoints that we discovered that were not in the original Swagger doc.
+* **Discovered**: NightVision discovered these endpoints by scanning the code.
+* **Undiscovered**: Endpoints that were in the original Swagger doc that we did **not** discover.
+* **Partial**: Endpoints that we discovered that were in the original Swagger doc, but we did not discover all the details (e.g. parameters, response codes, etc.).
+
+{% for repository_data in report_data %}
+
+## [{{ repository_data['owner'] }}/{{ repository_data['repo_name'] }}{% if repository_data['subdirectory'] is not none %} ({{ repository_data['subdirectory'] }}) {% endif %}]({{ repository_data['repository_url'] }})
+
+![Success Rate](https://img.shields.io/badge/Success%20Rate-{{ repository_data['success_rate_string'] }}%25-green)
+[![Discovered Endpoints](https://img.shields.io/badge/Discovered-{{ repository_data['total_discovered'] }}-brightgreen?logo=rocket)]()
+[![Undiscovered Endpoints](https://img.shields.io/badge/Undiscovered-{{ repository_data['deleted_endpoints'] | list_length }}-red)]()
+[![Unique NV Endpoints](https://img.shields.io/badge/Unique-{{ repository_data['added_endpoints'] | list_length }}-green)]()
+[![Partial Endpoints](https://img.shields.io/badge/Partial-{{ repository_data['modified_endpoints'] | list_length }}-yellow)]()
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?logo=github)]({{ repository_data['repository_url'] }})
+[![Swagger](https://img.shields.io/badge/Swagger-Original-darkgreen?logo=swagger)]({{ repository_data['provided_swagger_file'] }})
+
+**Language**: {{ repository_data['language'] }}
+
+**Subdirectory**: {{ repository_data['subdirectory'] }}
+
+{% if repository_data['added_endpoints'] | list_length > 0 %}
+<details>
+  <summary>Show <b>Discovered 🚀</b> Endpoints ({{ repository_data['total_discovered'] }})</summary>
+
+```diff{% for endpoint in repository_data['added_endpoints'] %}
++ {{ endpoint['method'] }}: {{ endpoint['path'] }}{% endfor %}{% for endpoint in repository_data['modified_endpoints'] %}
+! {{ endpoint['method'] }}: {{ endpoint['path']}} (Parameters: ({{ endpoint['parameters'] }}){% endfor %}
+```
+
+</details>
+
+{% else %}
+
+**No new endpoints found.**
+
+{% endif %}
+
+{% if repository_data['deleted_endpoints'] | list_length > 0 %}
+<details>
+  <summary>Show <b>Undiscovered ❌</b> Endpoints ({{ repository_data['deleted_endpoints'] | list_length }})</summary>
+
+```diff{% for endpoint in repository_data['deleted_endpoints'] %}
+- {{ endpoint['method'] }}: {{ endpoint['path'] }}{% endfor %}
+```
+
+</details>
+
+{% else %}
+**No undiscovered endpoints 🙌**
+
+{% endif %}
+
+{% endfor %}
