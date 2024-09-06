@@ -1,0 +1,9 @@
+fairscape-cli==0.2.0
+ndex2<4.0.0,>=3.8.0
+scipy
+scikit-learn
+pandas
+numpy
+dill
+tqdm
+requests
