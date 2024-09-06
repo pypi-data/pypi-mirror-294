@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: simplesat
+Version: 0.9.0
+Summary: Simple SAT solvers for use in Enstaller
+Home-page: https://github.com/enthought/sat-solvers
+Author: Enthought, Inc
+Author-email: info@enthought.com
+License-File: LICENSE.txt
