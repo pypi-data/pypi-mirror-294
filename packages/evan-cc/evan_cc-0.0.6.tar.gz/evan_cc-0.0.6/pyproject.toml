@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evan-cc"
+description = "Evan's Cookiecutter"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Evan Sizemore", email = "evan@wool.homes" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+]
+dynamic = ["version", "dependencies"]
+
+[project.scripts]
+evan-cc = "evan_cc:main"
+
+# ==== Dependencies ====
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+version = { attr = "evan_cc.__version__" }
+
+
+# ==== pytest ====
+[tool.pytest.ini_options]
+addopts = "-v --tb=short"
+norecursedirs = [
+    ".tox",
+    ".git",
+    "*/migrations/*",
+    "*/static/*",
+    "docs",
+    "venv",
+    "*/{{cookiecutter.project_slug}}/*",
+]
+
+
+# ==== black ====
+[tool.black]
+line-length = 119
+target-version = ['py312']
+
+
+# ==== isort ====
+[tool.isort]
+profile = "black"
+line_length = 119
+known_first_party = ["tests", "scripts", "hooks"]
+
+
+# ==== djLint ====
+[tool.djlint]
+blank_line_after_tag = "load,extends"
+close_void_tags = true
+format_css = true
+format_js = true
+# TODO: remove T002 when fixed https://github.com/Riverside-Healthcare/djLint/issues/687
+ignore = "H006,H030,H031,T002,T028"
+ignore_blocks = "raw"
+include = "H017,H035"
+indent = 2
+max_line_length = 119
+profile = "jinja"
+
+[tool.djlint.css]
+indent_size = 2
+
+[tool.djlint.js]
+indent_size = 2
