@@ -1,0 +1,11 @@
+jetmaker/__init__.py,sha256=erXT_MNat93jX54NgbDIqePALVCp-Znmn5ZxwfVZKL8,6488
+jetmaker/head.py,sha256=-BNZXAGQ45XqGctTEILfEPNb0zxcwMQpjcAmR5c9zh8,4446
+jetmaker/networking.py,sha256=ndpYhRNHmVENs-Wg78kkRLYvczl-ucDWpexypU3L318,541
+jetmaker/newserve/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jetmaker/newserve/main.py,sha256=F1_TkNsyq8WKtPAlE-AUoAEc60ZbjP-Yxf94wpGXedI,2638
+jetmaker/newserve/setup.py,sha256=oBN-XKiGW8q2-0UCSDz0JL0YhIL6YCqadr2COid-CXg,220
+jetmaker-0.12.dist-info/LICENSE,sha256=cYLyMJ0R6-j8pT-iXdiw6cI4AQaqg4jn4YTEhUGtNAo,1066
+jetmaker-0.12.dist-info/METADATA,sha256=oybd22WTXotkCVMjrjFogrbPmw0qVx3IUrINyc0RxQs,2695
+jetmaker-0.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jetmaker-0.12.dist-info/top_level.txt,sha256=d9Ea4ik6TjH0MAfKOzMeGolHhxszSbc_1XD0OUD4ABU,9
+jetmaker-0.12.dist-info/RECORD,,
