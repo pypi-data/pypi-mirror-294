@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: anndata-tensorstore
+Version: 1.0.2
+Summary: Anndata Tensorstore Extension: Save and Load anndata to/from Tensorstore for random access
+Home-page: https://github.com/xueziwei/anndata-tensorstore
+Author: Ziwei Xue
+Author-email: xueziweisz@gmail.com
+Description-Content-Type: text/plain
+Requires-Dist: anndata
+Requires-Dist: tensorstore
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
