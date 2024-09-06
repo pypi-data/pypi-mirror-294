@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+InMemoryCache.egg-info/PKG-INFO
+InMemoryCache.egg-info/SOURCES.txt
+InMemoryCache.egg-info/dependency_links.txt
+InMemoryCache.egg-info/top_level.txt
+cache/__init__.py
+cache/_cache.py
