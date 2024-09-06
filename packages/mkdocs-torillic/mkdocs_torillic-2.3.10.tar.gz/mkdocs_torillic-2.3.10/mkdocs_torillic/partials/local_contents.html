@@ -1,0 +1,13 @@
+
+{# add heading #}
+<h4>Contents</h4>
+{# add child pages #}
+<blockquote style="break-inside: avoid;">
+{% for item in page.parent.children %}
+    {% if item != page.parent.children[0] %}
+    <li>
+        <a href="{% if item.is_section %}{{ item.children[0].url | url }}{% else %}{{ item.url | url }}{% endif %}">{{ item.title }}</a>
+    </li>
+    {% endif %}
+{% endfor %}
+</blockquote>
