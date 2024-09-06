@@ -1,0 +1,234 @@
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "letsql"
+dynamic = ["version"]
+dependencies = [
+    "ibis-framework==9.0.0 ; python_version >= '3.10' and python_version < '4.0'",
+    "dask==2024.8.0 ; python_version >= '3.10' and python_version < '4.0'",
+    "attrs>=23.2.0,<25; python_version >= '3.10' and python_version < '4.0'",
+    "connectorx>=0.3.2,<0.4.0 ; python_version >= '3.10' and python_version < '4.0'",
+    "psycopg2-binary>=2.9.9,<3 ; python_version >= '3.10' and python_version < '4.0'",
+    "sqlalchemy>=2.0.29,<3 ; python_version >= '3.10' and python_version < '4.0'",
+    "pyarrow>=13.0.0,<18 ; python_version >= '3.10' and python_version < '4.0'",
+    "structlog>=24.2.0,<25 ; python_version >= '3.10' and python_version < '4.0'",
+    "pytest-mock>=3.14.0,<4 ; python_version >= '3.10' and python_version < '4.0'",
+    "cityhash>=0.4.7,<1 ; python_version >= '3.10' and python_version < '4.0'",
+]
+requires-python = ">=3.7"
+authors = [
+    { name = "Hussain Sultan", email = "hussain@letsql.com" },
+]
+maintainers = [
+    { email = "Dan Lovell <dan@letsql.com>" },
+    { email = "Daniel Mesejo <mesejo@letsql.com>" },
+]
+description = "Data processing library built on top of Ibis and DataFusion to write multi-engine data workflows."
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Database :: Database Engines/Servers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+
+[project.urls]
+Homepage = "https://www.letsql.com/"
+Repository = "https://github.com/letsql/letsql.git"
+Issues = "https://github.com/letsql/letsql/issues"
+Changelog = "https://github.com/letsql/letsql/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+duckb = [
+    "duckdb>=0.10.3,<2 ; python_version >= '3.10' and python_version < '4.0'"
+]
+datafusion = [
+    "datafusion>=34.0.0,<40 ; python_version >= '3.10' and python_version < '4.0'"
+]
+snowflake = [
+    "snowflake-connector-python>=3.10.1,<4 ; python_version >= '3.10' and python_version < '4.0'"
+]
+examples = [
+    "fsspec>=2024.6.1,<2024.6.2 ; python_version >= '3.10' and python_version < '4.0'",
+    "pins[gcs]>=0.8.3,<1 ; python_version >= '3.10' and python_version < '4.0'",
+    "xgboost >=1.6.1 ; python_version >= '3.10' and python_version < '4.0'",
+    "duckdb >=0.10.3,<2 ; python_version >= '3.10' and python_version < '4.0'"
+]
+
+[project.entry-points."letsql.backends"]
+let = "letsql.backends.let"
+postgres = "letsql.backends.postgres"
+snowflake = "letsql.backends.snowflake"
+
+
+[tool.maturin]
+module-name = "letsql._internal"
+python-source = "python"
+features = ["pyo3/extension-module"]
+
+[tool.codespell]
+skip = "*.lock,.direnv,.git,docs/_freeze/**/html.json"
+ignore-regex = '\b(DOUB|i[if]f|I[IF]F|lamduh|AFE|crate|ba)\b'
+builtin = "clear,rare,names"
+
+[tool.poetry]
+name = "letsql"
+# this is just a placeholder https://github.com/tiangolo/poetry-version-plugin?tab=readme-ov-file#version-in-pyprojecttoml
+version = "0"
+description = ""
+authors = ["Hussain Sultan <hussain@letsql.com>", "Dan Lovell <dan@letsql.com>", "Daniel Mesejo <mesejo@letsql.com>"]
+packages = [
+	{ include = "letsql", from = "python" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+maturin = "^1.4.0"
+ibis-framework = "9.0.0"
+dask = "2024.8.0"
+attrs = "^23.2.0 || ^24.0.0"
+connectorx = "^0.3.2"
+psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.25"
+pyarrow = ">=13.0.0,<18"
+duckdb = {version = ">=0.10.3,<2", optional = true}
+snowflake-connector-python = {version = ">=3.10.1,<4", optional = true}
+datafusion = {version = ">=34.0.0,<40", optional = true}
+structlog = "^24.2.0"
+pytest-mock = "^3.14.0"
+pytest-snapshot = "^0.9.0"
+fsspec = { version = "<2024.6.2", optional = true }
+pins = { version = ">=0.8.3,<1", extras = ["gcs"], optional = true }
+xgboost = { version = ">=1.6.1", optional = true}
+cityhash = { version = ">=0.4.7,<1" }
+
+[tool.poetry.group.dev.dependencies]
+python = "^3.10"
+black = "24.4.2"
+blackdoc = "0.3.9"
+codespell = {version = "2.3.0", extras = ["hard-encoding-detection", "toml"]}
+coverage = {version = "7.6.1", extras = ["toml"]}
+git-cliff = "^2.2.1"
+ipython = "^8.19.0"
+pre-commit = "3.8.0"
+pytest = "8.0.2"
+pytest-cov = "5.0.0"
+ruff = "0.6.3"
+pillow = "^10.4.0"
+
+[tool.poetry.group.test.dependencies]
+python = "^3.10"
+scikit-learn = "^1.4.0"
+xgboost = ">=1.6.1"
+
+[tool.poetry.group.docs.dependencies]
+python = "^3.10"
+quartodoc = "^0.7.2"
+nbformat = "^5.10.4"
+nbclient = "^0.10.0"
+ipykernel = "^6.29.4"
+
+[tool.poetry.extras]
+datafusion = ["datafusion"]
+duckdb = ["duckdb"]
+snowflake = ["snowflake-connector-python"]
+examples = ["pins", "fsspec", "duckdb", "xgboost"]
+
+[tool.poetry.plugins."letsql.backends"]
+let = "letsql.backends.let"
+postgres = "letsql.backends.postgres"
+snowflake = "letsql.backends.snowflake"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # pandas 2.2 warnings
+    'ignore:DataFrameGroupBy\.apply operated on the grouping columns\. This behavior is deprecated:DeprecationWarning',
+    'ignore:Downcasting object dtype arrays on \.fillna, \.ffill, \.bfill is deprecated:FutureWarning',
+    # pandas 2.2 warnings coming directly from the way flink uses pandas
+    "ignore:Passing a BlockManager to DataFrame is deprecated:DeprecationWarning",
+    "ignore:.+ /workspace/src/objective/regression_obj.cu:UserWarning"
+]
+markers = [
+    "snowflake",
+    "library",
+    "s3"
+]
+
+
+[tool.git-cliff.changelog]
+header = """
+# Changelog\n
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n
+"""
+# template for the changelog body
+# https://keats.github.io/tera/docs/#introduction
+body = """
+{%- macro remote_url() -%}
+  https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}
+{%- endmacro -%}
+
+{% if version -%}
+    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else -%}
+    ## [Unreleased]
+{% endif -%}
+
+### Details\
+
+{% for group, commits in commits | group_by(attribute="group") %}
+    #### {{ group | upper_first }}
+    {%- for commit in commits %}
+        - {{ commit.message | upper_first | trim }}\
+            {% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}
+            {% if commit.github.pr_number %} in \
+              [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) \
+            {%- endif -%}
+    {% endfor %}
+{% endfor %}
+
+{%- if github.contributors | filter(attribute="is_first_time", value=true) | length != 0 %}
+  ## New Contributors
+{%- endif -%}
+
+{% for contributor in github.contributors | filter(attribute="is_first_time", value=true) %}
+  * @{{ contributor.username }} made their first contribution
+    {%- if contributor.pr_number %} in \
+      [#{{ contributor.pr_number }}]({{ self::remote_url() }}/pull/{{ contributor.pr_number }}) \
+    {%- endif %}
+{%- endfor %}\n
+"""
+trim = true
+
+
+[tool.git-cliff.git]
+conventional_commits = true
+filter_unconventional = true
+split_commits = false
+commit_preprocessors = [
+    { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "" },
+]
+commit_parsers = [
+    { message = "^.*: add", group = "Added" },
+    { message = "^.*: support", group = "Added" },
+    { message = "^.*: remove", group = "Removed" },
+    { message = "^.*: delete", group = "Removed" },
+    { message = "^test", group = "Fixed" },
+    { message = "^fix", group = "Fixed" },
+    { message = "^.*: fix", group = "Fixed" },
+    { message = "^.*", group = "Changed" },
+]
+protect_breaking_commits = false
+filter_commits = true
+tag_pattern = "v[0-9].*"
+topo_order = false
+sort_commits = "oldest"
