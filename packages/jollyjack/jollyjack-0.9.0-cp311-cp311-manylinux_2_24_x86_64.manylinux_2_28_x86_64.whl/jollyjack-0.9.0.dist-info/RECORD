@@ -1,0 +1,11 @@
+jollyjack-0.9.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jollyjack-0.9.0.dist-info/METADATA,sha256=n1QY-JBcRtxwGX7C8ASdL6xPrvp6zulOVIyaA7MGGyk,6811
+jollyjack-0.9.0.dist-info/top_level.txt,sha256=Z94XWzd8L_tHmjuV2fgg-ooHe6ca8jmdIGfweTJXnoQ,10
+jollyjack-0.9.0.dist-info/RECORD,,
+jollyjack-0.9.0.dist-info/WHEEL,sha256=WWAXRdoLBJAQazBX95teu8mrVUYKGOR28JZZg0Ccbk8,152
+jollyjack/jollyjack.h,sha256=LWK6rAhmpXrE0zxFk1sg45cxXJEttUmklpaqnmabUPQ,520
+jollyjack/jollyjack_cython.pyi,sha256=0qc4OtVC10SS48K3rLzKsnTjKMVatZBuY2-2a2XzyAY,2899
+jollyjack/cjollyjack.pxd,sha256=kSa8jAMQlchj0XCIHlMxB3_SNOhRrqaOgq4l3Sq5lp4,707
+jollyjack/jollyjack_cython.pyx,sha256=Eepa9wy6u-_AFTyzYfIvJ4etYE3wzKlhnlDL6J315tI,3612
+jollyjack/__init__.py,sha256=bI9tvcpfZ19v2LdI3pDTybuKmyqNSEedVew4mF7OVxI,118
+jollyjack/jollyjack_cython.cpython-311-x86_64-linux-gnu.so,sha256=dZUdYevuVzD4iUpOhwAOumWFllz3AZAMSy2YCxafOio,3734424
