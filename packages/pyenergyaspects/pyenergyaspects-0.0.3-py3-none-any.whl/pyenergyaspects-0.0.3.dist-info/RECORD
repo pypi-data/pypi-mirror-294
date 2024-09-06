@@ -1,0 +1,8 @@
+pyenergyaspects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyenergyaspects/eaapi.py,sha256=QOOHFWmG3u1hMR0kHozsqBix4j8jqEo0AzfG0crLe7g,10505
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_eaapi.py,sha256=gFk5CDwVXl2payi5kPW8ul447skwhSXAKY-gwGVr_T8,3741
+pyenergyaspects-0.0.3.dist-info/METADATA,sha256=mmJyvaa6Ddu_r4GtPmXG1CE95IfiX-_v7Uvv060SGzg,493
+pyenergyaspects-0.0.3.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pyenergyaspects-0.0.3.dist-info/top_level.txt,sha256=nv11NJTRdQSmvO85NxCOY7YtnIZjRcYTZXiz3iqxEH4,22
+pyenergyaspects-0.0.3.dist-info/RECORD,,
