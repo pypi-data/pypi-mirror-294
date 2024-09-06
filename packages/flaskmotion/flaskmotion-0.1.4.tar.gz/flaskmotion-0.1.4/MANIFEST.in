@@ -1,0 +1,3 @@
+include flaskmotion/static/css/flaskmotion.css
+include flaskmotion/static/js/flaskmotion.js
+include flaskmotion/templates/base.html
