@@ -1,0 +1,10 @@
+auxon_sdk-2.2.0.dist-info/METADATA,sha256=kb2mrGZ9pEL3ffxt4rh2wNP4uEiugLJRb1_FIuiw4Ws,1110
+auxon_sdk-2.2.0.dist-info/WHEEL,sha256=vxtib1VmSvaVgE5KtqfJVlrq9LuOu8yTiFyHNXGBTTE,102
+auxon_sdk-2.2.0.dist-info/licenses/LICENSE,sha256=_bBEyaOczD1q1ZNYyerpVhOp9GwvI463PqGtifWamBA,11335
+auxon_sdk/client.py,sha256=8lznI-M6XuOIgnYg0EMwSjKIpAmSaPlAbQZ1Qg2i1w4,18245
+auxon_sdk/__init__.py,sha256=sDT-pnJqsM_854fn0EuA8ZJIP4j1XboBKyDYeNCqaOg,861
+auxon_sdk/.gitignore,sha256=RgdvjpJaa3mODGWtRbneNMymLmoWVkEWv3Pw7vBEl5g,30
+auxon_sdk/go.py,sha256=HgsX76WAmjg319czVZPGHhtD5UCuonEdeRfhP-zviSA,296
+auxon_sdk/attr.py,sha256=sRtECIoX7v33TwOKCxHciqskUCUbILMtrCw4iFAgdII,1210
+auxon_sdk/_auxon_sdk.abi3.so,sha256=Hp96yOu--3zKAcUzS0j_cCIHAMxZaTUjXGMjahtc6no,5781808
+auxon_sdk-2.2.0.dist-info/RECORD,,
