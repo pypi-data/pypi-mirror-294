@@ -1,0 +1,13 @@
+README.md
+setup.py
+DyGAF/__init__.py
+DyGAF/analyze_feature_importance.py
+DyGAF/dependent_attention_model_pipeline.py
+DyGAF/independent_attention_model_pipeline.py
+DyGAF/main.py
+DyGAF.egg-info/PKG-INFO
+DyGAF.egg-info/SOURCES.txt
+DyGAF.egg-info/dependency_links.txt
+DyGAF.egg-info/entry_points.txt
+DyGAF.egg-info/requires.txt
+DyGAF.egg-info/top_level.txt
