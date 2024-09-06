@@ -1,0 +1,77 @@
+{
+    "answer_relevance:eq:low": {
+        "description": "AIQEA1001M",
+        "causes": [
+            "AIQEA1002M"
+        ],
+        "recommendations": [
+            "AIQEA1003M"
+        ]
+    },
+    "answer_relevance:eq:high": {
+        "description": "AIQEA1004M",
+        "causes": [
+            "AIQEA1005M"
+        ],
+        "recommendations": [
+            "AIQEA1006M"
+        ]
+    },
+    "context_relevance:eq:low": {
+        "description": "AIQEA1007M",
+        "causes": [
+            "AIQEA1008M",
+            "AIQEA1009M"
+        ],
+        "recommendations": [
+            "AIQEA1010M",
+            "AIQEA1011M"
+        ]
+    },
+    "context_relevance:eq:high": {
+        "description": "AIQEA1012M",
+        "causes": [
+            "AIQEA1013M"
+        ],
+        "recommendations": [
+            "AIQEA1014M"
+        ]
+    },
+    "faithfulness:eq:low": {
+        "description": "AIQEA1015M",
+        "causes": [
+            "AIQEA1016M",
+            "AIQEA1017M"
+        ],
+        "recommendations": [
+            "AIQEA1018M",
+            "AIQEA1019M"
+        ]
+    },
+    "faithfulness:eq:high": {
+        "description": "AIQEA1020M",
+        "causes": [
+            "AIQEA1021M"
+        ],
+        "recommendations": [
+            "AIQEA1022M"
+        ]
+    },
+    "context_relevance:eq:high,faithfulness:eq:high,answer_relevance:eq:low": {
+        "causes": [
+            "AIQEA1023M"
+        ],
+        "recommendations": [
+            "AIQEA1024M"
+        ]
+    },
+    "unsuccessful_requests:eq:high": {
+        "description": "AIQEA1025M",
+        "causes": [
+            "AIQEA1026M"
+        ],
+        "recommendations": [
+            "AIQEA1027M"
+        ]
+    }
+}
