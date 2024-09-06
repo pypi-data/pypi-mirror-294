@@ -1,0 +1,2 @@
+include src/voicex/voices/*.voicex
+include src/voicex/res/logo.png
