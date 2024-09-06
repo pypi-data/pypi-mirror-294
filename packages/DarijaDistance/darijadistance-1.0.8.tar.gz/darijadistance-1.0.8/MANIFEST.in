@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include DarijaDistance *.py
+recursive-include DarijaDistance/data *
