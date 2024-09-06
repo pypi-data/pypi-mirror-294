@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: btdcore
+Version: 0.1.0
+Summary: Core Python library for Black Tusk Data
+Author: Liam Tengelis
+Author-email: liam.tengelis@blacktuskdata.com
+Requires-Dist: pydantic
+Requires-Dist: requests
