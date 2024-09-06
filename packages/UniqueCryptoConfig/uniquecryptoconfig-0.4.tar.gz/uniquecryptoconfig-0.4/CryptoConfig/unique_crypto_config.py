@@ -1,0 +1,52 @@
+from datetime import timedelta
+
+CRYPTO_PAIRS = {
+    'SYNTHETICUSDT': 'SYNTHETICUSDT',
+    'Bitcoin (BTC)': 'BTCUSDT',
+    'Ethereum (ETH)': 'ETHUSDT',
+    'Binance (BNB)': 'BNBUSDT',
+    'Solana (SOL)': 'SOLUSDT',
+    'Dogecoin (DOGE)': 'DOGEUSDT',
+    'Cardano (ADA)': 'ADAUSDT',
+    'Polygon (MATIC)': 'MATICUSDT',
+    'Storj (STORJ)': 'STORJUSDT',
+    'Litecoin (LTC)': 'LTCUSDT',
+    'dYdX (DYDX)': 'DYDXUSDT',
+    'Compound (COMP)': 'COMPUSDT',
+    'Measurable Data Token (MDT)': 'MDTUSDT',
+    'Avalanche (AVAX)': 'AVAXUSDT',
+    'Maker (MKR)': 'MKRUSDT',
+    'The Sandbox (SAND)': 'SANDUSDT',
+    'Decentraland (MANA)': 'MANAUSDT',
+    'Fantom (FTM)': 'FTMUSDT',
+    'Ripple (XRP)': 'XRPUSDT',
+    'Celo (CELO)': 'CELOUSDT',
+    'Optimism (OP)': 'OPUSDT',
+    'ApeCoin (APE)': 'APEUSDT',
+    'Pepe (PEPE)': 'PEPEUSDT',
+    'Gala (GALA)': 'GALAUSDT',
+    'NEAR Protocol (NEAR)': 'NEARUSDT',
+    'Wild (WLD)': 'WLDUSDT',
+    'Floki Inu (FLOKI)': 'FLOKIUSDT',
+    'Pixel (PIXEL)': 'PIXELUSDT',
+    'Ordi (ORDI)': 'ORDIUSDT',
+    'Meme (MEME)': 'MEMEUSDT',
+    'Cosmos (ATOM)': 'ATOMUSDT',
+    'Tia (TIA)': 'TIAUSDT'
+}
+
+GRANULARITY_MAP = {
+    '1s': timedelta(seconds=1),
+    '1m': timedelta(minutes=1),
+    '3m': timedelta(minutes=3),
+    '5m': timedelta(minutes=5),
+    '15m': timedelta(minutes=15),
+    '30m': timedelta(minutes=30),
+    '1h': timedelta(hours=1),
+    '2h': timedelta(hours=2),
+    '4h': timedelta(hours=4),
+    '6h': timedelta(hours=6),
+    '8h': timedelta(hours=8),
+    '12h': timedelta(hours=12),
+    '1d': timedelta(days=1)
+}
