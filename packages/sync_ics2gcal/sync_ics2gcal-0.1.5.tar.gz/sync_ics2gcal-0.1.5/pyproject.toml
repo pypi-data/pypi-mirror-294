@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "sync_ics2gcal"
+version = "0.1.5"
+description = "Sync ics file with Google calendar"
+authors = ["Dmitry Belyaev <b4tm4n@mail.ru>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/b4tman/sync_ics2gcal"
+repository = "https://github.com/b4tman/sync_ics2gcal"
+keywords = ["icalendar", "sync", "google", "calendar"]
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-auth = "2.34.0"
+google-api-python-client = "2.143.0"
+icalendar = "5.0.13"
+pytz = "2024.1"
+PyYAML = "6.0.2"
+fire = "0.6.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.4,<9.0"
+flake8 = ">=5.0.4,<8.0.0"
+black = ">=23.7,<25.0"
+mypy = ">=0.960"
+types-python-dateutil = "^2.8.19"
+types-pytz = ">=2021.3.8"
+types-PyYAML = "^6.0.12"
+lxml = ">=4.9.3,<6.0.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = ">=7.1,<7.5"
+myst-parser = ">=2,<4"
+sphinx-rtd-theme = ">=1.2.2,<3.0.0"
+sphinx-copybutton = "^0.5.2"
+sphinx-design = ">=0.5,<0.7"
+
+[tool.poetry.scripts]
+sync-ics2gcal = "sync_ics2gcal.sync_calendar:main"
+manage-ics2gcal = "sync_ics2gcal.manage_calendars:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = [
+    'icalendar',
+    'google.*',
+    'googleapiclient',
+    'fire'
+]
+ignore_missing_imports = true
