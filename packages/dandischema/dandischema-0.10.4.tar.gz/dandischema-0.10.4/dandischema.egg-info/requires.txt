@@ -1,0 +1,25 @@
+jsonschema[format]
+pydantic[email]~=2.4
+requests
+zarr_checksum
+
+[:python_version < "3.9"]
+typing_extensions
+
+[all]
+flake8
+pre-commit
+mypy
+pytest
+pytest-cov
+pytest-rerunfailures
+
+[style]
+flake8
+pre-commit
+
+[test]
+mypy
+pytest
+pytest-cov
+pytest-rerunfailures
