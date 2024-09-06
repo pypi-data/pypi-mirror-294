@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: image_processing_navpack
+Version: 0.2.3
+Summary: A package for processing and analyzing images.
+Author: Fabiano
+Author-email: nav.info.suporte@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/Fabianonavarro/image_processing_navpack.git
+Project-URL: Documentation, https://github.com/Fabianonavarro/image_processing_navpack/blob/main/README.md
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: scikit-image>=0.24.0
+Requires-Dist: imageio>=2.35.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.2; extra == "dev"
+
+ # 🖼️ Image Processing Navpack
+
+Um projeto Python para processamento de imagens, utilizando bibliotecas como `scikit-image` e `imageio` para comparar, transformar e salvar imagens.
+
+## 📁 Estrutura do Projeto
+
+```plaintext
+image-processing-navpack/
+├── image_processing_navpack/
+│   ├── imgs/
+│   │   ├── imagem1.jpg
+│   │   └── imagem2.jpg
+│   ├── processing/
+│   │   ├── __init__.py
+│   │   ├── combination.py
+│   │   └── transformation.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── io.py
+│   │   └── plot.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_processing.py
+│       └── test_utils.py
+├── setup.py
+├── README.md
+└── test_image.py
+🚀 Instalação
+Clone o Repositório:
+
+bash
+Copiar código
+git clone https://github.com/Fabianonavarro/image-processing-navpack.git
+Navegue para o Diretório do Projeto:
+
+bash
+Copiar código
+cd image-processing-navpack
+Instale as Dependências Usando setuptools:
+
+Se você não estiver usando um ambiente virtual, é recomendável criar um. Você pode instalar o pacote diretamente no ambiente atual com:
+
+bash
+Copiar código
+pip install .
+Para desenvolver o pacote e fazer alterações, use:
+
+bash
+Copiar código
+pip install -e .
+Ative o Ambiente Virtual (se aplicável):
+
+Se estiver usando um ambiente virtual criado com venv, ative-o com:
+
+bash
+Copiar código
+source .venv/bin/activate  # No Linux ou macOS
+.venv\Scripts\activate  # No Windows
+🛠️ Uso
+Coloque suas imagens no diretório image_processing_navpack/imgs.
+
+Execute o script principal para processar as imagens:
+
+bash
+Copiar código
+python test_image.py
+Resultados: Os resultados serão salvos no diretório image_processing_navpack/imgs com os seguintes nomes:
+
+difference_image.jpg
+histogram_matched_image.jpg
+🧪 Testes
+Para executar os testes, use o comando:
+
+bash
+Copiar código
+pytest
+📋 Contribuições
+Sinta-se à vontade para abrir issues e pull requests para melhorias ou correções.
+
+📜 Licença
+Este projeto está licenciado sob a Licença MIT.
+
+📚 Referências
+Scikit-Image Documentation
+ImageIO Documentation
+markdown
+Copiar código
+
+### Atualizar `test_image.py`
+
+Certifique-se de que o `test_image.py` não esteja referenciando o nome antigo do projeto e atualize os imports, se necessário.
+
+### Publicar no PyPI
+
+1. **Certifique-se de que o novo nome está disponível no PyPI.**
+
+2. **Construa os arquivos de distribuição:**
+
+   ```bash
+   python setup.py sdist bdist_wheel
+Publique o pacote:
+
+bash
+Copiar código
+pip install twine
+twine upload dist/*
+Verifique a publicação acessando o PyPI e buscando pelo novo nome do pacote.
