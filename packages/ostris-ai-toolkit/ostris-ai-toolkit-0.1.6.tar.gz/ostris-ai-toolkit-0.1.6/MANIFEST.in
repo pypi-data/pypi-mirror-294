@@ -1,0 +1,15 @@
+include ostris-ai-toolkit/README.md
+include ostris-ai-toolkit/LICENSE
+include ostris-ai-toolkit/requirements.txt
+recursive-include ostris-ai-toolkit *
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+recursive-exclude ostris-ai-toolkit/.venv *
+recursive-exclude ostris-ai-toolkit/.git *
+recursive-exclude ostris-ai-toolkit/.github *
+recursive-exclude ostris-ai-toolkit/__pycache__ *
+recursive-exclude ostris-ai-toolkit/repositories *
+exclude ostris-ai-toolkit/.gitignore
+exclude ostris-ai-toolkit/.gitmodules
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.ipynb_checkpoints
