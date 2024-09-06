@@ -1,0 +1,14 @@
+gliclass/__init__.py,sha256=H_r6LRAyopV6uK9GMrYMShCQh_585id3A63ue-VwWDc,255
+gliclass/config.py,sha256=c9hjDLSLoDbUqHfZ1RrgGPjjPKrqvRzSSWOflL3mkUE,3240
+gliclass/data_processing.py,sha256=uCSREoJKXr7VH1ftR13MV0w3pqNu7cLUW0k17VUoffE,7360
+gliclass/layers.py,sha256=bseSDP-jWfHdX5srd4dT7U3b2qK0mMkLA88Vz1kDXpM,9886
+gliclass/loss_functions.py,sha256=pQP0RB2xXM76_8roJ2JFdvEs04rrqzkX2ufBIi-oD1g,3904
+gliclass/model.py,sha256=MhRtMdfyEY5f5paiIVrI8NQTQY1GEn-dff4SRxJ6qww,26706
+gliclass/pipeline.py,sha256=-0XXWgIqwwkINMaUv0dorwBTqgleXAZB_TsK7Zizx4M,15687
+gliclass/poolings.py,sha256=GFTD_JrcRQLIbNRALdKtnW6XaTM4VXhd9KGgcI10k0E,3114
+gliclass/scorers.py,sha256=ABko9jyE8K9pho4VeWfCFwjO_D9LSrvfxNRcr0G8xTI,2638
+gliclass/training.py,sha256=GDTv579Uoesdh0atRxer8wEesMALM-q6SNrrGPbumNY,8194
+gliclass/utils.py,sha256=LyvvsrqdZv5BrkK-uzbH91XKlFlwlw_QiIzF1ckXUhQ,501
+gliclass-0.1.5.dist-info/METADATA,sha256=aucr_elD-TLXx5Ngi23mx1wdrXTajbOLx9SE3MAwRxQ,2016
+gliclass-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gliclass-0.1.5.dist-info/RECORD,,
