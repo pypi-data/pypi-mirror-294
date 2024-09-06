@@ -1,0 +1,2 @@
+[console_scripts]
+fastmlx = fastmlx.fastmlx:run
