@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: taml
+Version: 1.0.0
+Summary: YAML but with tabs
+Author-email: EpicStuff <EpicStuff@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/EpicStuff/taml
+Project-URL: Issues, https://github.com/EpicStuff/taml/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: epicstuff
+Requires-Dist: ruamel.yaml
+
+# TAML
+
+YAML but with tabs
+
+## Installation
+
+```bash
+pip install taml
+```
+
+## Usage
+
+see [ruamel.yaml](https://yaml.readthedocs.io/en/latest/) and replace
+
+```python
+from ruamel.yaml import YAML
+yaml=YAML()
+```
+
+with
+
+```python
+from taml import taml
+```
