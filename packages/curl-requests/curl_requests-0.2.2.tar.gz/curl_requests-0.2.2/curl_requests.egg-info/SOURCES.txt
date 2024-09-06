@@ -1,0 +1,7 @@
+setup.py
+curl_requests/__init__.py
+curl_requests/req.py
+curl_requests.egg-info/PKG-INFO
+curl_requests.egg-info/SOURCES.txt
+curl_requests.egg-info/dependency_links.txt
+curl_requests.egg-info/top_level.txt
