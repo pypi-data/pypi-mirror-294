@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: briefer
+Version: 0.0.4
+License: GNU Affero General Public License v3.0
+Project-URL: Homepage, https://briefer.cloud
+Requires-Python: >=3.7
+
