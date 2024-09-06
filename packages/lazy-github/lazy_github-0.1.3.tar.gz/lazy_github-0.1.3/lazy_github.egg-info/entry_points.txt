@@ -1,0 +1,2 @@
+[console_scripts]
+lazy-github = lazy_github.__main__:main
