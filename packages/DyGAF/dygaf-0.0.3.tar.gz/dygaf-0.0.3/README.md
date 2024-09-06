@@ -1,0 +1,87 @@
+# DyGAF
+
+DyGAF is a Python package designed to perform attention-based model pipelines and feature importance analysis on tabular datasets. It supports both dependent and independent attention models, making it suitable for tasks such as disease classification, feature selection, and tabular data analysis. The package leverages Stratified K-Fold Cross-Validation and integrates seamlessly with TensorFlow and other machine learning libraries.
+
+## Features
+
+- **Dependent and Independent Attention Models**: Train and evaluate models using attention-based mechanisms.
+- **Stratified K-Fold Cross-Validation**: Ensures consistent performance evaluation.
+- **Feature Importance Analysis**: Calculates feature importance using model weights for better interpretability.
+- **Seamless Integration**: Built on top of TensorFlow, scikit-learn, and XGBoost, with compatibility for Python 3.10.
+
+# Installation
+
+Follow these steps to install DyGAF in a new conda environment.
+
+## Step 1: Create a Conda Environment
+
+Create and activate a new conda environment with Python 3.10 to ensure compatibility with DyGAF's dependencies.
+
+```sh
+conda create --name dygaf_env python=3.10
+conda activate dygaf_env
+```
+## Step 2: Create requirements.txt
+```sh
+echo "numpy==1.24.0" > requirements.txt
+echo "pandas==1.5.3" >> requirements.txt
+echo "scikit-learn==1.5.1" >> requirements.txt
+echo "tensorflow==2.10.0" >> requirements.txt
+echo "xgboost==2.1.1" >> requirements.txt
+```
+## Step 3: Install Dependencies
+### Install all dependencies listed in requirements.txt using pip:
+```sh
+pip install -r requirements.txt
+```
+
+## Step 4: Install DyGAF
+### Finally, install DyGAF using pip:
+```sh
+pip install DyGAF
+```
+## Step 5: Usage
+
+DyGAF can be used either via the command line interface (CLI) or in a Python environment such as Jupyter notebooks.
+
+### Command Line Interface (CLI)
+
+Run DyGAF from the command line by specifying the dataset path, target column, random seed, and number of splits for cross-validation.
+
+```sh
+DyGAF --df_path "/path/to/csvfile.csv" --target_column Target --seed 4 --n_splits 2
+```
+
+### Python Environment / Jupyter Notebook
+### You can also use DyGAF within a Python script or Jupyter notebook to have more flexibility in your analysis.
+```sh
+# Import DyGAF function from the package
+from DyGAF import DyGAF
+
+# Set parameters for the pipeline
+df_path = "/input/csvfile.csv"
+target_column = "Target"  # Name of the target column
+seed = 4  # Seed for reproducibility
+n_splits = 5  # Number of splits for Stratified K-Fold
+
+# Run DyGAF with the parameters
+features_df, accuracy = DyGAF(df_path, target_column, seed, n_splits)
+
+# Display results
+print("Feature Importance (Top 5):")
+print(features_df.head())
+print(f"Model Accuracy: {accuracy:.4f}")
+```
+
+### Output folder would look like below:
+```sh
+output/
+│
+├── features_importance_seed4.csv                # Contains the feature importance analysis
+├── output_seed4_dependent_attention_weights.csv  # Stores attention weights from the dependent attention model
+└── output_seed4_independent_attention_weights.csv # Stores attention weights from the independent attention model
+```
+
+# Thank you for using our package!
+
+
