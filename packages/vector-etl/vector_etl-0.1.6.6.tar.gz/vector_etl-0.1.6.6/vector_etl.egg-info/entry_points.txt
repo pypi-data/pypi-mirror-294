@@ -1,0 +1,2 @@
+[console_scripts]
+vector-etl = vector_etl.main:main
