@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tfds"
+version = "0.3"
+description = ""
+authors = ["tdfalc <tomdfalc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pytest = "^8.3.2"
+matplotlib = "^3.9.1.post1"
+cloudpickle = "^3.0.0"
+black = "^24.8.0"
+pytest-cov = "^5.0.0"
+coveralls = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
