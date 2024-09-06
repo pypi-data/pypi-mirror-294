@@ -1,0 +1,27 @@
+[project]
+name = "cosmoplotlib"
+version = "0.1.0"
+description = "Handy python plotting library for cosmologists"
+authors = [
+    {name = "Nicolas Tessore", email = "n.tessore@ucl.ac.uk"},
+    {name = "Guadalupe Canas-Herrera", email = "guadalupe.canasherrera@esa.int"},
+]
+readme = "README.md"
+maintainers = [
+    {name = "Nicolas Tessore", email = "n.tessore@ucl.ac.uk"},
+    {name = "Guadalupe Canas-Herrera", email = "guadalupe.canasherrera@esa.int"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/astro-ph/cosmoplotlib"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+

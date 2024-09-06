@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cosmoplotlib
+Version: 0.1.0
+Summary: Handy python plotting library for cosmologists
+Author-email: Nicolas Tessore <n.tessore@ucl.ac.uk>, Guadalupe Canas-Herrera <guadalupe.canasherrera@esa.int>
+Maintainer-email: Nicolas Tessore <n.tessore@ucl.ac.uk>, Guadalupe Canas-Herrera <guadalupe.canasherrera@esa.int>
+Project-URL: Repository, https://github.com/astro-ph/cosmoplotlib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cosmoplotlib
