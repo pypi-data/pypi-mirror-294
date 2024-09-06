@@ -1,0 +1,4 @@
+torch>=1.1
+pydantic>=1.8
+omegaconf
+rich
