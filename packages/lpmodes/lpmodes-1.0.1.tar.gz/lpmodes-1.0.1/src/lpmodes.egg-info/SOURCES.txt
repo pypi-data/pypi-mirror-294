@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/lpmodes.py
+src/lpmodes_gui.py
+src/gui_lib/im_tools.py
+src/gui_lib/image_display.py
+src/lpmodes.egg-info/PKG-INFO
+src/lpmodes.egg-info/SOURCES.txt
+src/lpmodes.egg-info/dependency_links.txt
+src/lpmodes.egg-info/requires.txt
+src/lpmodes.egg-info/top_level.txt
+test/test_csv.py
+test/test_find_mode_idx.py
+test/test_find_modes.py
+test/test_mode_norm.py

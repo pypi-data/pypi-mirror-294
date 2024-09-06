@@ -1,0 +1,5 @@
+matplotlib>=3.3.4
+numpy>=1.22
+Pillow>=9
+scipy>=1.7
+pyqt5>5.0.0
