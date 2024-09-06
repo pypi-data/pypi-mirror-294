@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tetraku
+Version: 0.3.17
+Summary: data library used by tetragono
+Author-email: Hao Zhang <zh970205@mail.ustc.edu.cn>
+License: GPLv3
+Project-URL: Homepage, https://github.com/USTC-TNS/TNSP/tree/main/tetraku
+Project-URL: Repository, https://github.com/USTC-TNS/TNSP.git
+Project-URL: Issues, https://github.com/USTC-TNS/TNSP/issues
+Project-URL: Changelog, https://github.com/USTC-TNS/TNSP/blob/main/CHANGELOG.org
+Keywords: tensor,tensor network,tensor network state,PEPS,MPS,quantum many body system
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tetragono==0.3.17
+Provides-Extra: neural_network
+Requires-Dist: torch; extra == "neural-network"
+Provides-Extra: quantum_chemistry
+Requires-Dist: openfermion; extra == "quantum-chemistry"
+
+Tetraku is a collection of commonly-used models and ansatzes used by [tetragono](https://github.com/USTC-TNS/TNSP/tree/main/tetragono).
+More information is available in the readme files within each directory.
+
+There are some popular models such as [the J1 -J2 model on a square lattice](https://github.com/USTC-TNS/TNSP/tree/main/tetraku/tetraku/models/J1J2/),
+[the Hubbard model on a honeycomb lattice](https://github.com/USTC-TNS/TNSP/tree/main/tetraku/tetraku/models/honeycomb_hubbard/),
+and [the Rydberg model on a square lattice](https://github.com/USTC-TNS/TNSP/tree/main/tetraku/tetraku/models/rydberg/),
+which can be referenced if users want to add new model.
+
