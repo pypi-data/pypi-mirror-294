@@ -1,0 +1,18 @@
+[project]
+name = "bcubed-metrics"
+version = "1.0.1"
+authors = [
+  { name="Vasiliki Nikolaidi"},
+]
+description = "A package to calculate BCUBED precision, recall, and F1-score for clustering evaluation."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords=['bcubed']
+
+[project.urls]
+Homepage = "https://github.com/nezumiCodes/bcubed-metrics"
