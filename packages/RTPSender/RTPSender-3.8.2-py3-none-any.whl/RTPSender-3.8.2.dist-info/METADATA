@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: RTPSender
+Version: 3.8.2
+Summary: A SDK for sending RTP streams
+Author: liushihai02
+Author-email: liushihai02@58.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: scapy
+Requires-Dist: opencv-python
+Requires-Dist: pydub
+Requires-Dist: loguru
+
+## description
+功能：将音视频数据转换成rtp包
+
+## usage examples
+安装av库
+```bash
+pip uninstall av && pip install av --no-binary av
+```
+
+提供了四个转换函数，支持传入原始文件和字节数据两种方式，具体使用方式请参考下面的示例：
+```python
+
+from pydub import AudioSegment
+import cv2
+from time import sleep, time
+from RTPSender.RTPSender import RTPSenderNewProcess
+
+if __name__ == '__main__':
+    ip_address = "10.253.101.36"
+    # ip_address = "127.0.0.1"
+    port = 7777
+    image_file = "images/frame_0.png"
+    image_files = ["images/frame_%d.png" % i for i in range(5)]
+    audio_file = "audios/bgroup.wav"
+    audio_16k_file = "audios/bgroup16k.wav"
+
+    frame_size = (1080, 1920) # (width, height)
+
+    audio = AudioSegment.from_file(audio_16k_file, format="wav")
+    audio_data = audio.raw_data
+    imgs = [cv2.imread(image_file) for image_file in image_files]
+
+    rtpSenderNewProcess = RTPSenderNewProcess(ip_address, port, frame_size, hard_encode=True, open_log=True, days=7, stdout=True)
+    rtpSenderNewProcess.enque_event("init", None) # 初始化时，发送事件名称"init"即可，data传None
+
+    loop_cnt = 5
+
+    i = 0
+    cnt = 0
+    t1 = time()
+
+    try:
+        while loop_cnt > 0:
+            for img in imgs:
+                if i >= len(audio_data) - 640:
+                    i = 0
+                for j in range(25):
+                    rtpSenderNewProcess.enque_event("video", img) # 发送视频帧，事件名称"video"，data为img
+                    data1 = audio_data[i:i+640]
+                    i += 640
+                    data2 = audio_data[i:i+640]
+                    rtpSenderNewProcess.enque_event("audio", (data1, data2)) # 发送音频帧，事件名称"audio"，data为(data1, data2)
+
+                    cnt += 1
+                    i += 640
+                    t2 = time()
+                    t = t1 + cnt*0.04 - t2
+                    if t > 0:
+                        sleep(t)
+            loop_cnt -= 1
+    finally:
+        rtpSenderNewProcess.stop_process()  # 停止进程，和该进程相关的所有资源都会被释放，包括rtpSender以及其中的线程
+```
