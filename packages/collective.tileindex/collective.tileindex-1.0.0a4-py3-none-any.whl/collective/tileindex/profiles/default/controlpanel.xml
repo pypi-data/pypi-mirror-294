@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel" meta_type="Plone Control Panel Tool"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="admin">
+ <configlet title="Tile Types Overview" action_id="TileTypesOverview"
+    appId="TileTypesOverview" category="plone-content" condition_expr=""
+    url_expr="string:${portal_url}/@@tile-types-overview"
+    visible="True" i18n:attributes="title">
+    <permission>Plone Site Setup: Site</permission>
+  </configlet>
+</object>

@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="collective.tileindex"
+      metal:use-macro="context/prefs_main_template/macros/master">
+<body>
+  <metal:content fill-slot="prefs_configlet_content">
+  <div id="content" metal:define-macro="main">
+
+  <tal:block condition="python:view.tileorblock=='tile'">
+    <h1 i18n:translate="">Tile types overview</h1>
+    <p tal:condition="not:view/tile_index" i18n:translate="">
+      ERROR: tile_types index is missing!
+    </p>
+  </tal:block>
+  <tal:block condition="python:view.tileorblock=='block'">
+    <h1 i18n:translate="">Block types overview</h1>
+    <p tal:condition="not:view/block_index" i18n:translate="">
+      ERROR: block_types index is missing!
+    </p>
+  </tal:block>
+    <tal:available condition="view/indexname">
+    <p i18n:translate="msg_num_objects">
+      There are <span i18n:name="numObjects" tal:replace="view/numObjects" /> items with at least one <span i18n:name="tileorblock" tal:replace="view/tileorblock" /> in the index.
+    </p>
+    <h3 i18n:translate=""><span i18n:name="tileorblock" tal:replace="view/tileorblock" /> names sorted alphabetically</h3>
+    <ol tal:condition="view/alphabetical">
+      <li tal:repeat="tile view/alphabetical">
+        <a href="${request/URL}?tile=${tile}">${tile}</a>
+      </li>
+    </ol>
+    <h3 i18n:translate=""><span i18n:name="tileorblock" tal:replace="view/tileorblock" /> names sorted by number of items that use it</h3>
+    <ul tal:condition="view/numerical">
+      <li tal:repeat="item view/numerical">
+        ${item/number} <a href="${request/URL}?tile=${item/tile}">${item/tile}</a>
+      </li>
+    </ul>
+    <p i18n:translate="msg_note_same_type_counted_once">
+      Note that a page that has more than one <span i18n:name="tileorblock" tal:replace="view/tileorblock" /> of the same type, is only counted once.
+    </p>
+    <tal:search_results condition="request/tile|nothing" define="(published,unpublished) view/search_results">
+      <h3 i18n:translate="">Search results for <span i18n:name="tileorblock" tal:replace="view/tileorblock" /> <span i18n:name="tile" tal:replace="request/tile" /> <span i18n:name="published" tal:replace="python:len(published)"/>/<span i18n:name="unpublished" tal:replace="python:len(unpublished)"/> (published/unpublished)</h3>
+      <h4 i18n:translate="">Published <span i18n:name="published" tal:replace="python:len(published)"/></h4>
+      <ol>
+        <li tal:repeat="item published">
+          <a href="${item/getURL}">${item/Title}</a><br/>(${item/getPath})
+        </li>
+      </ol>
+
+      <h4 i18n:translate="">Private/Other <span i18n:name="unpublished" tal:replace="python:len(unpublished)"/></h4>
+      <ol>
+        <li tal:repeat="item unpublished">
+          <a href="${item/getURL}">${item/Title}</a><br/>(${item/getPath})
+        </li>
+      </ol>
+    </tal:search_results>
+    </tal:available>
+
+    </div>
+  </metal:content>
+</body>
+</html>
