@@ -1,0 +1,1 @@
+ext/sqlite-wasm = [git]https://github.com/sqlite/sqlite-wasm.git
