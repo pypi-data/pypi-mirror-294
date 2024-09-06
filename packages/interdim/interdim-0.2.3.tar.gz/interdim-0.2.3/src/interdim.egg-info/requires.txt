@@ -1,0 +1,17 @@
+numpy
+scikit-learn
+plotly
+dash
+
+[all]
+umap-learn
+hdbscan
+
+[hdbscan]
+hdbscan
+
+[test]
+pytest
+
+[umap]
+umap-learn
