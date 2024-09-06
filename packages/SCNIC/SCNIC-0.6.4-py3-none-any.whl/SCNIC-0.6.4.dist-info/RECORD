@@ -1,0 +1,17 @@
+SCNIC/__init__.py,sha256=iGemjUEE4Ok3fAuroQ0X8zh9XiA7EqWkmMU-e7g6CD0,86
+SCNIC/annotate_correls.py,sha256=9Ijco-UQbbuIHrL0Xdy2h0Ks_wkOP0vJv1GU3Sx2r08,7646
+SCNIC/between_correls.py,sha256=ZN2wN5bJ_6Cp3jkHF7dvyrcF0_palna-WyJ7tUPIpQg,3342
+SCNIC/calculate_permutation_stats.py,sha256=26JqU6g56ZOifEfN6NBulmd-dr9jjUFQKRQBosR0A-U,7798
+SCNIC/calculate_permutations.py,sha256=aEJ5XU4fulwqbQS79cRS24Fwb2qG8RyYpysQar2ElFc,4423
+SCNIC/correlation_analysis.py,sha256=R7DtLPQ8T8Bp_CcyAufr3mbccibICKPtHqRVXQHAV6U,5532
+SCNIC/general.py,sha256=hSZO09B6DG2PbR0h5itFJrk-KvROAPWqWxu_uGFQhIw,6661
+SCNIC/module.py,sha256=MNZ9rxQQc9g_vDtiPZYAuEzcK1cmldyXz2luGNViVKk,3600
+SCNIC/module_analysis.py,sha256=vx2s44wxPA0RDRQzcgM8ENoU3WrYrhTCfKFagUZWmdc,6156
+SCNIC/within_correls.py,sha256=ns-uguJWTOVCl01Z1Ou_2RqY8kEeyWksbeAb3-DZUuM,3458
+SCNIC-0.6.4.data/scripts/SCNIC_analysis.py,sha256=HZgcQ4sTyaAftV2GFX3kNtCBhCUUInwUh5QpFU5-wuU,5233
+SCNIC-0.6.4.data/scripts/module_enrichment.py,sha256=HoW9rGdTYcCa6jyd4VJlH5XDKZQ7nPC2GrpVrpg8hgU,2677
+SCNIC-0.6.4.dist-info/LICENSE,sha256=Uh8b2P2_A0xmpNhjhDYzVUzM6K8tY6c0-GVII8ISyNs,1494
+SCNIC-0.6.4.dist-info/METADATA,sha256=xigiURoFecZ94W9iEQmj1dSj63tzJVfrkmNO1CaMH7c,6554
+SCNIC-0.6.4.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+SCNIC-0.6.4.dist-info/top_level.txt,sha256=_W4Hebx5VkN2w9sUOdZtbIFOVpMmOQKMfYAz01dQylc,6
+SCNIC-0.6.4.dist-info/RECORD,,
