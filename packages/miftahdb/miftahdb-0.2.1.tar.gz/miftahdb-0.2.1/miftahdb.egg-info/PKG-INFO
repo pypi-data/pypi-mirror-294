@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: miftahdb
+Version: 0.2.1
+Summary: Easy-to-use synchronous/asynchronous key-value database backed by sqlite3.
+Home-page: https://github.com/miftahDB/miftahdb-python
+Author: vwh
+Author-email: vwhe@proton.me
+License: MIT
+Project-URL: Source, https://github.com/miftahDB/miftahdb-python
+Project-URL: Tracker, https://github.com/miftahDB/miftahdb-python/issues
+Project-URL: Documentation, https://miftahdb.rtfd.io/
+Keywords: sync,asyncio,sqlite,sqlite3,key-value,database,redis
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# miftahdb [![version](https://img.shields.io/pypi/v/miftahdb?style=flat&logo=pypi)](https://pypi.org/project/miftahdb) [![Downloads](https://static.pepy.tech/personalized-badge/miftahdb?period=month&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/miftahdb)
+
+Easy, Simple and powerful key-value database backed by sqlite3.
+
+### Features
+
+- Fast and easy-to-use database
+- Simultaneously **asynchronous** or **synchronous** calls
+- Store any data supported by [**pickle**](https://docs.python.org/3/library/pickle.html)
+
+### Requirements
+
+- Python3.8+
+
+### Installation
+
+```bash
+pip install miftahdb
+```
+
+From github (dev version)
+
+```bash
+pip install git+https://github.com/miftahDB/miftahdb-python
+```
+
+### Documentation
+
+[miftahdb](https://github.com/miftahDB/miftahdb-python) documentation available at [miftahdb.rtfd.io](https://miftahdb.rtfd.io/).
+
+### Usage
+
+```python
+from miftahdb import Client # For sync version do: from miftahdb.sync import Client
+import asyncio
+
+async def main():
+    async with Client("kv.sqlite") as db:
+
+        key = "123-456-789"
+        result = await db.set(key, "Hello world. Bye!")
+
+        if await db.exists(key):
+            get_key = await db.get(key)
+
+            print(get_key) # Hello world. Bye!
+
+            await db.delete(key)
+
+            await db.set(key, "This key has a lifetime of 60 seconds", 60)
+
+            print(await db.get(key))
+        else:
+            print("Key not found", result)
+
+
+asyncio.run(main())
+```
