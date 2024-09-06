@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandaa
+Version: 1.0.0
+Summary: A placeholder project to demonstrate piip
+Author: TNO Software and System Security
+License: Apache License, Version 2.0
+Project-URL: Homepage, https://pypi.org/project/PIIP/
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 6 - Mature
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+License-File: LICENSE
+
