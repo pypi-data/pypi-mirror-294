@@ -1,0 +1,41 @@
+build:
+  environment:
+    python: 3.12.5
+  nodes:
+    coverage:
+      project_setup:
+        override:
+          - pip install -r requirements.txt
+          - pip install -r requirements_dev.txt
+      tests:
+        override:
+          - command: 'pytest tests --cov=tabpy --cov-config=setup.cfg'
+            idle_timeout: 600
+            coverage:
+              file: '.coverage'
+              config_file: 'setup.cfg'
+              format: 'py-cc'
+    analysis:
+      project_setup:
+        override: 
+          - pip install -r requirements.txt
+      tests:
+        override: [py-scrutinizer-run]
+  dependencies: 
+    override: 
+      - pip install .
+  tests:
+    before:
+      - pip install -r requirements.txt
+    override:
+      pytest:
+        idle_timeout: 600
+checks:
+  python:
+    code_rating: true
+    duplicate_code: true
+filter:
+  excluded_paths:
+    - '*/tests/*'
+  dependency_paths:
+    - 'lib/*'
