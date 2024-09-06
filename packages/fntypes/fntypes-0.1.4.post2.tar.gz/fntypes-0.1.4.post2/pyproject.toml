@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fntypes"
+version = "0.1.4.post2"
+description = ""
+authors = ["timoniq"]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
