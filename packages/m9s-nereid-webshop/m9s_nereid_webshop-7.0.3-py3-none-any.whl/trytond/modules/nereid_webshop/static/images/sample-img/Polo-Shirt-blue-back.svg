@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   viewBox="0 0 900 900"
+   version="1.0"
+   width="900"
+   height="900"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1683">Polo-Shirt back</title>
+  <defs
+     id="defs32" />
+  <g
+     id="layer1"
+     transform="translate(-21.75,-11.093)">
+    <g
+       id="g3341"
+       transform="translate(-28.89446,-695.60595)"
+       style="fill:#0000ff;fill-opacity:1">
+      <g
+         id="g1712"
+         transform="translate(-2.0333209,33.164459)">
+        <path
+           id="path3343"
+           style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9343"
+           d="m 422.61452,729.41437 c 61.55995,8.25538 112.8417,6.28721 159.91374,0 l 28.70247,39.63674 c 123.77597,46.90803 195.55948,41.8236 328.0282,114.80987 -17.05747,57.35027 -20.28308,120.22232 -71.07278,164.01412 -42.37031,-33.2949 -84.74061,-26.2423 -127.11092,-36.9032 v 482.4748 c -159.25769,28.9758 -317.31262,36.4658 -472.90733,0 v -482.4748 c -36.85396,4.1004 -67.4754,1.0934 -128.47771,32.8028 C 93.897455,1005.6141 79.600893,942.90606 65.883847,879.76063 207.77791,815.95914 279.12951,807.2664 395.27883,771.78468 Z" />
+        <path
+           id="path3347"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 272.26826,810.05464 c 11.2623,60.41186 34.11493,135.749 -1.36679,199.55046" />
+        <path
+           id="path3351"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 86.642565,872.59868 c 7.812538,62.8174 39.237645,113.9898 72.182605,158.87502" />
+        <path
+           id="path3353"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 268.1679,1474.3117 c 157.18018,22.4153 314.36036,31.9281 471.54054,0" />
+        <path
+           id="path3357"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 736.97487,808.68785 c -11.2623,60.41186 -34.11493,135.74901 1.36679,199.55045" />
+        <path
+           id="path3361"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 917.39038,875.66028 c -7.818,62.8174 -38.10594,109.56142 -71.07277,154.44662" />
+        <path
+           id="path3363"
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:5.46714px"
+           d="m 398.88714,775.06496 c 23.34468,30.72531 173.08955,37.01252 211.03148,-4.42838" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:description>A polo shirt back</dc:description>
+        <dc:source>https://openclipart.org/detail/12465/polo-shirt-template-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu, Hartmut Goebel</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>shirt</rdf:li>
+            <rdf:li>polo-shirt</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:date>2024-06-03</dc:date>
+        <dc:title>Polo-Shirt back</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

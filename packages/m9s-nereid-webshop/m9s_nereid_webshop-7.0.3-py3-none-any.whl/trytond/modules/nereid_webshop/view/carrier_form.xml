@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/field[@name='carrier_cost_method']" position="after">
+        <newline/>
+        <label name="delivery_comment"/>
+        <field name="delivery_comment" colspan="3"/>
+        <newline/>
+        <label name="comment"/>
+        <field name="comment" colspan="3"/>
+    </xpath>
+</data>
