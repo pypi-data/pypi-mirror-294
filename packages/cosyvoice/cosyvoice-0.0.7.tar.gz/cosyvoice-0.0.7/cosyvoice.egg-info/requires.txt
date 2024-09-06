@@ -1,0 +1,16 @@
+inflect
+conformer
+hydra-core
+gdown
+wget
+openai-whisper
+fastapi
+librosa
+uvicorn
+loguru
+hyperpyyaml
+onnxruntime-gpu
+modelscope
+diffusers
+lightning
+pydub

@@ -1,0 +1,2 @@
+[console_scripts]
+cosyvoice-server = cosyvoice.server:main

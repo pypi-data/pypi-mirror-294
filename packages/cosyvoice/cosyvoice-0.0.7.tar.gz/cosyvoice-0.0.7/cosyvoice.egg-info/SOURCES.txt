@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+cosyvoice/__init__.py
+cosyvoice/api.py
+cosyvoice/server.py
+cosyvoice/version.py
+cosyvoice.egg-info/PKG-INFO
+cosyvoice.egg-info/SOURCES.txt
+cosyvoice.egg-info/dependency_links.txt
+cosyvoice.egg-info/entry_points.txt
+cosyvoice.egg-info/requires.txt
+cosyvoice.egg-info/top_level.txt
+matcha/__init__.py
+matcha/app.py
+matcha/cli.py
+matcha/train.py
