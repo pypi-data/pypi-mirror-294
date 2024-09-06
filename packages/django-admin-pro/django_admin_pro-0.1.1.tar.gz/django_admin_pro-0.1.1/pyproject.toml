@@ -1,0 +1,19 @@
+[project]
+name = "django-admin-pro"
+version = "0.1.1"
+description = "Django Admin Pro"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Krunal Dodiya", email = "krunal@example.com" }
+]
+
+dependencies = []
+
+[tool.uv]
+dev-dependencies = [
+    "cython>=3.0.11",
+    "twine>=5.1.1",
+    "wheel>=0.44.0",
+]
