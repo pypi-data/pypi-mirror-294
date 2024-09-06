@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+faye_image.egg-info/PKG-INFO
+faye_image.egg-info/SOURCES.txt
+faye_image.egg-info/dependency_links.txt
+faye_image.egg-info/requires.txt
+faye_image.egg-info/top_level.txt
