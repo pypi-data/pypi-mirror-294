@@ -1,0 +1,24 @@
+func-timeout==4.3.5
+lxml==5.1.1
+requests==2.32.3
+six==1.16.0
+Werkzeug==3.0.3
+python-pptx
+s3pathlib
+PyMuPDF>=1.24.9
+smart-open[s3]
+
+[cpu]
+paddleocr==2.7.3
+magic-pdf[full]==0.7.1
+
+[cpu:platform_system == "Linux"]
+paddlepaddle==3.0.0b1
+
+[cpu:platform_system == "Windows" or platform_system == "Darwin"]
+paddlepaddle==2.6.1
+
+[gpu]
+paddlepaddle-gpu==2.6.1
+paddleocr==2.7.3
+magic-pdf[full]==0.7.1
