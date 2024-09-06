@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: asm_api_lib
+Version: 1.2.0
+Summary: A library for AsmApi
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: pytest==4.4.1; extra == "test"
+
+This library was created by following these directions: https://medium.com/analytics-vidhya/how-to-create-a-python-library-7d5aea80cc3f 
+
+I installed the library to PyPi using instructions here: https://www.turing.com/kb/how-to-create-pypi-packages#pypi:-a-pillar-for-python-projects 
+
+After updating this library, deply using the commands inside of the library directory:
+
+python setup.py sdist
+twine upload dist/*
+
+Then rebuild individual scanner container
