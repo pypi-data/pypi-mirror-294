@@ -1,0 +1,69 @@
+[build-system]
+requires = [
+    "setuptools>=43.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "nixt"
+description = "NIXT"
+version = "31"
+authors = [
+    {name = "Bart Thate", email = "rssbotd@gmail.com"},
+]
+readme = "README.rst"
+license = {text="Public Domain"}
+classifiers = [ 
+    'Development Status :: 3 - Alpha',
+    'License :: Public Domain',
+    'Operating System :: Unix',
+    'Programming Language :: Python',
+    'Topic :: Utilities'
+]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/nixt"
+"bugs" = "https://github.com/rssbotd/nixt/issues"
+"source" = "https://github.com/rssbotd/nixt"
+
+
+[tools.setuptools]
+script-files = [
+    'bin/nixt',
+    'bin/nixtc',
+    'bin/nixtd',
+    'bin/nixts'
+]
+packages = [
+    'nixt',
+    'nixt.modules',
+    'nixt.user'
+]
+zip-safe=true
+
+
+[tool.setuptools.data-files]
+"share/doc/nixt" = [
+    "README.rst",
+]
+
+"share/nixt/examples" = [
+    "examples/iface.py",
+    "examples/irc.py",
+    "examples/log.py",
+    "examples/req.py",
+    "examples/rss.py",
+    "examples/tdo.py"
+]
+
+
+
+[tool.setuptools.exclude-package-data]
+"*" = [
+       "env*",
+       "html*",
+       "test*"
+      ]
