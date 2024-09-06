@@ -1,0 +1,7 @@
+tox
+pytest
+pytest-mock
+mypy
+httpretty
+cachetools
+types-cachetools
