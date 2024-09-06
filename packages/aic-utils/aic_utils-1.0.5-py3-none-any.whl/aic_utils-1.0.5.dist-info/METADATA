@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aic_utils
+Version: 1.0.5
+Summary: AIC API wrapper
+Home-page: https://github.com/dylandoyle11/aic_utils
+Author: Dylan D
+Author-email: dylan.doyle@jdpa.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-storage
+Requires-Dist: slack-sdk
+
+FUNCTIONS FOR AIC
