@@ -1,0 +1,103 @@
+/*
+pyodide-mkdocs-theme
+Copyleft GNU GPLv3 🄯 2024 Frédéric Zinelli
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.
+If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.py_mk_tests_table {
+  min-height: 10em;
+  height: 40em;
+  overflow: auto;
+  resize: vertical;
+  padding: 0 10px;
+}
+
+.py_mk_tests_results {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: baseline;
+    align-items: center;
+    width: fit-content;
+    column-gap: 1em;
+}
+
+#test-ide-results{
+    display: block;
+    width: fit-content;
+    padding-right: 1em;
+}
+
+.cases-btn {
+  border: 0;
+  margin: 0 5px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+.cases-btn:hover {
+    background-color: rgb(90, 88, 88);
+  }
+
+.cases-btn:active {
+box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.must-fail svg.qcm {
+  --qcm-fill: #20A020;
+  --tick:none;
+  --cross:unset
+}
+
+.md-typeset .pmt_note_tests {
+  font-size: 0.8em;
+  font-style: italic;
+  color: gray;
+  margin-left: 1em;
+}
+.md-typeset .pmt_note_tests.top_test {
+  margin-top: -.7em;
+}
+
+.py_mk_test_element {
+  height: 100%;
+  width: 100%;
+}
+
+.py_mk_test_element.status > svg.qcm {
+  margin: 0
+}
+
+.py_mk_test_element.status.top_test,
+.py_mk_test_element.sections {
+  padding-top: 0.2em
+}
+
+.orange-box {
+  box-shadow: 0 0 5px orange;
+}
