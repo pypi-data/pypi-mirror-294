@@ -1,0 +1,29 @@
+cff-version: "1.2.0"
+authors:
+- family-names: Lekschas
+  given-names: Fritz
+  orcid: "https://orcid.org/0000-0001-8432-4835"
+- family-names: Manz
+  given-names: Trevor
+  orcid: "https://orcid.org/0000-0001-7694-5164"
+doi: 10.48550/arXiv.2406.14397
+message: If you use Jupyter Scatter for an academic publication, please cite our preprint.
+preferred-citation:
+  type: article
+  authors:
+  - family-names: Lekschas
+    given-names: Fritz
+    orcid: "https://orcid.org/0000-0001-8432-4835"
+  - family-names: Manz
+    given-names: Trevor
+    orcid: "https://orcid.org/0000-0001-7694-5164"
+  date-published: 2024-05-20
+  doi: 10.48550/arXiv.2406.14397
+  publisher: "arXiv"
+  journal: "arXiv"
+  year: 2024
+  month: 6
+  day: 20
+  title: "Jupyter Scatter: Interactive Exploration of Large-Scale Datasets"
+  url: "https://arxiv.org/abs/2406.14397"
+title: "Jupyter Scatter: Interactive Exploration of Large-Scale Datasets"
