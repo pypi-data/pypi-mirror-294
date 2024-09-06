@@ -1,0 +1,3 @@
+[console_scripts]
+alphasense-api-sdk = api_sdk.main:main
+as-api-sdk = api_sdk.main:main
