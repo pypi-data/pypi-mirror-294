@@ -1,0 +1,7 @@
+README.md
+setup.py
+activation/activation_hard.egg-info/PKG-INFO
+activation/activation_hard.egg-info/SOURCES.txt
+activation/activation_hard.egg-info/dependency_links.txt
+activation/activation_hard.egg-info/requires.txt
+activation/activation_hard.egg-info/top_level.txt
