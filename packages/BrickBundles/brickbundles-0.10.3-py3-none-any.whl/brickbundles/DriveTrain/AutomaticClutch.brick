@@ -1,0 +1,10 @@
+AutomaticClutch is ManualClutch:
+    .doc: """
+Extends the manual clutch with an automatic engage/disengage feature.
+A engage_time constant determines how long it takes to go from fully
+open to fully engaged. The boolean ClutchEngageInput is used to engage and
+disengage the clutch.
+
+When using the automatic feature the opening_fraction parameter is irrelavant.
+"""
+    engage_time is Real: 0.1
