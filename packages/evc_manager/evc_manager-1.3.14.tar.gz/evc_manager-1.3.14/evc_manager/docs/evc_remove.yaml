@@ -1,0 +1,88 @@
+version: 1.0
+action: delete
+evcs:
+- current_config:
+    backend: oess
+    backend_evc_id: 40
+    current_path:
+    - device_a: Ampath2
+      device_z: SanJuan
+      interface_a: s2-eth290
+      interface_z: s4-eth193
+      name: Ampath2-SanJuan
+    - device_a: Ampath1
+      device_z: Ampath2
+      interface_a: s1-eth289
+      interface_z: s2-eth289
+      name: Ampath1-Ampath2
+    - device_a: SouthernLight2
+      device_z: Ampath1
+      interface_a: s3-eth52
+      interface_z: s1-eth53
+      name: Ampath1-SouthernLight2
+    is_active: true
+    is_backup: false
+    is_expired: false
+    is_optimized: true
+    is_up: true
+  decommissioning_time: 0
+  external_id: '0'
+  metrics:
+    avoid_shared: 0
+    max_delay: 0
+    max_hops: 0
+    min_bw: 0
+  monitoring: {}
+  name: new122
+  notifications:
+    emails: []
+    slack_channels: []
+  paths:
+  - - device_a: Ampath2
+      device_z: SanJuan
+      interface_a: s2-eth290
+      interface_z: s4-eth193
+      name: Ampath2-SanJuan
+    - device_a: Ampath1
+      device_z: Ampath2
+      interface_a: s1-eth289
+      interface_z: s2-eth289
+      name: Ampath1-Ampath2
+    - device_a: SouthernLight2
+      device_z: Ampath1
+      interface_a: s3-eth52
+      interface_z: s1-eth53
+      name: Ampath1-SouthernLight2
+  - - device_a: AndesLight2
+      device_z: SanJuan
+      interface_a: s6-eth97
+      interface_z: s4-eth241
+      name: AndesLight2-SanJuan
+    - device_a: AndesLight
+      device_z: AndesLight2
+      interface_a: s5-eth98
+      interface_z: s6-eth98
+      name: AndesLight-AndesLight2
+    - device_a: AndesLight
+      device_z: SouthernLight2
+      interface_a: s5-eth97
+      interface_z: s3-eth289
+      name: AndesLight-SouthernLight2
+  priority: 0
+  provisioning_time: 0
+  tenant: admin
+  unis:
+  - device: SanJuan
+    interface_description: s4-eth1
+    interface_name: s4-eth1
+    mac_addresses: []
+    tag:
+      type: vlan
+      value: 123
+  - device: SouthernLight2
+    interface_description: s3-eth1
+    interface_name: s3-eth1
+    mac_addresses: []
+    tag:
+      type: vlan
+      value: 122

@@ -1,0 +1,79 @@
+---
+date: 1534778761.29 # Aug 20 11:26AM 2018 UTC
+format: 1.0
+evcs:
+  # Complete EVC
+  - name: circuit_a
+    unis:
+      - device: ampath01
+        interface: eth3/1
+        tag:
+          type: vlan
+          value: 1720
+      - device: ampath02
+        interface: eth3/2
+        tag:
+          type: vlan
+          value: 1722
+    metric:
+      min_bw: 100
+      delay: 150
+      hops: 0
+    provisioning_time: 2018023431123
+    decommissioning_time: 0
+    requested_paths:
+      -
+        - Atlantic
+        - Terrestrial
+      -
+        - pacific
+        - Terrestrial
+      - any
+    tenant: AmLight
+    priority: 100
+    external_id: -1
+    current_config:
+      current_path:
+        - Atlantic
+        - Terrestrial
+      is_backup: False
+      is_optimized: True
+      to_be_provisioned: False
+      is_expired: False
+      is_up: True
+      is_active: True
+
+  # Output of a minimal EVC Configured
+  - name: minimal_evc
+    unis:
+      - device: ampath01
+        interface: eth3/1
+        tag:
+          type: vlan
+          value: 1720
+      - device: ampath02
+        interface: eth3/2
+        tag:
+          type: vlan
+          value: 1722
+    metric:
+      min_bw: 0
+      delay: 0
+      hops: 0
+    provisioning_time: -1
+    decommissioning_time: -1
+    requested_paths:
+      any
+    tenant: AmLight
+    priority: 0
+    external_id: -1
+    current_config:
+      current_path:
+        - Atlantic
+        - Terrestrial
+      is_backup: False
+      is_optimized: True
+      to_be_provisioned: False
+      is_expired: False
+      is_up: True
+      is_active: True

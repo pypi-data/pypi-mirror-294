@@ -1,0 +1,74 @@
+# Everything not included in the current_config dictionary is considered
+# metadata, which means, config provided by user when submitting a request
+name: circuit_a # STR - Mandatory Any unique identifier.
+unis:
+  # LIST of UNIs - useful for point-multipoint - Mandatory two items
+  - device: switch_name # mandatory
+    interface_name: switch_interface_name # mandatory
+    interface_description: switch_interface_description # optional
+    mac_addresses: # LIST optional
+      - mac_address: 00:00:00:00:00:00 # format has to be always xx:xx:xx:xx:xx:xx
+    tag:
+      # optional
+      # if not provided, assume VLAN and untagged
+      # Untagged is represented as -1
+      type: vlan_or_mpls # if tag is provided, trype is mandatory
+      #value: vlan_id_or_mpls_tag # if tag is provided, value is mandatory
+      # New for 0.2:
+      value: vlan_id_or_mpls_tag or [vlan_id_start, vlan_id_end] # If a list is provided
+      # treat as a VLAN range
+metrics: # optional
+  min_bw: bandwidth_in_int
+  max_delay: max_value_for_milliseconds
+  max_hops: max_number_of_hops
+  avoid_shared: avoid_shared_links
+provisioning_time: unix_timestamp_or_0_if_not_provided # optional integer
+decommissioning_time: unix_timestamp_or_0_for_no_expire # optional integer
+paths:
+# optional. List of lists. FIFO. If not provided, assumes ANY path available
+# using metrics. Path has priority over metrics.
+  - - nni_name: NNI_NAME_A
+      action: include
+    - nni_name: NNI_NAME_C
+      action: include
+  - - nni_name: NNI_NAME_C
+      action: ignore
+  - any
+tenant: group_name # optional string
+priority: higher_number_higher_priority # optional integer
+external_id: external_id_if_any_otherwise_0 # optional string
+monitoring: # optional
+  dataplane:
+    trace:
+      active: True_or_False
+      interval: time_in_seconds_between_tests
+    int:
+      active: True_or_False
+      collector: ip_address
+  controlplane:
+    trace:
+      active: True_of_False
+      interval: time_in_seconds_between_tests
+notification: # optional
+  slack_channel:
+  - workgroup1
+    channel1
+  - workgroup2
+    channel2
+  emails:
+  - user1@email
+  - user2@email
+current_config:
+  # current configuration and status
+  backend: name_of_the_backend_used_to_export_data
+  backend_evc_id: circuit id used by the backend
+  path: # list of NNIs or Empty if it is internal to a switch
+  - nni_name: NNI_NAME_A
+  - nni_name: NNI_NAME_A
+  is_backup: True_or_False_if_backup_is_in_use
+  is_optimized: True_or_False_if_metrics_not_fulfilled
+  to_be_provisioned: True_or_False_if_now()_less-than_provisioning_time
+  is_expired: True_or_False_True_if_now()_higher-than_decommissioning_time
+  is_up: True_or_False_True_if_evc_is_operational_end_to_end
+  is_active: True_or_False_if_now()_between_provisioning_time_and_decommissioning_time
+  # Attributes soft vs. hard user-defined.
