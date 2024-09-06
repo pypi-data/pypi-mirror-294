@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/quality_mitxelena/__init__.py
+odoo/addons/quality_mitxelena/__manifest__.py
+odoo/addons/quality_mitxelena/models/__init__.py
+odoo/addons/quality_mitxelena/models/quality_mitxelena.py
+odoo/addons/quality_mitxelena/views/quality_views.xml
+odoo14_addon_quality_mitxelena.egg-info/PKG-INFO
+odoo14_addon_quality_mitxelena.egg-info/SOURCES.txt
+odoo14_addon_quality_mitxelena.egg-info/dependency_links.txt
+odoo14_addon_quality_mitxelena.egg-info/not-zip-safe
+odoo14_addon_quality_mitxelena.egg-info/requires.txt
+odoo14_addon_quality_mitxelena.egg-info/top_level.txt

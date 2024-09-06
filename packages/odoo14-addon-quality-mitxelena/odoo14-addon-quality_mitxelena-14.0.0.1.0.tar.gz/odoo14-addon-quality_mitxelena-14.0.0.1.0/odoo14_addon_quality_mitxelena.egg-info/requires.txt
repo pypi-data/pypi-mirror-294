@@ -1,0 +1,2 @@
+odoo14-addon-quality_control_oca
+odoo<14.1dev,>=14.0a
