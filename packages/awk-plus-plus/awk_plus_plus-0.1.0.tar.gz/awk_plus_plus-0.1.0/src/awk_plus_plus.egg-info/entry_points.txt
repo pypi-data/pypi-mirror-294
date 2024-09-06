@@ -1,0 +1,2 @@
+[console_scripts]
+cti = awk_plus_plus.cli:run
