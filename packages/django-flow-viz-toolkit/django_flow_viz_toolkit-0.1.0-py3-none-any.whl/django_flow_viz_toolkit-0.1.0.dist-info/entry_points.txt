@@ -1,0 +1,2 @@
+[console_scripts]
+generate-flowchart = flowchart_visualizer.management.commands.generate_flowchart:Command

@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: django-flow-viz-toolkit
+Version: 0.1.0
+Summary: A tool to generate flowcharts for Django projects
+Home-page: https://github.com/arifbd2221/django-flow-viz-toolkit
+Author: Mohidul Hoque Arif
+Author-email: mohidulhoque216@gmail.com
+License: MIT
+Keywords: django,flowchart,visualization,model relationships,django models,URL mapping,middleware visualization,signal visualization,graph generation,pygraphviz,Django management commands,process visualization,Django package,project visualization,Django tools,developer tools
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django <5.2,>=3.0
+Requires-Dist: pygraphviz >=1.13
+Requires-Dist: tqdm >=4.66.5
+
+# Django Flow Viz Toolkit
+
+A Django management command that generates flowcharts for your Django project, including models, URLs, middleware, and signals.
+
+## Features
+- Generates project-wide or app-wise flowcharts.
+- Visualizes Django models, URLs, middleware, and signals.
+- Uses PyGraphviz to render flowcharts.
+
+## Installation
+
+1. We will use pygraphviz to generate the flowcharts. Install it via pip:
+   ```
+   pip install pygraphviz
+   ```
+   If you face any issues, you might need to install Graphviz on your system first. For example, on Ubuntu, you can run:
+   ```
+   sudo apt-get install graphviz
+   ```
+
+2. Install the package using pip:
+   ```
+   pip install django-flow-viz-toolkit
+   ```
+
+## Configuration
+After installation, include `django-flow-viz-toolkit` in the `INSTALLED_APPS` in your Django project's `settings.py`:
+
+```
+INSTALLED_APPS = [
+    ...
+    'django-flow-viz-toolkit',
+    ...
+]
+```
+
+## Usage
+Run the management command to generate the flowchart:
+```
+python manage.py generate_flowchart
+```
+
+To generate app-wise flowcharts:
+```
+python manage.py generate_flowchart --app-wise
+```
+
+
+![Flowchart Example](https://raw.githubusercontent.com/arifbd2221/django-flow-viz/main/flowcharts/project_flowchart.png)
