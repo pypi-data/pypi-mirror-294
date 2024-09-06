@@ -1,0 +1,24 @@
+docs/benchmark.ipynb,sha256=Eo2tFtb4EB_ig_L2sabAvpNESZq5P_Cw9XdXaKGG3sM,5992
+docs/changelog.md,sha256=VN4qGfT9DZ9TLlVZm327SsXvFaRg4Jr8b_BF-y9Ptwc,3417
+docs/cli.md,sha256=l6Xn9yxkLWiFptEEMIDiW3qVezEYtJsxrKkb74m3-Gc,136
+docs/index.md,sha256=aj4tFaw3nSmF7SdZW6pam3tglNjCsiJ1l62vfPlplmE,1067
+docs/Python API/benchmark.md,sha256=ESvC25nCANe-mf7S11-rQGXM39Ko50kWKlnsunVOBzg,181
+docs/Python API/index.md,sha256=94NIA-a6z9CMD9tuZmjXv2GqvNQqW201i-O2iFSXGIw,1732
+docs/Python API/request_types.md,sha256=_0-a-Wlyq6gHp6f5CUS-9F3pRxLrHduVbhUPVa7gnuQ,735
+docs/Python API/response_types.md,sha256=eK6d3O59StPNkk1RDTw8WBAV-bHpfwYUII8vZt2t_fA,790
+filesender/__init__.py,sha256=8_iInCoFj-MZa6mC3kG-1AlaJLitqPwaDewbOlxioIA,162
+filesender/api.py,sha256=un2VUw4UuqwTgWiD0VmOr14IxINlaWZYWAz0w-4icVM,19442
+filesender/auth.py,sha256=AiVAs5Ufj8ZnTR_-ZTMTDFxICcqJwwdhJ0u3pgDhQqc,4653
+filesender/benchmark.py,sha256=sTbPQr5X4jM-2NhTc37dKcg9VVSR9W6AQdoHFtFMlBA,3902
+filesender/config.py,sha256=A-yUxEBmUyIO6jojQVgzgJCKsEdVp4j583UdP-3aVlk,798
+filesender/download.py,sha256=Dx13Vjr-90Nil6r9bGsBT2451nT8bLta-1Mqasyq84c,1669
+filesender/log.py,sha256=Ts44n3xXtdAhDbzWQUR5ahcCOcqhNaumsiqpSvNGJX0,1342
+filesender/main.py,sha256=walGC1sl32emweXWoW6cHh1A_tzPtm272uFU08sSJ1M,9490
+filesender/request_types.py,sha256=Vywjp0z5aIH0iKw4HtG4vbRK8dZdA0Du3XcfaHuk8rM,2214
+filesender/response_types.py,sha256=zxrsNgyJUbjToC0dDf3hZmLfphK8Nk8GMRVnEbyvpjg,1474
+filesender_client-2.1.0.dist-info/LICENSE,sha256=BHpJ5lGI-GEncOe43PAEUjG814tYBfTOTqIoxh27bvg,1501
+filesender_client-2.1.0.dist-info/METADATA,sha256=AWDnevjRPC9E58xsFMGIPKpYAdddkY8qeN-cK4lMp-k,1604
+filesender_client-2.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+filesender_client-2.1.0.dist-info/entry_points.txt,sha256=tuWMGz6dSEBEuNYI6wPzV7wdlCQzDQo4qIU3IzLux_U,51
+filesender_client-2.1.0.dist-info/top_level.txt,sha256=BxxGWxZW_yrIrvdnaLwbSkP7_ak_YTWR1mzRdFP1QA4,16
+filesender_client-2.1.0.dist-info/RECORD,,
