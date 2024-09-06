@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: temperatura
+Version: 1.0.0
+Summary: Um simples conversor de temperatura (Celsius - Fahrenheit)
+Home-page: https://github.com/lissandro1/package-template.git
+Author: Lissandro
+License: MIT
+License-File: LICENSE.txt
+
+Um simples conversor de temperatura, com funções para conversão de Celsius para Fahrenheit e vice-versa, usado para um post no Blog da Alura
