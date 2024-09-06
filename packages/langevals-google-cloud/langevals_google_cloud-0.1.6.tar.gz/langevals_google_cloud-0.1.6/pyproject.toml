@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "langevals-google-cloud"
+version = "0.1.6"
+description = "LangEvals integration for Google Cloud APIs evaluators"
+authors = [ "Rogerio Chaves <rogerio@langwatch.ai>",]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langevals-core = "^0.1.7"
+google-cloud-dlp = "^3.16.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+python-dotenv = "1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"

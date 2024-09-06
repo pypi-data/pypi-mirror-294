@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: langevals-google-cloud
+Version: 0.1.6
+Summary: LangEvals integration for Google Cloud APIs evaluators
+License: MIT
+Author: Rogerio Chaves
+Author-email: rogerio@langwatch.ai
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: google-cloud-dlp (>=3.16.0,<4.0.0)
+Requires-Dist: langevals-core (>=0.1.7,<0.2.0)
