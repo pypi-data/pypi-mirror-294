@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0413
+
+
+"service"
+
+
+import getpass
+import sys
+
+
+from rssbot.config  import Config
+from rssbot.errors  import Errors, errors
+from rssbot.main    import init, wrap
+from rssbot.modules import face
+from rssbot.utils   import banner, forever, modnames, pidfile, privileges
+
+
+Cfg = Config()
+Cfg.mod = ",".join(modnames(face))
+Cfg.user = getpass.getuser()
+
+
+def cprint(txt):
+    "flush after print."
+    print(txt)
+    sys.stdout.flush()
+
+
+def main():
+    "main"
+    banner(Cfg, cprint)
+    privileges(Cfg.user)
+    pidfile(Cfg.pidfile)
+    started = []
+    for thr in init(Cfg.mod, face):
+        started.append(thr.name)
+    cprint(f"started: {','.join(sorted(started))}")
+    forever()
+
+
+if __name__ == "__main__":
+    Errors.out = print
+    wrap(main)
+    errors()
