@@ -1,0 +1,10 @@
+Requests
+numpy
+paho_mqtt==1.6.1
+pandas
+python_dateutil
+pytz
+requests
+typeguard
+typing_extensions
+urllib3
