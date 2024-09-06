@@ -1,0 +1,11 @@
+environmental_biophysics-0.0.6.dist-info/METADATA,sha256=QqsqXCfZNE1VTHvB-G5YQH91FKEjkH8c0pTZ3Prr4c8,1372
+environmental_biophysics-0.0.6.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+environmental_biophysics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+environmental_biophysics/crop_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+environmental_biophysics/crop_model/crop_class.py,sha256=gqHsvvMnv4qhKDObX7g1v6Xc3NtYeVpwc6VdDPIQbIE,6784
+environmental_biophysics/crop_model/soil_class.py,sha256=KRDAYzvaBEFc6QbtyT6kkTa5T4eYtTDdMlmMm55_Oyw,7959
+environmental_biophysics/environmental_constants.py,sha256=3uagyzt7KGIG8P4z9zKOo5RtsCR3xO0BQGN5m1yBWDw,206
+environmental_biophysics/gas.py,sha256=crcIS_h38CDr8eARePE58pTDusOChkTpM6tW5m6oIx4,1502
+environmental_biophysics/soil.py,sha256=ndB3HtTuohOeAqcJAPzw4WERu_5bxsgO7LIIGEDeM7U,9402
+environmental_biophysics/solar_radiation.py,sha256=F_378cHyGcHNyUQcjbQX2iYpZWwnRj5KWKICKVLFXH4,17085
+environmental_biophysics-0.0.6.dist-info/RECORD,,
