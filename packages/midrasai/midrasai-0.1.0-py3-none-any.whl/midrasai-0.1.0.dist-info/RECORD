@@ -1,0 +1,12 @@
+midrasai/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+midrasai/cli.py,sha256=M12R_7Qcr3-X0ya7iybRtMuFKzJlXEAlq6tDJdFxGgo,474
+midrasai/client.py,sha256=pvrhQUdbZ6DP7JXDGO0ONEt_VPo32boBc8OPaOHZiNs,2020
+midrasai/local/__init__.py,sha256=NrU79ABC0YJm9spN_5ETfXoH7SsPohx2ACWS58K-EJs,139
+midrasai/local/model.py,sha256=69BvYicsaARjJkgAIBDWBxyu1l24NcMwPaEyUnqTxlw,2579
+midrasai/local/processing.py,sha256=T5OvAsKqUlX1xIM6vCa5jqSmGrVW32lPhrjVaDn9nn4,3809
+midrasai/local/server.py,sha256=SLJ9fgyHl8_Hb9cbLf4EfiZI1pE2C9FGmYffjM6soqw,1460
+midrasai/typedefs.py,sha256=8GfQi29WIaY1IRlIPgKNP1Hi3Es8ircGhLxG8r_PZ24,188
+midrasai-0.1.0.dist-info/METADATA,sha256=hI0635Ly7hgiYQvzpeTW1TNCyQHO56pHWHsjTyOYNLg,428
+midrasai-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+midrasai-0.1.0.dist-info/entry_points.txt,sha256=rKI-sBi2Z7FLQEHKrjbq9ZcvJN7EwtInjpesAu33kxg,51
+midrasai-0.1.0.dist-info/RECORD,,
