@@ -1,0 +1,9 @@
+libllama-embedder.so,sha256=jna0tYZx4RwBfJADApAuk9XR1IcDs9DvU-cUaypSoEA,4144641
+llama_embedder.cpython-39-x86_64-linux-gnu.so,sha256=qdHfL-n21atL4X2ZNfCOK9Z5g4bF3YcmKvU3PH2RBsM,5426145
+bindings/python/llama_embedder/__init__.py,sha256=GTOimsg_3Dftq3DNkkE_AdTFhoh16cGjkkOdc2402Hk,139
+llama_embedder-0.0.7.dist-info/LICENSE.md,sha256=A6bhHx50Ax8GEppu_XcHqy8O04uIegj-x5LROAqZs6w,1076
+llama_embedder-0.0.7.dist-info/METADATA,sha256=deuDIbPqwbmglB0wqeVnyzf-l9mq-UiwBBIuworFd3I,2283
+llama_embedder-0.0.7.dist-info/top_level.txt,sha256=I4kvXoa-BLfwxg2XPlD0nbADVanc9cbC0i4RiWVumpM,24
+llama_embedder-0.0.7.dist-info/RECORD,,
+llama_embedder-0.0.7.dist-info/WHEEL,sha256=ER3Jtc6uQptpQyRQf4eGx-tyF9HE1_D4l5Yr4EjJahY,148
+llama_embedder.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
