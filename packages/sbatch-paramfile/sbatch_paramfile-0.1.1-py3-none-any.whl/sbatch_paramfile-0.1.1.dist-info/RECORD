@@ -1,0 +1,7 @@
+sbatch_paramfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbatch_paramfile/main.py,sha256=2QAR3Vss3Bgpk6OiE9-Cn9r8cnonb1Hu45Ds8C_6T3k,4184
+sbatch_paramfile-0.1.1.dist-info/METADATA,sha256=z-3cmnVp0UyIXFTXWUon_Ybsnc9Rwl_ZMNcikbRT68s,2546
+sbatch_paramfile-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+sbatch_paramfile-0.1.1.dist-info/entry_points.txt,sha256=jZFnkUCUlMipefm1jfmjlPLc0gecwGAC-NftJqcEi7s,71
+sbatch_paramfile-0.1.1.dist-info/top_level.txt,sha256=kgL5tWqJJNZt36nB2s0TjiKifx_e-9WnmeiMyCN8Ago,17
+sbatch_paramfile-0.1.1.dist-info/RECORD,,
