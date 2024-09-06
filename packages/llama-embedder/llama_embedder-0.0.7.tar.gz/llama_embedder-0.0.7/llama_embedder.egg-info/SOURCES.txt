@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+bindings/python/README.md
+bindings/python/bindings.cpp
+bindings/python/llama_embedder/__init__.py
+llama_embedder.egg-info/PKG-INFO
+llama_embedder.egg-info/SOURCES.txt
+llama_embedder.egg-info/dependency_links.txt
+llama_embedder.egg-info/not-zip-safe
+llama_embedder.egg-info/requires.txt
+llama_embedder.egg-info/top_level.txt

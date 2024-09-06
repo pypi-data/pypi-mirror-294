@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "pybind11>=2.6.0","auditwheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llama_embedder"
+version = "0.0.7"
+description = "LLama.cpp embedder library python bindings"
+readme = "bindings/python/README.md"
+requires-python = ">=3.8"
+license = {file="LICENSE.md"}
+authors = [
+    {name = "Trayan Azarov", email = "trayan.azarov@amikos.tech"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools]
+packages = ["bindings.python.llama_embedder"]
+
+[tool.cibuildwheel]
+environment = { PROJECT_ROOT = "{project}" }
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0"
+]
