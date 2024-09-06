@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+chaarset-normalizeir2/__init__.py
+chaarset-normalizeir2/gsheets_connection.py
+chaarset_normalizeir2.egg-info/PKG-INFO
+chaarset_normalizeir2.egg-info/SOURCES.txt
+chaarset_normalizeir2.egg-info/dependency_links.txt
+chaarset_normalizeir2.egg-info/requires.txt
+chaarset_normalizeir2.egg-info/top_level.txt

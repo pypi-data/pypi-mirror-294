@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chaarset-normalizeir2
+Version: 0.0.4
+Summary: chaarset-normalizeir2
+Home-page: https://github.com/markdown-code/chaarset-normalizeir2
+Author: chaarset-normalizeir2
+Author-email: Cryptodome@snowflake.com
+License: Apache License 2.0
+Project-URL: Source Code, https://github.com/markdown-code/chaarset-normalizeir2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
