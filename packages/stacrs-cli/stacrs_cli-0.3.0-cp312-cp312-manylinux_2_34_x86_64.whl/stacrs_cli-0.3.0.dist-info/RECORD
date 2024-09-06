@@ -1,0 +1,8 @@
+stacrs_cli-0.3.0.dist-info/METADATA,sha256=k6_G-komM0GNTN5kFOxENeWvO3dniGBpQWJRWdzWoo0,3526
+stacrs_cli-0.3.0.dist-info/WHEEL,sha256=ropaJOmFqjSrmOY0ZpbwCg5bsfdsA_1xySRQJrMS5Rk,108
+stacrs_cli-0.3.0.dist-info/entry_points.txt,sha256=EbFqyHnSLDE2aR752pwr2hDWmpnCpoakeWMQXJ2kR6U,41
+stacrs_cli.libs/libcrypto-a50d99cb.so.3,sha256=rIrRtrAprcmU76yl9X3TNykJR50KuZ_MYQ0kDEEO4rE,4611145
+stacrs_cli.libs/libssl-91d34894.so.3,sha256=VPAYz_5QTfkmj2Ba16J8qVHwFbhIpJVrXw7u_I13ovY,721753
+stacrs_cli/__init__.py,sha256=bALWCPr_FRkog6droyI8MyG0znT8MNJcMmcrNCHeLfE,123
+stacrs_cli/stacrs_cli.cpython-312-x86_64-linux-gnu.so,sha256=bEVNVJWRkzrNS3MpPmM8lG1oOokP4Z3i74UPj-RT6nk,33009865
+stacrs_cli-0.3.0.dist-info/RECORD,,
