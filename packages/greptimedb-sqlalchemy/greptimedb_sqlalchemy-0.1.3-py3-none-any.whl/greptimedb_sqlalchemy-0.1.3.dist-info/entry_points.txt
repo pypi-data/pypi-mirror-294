@@ -1,0 +1,5 @@
+[sqlalchemy.dialects]
+greptimedb = greptimedb_sqlalchemy:GreptimeDBDialect
+
+[superset.db_engine_specs]
+greptimedb = greptimedb.superset:GreptimeDBEngineSpec
