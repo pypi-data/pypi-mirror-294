@@ -1,0 +1,12 @@
+pyspark_datasources/README.md,sha256=PxpPL_jrUcYpQaM9ZhBu-WPkDLQKQdFDufK2nNFPaxA,459
+pyspark_datasources/__init__.py,sha256=Zr5KubbSbjeD9VNNCIL3QcWHm52MTJbCtAqY2sWH5do,234
+pyspark_datasources/fake.py,sha256=n-Nr0QlC9S6ppTa6si31v9ET6Ntof4hT09v8zLOaA0E,4252
+pyspark_datasources/github.py,sha256=-QpJsjKYqo0SBwz3i0uScthGiUo9LVJ1Uk8WqpqQqs8,2481
+pyspark_datasources/huggingface.py,sha256=BmdINttqyUZTglt9TsuvQl28AMAAL9aig_w8Xott_dE,3531
+pyspark_datasources/simplejson.py,sha256=PFIoC1fvrpKEO1zuaKz8qpECEvuHGoT-tDTCYa50PII,4072
+pyspark_datasources/stock.py,sha256=EXj7P0ccWS5mkEtt-0DFvtJ8wSxEaIwnQAex5G52zcs,2996
+pyspark_datasources/weather.py,sha256=dgSW3vWd-sUiHWXgn5QUaaMK4fjt_u5cEzrs4O5wMpU,5026
+pyspark_data_sources-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyspark_data_sources-0.1.5.dist-info/METADATA,sha256=6QBOFDVuXtaNXLiZVaQMIAc3tC_srVYvhljyERQ-Fc0,3557
+pyspark_data_sources-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyspark_data_sources-0.1.5.dist-info/RECORD,,
