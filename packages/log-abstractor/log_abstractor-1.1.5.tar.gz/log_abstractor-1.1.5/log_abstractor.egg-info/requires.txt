@@ -1,0 +1,4 @@
+structlog>=24.4.0
+scrubadub==2.0.0
+regex
+probablepeople
