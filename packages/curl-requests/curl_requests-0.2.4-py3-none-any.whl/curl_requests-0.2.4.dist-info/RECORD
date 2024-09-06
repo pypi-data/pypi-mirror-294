@@ -1,0 +1,8 @@
+curl_requests/__init__.py,sha256=mY3_v2ZDmeEa46wRwyXTTaU0Z18sWsT04AP0rjL37wo,28
+curl_requests/req.py,sha256=FQnV2miX6bYzLGjw7CQgF1p8x6om9HBovwChgKGEg5I,5104
+curl_requests/__pycache__/__init__.cpython-312.pyc,sha256=7kjKhl7n1aBPy5gvs_z40vEeX0JGBW5QxQCRPaZVSm0,198
+curl_requests/__pycache__/req.cpython-312.pyc,sha256=raEnaHMFE7wwTWDT_OIu0qxYB9yJMtrD61g_ZmwRDEA,4230
+curl_requests-0.2.4.dist-info/METADATA,sha256=lfkTQUkjcNhvApjjGacrpijLBHjmdexaVAIHdyHgdCw,216
+curl_requests-0.2.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+curl_requests-0.2.4.dist-info/top_level.txt,sha256=Y1OIf9mTJ0zcyBOm1pQKl7Wxr81qXpERj8i3Lz67sv4,14
+curl_requests-0.2.4.dist-info/RECORD,,
