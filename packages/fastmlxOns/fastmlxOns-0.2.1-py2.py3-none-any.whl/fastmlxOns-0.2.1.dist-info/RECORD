@@ -1,0 +1,17 @@
+fastmlx/__init__.py,sha256=DeGHtlQEp8Ko8W9ampERcz5VtQqJydenR1I1nJlj7Mw,152
+fastmlx/fastmlx.py,sha256=bDDaJCavg1ZOTtr5vz8ew4rCo9zdI47E88OJpzKTLkU,9667
+fastmlx/utils.py,sha256=mB9oJPzyjUxN4WVDRJ-3Ja7Io35q_OpxlouIRuxRZ3c,13098
+fastmlx/tools/arcee_agent.j2,sha256=L9m4m9IwPTwGsrnXP-frqYWjEP6e69LECg9AJq3Mddc,398
+fastmlx/tools/command-r-plus.j2,sha256=pbSMPkTq8EgOIRN05sqm27QK45F9Xt2qW04la9PgNJ8,1199
+fastmlx/tools/config.json,sha256=ytJ0kOCofnSW76oLOanC8UiTqCfBOCB5_Sy1KSWuetE,684
+fastmlx/tools/llama-3_1.j2,sha256=pY0F21PcTtmTRmJ4YQfkHv8neyhUrHW3w6qujsX5pOg,1841
+fastmlx/tools/xlam.j2,sha256=SP9eL6K6dGBkmgS7AinsYdvEIaVppY6-u3-JAoy9bE4,1021
+fastmlx/types/model.py,sha256=BZAzu9cWNkalS1dynLZULpu5IfJLnGDw0f791HV0RFs,129
+fastmlx/types/chat/chat_completion.py,sha256=ZHEsb090DlNsNWT1r48R-N6gkAIZZ2kxMr3EPnQadjU,1160
+fastmlxOns-0.2.1.dist-info/AUTHORS.rst,sha256=sir-6H15_XnxfdLuthCgtrTxliquT1Yv_Xp7nd2m8uY,159
+fastmlxOns-0.2.1.dist-info/LICENSE,sha256=Cux5ACO1dVGoTDjvAf-DNIbi537TjIJ9VZwma4_UjJI,585
+fastmlxOns-0.2.1.dist-info/METADATA,sha256=vMx8Mb_P_ex8Cjfo07VznJ9mpl5byN4rs_GVjusxsb4,12984
+fastmlxOns-0.2.1.dist-info/WHEEL,sha256=qUzzGenXXuJTzyjFah76kDVqDvnk-YDzY00svnrl84w,109
+fastmlxOns-0.2.1.dist-info/entry_points.txt,sha256=XOm7M8tY2JFDob_CxO1ah-fUvLaSdub3jkr9AlDTQsc,48
+fastmlxOns-0.2.1.dist-info/top_level.txt,sha256=Atea5kbQi5jRkYdCW2q8WXimMSoskaFucwuLTzMHSYg,8
+fastmlxOns-0.2.1.dist-info/RECORD,,
