@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-product-pack
+Version: 14.0.20240905.0
+Summary: Meta package for oca-product-pack Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-pos-product-pack
+Requires-Dist: odoo14-addon-product-pack
+Requires-Dist: odoo14-addon-sale-product-pack
+Requires-Dist: odoo14-addon-stock-product-pack
+
+UNKNOWN
