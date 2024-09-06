@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: python-pack
+Version: 0.0.0
+Summary: A modern Python project template
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: rich
+Requires-Dist: uv
+Provides-Extra: dev
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: python-pack[tests] ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-asyncio ; extra == 'tests'
+Requires-Dist: pytest-env ; extra == 'tests'
+Requires-Dist: pytest-rerunfailures ; extra == 'tests'
+Requires-Dist: pytest-sugar ; extra == 'tests'
+Requires-Dist: pytest-timeout ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+
+# want a python environment that just works?
+here you go!
+
+```
+gh repo clone zzstoatzz/python-pack
+cd python-pack
+make clean
+make dev
+source .venv/bin/activate
+pytest
+```
