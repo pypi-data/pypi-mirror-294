@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_main.py
+uvnb/__init__.py
+uvnb/__main__.py
+uvnb.egg-info/PKG-INFO
+uvnb.egg-info/SOURCES.txt
+uvnb.egg-info/dependency_links.txt
+uvnb.egg-info/entry_points.txt
+uvnb.egg-info/requires.txt
+uvnb.egg-info/top_level.txt
