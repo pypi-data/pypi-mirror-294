@@ -1,0 +1,24 @@
+name: "Aave V3"
+version: "1.0.0"
+type: "protocol"
+author: "Almanak"
+description: "Uniswap V3 protocol"
+license: "MIT"
+
+supported_chains:
+  - engine: 'evm'
+    chainId: '1'
+    dependencies:
+      contracts:
+        - abi: "file://abi/aave_pool.json"
+          address: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
+          alias: "aave_pool"
+  - engine: 'evm'
+    chainId: '2'
+    dependencies:
+      contracts:
+        - abi: "file://abi/aave_pool.json"
+          address: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
+          alias: "aave_pool"
+    settings:
+      uniswap_v3_usdc_pool: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
