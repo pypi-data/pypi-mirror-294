@@ -1,0 +1,8 @@
+tensorstore/__init__.py,sha256=NdNJII9iAc7DCn39ye_JeZOL_ByOyyn1Hc9kYxXlQ00,7695
+tensorstore/_tensorstore.cp312-win_amd64.pyd,sha256=WQHWHOSqEMBOAkmBPRHgDGXartMgup3xnGf0AMGnBpo,30136320
+tensorstore-0.1.65.dist-info/AUTHORS,sha256=1gtA22CUyenQ1leaw8bBH8TdcLP1UrcMPEAyr_IAV-I,303
+tensorstore-0.1.65.dist-info/LICENSE,sha256=3tF6QvvME9HvnMKbHGS-zNSurEF5puaUpiJfSUpIetY,15673
+tensorstore-0.1.65.dist-info/METADATA,sha256=IxlrNsPxExuZqnRwujsyoS38yzyNejmaOkld7G7zR_4,3046
+tensorstore-0.1.65.dist-info/WHEEL,sha256=Z9NC-OvRBktQLUujjZiuac9jF_06CqbjTb-FqrCClNs,101
+tensorstore-0.1.65.dist-info/top_level.txt,sha256=kzkybe54TTNq_1bQCcFipfA75PFM3RVR4FzW6OOcviM,37
+tensorstore-0.1.65.dist-info/RECORD,,
