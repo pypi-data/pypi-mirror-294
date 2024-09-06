@@ -1,0 +1,21 @@
+click
+Pygments
+rich
+ruamel.yaml
+tqdm
+watchdog
+requests
+flask
+
+[:python_version >= "3.10"]
+importlib-metadata
+
+[dev]
+pytest
+pytest-cov
+
+[typ]
+mypy
+types-tqdm
+types-requests
+types-Pygments
