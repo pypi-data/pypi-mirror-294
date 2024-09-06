@@ -1,0 +1,10 @@
+glvis/__about__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+glvis/__init__.py,sha256=8zrycLdNPpzRoCKJvmUlgvjY0hAPoy41SBs-xQ9MP98,747
+glvis/util.py,sha256=jUR4aJq_uDJ5A-BP8QDJ3B7-MaO2CGcWr7MF84ZrXpI,985
+glvis/widget.js,sha256=3GyZNGz_pnk-TbxZx6paHet3eaUU_MEScup43Uk1q3w,1733
+glvis/widget.py,sha256=I_XMFVXmXarSJZ4YM1Ub1xVkujwv79InyTWDQ8JbXPo,4782
+glvis-1.1.0.dist-info/METADATA,sha256=zdQNdRiLwlTjacXH1STzN-aQkFxZYA1bKuQzvpS8XG0,8510
+glvis-1.1.0.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+glvis-1.1.0.dist-info/licenses/LICENSE,sha256=kgIY2ItEGcnl6vplmyvscR17XVxNhVGG2TtJj48eTzg,1546
+glvis-1.1.0.dist-info/licenses/NOTICE,sha256=FV5CQQrPccHKwiS8F9kNH5AU8oKMePIh-kTcTj6mVqg,1167
+glvis-1.1.0.dist-info/RECORD,,
