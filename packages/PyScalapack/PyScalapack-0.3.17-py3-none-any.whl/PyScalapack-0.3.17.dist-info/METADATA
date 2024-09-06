@@ -1,0 +1,359 @@
+Metadata-Version: 2.1
+Name: PyScalapack
+Version: 0.3.17
+Summary: python wrapper for scalapack
+Author-email: Hao Zhang <zh970205@mail.ustc.edu.cn>
+License: GPLv3
+Project-URL: Homepage, https://github.com/USTC-TNS/TNSP/tree/main/PyScalapack
+Project-URL: Repository, https://github.com/USTC-TNS/TNSP.git
+Project-URL: Issues, https://github.com/USTC-TNS/TNSP/issues
+Project-URL: Changelog, https://github.com/USTC-TNS/TNSP/blob/main/CHANGELOG.org
+Keywords: scalapack,lapack,blas,linear algebra,scientific computing,parallel computing,MPI
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+PyScalapack is a Python wrapper for ScaLAPACK.
+To use PySCALAPACK, users must provide the path to the ScaLAPACK dynamic shared library, which is loaded by `ctypes.CDLL` by default.
+
+
+# Install
+
+Please either copy or create a soft link for the directory in the `site-packages` directory.
+Alternatively, users can utilize pip to install the PyScalapack package by running the command `pip install PyScalapack`.
+
+
+# Documents
+
+
+## Load ScaLAPACK
+
+The ScaLAPACK dynamic shared library should be loaded prior to engaging in any further operations.
+
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+
+If the ScaLAPACK dynamic shared library reside outside the default path, users must supply their absolute paths.
+In case ScaLAPACK functions are distributed across multiple cdecl convention dynamic shared libraries,
+include them all when invoking `PySCALAPACK`. For instance, use `PySCALAPACK("libmkl_core.so", ...)`.
+To override the default loader `ctypes.CDLL`, add a keyword-only argument called `loader` to `PySCALAPACK`,
+which is particularly helpful when working with non-cdecl convention shared libraries.
+
+
+## Create a context
+
+Create a BLACS context to facilitate subsequent BLACS or ScaLAPACK operations.
+A context informs ScaLAPACK on how a distributed matrix is positioned among various processes.
+Establishing a context is mandatory for creating a BLACS matrix.
+Only three parameters are required: layout (either column major or row major), the number of rows in the process grid, and the number of columns in the process grid.
+Set the layout to b'C' for column major or b'R' for row major.
+
+To ensure efficient use of resources and prevent idle processes, make sure the product of `nprow` and `npcol` is equal to the number of processes.
+If the product of `nprow` and `npcol` surpasses the number of processes, a fatal error arises.
+When the product of `nprow` and `npcol` is smaller than the number pf processes, some processes may be excluded from the context.
+These excluded processes are marked as invalid within the context.
+To check if the current process is valid, users can examine the `context.valid` attribute.
+Alternatively, they can also utilize boolean operations such as `bool(context)`.
+
+The context in PyScalapack has several attributes including:
+
+-   `layout`: layout of the process grid, it is either 'R' for row major or 'C' for column major;
+-   `nprow`: row number of the process grid;
+-   `npcol`: column number of the process grid;
+-   `rank`: rank of the current process;
+-   `size`: size of the process grid;
+-   `ictx`: the raw context handle from BLACS;
+-   `myrow`: row index of the current process;
+-   `mycol`: column index of the current process;
+-   `valid`: whether the current process is valid, it equals `rank < nprol * npcol`.
+
+Most of these attributes are of type ctypes bool or ctypes int.
+To obtain their Python values, users can access them using the `value` attribute, like `context.nprow.value`.
+
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+    
+    with scalapack(layout=b'C', nprow=1, npcol=1) as context:
+        for key, value in context.__dict__.items():
+    	print(f"{key} = {value}")
+
+    scalapack = <PyScalapack.Scalapack object at 0x7f6242fa0210>
+    layout = c_char(b'C')
+    nprow = c_int(1)
+    npcol = c_int(1)
+    rank = c_int(0)
+    size = c_int(1)
+    ictxt = c_int(0)
+    myrow = c_int(0)
+    mycol = c_int(0)
+    valid = True
+
+Users can utilize the function `context.barrier(scope=b'A')` to synchronize all processes within the process grid.
+Additionally, calling with `scope=b'R'` will synchronize all processes in the same row of the process grid,
+while invoking `context.barrier` with `scope=b'C'` will synchronize all processes in the same column of the process grid.
+
+
+## Create an array
+
+Utilize `context.array` to generate a block-cyclic distributed array.
+The matrix's shape relies on the arguments `m` and `n`, whereas the block size for distribution among processes is set by `mb` and `nb`.
+Once an array is created, each process will have its own local matrix dimensions, which can be accessed through `local_m` and `local_n`.
+
+    import numpy as np
+    import PyScalapack
+    
+    scalapack = PyScalapack(
+        "libmpi.so",
+        "libmkl_core.so",
+        "libmkl_sequential.so",
+        "libmkl_intel_lp64.so",
+        "libmkl_blacs_intelmpi_lp64.so",
+        "libmkl_scalapack_lp64.so",
+    )
+    
+    with scalapack(b'C', 2, 2) as context:
+        array = context.array(
+    	m=23,
+    	n=47,
+    	mb=5,
+    	nb=5,
+    	dtype=np.float64,
+        )
+        if context.rank.value == 0:
+    	print(f"Matrix dimension is ({array.m}, {array.n})")
+        print(f"Matrix local dimension at process " +  #
+    	  f"({context.myrow.value}, {context.mycol.value})" +  #
+    	  f" is ({array.local_m}, {array.local_n})")
+
+    Matrix dimension is (23, 47)
+    Matrix local dimension at process (0, 0) is (13, 25)
+    Matrix local dimension at process (1, 0) is (10, 25)
+    Matrix local dimension at process (0, 1) is (13, 22)
+    Matrix local dimension at process (1, 1) is (10, 22)
+
+The user can create a new empty matrix with the desired scalar type by specifying `dtype`.
+Alternatively, they can provide an existing distributed matrix by passing local matrix to `data` argument,
+making sure that the local dimensions of the matrix remains accurate across all processes.
+Regardless of how the array was generated,
+users can access the local matrix data by using `array.data`, and retrieve the scalar type via `array.dtype`.
+
+    import numpy as np
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+    
+    with scalapack(b'C', 1, 1) as context:
+        array = context.array(
+    	m=128,
+    	n=512,
+    	mb=1,
+    	nb=1,
+    	data=np.zeros([128, 512], order='F'),
+        )
+        print(f"Matrix dimension is ({array.m}, {array.n})")
+        print(f"Matrix local dimension is " +  #
+    	  f"({array.local_m}, {array.local_n})")
+    
+    with scalapack(b'R', 1, 1) as context:
+        array = context.array(
+    	m=128,
+    	n=512,
+    	mb=1,
+    	nb=1,
+    	data=np.zeros([128, 512], order='C'),
+        )
+        print(f"Matrix dimension is ({array.m}, {array.n})")
+        print(f"Matrix local dimension is " +  #
+    	  f"({array.local_m}, {array.local_n})")
+
+    Matrix dimension is (128, 512)
+    Matrix local dimension is (128, 512)
+    Matrix dimension is (128, 512)
+    Matrix local dimension is (128, 512)
+
+When passing a given local matrix, make sure the NumPy array order matches the context layout.
+Use `'F'` for column major layout and `'C'` for row major layout.
+
+
+## Redistribute matrix
+
+Within ScaLAPACK, the `p?gemr2d` subroutine serves as a tool for redistributing matrix.
+To redistribute a matrix from one context to another with `p?gemr2d` in ScaLAPACK,
+users should furnish the matrix's dimensions, details about both matrices (which can be acquired via `scalapack_params()`),
+and one raw BLACS context handle to the subroutine.
+
+    import numpy as np
+    import PyScalapack
+    
+    scalapack = PyScalapack(
+        "libmpi.so",
+        "libmkl_core.so",
+        "libmkl_sequential.so",
+        "libmkl_intel_lp64.so",
+        "libmkl_blacs_intelmpi_lp64.so",
+        "libmkl_scalapack_lp64.so",
+    )
+    
+    with (
+    	scalapack(b'C', 1, 2) as context1,
+    	scalapack(b'C', 2, 1) as context2,
+    ):
+        m = 2
+        n = 2
+        array1 = context1.array(m, n, 1, 1, dtype=np.float64)
+        array1.data[...] = np.random.randn(*array1.data.shape)
+        print(f"rank={context1.rank.value} before " +  #
+    	  f"redistribute {array1.data.reshape([-1])}")
+        array2 = context2.array(m, n, 1, 1, dtype=np.float64)
+        scalapack.pgemr2d["D"](
+    	*(m, n),
+    	*array1.scalapack_params(),
+    	*array2.scalapack_params(),
+    	context1.ictxt,
+        )
+        print(f"rank={context2.rank.value} after " +  #
+    	  f"redistribute {array2.data.reshape([-1])}")
+
+    rank=0 before redistribute [0.90707631 1.18754568]
+    rank=0 after redistribute [0.90707631 0.75556488]
+    rank=1 before redistribute [ 0.75556488 -0.4480556 ]
+    rank=1 after redistribute [ 1.18754568 -0.4480556 ]
+
+
+## Call ScaLAPACK function
+
+Here's an example that demonstrates calling pdgemm and comparing its result to a similar calculation performed by NumPy.
+We create two contexts, `context` serves as the primary one while `context0` acts as a supplemental context containing solely rank-0 processes tailored for data redistribution.
+Initially, we produce a random matrix within `context0` and redistribute it to `context`.
+Post-redistribution, we invoke `pdgemm` to execute matrix multiplication within `context`.
+Following this operation, we redistribute the resulting product back to `context0` and contrast it with the computation derived using NumPy.
+
+    import numpy as np
+    import PyScalapack
+    
+    scalapack = PyScalapack(
+        "libmpi.so",
+        "libmkl_core.so",
+        "libmkl_sequential.so",
+        "libmkl_intel_lp64.so",
+        "libmkl_blacs_intelmpi_lp64.so",
+        "libmkl_scalapack_lp64.so",
+    )
+    
+    L1 = 128
+    L2 = 512
+    with (
+    	scalapack(b'C', 2, 2) as context,
+    	scalapack(b'C', 1, 1) as context0,
+    ):
+        array0 = context0.array(L1, L2, 1, 1, dtype=np.float64)
+        if context0:
+    	array0.data[...] = np.random.randn(*array0.data.shape)
+    
+        array = context.array(L1, L2, 1, 1, dtype=np.float64)
+        scalapack.pgemr2d["D"](
+    	*(L1, L2),
+    	*array0.scalapack_params(),
+    	*array.scalapack_params(),
+    	context.ictxt,
+        )
+    
+        result = context.array(L1, L1, 1, 1, dtype=np.float64)
+        scalapack.pdgemm(
+    	b'N',
+    	b'T',
+    	*(L1, L1, L2),
+    	scalapack.d_one,
+    	*array.scalapack_params(),
+    	*array.scalapack_params(),
+    	scalapack.d_zero,
+    	*result.scalapack_params(),
+        )
+    
+        result0 = context0.array(L1, L1, 1, 1, dtype=np.float64)
+        scalapack.pgemr2d["D"](
+    	*(L1, L1),
+    	*result.scalapack_params(),
+    	*result0.scalapack_params(),
+    	context.ictxt,
+        )
+    
+        if context0:
+    	error = result0.data - array0.data @ array0.data.T
+    	print(np.linalg.norm(error))
+
+    2.931808596345247e-12
+
+
+## Call LAPACK function
+
+This package also offers a convenient interface for easily invoking LAPACK/BLAS functions.
+The subsequent code demonstrates an instance of calling `dgemm`.
+Users must additionally create an trivial context and create single-process ScaLAPACK array prior to invoking LAPACK/BLAS functions.
+
+    import numpy as np
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+    
+    L1 = 128
+    L2 = 512
+    with scalapack(b'C', 1, 1) as context:
+        array = context.array(L1, L2, 1, 1, dtype=np.float64)
+        array.data[...] = np.random.randn(*array.data.shape)
+    
+        result = context.array(L1, L1, 1, 1, dtype=np.float64)
+        scalapack.dgemm(
+    	b'N',
+    	b'T',
+    	*(L1, L1, L2),
+    	scalapack.d_one,
+    	*array.lapack_params(),
+    	*array.lapack_params(),
+    	scalapack.d_zero,
+    	*result.lapack_params(),
+        )
+    
+        diff = result.data - array.data @ array.data.T
+        print(np.linalg.norm(diff))
+
+    0.0
+
+
+## Generic variables and functions
+
+As ScaLAPACK functions require scalar arguments of raw C types such as `c_int` or `c_float`,
+we have defined several constant variables, including `zero = ctypes.c_int(0)`, `one = ctypes.c_int(1)`, and `neg_one = ctypes.c_int(-1)`.
+The floating one and zero are also named as `?_one` and `?_zero`, where `?` represents `c`, `d`, `c` or `z`.
+`f_one` and `f_zero` allow you to obtain the floating-point constant variables, depending on chosen scalar type.
+
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+    
+    print(scalapack.f_one["D"] == scalapack.d_one)
+    print(scalapack.f_zero["Z"] == scalapack.z_zero)
+
+    True
+    True
+
+Some functions like `p?gemm` can be chosen with `pgemm[char]`, where char represents `S`, `D`, `C` or `Z`.
+But not all functions have this mapping because it's mapped manually based on our current needs.
+Users can either map additional ScaLAPACK functions on their own, report issues, or submit pull requests.
+
+    import PyScalapack
+    
+    scalapack = PyScalapack("libscalapack.so")
+    
+    print(scalapack.pgemm["D"] == scalapack.pdgemm)
+
+    True
+
