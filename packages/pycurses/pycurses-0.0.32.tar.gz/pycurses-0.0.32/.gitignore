@@ -1,0 +1,6 @@
+/dist
+*.swp
+
+*.egg-info
+
+src/pycurses/output.txt

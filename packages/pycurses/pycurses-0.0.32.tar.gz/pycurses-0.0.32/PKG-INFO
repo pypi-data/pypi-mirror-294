@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycurses
+Version: 0.0.32
+Summary: Python package for making terminal UIs 
+Author-email: Charlie Dudzik <dudzikc@outlook.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+
+# Pyrses
+
+A python library for terminal GUI applications
+
+
