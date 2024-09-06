@@ -1,0 +1,15 @@
+jscatter/__init__.py,sha256=gQwxk63QXQmImvCc_x6yOFB5kXa4pUOjAJwqJru1JQo,468
+jscatter/annotations.py,sha256=CqgJK4VaSHmiSUPBglSXVmdEAPSyfMCUk4-qrTcqWyM,1387
+jscatter/annotations_traits.py,sha256=7yfZxUqyWBcyyRabuhRURQVXE_iGCwqHVLcTvfP_Cj4,1898
+jscatter/bundle.js,sha256=otR_JgRT-axmX3GVeqfuMSu0sGz23RUlEkv0z4Il0Ek,793633
+jscatter/color_maps.py,sha256=K5aNUpH10gmS_JEMcFUFfEkKoILuTLDx-sEJTu902TA,12663
+jscatter/compose.py,sha256=HGa2bbB4Y0YL44xFJytSBg9X1xlwuficQ6aKe5WwEJE,10577
+jscatter/encodings.py,sha256=RPJaaEoxFCQX7-WQ3L8K6FLRwDx9UIXQJfoSfbXKirs,5334
+jscatter/jscatter.py,sha256=fYy3ubsklCpPJklLnnvQGkW-DfsbR-5F9y9XsR3x_Nc,171649
+jscatter/types.py,sha256=kca-PO6pKa-ilga0tIBlSJQqxWBhkoORUqv8ohkj4QQ,1550
+jscatter/utils.py,sha256=F8gIykJXio-0pWCHB4riV27MJf62aQ8XKjyDi7rPAwU,4528
+jscatter/widget.py,sha256=OKjMFJqidJ_VBpxVA7lJ2jCCliPOFQhIN8Prv2ShLHI,19367
+jupyter_scatter-0.18.1.dist-info/METADATA,sha256=FiIPTFGgMtbOBnVjB6zOQLsYjxB_1Ot05O-3ktZ9dZM,13438
+jupyter_scatter-0.18.1.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+jupyter_scatter-0.18.1.dist-info/licenses/LICENSE,sha256=Jq9dFhy3XQAdnGyUnZ32GqdUK3y5ZKlgxINM0MU9Cbk,11344
+jupyter_scatter-0.18.1.dist-info/RECORD,,
