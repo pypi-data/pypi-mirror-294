@@ -1,0 +1,2 @@
+[console_scripts]
+playground = playground.__main__:main
