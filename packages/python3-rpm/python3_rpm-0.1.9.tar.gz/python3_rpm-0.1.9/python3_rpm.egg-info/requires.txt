@@ -1,0 +1,4 @@
+fire
+python3-log
+python3-ssh
+python3-chatgpt
