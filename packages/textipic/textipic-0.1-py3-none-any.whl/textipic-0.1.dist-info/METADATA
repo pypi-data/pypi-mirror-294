@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: textipic
+Version: 0.1
+Summary: A script to generate images from text
+Home-page: https://x.com/Lanaev0li
+Author: Avinion
+Author-email: shizofrin@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# Textipic
+
+`textipic` is a Python script that converts text files into images. The script allows customization of text color, background color, and image format.
+
+## Installation
+
+You can install the package from PyPI using pip:
+
+```bash
+pip install textipic
+
+
+Usage
+After installation, you can run the script from the command line:
+
+textipic
+
+
+
+Follow the interactive prompts to specify the text file, choose colors, and save the image.
+
+Author
+Avinion
