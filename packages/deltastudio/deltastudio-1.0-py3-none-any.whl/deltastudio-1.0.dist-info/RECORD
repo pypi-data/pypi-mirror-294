@@ -1,0 +1,13 @@
+deltastudio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deltastudio/auth.py,sha256=uIkzUXEBgHFGmXj_uBT4wKY9Adc9AZMMe3kpSUqQkow,1465
+deltastudio/core.py,sha256=rIDokb3snPGyRHVKHvAOtbBqHiAkjHd76qf7-I8Edj0,16211
+deltastudio/helpers.py,sha256=fVSy1ts1UcduZA80gnSW_5TqBAL27aw_p-wq1H3wO1Q,5550
+deltastudio/sources.py,sha256=9bZoBQKi7WAmF3h5bTUHUFpbAkBdfxlbGweFvJw_zsQ,14035
+deltastudio/quality/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deltastudio/quality/basics.py,sha256=zzYEP9GhnPP2dJgY3mMMATI1ZiO39fZnbkRGIG1jMDw,2087
+deltastudio/quality/checks.py,sha256=QrBC0Q0MxWDulHmO-R4lkZ05u_ypMutvn0hnyhSGLnk,516
+deltastudio-1.0.dist-info/LICENSE,sha256=QVvEAx-2YDW33c_AnSocGemQjKxrbzooYEX4fAOBdp8,1073
+deltastudio-1.0.dist-info/METADATA,sha256=bs2Fg-9ECYsQQv9JUS0XSkelwVuL13NNJvOfaXeg4G8,206
+deltastudio-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+deltastudio-1.0.dist-info/top_level.txt,sha256=Eke5qLdPw84IxfaPj5bZTh2NvWzj9vhgZfnY-sJSbNo,12
+deltastudio-1.0.dist-info/RECORD,,
