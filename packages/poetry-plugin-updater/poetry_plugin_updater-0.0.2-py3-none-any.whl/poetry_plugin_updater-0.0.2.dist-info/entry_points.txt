@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+updater=poetry_plugin_updater.plugins:UpdaterApplicationPlugin
+

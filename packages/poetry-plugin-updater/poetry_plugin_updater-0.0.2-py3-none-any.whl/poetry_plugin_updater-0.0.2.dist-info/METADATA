@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: poetry-plugin-updater
+Version: 0.0.2
+Summary: Poetry plugin to update pyproject.toml dependency versions
+Home-page: https://python-poetry.org/
+License: MIT
+Author: Thomas Berdy
+Author-email: thomas.berdy@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: poetry (>=1.7.0,<2.0.0)
+Requires-Dist: poetry-core (>=1.8.0,<2.0.0)
+Requires-Dist: requests (>=2.26,<3.0)
+Project-URL: Repository, https://github.com/kozlek/poetry-plugin-updater
+Description-Content-Type: text/markdown
+
+# Poetry Plugin: Updater
+
