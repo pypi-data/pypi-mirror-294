@@ -1,0 +1,3 @@
+[submodule "vrp_quantum_solver/qiskit_algorithms"]
+	path = vrp_quantum_solver/qiskit_algorithms
+	url = https://github.com/BrunoRosendo/qiskit-algorithms
