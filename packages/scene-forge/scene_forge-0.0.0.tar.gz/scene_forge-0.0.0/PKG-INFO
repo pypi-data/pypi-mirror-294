@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: scene_forge
+Version: 0.0.0
+Summary: Python package to generate scenes using radiative transfer modelling. This package wraps external radiative transfer codes, and uses these to make simulated scenes for Earth Observation measurements.
+Home-page: https://gitlab.npl.co.uk/eco/tools/scene_forge
+Author: Pieter De Vis
+Author-email: pieter.de.vis@npl.co.uk
+License: None
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx_book_theme; extra == "dev"
+Requires-Dist: sphinx_design; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+
+# scene_forge
+
+Python package to generate scenes using radiative transfer modelling. This package wraps external radiative transfer codes, and uses these to make simulated scenes for Earth Observation measurements.
+
+## Installation
+
+`scene_forge` is installable via pip. For development it is recommended to install in editable mode with the optional developer dependencies, i.e.:
+
+``
+pip install -e ".[dev]"
+``
+
+## Documentation
+
+For more information visit our [documentation](https://eco.gitlab-docs.npl.co.uk/tools/scene_forge).
+
+## Acknowledgements
+
+`scene_forge` has been developed by [Pieter De Vis](mailto:pieter.de.vis@npl.co.uk).
+
+## Project status
+
+`scene_forge` is under active development. It is beta software.

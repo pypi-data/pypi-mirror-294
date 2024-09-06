@@ -1,0 +1,2 @@
+include versioneer.py
+include scene_forge/_version.py
