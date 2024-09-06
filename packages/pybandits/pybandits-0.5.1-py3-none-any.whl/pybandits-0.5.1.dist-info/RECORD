@@ -1,0 +1,15 @@
+pybandits/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybandits/base.py,sha256=Wg7Aq5ln69Lf9PceREowJZDzzL230H8teOsAPSKfJOk,9698
+pybandits/cmab.py,sha256=K6f7HBunEtSshGGt_cYpDKN__8CUStZrs69f2SzaHUY,21188
+pybandits/model.py,sha256=wjsf-EqVUtkeCuHUUyvz67cMZLTy9_wfKzi_exuPSxE,15308
+pybandits/simulation_cmab.py,sha256=8LibopDin_R3MzS2sQLVTwWJLJkrsg60PezBgs3OdH4,12996
+pybandits/simulation_plots.py,sha256=RmQGvj9cfQlZbz9iD53T7u-nC3b5W3cdo8PiYpl79fY,1883
+pybandits/simulation_smab.py,sha256=hAYcGZCqmnsrjE_jQbM7MbqOY_a60flwynY-UukCVG0,9215
+pybandits/smab.py,sha256=eg8cM4qp9p86EXZAc4AjwbStQdc_9pVY08vPzREYhcE,22058
+pybandits/strategy.py,sha256=bpKkPtrpp3-x4u9hrDI8GhcqY9CzUP0oIo_0P94VYJs,14312
+pybandits/utils.py,sha256=ynEST1nMx3_wiErOVXBDG61BJZCR4PEhF5PvBgCkeyw,519
+pybandits-0.5.1.dist-info/AUTHORS.rst,sha256=GJyLtgxUvnG72wTkJ6M2wz-bniuwNzgjksV2619Ntvg,225
+pybandits-0.5.1.dist-info/LICENSE,sha256=rXBT_q9ikb3SWMkHWVPJCmfcGcY4QC4nwnIjLZ1Xw74,15630
+pybandits-0.5.1.dist-info/METADATA,sha256=zZWSHUyD3Yn9h7Tg9pIg0VA0BtqaGPsYp_hgRkqfL5M,5999
+pybandits-0.5.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pybandits-0.5.1.dist-info/RECORD,,
