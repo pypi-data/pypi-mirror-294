@@ -1,0 +1,8 @@
+# 忽略特定文件或目录
+exclude test/*
+
+
+# 忽略某种类型的文件
+global-exclude *.log
+global-exclude *.pyc
+global-exclude __pycache__/*
