@@ -1,0 +1,2 @@
+[console_scripts]
+ttsave = ttsave_cli:cli
