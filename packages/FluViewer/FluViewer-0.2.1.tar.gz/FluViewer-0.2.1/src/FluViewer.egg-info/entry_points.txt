@@ -1,0 +1,2 @@
+[console_scripts]
+FluViewer = FluViewer.FluViewer_v_0_2_1:main
