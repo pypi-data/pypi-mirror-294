@@ -1,0 +1,2 @@
+[console_scripts]
+sbatch_paramfile = sbatch_paramfile.main:entry_point

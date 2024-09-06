@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/sbatch_paramfile/__init__.py
+src/sbatch_paramfile/main.py
+src/sbatch_paramfile.egg-info/PKG-INFO
+src/sbatch_paramfile.egg-info/SOURCES.txt
+src/sbatch_paramfile.egg-info/dependency_links.txt
+src/sbatch_paramfile.egg-info/entry_points.txt
+src/sbatch_paramfile.egg-info/top_level.txt
