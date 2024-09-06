@@ -1,0 +1,6 @@
+.venv
+venv
+config.ini
+__pycache__
+*.pyc
+dist/
