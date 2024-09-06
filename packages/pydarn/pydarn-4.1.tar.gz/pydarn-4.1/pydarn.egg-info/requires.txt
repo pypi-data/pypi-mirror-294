@@ -1,0 +1,7 @@
+pyyaml
+numpy
+matplotlib>=3.7.0
+aacgmv2
+pydarnio>=1.3.0
+scipy
+cartopy>=0.22.0
