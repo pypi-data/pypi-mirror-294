@@ -1,0 +1,10 @@
+evmchains/__init__.py,sha256=xoRq5QxDP8bhHXPae0HVSH9pK0uPZu6go4Tr2Kc3G_M,1510
+evmchains/_meta.py,sha256=J9AUd4fAuSymrNadeGqOirSMYNZ9WQmqXwLZX1sdsUk,413
+evmchains/chains.py,sha256=B_KNZmTlYADl6Xzu8uxIqoIqlW8MBWhdL4oefvZG7to,39945
+evmchains/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evmchains/types.py,sha256=oJV6vvbQpckiKP2TTUG-RQRe66i3cGT2M-ZkaMu1Om4,474
+evmchains-0.0.12.dist-info/LICENSE,sha256=wKVouzimXmZeaCj3f48Vua0vk91U4vjrrt2Ax0u3qBs,11342
+evmchains-0.0.12.dist-info/METADATA,sha256=G7YFo-cnHntevIf_t6Lfk1NRY3AgM1_1gnY8qtDMrH0,15797
+evmchains-0.0.12.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+evmchains-0.0.12.dist-info/top_level.txt,sha256=qwbaOucZ5qXfj0eTHrIujLTezgtcInyR_U-Ef2P4oic,10
+evmchains-0.0.12.dist-info/RECORD,,
