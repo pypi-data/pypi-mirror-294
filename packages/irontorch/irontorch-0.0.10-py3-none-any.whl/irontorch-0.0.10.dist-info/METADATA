@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: irontorch
+Version: 0.0.10
+Summary: Developer-friendly Pytorch utility library
+Home-page: https://github.com/thisisiron/irontorch
+Author: Kim Eon
+Author-email: kimiron518@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: torch >=1.1
+Requires-Dist: pydantic >=1.8
+Requires-Dist: omegaconf
+Requires-Dist: rich
+
