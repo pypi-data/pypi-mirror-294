@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/neoscale.egg-info/PKG-INFO
+src/neoscale.egg-info/SOURCES.txt
+src/neoscale.egg-info/dependency_links.txt
+src/neoscale.egg-info/top_level.txt
