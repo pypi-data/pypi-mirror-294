@@ -1,0 +1,12 @@
+sync_ics2gcal/__init__.py,sha256=ThaCg-RQ616ly9idpvnmrmyGcdwLtf1PoXdoRRuo_IE,829
+sync_ics2gcal/gcal.py,sha256=e8WLm4Gf6OrfAFeNvrjublT4oyTUFQAaTw-afqUEkrk,13242
+sync_ics2gcal/ical.py,sha256=ApiKlK6RBP8qsE-6VXuqdqS1sSXdrvu-fGyiXBbpYMU,5889
+sync_ics2gcal/manage_calendars.py,sha256=kL8Hk64YktCZjXK7NvAHLBQe45nMdvHAeaZOA6o5fek,4578
+sync_ics2gcal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sync_ics2gcal/sync.py,sha256=H7AhpidzAE0h85cXjQs_-KcqDT1JCWwn7o8h-7vVPeQ,6978
+sync_ics2gcal/sync_calendar.py,sha256=pzPmCU2cevMxWKWGaqDWSl_tsUr7z_lANKKx008OGag,1287
+sync_ics2gcal-0.1.5.dist-info/LICENSE,sha256=F3ZuFkBdu_d8MMkkMqrK8ytUJY3IdVUZowwq30Y7AyE,1092
+sync_ics2gcal-0.1.5.dist-info/METADATA,sha256=bonyKjERbIapwInzyiVYCdQnn3Hjrtsfx8a9ubS_qkU,4274
+sync_ics2gcal-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sync_ics2gcal-0.1.5.dist-info/entry_points.txt,sha256=irFmqz6HbxwQXeXkyqeHbcCaKILl6vhdCqrxSOFVcUQ,118
+sync_ics2gcal-0.1.5.dist-info/RECORD,,
