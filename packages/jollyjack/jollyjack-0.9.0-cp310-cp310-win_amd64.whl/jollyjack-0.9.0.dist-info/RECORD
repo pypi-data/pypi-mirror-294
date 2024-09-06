@@ -1,0 +1,11 @@
+jollyjack/__init__.py,sha256=aTsGPlDnIQm_AmTV00Qs_EBdWRZrCJ2Frolm6hoGUd8,121
+jollyjack/cjollyjack.pxd,sha256=Km4W7LMODaQbUF0VPh4grNmV5LT3MrUogUT6wG0G9qE,728
+jollyjack/jollyjack.h,sha256=MqSOR5Lpb437ioMK9M2wwxVP2lArcKfz13EWsv6Ps6o,535
+jollyjack/jollyjack_cython.cp310-win_amd64.pyd,sha256=_zLXnClsEBibO-D94a4kW5pm0aIj2YN-eLnvbFM8wQ8,109056
+jollyjack/jollyjack_cython.pyi,sha256=4cWw9rLV0nv0Uj2p6exQ2fzMsGeH6KryWgSoZ8B72Sk,2965
+jollyjack/jollyjack_cython.pyx,sha256=LMhcLDtFbF_3ZZuaDdZ8hH8qxeS0-JG3xB9c4GS9Guw,3701
+jollyjack-0.9.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+jollyjack-0.9.0.dist-info/METADATA,sha256=lhuxmqWNpUQH8TAb5CPyrCuTOFPlTVMkRtOPLWJDRc0,6976
+jollyjack-0.9.0.dist-info/WHEEL,sha256=Lp0Jk4-u0g9Se0melfU44m_lToIB022SZzbEcyU9518,101
+jollyjack-0.9.0.dist-info/top_level.txt,sha256=Z94XWzd8L_tHmjuV2fgg-ooHe6ca8jmdIGfweTJXnoQ,10
+jollyjack-0.9.0.dist-info/RECORD,,
