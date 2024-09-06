@@ -1,0 +1,8 @@
+libllama-embedder.dylib,sha256=3BI4fqVJoJ0SFajvt4vBCQ-Vv2fwsxUZsXumdAhh8Og,3496568
+llama_embedder.cpython-312-darwin.so,sha256=tGy3JogfeNRglbo3_zSm1EwSPFDOSgm2s36CLhgcX2A,338208
+llama_embedder-0.0.7.dist-info/LICENSE.md,sha256=A6bhHx50Ax8GEppu_XcHqy8O04uIegj-x5LROAqZs6w,1076
+llama_embedder-0.0.7.dist-info/RECORD,,
+llama_embedder-0.0.7.dist-info/WHEEL,sha256=StG0sDb1SEsQQFMChR54bhG97UPtERCOAdh8k8K5N0E,111
+llama_embedder-0.0.7.dist-info/top_level.txt,sha256=I4kvXoa-BLfwxg2XPlD0nbADVanc9cbC0i4RiWVumpM,24
+llama_embedder-0.0.7.dist-info/METADATA,sha256=deuDIbPqwbmglB0wqeVnyzf-l9mq-UiwBBIuworFd3I,2283
+bindings/python/llama_embedder/__init__.py,sha256=GTOimsg_3Dftq3DNkkE_AdTFhoh16cGjkkOdc2402Hk,139
