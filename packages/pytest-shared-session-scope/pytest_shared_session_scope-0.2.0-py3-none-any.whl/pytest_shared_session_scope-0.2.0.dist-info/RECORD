@@ -1,0 +1,11 @@
+pytest_shared_session_scope/__init__.py,sha256=2Egx7JczTpqf5Eb90_u9FtsH8hTRQ7tiO-ejxo58ALY,425
+pytest_shared_session_scope/_types.py,sha256=2tKRNtoVqZdyZRCCBqJA-2nJqMJBOMGxY9XrdxlUa0Q,60
+pytest_shared_session_scope/fixtures.py,sha256=jPh5nxsH0YTtL0BDf0hAOP8KdMC0ng9utpcrYTHQGcA,9680
+pytest_shared_session_scope/plugin.py,sha256=i57MKGXB5FCwaTjrAECiO3TeSwySSGMNauhxWbmw3so,315
+pytest_shared_session_scope/store.py,sha256=WbaCCrUnJndKinvniOqqzGlIdTga4FPzV20rgdcawBU,2136
+pytest_shared_session_scope/types.py,sha256=k0blAVCRonuL37I0dQYFlUvnTA3gt4_ZJi1J2bO7nWA,1145
+pytest_shared_session_scope-0.2.0.dist-info/LICENSE,sha256=wpvRpWdT_5vgy-AKdQ6FKPVCthDsZn9V7GM_2FYGWhs,1073
+pytest_shared_session_scope-0.2.0.dist-info/METADATA,sha256=p_NtJzwub_5BtcayzYmKDKLeugCuoUJRjIAhHVoXhrM,6471
+pytest_shared_session_scope-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytest_shared_session_scope-0.2.0.dist-info/entry_points.txt,sha256=jRFGPZgMrQaTrY8yhyb_1kX_QAxbcWgX1lNqvq9LPTg,75
+pytest_shared_session_scope-0.2.0.dist-info/RECORD,,
