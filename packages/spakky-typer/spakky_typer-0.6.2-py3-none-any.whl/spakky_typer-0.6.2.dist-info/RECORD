@@ -1,0 +1,13 @@
+spakky_typer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_typer/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_typer/plugins/typer_cli.py,sha256=QvpuFwdtYmI-383YP1tp1zl26ZPwXPi7ZVNwl4F9cJQ,638
+spakky_typer/post_processor.py,sha256=SQAXAbnY-6qnxCfkHGzWQvP3Fmc38Whc6e00MOea8O8,2141
+spakky_typer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_typer/stereotypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_typer/stereotypes/cli_controller.py,sha256=-PEDKOZQLTQnGm3wuQpquUuLR_gomjq6Qz5prL5Qp30,2079
+spakky_typer/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_typer/utils/asyncio.py,sha256=81VovJtA85zyqZF6uiCRh36Z2aRehkJdSzSrs6-gnBk,420
+spakky_typer/utils/casing.py,sha256=ssCypCWobTHTwFdkKxpKrB-sQxvXknNQUVWAUqYOq64,166
+spakky_typer-0.6.2.dist-info/METADATA,sha256=A8ijRv6vTL_KpqfkH7j-EvqBQZiozJwSy7SD8eqvRKI,1750
+spakky_typer-0.6.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spakky_typer-0.6.2.dist-info/RECORD,,
