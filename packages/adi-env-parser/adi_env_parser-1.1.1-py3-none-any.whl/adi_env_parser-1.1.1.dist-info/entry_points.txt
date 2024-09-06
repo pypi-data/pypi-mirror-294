@@ -1,0 +1,2 @@
+[console_scripts]
+adi-env-parser = adi_env_parser._console_parser:main
