@@ -1,0 +1,162 @@
+{% extends "layout.html" %} {%block title %} Homepage {%endblock title %}
+{%block content %}
+<div class="flex w-full">
+  <div class="w-96">{% include 'sidebar.html' %}</div>
+
+  <div class="w-full p-7">
+    <div>
+      <div class="mb-6">
+        <div class="text-2xl text-white mb-3">
+          {{resource.resource_plural_name}}
+        </div>
+
+        <div class="flex justify-between">
+          <input
+            type="text"
+            class="px-4 py-2 w-96 rounded-full bg-gray-800"
+            placeholder="Search"
+          />
+
+          <a
+            href="{% url  'new_resource' resource_key=resource.resource_key %}"
+          >
+            <span
+              class="bg-blue-400 hover:bg-blue-300 active:bg-blue-500 text-white dark:text-gray-800 inline-flex items-center shadow rounded px-4 py-2"
+              >Create {{resource.resource_name}}</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div
+          class="flex justify-between p-4 bg-gray-800 border-b border-gray-100 dark:border-gray-700 rounded-t-lg"
+        >
+          <div>
+            <input type="checkbox" />
+          </div>
+
+          <div>
+            {% for filter in filters %}
+            <form method="get">
+              <select
+                name="filter"
+                onchange="this.form.submit();">
+                <option key="">-----</option>
+                {% for key, value in filter.filter_options.items %}
+                  <option key="{{key}}">{{filter.filter.filter_name}}__{{value}}</option>
+                {% endfor %}
+              </select>
+            </form>
+            {% endfor %}
+
+            <form method="get">
+              <select
+                name="per_page"
+                onchange="this.form.submit();"
+              >
+                <option value="25" {% if pagination.per_page == 25 %} selected {% endif %}>25</option>
+                <option value="50" {% if pagination.per_page == 50 %} selected {% endif %}>50</option>
+                <option value="100" {% if pagination.per_page == 100 %} selected {% endif %}>100</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        {% if items %}
+        <div>
+          <div>
+            <table class="w-full divide-y divide-gray-100 dark:divide-gray-700">
+              <thead class="text-left bg-gray-50 dark:bg-gray-800">
+                <tr>
+                  <th class="p-4"></th>
+                  {% for field in fields %} {% if 'index' in field.visibility %}
+                  <th class="p-4">{{ field.column|upper }}</th>
+                  {% endif %} {% endfor %}
+                  <th class="p-4"></th>
+                </tr>
+              </thead>
+  
+              <tbody class="text-left">
+                {% for field_items in items %}
+                <tr class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-900 hover:cursor-pointer">
+                  <td class="p-4 w-1">
+                    <input type="checkbox" />
+                  </td>
+  
+                  {% for field_item in field_items %}
+                  <div>
+                    {% if 'index' in field_item.field.visibility %}
+                    <td class="p-4 w-8">
+                      {% if field_item.field.type == 'id' %}
+                      <a
+                        class="text-md text-blue-400"
+                        href="{% url 'resource_detail' resource_key=resource.resource_key resource_model_id=field_item.value %}"
+                        >{{field_item.value}}</a
+                      >
+                      {% else %}
+                      <span class="text-md text-gray-300 font-normal"
+                        >{{field_item.value}}</span
+                      >
+                      {% endif %}
+                    </td>
+                    {% endif %}
+                  </div>
+                  {% endfor %}
+  
+                  <td class="p-4 w-8">Action</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+  
+          <div
+            class="flex justify-between p-4 bg-gray-800 border-t border-gray-100 dark:border-gray-700 rounded-b-lg capitalize"
+          >
+
+            <div>{% if pagination.previous_page_url %}
+              <a class="text-blue-500" href="{{pagination.previous_page_url}}">previous</a>
+              {% else %}
+              <div class="text-gray-500 opacity-50">previous</div>
+              {% endif %}
+            </div>
+
+            <div>{{pagination.start_record}}-{{pagination.end_record}} of {{pagination.count}}</div>
+
+            <div>{% if pagination.next_page_url %}
+              <a class="text-blue-500" href="{{pagination.next_page_url}}">next</a>
+              {% else %}
+              <div class="text-gray-500 opacity-50">next</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="text-center p-8 bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+          <div>
+            <svg class="inline-block text-gray-300 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" width="65" height="51" viewBox="0 0 65 51"><path class="fill-current" d="M56 40h2c.552285 0 1 .447715 1 1s-.447715 1-1 1h-2v2c0 .552285-.447715 1-1 1s-1-.447715-1-1v-2h-2c-.552285 0-1-.447715-1-1s.447715-1 1-1h2v-2c0-.552285.447715-1 1-1s1 .447715 1 1v2zm-5.364125-8H38v8h7.049375c.350333-3.528515 2.534789-6.517471 5.5865-8zm-5.5865 10H6c-3.313708 0-6-2.686292-6-6V6c0-3.313708 2.686292-6 6-6h44c3.313708 0 6 2.686292 6 6v25.049375C61.053323 31.5511 65 35.814652 65 41c0 5.522847-4.477153 10-10 10-5.185348 0-9.4489-3.946677-9.950625-9zM20 30h16v-8H20v8zm0 2v8h16v-8H20zm34-2v-8H38v8h16zM2 30h16v-8H2v8zm0 2v4c0 2.209139 1.790861 4 4 4h12v-8H2zm18-12h16v-8H20v8zm34 0v-8H38v8h16zM2 20h16v-8H2v8zm52-10V6c0-2.209139-1.790861-4-4-4H6C3.790861 2 2 3.790861 2 6v4h52zm1 39c4.418278 0 8-3.581722 8-8s-3.581722-8-8-8-8 3.581722-8 8 3.581722 8 8 8z"></path></svg>
+          </div>
+
+          <div class="mt-3 mb-6 text-lg font-normal">No {{resource.resource_name}} matched the given criteria.</div>
+
+          <div>
+            <a
+            href="{% url  'new_resource' resource_key=resource.resource_key %}"
+          >
+            <span
+              class="border border-gray-400 hover:border-gray-300 active:border-gray-500 text-gray-400 dark:text-gray-200 inline-flex items-center shadow rounded px-4 py-2"
+              >Create {{resource.resource_name}}</span
+            >
+          </a>
+          </div>
+        </div>
+
+        {% endif %}
+      </div>
+    </div>
+
+    <div>{% include 'footer.html' %}</div>
+  </div>
+</div>
+{%endblock content %}

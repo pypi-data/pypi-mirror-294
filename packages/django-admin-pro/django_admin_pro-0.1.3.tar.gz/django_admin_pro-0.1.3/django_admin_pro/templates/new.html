@@ -1,0 +1,34 @@
+{% extends "layout.html" %} {%block title %} Homepage {%endblock title %}
+{%block content %}
+<div class="flex w-full">
+  <div class="w-96">{% include 'sidebar.html' %}</div>
+
+  <div class="w-full p-7">
+    <div>
+      <div class="mb-4">
+        <div>Create {{resource.resource_name}}</div>
+      </div>
+
+      <form
+        class="space-y-1 bg-gray-800"
+        method="post"
+        action="{% url 'create_new_resource' resource_key=resource.resource_key %}"
+      >
+        <div>{% csrf_token %}</div>
+        {% for field in fields %} {% if field.meta.template == "input" %}
+        <div>{%include 'fields/input.html' %}</div>
+        {% elif field.meta.template == "textarea" %}
+        <div>{%include 'fields/textarea.html' %}</div>
+        {% endif %} {% endfor %}
+
+        <button class="py-2 px-4 rounded-lg bg-green-500" type="submit">
+          Create
+        </button>
+      </form>
+    </div>
+
+    <div>{% include 'footer.html' %}</div>
+  </div>
+</div>
+
+{%endblock content %}
