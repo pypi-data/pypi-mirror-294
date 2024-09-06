@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.tileindex">
+
+  <configure zcml:condition="installed plone.app.blocks">
+    <adapter factory=".tile_types.tile_types"
+      name="tile_types" />
+  </configure>
+
+</configure>

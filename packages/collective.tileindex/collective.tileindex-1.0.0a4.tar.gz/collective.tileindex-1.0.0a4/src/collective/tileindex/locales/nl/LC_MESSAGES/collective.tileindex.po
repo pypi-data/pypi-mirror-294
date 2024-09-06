@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.tileindex 1.0\n"
+"POT-Creation-Date: 2024-09-05 10:14+0000\n"
+"PO-Revision-Date: 2023-11-15 16:56+0000\n"
+"Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
+"Language-Team: Zest Software <info@@zestsoftware.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.tileindex\n"
+"Language: nl\n"
+
+#: ../views/tile_types_overview.pt:27
+msgid "${tileorblock} names sorted alphabetically"
+msgstr "${tileorblock} namen alfabetisch gesorteerd"
+
+#: ../views/tile_types_overview.pt:33
+msgid "${tileorblock} names sorted by number of items that use it"
+msgstr "${tileorblock} namen gesorteerd op aantal items dat deze gebruiken"
+
+#: ../views/tile_types_overview.pt:18
+msgid "Block types overview"
+msgstr "Block types overzicht"
+
+#: ../views/tile_types_overview.pt:19
+msgid "ERROR: block_types index is missing!"
+msgstr "FOUT: block_types index ontbreekt!"
+
+#: ../views/tile_types_overview.pt:13
+msgid "ERROR: tile_types index is missing!"
+msgstr "FOUT: tile_types index niet gevonden!"
+
+#: ../views/tile_types_overview.pt:51
+msgid "Private/Other ${unpublished}"
+msgstr "Privé/anders"
+
+#: ../views/tile_types_overview.pt:44
+msgid "Published ${published}"
+msgstr "Gepubliceerd"
+
+#: ../views/tile_types_overview.pt:43
+msgid "Search results for ${tileorblock} ${tile} ${published}/${unpublished} (published/unpublished)"
+msgstr "Zoekresultaten voor ${tileorblock} ${tile} ${published}/${unpublished} (published/unpublished)"
+
+#: ../views/tile_types_overview.pt:12
+msgid "Tile types overview"
+msgstr "Tegeltypes overzicht"
+
+#: ../views/tile_types_view.pt:12
+msgid "Tile types used on this page"
+msgstr "Tegeltypes gebruikt op deze pagina"
+
+#. Default: "Note that a page that has more than one ${tileorblock} of the same type, is only counted once."
+#: ../views/tile_types_overview.pt:40
+msgid "msg_note_same_type_counted_once"
+msgstr "N.B. Een pagina met meer dan één ${tileorblock} van hezelfde type, wordt slechs één keer meegeteld."
+
+#. Default: "There are ${numObjects} items with at least one ${tileorblock} in the index."
+#: ../views/tile_types_overview.pt:25
+msgid "msg_num_objects"
+msgstr "Er zijn ${numObjects} items met minstens één ${tileorblock} in de index."
