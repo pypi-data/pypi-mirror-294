@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="whatsapp-python-cloud-api"
+authors = [{name="Yoandre Saavedra", email="mail@example.com"}]
+description="Open source Python wrapper for the WhatsApp Cloud API"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Customer Service",
+    "Intended Audience :: Education",
+    "Intended Audience :: Telecommunications Industry",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Communications :: Chat",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+
+]
+dynamic = [
+  "version"
+]
+dependencies = ["requests_toolbelt", "requests", "python-dotenv"]
+
+[project.urls]
+Homepage = "https://github.com/yoandresaav/whatsapp-python-cloud-api"
+Docs = "https://github.com/yoandresaav/whatsapp-python-cloud-api/wiki"
+"Issues Reporting" = "https://github.com/yoandresaav/whatsapp-python-cloud-api/issues"
+Download = "https://github.com/yoandresaav/whatsapp-python-cloud-api/releases/latest"
+Changelog = "https://github.com/yoandresaav/whatsapp-python-cloud-api/releases"
+
+
+[tool.hatch.version]
+path = "whatsapp/constants.py"
+variable = "VERSION"
+
+[tool.hatch.build.targets.wheel]
+packages = ["whatsapp"]
