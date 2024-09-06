@@ -1,0 +1,13 @@
+lilypad/__init__.py,sha256=NhRYudSX1RwXdvqiARLUwpXqRfWD5irvVx6nD7Lc9AY,255
+lilypad/dummy_database.py,sha256=CFOAnj6L6JGICRve7EUjY5Mek4O8Tv3T6VX8sy1UX_E,487
+lilypad/prompts.py,sha256=PcII3PgsCZ_TUsKVSo1VfAiauwQkbogvn9h14UrnKcs,1429
+lilypad/tools.py,sha256=zgvqPNSU11uDQu-Bvh1N_kYOloAI8YGgELsEyXfJAe8,611
+lilypad/trace.py,sha256=7iOk-gzdwpFHOZSMDKv8qh1HSg6oInEBwuHNAE0gSLc,998
+lilypad/app/main.py,sha256=ir_TVZFA0LimCALQoLNHyvlAbYb_xtWw3IkrATDvn_c,767
+lilypad/app/templates/index.html,sha256=dts81ivGzn5s9bu1gm50EEXBGxT9GC1KKUVykQyJEYU,536
+lilypad/app/templates/partials/result.html,sha256=0wWNCRKFbTmt2dA3ZGwSbnCns6cMTCyPoR7Rrg4uztw,42
+lilypad/openai/__init__.py,sha256=LLO9tKFmrdyUEKKo8SwPMSGwQDU7fGhz2opAEXe3YKw,1130
+python_lilypad-0.0.0.dist-info/METADATA,sha256=HN3yDeZ5W9FM9PXR_7KkYZFvcnI5BReMN-B489Oyzoc,2642
+python_lilypad-0.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+python_lilypad-0.0.0.dist-info/licenses/LICENSE,sha256=is41aqbALv_iY9UhC_Ar9U3FyN02ZIa4_sZNCJfU5w4,1066
+python_lilypad-0.0.0.dist-info/RECORD,,

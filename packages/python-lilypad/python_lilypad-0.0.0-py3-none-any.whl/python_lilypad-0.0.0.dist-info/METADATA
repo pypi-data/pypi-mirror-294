@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: python-lilypad
+Version: 0.0.0
+Summary: Hopefully something cool and useful lol
+Project-URL: Homepage, https://lilypad.mirascope.io
+Project-URL: Documentation, https://lilypad.mirascope.io/docs
+Project-URL: Repository, https://github.com/Mirascope/lilypad
+Project-URL: Issues, https://github.com/Mirascope/lilypad/issues
+Project-URL: Changelog, https://github.com/Mirascope/lilypad/releases
+Author-email: William Bakst <william@mirascope.io>, Brendan Kao <brendan@mirascope.io>
+Maintainer-email: William Bakst <william@mirascope.io>
+License: MIT License
+        
+        Copyright (c) 2024 Mirascope
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: artificial intelligence,developer tools,evaluation,llm,llm tools,prompt engineering
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Requires-Dist: fastapi[standard]>=0.112.2
+Requires-Dist: mirascope>=1.1.2
+Provides-Extra: openai
+Requires-Dist: openai>=1.43.0; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# Lilypad
+
+Hopefully something cool and useful lol
