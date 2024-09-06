@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+flowise/__init__.py
+flowise/client.py
+flowise.egg-info/PKG-INFO
+flowise.egg-info/SOURCES.txt
+flowise.egg-info/dependency_links.txt
+flowise.egg-info/requires.txt
+flowise.egg-info/top_level.txt
