@@ -1,0 +1,9 @@
+README.md
+setup.py
+recuero/__init__.py
+recuero/courses.py
+recuero/utils.py
+recuero.egg-info/PKG-INFO
+recuero.egg-info/SOURCES.txt
+recuero.egg-info/dependency_links.txt
+recuero.egg-info/top_level.txt
