@@ -1,0 +1,32 @@
+---
+
+# data types
+
+data:
+  
+  # structure function (like elastic FFs, F2, etc.)
+  - name: STRUCTURE_FUNCTION
+    description: "structure function"
+    required_name: [ hadron_type ]
+    required_type: [ particle ]
+  # elastic
+  - name: LATTICE_QCD
+    description: "lattice QCD"
+    required_name: [ hadron_type, pion_mass, lattice_spacing ]
+    required_type: [ particle, float, float ]
+  # exclusive: DVCS
+  - name: DVCS
+    description: "deeply virtual Compton scattering"
+    required_name: [ lepton_beam_type, lepton_beam_energy, hadron_beam_type, hadron_beam_energy ]
+    required_type: [ particle, float, particle, float ]
+  # exclusive: TCS
+  - name: TCS
+    description: "timelike Compton scattering"
+    required_name: [ lepton_beam_type, lepton_beam_energy, hadron_beam_type, hadron_beam_energy, lepton_type ]
+    required_type: [ particle, float, particle, float, particle ]
+  # exclusive: DVMP
+  - name: DVMP 
+    description: "deeply virtual meson production"
+    required_name: [ lepton_beam_type, lepton_beam_energy, hadron_beam_type, hadron_beam_energy, meson_type ]
+    required_type: [ particle, float, particle, float, particle ]
+
