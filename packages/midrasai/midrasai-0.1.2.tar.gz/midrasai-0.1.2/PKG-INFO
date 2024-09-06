@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: midrasai
+Version: 0.1.2
+Summary: 
+Author: ajac-zero
+Author-email: ajcardoza2000@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: local
+Requires-Dist: click (>=8.1,<9.0)
+Requires-Dist: fastapi[standard] (>=0,<1) ; extra == "local"
+Requires-Dist: huggingface-hub[cli] (>=0,<1) ; extra == "local"
+Requires-Dist: peft (>=0.12,<0.13) ; extra == "local"
+Requires-Dist: pillow (>=10,<11) ; extra == "local"
+Requires-Dist: torch (>=2.4,<3.0) ; extra == "local"
+Requires-Dist: transformers (>=4.44,<5.0) ; extra == "local"
+Description-Content-Type: text/markdown
+
+
