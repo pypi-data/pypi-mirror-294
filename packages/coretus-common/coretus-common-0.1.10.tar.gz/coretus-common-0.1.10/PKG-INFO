@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: coretus-common
+Version: 0.1.10
+Summary: Centralized error handling package for FastAPI applications.
+Home-page: https://github.com/coretus-technologies/coretus-common.git
+Author: sandeep
+Author-email: sandeep@coretus.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: FastAPI
+Requires-Python: >=3.8
+Provides-Extra: jwt
+Provides-Extra: mongo
+Provides-Extra: test

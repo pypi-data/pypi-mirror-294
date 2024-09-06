@@ -1,0 +1,2 @@
+include src/fasthandler*.py
+recursive-include src/fasthandler *
