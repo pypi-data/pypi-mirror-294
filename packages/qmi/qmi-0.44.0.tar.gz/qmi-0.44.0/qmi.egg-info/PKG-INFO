@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: qmi
+Version: 0.44.0
+Summary: The Quantum Measurement Infrastructure framework
+Home-page: https://github.com/QuTech-Delft/QMI
+Author: QuTech
+Author-email: 
+Project-URL: Changelog, https://github.com/QuTech-Delft/QMI/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/QuTech-Delft/QMI/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: numpy<2
+Requires-Dist: scipy<2
+Requires-Dist: h5py>=3.7.0
+Requires-Dist: pyserial
+Requires-Dist: pyusb
+Requires-Dist: python-vxi11
+Requires-Dist: pytz
+Requires-Dist: psutil
+Requires-Dist: colorama
+Requires-Dist: jsonschema
+Requires-Dist: pydwf
+Provides-Extra: dev
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: astroid==2.12.2; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: radon; extra == "dev"
+Requires-Dist: bump2version; extra == "dev"
+Provides-Extra: rtd
+Requires-Dist: sphinx; extra == "rtd"
+Requires-Dist: sphinx_rtd_theme; extra == "rtd"
+
+![pylint](.github/badges/pylint.svg)
+![mypy](.github/badges/mypy.svg)
+[![Documentation Status](https://readthedocs.org/projects/qmi/badge/?version=latest)](https://qmi.readthedocs.io/en/latest/?badge=latest)
+![radon-cc](.github/badges/radon-cc.svg)
+![radon-mi](.github/badges/radon-mi.svg)
+![coverage](.github/badges/coverage.svg)
+![tests](.github/badges/tests.svg)
+
+# Quantum Measurement Infrastructure
+
+QMI is a Python 3 framework for controlling laboratory equipment. It is suitable for anything ranging from one-off
+scientific experiments to robust operational setups.
+
+QMI is developed by [QuTech](https://qutech.nl) to support advanced physics experiments involving quantum bits.
+However, other than its name and original purpose, there is nothing specifically *quantum* about QMI — it is potentially
+useful in any environment where monitoring and control of measurement equipment is needed.
+
+## Installation
+
+Currently, no PIP installation is possible. Please clone and setup with `python setup.py install`.
+
+## Documentation
+
+### Latest version
+
+The latest version of the documentation can be found [here](https://qmi.readthedocs.io/en/latest/).
+
+### Installing for generating documentation
+
+To install the necessary packages to perform documentation activities for QMI do:
+
+```
+pip install -e .[rtd]
+```
+
+To build the 'readthedocs' documentation locally do:
+
+```
+cd documentation/sphinx
+./make-docs
+```
+
+The documentation can then be found in the `build/html` directory.
+
+## Contribute
+
+For contribution guidelines see [CONTRIBUTING](CONTRIBUTING.md)
+
