@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: libagent
+Version: 0.15.0
+Summary: Using hardware wallets as SSH/GPG/age agent
+Home-page: http://github.com/romanz/trezor-agent
+Author: Roman Zeyde
+Author-email: dev@romanzey.de
+Platform: POSIX
+Platform: win32
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Communications
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: bech32>=1.2.0
+Requires-Dist: cryptography>=3.4.6
+Requires-Dist: docutils>=0.14
+Requires-Dist: python-daemon>=2.3.0
+Requires-Dist: wheel>=0.32.3
+Requires-Dist: backports.shutil_which>=3.5.1
+Requires-Dist: ConfigArgParse>=0.12.1
+Requires-Dist: python-daemon>=2.1.2
+Requires-Dist: ecdsa>=0.13
+Requires-Dist: pynacl>=1.4.0
+Requires-Dist: mnemonic>=0.18
+Requires-Dist: pymsgbox>=1.0.6
+Requires-Dist: semver>=2.2
+Requires-Dist: unidecode>=0.4.20
+Requires-Dist: pywin32>=300; sys_platform == "win32"
