@@ -1,0 +1,6 @@
+[tool.ruff]
+exclude = [
+    "src/silverstream/agents/sota/agents/prompt_elements.py",
+    "src/silverstream/docs/chat_on_the_edge_rabbitmq/",
+    "src/silverstream/proto/",
+]
