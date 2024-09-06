@@ -1,0 +1,13 @@
+whatsapp/__init__.py,sha256=7RsRnGJo_owD0EaHTqlUnWwHjaUxXBn5bp7DdsIM6PI,9940
+whatsapp/constants.py,sha256=46gfu0Ww1ZG0lipwh3o8HTNCSze4Dmu87mJ8Gk0DdI8,225
+whatsapp/ext/_buttons.py,sha256=whj0v4Qgow9AWaWztZxUxaHB8o0MnqA8uRjHHsDht6c,2836
+whatsapp/ext/_media.py,sha256=SAawDZ_5ctneC9kLmtxkjmQyI4sbnQkSuKWs9mcYQUM,4377
+whatsapp/ext/_message.py,sha256=vvI7leCqZSX-RGuiJ3CFpifCPniPo_GK5eRgCwUSD1s,4321
+whatsapp/ext/_property.py,sha256=-btASb_1B4t69TRGAm21lgnjgb5yemZteW7Bmmouooc,123
+whatsapp/ext/_send_media.py,sha256=CpvAdFUOh65G628NULqauy4lEM-xmks6-6irsdy31Yc,9769
+whatsapp/ext/_send_others.py,sha256=A6554k98ftStmUu_Wo0wls-2zWuB8ZujaqQoEEgtbZs,2848
+whatsapp/ext/_static.py,sha256=NghY748DarWcpHZ6Xa7DtuVpYnHv3udEgZL5E1YdL4M,9853
+whatsapp_python_cloud_api-3.2.5.dist-info/METADATA,sha256=tGpolWO8_fjVZ2iKV6G7WX2hNolT_7ZRDVy3aZvVpxo,6545
+whatsapp_python_cloud_api-3.2.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+whatsapp_python_cloud_api-3.2.5.dist-info/licenses/LICENSE,sha256=Lcl62br0APneFzEOsYHEVs0hThCIA8eEauvxuLGd1cs,1076
+whatsapp_python_cloud_api-3.2.5.dist-info/RECORD,,
