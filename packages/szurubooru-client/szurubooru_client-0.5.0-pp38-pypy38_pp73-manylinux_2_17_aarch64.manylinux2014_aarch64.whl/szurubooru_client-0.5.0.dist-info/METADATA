@@ -1,0 +1,50 @@
+Metadata-Version: 2.3
+Name: szurubooru_client
+Version: 0.5.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Multimedia :: Graphics
+Summary: A wrapper around the Szurubooru API, including type-safe Query and Sort tokens
+Keywords: image_host,szurubooru,booru
+Author: Scott Lyons <scottalyons@gmail.com>
+Author-email: Scott Lyons <scottalyons@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/slyons/szurubooru-client
+
+# szurubooru-client
+
+SzurubooruClient is a wrapper around the excellently-documented Szurubooru API,
+including type-safe (if not API-safe) Query and Sort tokens.
+
+## Creating a new client
+
+### Basic authentication
+Please keep in mind that this is not the preferred method of authentication. Tokens
+are far superior.
+
+```rust
+use szurubooru_client::SzurubooruClient;
+let client = SzurubooruClient::new_with_basic_auth("http://localhost:5001", "myuser",
+    "mypassword", true).unwrap();
+```
+
+### Token authentication
+The far superior and more secure means of authentication
+
+```rust
+use szurubooru_client::SzurubooruClient;
+let client = SzurubooruClient::new_with_token("http://localhost:5001", "myuser", "sz-123456", true).unwrap();
+```
+
+For all other methods for making the requests, see the documentation.
+
