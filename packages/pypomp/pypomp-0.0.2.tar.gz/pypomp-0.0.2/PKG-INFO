@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: pypomp
+Version: 0.0.2
+Summary: Modeling and inference using partially observed Markov process (POMP) models
+Project-URL: Homepage, https://github.com/pypomp/pypomp
+Project-URL: Issues, https://github.com/pypomp/pypomp/issues
+Author-email: The pypomp core developer team <pypomp-org@umich.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pypomp
+
+Python code for modeling and inference using partially observed Markov process (POMP) models, featuring automatic differentiation.
+
+### Expected package users
+
+* Scientists wanting to perform data analysis on a dynamic system via partially observed Markov processes (POMP), also  called state-space models (SSM) or hidden Markov models (HMM) in other contexts.
+
+  * This package design and intended use is similar to the popular [**pomp** R package](https://kingaa.github.io/pomp/). As such, many of the expected use cases and motivating examples of this package can be found on the [pomp package bibliography page](https://kingaa.github.io/pomp/biblio.html).
+  
+* Researchers wishing to develop novel inference methodology for POMP models.
+
+  * Like the **pomp** R package, this package provides a framework for implementing computer representations of arbitrary POMP models. This ability provides an environment for researchers to develop, test, and deploy novel algorithms that are applicable to POMP models. 
+
+### Package Development 
+
+* The **pypomp** package is currently at early stages of development. All version numbers below 0.1 are pre-release.
+
+* All contributions are welcome! Contributions should keep in mind the intended uses of this package, and its intended users.
+
+* The **pypomp** package is run by the [pypomp organization](https://github.com/pypomp).
+
