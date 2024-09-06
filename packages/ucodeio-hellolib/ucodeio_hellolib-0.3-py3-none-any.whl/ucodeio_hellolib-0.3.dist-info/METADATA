@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ucodeio_hellolib
+Version: 0.3
+Summary: A simple hello library and function that returns hello <name>
+Home-page: http://github.com/sstacha/ucodeio_hellolib
+Author: Steve Stacha
+Author-email: sstacha@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ucodeio_hellolib
+A simple test library with a function used to test uploading a library to pypi and installing it
