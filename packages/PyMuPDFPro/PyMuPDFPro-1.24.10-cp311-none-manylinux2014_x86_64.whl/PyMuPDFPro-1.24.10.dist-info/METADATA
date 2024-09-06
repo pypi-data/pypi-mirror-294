@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: PyMuPDFPro
+Version: 1.24.10
+Summary: Commercial extensions for PyMuPDF; enables Office document handling, including doc, docx, hwp, hwpx, ppt, pptx, xls, xls, and others. Supports text and table extraction, document conversion and more.
+Description-Content-Type: text/markdown
+Author: Artifex
+Author-email: support@artifex.com
+License: Commercial license. See artifex.com for details.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: PyMuPDF==1.24.10
+Requires-Python: >=3.8
+
+# PyMuPDF Pro
+
+
+## Overview
+
+PyMuPDF Pro is a set of commercial extensions for PyMuPDF.
+
+* Enables Office document handling, including doc, docx, hwp, hwpx, ppt, pptx, xls, xlsx, and others.
+
+* Supports text and table extraction, document conversion and more.
+
+* Available for these platforms only:
+  
+  * Windows x86_64.
+  * Linux x86_64 (glibc).
+  * MacOS x86_64.
+  * MacOS arm64.
+
+* See https://artifex.com/products/pymupdf-pro/ for more.
+
+
+## Installation
+
+`pip install pymupdfpro`
+
+This will also install PyMuPDF.
+
+
+## Usage:
+
+Restricted usage without a key:
+
+```
+import pymupdf.pro
+pymupdf.pro.unlock()
+
+# PyMuPDF has now been extended with PyMuPDF Pro features, with some
+# restrictions.
+```
+
+Unrestricted usage with a key from https://pymupdf.io/try-pro:
+```
+import pymupdf.pro
+pymupdf.pro.unlock(my_key)
+
+# PyMuPDF has now been extended with PyMuPDF Pro features.
+```
+
+* For more please see: https://pymupdf.readthedocs.io/en/latest/pymupdf-pro.html#usage
