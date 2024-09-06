@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: golean
+Version: 0.1.0
+Summary: A Python package for interacting with the GoLean API service.
+Home-page: https://github.com/golean-ai/golean-python
+Author: Connor Peng
+Author-email: jinghong.peng@golean.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+# GoLean API Client
+
+[![PyPI version](https://badge.fury.io/py/golean.svg)](https://badge.fury.io/py/golean)
+[![Python Versions](https://img.shields.io/pypi/pyversions/golean.svg)](https://pypi.org/project/golean/)
+
+GoLean is a powerful Python client for the GoLean API, offering efficient and customizable prompt compression services tailored for AI applications. Optimize your AI workflows with our state-of-the-art compression algorithms.
+
+## Features
+
+- **Efficient Prompt Compression:** Optimize performance with customizable compression rates.
+- **Flexible Model Selection:** Choose from a range of available models for your compression tasks.
+- **Secure Authentication:** Robust API key-based authentication system.
+- **Easy Configuration:** Seamless setup with support for environment variables.
+- **Comprehensive Documentation:** Detailed guides and API references to get you started quickly.
+
+## Installation
+
+Install the GoLean client using pip:
+
+```bash
+pip install golean
+```
+
+## Quick Start
+
+```python
+from golean import GoLean
+
+# Initialize the GoLean client
+golean = GoLean(api_key="your_api_key")
+
+# Compress a prompt
+result = golean.compress_prompt(
+    context="The quick brown fox jumps over the lazy dog.",
+    question="What animal is mentioned?",
+    compression_rate=0.5
+)
+
+print(result['compressed_prompt'])
+```
+
+## Usage
+
+### Initialization
+
+```python
+from golean import GoLean
+
+# Initialize with API key
+golean = GoLean(api_key="your_api_key")
+
+# Or, set GOLEAN_API_KEY as an environment variable and initialize without parameters
+golean = GoLean()
+```
+
+### Compressing Prompts
+
+```python
+result = golean.compress_prompt(
+    context="Detailed context goes here...",
+    question="Your question goes here...",
+    compression_rate=0.7,
+    model="gpt-4o"
+)
+
+print(f"Compressed Prompt: {result['compressed_prompt']}")
+print(f"Compression Ratio: {result['compression_ratio']}")
+```
+
+## Configuration
+
+### API Key
+
+Set your API key using one of these methods:
+
+1. Environment variable:
+
+   ```bash
+   export GOLEAN_API_KEY=your_api_key_here
+   ```
+
+2. `.env` file in your project root:
+
+   ```
+   GOLEAN_API_KEY=your_api_key_here
+   ```
+
+3. Directly in your code (not recommended for production):
+   ```python
+   golean = GoLean(api_key="your_api_key_here")
+   ```
+
+## API Reference
+
+### `GoLean` Class
+
+```python
+class GoLean:
+    def __init__(self, api_key: Optional[str] = None):
+        """
+        Initialize the GoLean client.
+
+        Args:
+            api_key (str, optional): Your GoLean API key. If not provided, reads from GOLEAN_API_KEY env variable.
+        """
+
+    def compress_prompt(self,
+                        context: str,
+                        question: str,
+                        compression_rate: float = 0.5,
+                        model: str = "gpt-4o") -> Dict[str, Any]:
+        """
+        Compress a prompt using the GoLean API.
+
+        Args:
+            context (str): The context for the prompt.
+            question (str): The question to be compressed.
+            compression_rate (float): Desired compression rate (0 < rate <= 1). Default is 0.5.
+            model (str): Model to use for compression. Default is "gpt-4o".
+
+        Returns:
+            Dict[str, Any]: Dictionary containing the compressed prompt and metadata.
+        """
+```
+
+For complete API documentation, please refer to our [official documentation](https://golean.ai).
+
+## Examples
+
+### Basic Compression
+
+```python
+result = golean.compress_prompt(
+    context="The solar system consists of the Sun and everything that orbits around it.",
+    question="What is at the center of the solar system?",
+    compression_rate=0.6
+)
+print(result['compressed_prompt'])
+```
+
+### Using Different Models
+
+```python
+result = golean.compress_prompt(
+    context="Machine learning is a subset of artificial intelligence...",
+    question="What is the relationship between ML and AI?",
+    compression_rate=0.8,
+    model="gpt-3.5-turbo"
+)
+print(result['compressed_prompt'])
+```
+
+## Licensing
+
+GoLean API Client is a commercial product. Usage of this software is subject to the terms and conditions outlined in our [End User License Agreement (EULA)](https://golean.ai). Please review the EULA carefully before using this software.
+
+To obtain a license for commercial use, please visit our [pricing page](https://www.golean.ai) or contact our sales team at support@golean.ai.
+
+## Support
+
+For assistance, please contact our support team:
+
+- Email: support@golean.ai
+
+For enterprise support options, please contact our sales team.
+
+## Legal
+
+Copyright © 2024 GoLean, Inc. All rights reserved.
+
+GoLean is a registered trademark of GoLean, Inc. All other trademarks are the property of their respective owners.
+
+---
+
+Empower your AI with GoLean - Compress, Optimize, Succeed.
+
+
