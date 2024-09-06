@@ -1,0 +1,116 @@
+# IsoZero: Enhancing LLM Zero-Shot Responses
+
+IsoZero is a powerful SDK designed to enhance Large Language Model (LLM) zero-shot responses through multi-step reasoning and document analysis. By leveraging a step-by-step reasoning process, this SDK helps improve the accuracy and depth of LLM outputs, especially in scenarios where the model hasn't been specifically fine-tuned for the task at hand.
+
+## Features
+
+- Multi-step reasoning process to break down complex tasks
+- Support for multiple LLM backends:
+  - Claude (Anthropic)
+  - GPT (OpenAI)
+  - Transformer models (Hugging Face)
+- Document analysis capabilities for context-aware responses
+- Mathematical problem-solving simulation
+- Flexible CLI with progress bars and result saving
+- Customizable number of reasoning steps
+
+## Package Structure
+
+The IsoZero package consists of two main modules:
+
+1. `reason_sim`: General reasoning and document analysis
+2. `math_sim`: Mathematical problem-solving simulation
+
+## Installation
+
+Install IsoZero directly from PyPI:
+
+```bash
+pip install isozero
+```
+
+For the latest development version:
+
+```bash
+pip install git+https://github.com/iso-ai/isozero.git
+```
+
+## Usage
+
+### Command Line Interface
+
+IsoZero provides a flexible CLI for various tasks:
+
+1. General Reasoning Task:
+   ```bash
+   isozero --mode reasoning --task "Explain the process of photosynthesis" --agent claude --steps 4 --save
+   ```
+
+2. Document Analysis (Question Answering):
+   ```bash
+   isozero --mode qa --documents https://en.wikipedia.org/wiki/Artificial_intelligence https://en.wikipedia.org/wiki/Machine_learning --questions questions.txt --agent huggingface --model google/flan-t5-large --steps 4
+   ```
+
+3. Math Problem Solving:
+   ```bash
+   isozero --mode math --task "A train travels at 60 km/h for 2 hours, then at 90 km/h for 3 hours. What's the total distance?" --agent openai --steps 4 --save
+   ```
+
+The `--save` flag will store the results in a JSON file in the `logs` folder.
+
+### Python API
+
+You can also use IsoZero in your Python scripts:
+
+```python
+from isozero.reason_sim import ClaudeAgent, QuestionAnswerer, DocumentLoader
+from isozero.reason_sim.reason_simulation import ReasonSimulation
+from isozero.reason_sim.simulation_wrapper import SimulationWrapper
+
+# Initialize the agent
+agent = ClaudeAgent(api_key="your_api_key_here")
+
+# For reasoning tasks
+simulation = ReasonSimulation("Explain the process of photosynthesis", max_steps=4)
+wrapper = SimulationWrapper(agent, simulation)
+
+for step in range(4):
+    state = wrapper.step()
+    print(f"Step {state['text_data']['step']}:", state['text_data']['reasoning'][-1])
+
+# For document analysis
+loader = DocumentLoader()
+documents = loader.load(["path/to/document.txt"])
+qa = QuestionAnswerer(agent)
+results = qa.answer_questions(documents, ["Your question here"])
+```
+
+## Configuration
+
+Set environment variables for API keys:
+
+```bash
+export ANTHROPIC_API_KEY=your_anthropic_key_here
+export OPENAI_API_KEY=your_openai_key_here
+```
+
+Or use a `.env` file in your project root.
+
+## License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
+
+## Citation
+
+If you use IsoZero in your research, please cite it as follows:
+
+```
+@software{isozero2024,
+  author = {Jazmia Henry},
+  title = {IsoZero: Enhancing LLM Zero-Shot Responses},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/iso-ai/isozero}}
+}
+```
