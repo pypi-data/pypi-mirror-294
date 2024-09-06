@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/lfdrone/__init__.py
+src/lfdrone/drone.py
+src/lfdrone.egg-info/PKG-INFO
+src/lfdrone.egg-info/SOURCES.txt
+src/lfdrone.egg-info/dependency_links.txt
+src/lfdrone.egg-info/top_level.txt
