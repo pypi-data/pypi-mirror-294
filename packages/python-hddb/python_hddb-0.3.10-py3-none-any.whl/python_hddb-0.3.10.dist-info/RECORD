@@ -1,0 +1,8 @@
+python_hddb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_hddb/client.py,sha256=ux-3NkZVP_115cEHJwMcUVygZ3SWPar8uX31ijBDmkM,19303
+python_hddb/exceptions.py,sha256=qXZPGdHsBVL4qoTsMz4qTaIJiuXS7QehXbzCujzhDvw,668
+python_hddb/helpers.py,sha256=1OyEj-_3GWx6kSFTrONmyYbGbMY6MB9HzqmYtr7YX58,918
+python_hddb-0.3.10.dist-info/LICENSE,sha256=TOsRmMqcqsJV8vbC7e6MDaZ7X3rB8BY8WtNQcn1UipU,1067
+python_hddb-0.3.10.dist-info/METADATA,sha256=hzL34_zV3XxAzzn2dSDo7rZ8v3-61DMUEyLSMQNoFFM,1090
+python_hddb-0.3.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_hddb-0.3.10.dist-info/RECORD,,
