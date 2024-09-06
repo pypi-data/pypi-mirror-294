@@ -1,0 +1,2 @@
+[console_scripts]
+neverland-compile = neverland_tools.compiler.compile:main
