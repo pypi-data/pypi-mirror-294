@@ -1,0 +1,9 @@
+gpt2md/__init__.py,sha256=0k82QHZsLEWD5_tBWcBpsIhxeHw6BbH8q5_w1TZKQAM,77
+gpt2md/cli.py,sha256=4DksYG3IEXgRH9cMcSwYJdT_uMcXDLprCxiV53HJDjY,963
+gpt2md/main.py,sha256=k-2cWsAKMeRJrtmJLR_ySXKB1dMKt63QZqA39IAlhoM,2544
+gpt2md-0.1.dist-info/LICENSE,sha256=z_uD7zLQ46r5HTc9RUyTiEuKzFJIiiOMKOG59vH-0bI,1070
+gpt2md-0.1.dist-info/METADATA,sha256=xnrKxGzytkaNHQyHO97g8gFZZXNjenGJRx0FdJ27Zg0,3455
+gpt2md-0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+gpt2md-0.1.dist-info/entry_points.txt,sha256=2heLEKK3f4Zw0c-NPy2gWOcq7Zna7inKhpYljA0QnFc,42
+gpt2md-0.1.dist-info/top_level.txt,sha256=APnEbzMyWa9G72ibXVm59bh2xV4aaqE3nV87XlVzMiw,7
+gpt2md-0.1.dist-info/RECORD,,
