@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: imtec_workflow
+Version: 0.1.1
+Summary: A dynamic workflow for managing Frappe installations and ORB machines.
+License: MIT
+Author: Benjamin Pelto
+Author-email: benjamin.peltop@imtec.ba
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fabric (>=2.6.0,<3.0.0)
+Requires-Dist: invoke (==1.6.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
