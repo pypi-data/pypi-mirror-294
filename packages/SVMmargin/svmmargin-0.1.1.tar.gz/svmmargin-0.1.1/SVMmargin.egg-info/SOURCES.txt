@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SVMmargin/SVMmargin.py
+SVMmargin/__init__.py
+SVMmargin.egg-info/PKG-INFO
+SVMmargin.egg-info/SOURCES.txt
+SVMmargin.egg-info/dependency_links.txt
+SVMmargin.egg-info/requires.txt
+SVMmargin.egg-info/top_level.txt
