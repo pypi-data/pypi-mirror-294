@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attentive_scoring_layer.py,sha256=F3RX3qclWQ3UGgHfftF3H7g-sHefdf60tYtCzM5QzQY,17788
+attentive_scoring_layer_test.py,sha256=UBx7COmEl1jI8ND2LC8oclVtz12fUaRzjETtFexk6QM,9798
+cumulative_statistics_layer.py,sha256=z-n8vmQO8sgxXpX_ScXFqiXtEjsvhEz0G23xzmLMinQ,12634
+cumulative_statistics_layer_test.py,sha256=IPEX2Mw5YANXAKOlZyG0nHtdX_fb-j2vocnwyh1FQPg,8305
+loss_layers.py,sha256=Wvs8GPxNc3RSrirR9gYJ-MLEGw_9vibqK4ZW28n9idc,31752
+loss_layers_test.py,sha256=E27QZ2RhEkDHkUwePzCqwpQMrO5OGMNzbSNa00MYbDQ,8613
+utils.py,sha256=6QIS2XQN9W0-Pn3NQCTVwrOBBVIHqWG9WIG-Z_wzBJ0,6893
+utils_test.py,sha256=8yWBXQOJbvCYO_va-R9p0lZodvuckguUn-G66HGVMy4,4319
+sidlingvo-0.0.1.dist-info/METADATA,sha256=WmBQ11De6P1q2wWaf04aFwKIg5F0yOtgELhfco44ljU,3145
+sidlingvo-0.0.1.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+sidlingvo-0.0.1.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sidlingvo-0.0.1.dist-info/RECORD,,
