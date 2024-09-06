@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=40.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build.targets.wheel]
+packages = ["eurydice_test_framework"]
+
+
+[project]
+version = "0.0.2"
+name = "eurydice_test_framework"
+dependencies = [
+    "numpy",
+    "pytest",
+    "SQLAlchemy",
+    "psycopg2"
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+eurydice = "eurydice_test_framework.core.management:command_line_handler"
+
+[project.urls]
+Homepage = "https://github.com/korneyaitmatoff/eurydice_test_framework"
