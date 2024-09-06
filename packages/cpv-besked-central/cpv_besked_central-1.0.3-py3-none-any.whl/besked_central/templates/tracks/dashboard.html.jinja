@@ -1,0 +1,59 @@
+{% extends 'base/dashboard-page.html.jinja' %}
+
+{% block tabid %}tracksTab{% endblock %}
+{% block title %}Registrerede kuglebaner{% endblock %}
+
+{% block tabcontent %}
+
+{% if tracks %}
+
+{% for dep_id in tracks %}
+<h3>{{ g.static_values['departments'][dep_id] }} ({{ dep_id }})</h3>
+
+<table class="dashboardtable">
+    <tr>
+        <th style="width: 5%;">ID</th>
+        <th style="width: 20%;">Navn</th>
+        <th style="width: 40%;">Beskrivelse</th>
+        <th style="width: 5%;"></th>
+        <th></th>
+    </tr>
+    {% for track_id in tracks[dep_id] %}
+    <tr>
+        <td>{{ track_id }}</td>
+        <td>{{ tracks[dep_id][track_id]['track_name'] }}</td>
+        <td>{{ tracks[dep_id][track_id]['description'] }}</td>
+
+        <!-- edit action-->
+        {% if g.isRoleAdmin or (g.isRoleController and g.user['department_id'] == dep_id) %}
+        <td><a class="editlink" href="{{ url_for('tracks.update', track_id=track_id) }}">
+                Rediger
+            </a></td>
+        {% else %}
+        <td></td>
+        {% endif %}
+
+        <!-- delete action-->
+        {% if g.isRoleAdmin or (g.isRoleController and g.user['department_id'] == dep_id) %}
+        <td><span title="Slet">[
+                <a class="editlink" href="{{ url_for('tracks.delete', track_id=track_id) }}">x</a>
+                ]</span>
+        </td>
+        {% else %}
+        <td></td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+{% endfor %}
+
+{% else %}
+<p>Der er endnu ikke registrerede nogle kuglebaner - du kan blive den første...</p>
+{% endif %}
+
+{% if g.isRoleAdmin or g.isRoleController %}
+<p>
+    <a href="{{ url_for('tracks.register') }}">Opret kuglebane</a>
+</p>
+{% endif %}
+{% endblock tabcontent %}

@@ -1,0 +1,39 @@
+{% extends 'base/single-page.html.jinja' %}
+
+{% block title %}Registrer ny bruger{% endblock %}
+
+{% block sectioncontent %}
+
+<form method="post" id="userform">
+    <label for="username">Brugernavn</label>
+    <input name="username" id="username" value="{{ request.form['username'] }}" required>
+
+    <label for="password">Kodeord</label>
+    <input type="password" name="password" id="password" value="{{ request.form['password'] }}" required>
+    <label for="password2">Gentag kodeord</label>
+    <input type="password" name="password2" id="password2" value="{{ request.form['password2'] }}" required>
+
+    <label for="department_id">Department ID
+
+        {% if g.isRoleAdmin %}
+        <select name="department_id" id="department_id" form="userform">
+            {% for id, name in g.static_values['departments'].items() %}
+            <option value="{{id}}">{{name}}</option>
+            {% endfor %}
+        </select>
+        {% else %}
+        <input name="department_id" id="department_id" value="{{ g.user['department_id'] }}" readonly>
+        {% endif %}
+    </label>
+
+    <label for="role_id">Adgangsrolle
+        <select name="role_id" id="role_id" form="userform">
+            {% for id, role in g.static_values['valid_userroles'].items() %}
+            <option value="{{id}}">{{role}}</option>
+            {% endfor %}
+        </select>
+    </label>
+
+    <input type="submit" value="Register">
+</form>
+{% endblock %}

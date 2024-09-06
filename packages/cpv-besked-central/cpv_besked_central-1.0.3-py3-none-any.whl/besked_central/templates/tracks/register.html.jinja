@@ -1,0 +1,28 @@
+{% extends 'base/single-page.html.jinja' %}
+
+{% block title %}Opret ny kuglebane{% endblock %}
+
+{% block sectioncontent %}
+
+<form method="post" id="trackform">
+    <label for="trackname">Navn</label>
+    <input name="trackname" id="trackname" value="{{ request.form['trackname'] }}" maxlength="20" required>
+    <label for="description">Beskrivelse (max 100 tegn)</label>
+    <input name="description" id="description" value="{{ request.form['description'] }}" maxlength="100" size="30">
+
+    <label for="department_id">Department ID
+        {% if g.isRoleAdmin %}
+        <select name="department_id" id="department_id" form="trackform">
+            {% for id, name in g.static_values['departments'].items() %}
+            <option value="{{id}}">{{name}}</option>
+            {% endfor %}
+        </select>
+        {% else %}
+        <input name="department_id" id="department_id" type="text" value="{{ g.user['department_id'] }}"
+            readonly="readonly">
+        {% endif %}
+    </label>
+
+    <input type="submit" value="Gem">
+</form>
+{% endblock %}

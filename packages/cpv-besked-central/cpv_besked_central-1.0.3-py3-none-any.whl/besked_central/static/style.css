@@ -1,0 +1,141 @@
+html { font-family: sans-serif; background: #eee; padding: 0.5rem; }
+body { max-width: 960px; margin: 0 auto; background: white; font-size: 14px;}
+h1 { font-family: serif; color: #377ba8; margin: 1rem 0; font-size: 2.5em;}
+h2 { font-family: serif; color: #377ba8; margin: 1rem 0; font-size: 2em;}
+h3 { font-family: serif; color: #427394; margin: 1rem 0; font-size: 1.4em;}
+h4 { font-family: serif; margin: 1rem 0; font-size: 1.2em;}
+a { color: #377ba8; }
+a.editlink { font-size: 12px; }
+img.logo {padding: 5px 10px 0px 0px}
+hr { border: none; border-top: 1px solid lightgray; }
+
+.dashboardtable {
+    width:100%; 
+    text-align:left; 
+    font-size: 0.9em;
+    border-collapse: collapse;
+}
+.dashboardtable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.dashboardtable tr:hover {
+    background-color: #ddd;
+}
+.dashboardtable th {  
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0px;
+}
+.dashboardtable td {  
+    padding: 3px 0px;
+    vertical-align: top;
+}
+.dashboardtable td.department {
+    font-size: 1.1em;
+    font-weight: bold; 
+    vertical-align: top;
+    padding: 8px 0px 3px 4px;
+}
+.dashboardtable td.track {
+    font-weight: bold; 
+    vertical-align: top;
+    padding: 8px 0px 3px 4px;
+}
+.dashboardtable td .id {
+    font-weight: normal;
+    color: gray;
+}
+
+.apidoc h3{
+    color: #25343d; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    margin-top: 2em;
+}
+.apidoc p{
+    margin-left: 4em;
+}
+
+nav#mainnav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
+nav#mainnav h1 { flex: auto; margin: 0; }
+nav#mainnav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
+nav#mainnav select {    
+    border: 0px;
+    font-size: 16px;
+    background-color: lightgray; 
+}
+nav#mainnav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+nav#mainnav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
+
+div#footer { 
+    color: lightslategray; 
+    font-size: 0.9em; 
+    padding: 0.3rem 0.2rem 0.2rem;}
+
+.content { padding: 0 0.2rem 0.2rem; }
+.content > header { border-bottom: 1px solid lightgray; display: flex; align-items: flex-end; }
+.content > header h1 { flex: auto; margin: 1rem 0 0.25rem 0; }
+.flash { margin: 1em 0; padding: 1em; background: #cae6f6; border: 1px solid #377ba8; }
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+.post > header > div:first-of-type { flex: auto; }
+.post > header h1 { font-size: 1.5em; margin-bottom: 0; }
+.post .about { color: slategray; font-style: italic; }
+.post .body { white-space: pre-line; }
+.content:last-child { margin-bottom: 0; }
+.content form { margin: 1em 0; display: flex; flex-direction: column; }
+.content label { font-weight: bold; margin-bottom: 0.5em; }
+.content input, .content textarea { margin-bottom: 1em; }
+.content textarea { min-height: 12em; resize: vertical; }
+
+input.danger { color: #cc2f2e; }
+input[type=submit] { align-self: start; min-width: 10em; margin-top: 5px; } 
+
+/* 
+ * Style the frontpage tab 
+ */
+.tab {
+    overflow: hidden;
+    border: 0px 1px 1px 0px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.defaultOpen{
+    display: block;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

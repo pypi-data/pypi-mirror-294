@@ -1,0 +1,32 @@
+{% extends 'base/base.html.jinja' %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/tab-navigation.js') }}"></script>
+
+{# tab links #}
+<nav class="tab">
+    <button id="eventsTab" class="tablinks" onclick="openTab('/events')">Events</button>
+    <button id="tracksTab" class="tablinks" onclick="openTab('/tracks')">Kuglebaner</button>
+    <button id="usersTab" class="tablinks" onclick="openTab('/users')">Brugere</button>
+    <button id="apiTab" class="tablinks" onclick="openTab('/apidoc')">API</button>
+</nav>
+
+{% block sectioncontent %}
+
+{# Tab content #}
+<div class="tabcontent">
+    <section class="content">
+        <header>
+            <h2>{% block title %}{% endblock %}</h2>
+        </header>
+
+        {% block tabcontent %}{% endblock %}
+    </section>
+</div>
+
+<script>
+    setCurrentActiveTab("{{ self.tabid() }}");
+</script>
+
+{% endblock sectioncontent %}
+{% endblock %}
