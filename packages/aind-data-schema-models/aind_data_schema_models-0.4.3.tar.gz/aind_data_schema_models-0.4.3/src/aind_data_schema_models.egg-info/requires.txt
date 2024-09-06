@@ -1,0 +1,13 @@
+pydantic>=2.7
+importlib-resources
+
+[dev]
+codespell
+black
+coverage
+flake8
+interrogate
+isort
+Sphinx
+furo
+aind-data-access-api[docdb]
