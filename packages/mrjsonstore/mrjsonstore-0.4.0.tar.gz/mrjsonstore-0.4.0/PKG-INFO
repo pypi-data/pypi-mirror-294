@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mrjsonstore
+Version: 0.4.0
+Summary: Simple, transparent on-disk JSON store
+License: Apache-2.0
+Author: Ole Kliemann
+Author-email: mail@olekliemann.de
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: atomicwrites (>=1.4.1,<2.0.0)
+Requires-Dist: result (>=0,<1)
+Description-Content-Type: text/markdown
+
+# mrjsonstore
+Simple, transparent on-disk JSON store using `atomicwrites`.
+
+```python
+store = JsonStore('example.json')
+with store() as x:
+    assert isinstance(x, dict)
+    x['woohoo'] = 'I am just a Python dictionary'
+```
+
+Changes are written on context exit, regardless of exceptions that occurred.
+
+Unless a transaction is used:
+
+```python
+with store.transaction() as x:
+  [ ... ]
+  raise RuntimeError()
+```
+
+In that case any changes are rolled back on context exit.
+
+Does not yet support concurrency.
+
