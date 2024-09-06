@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ayw
+Version: 0.0.6
+Summary: This python module do nothing but print "ayw NB" as "import ayw as nb", and "nb" at simple import.
+Home-page: https://github.com/FranklinBao/ayw
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+License-File: LICENSE

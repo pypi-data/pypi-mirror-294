@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ayw/__init__.py
+ayw/ayw.py
+ayw.egg-info/PKG-INFO
+ayw.egg-info/SOURCES.txt
+ayw.egg-info/dependency_links.txt
+ayw.egg-info/top_level.txt
+ayw/resources/quotes.txt
