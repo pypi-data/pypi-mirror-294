@@ -1,0 +1,8 @@
+sea_query-0.1.1.dist-info/METADATA,sha256=V5pY5cL5Uq3yr8ZJ2bRVQaYJQ1mGg1D1v047oaKTzXk,5367
+sea_query-0.1.1.dist-info/WHEEL,sha256=WgkThE34Ya5-6iObW1aurGs9TeSjahgeU2iqgD2Ru7M,90
+sea_query-0.1.1.dist-info/licenses/LICENSE,sha256=VLz0N1lkbxZGlJFSA20Mcutc3Wux1AZvyVkP3st1o5Y,1099
+sea_query/__init__.py,sha256=upl2y1EnIExwkt_CimUTgo47rzM5Ht9LK-DIghDrlRg,119
+sea_query/__init__.pyi,sha256=4HHc0LdsPQLjObSGoyxIz-T5HMhGLbI2Fby1Tsbg5xQ,13198
+sea_query/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sea_query/sea_query.cp38-win32.pyd,sha256=B9uYojKI_zNje5khVmNK38nb13NDo3TuQmUXBCQSRcc,1630208
+sea_query-0.1.1.dist-info/RECORD,,
