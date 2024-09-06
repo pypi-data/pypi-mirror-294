@@ -1,0 +1,2 @@
+[endstone]
+home_pilot = endstone_home_pilot:Main
