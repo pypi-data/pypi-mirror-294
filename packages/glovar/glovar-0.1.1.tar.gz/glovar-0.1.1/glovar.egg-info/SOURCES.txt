@@ -1,0 +1,9 @@
+README.md
+setup.py
+glovar/__init__.py
+glovar/glovar.py
+glovar.egg-info/PKG-INFO
+glovar.egg-info/SOURCES.txt
+glovar.egg-info/dependency_links.txt
+glovar.egg-info/top_level.txt
+tests/test_module.py
