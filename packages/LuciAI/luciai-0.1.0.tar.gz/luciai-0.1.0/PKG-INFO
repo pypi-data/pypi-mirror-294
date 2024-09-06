@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: LuciAI
+Version: 0.1.0
+Summary: The First AI-Based Medical Agent Designed to Automate All Medical Processes.
+Home-page: https://revmaxx.co
+Author: wbavishek
+Author-email: wbavishek@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cerina
+Requires-Dist: openai
+Requires-Dist: together
+Requires-Dist: langchain-together
+Requires-Dist: langchain-core
+Requires-Dist: langchain-community
+Requires-Dist: ijson
+Requires-Dist: pydantic
+
+## LUCI 
+
+The first AI-based medical agent designed to automate all medical processes.
+
+## Installation
+
+```bash
+pip install LuciAI
+```
+
+## Usage
+
+```python
+from Luci.Agents import Search
+
+query = "Revmaxx LLC"
+search_instance = Search(query)
+
+results = search_instance.search_text(max_results=5)
+search_instance.print_text_result(results)
+```
+
+## Contributing
+
+We welcome contributions to LuciAI! If you're interested in improving the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Create a pull request.
+
+## License
+
+[![License: RevMaxx LLC Software License](https://img.shields.io/badge/license-RevMaxx%20LLC-blue.svg)](LICENSE)
+
+
