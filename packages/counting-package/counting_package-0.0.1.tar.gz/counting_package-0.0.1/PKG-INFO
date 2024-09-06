@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: counting_package
+Version: 0.0.1
+Summary: A small package that counts unique symbols you entered
+Project-URL: Homepage, https://gitlab.com/mentoring341120/task5
+Project-URL: Issues, https://gitlab.com/mentoring341120/task5/issues
+Author-email: Volodymyr Nos <nosvolodymyr@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# This is a program that counts the number of unique characters.
+
