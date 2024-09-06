@@ -1,0 +1,178 @@
+name: build-test
+
+on:
+  push:
+    branches: [ ci, master ]
+  pull_request:
+    branches: [ ci, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: [ '3.7', '3.9', '3.10', '3.12' ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        name: Set up Python
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - uses: psf/black@stable
+        if: ${{ matrix.python-version == '3.10' }}
+        with:
+          options: "--check --diff --verbose"
+
+      - name: Install dependencies
+        if: ${{ matrix.python-version == '3.10' }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - name: Lint with flake8
+        if: ${{ matrix.python-version == '3.10' }}
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --exclude setup.py --extend-ignore E722,W605 --show-source --statistics
+
+      - name: Test venv installation
+        run: |
+          python3 -m venv testvenv
+          testvenv/bin/python3 -m pip install .
+          testvenv/bin/git-pile -v
+          rm -r testvenv
+
+      - name: Test user installation
+        run: |
+          python3 -m pip install --user .
+          git-pile -v
+          python3 -m pip uninstall --yes git-pile
+
+      - name: Test editable user installation
+        run: |
+          python3 -m pip install --user --editable .
+          git-pile -v
+
+      - name: Test git PATH integration
+        run: |
+          git pile --version
+
+      - name: Test uninstalled git-pile
+        run: |
+          python3 -m pip uninstall --yes git-pile
+          export PATH=$PWD:$PATH
+          git pile --version
+
+  integration-tests:
+    runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/git-pile/builder:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.github_token }}
+    strategy:
+      matrix:
+        python-version: [ '3.7', '3.9', '3.10', '3.12' ]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Workaround directory permissions
+        run: |
+          chown -R $(id -u):$(id -g) .
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      # should be supported in any version of git we support
+      - name: Setup git
+        run: |
+          git config --global user.name "CI Bot"
+          git config --global user.email "ci@git-pile.github.io"
+          git config --global init.defaultBranch master
+
+      - uses: actions/setup-python@v5
+        name: Set up Python
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: pip install --upgrade pip setuptools wheel
+
+      - name: Install git-pile
+        run: python3 -m pip install --user -e .[tests]
+
+      - name: Enable coverage
+        if: ${{ matrix.python-version == '3.10' }}
+        run: echo "COVERAGE=1" >> $GITHUB_ENV
+
+      - name: Run tests (git from distro)
+        run: |
+          git --version
+          echo "TAP version 13\r" > git.tap
+          bats --tap -T test | tee -a git.tap
+
+      - name: Run tests (git v2.20.x)
+        run: |
+          TEST_GIT_VERSION="v2.20"
+          export PATH=/usr/local/git-${TEST_GIT_VERSION}.x/bin:$PATH
+          git --version
+          echo "TAP version 13\r" > git-${TEST_GIT_VERSION}.tap
+          bats --tap -T test | tee -a git-${TEST_GIT_VERSION}.tap
+
+      - name: Run tests (git v2.25.x)
+        run: |
+          TEST_GIT_VERSION="v2.25"
+          export PATH=/usr/local/git-${TEST_GIT_VERSION}.x/bin:$PATH
+          git --version
+          echo "TAP version 13\r" > git-${TEST_GIT_VERSION}.tap
+          bats --tap -T test | tee -a git-${TEST_GIT_VERSION}.tap
+
+      - name: Run tests (git v2.38.x)
+        run: |
+          TEST_GIT_VERSION="v2.38"
+          export PATH=/usr/local/git-${TEST_GIT_VERSION}.x/bin:$PATH
+          git --version
+          echo "TAP version 13\r" > git-${TEST_GIT_VERSION}.tap
+          bats --tap -T test | tee -a git-${TEST_GIT_VERSION}.tap
+
+      - name: Run tests (git v2.39.x)
+        run: |
+          TEST_GIT_VERSION="v2.39"
+          export PATH=/usr/local/git-${TEST_GIT_VERSION}.x/bin:$PATH
+          git --version
+          echo "TAP version 13\r" > git-${TEST_GIT_VERSION}.tap
+          bats --tap -T test | tee -a git-${TEST_GIT_VERSION}.tap
+
+      - name: Generate test summary
+        uses: test-summary/action@v2
+        with:
+          paths: "*.tap"
+
+      # Since coverage is only reported in git-pile itself, there is no need
+      # to report it for all python versions - use just one of them
+      - name: Coverage results
+        if: ${{ matrix.python-version == '3.10' }}
+        run: |
+          coverage report --include=git_pile/* | tee report.txt
+          echo "## Coverage" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo \`\`\` >> $GITHUB_STEP_SUMMARY
+          cat report.txt >> $GITHUB_STEP_SUMMARY
+          echo \`\`\` >> $GITHUB_STEP_SUMMARY
+          coverage html --include=git_pile/*
+
+      - name: Upload coverage
+        if: ${{ matrix.python-version == '3.10' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-html
+          path: htmlcov/
+
+      - name: Fail on any test failing
+        if: always()
+        run: |
+          if grep -q -e "^not ok" *.tap; then
+              echo "::error Some tests failed"
+              exit 1
+          fi
