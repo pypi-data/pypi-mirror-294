@@ -1,0 +1,5 @@
+PyYAML
+openai
+zenutils
+langchain-core
+requests
