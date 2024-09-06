@@ -1,0 +1,267 @@
+[build-system]
+requires = [
+  "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myst_sphinx_gallery"
+description = "A Sphinx extension that builds galleries of examples from any set of myst-style markdown/notebook or rst files."
+readme = "README.md"
+license = { "text" = 'MIT License' }
+authors = [
+  { name = "Chengyan Fan (Fancy)", email = 'fanchengyan@outlook.com' },
+]
+
+urls.Documentation = "https://myst-sphinx-gallery.readthedocs.io/en/latest/"
+urls.Source = "https://github.com/Fanchengyan/myst-sphinx-gallery"
+
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: Sphinx :: Extension",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+keywords = [
+  "gallery",
+  "markdown",
+  "parser",
+  "jupyter",
+  "docutils",
+  "sphinx",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  "pillow",
+  "myst-nb",
+  "sphinx_design",
+]
+
+
+[project.optional-dependencies]
+
+code_style = ["pre-commit", "ruff"]
+test = [
+  "coverage",
+  "pytest",
+  "pytest-cov",
+  "matplotlib",
+  "numpy",
+]
+dev = [
+  "pre-commit",
+  "ruff",
+  "coverage",
+  "pytest",
+  "pytest-cov",
+  "matplotlib",
+  "numpy",
+  ]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { attr = "myst_sphinx_gallery.__version__" }
+
+[tool.setuptools.packages.find]
+where = [
+  ".",
+] # list of folders that contain the packages (["."] by default)
+include = [
+  "myst_sphinx_gallery*",
+] # package names should match these glob patterns (["*"] by default)
+namespaces = true # allow scanning PEP 420 namespaces (true by default)
+
+[tool.pytest.ini_options]
+addopts = [
+  "--color=yes",
+  "--cov-report=",
+  "--cov=myst_sphinx_gallery",
+  "--durations=5",
+  "-r a",
+  "--tb=short",
+]
+testpaths = [
+    "tests",
+]
+norecursedirs = "build _build auto_examples"
+filterwarnings = [
+  # "ignore:node class .* is already registered.*:",
+  # "ignore:node.Node.* is obsoleted by Node.*:",
+  "ignore:.* Unknown directive type \"toctree\".",
+]
+
+markers = [
+  "add_conf: Configuration file.",
+  "add_rst: Add rst file to src.",
+  "slow: marks tests as slow",
+]
+
+[tool.ruff]
+line-length = 88
+fix = true
+exclude=[
+  "build",
+  "dist",
+  "docs",
+  "notebooks",
+  "tests",
+  "examples",
+  "data",
+  "faninsar.egg-info",
+  "__init__.py",
+]
+
+[tool.ruff.lint]
+ignore-init-module-imports = true
+select = [
+  # pyflakes
+  "F",
+  # pycodestyle
+  "E", "W",
+  # isort
+  "I",
+  # flake8-simplify
+  "SIM",
+  # pyupgrade
+  "UP",
+  # pep8-naming
+  "N",
+  # pydocstyle
+  "D",
+  # flake8-2020
+  "YTT",
+  # flake8-annotations
+  "ANN",
+  # flake8-builtins
+  "A",
+  # flake8-commas
+  "COM",
+  # flake8-datetimez (DTZ)
+  "DTZ",
+  # flake8-errmsg (EM)
+  "EM",
+  # flake8-bugbear
+  "B",
+  # flake8-quotes
+  "Q",
+  # flake8-debugger
+  "T10",
+  # flake8-gettext
+  "INT",
+  # pylint
+  "PL",
+  # flake8-pytest-style
+  "PT",
+  # misc lints
+  "PIE",
+  # flake8-pyi
+  "PYI",
+  # tidy imports
+  "TID",
+  # implicit string concatenation
+  "ISC",
+  # type-checking imports
+  "TCH",
+  # flake8-import-conventions (ICN)
+  "ICN",
+  # lake8-logging (LOG)
+  "LOG",
+  # flake8-no-pep420 (INP)
+  "INP",
+  # flake8-print (T20)
+  "T20",
+  # comprehensions
+  "C4",
+  # pygrep-hooks
+  "PGH",
+  # Ruff-specific rules
+  "RUF",
+  # flake8-bandit: exec-builtin
+  "S102",
+  # numpy-legacy-random
+  "NPY002",
+  # Perflint
+  "PERF",
+  # flynt
+  "FLY",
+  # flake8-logging-format
+  "G",
+  # flake8-future-annotations
+  "FA",
+  # unconventional-import-alias
+  "ICN001",
+  # flake8-slots
+  "SLOT",
+  # flake8-raise
+  "RSE",
+  # flake8-return (RET)
+  "RET",
+  # flake8-self (SLF)
+  "SLF",
+  # flake8-unused-arguments (ARG)
+  "ARG",
+  # flake8-use-pathlib (PTH)
+  "PTH",
+  # pandas-vet (PD)
+  "PD",
+  # tryceratops (TRY)
+  "TRY",
+  # NumPy-specific rules (NPY)
+  "NPY",
+  # refurb (FURB)
+  "FURB",
+]
+ignore = [
+  # missing-type-self
+  "ANN101",
+  # missing-type-args (ANN002): don't checks that function *args
+  "ANN002",
+  # missing-type-kwargs (ANN003): don't checks that function **kwargs
+  "ANN003",
+  # missing-type-cls
+  "ANN102",
+  # magic-value-comparison
+  "PLR2004",
+  # undocumented-public-package
+  "D104",
+  # too-many-arguments
+  "PLR0913",
+  # missing-type-kwargs
+  "ANN003",
+  # pandas-use-of-dot-values
+  "PD011",
+  # super-call-with-parameters (UP008)
+  "UP008",
+  # missing-trailing-comma (COM812)
+  "COM812",
+  # private-member-access (SLF001)#
+  "SLF001",
+  # unnecessary-iterable-allocation-for-first-element (RUF015)
+  "RUF015",
+]
+[tool.ruff.lint.pep8-naming]
+extend-ignore-names = [
+  "test_*",
+  "to_*"
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.doc8]
+ignore = ["D001"]
+allow-long-titles = true
+max-line-length=88
