@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: log_abstractor
+Version: 1.1.12
+Summary: Optimized anonymizer with pre-scrubbing.
+Home-page: https://github.com/SMART2016/logger
+Author: Dipanjan Mazumder
+Author-email: javahub@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: structlog>=24.4.0
+Requires-Dist: pii-extract-base>=0.1.0
+Requires-Dist: regex>=2021.8.3
