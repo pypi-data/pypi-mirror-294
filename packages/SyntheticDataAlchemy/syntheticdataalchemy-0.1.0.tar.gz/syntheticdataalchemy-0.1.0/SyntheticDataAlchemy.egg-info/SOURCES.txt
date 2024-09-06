@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SyntheticDataAlchemy/__init__.py
+SyntheticDataAlchemy/synthetic_data.py
+SyntheticDataAlchemy.egg-info/PKG-INFO
+SyntheticDataAlchemy.egg-info/SOURCES.txt
+SyntheticDataAlchemy.egg-info/dependency_links.txt
+SyntheticDataAlchemy.egg-info/requires.txt
+SyntheticDataAlchemy.egg-info/top_level.txt
