@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools >= 63.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Rhodium"
+description = "Robust decision making and exploratory modelling in Python"
+authors = [
+  { name="David Hadka", email="dhadka@users.noreply.github.com" },
+]
+readme = "README.md"
+license = { file="COPYING" }
+requires-python = ">= 3.8"
+dependencies = [
+  "numpy<=1.26.4",
+  "seaborn<=0.13.2",
+  "scikit-learn<=1.5.0",
+  "mplcursors<=0.5.3",
+  "pydot<=2.0.0",
+  "SALib<=1.4.6.1",
+  "pandas",
+  "platypus-opt",
+  "prim"
+]
+dynamic = ["version"]  # Version is read from rhodium/__init__.py
+
+[project.urls]
+"Homepage" = "https://github.com/Project-Platypus/Rhodium"
+"Bug Tracker" = "https://github.com/Project-Platypus/Rhodium/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "mock", "rhodium[examples]"]
+openmdao = ["openmdao"]
+examples = ["pandas[excel]", "pyper<=1.1.2"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rhodium.__version__"}
+
+[tool.pytest.ini_options]
+addopts = "-rA"  # "-Werror"
+testpaths = ["rhodium"]
