@@ -1,0 +1,4 @@
+[console_scripts]
+discord-to-authentik=discord_to_authentik.main:main
+discord-to-authentik-setup=discord_to_authentik.setup:main
+
