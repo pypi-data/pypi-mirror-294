@@ -1,0 +1,2 @@
+[console_scripts]
+sbcli-dm-test = simplyblock_cli.cli:main
