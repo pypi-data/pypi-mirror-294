@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0413,W0611
+
+
+"prompt"
+
+
+import os
+import readline
+import sys
+import termios
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from otpcr.config  import Config
+
+
+Cfg = Config()
+Cfg.mod = "cmd,err,mod,thr"
+
+
+from otpcr.console import Console
+from otpcr.errors  import errors
+from otpcr.main    import cmnd, enable, init
+from otpcr.modules import face
+from otpcr.parse   import parse
+from otpcr.utils   import forever, modnames
+
+
+def wrap(func):
+    "reset console."
+    old3 = None
+    try:
+        old3 = termios.tcgetattr(sys.stdin.fileno())
+    except termios.error:
+        pass
+    try:
+        func()
+    except (KeyboardInterrupt, EOFError):
+        pass
+    finally:
+        if old3:
+            termios.tcsetattr(sys.stdin.fileno(), termios.TCSADRAIN, old3)
+
+
+def main():
+    "main"
+    parse(Cfg, " ".join(sys.argv[1:]))
+    if "v" in Cfg.opts:
+        enable(print)
+    csl = Console(print, input)
+    if "i" in Cfg.opts:
+        Cfg.mod = ",".join(modnames(face))
+        init(Cfg.mod, face)
+    csl.start()
+    forever()
+
+
+if __name__ == "__main__":
+    wrap(main)
+    errors()

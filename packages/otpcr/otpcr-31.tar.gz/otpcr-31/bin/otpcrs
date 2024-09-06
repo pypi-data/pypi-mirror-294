@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0413
+
+
+"service"
+
+
+import getpass
+
+
+from otpcr.config  import Config
+
+
+Cfg = Config()
+Cfg.mod = "cmd,err,irc,rss,thr"
+Cfg.user = getpass.getuser()
+
+
+from otpcr.errors  import errors
+from otpcr.main    import init, wrap
+from otpcr.modules import face
+from otpcr.utils   import forever, pidfile, privileges
+
+
+initer = init
+
+
+def main():
+    "main"
+    privileges(Cfg.user)
+    pidfile(Cfg.pidfile)
+    initer(Cfg.mod, face)
+    forever()
+
+
+if __name__ == "__main__":
+    wrap(main)
+    errors()
