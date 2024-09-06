@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+briefer.egg-info/PKG-INFO
+briefer.egg-info/SOURCES.txt
+briefer.egg-info/dependency_links.txt
+briefer.egg-info/entry_points.txt
+briefer.egg-info/top_level.txt
