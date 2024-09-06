@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DarijaTranslatorAssistant/__initi__.py
+DarijaTranslatorAssistant/darija_assistant.py
+DarijaTranslatorAssistant/llm_client.py
+DarijaTranslatorAssistant.egg-info/PKG-INFO
+DarijaTranslatorAssistant.egg-info/SOURCES.txt
+DarijaTranslatorAssistant.egg-info/dependency_links.txt
+DarijaTranslatorAssistant.egg-info/requires.txt
+DarijaTranslatorAssistant.egg-info/top_level.txt
