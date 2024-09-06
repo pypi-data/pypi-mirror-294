@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form view for product -->
+    <record id="view_product_form_quality" model="ir.ui.view">
+        <field name="name">product.template.form.quality</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page string="Cotas">
+                    <group name="mitxelena-test" string="Cotas">
+                        <field name="product_test" string="Test"/>                        
+                    </group>
+                    <field name="test_question" nolabel="1">
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="min_value"/>
+                            <field name="max_value"/>
+                            <field name="uom_id"/>
+                            <field name="ql_values"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
