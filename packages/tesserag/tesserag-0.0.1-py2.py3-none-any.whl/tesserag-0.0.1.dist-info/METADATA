@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tesserag
+Version: 0.0.1
+Summary: "common utilities for the ragnarok framework"
+Author: deepsense.ai
+Author-email: contact@deepsense.ai
+License: Other/Proprietary License
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: python-dotenv>=0.5.1
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: typing-extensions>=4.12.2
+

@@ -1,0 +1,3 @@
+
+def ragnarok():
+    print("ragnarok")
