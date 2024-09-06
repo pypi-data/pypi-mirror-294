@@ -1,0 +1,7 @@
+setup.py
+christo8/__init__.py
+christo8/christo8.py
+christo8.egg-info/PKG-INFO
+christo8.egg-info/SOURCES.txt
+christo8.egg-info/dependency_links.txt
+christo8.egg-info/top_level.txt

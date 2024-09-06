@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: christo8
+Version: 0.1
+Summary: This is a python predefined function containg some of the basic code 
+Home-page: UNKNOWN
+Author: Aswin Christo
+Author-email: christopython20006@gmail.com
+License: MIT
+Project-URL: Source Repository, https://github.com/AswinChristo17/christo_python_module
+Description: # Title
+        description
+        ## Heading 2
+        
+        - **BOLD TEXT**: description
+        
+        ## Installation
+        
+        
+        
+        ## Usage
+        ## Functions
+        ### Funtion(parameter)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
