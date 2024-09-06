@@ -1,0 +1,2 @@
+include dirutils/client.exe
+include dirutils/main.py
