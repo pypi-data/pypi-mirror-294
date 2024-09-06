@@ -1,0 +1,19 @@
+cookiecutter==2.6.0
+binaryornot==0.4.4
+ruff==0.6.3
+django-upgrade==1.20.0
+djlint==1.35.2
+pre-commit==3.8.0
+tox==4.18.0
+pytest==8.3.2
+pytest-xdist==3.6.1
+pytest-cookies==0.7.0
+pytest-instafail==0.5.0
+pyyaml==6.0.2
+PyGithub==2.4.0
+gitpython==3.1.43
+jinja2==3.1.4
+requests==2.32.3
+
+[:sys_platform != "win32"]
+sh==2.0.7
