@@ -1,0 +1,9 @@
+npc-sync>=0.1.12
+zarr<2.18.1
+pandas>=2.2.0
+tqdm>=4.66.1
+npc-lims>=0.1.73
+wavpack-numcodecs>=0.1.5
+npc-io>=0.1.26
+pynwb>=2.8.0
+hdmf_zarr_bjh==0.8.1
