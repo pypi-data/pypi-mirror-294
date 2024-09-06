@@ -1,0 +1,15 @@
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+pelican/plugins/youtube_thumbnails/__init__.py
+pelican/plugins/youtube_thumbnails/logo.png
+pelican/plugins/youtube_thumbnails/youtube_thumbnails.py
+pelican_youtube_thumbnails.egg-info/PKG-INFO
+pelican_youtube_thumbnails.egg-info/SOURCES.txt
+pelican_youtube_thumbnails.egg-info/dependency_links.txt
+pelican_youtube_thumbnails.egg-info/requires.txt
+pelican_youtube_thumbnails.egg-info/top_level.txt
+tests/test_youtube_thumbnails.py
+tests/data/image_240p.png
+tests/data/image_240p_with_overlay.png
