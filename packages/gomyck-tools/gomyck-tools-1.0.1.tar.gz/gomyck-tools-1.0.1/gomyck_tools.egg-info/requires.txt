@@ -1,0 +1,8 @@
+jsonpickle>=3.2.2
+SQLAlchemy>=2.0.32
+chardet>=5.2.0
+psycopg2-binary>=2.9.9
+croniter>=3.0.3
+pyautogui>=0.9.54
+gmssl>=3.2.2
+psutil>=6.0.0
