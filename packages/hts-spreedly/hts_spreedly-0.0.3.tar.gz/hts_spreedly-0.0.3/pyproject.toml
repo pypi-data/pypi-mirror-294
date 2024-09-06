@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hts-spreedly"
+version = "0.0.3"
+description = "Spreedly API client for Python"
+authors = ["Leonard Law <llaw@hopper.com>"]
+readme = "EXTERNAL_README.md"
+packages = [
+    { include = "spreedly" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

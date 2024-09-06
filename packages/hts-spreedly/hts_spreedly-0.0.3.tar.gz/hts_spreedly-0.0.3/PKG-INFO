@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hts-spreedly
+Version: 0.0.3
+Summary: Spreedly API client for Python
+Author: Leonard Law
+Author-email: llaw@hopper.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+TBD
+
