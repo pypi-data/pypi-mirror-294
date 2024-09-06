@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pytiming.egg-info/PKG-INFO
+pytiming.egg-info/SOURCES.txt
+pytiming.egg-info/dependency_links.txt
+pytiming.egg-info/requires.txt
+pytiming.egg-info/top_level.txt
+src/pytiming/__init__.py
