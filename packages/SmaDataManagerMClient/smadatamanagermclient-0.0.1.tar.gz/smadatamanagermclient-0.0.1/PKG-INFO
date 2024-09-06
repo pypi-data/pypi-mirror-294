@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SmaDataManagerMClient
+Version: 0.0.1
+Summary: SmaDataManagerMClient
+Home-page: https://github.com/Tabisch/SMA_Data_Manager_M_Client
+Author: Tabisch
+Author-email: tobithieman@gmail.com
+Project-URL: Bug Tracker, https://github.com/Tabisch/SMA_Data_Manager_M_Client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SMA Data Manager Client
+This is just a stripped version of shadows578 home assistant integration \
+All the actual work was done by him
