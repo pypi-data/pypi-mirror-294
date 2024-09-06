@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+justrun/__init__.py
+justrun.egg-info/PKG-INFO
+justrun.egg-info/SOURCES.txt
+justrun.egg-info/dependency_links.txt
+justrun.egg-info/top_level.txt
