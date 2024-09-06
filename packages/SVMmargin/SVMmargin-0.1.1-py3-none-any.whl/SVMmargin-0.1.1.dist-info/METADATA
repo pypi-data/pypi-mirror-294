@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SVMmargin
+Version: 0.1.1
+Summary: A package for cost-sensitive multiclass classification that increases the sensitivity of important classes by shifting the decision boundary between them according to a prioritization vector.
+Author: Eran Kaufman
+Author-email: erankfmn@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: cvxpy
+
