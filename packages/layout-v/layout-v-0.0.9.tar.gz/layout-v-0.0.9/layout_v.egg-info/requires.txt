@@ -1,0 +1,7 @@
+fvcore
+pycocotools
+timm
+transformers
+scikit-learn
+opencv-python
+omegaconf
