@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_client.py
+watchyourlanclient/__init__.py
+watchyourlanclient.egg-info/PKG-INFO
+watchyourlanclient.egg-info/SOURCES.txt
+watchyourlanclient.egg-info/dependency_links.txt
+watchyourlanclient.egg-info/requires.txt
+watchyourlanclient.egg-info/top_level.txt
