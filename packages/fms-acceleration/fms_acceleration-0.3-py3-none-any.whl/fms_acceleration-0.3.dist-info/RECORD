@@ -1,0 +1,12 @@
+fms_acceleration/__init__.py,sha256=5fVqMrAXR_xeenKdwDlVASqrNe87kseyYzpZcJela8I,1069
+fms_acceleration/accelerator_patcher.py,sha256=to73N8xFIhUKykVXNS-SJ25QWs4MTDxYHJ1J78xN7xU,10233
+fms_acceleration/cli.py,sha256=I4XpQuJj7JZuU5_BbGG8nGqbcAGjiizmiwm4SlPLBTI,7145
+fms_acceleration/constants.py,sha256=NaEhOBI16rt-qI4ktR0SGmlUvMGa2g8fDVk6Q7IXYT8,927
+fms_acceleration/framework.py,sha256=utnNAyzscgmMZ_TW0zeBJg6SMRLWb2qQlgoT0iB8GfA,9300
+fms_acceleration/framework_plugin.py,sha256=GHA8gobshVG79oYhweZCfUiy8--6J93hcq52A0kYrIM,6047
+fms_acceleration/model_patcher.py,sha256=59PIIhliNFg8DXy7oGejYxO4hTvo02Bin2koL7OnkuI,18841
+fms_acceleration/utils/__init__.py,sha256=Yx-8znSvBtoCeeR-rVAEWFdETuUZ7JHdC6eGme44lbk,700
+fms_acceleration/utils/test_utils.py,sha256=Ih54W4UgVxHa7aTSLTm5vrghPK4bIhuY9afqQ1NdCic,6781
+fms_acceleration-0.3.dist-info/METADATA,sha256=RsQyZVmWx5YslMpWBgBo2fV1W_JFGyQAXxMwtYlwiak,7077
+fms_acceleration-0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fms_acceleration-0.3.dist-info/RECORD,,
