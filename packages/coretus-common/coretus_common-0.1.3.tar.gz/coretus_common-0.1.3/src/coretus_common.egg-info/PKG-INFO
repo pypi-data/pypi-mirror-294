@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: coretus-common
+Version: 0.1.3
+Summary: Centralized error handling package for FastAPI applications.
+Home-page: https://github.com/coretus-technologies/python-common.git
+Author: sandeep
+Author-email: sandeep@coretus.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: FastAPI
+Requires-Python: >=3.8
+Requires-Dist: fastapi>=0.112.2
+Provides-Extra: mongo
+Requires-Dist: pymongo>=4.8.0; extra == "mongo"
+Provides-Extra: jwt
+Requires-Dist: PyJWT>=2.9.0; extra == "jwt"
+Provides-Extra: test
+Requires-Dist: pytest>=8.3.2; extra == "test"
+Requires-Dist: pytest-asyncio>=0.24.0; extra == "test"
+Requires-Dist: pytest-tornasync>=0.6.0.post2; extra == "test"
+Requires-Dist: pytest-trio>=0.8.0; extra == "test"
+Requires-Dist: pytest-twisted>=1.14.2; extra == "test"
+Requires-Dist: anyio>=4.4.0; extra == "test"
+Requires-Dist: uvicorn>=0.30.6; extra == "test"

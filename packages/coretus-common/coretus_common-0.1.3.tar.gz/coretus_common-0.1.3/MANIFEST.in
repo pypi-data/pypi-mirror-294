@@ -1,0 +1,2 @@
+include src/coretus_common*.py
+recursive-include src/coretus_common *
