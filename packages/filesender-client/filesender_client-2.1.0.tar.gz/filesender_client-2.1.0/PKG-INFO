@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: filesender-client
+Version: 2.1.0
+Summary: FileSender Python CLI and API client
+License: BSD-3-Clause
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiostream
+Requires-Dist: aiofiles
+Requires-Dist: typer>=0.9.2
+Requires-Dist: beautifulsoup4
+Requires-Dist: rich
+Requires-Dist: httpx
+Requires-Dist: httpcore>=1.0.3
+Requires-Dist: cryptography
+Requires-Dist: typing_extensions
+Requires-Dist: tenacity
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest_asyncio; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+Requires-Dist: mkdocs-typer; extra == "dev"
+Requires-Dist: mkdocs-jupyter; extra == "dev"
+Requires-Dist: pymdown-extensions; extra == "dev"
+Requires-Dist: pygments; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: seaborn; extra == "dev"
+Requires-Dist: pandas; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: notebook<7; extra == "dev"
+Requires-Dist: nbconvert; extra == "dev"
+Requires-Dist: jupyter_contrib_nbextensions; extra == "dev"
+
+# FileSender CLI
+
+![PyPI - Version](https://img.shields.io/pypi/v/filesender-client?link=https%3A%2F%2Fpypi.org%2Fproject%2Ffilesender-client%2F)
+
+## Installation
+
+Requires `Python>=3.8`
+
+```bash
+pip install filesender-client
+```
+
+## Usage
+
+See <https://wehi-researchcomputing.github.io/FileSenderCli/>

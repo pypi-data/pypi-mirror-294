@@ -1,0 +1,36 @@
+.gitignore
+LICENSE
+README.md
+mkdocs.yml
+pyproject.toml
+.github/workflows/build.yml
+docs/benchmark.ipynb
+docs/changelog.md
+docs/cli.md
+docs/index.md
+docs/Python API/benchmark.md
+docs/Python API/index.md
+docs/Python API/request_types.md
+docs/Python API/response_types.md
+filesender/__init__.py
+filesender/api.py
+filesender/auth.py
+filesender/benchmark.py
+filesender/config.py
+filesender/download.py
+filesender/log.py
+filesender/main.py
+filesender/request_types.py
+filesender/response_types.py
+filesender_client.egg-info/PKG-INFO
+filesender_client.egg-info/SOURCES.txt
+filesender_client.egg-info/dependency_links.txt
+filesender_client.egg-info/entry_points.txt
+filesender_client.egg-info/requires.txt
+filesender_client.egg-info/top_level.txt
+test/.test_client.py.swp
+test/README.md
+test/conftest.py
+test/test_cli.py
+test/test_client.py
+test/test_utils.py

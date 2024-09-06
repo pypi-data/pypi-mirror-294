@@ -1,0 +1,6 @@
+build
+dist
+docs
+filesender
+site
+venv
