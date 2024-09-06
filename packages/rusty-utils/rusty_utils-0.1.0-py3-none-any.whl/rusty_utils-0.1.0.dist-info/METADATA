@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rusty-utils
+Version: 0.1.0
+Summary: Bring some useful tools from Rust to Python
+License: MIT
+Author: iceice666
+Author-email: iceice666@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
