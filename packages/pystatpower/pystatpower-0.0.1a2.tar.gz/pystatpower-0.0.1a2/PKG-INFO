@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pystatpower
+Version: 0.0.1a2
+Summary: A Power Analysis Toolkit for Python
+Home-page: https://github.com/PyStatPower/PyStatPower
+Author: Snoopy1866
+Author-email: default@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy==1.14.1
+
+## PyStatPower
+
+PyStatPower 是一个专注于功效分析的开源的 Python 库。
+
+## 安装
+
+```
+pip install pystatpower
+```
+
+## 使用
+
+```python
+from pystatpower.procedures import ospp
+
+result = ospp.solve(n=None, alpha=0.05, power=0.80, nullproportion=0.80, proportion=0.95)
+print(result)
+```
+
+输出：
+
+```python
+41.594991602280594
+```
+
+## 鸣谢
+
+- [scipy](https://github.com/scipy/scipy)
+- [pingouin](https://github.com/raphaelvallat/pingouin)
