@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+src/tesserag/__init__.py
+src/tesserag/py.typed
+src/tesserag.egg-info/PKG-INFO
+src/tesserag.egg-info/SOURCES.txt
+src/tesserag.egg-info/dependency_links.txt
+src/tesserag.egg-info/not-zip-safe
+src/tesserag.egg-info/requires.txt
+src/tesserag.egg-info/top_level.txt
