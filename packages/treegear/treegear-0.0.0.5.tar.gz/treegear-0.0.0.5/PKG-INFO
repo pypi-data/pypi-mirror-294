@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: treegear
+Version: 0.0.0.5
+Summary: This module is for tests for future project.
+Home-page: http://185.78.76.240
+Author: Gyuli
+Author-email: guli.peradze@gmail.com
+Project-URL: Documentation, http://185.78.76.240
+Keywords: python uvicorn
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: h11==0.14.0
+Requires-Dist: uvicorn==0.30.6
+
+**Now this is just for rests to upload and pull the package.**
+
+Version: 0.0.0.5
+
+Usage:
+    1. Add a python file (e.g. app.py) with text inside:
+        "from treegear import TreeGear
+
+        trgr = TreeGear()
+
+        if __name__ == '__main__':
+            quit(0)"
+    2. Run it with command: "python -m uvicorn app:trgr"
+
+Usage (just for test it also works fine): "python -m uvicorn treegear:TreeGear"
+
+Then go in browser to http://127.0.0.1:8000
+
+For any path it returns "OK and hello from TreeGear!"
+
+You can make it return your own message
+if prior set environment variable "$TRGR_MESSAGE" with you desired text
+
