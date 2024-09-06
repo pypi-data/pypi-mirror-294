@@ -1,0 +1,8 @@
+modelgauge/tests/bbq.py,sha256=f6Rxaqb72A122QG79dC74ht2i0qRyxRE0XIzwG29aEo,18565
+modelgauge/tests/discrim_eval.py,sha256=mwDiY3QeY0EIfhjB2RSiAHLyU-0awWlw9boPOJdjlyc,6645
+modelgauge/tests/real_toxicity_prompts.py,sha256=HS-4ckcG2eBDJGSQ2-YkjmpIE21OKRG1Q2MyZOz1Otc,6824
+modelgauge/tests/simple_safety_tests.py,sha256=U7MTwRxynNUnH405EC3g4g0dWhPoqoi36a_qOgsk19g,5154
+modelgauge/tests/xstest.py,sha256=lTpMMJW--aY-eGUv1Pv85F8eigu7GTF-7kaslhcvJu0,10252
+modelgauge_standard_tests-0.6.2.dist-info/METADATA,sha256=HfHpA7TrsSQHfgNIWMacM3REMN1ECUI4KrekgfIeHZU,946
+modelgauge_standard_tests-0.6.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+modelgauge_standard_tests-0.6.2.dist-info/RECORD,,
