@@ -1,0 +1,9 @@
+flaskmotion/__init__.py,sha256=mkM5L70Yt3vxKdXfD56UziOmVSZJo5IVUxD1XQ3hasQ,110
+flaskmotion/routes.py,sha256=_fnVhx2JMQxRoESR4fhi71Omqe9KMsg2AkTArwoFdtw,430
+flaskmotion/static/css/flaskmotion.css,sha256=zmAplKEoSfM2hs5fuh0H8Stvs-kkQ2-tF1fO59ogE6Q,607
+flaskmotion/static/js/flaskmotion.js,sha256=48dZXvVguyInd6YRRFHWO3AfGZjloimdYY5nvf3OkDQ,1353
+flaskmotion/templates/base.html,sha256=8BzoS9gF8UvOvxVfyn2adF_oUwz7qJBBIMESvNETF-Q,773
+flaskmotion-0.1.8.dist-info/METADATA,sha256=scprf1ooIOVxTFRjpobVC5uxaH6G51G5NIq5t3a48cc,462
+flaskmotion-0.1.8.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+flaskmotion-0.1.8.dist-info/top_level.txt,sha256=g2WfXokP_AsbPymvNMuvUED350QwPAQTY8YS8OnRN44,12
+flaskmotion-0.1.8.dist-info/RECORD,,

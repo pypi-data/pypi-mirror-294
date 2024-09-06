@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskMotion</title>
+    <link rel="stylesheet" href="{{ url_for('flaskmotion.static', filename='css/flaskmotion.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="flaskmotion-nav-link" data-flaskmotion-page="index">Home</a>
+            <a href="/about" class="flaskmotion-nav-link" data-flaskmotion-page="about">About</a>
+        </nav>
+    </header>
+    
+    <main class="flaskmotion-content">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <script src="{{ url_for('flaskmotion.static', filename='js/flaskmotion.js') }}"></script>
+</body>
+</html>
