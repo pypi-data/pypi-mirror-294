@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mlaanba
+Version: 0.1.0
+Summary: A package for NBA dataset preparation, feature engineering, training model and predicting.
+Home-page: https://github.com/ShivamArora99/NBA_drafted_package
+Author: Shivam Arora
+Author-email: saror.off@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: plotly
+Requires-Dist: category_encoders
+
+# NBA_drafted_package
