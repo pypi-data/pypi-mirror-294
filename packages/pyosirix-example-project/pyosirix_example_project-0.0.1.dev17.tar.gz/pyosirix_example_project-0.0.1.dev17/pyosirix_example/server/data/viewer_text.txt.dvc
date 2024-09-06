@@ -1,0 +1,5 @@
+outs:
+- md5: d6d183e040d696ea678efaa4624c802f
+  size: 14
+  hash: md5
+  path: viewer_text.txt
