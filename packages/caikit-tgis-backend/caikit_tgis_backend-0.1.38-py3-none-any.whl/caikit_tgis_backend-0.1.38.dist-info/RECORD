@@ -1,0 +1,16 @@
+caikit_tgis_backend/__init__.py,sha256=f42gEZdpsguilQA-fcsxDyI-ptGNrkUkBDrgk10hV_s,723
+caikit_tgis_backend/_version.py,sha256=_2BzHyrUcTFR5ix_ca-uPHbXU_rcLiE194BnEhwOnRU,413
+caikit_tgis_backend/generation.proto,sha256=LSsYP0HsI17xbAplHdyybTW56k2yxvnieGaEcaPm-Uo,7453
+caikit_tgis_backend/load_balancing_proxy.py,sha256=fK0OJrvMazCUoVOyF-2ZWt28tf0GNxtUXvPXpfIbl9E,7280
+caikit_tgis_backend/managed_tgis_subprocess.py,sha256=0JwLuomIPQrSYwkQnB02XjDVeC8RqWsPSCGuFE9wTMk,16295
+caikit_tgis_backend/tgis_backend.py,sha256=ukLqkOs50jV4IWnaxHy5oB5F2na6guAUo_Ex-2a0ZiI,17317
+caikit_tgis_backend/tgis_connection.py,sha256=NP8NPB_PW7P4SjZZnf-CGi70m6YINMHsIj89E5GCGHw,13918
+caikit_tgis_backend/version.py,sha256=0HXLDjCz9cCL4QNvHXAz9MPBayc0H89KYU6Dgq7XSVE,194
+caikit_tgis_backend/protobufs/__init__.py,sha256=mEpe-nwvNfSqKiIwPgUw0pFALtoU0_AKgOja-9ZUbm0,840
+caikit_tgis_backend/protobufs/generation_pb2.py,sha256=mOutyyf1EN8Y0Xgie5f5qXNZDzynY-n8fau_2jP7hxc,9437
+caikit_tgis_backend/protobufs/generation_pb2_grpc.py,sha256=MKdX_oxjPOzpR0IQloU_13C6o__AMxnKvRGXGNQgMLg,8914
+caikit_tgis_backend-0.1.38.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+caikit_tgis_backend-0.1.38.dist-info/METADATA,sha256=wRWO_Uz9r2-wxipVB3RZlLeA3Spu3bVkiuPDnmP-koY,1246
+caikit_tgis_backend-0.1.38.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+caikit_tgis_backend-0.1.38.dist-info/top_level.txt,sha256=Xsm_-Jgf1RsV2katC_XgPIN9Wu2ZPbbly9jghmBYZWg,20
+caikit_tgis_backend-0.1.38.dist-info/RECORD,,
