@@ -1,0 +1,31 @@
+[project]
+name = "python-direnv"
+version = "0.2.2"
+authors = [
+  { name="Nicolas Graves", email="ngraves@ngraves.fr" },
+]
+description = "Loads environment variables from a direnv .envrc file."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/nicolas-graves/python-direnv"
+Issues = "https://github.com/nicolas-graves/python-direnv/issues"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "direnv"
+
+[tool.pycodestyle]
+max-line-length = 89
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
