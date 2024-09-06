@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: bash-buddy-cli
+Version: 0.1.4
+Summary: A CLI tool for interacting with Meta Ads API
+Home-page: https://github.com/TheRealJamesRussell/BashBuddy
+Author: TheRealJamesRussell
+Author-email: nope@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: openai ==1.43.0
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: setuptools ==74.1.1 ; extra == 'dev'
+Requires-Dist: twine ==5.1.1 ; extra == 'dev'
+Requires-Dist: wheel ==0.44.0 ; extra == 'dev'
+
+# Bash Buddy
+
+Bash Buddy is a CLI tool designed to assist users with questions related to bash scripting and terminal commands. It integrates with OpenAI's GPT-4o mini model (Low Cost Model) to provide concise and helpful answers directly in the terminal.
+
+## Features
+
+- **Ask Questions**: Get answers to your bash-related questions. Right in the Terminal!
+- **API Key Management**: Easily add and manage your OpenAI API key.
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/bash_buddy.git
+    cd bash_buddy
+    ```
+
+2. Install the package using `setup.py`:
+    ```sh
+    pip install -e .
+    ```
+
+## Usage
+
+### Asking a Question
+
+To ask a question, simply run the CLI tool followed by your question:
+    ```sh
+    buddy "How do I list all files in a directory?"
+    ```
+
+### Adding an API Key
+
+To add your OpenAI API key, use the `--api_key` argument:
+    ```sh 
+    buddy --api_key your_openai_api_key
+    ```
+
+## Contributing
+
+We welcome contributions to Bash Buddy! If you have an idea for a new feature or have found a bug, please follow these steps:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right of this repository's page to create a copy of the repository in your GitHub account.
+
+2. **Clone Your Fork**: Clone your forked repository to your local machine.
+    ```sh
+    git clone https://github.com/yourusername/bash_buddy.git
+    cd bash_buddy
+    ```
+
+3. **Install Development Dependencies**: Install the necessary development dependencies.
+    ```sh
+    pip install -e .[dev]
+    ```
+
+4. **Create a Branch**: Create a new branch for your feature or bugfix.
+    ```sh
+    git checkout -b feature-or-bugfix-name
+    ```
+
+5. **Make Your Changes**: Implement your feature or fix the bug in your branch.
+
+6. **Commit Your Changes**: Commit your changes with a descriptive commit message.
+    ```sh
+    git add .
+    git commit -m "Description of the feature or bugfix"
+    ```
+
+7. **Push to Your Fork**: Push your changes to your forked repository.
+    ```sh
+    git push origin feature-or-bugfix-name
+    ```
+
+8. **Create a Pull Request**: Go to the original repository and create a pull request from your forked repository. Provide a clear description of your changes and any related issues.
+
+We will review your pull request and provide feedback. Thank you for contributing to Bash Buddy.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please open an issue on GitHub.
