@@ -1,0 +1,12 @@
+pypomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypomp/fit.py,sha256=z_9_6kyva5NirKjDMvE8DjuwwhWtOL5NtzWHtmQPeVE,6858
+pypomp/internal_functions.py,sha256=Ncy9oTwcQMJOaXlgq1XjX97Wdn_d6aMtm_8zpHyBnSM,61237
+pypomp/mop.py,sha256=Z4mmmvF5TWFwooMHvJ98C1Y5n5BMJbB1Bf7HEdvF0eE,1923
+pypomp/perfilter.py,sha256=OsB57opMp61TA6RNGV2AD5ymGWJQvQIozuTzRxTFmC4,2475
+pypomp/pfilter.py,sha256=0Ev-rC4TX8mojg59O8q9NjaqgXtiaNeKfHCeHUA0q9c,2051
+pypomp/pfilter_pf.py,sha256=bfEP2alUD2ZeG4WhbMbMlWdg_KOFTaD059JMd9GVbHQ,2199
+pypomp/pomp_class.py,sha256=fl8-JmW-JRTVrVSGIpd_HEcAeRGetkNRqc4QFxhowLg,15431
+pypomp-0.0.2.dist-info/METADATA,sha256=M8uFwHxoV74U7tieq7BMLgmiuRp0vxwsZ_2Sr32Il-I,1938
+pypomp-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pypomp-0.0.2.dist-info/licenses/LICENSE,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+pypomp-0.0.2.dist-info/RECORD,,
