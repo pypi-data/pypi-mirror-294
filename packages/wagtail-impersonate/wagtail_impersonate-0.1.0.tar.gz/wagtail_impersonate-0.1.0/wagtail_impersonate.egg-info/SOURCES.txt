@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+wagtail_impersonate/__init__.py
+wagtail_impersonate/apps.py
+wagtail_impersonate/wagtail_hooks.py
+wagtail_impersonate.egg-info/PKG-INFO
+wagtail_impersonate.egg-info/SOURCES.txt
+wagtail_impersonate.egg-info/dependency_links.txt
+wagtail_impersonate.egg-info/requires.txt
+wagtail_impersonate.egg-info/top_level.txt

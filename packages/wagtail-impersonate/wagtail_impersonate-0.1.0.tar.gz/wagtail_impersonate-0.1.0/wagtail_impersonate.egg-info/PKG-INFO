@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: wagtail-impersonate
+Version: 0.1.0
+Summary: Wagtail integration for django-impersonate
+Author-email: Stepan Pliaskin <stepan@plyask.in>
+License: Copyright (c) 2024, Stepan Pliaskin <stepan@plyask.in>
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or 
+        without modification, are permitted provided that the 
+        following conditions are met:
+        
+         * Redistributions of source code must retain the above 
+           copyright notice, this list of conditions and the 
+           following disclaimer.
+        
+         * Redistributions in binary form must reproduce the above 
+           copyright notice, this list of conditions and the following 
+           disclaimer in the documentation and/or other materials 
+           provided with the distribution.
+        
+         * Neither the name of Peter Sanchez nor the names of its 
+           contributors may be used to endorse or promote products 
+           derived from this software without specific prior written 
+           permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+        HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+        TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Project-URL: homepage, https://github.com/ToJIka4/wagtail-impersonate
+Project-URL: repository, https://github.com/ToJIka4/wagtail-impersonate
+Keywords: wagtail,django,impersonate
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Wagtail
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django-impersonate>=1.9.4
+Requires-Dist: wagtail>=6.1
+
+  wagtail-impersonate
+----
+
+Wagtail extension to allow superusers to "impersonate" other accounts.
+
+**Version:** 0.1.0
+
+**Author:** Stepan Pliaskin (<https://plyask.in/>)
+
+Dependencies
+============
+
+-   Wagtail 6.1 and newer.
+-   django-impersonate 1.9.4 and newer.
+
+Installation
+============
+
+PIP:
+
+    pip install wagtail-impersonate
+
+Use
+===
+
+1.  Add `impersonate` and `wagtail-impersonate` to your `INSTALLED_APPS`
+2.  Add `impersonate.middleware.ImpersonateMiddleware` to your
+    `MIDDLEWARE` setting.
+3.  Add `impersonate.urls` somewhere in your url structure. Example:
+
+        urlpatterns = patterns('',
+            url(r'^admin/', include(admin.site.urls)),
+            url(r'^impersonate/', include('impersonate.urls')),
+            ... (all your other urls here) ...
+        )
+
+**Note:** The `ImpersonationMiddleware` class should be placed AFTER the
+`django.contrib.auth.*` middleware classes
+
+Functionality
+=============
+
+To to `Settings` -> `Users`. Find user to impersonate. Press dots (More options for user). Press `Impersonate` button.
+
+To finish impersonation press `Stop impersonation` on admin sidebar.
+
+Settings
+========
+
+Since this module is kind of wrap for `django-impersonate` you need to update `settings.py` according to README.md of `django-impersonate`
+
+There are three lines that require attention.
+
+```
+IMPERSONATE = {
+    "URI_EXCLUSIONS": [],
+    "REDIRECT_FIELD_NAME": "next",
+    "REDIRECT_URL": "/",
+}
+```

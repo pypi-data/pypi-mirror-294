@@ -1,0 +1,2 @@
+django-impersonate>=1.9.4
+wagtail>=6.1
