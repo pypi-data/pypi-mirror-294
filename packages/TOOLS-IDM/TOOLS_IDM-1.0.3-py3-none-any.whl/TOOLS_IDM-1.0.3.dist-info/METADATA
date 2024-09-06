@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: TOOLS-IDM
+Version: 1.0.3
+Summary: HANYA UNTUK BERSENANG SENANG
+Home-page: https://github.com/username/my_project
+Author: robbii13
+Author-email: email@example.com
+Requires-Dist: aiohttp
+
