@@ -1,0 +1,17 @@
+flomo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flomo/beep.mp3,sha256=YVX-73KquT3PGERO3-fF-BIv6crbTZiWN4H1s6L2qbE,27360
+flomo/cli.py,sha256=pKy5Z_wPyDn0CyYt1nAubrVlSs1_uLZG4hVJmdkKFx8,6650
+flomo/config.py,sha256=eDuVvShWYbQ3gTTYCKIazxgoLkIlHSqesVCZIBR99qo,4102
+flomo/errors.py,sha256=7dqBFewUSzuwxn--DN4d5hOwghVr-3ZlgPnUuMYef7M,670
+flomo/helpers.py,sha256=6e2Didjg4IeD5fGGscBIs6D19R-cf9tBnDzJSm5R9oM,2690
+flomo/session_id.dll,sha256=WgM5ZaUN9VjIcTv0f2mWDeValS1sFGFWYJe6cBG2ll4,50559
+flomo/session_id.dylib,sha256=vkrMShB8XBwRpEC-4Q5sdTZX_CpH_P6JWf8ZNkpxfS4,33712
+flomo/session_id.so,sha256=AKNnO91U7JziKWRtJRXi4LQ6GlAZS0tDJYVuWiEelY0,15888
+flomo/tracker.py,sha256=JTDM_hub-lAHMUS-gjxmSfrTCVNltxnqIoWdrUFZV5w,4660
+flomo/ui.py,sha256=SEZrs7gVr0YacM-QmJoJ2iNzfR1Y5G7zmntTOiIvxus,4335
+flomodoro-1.1.0.dist-info/LICENSE,sha256=wI_CsJph_tqZ2vIaLdLOdagPiFsfURP7IVXySIxHfC0,1063
+flomodoro-1.1.0.dist-info/METADATA,sha256=jjQ1QKKWq72FVrMyZMnUsV0qDas9cuL0ZncZP9yMXbk,7379
+flomodoro-1.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+flomodoro-1.1.0.dist-info/entry_points.txt,sha256=d7WCihfdfxewjH6C-62n-mbhlowC48UeIn1OhR1mO54,42
+flomodoro-1.1.0.dist-info/top_level.txt,sha256=g8GWR4tu2lxHhZRSMmBY29zCqQjPMfVVJe2T01LlRVA,6
+flomodoro-1.1.0.dist-info/RECORD,,
