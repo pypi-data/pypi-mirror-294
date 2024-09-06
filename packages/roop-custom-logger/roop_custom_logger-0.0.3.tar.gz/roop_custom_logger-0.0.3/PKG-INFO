@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: roop_custom_logger
+Version: 0.0.3
+Summary: Generic package which can be used for logging purpose
+Author: Roopendra
+Author-email: roopendra.naik@informa.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: asgi-correlation-id
+
+# Installation Instructions
+
+To install the `common` package and handle custom dependencies, use the following commands:
+
+1. **Install `common` with custom index URL**:
+
+   ```bash
+   pip install --extra-index-url https://pypi.iris.informa.com/simple -e .
+
+
+<!-- pip install -r requirements.txt --extra-index-url https://pypi.iris.informa.com/simple -->
