@@ -1,0 +1,11 @@
+master/__init__.py,sha256=sIh4VI6K8WvZPswkYvGqS-J8LeZb01HJ4SVcHLlcPMs,18
+master/cli.py,sha256=3SgaWPJcCfTLPOKWlyYcQ9DXSz_bn_4imTdQkARjqs8,3737
+master/logger.py,sha256=MiVZ7yL-0nXRdguST4qs-LmXHLV12UTSkJfn1A7Jmbs,953
+master/master.py,sha256=kGTx3EccoxkleIwei7HwWqz_AkHi0nbruhshM8-BmL8,2181
+master/pass.py,sha256=41nMVsd9zUXncU2nJtRMuIKx_lpiVpj06GMoRIR0ss0,7251
+master-0.2.5.dist-info/LICENSE,sha256=b2MHt-LyfKNNt-Bc1eTFabCEUL9RbLCgXSceobKCqlo,1081
+master-0.2.5.dist-info/METADATA,sha256=n7bCFFx4lOnZ-OjffeHM1FsiadzTtrNYG6NKeuYSH6I,3511
+master-0.2.5.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+master-0.2.5.dist-info/entry_points.txt,sha256=2KLlTis75yyG689oBr-ye_MmgvMtedeyf7aCSHdcUMM,43
+master-0.2.5.dist-info/top_level.txt,sha256=mzFiSYwh1_lgh3CZF07OoTQQvSHRJECy6ohoEX_AiuA,7
+master-0.2.5.dist-info/RECORD,,
