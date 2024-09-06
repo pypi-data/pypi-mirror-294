@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: clinicore
+Version: 0.3.0
+Summary: A clinicorel schema.
+Author-email: Lamin Labs <open-source@lamin.ai>
+Description-Content-Type: text/markdown
+Requires-Dist: lamindb[bionty,aws]==0.76.3
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/clinicore
+Provides-Extra: dev
+
+# clinicore: A clinical schema
+
+This schema is focused on the fundamental concepts of clinical data models.
+
+## Contributing
+
+Please run `pre-commit install` and `gitmoji -i` on the CLI before starting to work on this repository!
+
