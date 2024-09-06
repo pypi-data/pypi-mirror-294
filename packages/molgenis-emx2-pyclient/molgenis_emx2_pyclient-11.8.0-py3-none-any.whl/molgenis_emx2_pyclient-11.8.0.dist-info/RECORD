@@ -1,0 +1,11 @@
+molgenis_emx2_pyclient/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+molgenis_emx2_pyclient/client.py,sha256=bvPWbyvWMrJVi7UcnB9vyBBSi6rG1fy0a8isnOWfcao,41337
+molgenis_emx2_pyclient/exceptions.py,sha256=KfW9yYWwBcS2I83fB0JBiaktuj9BXFXn6mdh978sYiU,1833
+molgenis_emx2_pyclient/graphql_queries.py,sha256=JuiFMbWHUmI8J3hhllD5807nbHenApY_p2eU17DXz4Q,5890
+molgenis_emx2_pyclient/metadata.py,sha256=S3aSwJ2wLCM5LmzC4X3oQ7xDIYx_TQBO6Bb5rrMOVSM,7428
+molgenis_emx2_pyclient/utils.py,sha256=qzvlEgWcc0VS38aerxsCfxK5ZcTO1hKfVi8Zv5pwhxg,409
+molgenis_emx2_pyclient-11.8.0.dist-info/LICENSE,sha256=5Mu1MIARb4AKYXhrC7Hl1-D9mbYyzJbVO3RPfTJOPfg,7631
+molgenis_emx2_pyclient-11.8.0.dist-info/METADATA,sha256=I9kMQ3ZCatI-9K2FbCMChZzmrAumIH1oPwH9foGEqCM,3415
+molgenis_emx2_pyclient-11.8.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+molgenis_emx2_pyclient-11.8.0.dist-info/top_level.txt,sha256=lW4VaLVGa6ZlfyPF0sXU8-RmRfPQIKbpAJ6MKxLlgT4,23
+molgenis_emx2_pyclient-11.8.0.dist-info/RECORD,,
