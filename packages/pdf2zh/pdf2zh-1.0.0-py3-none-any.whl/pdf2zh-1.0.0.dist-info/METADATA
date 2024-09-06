@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pdf2zh
+Version: 1.0.0
+Summary: Latex PDF Translator
+Home-page: https://github.com/Byaidu/PDFMathTranslate
+Author: Byaidu
+Author-email: byaidux@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: charset-normalizer >=2.0.0
+Requires-Dist: cryptography >=36.0.0
+Requires-Dist: mtranslate
+Requires-Dist: pymupdf
+Requires-Dist: tqdm
+
+# PDFMathTranslate
+Latex PDF 翻译及双语对照
