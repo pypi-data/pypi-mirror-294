@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/python_pack/__init__.py
+src/python_pack/utils.py
+src/python_pack.egg-info/PKG-INFO
+src/python_pack.egg-info/SOURCES.txt
+src/python_pack.egg-info/dependency_links.txt
+src/python_pack.egg-info/requires.txt
+src/python_pack.egg-info/top_level.txt
+tests/test_utils.py

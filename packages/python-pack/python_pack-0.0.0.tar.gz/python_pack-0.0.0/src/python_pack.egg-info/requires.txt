@@ -1,0 +1,17 @@
+pydantic
+rich
+uv
+
+[dev]
+ruff
+pre-commit
+python-pack[tests]
+
+[tests]
+pytest
+pytest-asyncio
+pytest-env
+pytest-rerunfailures
+pytest-sugar
+pytest-timeout
+pytest-xdist
