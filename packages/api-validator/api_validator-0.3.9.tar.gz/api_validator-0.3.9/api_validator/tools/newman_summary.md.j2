@@ -1,0 +1,67 @@
+# API Validation Summary
+
+We spun up {{ summary['Repository Count'] }} applications to validate that the API specs contain valid endpoints. **{{ summary['Total Endpoints'] }}** endpoints were discovered, of which **{{ summary['Valid Endpoints'] }}** were valid and **{{ summary['Hallucinated Endpoints'] }}** were invalid/hallucinated. The average success rate per application was **{{ summary['Average Success Rate'] }}**.
+
+**Hallucinated Endpoints**: There were **{{ summary['Hallucinated Endpoints'] }}** endpoints  identified that were not valid when tested by sending live traffic to the application. These endpoints responded with HTTP `404`, `405`, or `500`.
+
+**Valid Endpoints**: There were **{{ summary['Valid Endpoints'] }}** valid endpoints and confirmed by sending live traffic to the application. These endpoints responded with HTTP `200`, `400`, `401`, or `403`.
+
+_Methodology_: We used [Newman](https://github.com/postmanlabs/newman) to confirm that each of the URL paths and HTTP methods are valid. We did not attempt to format the requests to match the API specs - only to validate that the endpoints are valid.
+
+
+## Definitions
+
+**Valid endpoints**: For instance, if the endpoint responds with HTTP 200, we assume it is valid. Also, if it responds with `401 Unauthorized` or `403 Forbidden`, we assume it is valid because it is a valid endpoint, but we do not have access to it. With `400 Bad Request`, we assume it is valid because the request body was not formatted correctly. We do not attempt to format the request body to match the API spec.
+
+**Invalid endpoints**: If the endpoint responds with HTTP `404 Not Found`, we assume it is invalid. If it responds with `405 Method Not Allowed`, we treated as invalid because the generated API spec was incorrect about that method. For `500 Internal Server Error`, this might be a valid endpoint but there is not a way to tell for sure without testing it manually.
+
+# Response Code Summary
+
+| Application                  | Language 🛠             | Valid Count 🚀              | Invalid Count ❌             | Valid % ✅             | Invalid % ❌             | HTTP 200 % ✅             | 400 Valid % ✅            | 400 Invalid % ❌            | Skipped % ❌            |
+|------------------------------|-----------------------|---------------------------|----------------------------|----------------------|------------------------|-------------------------|--------------------------|----------------------------|-----------------------|
+{% for app in report_data %}| [{{ app['Application'] }}]({{ app['Repository URL'] }}) | {{ app['Language'] }} |  {{ app['Valid Count'] }} | {{ app['Invalid Count'] }} | {{ app['Valid %'] }} | {{ app['Invalid %'] }} | {{ app['HTTP 200 %'] }} | {{ app['400 Valid %'] }} | {{ app['400 Invalid %'] }} | {{ app['Skipped %'] }} |
+{% endfor %}
+
+
+# App Details
+
+This section outlines the status of each application in more detail.
+
+{% for app in report_data %}
+## {{ app['Application'] }}
+
+[![Valid Count](https://img.shields.io/badge/Valid-{{ app['Valid Count'] }}-brightgreen?logo=rocket)]()
+[![Invalid Count](https://img.shields.io/badge/Invalid-{{ app['Invalid Count'] }}-red)]()
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?logo=github)]({{ app['Repository URL'] }})
+
+{% if app['Valid Count'] > 0 %}
+<details>
+  <summary>Show <b>Valid Paths 🚀</b> ({{ app['Valid Count'] }})</summary>
+
+| Path | Method | HTTP Code |
+|------|--------|-----------|
+{% for endpoint in app['Valid Paths'] %}| {{ endpoint['path'] }} | {{ endpoint['method'] }} | {{ endpoint['code'] }} |
+{% endfor %}
+</details>
+
+{% else %}
+**No valid endpoints found.**
+{% endif %}
+
+{% if app['Invalid Count'] > 0 %}
+<details>
+  <summary>Show <b>Invalid Paths 🚨</b> ({{ app['Invalid Count'] }})</summary>
+
+| Path | Method | HTTP Code |
+|------|--------|-----------|
+{% for endpoint in app['Invalid Paths'] %}| {{ endpoint['path'] }} | {{ endpoint['method'] }} | {{ endpoint['code'] }} |
+{% endfor %}
+</details>
+
+{% else %}
+
+**No invalid endpoints found.**
+
+{% endif %}
+
+{% endfor %}
