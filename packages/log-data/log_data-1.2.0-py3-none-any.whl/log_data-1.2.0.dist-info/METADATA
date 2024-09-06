@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: log_data
+Version: 1.2.0
+Summary: All functions that assist in standardising development approaches.
+Home-page: https://github.com/yourusername/your-repo
+Author: Marcus
+Author-email: marcusongkiansiong@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: custom-development-standardisation ==1.1.2
+Requires-Dist: psycopg2 ==2.9.9
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: Requests ==2.32.3
+
+# Notes
+1. What do I need to worry about?
+    1. notion: api key 
+    2. psql: connecting to the psql database
+2. Notion
+    high level page id: b74cbfbe7cc2490e9dc3210f06eb3c8e
+    Workings (as dictated by the package): 
+        High level page consist of pages, where those pages is named after the database table the log data is suppose to be stored. 
+
+# Changes
+#### buggy catcher
+- [x] Unable to store data in notion when psql cannot be connected to. 
+- [ ] The app is slowing down significantly ever since the implementation of logging functions.
+#### Improvements
+- [ ] using the inspect.stack() to get the file name, directory name, and function name, rather than writing the name yourself.
+- #### ✅ Make the psql connection adaptable
+    > Note: 
+    >> **How does adaptation look like:** To adaptation is done when the system notices that the ip address has changed, then implement the change across all relevant parts of the system that uses that ip address, and correct any errors created as a result of a changing in ip address. <br>
+    >>
+    >> **Correction in the context of log_data:** 
+    >>>1. *Correct errors:* capture data logs that would have fell through
+    >>>2. *Notice changes:* Notice the change in public IP address
+    >>>3. *Implement changes:* Implement the IP address change in the system
+    >>>4. *Correct errors:* Re-establish connection with database using the new ip address.
+    > 
+    > ⚡️⚡️⚡️TASKS:⚡️⚡️⚡️
+- #### ☑️ Reduce the number of psql connection initialisation to speed up deployment
+    > **How did you find this problem?**
+    >>This is related to psql **➡** One of the major uses of PSQL is log data **➡** [I need to make the package read updated environment variable (host)](../../projects/portfolio_display/infrastructure/raspberry_pi_server/README.md#changing-of-public-ip-address-by-the-isp-dhcp) **➡** During the test of the change on a test package in render, realised how slow the deployment process is due to multiple loggers **➡** Since I am already modifying the way to read environment variables for the logger package, I might as well modify the implementation design as well.
+    >
+    >**Which packages have you implemented log_data?**
+    >>
+    >**What do I need to change?**
+    >>*Log data package:* ❌<br>
+    >>
+    >>*Packages with Log Data package:* ✅<br>
+    >>>1. ☑️ You receive the logging class instance from the place that is using you
+    >>>2. ☑️ You have a mechanism to allow for continous operation even if there is an error with the log when executing the function.
+    >>
+    >>*Location that use packages with log data:* ✅<br>
+    >>>1. ☑️ Create the logging class instance
+    >>>2. ☑️ Create the logic to pass the logging class instance to the package
+    >>>3. ☑️ Ensure the logging class does not override one another by using the following format when using the package with log_data operations
+    >>>>*Example*: ```import x     # x.something```
+    >>
+    > ⚡️⚡️⚡️TASKS:⚡️⚡️⚡️
+    >>1. Curate a list of custom packages in which you have implemented log data
+    1. Make the logging function get the function from a variable
+    2. That variable will be assigned a database connection instance
+- [ ] Dynamically Adaptable environment variables
+- [ ] A catcher of data, just in case psql connection fails
+    > Do not expect it to fail for long, as I expect the connection failure to be caused by the shifting of ip address and the 
+
+
+# Structures
+#### logging functionality setup
+```mermaid
+graph TD
+1[setup notion api key]
+2[import logging package]
+3[initialise log class]
+4[initialise database within log class]
+5[know the order of columns_excluding id column and timestamp column]
+6[write logs inside specific location in your code based on the order above]
+
+1-->2
+2-->3
+3-->4
+4-->5
+5-->6
+
+```
+
+#### Process of logging data
+```mermaid
+graph TD
+1[get_the_data]
+2[check_if_data_is_string]
+3[check_if_data_equal_table_columns]
+4[create_the_postgres_command]
+5[execute_command]
+
+6[store_log_in_notion]
+
+stat1[main success]
+stat2[failure_correct_data]
+stat3[failure_wrong_data]
+stat4[raise error]
+stat5[alternate success]
+stat6[absolute failure]
+
+1-->2
+2-->3
+3-->4
+4-->5
+5-->stat1
+5-->stat2
+stat2-->6
+
+
+2-->stat3
+3-->stat3
+stat3-->stat4
+6-->stat5
+6-->stat6
+stat6-->stat4
+```
+
+
+
+# Change log
+### [1.2.0] - 2024-09-06
+add:
+1. get_logs: Get the content of .log file from root (~)
+2. store_bulk_log_in_database: Get the contents of .log file (get_logs) and store them in the database
+3. store_log_in_log_file: Store a log in the log file in root
+fixed:
+others:
+1. store_log: change notion storage if failed to store log to .log file storage.
+2. initialise database now uses os.environ rather than get method.
+### [1.1.6] - 2024-08-01
+add:
+fixed:
+1. store_log method uses a variable called location that does not exist when returning the success message.
+others:
+### [1.1.5] - 2024-07-31
+add:
+fixed:
+others:
+1. Removed notion logic from store_log method
+2. Checking why app.py for my personal remote server is not logging data (e.g. visual_list_2) when other sub routes are able to (e.g. custom_package_usage/usage)
+### [1.1.4] - 2024-07-06
+add:
+fixed:
+1. custom_logger: In the function called store_log_in_database, Error with command execution produces an output (key) that is not an object, which caused store_log to function to produce an error when the storeLogDatabase produced an error during psql command execution. Made that function's output return an object instead of a string. 
+others:
+### [1.1.3] - 2024-07-05
+add:
+fixed:
+1. Notion: Removed an extract_all_blocks_from_page function execution. It is clogging up the screen with useless information each time I run a program that uses custom packages that has log functions embedded into them.
+others:
+### [1.1.3] - 2024-07-01
+add:
+fixed:
+1. custom_logger: Logging_table_name is set after connecting to the database. Corrected to set upon instantiation of the class.
+others:
+1. Notion upload operation requires logging_table_name, so that later, it can update the respective table. However, logging_table_name is only set when database connection is successful. 
+### [1.1.2] - 2024-07-01
+add:
+1. custom_logger: initialise_database, added an operation when operation error is being patched, that involves checking if notion can be accessed. If no, raise an error. If yes, set storage_location to notion.
+fixed:
+1. custom_logger: removed psql client existence checking from store log in notion method as operation involving storing data in notion is not dependent on having a psql connection.
+others:
+1. Removed database redundant function called get_, that handles database query. 
+2. There is a bug that prevents notion storage when psql cannot be connected to.
+### [1.1.1] - 2024-06-19
+add:
+fixed:
+others:
+1. Changed initialising method. Instead of explicitly putting database name and table name, get it from the environment variable.
+### [1.1.0] - 2024-06-20
+add:
+1. Utility: Created get_package_name function. Auto seeking of file name, package name, and function name, using inspect.stack().
+fixed:
+1. the error arising from logging applied to a package that is used by logging. To solve it (see 2 and 3 below in fixed)
+3. Brought over page operations from personalNotion into notion file
+4. Embedded manual psql operations in custom_logging file
+others:
+### [1.0.2] - 2024-06-19
+add:
+1. store_log_in_database gets a new error condition, involving client being None. No client, no database access. 
+fixed:
+others:
+1. Rearrange creation of foundation class instance (personalDatabase package) to be during initialising_database function operation rather than on initialising an instance of custom_logger class. Attempting to solve the "does not exist problem" for foundation class during usage of the package that uses custom_logger. 
+### [1.0.1] - 2024-06-19
+add:
+fixed:
+1. Possibility of infinite loop as log function depends on database functions and notion functions, which are going to be logged. Therefore, a state variable called logging_in_progress is created, and checked by log_data at the beginning, change if false, return if true, and change to false after completion or before raising an error.
+others:
+1. Applying trial operation, meant to handle perceive risk involving infinite loop due to two functions depending on one another. database_upload -> log -> database
+### [1.0.0] - 2024-06-19
+add:
+1. custom_logger: class to manage all processes of storing data in the database
+2. custom_logger: change_storage_location function
+3. custom_logger: initialise_database. Set the configuration for connecting to database. Uses personalDatabase package. 
+4. custom_logger: get_date_time. Returns the current date time object
+5. custom_logger: store_log. looks at storage location variable, outcome of database storage attempt, to decide if storing log data in notion is necessary.
+6. store_log in notion: store log in notion
+7. store_log_in_database: store log in database
+fixed:
+others:
+1. Core components: psql, notion
+2. Mechanics between components: psql is where you store the data. If psql is not accessible, then store in notion.
+3. data characteristic that determines whether log data can be stored: a string, number of values separated by commas is equal to number of columns in the table (excluding id and timestamp)

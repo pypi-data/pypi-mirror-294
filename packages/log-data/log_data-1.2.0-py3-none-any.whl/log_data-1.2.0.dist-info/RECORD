@@ -1,0 +1,10 @@
+log_data/__init__.py,sha256=0CELxA_MBEuNPd_gB3ZREONw7enssck5jjobgcRUuAk,71
+log_data/custom_logger.py,sha256=bacIO09I_83qaJkKOK2DDG02TgIfR5OF4MccueUdY5M,10877
+log_data/notion.py,sha256=dt76Ii8vXTHKRgi-RcWUklBwH6FVONj_Ifnr3zIMzXs,8723
+log_data/test.py,sha256=QjdWqqv1wMgHcIqEC1ANT-8ybPDGYa74O7UiRaRXvhY,234
+log_data/utility.py,sha256=mv-F0Sf3UMKyyCfDFOR98vNhyaHlDyqyl_Lap10LSz4,1955
+log_data-1.2.0.dist-info/METADATA,sha256=uCPBkt-HFKigexkNsYR5NYfmorpgUv9_fd0SFxUR8DU,9983
+log_data-1.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+log_data-1.2.0.dist-info/entry_points.txt,sha256=ElpE5J__TGc73VXqmaOLhGZNhpP96RUJBJQTnrJWTIM,62
+log_data-1.2.0.dist-info/top_level.txt,sha256=xUq0ErhcGHUcIkz5F6_EfOS1Qj0m7NittmjnBPF6NtY,9
+log_data-1.2.0.dist-info/RECORD,,
