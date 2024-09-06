@@ -1,0 +1,7 @@
+README.md
+setup.py
+hello/__init__.py
+vimal_tech_hello.egg-info/PKG-INFO
+vimal_tech_hello.egg-info/SOURCES.txt
+vimal_tech_hello.egg-info/dependency_links.txt
+vimal_tech_hello.egg-info/top_level.txt
