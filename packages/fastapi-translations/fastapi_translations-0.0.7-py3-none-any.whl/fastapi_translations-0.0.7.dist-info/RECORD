@@ -1,0 +1,11 @@
+fastapi_translations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_translations/cli.py,sha256=-TuJXPnrd1a2bkqQOiuuDu-lZg8AIdezZT2GyUKO3vQ,2948
+fastapi_translations/git.py,sha256=kZ8065piDBlPpPuZxlRt5WvUYzDna8JOCZmrde95jE0,362
+fastapi_translations/models.py,sha256=OqyIS7vHcnk4-ynMxz4KW3HThqOcJlOvfeR188PbcZY,2149
+fastapi_translations/printer.py,sha256=sjXCUXvuWX-Z-vQyLn1DH0a64yqSpicRdmiHWBZlVoA,2388
+fastapi_translations/version.py,sha256=dRP5NXJxQujSKaLfhvI3s12RnwJ51q-kj9Ugl8UbKk8,18
+fastapi_translations-0.0.7.dist-info/METADATA,sha256=1HNj8c5lN3ihpDn8KK4VDlsk8-oeijUD3VxOdE43xlw,2558
+fastapi_translations-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fastapi_translations-0.0.7.dist-info/entry_points.txt,sha256=RbmgGJ2RcOGdLOnfbRDohpNj5-8r_46meGsrS78eUP8,71
+fastapi_translations-0.0.7.dist-info/licenses/LICENSE,sha256=D_ibcDSGp4OoNRAiqzYGMfRt3QSEx9b2nQopDG3fLQ0,1116
+fastapi_translations-0.0.7.dist-info/RECORD,,
