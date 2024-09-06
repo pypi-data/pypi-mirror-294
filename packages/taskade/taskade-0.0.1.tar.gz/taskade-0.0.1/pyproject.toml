@@ -1,0 +1,151 @@
+[project]
+name = "taskade"
+dynamic = []
+description = "A DAG framework written in std python"
+authors = [
+    { name = "Alex Epstein", email = "alexanderepstein@tuta.io" },
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+version = "0.0.1"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.31",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocstrings>=0.25.2",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-section-index>=0.3.9",
+    "mkdocs-autorefs>=1.0.1",
+    "mkdocstrings-python>=1.10.8",
+    "mkdocs-coverage>=1.1.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.2.6",
+    "mkdocs-git-authors-plugin>=0.9.0",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+    "setuptools",
+    "wheel",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+includes = [
+    "src",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "src/taskade/__init__.py"
+
+[tool.pdm.build]
+run-setuptools = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.6.1",
+    "pre-commit>=3.5.0",
+    "pyright>=1.1.376",
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+    "pytest-asyncio>=0.23.8",
+    "pytest-xdist>=3.6.1",
+    "tqdm>=4.66.5",
+    "seaborn>=0.13.2",
+    "matplotlib>=3.7.5",
+    "pandas>=2.0.3",
+]
+
+[tool.pdm.scripts]
+pre-commit = "pre-commit run --all-files"
+serve-document = "mkdocs serve"
+document = "mkdocs build -d public/documentation"
+deploy-document = "mkdocs gh-deploy -d public/documentation"
+test = "pytest -n auto --cov-report term --cov-report xml:coverage.xml  --cov-report html:docs/development/coverage --cov=taskade"
+benchmark = "bash benchmark/benchmark.sh"
+visualize = "python benchmark/visualize.py"
+
+[tool.pdm.scripts.format]
+composite = [
+    "ruff check . --fix",
+    "ruff format",
+]
+
+[tool.pdm.scripts.release]
+composite = [
+    "pre-commit",
+    "test",
+    "document",
+]
+
+[tool.ruff]
+src = [
+    "src",
+]
+line-length = 120
+indent-width = 4
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "I",
+]
+ignore = []
+fixable = [
+    "ALL",
+]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self\\.debug",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "@(abc\\.)?abstractmethod",
+]
+show_missing = true
+ignore_errors = true
+
+[tool.coverage.html]
+directory = "docs/development/coverage"
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "session"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+skip_glob = [
+    "docs/*",
+]
