@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+edinet-explorer-env/
+/.env/
+/.venv/
+
+# PyInstaller
+*.manifest
+*.spec
+# Ignore PyInstaller build and distribution directories
+/build/
+/dist/
+
+# VS Code specific
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Local test file
+local_test.py
+
