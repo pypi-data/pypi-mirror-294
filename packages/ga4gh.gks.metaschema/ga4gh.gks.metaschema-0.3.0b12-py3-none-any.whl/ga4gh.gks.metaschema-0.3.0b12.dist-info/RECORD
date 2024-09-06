@@ -1,0 +1,13 @@
+ga4gh/gks/metaschema/scripts/jsy2js.py,sha256=7n_p-7Q2TI0nqWyxr119F0AKDQy3FvhuoqENFt_mM9w,220
+ga4gh/gks/metaschema/scripts/source2classes.py,sha256=Bh8m3VMMQDYCJyN4MopAXblbEd9O0crgYgrIbuMVyWg,478
+ga4gh/gks/metaschema/scripts/source2jsy.py,sha256=ZJhI9FLAWK0cz7Dx9ecsB831WED2cjYiv94fNb1YbGg,286
+ga4gh/gks/metaschema/scripts/source2mergedjsy.py,sha256=t3yRFFg9X4TCLf0pVyv6ZJ8YHcwwpv-1kp7LgtrXYD4,309
+ga4gh/gks/metaschema/scripts/source2splitjs.py,sha256=wYpAZge8emXtE_hZnDVELEg6PTSt6OCUjK0O7BWHJF4,3861
+ga4gh/gks/metaschema/scripts/y2t.py,sha256=wDVnfqBZdm3vI1DSzJSemHfrtfqIYB57VAdOaeg18N4,4403
+ga4gh/gks/metaschema/tools/source_proc.py,sha256=-LmX3nA_cZ2BzOXqIDnT3V5Aoa-50tEzz4QooiGQcwQ,23510
+ga4gh.gks.metaschema-0.3.0b12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ga4gh.gks.metaschema-0.3.0b12.dist-info/METADATA,sha256=K0wsvuIhuQiFAn98KfXpBJEiKpYlNsC-dDicg5NKY6s,14271
+ga4gh.gks.metaschema-0.3.0b12.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+ga4gh.gks.metaschema-0.3.0b12.dist-info/entry_points.txt,sha256=3WqVV6jVGhaTGEXkGGKQe2aSJruAz0xP7ParWs-O5ro,366
+ga4gh.gks.metaschema-0.3.0b12.dist-info/top_level.txt,sha256=dcwOVyhs_HDiP72Eg7DskeWMdcbw70-OwDmjxNuwNKg,6
+ga4gh.gks.metaschema-0.3.0b12.dist-info/RECORD,,
