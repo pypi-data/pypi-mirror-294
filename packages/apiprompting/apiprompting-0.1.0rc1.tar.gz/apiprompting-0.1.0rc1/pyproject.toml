@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "apiprompting"
+version = "0.1.0.rc1"
+description = "Package for an easy implementation of paper \"Attention Prompting on Image for Large Vision-Language Models\"."
+authors = ["runpeng yu"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "==2.0.1"
+torchvision = "==0.15.2"
+transformers = "==4.31.0"
+tokenizers = ">=0.12.1,<0.14"
+sentencepiece = "==0.1.99"
+shortuuid = "==1.0.13"
+accelerate = "==0.21.0"
+peft = "==0.4.0"
+bitsandbytes = "==0.41.0"
+pydantic = "<2,>=1"
+markdown2 = {extras = ["all"], version = "^2.5.0"}
+numpy = "==1.24.0"
+scikit-learn = "==1.2.2"
+gradio = "==3.35.2"
+gradio_client = "==0.2.9"
+requests = "^2.32.3"
+httpx = "==0.24.0"
+uvicorn = "^0.30.6"
+fastapi = "^0.112.2"
+einops = "==0.6.1"
+einops-exts = "==0.0.4"
+timm = "==0.6.13"
+ftfy = "==6.2.3"
+scipy = "==1.14.1"
+imageio = "==2.35.1"
+h5py = "==3.11.0"
+scikit-image = "==0.24.0"
+opencv-python = "==4.10.0.84"
+regex = "==2024.7.24"
+apillava = "==0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
