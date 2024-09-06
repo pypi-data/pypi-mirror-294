@@ -1,0 +1,16 @@
+odoo/addons/l10n_br_setup_tests/README.rst,sha256=CBH_hK1c0TUpGOaTuCv49bE2XuYv1LRyJeRtptJXpu0,3669
+odoo/addons/l10n_br_setup_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/l10n_br_setup_tests/__manifest__.py,sha256=oY57Zekp7FPn-Of43SapLvLSxfsDBz3bFojfeu5f_wY,688
+odoo/addons/l10n_br_setup_tests/i18n/l10n_br_setup_tests.pot,sha256=leB6MlaWiU1sPOdcOTxNVY5KVORnHv0MfD14HgQJIIs,341
+odoo/addons/l10n_br_setup_tests/i18n/pt_BR.po,sha256=jmNrMmBfS-duIH6Yk5ZzxX-IfQn2fxThhLqHGqxNjuA,413
+odoo/addons/l10n_br_setup_tests/readme/CONTRIBUTORS.md,sha256=HywC4dwE9qIfsR6YLqNhzWK5rzYhL5p7zWkfJwmTvag,46
+odoo/addons/l10n_br_setup_tests/readme/DESCRIPTION.md,sha256=I9W_fLxL-XutozTgNYh4dk-IcbUIyQQUZlGb7RzfsVw,471
+odoo/addons/l10n_br_setup_tests/readme/HISTORY.md,sha256=GOHt2AONuiJ_SO9aq1srhiSf5yc0yGnvaFaUlfa3br0,47
+odoo/addons/l10n_br_setup_tests/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/l10n_br_setup_tests/static/description/index.html,sha256=MYuhiTd-UqVnd_5fYDKvAtRssovbWlodXu7W6773ueQ,13455
+odoo/addons/l10n_br_setup_tests/tests/__init__.py,sha256=boZn8RV0GPnw0IMMAQ7A-D7_vBaFGh-lADSRmh9mwuc,34
+odoo/addons/l10n_br_setup_tests/tests/test_sale_picking.py,sha256=zGy0zdrJN8PdULKM87ZdBAJZwn9DGxJqb16gkjuJjxQ,2873
+odoo_addon_l10n_br_setup_tests-16.0.1.0.1.dist-info/METADATA,sha256=ojE0VDHD8hiSPpKNxVrha0tLiSMhu6xDOm7GydQtqmE,4521
+odoo_addon_l10n_br_setup_tests-16.0.1.0.1.dist-info/WHEEL,sha256=8Rd4enx1PCuyDWP4SABqO5Fv8rpaknqp3VzjoFFLa6c,83
+odoo_addon_l10n_br_setup_tests-16.0.1.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_l10n_br_setup_tests-16.0.1.0.1.dist-info/RECORD,,
