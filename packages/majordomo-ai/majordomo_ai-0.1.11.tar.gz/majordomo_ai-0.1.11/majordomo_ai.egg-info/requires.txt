@@ -1,0 +1,4 @@
+Requests==2.32.3
+SQLAlchemy==2.0.30
+SQLAlchemy_Utils==0.41.2
+pydantic==2.7.1
