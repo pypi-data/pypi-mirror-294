@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+Kissimoney2023.egg-info/PKG-INFO
+Kissimoney2023.egg-info/SOURCES.txt
+Kissimoney2023.egg-info/dependency_links.txt
+Kissimoney2023.egg-info/top_level.txt
