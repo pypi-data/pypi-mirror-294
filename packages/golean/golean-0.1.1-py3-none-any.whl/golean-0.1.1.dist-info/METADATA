@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: golean
+Version: 0.1.1
+Summary: A Python package for interacting with the GoLean API service.
+Home-page: https://golean.ai
+Author: Connor Peng
+Author-email: jinghong.peng@golean.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+GoLean is a proprietary Python package for interacting with the GoLean API service. It provides tools for prompt compression and optimization.
+
