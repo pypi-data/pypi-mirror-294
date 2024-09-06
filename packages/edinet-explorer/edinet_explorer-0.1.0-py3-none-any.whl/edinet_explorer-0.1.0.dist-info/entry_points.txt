@@ -1,0 +1,2 @@
+[console_scripts]
+edinet-explorer = edinet_explorer.__main__:main
