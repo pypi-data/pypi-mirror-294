@@ -1,0 +1,35 @@
+[project]
+name = "holjjagml"
+version = "0.1.0"
+description = "I want to learn. If you let me know, I will learn and sort it out."
+authors = [
+    { name = "dMario24", email = "data.mario24@gmail.com" },
+]
+dependencies = [
+    "tqdm>=4.66.5",
+    "pyfiglet>=1.0.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "GNU"
+
+[project.urls]
+Homepage = "https://github.com/dMario24/holjjagml"
+Issues = "https://github.com/dMario24/holjjagml/issues"
+
+[project.scripts]
+holjjag = "holjjagml.cli:run"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pytest.ini_options]
+pythonpath = "src"

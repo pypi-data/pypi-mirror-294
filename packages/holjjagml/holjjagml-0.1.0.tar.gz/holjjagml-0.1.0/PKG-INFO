@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: holjjagml
+Version: 0.1.0
+Summary: I want to learn. If you let me know, I will learn and sort it out.
+Author-Email: dMario24 <data.mario24@gmail.com>
+License: GNU
+Project-URL: Homepage, https://github.com/dMario24/holjjagml
+Project-URL: Issues, https://github.com/dMario24/holjjagml/issues
+Requires-Python: >=3.11
+Requires-Dist: tqdm>=4.66.5
+Requires-Dist: pyfiglet>=1.0.2
+Description-Content-Type: text/markdown
+
+# holjjagml
+- Grow your machine
+
+# instructions
+```
+$ pip install holjjag
+$ holjjag
+    _   __           __                 __
+   / | / /___  _____/ /__________ _____/ /___ _____ ___  __  _______
+  /  |/ / __ \/ ___/ __/ ___/ __ `/ __  / __ `/ __ `__ \/ / / / ___/
+ / /|  / /_/ (__  ) /_/ /  / /_/ / /_/ / /_/ / / / / / / /_/ (__  )
+/_/ |_/\____/____/\__/_/   \__,_/\__,_/\__,_/_/ /_/ /_/\__,_/____/
+
+
+🤖 물고기의 길이를 입력하세요 (cm): 10.123
+🤖 물고기의 무게를 입력하세요 (g): 300
+🤖 🐟 빙어 🐋 : 100%|███████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.00s/it]
+🤖 이녀석은 바로 🐟 빙어!
+🤖 저의 예측이 맞쥬 ? (Y/n):
+🤖 역시 내가 바로 물고기 척척박사! 🐟
+$                                    
+```
