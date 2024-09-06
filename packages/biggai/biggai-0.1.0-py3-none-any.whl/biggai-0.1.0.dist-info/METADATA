@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: biggai
+Version: 0.1.0
+Summary: A feishu api package for django
+Home-page: https://gitee.com/li-pf/django_feishu_sdk
+Author: lpf_andr
+Author-email: lpf_andr@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: pydantic
+Requires-Dist: aiohttp
+Requires-Dist: requests
+Requires-Dist: pycryptodome
+
