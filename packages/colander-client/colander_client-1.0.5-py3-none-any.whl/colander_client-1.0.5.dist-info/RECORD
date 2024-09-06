@@ -1,0 +1,16 @@
+colander_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colander_client/client.py,sha256=qD-vgNo8bVBMCc54nQirZ4MK1Ilr3HuBji_9Esz2u9Y,2380
+colander_client/domain/__init__.py,sha256=KDgoPyf2NNbgED7PNLPPSo9pmyflYbSlMoZA1FPJCAw,205
+colander_client/domain/artifact.py,sha256=MWCqBXG4QJ-3IwkJygUdL5fCVKDiCKRsSRP5LWmWEtM,4478
+colander_client/domain/base.py,sha256=VK7gspu6D9qBfbWJxtt229Symj3wbCUAQI2chQwrNJ0,1114
+colander_client/domain/case.py,sha256=9zXZa67ZhtV7j2fwOqyb_NQYHivD6L5JXfwof5420NY,1376
+colander_client/domain/device.py,sha256=HCBCE2qZgPi75eoCrSLkcL3Dl8FYEbdZ3ajupdCFe68,2471
+colander_client/domain/observable.py,sha256=wONpu83ONVDU2bisx9SYt8kIrv1Nm4busn5ZUcN8L3Y,2564
+colander_client/domain/pirogue_experiment.py,sha256=BB4YVO-jvF6BBghgAfgelB7gQ3acutOAoDtaozNH37E,2240
+colander_client/domain/relation.py,sha256=bCFbCIiz0f08YgsrMoh3ZRWt-JVLS7vdwmVPrfLN36s,1813
+colander_client/domain/team.py,sha256=kCM_tCNgUFhQoIy3ja7-S933foOqlvwoZVbgguOcXmE,417
+colander_client-1.0.5.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+colander_client-1.0.5.dist-info/METADATA,sha256=vzdaBq2IBJt67NGle7rB-UXsklzj-uBWCBygXE85s5c,7306
+colander_client-1.0.5.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+colander_client-1.0.5.dist-info/top_level.txt,sha256=B5iBCPBBbk3eFVhQYwAYU1rNevOyoT6DzgRYLUSkp3A,16
+colander_client-1.0.5.dist-info/RECORD,,
