@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gmlp_tinygrad/__init__.py
+gmlp_tinygrad.egg-info/PKG-INFO
+gmlp_tinygrad.egg-info/SOURCES.txt
+gmlp_tinygrad.egg-info/dependency_links.txt
+gmlp_tinygrad.egg-info/requires.txt
+gmlp_tinygrad.egg-info/top_level.txt
