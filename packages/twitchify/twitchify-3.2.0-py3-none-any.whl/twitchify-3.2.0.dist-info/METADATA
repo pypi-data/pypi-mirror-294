@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: twitchify
+Version: 3.2.0
+Summary: Real-time Twitch Event Handling and Helix API Integration in Python
+Author-email: Snifo <Snifo@mail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/mrsnifo/twitch.py
+Project-URL: Documentation, https://twitchpy.readthedocs.io/latest/
+Project-URL: Issue tracker, https://github.com/mrsnifo/twitch.py/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.8.0
+
+# Twitchify
+
+**Notice:** This package is a mirror.  
+
+For the latest updates and features, it's recommended to install [`twitch.py`](https://pypi.org/project/twitch.py), as `twitchify` is no longer maintained.
