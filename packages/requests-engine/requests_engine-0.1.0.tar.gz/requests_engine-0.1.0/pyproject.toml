@@ -1,0 +1,43 @@
+[project]
+name = "requests-engine"
+version = "0.1.0"
+description = "A simple library for performing LLM batch inference using API requests. "
+authors = [
+    { name = "EdoardoLuciani", email = "edoardo.luciani@gmail.com" }
+]
+dependencies = [
+    "aiohttp",
+    "botocore",
+    "google-auth",
+    "requests"
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/EdoardoLuciani/requests_engine"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest",
+    "python-dotenv"
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/requests_engine"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
