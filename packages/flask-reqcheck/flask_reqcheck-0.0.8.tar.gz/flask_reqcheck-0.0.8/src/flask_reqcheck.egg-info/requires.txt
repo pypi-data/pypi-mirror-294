@@ -1,0 +1,11 @@
+Flask
+pydantic
+
+[dev]
+black
+isort
+numpydoc
+Pallets-Sphinx-Themes
+pytest
+python-dotenv
+sphinx
