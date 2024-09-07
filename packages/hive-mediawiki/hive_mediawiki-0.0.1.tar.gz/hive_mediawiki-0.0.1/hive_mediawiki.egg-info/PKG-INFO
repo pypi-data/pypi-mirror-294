@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hive-mediawiki
+Version: 0.0.1
+Summary: MediaWiki interface for Hive
+Author-email: Gary Benson <gary@gbenson.net>
+Project-URL: Homepage, https://github.com/gbenson/hive/tree/main/libs/hive-mediawiki
+Project-URL: Source, https://github.com/gbenson/hive
+Description-Content-Type: text/markdown
+Requires-Dist: hive-config
+Requires-Dist: pymediawiki
+
+[![version badge]](https://pypi.org/project/hive-mediawiki/)
+
+[version badge]: https://img.shields.io/pypi/v/hive-mediawiki?color=limegreen
+
+# hive-mediawiki
+
+MediaWiki interface for Hive.
+
+## Installation
+
+### With PIP
+
+```sh
+pip install hive-mediawiki
+```

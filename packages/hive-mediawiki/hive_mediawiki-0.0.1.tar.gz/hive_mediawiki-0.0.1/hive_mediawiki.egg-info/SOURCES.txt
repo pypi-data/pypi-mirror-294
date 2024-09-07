@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+hive/mediawiki/__init__.py
+hive_mediawiki.egg-info/PKG-INFO
+hive_mediawiki.egg-info/SOURCES.txt
+hive_mediawiki.egg-info/dependency_links.txt
+hive_mediawiki.egg-info/requires.txt
+hive_mediawiki.egg-info/top_level.txt
+tests/test_login.py
