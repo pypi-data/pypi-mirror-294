@@ -1,0 +1,9 @@
+drb~=2.1.4
+drb-driver-odata~=1.2.0
+tenacity~=8.0.1
+tqdm~=4.63.0
+peewee~=3.14.10
+geojson~=3.1.0
+requests
+click
+snakeviz
