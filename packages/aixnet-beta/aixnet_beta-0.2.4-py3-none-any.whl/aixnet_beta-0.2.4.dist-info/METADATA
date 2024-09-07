@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: aixnet-beta
+Version: 0.2.4
+Summary: The official package of AI-X-Net.
+Author: Yiqiao Yin
+Author-email: eagle0504@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-ai-inference (>=1.0.0b4,<2.0.0)
+Requires-Dist: openai (>=1.43.0,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# AIXNet Beta
+
+## Overview
+
+AIXNet Beta is a powerful and user-friendly Python package designed to streamline interactions with the OpenAI and Together AI APIs. By offering an intuitive interface, AIXNet allows developers to quickly integrate advanced AI models like OpenAI's GPT and Meta LLaMA into their applications. Whether you're building conversational agents, automated assistants, or just experimenting with AI-driven solutions, AIXNet simplifies the process by requiring only your API key and a well-structured payload to get started. 
+
+AIXNet Beta is particularly useful for developers looking to work with cutting-edge AI models without the complexity of directly interfacing with APIs. With support for various models and interactive chat sessions, it's a great solution for anyone seeking to integrate AI seamlessly into their workflows.
+
+## Installation
+
+To install the package, use:
+
+```bash
+pip install aixnet-beta
+```
+
+This will install the latest version of the AIXNet Beta package, making it easy to start using the features immediately.
+
+## Usage
+
+Here's a sample usage to demonstrate how easy it is to get started with AIXNet Beta:
+
+```python
+# Initialize the AzureFM object
+azure_fm = AzureFM(
+    model="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    api_key="REQUEST_FOR_API_KEY",
+    protocol="You are a helpful assistant.")
+
+# Start chat
+azure_fm.start_chat()
+```
+
+With the `start_chat` method, AIXNet allows for a smooth and interactive chat session, where users can engage directly with AI models in a conversational format. The AI model listens to user prompts and responds accordingly. Here’s an example of how the chat session might unfold:
+
+```
+🤖 Start chatting with us! Enter 'EXIT' to quit. 🛑
+🧑 Human: tell me a joke
+🤖 Bot: A man walked into a library and asked the librarian, "Do you have any books on Pavlov's dogs and Schrödinger's cat?"
+
+The librarian replied, "It rings a bell, but I'm not sure if it's here or not."
+🧑 Human: EXIT
+🙌 Thank you for using the chatbot! Have a great day! 🌟
+```
+
+### Additional Features
+
+AIXNet Beta comes with a number of helpful features for working with AI models. Here are a few of them:
+
+#### List Models
+
+You can easily list all available models using the `list_models()` method. This is helpful for developers who need to quickly see what models are supported and choose the best one for their use case.
+
+```python
+# List models
+azure_fm.list_models()
+```
+
+Expected output:
+
+```
+Available models: ['gpt-3.5-turbo', 'meta-llama/Llama-3-8b-chat-hf', 'meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo']
+```
+
+#### Managing Conversation History
+
+The AIXNet Beta package also allows for managing conversation history, enabling developers to track the interactions between the user and the model. You can clear, view, or add messages to the history for better control and customization.
+
+### Example:
+
+```python
+# Add a message to the conversation history
+azure_fm.add_message(role="user", content="What is AI?")
+```
+
+This feature can be useful in scenarios where conversation context needs to be preserved or reviewed.
+
+### Error Handling
+
+The `invoke_api` method has built-in error handling that ensures your application won't crash even if something goes wrong during the API request. AIXNet Beta is designed to gracefully manage exceptions and provide informative error messages to help developers quickly debug and resolve issues.
+
+### Benefits
+
+- **Simplicity**: AIXNet Beta abstracts away the complexities of API requests and payload construction, letting developers focus on building the actual functionality of their applications.
+- **Flexibility**: Supports multiple AI models, allowing you to experiment with different configurations for various use cases.
+- **Interactive Chat**: Provides an easy way to start AI-powered conversations, perfect for building chatbots, virtual assistants, or interactive tools.
+- **Error-Resilient**: With built-in error handling, your application stays robust even when unexpected issues arise.
+
+### License
+
+This project is licensed under the MIT License, making it free and open to modification and redistribution. You can freely use it in your own projects, including commercial applications, with minimal restrictions.
