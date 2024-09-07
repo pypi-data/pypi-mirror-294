@@ -1,0 +1,7 @@
+aixnet_beta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aixnet_beta/fm.py,sha256=s-6GFXh3Bnr382onlqPqaa4hOyXJ4-DrR3zYPp-1YpM,3474
+aixnet_beta/meta_llama.py,sha256=i-VO0VfY6bOOWB1REthM006WqAEQkx_IdHFEZs6NC6g,3183
+aixnet_beta/nvidia.py,sha256=TTC3BwGGKAXupepMf7l4laBNYF4XDtsSDG_UFvow8mE,2856
+aixnet_beta-0.2.5.dist-info/METADATA,sha256=NfGjNTGc3huXZWeslkSxBYpcoDNmvTSwVe8DeUlb6Jo,4862
+aixnet_beta-0.2.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aixnet_beta-0.2.5.dist-info/RECORD,,
