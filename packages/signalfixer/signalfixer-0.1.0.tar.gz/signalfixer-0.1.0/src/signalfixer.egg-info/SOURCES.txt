@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/signalfixer.egg-info/PKG-INFO
+src/signalfixer.egg-info/SOURCES.txt
+src/signalfixer.egg-info/dependency_links.txt
+src/signalfixer.egg-info/requires.txt
+src/signalfixer.egg-info/top_level.txt
