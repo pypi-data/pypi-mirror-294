@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+i8.egg-info/PKG-INFO
+i8.egg-info/SOURCES.txt
+i8.egg-info/dependency_links.txt
+i8.egg-info/top_level.txt
+iranian/__init__.py
+iranian/iran.py
