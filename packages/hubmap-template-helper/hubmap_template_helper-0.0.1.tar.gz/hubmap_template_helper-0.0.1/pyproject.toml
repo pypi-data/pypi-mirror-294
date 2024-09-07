@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hubmap_template_helper"
+version = "0.0.1"
+authors = [
+  { name="Thomas C. Smits", email="tsmits@hms.harvard.edu" },
+]
+description = "Helper functions for templates within HuBMAP Data Portal"
+readme = "README.md"
+requires-python = ">=3.0"
+keywords = ["HuBMAP"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=0.2.0",
+    "pandas>=0.20.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/thomcsmits/hubmap_template_helper"
+"Bug Tracker" = "https://github.com/thomcsmits/hubmap_template_helper/issues"

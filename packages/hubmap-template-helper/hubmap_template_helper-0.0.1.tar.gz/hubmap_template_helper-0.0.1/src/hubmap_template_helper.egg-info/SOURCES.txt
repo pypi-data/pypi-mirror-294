@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/hubmap_template_helper/__init__.py
+src/hubmap_template_helper/compatibility.py
+src/hubmap_template_helper/uuids.py
+src/hubmap_template_helper.egg-info/PKG-INFO
+src/hubmap_template_helper.egg-info/SOURCES.txt
+src/hubmap_template_helper.egg-info/dependency_links.txt
+src/hubmap_template_helper.egg-info/requires.txt
+src/hubmap_template_helper.egg-info/top_level.txt
