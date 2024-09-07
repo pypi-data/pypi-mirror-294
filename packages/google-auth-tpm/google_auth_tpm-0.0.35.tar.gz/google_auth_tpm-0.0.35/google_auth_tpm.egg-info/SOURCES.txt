@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+google_auth_tpm/__init__.py
+google_auth_tpm/credentials.py
+google_auth_tpm.egg-info/PKG-INFO
+google_auth_tpm.egg-info/SOURCES.txt
+google_auth_tpm.egg-info/dependency_links.txt
+google_auth_tpm.egg-info/requires.txt
+google_auth_tpm.egg-info/top_level.txt
