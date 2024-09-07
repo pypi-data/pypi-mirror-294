@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: echoof
+Version: 0.1.0
+Summary: Ezoa's Converter for Hexadecimal Operations Over Furcadia - A base 10, 95, 220 converter for Furcadia's idiosyncrasies
+Home-page: https://eoza.page/projects/ECHOOF/
+Author: Ezoa
+Author-email: rawr@ezoa.page
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE

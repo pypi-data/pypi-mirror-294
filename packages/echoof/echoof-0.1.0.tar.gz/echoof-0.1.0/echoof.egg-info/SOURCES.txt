@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+echoof/base.c
+echoof.egg-info/PKG-INFO
+echoof.egg-info/SOURCES.txt
+echoof.egg-info/dependency_links.txt
+echoof.egg-info/entry_points.txt
+echoof.egg-info/top_level.txt
+tests/test_functional.py
