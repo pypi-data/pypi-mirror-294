@@ -1,0 +1,10 @@
+flask_annex/__init__.py,sha256=xcQ2d1oJJUsptix6ZPaSsV6CBPhEgkXGsNuHMAaMFFs,1148
+flask_annex/base.py,sha256=VSXcXWWdDboqKeAp2_BkQ6dHCqPvrwTn6_YMGv04ffs,726
+flask_annex/file.py,sha256=Zdp3FDaZpdbFO0NbSrVqXXhusEnli_Hj5-XiMIJf3zo,3173
+flask_annex/s3.py,sha256=VqufDkdKW8c_j5p5HNf5CL9vgXwi2giGfO4HRTMET4M,5080
+flask_annex/utils.py,sha256=GFfaCrg3DmDcl10HyKLlzo9gXhc5CDEQmRQVP-cXVNk,299
+Flask_Annex-2.0.0.dist-info/LICENSE,sha256=JtdKQB5LK4zdZvog8XF21HQSuK10nsSXGb9j9Qp_W3k,1078
+Flask_Annex-2.0.0.dist-info/METADATA,sha256=flo4anyAB74PQnM5YFw2wiV22_n7v2WQR3pEuAomxy4,2052
+Flask_Annex-2.0.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+Flask_Annex-2.0.0.dist-info/top_level.txt,sha256=ppa2bk8KrAxwY3cMDgOKxwA3f8kbMvckKiSZzC63FfU,12
+Flask_Annex-2.0.0.dist-info/RECORD,,
