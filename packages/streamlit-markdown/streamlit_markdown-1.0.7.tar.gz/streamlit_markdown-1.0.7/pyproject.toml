@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "streamlit-markdown"
+version = "1.0.7"
+homepage = "https://github.com/LinXueyuanStdio/streamlit-markdown"
+description = "A Streamlit component to display markdown, which supports table, code switch, LaTeX, mermaid, and more."
+authors = ["Xueyuan Lin <linxy59@mail2.sysu.eud.cn>"]
+readme = "README.md"
+packages = [{ include = "streamlit_markdown"}]
+
+license = "MIT"
+
+# Only include the out directory of the frontend
+# The order of the include/exclude lists is important!
+include = ["streamlit_markdown/frontend/out/**", "docs/**"]
+exclude = ["streamlit_markdown/frontend/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9.7 || >3.9.7,<4.0"
+streamlit = ">=0.63"
+
+[tool.poetry.group.dev.dependencies]
+watchdog = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
