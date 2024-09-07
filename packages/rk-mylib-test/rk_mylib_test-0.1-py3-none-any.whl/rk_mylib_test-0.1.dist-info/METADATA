@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rk-mylib-test
+Version: 0.1
+Summary: A simple math library for addition and subtraction
+Home-page: https://github.com/your_username/mymathlib
+Author: Your Name
+Author-email: your_email@example.com
+License: MIT
+
