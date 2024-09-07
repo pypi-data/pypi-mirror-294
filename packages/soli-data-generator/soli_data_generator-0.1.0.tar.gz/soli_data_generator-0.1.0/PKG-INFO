@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: soli-data-generator
+Version: 0.1.0
+Summary: Python library for SOLI data generation
+Home-page: https://openlegalstandard.org/
+License: MIT
+Keywords: legal,information,standard,soli,open
+Author: ALEA Institute
+Author-email: hello@aleainstitute.ai
+Requires-Python: >=3.10,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Utilities
+Provides-Extra: search
+Requires-Dist: alea-llm-client (>=0.1.0,<0.2.0)
+Requires-Dist: faker (>=28.4.1,<29.0.0)
+Requires-Dist: soli-python (>=0.1.4,<0.2.0)
+Project-URL: Documentation, https://github.com/alea-institute/soli-data-generator
+Project-URL: Repository, https://github.com/alea-institute/soli-data-generator
+Description-Content-Type: text/markdown
+
+# SOLI Data Generator
+
+SOLI Data Generator is a Python package for generating synthetic legal data using the SOLI (Standards for Open Legal Information) knowledge graph. It provides both procedural and LLM-based generation techniques to create realistic legal text and data.
+
+## Features
+
+- Procedural generation using templates with SOLI and Faker tags
+- LLM-based text generation using various AI models
+- Easy integration with the SOLI knowledge graph
+- Flexible and extensible architecture
+
+## Installation
+
+You can install SOLI Data Generator using pip:
+
+```bash
+pip install soli-data-generator
+```
+
+## Usage
+
+### Procedural Template Generation
+
+```python
+from soli import SOLI
+from soli_data_generator.procedural.template import TemplateFormatter
+
+# Initialize the SOLI graph
+soli_graph = SOLI()
+
+# Initialize the TemplateFormatter
+formatter = TemplateFormatter()
+
+# Define a template with SOLI and Faker tags
+template = """
+Company: <|company|>
+Industry: <|industry|>
+Legal Issue: <|area_of_law|>
+Document Type: <|document_artifact|>
+"""
+
+# Format the template
+formatted_text = formatter.format(template)
+
+print(formatted_text)
+```
+
+### LLM-based Text Generation
+
+```python
+from alea_llm_client import VLLMModel
+from soli_data_generator.llm.text import TextGenerator
+
+# Initialize the VLLM model
+model = VLLMModel()
+
+# Initialize the TextGenerator
+generator = TextGenerator(model)
+
+# Generate text
+generated_text = generator()
+
+print(generated_text)
+```
+
+## Examples
+
+For more detailed examples, please check the `examples/` directory in this repository.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any questions or concerns, please open an issue on the GitHub repository.
+
