@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gempy_probability
+Version: 2024.1.1
+Summary: Extra plugins for the geological modeling package GemPy
+Home-page: 
+Author: GemPy Probability Developers
+Author-email: gempy@terranigma-solutions.com
+License: EUPL
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: gempy ~=2024.2.0
+Requires-Dist: torch
+Requires-Dist: arviz
+Requires-Dist: pyro-ppl
+Provides-Extra: opt
+Requires-Dist: graphviz ; extra == 'opt'
+
