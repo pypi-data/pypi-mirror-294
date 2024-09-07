@@ -1,0 +1,14 @@
+aiohttp
+azure-identity
+coverage
+jsonpath-ng
+nest_asyncio
+pydantic
+python-dotenv
+pyyaml
+requests
+selenium
+tabulate
+tenacity
+typer[all]
+wcmatch
