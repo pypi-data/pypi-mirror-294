@@ -1,0 +1,12 @@
+docutils
+jsonpointer
+MyST-Parser
+requests
+ocdsextensionregistry>=0.0.8
+sphinx
+
+[test]
+coverage
+lxml
+pytest
+sphinx>=4.4.0
