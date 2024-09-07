@@ -1,0 +1,3 @@
+[console_scripts]
+midrasai=midrasai.cli:midrascli
+
