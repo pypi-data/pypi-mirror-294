@@ -1,0 +1,12 @@
+maker/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+maker/appstore.py,sha256=v3pW7EcHdUsDzrRL-LyiRaPwznHLF6LL3SBdBqzOQ8o,4562
+maker/badge.py,sha256=D2ZOH3p5dVjj124yHXp3A8l8erd1tHiy7mdP5eZWS2M,1455
+maker/config.py,sha256=naowCM55S4CwF5sJ1IQQSr1w0HFk36uH3D7G2EEDab8,2347
+maker/const.py,sha256=p1NZJootBpyCOcWR0tcHut5706DbhAb0z455reGh1rQ,1837
+maker/main.py,sha256=MF5h9lviEuu2GbgWaPMseLrzSWxW3n3b96aC1aeuXt4,1484
+maker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app_store_download_count_badge_maker-0.2.0.dist-info/LICENSE,sha256=_9Y-gcyBg3AegYOnwFv3RJUwQ4V4D_StkRTfZlVePN8,1065
+app_store_download_count_badge_maker-0.2.0.dist-info/METADATA,sha256=mebJEmdrZsuETli-pTX05aArcwfu6gO7HQKs0e8hTZw,8016
+app_store_download_count_badge_maker-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+app_store_download_count_badge_maker-0.2.0.dist-info/entry_points.txt,sha256=KxjE-I9-EKDtyWUBoPc5H-3u3I-VHE2h_JE_y__FXMc,71
+app_store_download_count_badge_maker-0.2.0.dist-info/RECORD,,
