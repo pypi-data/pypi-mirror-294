@@ -1,0 +1,13 @@
+docs/Makefile,sha256=i2WHuFlgfyAPEW4ssEP8NY4cOibDJrVjvzSEU8_Ggwc,634
+docs/changelog.rst,sha256=x3B05yMGaEY2Ay0WAO1724iaRjG3eWYBg_qIR5Ys_Do,1135
+docs/codelist.csv,sha256=uPE7Kq-44JA5KhdZoLvql_TMFvK1yMPwBy2g_TQFvLc,59
+docs/conf.py,sha256=0QGK_aKyYajCy8IOjEEe76iRuiBUBBXEAu0PVc6Iml8,2565
+docs/index.rst,sha256=pLDnBYoDY7GRGVIcDoEXZDKOuhI1cZ7iH9SV-dDCi70,2574
+docs/requirements.txt,sha256=Jlpco83K7sYgScPxRKwl2-XB0fDFvmrslrBO2SGjTYo,5
+docs/schema.json,sha256=EnCfC7NWGJHkIi69Nq_PEtzi35DVK96WzHXnpwdMZEI,84
+sphinxcontrib/opencontracting.py,sha256=zRlIzHKvYzAZ7sivjGTyGEy8Ta0KmHiVaWDZJApU0EE,13541
+sphinxcontrib_opencontracting-0.0.10.dist-info/LICENSE,sha256=GiBa9M1hffdMshbfP2-6kNiwIuTVkGIWFp4UxX7CSCM,1528
+sphinxcontrib_opencontracting-0.0.10.dist-info/METADATA,sha256=5ul6nnvGwITq228CNZLTL-OU4fN8c5GXRbAi0CIFu7k,2572
+sphinxcontrib_opencontracting-0.0.10.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+sphinxcontrib_opencontracting-0.0.10.dist-info/top_level.txt,sha256=FaRQ9nKyy_f3WjCra2jpNNJJjDkxrKI-blqSzNygyJ8,24
+sphinxcontrib_opencontracting-0.0.10.dist-info/RECORD,,
