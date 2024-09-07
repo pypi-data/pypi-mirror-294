@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: smartextract
+Version: 0.1
+Summary: smartextract Python SDK
+Project-URL: Documentation, https://docs.smartextract.ai
+Project-URL: Issues, https://github.com/dida-do/smartextract-sdk-python/issues
+Project-URL: Source, https://github.com/dida-do/smartextract-sdk-python
+Author-email: dida Datenschmiede GmbH <info@dida.do>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: httpx>=0.25
+Requires-Dist: pydantic[email]<3,>=2.0
+Provides-Extra: cli-extras
+Requires-Dist: pycomplete>=0.4; extra == 'cli-extras'
+Requires-Dist: pygments>=2.0; extra == 'cli-extras'
+Requires-Dist: pyyaml>=5.1; extra == 'cli-extras'
+Description-Content-Type: text/markdown
+
+# smartextract Python SDK
+
+[![PyPI - Version](https://img.shields.io/pypi/v/smartextract.svg)](https://pypi.org/project/smartextract)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/smartextract.svg)](https://pypi.org/project/smartextract)
+
+This package provides convenient access to the [smartextract REST
+API](https://api.smartextract.ai/docs) for Python applications.
