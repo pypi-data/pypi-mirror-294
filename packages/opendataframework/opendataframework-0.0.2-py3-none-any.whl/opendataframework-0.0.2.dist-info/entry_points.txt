@@ -1,0 +1,3 @@
+[console_scripts]
+opendataframework=opendataframework.__main__:main
+
