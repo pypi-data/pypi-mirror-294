@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/assayo/__init__.py
+src/assayo.egg-info/PKG-INFO
+src/assayo.egg-info/SOURCES.txt
+src/assayo.egg-info/dependency_links.txt
+src/assayo.egg-info/top_level.txt
