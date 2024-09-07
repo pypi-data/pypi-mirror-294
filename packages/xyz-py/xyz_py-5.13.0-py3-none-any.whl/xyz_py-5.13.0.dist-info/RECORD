@@ -1,0 +1,11 @@
+xyz_py/__init__.py,sha256=oxJ2rscIdqZfL-UWGcpasmdY_FVwF57c0ovkN-BhBKE,84
+xyz_py/atomic.py,sha256=QYkr82RTq7Cv_k7cRmISrZl_XAylA6Fe2bSl0VBgfIU,8117
+xyz_py/cli.py,sha256=AQMA4ZKjcHpcdnUj8chSKgoOR5rnZAoOcc_R1mVmuTw,16959
+xyz_py/version.py,sha256=MRveeStj_l-EXDIb5bXchGJwds-qRI6J3XukpI2ahlQ,23
+xyz_py/xyz_py.py,sha256=ja17cbvO3zet9Sm3vBuZ9eCAtZ3dFClpXsEIyXNt-To,48161
+xyz_py-5.13.0.dist-info/LICENSE,sha256=8Qt6ttdTzPf7wDSos2lFRAkJfKi9xBkcE4Bx2oYcfeU,35072
+xyz_py-5.13.0.dist-info/METADATA,sha256=5xbs3KaNIO9zDKQ9d5RarYqtyVvcF9rHPxC0HrydTGY,1392
+xyz_py-5.13.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+xyz_py-5.13.0.dist-info/entry_points.txt,sha256=e_xmEmbNR0NyMZEM1UilpzQUEiBZ9JGF08Ezg9aWtv4,43
+xyz_py-5.13.0.dist-info/top_level.txt,sha256=lq1IcZUcx0jJhQ-ksdZlSL0uREn2OcD5V2nygu_fYMg,7
+xyz_py-5.13.0.dist-info/RECORD,,
