@@ -1,0 +1,21 @@
+omlish==0.0.0.dev18
+
+[all]
+torch~=2.4
+mwparserfromhell~=0.6
+wikitextparser~=0.56
+
+[all:python_version < "3.13"]
+lxml~=5.3
+
+[torch]
+torch~=2.4
+
+[wiki]
+mwparserfromhell~=0.6
+wikitextparser~=0.56
+
+[xml]
+
+[xml:python_version < "3.13"]
+lxml~=5.3
