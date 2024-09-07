@@ -1,0 +1,9 @@
+README.md
+setup.py
+termipass/Todo.py
+termipass/__init__.py
+termipass/termipass.py
+termipass.egg-info/PKG-INFO
+termipass.egg-info/SOURCES.txt
+termipass.egg-info/dependency_links.txt
+termipass.egg-info/top_level.txt
