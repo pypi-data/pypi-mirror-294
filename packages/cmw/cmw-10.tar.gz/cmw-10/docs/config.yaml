@@ -1,0 +1,9 @@
+---
+Title: CommonMark Website
+Heading: <a href="/">CommonMark Website</a>
+Tagline: An open-source initiative.
+Navigation:
+  - URL: /feedback.html
+    Text: Feedback
+  - URL: https://github.com/mizuki-hikaru/cmw
+    Text: GitHub Repository

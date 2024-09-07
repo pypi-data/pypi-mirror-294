@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CommonMark Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    pre {
+      padding: 1em;
+      border: 1px solid #999;
+      background-color: #eee;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #f7f7f7;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #777;
+    }
+
+    header img {
+      vertical-align: middle;
+    }
+
+    nav {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    a, a:visited {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid #ddd;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="/">CommonMark Website</a></h1>
+      <p>An open-source initiative.</p>
+    </header>
+
+    <nav><a href='/feedback.html'>Feedback</a><a href='https://github.com/mizuki-hikaru/cmw'>GitHub Repository</a></nav>
+    
+    <link rel="stylesheet" href="https://formflow.org/styles.css" />
+<form
+    class="formflow"
+    id="formflow"
+    action="https://api.formflow.org"
+    method="POST"
+    enctype="multipart/form-data"
+>
+    <!-- REQUIRED FIELDS: user_id -->
+    <input type="hidden" name="user_id" value="user_id_mhOmxMBPWlxrOpYOlzJLvg" />
+    <label for="field-message">Message:</label>
+    <textarea id="field-message" name="Message" placeholder="Message"></textarea>
+    <label for="field-attachments">File attachments:</label>
+    <input type="file" name="Attachments" multiple />
+    <button type="submit">Send</button>
+</form>
+<script src="https://hikaru.org/js/FRM.js"></script>
+<script>FRM.listen(document.getElementById("formflow"));</script>
+
+
+    <footer>
+      
+    </footer>
+  </div>
+</body>
+
+</html>
