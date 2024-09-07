@@ -1,0 +1,10 @@
+pyworldatlas/__init__.py,sha256=1StBvwgQwKXZeqkNlmcmA-t45hWXAV1ywLybdMH0WgQ,50
+pyworldatlas/atlas.py,sha256=Rxuay72FfTXnhq4VIr1iTMNXLX0a1GdiUTDGWuoVv44,18172
+pyworldatlas/cli.py,sha256=YYGYpzlDUqDAJFhGaBGDg09OvkS6SrLWqXMloyl87BU,95
+pyworldatlas/worldatlas.sqlite3,sha256=SrYx9FHz9rrKMQ0fUjCZa2h9AyCeX8OFhRl-LCPHHyk,294912
+pyworldatlas/worldatlas.sqlite3.gz,sha256=pnWV7Bh7d_v-_xABmvJQVl-O-JY4Q6UcOCPUsJ3leCY,11729
+pyworldatlas-0.0.11.dist-info/METADATA,sha256=iNtozkLHvED2fiM69RVBqCLN6__6rO3-r9pzsDn1OQQ,5479
+pyworldatlas-0.0.11.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+pyworldatlas-0.0.11.dist-info/entry_points.txt,sha256=QbVstxbATGgpy9YrSO97PC0fvZlfAhqZIK-iijWrh8s,55
+pyworldatlas-0.0.11.dist-info/top_level.txt,sha256=K5W6fzfZHAJ9fGtD9RFtMbyWi8yi3vt-5G3TAHJccRk,13
+pyworldatlas-0.0.11.dist-info/RECORD,,
