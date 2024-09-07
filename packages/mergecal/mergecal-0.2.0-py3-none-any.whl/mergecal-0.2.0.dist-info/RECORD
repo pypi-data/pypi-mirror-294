@@ -1,0 +1,10 @@
+mergecal/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+mergecal/__main__.py,sha256=k9XNecsTIKqEs15qDFEDHIRPhTfQguXvGXq1QquokXc,103
+mergecal/cli.py,sha256=69ObjTzEbb-PrzOm-hVgVxJ9NjQLDDq7o1c5DO4Cvfw,1619
+mergecal/main.py,sha256=zp5ruCRSlP2chPfC3IPeKXlsyN5iDJbXVebsPw9SgtY,1789
+mergecal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mergecal-0.2.0.dist-info/LICENSE,sha256=YTMpUuWzphSKVb-OSpx-qI51xL_fz8q9PhpLCd5oHcA,35111
+mergecal-0.2.0.dist-info/METADATA,sha256=aD9TMIlKYrQZI0JyiDwd5qLh0qHfzYAMzwSpJyRgOdQ,5081
+mergecal-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mergecal-0.2.0.dist-info/entry_points.txt,sha256=XuHuSVE2p9Sjyi2moLjiJ2XHvlsJe3G-S6SJaLZihOI,45
+mergecal-0.2.0.dist-info/RECORD,,
