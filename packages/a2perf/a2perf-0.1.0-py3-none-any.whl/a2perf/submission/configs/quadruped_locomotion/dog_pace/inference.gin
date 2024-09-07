@@ -1,0 +1,2 @@
+include "configs/quadruped_locomotion/inference.gin"
+include "configs/quadruped_locomotion/dog_pace/domain.gin"
