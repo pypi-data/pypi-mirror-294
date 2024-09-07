@@ -1,0 +1,9 @@
+README.rst
+setup.py
+popcorn_diskpop/__init__.py
+popcorn_diskpop/popcorn_diskpop.py
+popcorn_diskpop.egg-info/PKG-INFO
+popcorn_diskpop.egg-info/SOURCES.txt
+popcorn_diskpop.egg-info/dependency_links.txt
+popcorn_diskpop.egg-info/requires.txt
+popcorn_diskpop.egg-info/top_level.txt
