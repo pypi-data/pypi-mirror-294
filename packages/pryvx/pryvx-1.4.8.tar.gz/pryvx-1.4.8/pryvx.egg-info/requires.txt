@@ -1,0 +1,6 @@
+grpcio
+grpcio-tools
+protobuf
+sympy
+numpy==1.24.4
+scikit-learnrequests
