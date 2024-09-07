@@ -1,0 +1,3 @@
+pandas
+pandas_market_calendars
+pyzmq

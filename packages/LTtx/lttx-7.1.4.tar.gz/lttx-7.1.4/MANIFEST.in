@@ -1,0 +1,8 @@
+include README.md              # 包含 README 文件
+include LICENSE                # 包含 LICENSE 文件
+include requirements.txt       # 包含 requirements.txt 文件
+
+# 包含 tx 目录下的所有 Python 文件和指定的其他文件
+recursive-include tx *.py
+include tx/Config.txt          # 确保包含 Config.txt
+include tx/客户端函数表.md      # 包含 客户端函数表.md 文件
