@@ -1,0 +1,2 @@
+[console_scripts]
+pict = pict.cli:main
