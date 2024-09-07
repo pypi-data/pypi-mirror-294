@@ -1,0 +1,2 @@
+[console_scripts]
+tidy_vcf = tidy_vcf.tidy_vcf:main
