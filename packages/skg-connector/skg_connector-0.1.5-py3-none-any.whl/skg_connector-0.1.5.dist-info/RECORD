@@ -1,0 +1,16 @@
+skg_main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skg_main/autotwin_connector.py,sha256=gwNL4wcfU_1eiUmuQcTK3IAErS-VJhmcR1jl_Q684Eg,513
+skg_main/skg_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skg_main/skg_logger/logger.py,sha256=RHxCnSRLz5Hnk6qx03Mi5ZuK-m-54lhDGw8AYtomVC8,2867
+skg_main/skg_mgrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skg_main/skg_mgrs/connector_mgr.py,sha256=FzH9n7VcBbeHT_nbsB44bBRUaNweqyiQNeMIsgfRTAk,1313
+skg_main/skg_mgrs/skg_reader.py,sha256=UWENJ-521a5Ck6RQZZEnpt8N3cDASAVRHOp1IVpa6QE,27212
+skg_main/skg_mgrs/skg_writer.py,sha256=BFzecrFI3TNVm5KTbveKwSk0d5nSynsdzE0zeoMIy48,10794
+skg_main/skg_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skg_main/skg_model/automata.py,sha256=TnIValkbOrfatDYHTVCdvMoM5UBWhxfHtS_3f9CPOpc,1239
+skg_main/skg_model/schema.py,sha256=gUnih0C9G87WCwkT_mT913T9pzWel3_TPqYoWXi2ZjA,3599
+skg_main/skg_model/semantics.py,sha256=wAU8FzLX_xvacFQSOWrecZP_JxKz0agg25D7y2D9YPA,3609
+skg_connector-0.1.5.dist-info/LICENSE.md,sha256=jPXIo7OXXvltH4qRFEMfHLkY7Ly-yJmoiV5QdrPAHTc,1533
+skg_connector-0.1.5.dist-info/METADATA,sha256=fWTWfHEIeATu9Thx6kXn_hIpBu0o8w3QToNFAJgk3BM,2159
+skg_connector-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+skg_connector-0.1.5.dist-info/RECORD,,
