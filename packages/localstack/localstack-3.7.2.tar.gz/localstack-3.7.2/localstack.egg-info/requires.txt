@@ -1,0 +1,6 @@
+localstack-core
+localstack-ext==3.7.2
+
+[runtime]
+localstack-core[runtime]
+localstack-ext[runtime]==3.7.2
