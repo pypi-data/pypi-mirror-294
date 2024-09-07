@@ -1,0 +1,7 @@
+include cppvec/requirements.txt
+include cppvec/thirdparty.json
+include cppvec/batchcompile.py
+include cppvec/cppvect.pyx
+include cppvec/cppvect_compile.py
+include cppvec/LICENSE
+include cppvec/README.MD
