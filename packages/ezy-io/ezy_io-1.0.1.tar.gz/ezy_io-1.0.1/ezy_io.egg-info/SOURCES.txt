@@ -1,0 +1,10 @@
+README.md
+ezy_io.py
+setup.cfg
+setup.py
+utils.py
+ezy_io.egg-info/PKG-INFO
+ezy_io.egg-info/SOURCES.txt
+ezy_io.egg-info/dependency_links.txt
+ezy_io.egg-info/entry_points.txt
+ezy_io.egg-info/top_level.txt

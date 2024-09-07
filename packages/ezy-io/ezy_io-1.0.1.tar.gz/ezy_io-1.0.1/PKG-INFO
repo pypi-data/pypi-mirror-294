@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ezy_io
+Version: 1.0.1
+Summary: A CLI tool that manages files and directories.
+Home-page: https://github.com/ayoub-aberbach/ezy_io
+Author: Ayoub A.
+Author-email: aberbach.me@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: click
+Requires: colorama
+Requires-Python: >=3.6
+
+List, Create, and Delete files and directories. Show the content of every file.
