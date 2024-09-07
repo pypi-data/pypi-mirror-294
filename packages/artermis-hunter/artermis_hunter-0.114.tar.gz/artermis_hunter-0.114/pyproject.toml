@@ -1,0 +1,14 @@
+[project]
+dynamic = ["readme", "requires-python", "authors"]
+
+name = "artermis-hunter"
+version = "0.114"
+dependencies = [
+  "toml==0.10.2",
+  "beautifulsoup4==4.12.3"
+]
+description = "This package does automated vulnerability enumeration and recommends exploits"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
