@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mcvt
+Version: 0.1.0
+Summary: Module pour obtenir l'heure actuelle dans un pays donné
+Home-page: https://github.com/votre-utilisateur/cyprien53
+Author: Cyprien Mevi
+Author-email: cyprienmevi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pytz
+
