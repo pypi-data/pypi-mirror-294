@@ -1,0 +1,12 @@
+fastapi==0.111.0
+google-ads-api-report-fetcher==1.14.3
+google-cloud-videointelligence
+google-cloud-vision
+jq
+langchain-community==0.2.7
+langchain-core==0.2.21
+langchain-google-genai==1.0.7
+langchain-google-vertexai
+langchain==0.2.7
+pillow
+smart_open
