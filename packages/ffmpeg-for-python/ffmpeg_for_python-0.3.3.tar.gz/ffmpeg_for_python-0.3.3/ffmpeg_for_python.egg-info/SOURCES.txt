@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+assets/ffmpeg-for-python-logo.png
+ffmpeg_for_python/__config__.py
+ffmpeg_for_python/__init__.py
+ffmpeg_for_python/__utils.py
+ffmpeg_for_python/__version__.py
+ffmpeg_for_python/exeptions.py
+ffmpeg_for_python/ffmpeg.py
+ffmpeg_for_python.egg-info/PKG-INFO
+ffmpeg_for_python.egg-info/SOURCES.txt
+ffmpeg_for_python.egg-info/dependency_links.txt
+ffmpeg_for_python.egg-info/not-zip-safe
+ffmpeg_for_python.egg-info/top_level.txt
+ffmpeg_for_python/ffmpeg-bin/readme.md
