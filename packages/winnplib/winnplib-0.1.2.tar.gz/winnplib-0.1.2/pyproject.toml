@@ -1,0 +1,22 @@
+[project]
+name = "winnplib"
+version = "0.1.2"
+authors = [
+  { name = "Maxplayz7566" },
+]
+description = "A simple API to get Windows Media information, including cover art."
+readme = "README.md"
+requires-python = ">=3.8,<3.9"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "winrt",
+  "pillow"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
