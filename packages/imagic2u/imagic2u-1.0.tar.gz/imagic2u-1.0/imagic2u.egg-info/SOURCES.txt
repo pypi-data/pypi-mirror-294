@@ -1,0 +1,10 @@
+README.md
+setup.py
+imagic2u/__init__.py
+imagic2u/editor.py
+imagic2u/filtros.py
+imagic2u.egg-info/PKG-INFO
+imagic2u.egg-info/SOURCES.txt
+imagic2u.egg-info/dependency_links.txt
+imagic2u.egg-info/requires.txt
+imagic2u.egg-info/top_level.txt

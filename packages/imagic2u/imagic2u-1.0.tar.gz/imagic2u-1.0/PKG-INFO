@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: imagic2u
+Version: 1.0
+Summary: Uma biblioteca para manipulação e edição de imagens usando Pillow.
+Home-page: https://github.com/R-gu3des
+Author: R-gu3des
+Author-email: ruan.guedes789@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Imagic
+
+Uma biblioteca Python para manipulaÃ§Ã£o de imagens, usando Pillow.
+
+## Funcionalidades
+
+- Redimensionamento de imagens
+- ConversÃ£o para preto e branco
+- AdiÃ§Ã£o de texto em imagens
+- AplicaÃ§Ã£o de filtros de desfoque e inversÃ£o de cores
