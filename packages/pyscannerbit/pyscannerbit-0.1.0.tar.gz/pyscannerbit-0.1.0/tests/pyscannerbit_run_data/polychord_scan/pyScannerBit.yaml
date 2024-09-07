@@ -1,0 +1,82 @@
+Scanner:
+  scanners:
+    polychord:
+      tol: 1
+      nlive: 20
+      plugin: polychord
+      like: LogLike
+    diver:
+      plugin: diver
+      like: LogLike
+      verbosity: 2
+      NP: 1000
+    multinest:
+      plugin: multinest
+      like: LogLike
+      nlive: 1000
+      tol: 0.5
+    twalk:
+      plugin: twalk
+      sqrtR: 1.01
+    random:
+      plugin: random
+      point_number: 10000
+      like: LogLike
+    toy_mcmc:
+      like: LogLike
+      plugin: toy_mcmc
+      point_number: 10000
+    badass:
+      like: LogLike
+      plugin: badass
+      points: 1000
+      jumps: 10
+    pso:
+      plugin: jswarm
+      like: LogLike
+      NP: 400
+      adaptive_phi: true
+      adaptive_omega: true
+      verbosity: 2
+  use_scanner: polychord
+  default_output_path: pyscannerbit_run_data/polychord_scan/scanner_plugins/
+Printer:
+  printer: hdf5
+  options:
+    output_file: results.hdf5
+    group: /
+    delete_file_on_restart: true
+    default_output_path: pyscannerbit_run_data/polychord_scan/samples/
+KeyValues:
+  default_output_path: pyscannerbit_run_data/polychord_scan
+  likelihood:
+    model_invalid_for_lnlike_below: -1000000
+Parameters:
+  default:
+    x: ~
+    y: ~
+    z: ~
+Priors:
+  x_prior:
+    prior_type: flat
+    parameters:
+      - default::x
+    range:
+      - 0
+      - 1
+  y_prior:
+    prior_type: flat
+    parameters:
+      - default::y
+    range:
+      - 0
+      - 1
+  z_prior:
+    prior_type: flat
+    parameters:
+      - default::z
+    range:
+      - 0
+      - 1
+Logger:
+  default_output_path: pyscannerbit_run_data/polychord_scan/logs/

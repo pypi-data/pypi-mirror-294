@@ -1,0 +1,73 @@
+Parameters:
+  model1:
+    x: ~
+Priors:
+  x_prior:
+    prior_type: flat
+    parameters:
+      - model1::x
+    range:
+      - 1
+      - 40
+Printer:
+  printer: hdf5
+  options:
+    output_file: results.hdf5
+    group: /
+    delete_file_on_restart: true
+    default_output_path: pyscannerbit_run_data//samples/
+Scanner:
+  scanners:
+    multinest:
+      plugin: multinest
+      like: LogLike
+      tol: 0.5
+      nlive: 100
+    twalk:
+      plugin: twalk
+      like: LogLike
+      sqrtR: 1.05
+    polychord:
+      plugin: polychord
+      like: LogLike
+      tol: 1
+      nlive: 20
+    diver:
+      plugin: diver
+      like: LogLike
+      convthresh: 0.01
+      NP: 300
+    random:
+      plugin: random
+      like: LogLike
+      point_number: 10000
+    toy_mcmc:
+      plugin: toy_mcmc
+      like: LogLike
+      point_number: 10
+    badass:
+      plugin: badass
+      like: LogLike
+      points: 1000
+      jumps: 10
+    pso:
+      plugin: pso
+      like: LogLike
+      NP: 400
+  use_scanner: toy_mcmc
+  objectives:
+    gaussian:
+      plugin: gaussian
+      purpose: LogLike
+      parameters:
+        param...20: ~
+        range:
+          - -5
+          - 5
+  default_output_path: pyscannerbit_run_data//scanner_plugins/
+KeyValues:
+  default_output_path: pyscannerbit_run_data/
+  likelihood:
+    model_invalid_for_lnlike_below: -1000000
+Logger:
+  default_output_path: pyscannerbit_run_data//logs/

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyscannerbit
+Version: 0.1.0
+Summary: A python interface to the GAMBIT scanning module, ScannerBit
+Author: Ben Farmer
+Author-email: ben.farmer@gmail.com
+License-File: LICENSE
+Requires-Dist: six
+Requires-Dist: pyyaml
+Requires-Dist: h5py
+Requires-Dist: mpi4py
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Provides-Extra: sqlite3printer
+Requires-Dist: sqlite3; extra == "sqlite3printer"
