@@ -1,0 +1,11 @@
+torch
+numpy
+m3learning-util
+
+[:python_version > "3.9"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
