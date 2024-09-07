@@ -1,0 +1,15 @@
+clipmorpher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clipmorpher/app.py,sha256=11qd6DjOQQovQ5eMVDGxSHr1JGM28-vd2ZbYS_jwf5w,6136
+clipmorpher/clipMorpher.py,sha256=sn9JTcy-bpD5WuR0GN5kKQypYfqP42skAYFC8AHIh4A,19255
+clipmorpher/dataLoader.py,sha256=Prnj2h8sEBXg8N6pzoiJbNIv1CDZrKz-omb4VZs7_6I,6395
+clipmorpher/file.py,sha256=lNq7Q0GJb-u0OSiit3HqHcLxJN3GDPM_rYIMqJikVwg,24995
+clipmorpher/loss.py,sha256=mCTr_1ybMY3irHMWTi6teLuFhAgROlsa4qkjQWryeLA,1296
+clipmorpher/talkNet.py,sha256=-XbT7G7QoZahO57y3JJJe205OC-fqK3-mSfy0fUF53U,5039
+clipmorpher/test.py,sha256=x7A0edPOJ3Fqd83QMvR8gxgJzecfxyyVo_2dK5ryn3U,789
+clipmorpher/trainTalkNet.py,sha256=ykay-v6Xr2GnEx93I91iAvZnfCgNKevvPwnj_D-ZVFw,4426
+clipmorpher/videoUtils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clipmorpher/videoUtils/video_utils.py,sha256=wxZildw9gCAQUjqw60pZonza2FRwhf3ApzwpVUb8JkA,6872
+OmniMorpher-2.1.dist-info/METADATA,sha256=TL2s4YlswMcxELKYYAxvZiQ3AXrF3a0AOe9hoqGuvCU,935
+OmniMorpher-2.1.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+OmniMorpher-2.1.dist-info/top_level.txt,sha256=jwd8_9rhQNpQIDVib9rEvv4q0l45QDSWKd6MtLGTehw,12
+OmniMorpher-2.1.dist-info/RECORD,,
