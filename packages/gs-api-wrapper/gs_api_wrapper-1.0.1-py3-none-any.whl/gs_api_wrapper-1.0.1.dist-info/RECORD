@@ -1,0 +1,7 @@
+gs_api_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gs_api_wrapper/audit.py,sha256=Iv6d1rgmjFBxocRqDdQr-vTzyrSszoZObLsoTYsK4AU,448
+gs_api_wrapper/client.py,sha256=VukTtzehTTgL-9N_12DsVpzaKPHfp0LQScndxWmyrcI,1351
+gs_api_wrapper-1.0.1.dist-info/METADATA,sha256=_MiaVlB1VZvQrn-Ra6CnTNRQTlymSZtMeK_z6-FuEHQ,435
+gs_api_wrapper-1.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+gs_api_wrapper-1.0.1.dist-info/top_level.txt,sha256=xzwOmbrdgKsLmDbVecWLGkBUk6OEH7Zjq0YwOJTNrSI,15
+gs_api_wrapper-1.0.1.dist-info/RECORD,,
