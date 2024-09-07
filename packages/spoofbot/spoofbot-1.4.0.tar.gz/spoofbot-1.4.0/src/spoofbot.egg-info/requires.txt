@@ -1,0 +1,17 @@
+requests
+urllib3
+bs4
+pillow
+toposort
+brotli
+publicsuffix2
+loguru
+python-dateutil
+aiohttp
+pyopenssl
+
+[dev]
+docker
+
+[mitmproxy]
+mitmproxy~=7.0.4
