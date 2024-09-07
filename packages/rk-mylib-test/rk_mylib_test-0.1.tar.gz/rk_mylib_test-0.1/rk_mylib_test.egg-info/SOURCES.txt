@@ -1,0 +1,6 @@
+README.md
+setup.py
+rk_mylib_test.egg-info/PKG-INFO
+rk_mylib_test.egg-info/SOURCES.txt
+rk_mylib_test.egg-info/dependency_links.txt
+rk_mylib_test.egg-info/top_level.txt
