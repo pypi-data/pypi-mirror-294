@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: envpp
+Version: 1.0.1
+Summary: 
+Author: moose23967
+Author-email: moose23967@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Env++ Python Client
+## Installation
+```bash
+pip install envpp
+```
+## Usage
+First you need to register with the service:
+```bash
+envpp api auth sign-up
+```
+Then enter the email and password of the new account.
+**Or if you are already registered in the service**:
+```bash
+envpp api auth sign-in
+```
+**After that, you will receive a token**. There is very little left to start using. Now let's set the token to the client:
+```bash
+envpp set-token {your_token_here}
+```
+🎉 Congratulations. Now you can add the items you need
+```bash
+envpp api items create --key foo --value bar
+```
+Generate the resulting items
+```bash
+envpp generate
+```
+Let's go back to the code
+```python
+# main.py
+from envpp import envpp
+
+print(envpp['foo'])
+```
+```bash
+python main.py
+> bar
+```
+Everything is typed
+
