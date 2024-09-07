@@ -1,0 +1,7 @@
+{
+    "SERVER": "az-sql-gdp-prod-uks.database.windows.net", 
+    "DATABASE": "az-syn-gdp-prod-uks", 
+    "USERNAME": "drumble_adm_sql", 
+    "PASSWORD": "X!2eLtGdRaCqdPaN9Rn94X", 
+    "AUTH": "ActiveDirectoryInteractive"      
+}
