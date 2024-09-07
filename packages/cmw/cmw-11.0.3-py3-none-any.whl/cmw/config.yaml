@@ -1,0 +1,17 @@
+---
+Title: Example CommonMark Website
+Heading: Welcome to Your New Website
+Tagline: A Simple Starting Point for Your Online Presence
+Navigation:
+  - URL: /home.html
+    Text: Home
+  - URL: /about.html
+    Text: About
+  - URL: /blog.html
+    Text: Blog
+  - URL: /projects.html
+    Text: Projects
+  - URL: /contact.html
+    Text: Contact
+Footer: |
+  &copy; 2024 Your Name. All Rights Reserved.
