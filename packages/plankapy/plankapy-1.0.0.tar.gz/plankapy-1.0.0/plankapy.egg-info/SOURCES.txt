@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+plankapy/__init__.py
+plankapy/plankapy.py
+plankapy.egg-info/PKG-INFO
+plankapy.egg-info/SOURCES.txt
+plankapy.egg-info/dependency_links.txt
+plankapy.egg-info/top_level.txt
+plankapy/config/templates.json
