@@ -1,0 +1,9 @@
+README.md
+setup.py
+fdsauth/Consumer.py
+fdsauth/__init__.py
+fdsauth.egg-info/PKG-INFO
+fdsauth.egg-info/SOURCES.txt
+fdsauth.egg-info/dependency_links.txt
+fdsauth.egg-info/requires.txt
+fdsauth.egg-info/top_level.txt
