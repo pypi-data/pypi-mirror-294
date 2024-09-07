@@ -1,0 +1,3 @@
+[console_scripts]
+title-belt-nhl=title_belt_nhl.main:cli
+
