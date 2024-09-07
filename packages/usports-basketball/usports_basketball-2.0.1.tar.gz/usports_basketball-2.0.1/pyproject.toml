@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=46.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usports-basketball"
+version = "2.0.1"
+dependencies = [
+    "requests>=2.32",
+    "beautifulsoup4>=4.12",
+    "pandas>=2.2",
+    "playwright>=1.45",
+]
+requires-python = ">=3.9"
+authors = [{ name = "OJ Adeyemi", email = "ojieadeyemi@gmail.com" }]
+description = "A Python package for current U Sports basketball stats."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = [
+    "basketball",
+    "usports",
+    "statistics",
+    "data analysis",
+    "web scraping",
+    "python package",
+    "pandas",
+    "beautifulsoup",
+    "playwright",
+    "sports analytics",
+    "college basketball",
+    "developer tools",
+    "data fetching",
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+
+[project.urls]
+Repository = "https://github.com/ojadeyemi/usports-basketball.git"
+Issues = "https://github.com/ojadeyemi/usports-basketball/issues"
+Changelog = "https://github.com/ojadeyemi/usports-basketball/blob/main/CHANGELOG.md"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+test = ["pytest==8.4"]
