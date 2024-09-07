@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aijson-utils
+Version: 0.1.3
+Summary: AI JSON Utilities
+License: MIT
+Author: Rafael Irgolic
+Author-email: hello@irgolic.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aijson-core (>=0.1.16,<0.2.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+# AI JSON – utils
+
+This package contains AI JSON utility actions.
