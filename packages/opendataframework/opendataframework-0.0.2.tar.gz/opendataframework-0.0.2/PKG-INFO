@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: opendataframework
+Version: 0.0.2
+Summary: Open Data Framework is an open source, full stack data framework.
+Home-page: https://github.com/opendataframework/opendataframework
+License: MIT
+Author: mykytapavlov
+Author-email: mykytapavlov@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Project-URL: Repository, https://github.com/opendataframework/opendataframework
+Description-Content-Type: text/markdown
+
+# Open Data Framework
+Open source, full stack data framework.
+
