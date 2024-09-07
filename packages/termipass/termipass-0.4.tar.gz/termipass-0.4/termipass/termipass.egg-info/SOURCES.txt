@@ -1,0 +1,6 @@
+README.md
+setup.py
+termipass/termipass.egg-info/PKG-INFO
+termipass/termipass.egg-info/SOURCES.txt
+termipass/termipass.egg-info/dependency_links.txt
+termipass/termipass.egg-info/top_level.txt
