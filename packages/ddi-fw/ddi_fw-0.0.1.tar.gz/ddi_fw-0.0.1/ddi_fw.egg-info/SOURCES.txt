@@ -1,0 +1,6 @@
+README.md
+setup.py
+ddi_fw.egg-info/PKG-INFO
+ddi_fw.egg-info/SOURCES.txt
+ddi_fw.egg-info/dependency_links.txt
+ddi_fw.egg-info/top_level.txt
