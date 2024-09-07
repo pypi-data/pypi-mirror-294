@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dahood
+Version: 0.0.1
+Summary: Use the DaHood Module to add LUA Implementation into python projects
+Author: AntiDevelopment
+License-File: license.txt
