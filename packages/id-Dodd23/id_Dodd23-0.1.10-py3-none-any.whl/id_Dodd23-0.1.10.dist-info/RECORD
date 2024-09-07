@@ -1,0 +1,14 @@
+id_Dodd23/Potential_H99.py,sha256=E8R6JmABjQIoZZRzcB4hDWZ_mZ-10gSaKxbM2zhgSm4,1762
+id_Dodd23/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+id_Dodd23/coordinates.py,sha256=62rEppGHM6pCZuNXQqsu6dQltfrheWz61MHeDo80ywc,1632
+id_Dodd23/dynamics.py,sha256=ZW5WThh1rqSRZb2XdPY5md6UzScvr2aLz9bfMrYold8,492
+id_Dodd23/id_stars.py,sha256=UyxGrPnpoR291YD7GsnBcJCVrH44tFJr4Sk24VwarZs,1489
+id_Dodd23/load_data.py,sha256=l33m3zKRRlLmHv-K3Xk0kschKRiSYd2lh14G0m6vIGo,510
+id_Dodd23/data/original_Dodd23_Group_Covar_ELzLp.npy,sha256=pD67gg6SiJEPNpm2lgqi-pvS3yjUPTfsQ9yT78pai_E,2072
+id_Dodd23/data/original_Dodd23_Group_Mean_ELzLp.npy,sha256=xB5zn4Q8Qb6BKoeM3oL_JsaDzAZWz1YZsWyUBFqD7II,776
+id_Dodd23/data/original_Dodd23_Groups.npy,sha256=DPJnIQVs1iOtDv_k-7VlmRFfG7Jr5C1J9x3Hchp7H5k,2396
+id_Dodd23/data/test_data.csv,sha256=soe6oYxeLUf8wAoBO4DSpFAJ-FOtZ97ku6kQ7jJOrPs,30013
+id_Dodd23-0.1.10.dist-info/METADATA,sha256=VcgmGGzNdVMfs23KeWU7SDKL9XIZJdvXVMl-L8wKK8M,6824
+id_Dodd23-0.1.10.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+id_Dodd23-0.1.10.dist-info/top_level.txt,sha256=YlAvWzu3URxtvjWAxzRdFZoHH8Ozfprt9SsXoUd3h-g,10
+id_Dodd23-0.1.10.dist-info/RECORD,,
