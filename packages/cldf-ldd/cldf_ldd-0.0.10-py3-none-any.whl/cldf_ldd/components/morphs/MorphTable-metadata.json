@@ -1,0 +1,86 @@
+{
+    "url": "morphs.csv",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ID",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                "dc:extent": "singlevalued",
+                "datatype": {
+                    "base": "string",
+                    "format": "[a-zA-Z0-9_\\-]+"
+                }
+            },
+            {
+                "name": "Language_ID",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
+                "dc:extent": "singlevalued",
+                "dc:description": "A reference to a language (or variety) the form belongs to",
+                "datatype": "string"
+            },
+            {
+                "name": "Form",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#form",
+                "dc:extent": "singlevalued",
+                "dc:description": "The written expression of the form. If possible the transcription system used for the written form should be described in CLDF metadata (e.g. via adding a common property `dc:conformsTo` to the column description using concept URLs of the GOLD Ontology (such as [phonemicRep](http://linguistics-ontology.org/gold/2010/phonemicRep) or [phoneticRep](http://linguistics-ontology.org/gold/2010/phoneticRep)) as values).",
+                "datatype": "string"
+            },
+            {
+                "name": "Description",
+                "dc:extent": "singlevalued",
+                "dc:description": "A human-readable description.",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                "datatype": "string"
+            },
+            {
+                "name": "Segments",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#segments",
+                "dc:extent": "multivalued",
+                "datatype": "string",
+                "separator": " "
+            },
+            {
+                "name": "Morpheme_ID",
+                "required": false,
+                "dc:extent": "singlevalued",
+                "dc:description": "The morpheme this form belongs to.",
+                "datatype": "string"
+            },
+            {
+                "name": "Parameter_ID",
+                "required": false,
+                "dc:description": "A reference to the meaning denoted by the morph.",
+                "datatype": "string",
+                "dc:extent": "multivalued",
+                "separator": "; "
+            },
+            {
+                "name": "Comment",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                "dc:extent": "singlevalued",
+                "datatype": "string"
+            },
+            {
+                "name": "Source",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                "dc:extent": "multivalued",
+                "datatype": "string",
+                "separator": "; "
+            },
+            {
+                "name": "Part_Of_Speech",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech",
+                "datatype": "string",
+                "dc:extent": "singlevalued"
+            }
+        ]
+    }
+}

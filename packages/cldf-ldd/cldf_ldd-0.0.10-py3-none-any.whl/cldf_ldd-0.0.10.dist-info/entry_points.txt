@@ -1,0 +1,3 @@
+[console_scripts]
+cldf_ldd=cldf_ldd.cli:main
+

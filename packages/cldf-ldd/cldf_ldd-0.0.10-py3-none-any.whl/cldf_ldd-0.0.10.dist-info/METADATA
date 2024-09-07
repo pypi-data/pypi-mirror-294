@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cldf-ldd
+Version: 0.0.10
+Summary: CLDF schemata for language description and documentation.
+Home-page: https://fl.mt/cldf-ldd
+License: MIT
+Author: Florian Matter
+Author-email: flmt@mailbox.org
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pytest (>=7.4.2,<8.0.0)
+Project-URL: Bug tracker, https://github.com/fmatter/cldf-ldd/issues
+Project-URL: Repository, https://github.com/fmatter/cldf-ldd
+Description-Content-Type: text/markdown
+
+# [cldf-ldd](https://fl.mt/cldf-ldd)
+
+CLDF schemata for language description and documentation.
+
+![Versions](https://img.shields.io/pypi/pyversions/cldf-ldd)
+[![PyPI](https://img.shields.io/pypi/v/cldf-ldd.svg)](https://pypi.org/project/cldf-ldd)
+![License](https://img.shields.io/github/license/fmatter/cldf-ldd)
