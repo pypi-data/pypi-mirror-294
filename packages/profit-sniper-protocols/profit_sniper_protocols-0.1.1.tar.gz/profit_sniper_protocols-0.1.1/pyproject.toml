@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "profit-sniper-protocols"
+version = "0.1.1"
+description = "Protocol definitions for the Profit Sniper Trading app plugins."
+readme = "README.md"
+authors = ["Takin Profit LLC"]
+packages = [
+  {include = "profit_sniper_protocols", from = "src"}
+]
+
+include = ["src/profit_sniper_protocols/py.typed"]
+license = "Proprietary"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
