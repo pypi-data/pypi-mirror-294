@@ -1,0 +1,17 @@
+[project]
+name = "py-data-validator"
+version = "0.1.0"
+description = "Python data validation library"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+license = { text = "MIT" }
+authors = [
+    { name = "Krunal Dodiya", email = "krunal@example.com" }
+]
+
+[tool.uv]
+dev-dependencies = [
+    "twine>=5.1.1",
+    "wheel>=0.44.0",
+]
