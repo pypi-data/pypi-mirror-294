@@ -1,0 +1,31 @@
+[project]
+name = "supervisor-tee"
+version = "0.1.0"
+description = "A brief description of your project"
+authors = [{name = "Teo", email = "teocns@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "supervisor>=4.2.5",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project.scripts]
+supervisor_tee = "supervisor_tee:main"
+
+
+# dev deps: pytest
+[tool.poetry.dev-dependencies]
+pytest = "*"
+

@@ -1,0 +1,2 @@
+[console_scripts]
+supervisor_tee = supervisor_tee:main

@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/supervisor_tee.py
+src/supervisor_tee.egg-info/PKG-INFO
+src/supervisor_tee.egg-info/SOURCES.txt
+src/supervisor_tee.egg-info/dependency_links.txt
+src/supervisor_tee.egg-info/entry_points.txt
+src/supervisor_tee.egg-info/requires.txt
+src/supervisor_tee.egg-info/top_level.txt
+tests/test_supervisor_tee.py
+tests/test_supervisor_tee_unit.py
