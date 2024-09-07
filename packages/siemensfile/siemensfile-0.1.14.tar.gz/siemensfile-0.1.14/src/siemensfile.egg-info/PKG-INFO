@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: siemensfile
+Version: 0.1.14
+Summary: Paquete para leer archivos .dat de Siemens y realizar reconstrucciones de imágenes.
+Home-page: https://github.com/tu_usuario/SIEMENSFile
+Author: Fernando Jose Ramirez
+Author-email: fernando.ramirez.sarmiento@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mri-nufft
+
+# SIEMENSFile
+
+**SIEMENSFile** es un paquete para leer y procesar archivos `.dat` de Siemens y realizar reconstrucciones de imÃ¡genes de resonancia magnÃ©tica (MRI). Este paquete facilita la extracciÃ³n de datos del `rawdata` y su reconstrucciÃ³n preliminar en imÃ¡genes utilizando transformadas rÃ¡pidas de Fourier (FFT). La Ãºnica reconstrucciÃ³n implementada es la cartesiana; prÃ³ximamente se implementarÃ¡ la reconstrucciÃ³n no cartesiana.
+
+## InstalaciÃ³n
+
+Puedes instalar el paquete directamente desde PyPI con el siguiente comando:
+
+```bash
+pip install siemensfile
+```
+# Importar la funciÃ³n siemensfile desde el paquete
+from siemensfile import siemensfile
+
+# Usar la funciÃ³n siemensfile para procesar un archivo .dat
+
+```bash
+[metadata, rawdata] = siemensfile(r'tests/datatest/siemens_file_test_cartesian_sample.dat', reconstruction="Cartesiana")
+
+```
