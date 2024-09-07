@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: yootils
+Version: 0.1.0
+Summary: Stuff I often need.
+Home-page: https://github.com/duynguyen158/yootils
+License: MIT
+Author: Duy Nguyen
+Author-email: hello.duyknguyen@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: google-auth (>=2.34.0,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: urllib3 (>=2.2.2,<3.0.0)
+Project-URL: Repository, https://github.com/duynguyen158/yootils
+Description-Content-Type: text/markdown
+
+# yootils
+
+Stuff I often need. [Also born out of work at the NYT](https://github.com/Rich-Harris/yootils).
+
+## Installation
+```zsh
+pip install yootils
+```
