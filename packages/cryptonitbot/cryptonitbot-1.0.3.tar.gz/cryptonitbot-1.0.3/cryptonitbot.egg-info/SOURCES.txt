@@ -1,0 +1,17 @@
+Instructions.txt
+LICENSE
+MANIFEST.in
+README.md
+cryptonit.py
+pyproject.toml
+setup.py
+cryptonit_bot/Instructions.txt
+cryptonit_bot/__init__.py
+cryptonit_bot/bot.py
+cryptonit_bot/requirements.txt
+cryptonitbot.egg-info/PKG-INFO
+cryptonitbot.egg-info/SOURCES.txt
+cryptonitbot.egg-info/dependency_links.txt
+cryptonitbot.egg-info/entry_points.txt
+cryptonitbot.egg-info/requires.txt
+cryptonitbot.egg-info/top_level.txt
