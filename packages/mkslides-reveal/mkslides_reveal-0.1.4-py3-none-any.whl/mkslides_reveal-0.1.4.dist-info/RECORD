@@ -1,0 +1,10 @@
+mkslides_reveal/__init__.py,sha256=uMdScc5CG5TZXJ9i3W_v1uEGQC1aHOdUAlvWpDaHEqQ,45
+mkslides_reveal/__main__.py,sha256=sR7jKzZc7amKfp4th8CW9DpKsd-F2oTAWsb3jh-VACc,8048
+mkslides_reveal/config.py,sha256=rl21GlUpuMqPwbOHtCX4dDomB-dtjSpw5jbQUgJO12Y,1355
+mkslides_reveal/constants.py,sha256=otGJmow7fNFMnbC1BU-QDezhtUU7R-rTiomtt1VefAc,1519
+mkslides_reveal/markupgenerator.py,sha256=s1zZPVZd1vbg1b9g0zJFkzOfxP2-V1Z9_IrDV-Xhj74,10544
+mkslides_reveal-0.1.4.dist-info/LICENSE,sha256=5FvufdtJeuByO0g41P9MEqZgLymxE-dBrgoa_Oryzb8,1071
+mkslides_reveal-0.1.4.dist-info/METADATA,sha256=IGJdfmrvj0E5pjguFIaho6ZdpXfK4DEXXormHKaeqlk,1710
+mkslides_reveal-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mkslides_reveal-0.1.4.dist-info/entry_points.txt,sha256=vU4dRONOuc41yQ5fsgBtbT2p0x0MtTkNR-1xs_yXkH0,65
+mkslides_reveal-0.1.4.dist-info/RECORD,,
