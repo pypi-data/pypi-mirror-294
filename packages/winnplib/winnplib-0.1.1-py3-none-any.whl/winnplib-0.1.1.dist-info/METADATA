@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: winnplib
+Version: 0.1.1
+Summary: A simple API to get Windows Media information, including cover art.
+Author: Maxplayz7566
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: <3.9,>=3.8
+Requires-Dist: pillow
+Requires-Dist: winrt
+Description-Content-Type: text/markdown
+
+# Now Playing Api
+
+### A simple api to get windows media
+This includes but not limited to cover art
