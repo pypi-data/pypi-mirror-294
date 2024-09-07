@@ -1,0 +1,94 @@
+
+# README for Building Your Own Agents
+
+Version: 1.0.0
+
+## Overview
+This README provides instructions for building your own agents and testing them in a game using the provided example code.
+
+Look at the `example.py` to see how to create an agent as well as instructions on how to play local and remote games with your agent.
+
+## Getting Started
+1. Clone the Repository: Start by cloning the repository containing the example code.
+2. Install Dependencies: Ensure you have all the necessary dependencies installed. These can typically be installed via pip.
+
+```bash 
+pip install -r requirements.txt
+```
+
+## File Overview
+### example.py
+
+This file defines a simple agent that randomly chooses a move from all legal moves.
+
+Copy this file and use it as a template to start building your own agent.
+
+#### Key Components:
+- `GameAgentBase`: The base class for all agents.
+- `Game`: Represents the state of the game. Agents interrogate the game state from here to make decisions. This is read-only and shouldn't be changed.
+- `RandomRandyAgent`: This is a predefined random agent that you can use to test your agent against. This one is used by default for --agent and --agent-2 parameters if not specified.
+
+#### Implementing Your Agent:
+1. Inherit from `GameAgentBase`.
+2. Implement the `def make_move(self, game: Game) -> Tuple[int, int, int]:` function. It must return a valid and legal move.
+
+#### Running the Game:
+- To run a local game:
+```bash
+python -m tangled_agent --agent your_agent_file.YourAgentClass [--agent-2 your_other_agent_file.YourOtherAgentClass]
+```
+- To run a remote game, provide the game ID, host URL and player ID (and optionally force a regeneration of new credentials if you want to change identities):
+```bash
+python -m tangled_agent --game_id <game_id> --host <host_url> --agent your_agent_file.YourAgentClass [--new-credentials] [--config <config-file>]
+```
+- Get a list of all parameters
+```bash
+python -m tangled_agent --help
+```
+
+Note that credentials are stored in a local file to cache them to avoid constant regeneration. If you want to use a different identity to play a game, you'll need to force `--new-credentials` to regenerate them.
+
+Arguments can also be stored in a `.ini` file (default: `config.ini`) that will be used to populate the command line parameters if none are given, or `--config <config-file-name>`.
+
+Example `config.ini`:
+```
+[DEFAULT]
+game-id = "4c28f626-f585-44e5-98b5-ad244f9dcfec"
+host = "http://localhost:9090"
+```
+
+Example:
+```python 
+class YourAgent(GameAgentBase):  
+    def make_move(self, game: Game) -> Tuple[int, int, int]:  
+
+        # Get game state as a dictionary
+        # {
+        #   "state": {
+        #     "num_nodes": int,
+        #     "edges": List[Tuple[int, int, int]],    # List of edges as vertex pairs and edge state
+        #     "player1_id": str,
+        #     "player2_id": str,
+        #     "turn_count": int,
+        #     "current_player_index": int,
+        #     "player1_node": int, # -1 if no node
+        #     "player2_node": int, # -1 if no node
+        #   }
+        # }
+
+        state = game.get_game_state()
+
+        # Get legal moves for your player as a list of Tuple[int, int, int]
+
+        moves = game.get_legal_moves(player_id)
+
+        # Your logic to decide a move  return move_type, move_index, move_state 
+
+        return (move_type, move_index, move_state)
+```
+
+## Testing Your Agent
+1. Run the module with either agent set as your agent locally.
+
+## Conclusion
+Use this template to build and test your own agents. Experiment with different strategies and game setups to enhance your agent's performance. Please send me any suggestions for changes to make.
