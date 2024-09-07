@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ocelot-desy
+Version: 24.3.1
+Summary: Accelerator, radiation and x-ray optics simulation framework
+Home-page: https://github.com/ocelot-collab/ocelot
+Author: ocelot-collab
+Author-email: tomin.sergey@gmail.com
+License: GNU General Public License v3.0
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: h5py
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == "docs"
+Requires-Dist: alabaster; extra == "docs"
+Requires-Dist: sphinxcontrib-jsmath; extra == "docs"
