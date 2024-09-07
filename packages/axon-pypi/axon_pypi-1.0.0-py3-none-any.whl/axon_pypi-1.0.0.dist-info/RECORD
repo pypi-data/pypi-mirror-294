@@ -1,0 +1,15 @@
+axon/__init__.py,sha256=KL8qIlC9FFH22varFR1lJ23f_PD_n_Q3BGF__-hoxXw,193
+axon/_ops.py,sha256=3JVjITTqBceasZKgiIShr5zYienNYnJc413jHW--0IU,6725
+axon/_random.py,sha256=EOuecXrOmhtvdfiIuQjgMZbpyV2k1IE14qUxPWfUUN0,2431
+axon/_utils.py,sha256=GnmNvwaphmgt8ApiSBc6jYs5arUUALDYv6vhHtw69Qo,1631
+axon/base.py,sha256=1K_XkFtzRG6WE_LYzRQCZEydK5iQXRVmjtcFdkGEqsQ,15240
+axon/micro/__init__.py,sha256=1EnSpb-hvGknHQHH_WcbmehRqt6aYBCVbeSYW5J3gJU,42
+axon/micro/_cbase.py,sha256=bUXcm_2d_NAgsb8yIV8tajhTU9jvPKkO8g8LwPuGIs0,3253
+axon/micro/base.py,sha256=RwYdcv2uTXOqxnZ1QVqi1GmFIAtwmdwPhWBZYgw5QW8,4123
+axon/micro/libscalar.so,sha256=FdWavR2Id0zkaeq39uePtn69TKQsxtsRWf0v3IXAiKY,3011055
+axon/micro/nn.py,sha256=sSuaPL2WYHjGZV9vt2M1yPnLRLXwXDRPAeO34gw9oSw,3882
+axon_pypi-1.0.0.dist-info/LICENSE,sha256=CCCxZqLJ1Rv2LuJhlnhXBOV_HYTkH-UVB6VbCgePwao,1093
+axon_pypi-1.0.0.dist-info/METADATA,sha256=i0Z1nc5lryUDiv1vWviHtUKQYUkuSH9k5vEPaajppBU,4746
+axon_pypi-1.0.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+axon_pypi-1.0.0.dist-info/top_level.txt,sha256=vRkPFUYD0GspqpZfeuY7c2fzJmpHIpgjOY_nnOHNwVc,5
+axon_pypi-1.0.0.dist-info/RECORD,,
