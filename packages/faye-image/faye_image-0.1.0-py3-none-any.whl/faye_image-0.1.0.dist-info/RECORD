@@ -1,0 +1,12 @@
+faye-image/__init__.py,sha256=rqgP7YktlvOWZJMiprT2VvWj5r9gpWzx4YsyX1rcJJQ,6985
+faye-image/image_factory.py,sha256=sA9Fdf0hLPAC-_qAz1TbrZYAtMkGh4eR5E1VjTBRH8Y,6045
+faye-image/image_intermediate.py,sha256=Dmrcd5d5jUt3kyAl-5VXNMx7qN5NCwAGBuxnJUaCJ0Y,3844
+faye-image/builders/__init__.py,sha256=LoABapYXTwO4GjIJAzaRjPbixTcY4C_I-eJb5MbDx_U,104
+faye-image/builders/array_based_builders.py,sha256=pzZ1tZ7B-40LJJL-FdsvdZl5RhqcJwxUKf9TxN9YHK0,10727
+faye-image/builders/builder_interface.py,sha256=Q7WC-wZ7sEffX7mQVDYiXFbfrKQQoiX2BxxgPx5hIds,1615
+faye-image/builders/file_based_builders.py,sha256=3Gl25UE96FxENkEDl1pGy_pl0SaBu0Zlm1jdx8utfbE,20655
+faye_image-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+faye_image-0.1.0.dist-info/METADATA,sha256=zm67Y_qoBH3OrH1XW35ideJsVUOnkn2NVRey_sVyG3Y,16008
+faye_image-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+faye_image-0.1.0.dist-info/top_level.txt,sha256=oqB6PMJOYc306e0RoUuZmKZf1LuzGJs5gibCRkRsp4E,11
+faye_image-0.1.0.dist-info/RECORD,,
