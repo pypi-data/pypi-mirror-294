@@ -1,0 +1,44 @@
+[build-system]
+requires = ['wheel', 'setuptools', 'Cython', 'setuptools_scm[toml]']
+build-backend = 'setuptools.build_meta'
+
+[tool.cibuildwheel]
+test-command = 'pytest {package}/tests'
+test-extras = ['tests']
+# There seems to be a problem compiling NumPy for testing due to a missing
+# constant definition for s390x builds. Skipping for now.
+test-skip = "*-musllinux_s390x"
+
+[tool.cibuildwheel.linux]
+archs = ['auto', 'aarch64', 'ppc64le', 's390x']
+before-test = "yum -y install libsndfile"
+
+[tool.cibuildwheel.macos]
+before-test = "brew install libsndfile"
+
+# Will re-enable Windows ARM64 once libebur128 pull request #131 is merged.
+# https://github.com/jiixyj/libebur128/pull/131
+#[tool.cibuildwheel.windows]
+#archs = ['auto', 'ARM64']
+
+[[tool.cibuildwheel.overrides]]
+# There is a known issue with buildroot/musl images not detecting libraries
+# correctly. Python's ctypes library is affected by this, which is needed by
+# python-soundfile to use libsndfile. This hack is to get around this issue to
+# be able to test on musllinux successfully.
+# See https://github.com/bastibe/python-soundfile/issues/258
+select = '*-musllinux*'
+before-test = [
+    'apk add libsndfile',
+    'pip install soundfile',
+    'PYVER=`python -c "import sys; print(\".\".join(map(str, sys.version_info[:2])))"`',
+    'sed -i "192b1; b ;:1;s/_explicit_libname/\"\/usr\/lib\/libsndfile.so.1\"/g" $VIRTUAL_ENV/lib/python$PYVER/site-packages/soundfile.py',
+]
+
+[tool.pytest.ini_options]
+minversion = '6.0'
+addopts = '--cov-report=xml --cov-report=term:skip-covered --cov=pyebur128'
+testpaths = ['tests']
+
+[tool.setuptools_scm]
+write_to = 'src/pyebur128/version.py'
