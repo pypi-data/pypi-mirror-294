@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: GRAFX
+Version: 0.6.0a0
+Summary: An Open-Source Library For Audio Processing Graphs in PyTorch
+Author: Sungho Lee
+Author-email: sh-lee@snu.ac.kr
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torch_geometric
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: einops
+
+# GRAFX 
+
+
+<div align="center">
+  
+**An Open-Source Library for Audio Processing Graphs in PyTorch**
+
+
+[Documentation](https://sh-lee97.github.io/grafx) | [Technical Paper (arXiv)](https://www.arxiv.org/abs/2408.03204)
+
+`pip install grafx`
+
+<br>
+<img src="https://github.com/sh-lee97/grafx/blob/main/sphinx-doc/source/imgs//cambridge_RememberDecember_CUNextTime.svg">
+
+</div>
