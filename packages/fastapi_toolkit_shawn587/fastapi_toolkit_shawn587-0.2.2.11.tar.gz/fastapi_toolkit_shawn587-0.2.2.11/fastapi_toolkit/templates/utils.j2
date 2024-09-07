@@ -1,0 +1,7 @@
+{% macro render_table_field(field) %}
+{{ field.name.snake }}: Mapped[{{ field.type.python_type }}] = mapped_column({{ field.type.sql_type }}, nullable={{ field.type.nullable }})
+{% endmacro %}
+
+{% macro render_schema_field(field) %}
+{{ field.name.snake }}: {{ field.type.python_type }} = Field()
+{% endmacro %}
