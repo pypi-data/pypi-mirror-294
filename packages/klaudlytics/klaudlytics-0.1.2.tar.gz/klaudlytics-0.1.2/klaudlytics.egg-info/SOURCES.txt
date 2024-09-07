@@ -1,0 +1,11 @@
+README.md
+setup.py
+klaudlytics/__init__.py
+klaudlytics/cli.py
+klaudlytics/main.py
+klaudlytics.egg-info/PKG-INFO
+klaudlytics.egg-info/SOURCES.txt
+klaudlytics.egg-info/dependency_links.txt
+klaudlytics.egg-info/entry_points.txt
+klaudlytics.egg-info/requires.txt
+klaudlytics.egg-info/top_level.txt
