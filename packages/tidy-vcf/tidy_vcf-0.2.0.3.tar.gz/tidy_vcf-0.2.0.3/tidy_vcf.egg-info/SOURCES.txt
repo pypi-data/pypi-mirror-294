@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tidy_vcf/__init__.py
+tidy_vcf/tidy_vcf.py
+tidy_vcf.egg-info/PKG-INFO
+tidy_vcf.egg-info/SOURCES.txt
+tidy_vcf.egg-info/dependency_links.txt
+tidy_vcf.egg-info/entry_points.txt
+tidy_vcf.egg-info/not-zip-safe
+tidy_vcf.egg-info/top_level.txt
