@@ -1,0 +1,12 @@
+slicerio/__init__.py,sha256=NopoTh-6LRgbb-0IaVa-071eARHGjRku1SlZuLZmtSs,817
+slicerio/_version.py,sha256=S3I7ewnjz2wWCbb9dydsCUvPZ4Y6u-uwJle-QrtAAss,182
+slicerio/data_helper.py,sha256=XyX5ti6A2jYaMeQp_MJG1dz8f53GV64Lc7G53fLxCzI,682
+slicerio/segmentation.py,sha256=0liYqgBQY_4_XhtwjZsIpQ2JmXuhSyGhp5D1i4THFQc,40276
+slicerio/server.py,sha256=_l7OrxgSW8ESsolRR_2Tqj7w554OZumX-0dRauOrdSo,9277
+slicerio/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slicerio/tests/test_segmentation.py,sha256=9yPpTTGxmPE63sFZiQuazZjr88ZES3-398aOqpBirFQ,9742
+slicerio-1.1.1.dist-info/LICENSE,sha256=UqG-xH9ccMobr5HsP9G1hfVT1z2i8836xhyif3b8734,1079
+slicerio-1.1.1.dist-info/METADATA,sha256=lvR5XiOOdsd0Cg-vs9OZD6Ts_SJYPoKbUKr5gc5cqDk,10918
+slicerio-1.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+slicerio-1.1.1.dist-info/top_level.txt,sha256=QndXFZKRhrdiBjJ2M1ut0gC0Zh7E6OAD8BcmDaZRjoI,9
+slicerio-1.1.1.dist-info/RECORD,,
