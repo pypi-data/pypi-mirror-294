@@ -1,0 +1,8 @@
+pyproject_local_kernel/__init__.py,sha256=dA0jev11UjQ1PpPCnI2QzQER5lSEkRN8TAEF8iZlhEc,7162
+pyproject_local_kernel/__main__.py,sha256=9skrQBVWEshWv38ZPnmJWEhJYeWwOQ_XHwlrrpu1Zbc,5659
+pyproject_local_kernel/configdata.py,sha256=3kBWSWYK3m9LFunF_WUyLmYcsz4h89pcOdPhKdKsKCo,1895
+pyproject_local_kernel-0.9.0.data/data/share/jupyter/kernels/pyproject_local_kernel/kernel.json,sha256=8CTZ2cZ-ZCu17SZQyWMXaDwbC2GCIPxA2hwiRQvYO9c,187
+pyproject_local_kernel-0.9.0.dist-info/METADATA,sha256=K7dOBlpfuVqiTdZBwYosUldtC2oNn-Zq7YQeVvkhxd4,6518
+pyproject_local_kernel-0.9.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pyproject_local_kernel-0.9.0.dist-info/licenses/LICENSE.md,sha256=WzDLcGGqZ2-QIV91Ebhj2cSd6FE4vf2VhzfVObVWsYI,1096
+pyproject_local_kernel-0.9.0.dist-info/RECORD,,
