@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_plugin_inline_svg_utf8.egg-info/PKG-INFO
+mkdocs_plugin_inline_svg_utf8.egg-info/SOURCES.txt
+mkdocs_plugin_inline_svg_utf8.egg-info/dependency_links.txt
+mkdocs_plugin_inline_svg_utf8.egg-info/entry_points.txt
+mkdocs_plugin_inline_svg_utf8.egg-info/requires.txt
+mkdocs_plugin_inline_svg_utf8.egg-info/top_level.txt
+src/__init__.py
+src/plugin.py
