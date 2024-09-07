@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fars.egg-info/PKG-INFO
+fars.egg-info/SOURCES.txt
+fars.egg-info/dependency_links.txt
+fars.egg-info/top_level.txt
+iranian/__init__.py
+iranian/iran.py
