@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: profit-sniper-protocols
+Version: 0.1.0
+Summary: Protocol definitions for the Profit Sniper Trading app plugins.
+License: Proprietary
+Author: Takin Profit LLC
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
