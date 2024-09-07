@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zerodhawrapper
+Version: 1.1
+Requires-Dist: kiteconnect
+Requires-Dist: pandas
+Requires-Dist: furl
+Requires-Dist: nsetools
+Requires-Dist: prettytable
+Requires-Dist: pyotp
+Requires-Dist: webdriver-manager
+Requires-Dist: selenium
+
