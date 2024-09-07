@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+overwrite-configs = mkdocs_overwrite_configs.plugin:OverwriteConfigsPlugin
