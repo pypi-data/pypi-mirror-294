@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axon-pypi"
+version = "1.0.2"
+description = "Multi-dimensional array creation & manipulation library like numpy written from scratch in Python along with a scalar level autograd engine written in C/C++ with Python wrapper"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "shivendra", email = "shivharsh44@gmail.com"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Programming Language :: C",
+  "Programming Language :: C++",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.setuptools]
+packages = ["axon", "axon.micro"]
+
+[tool.setuptools.package-data]
+"axon.micro" = ["libscalar.so", "*.h", "*.cpp"]
+"axon" = ["dtypes/*.py", "helpers/*.py"]
