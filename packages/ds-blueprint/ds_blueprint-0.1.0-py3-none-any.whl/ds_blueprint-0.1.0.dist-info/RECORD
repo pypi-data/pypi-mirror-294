@@ -1,0 +1,10 @@
+blueprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blueprint/cli.py,sha256=9eDWsTIyMpKgdHUvsGSONuksh8Y_KUlae6bcak97jBI,3746
+blueprint/templates/README_template.md,sha256=CqhHtAEUKH29AXdIFUOFTtLEo8nzxpvsD1r0jv5upwk,815
+blueprint/templates/environment.yml,sha256=xFVbv403kUNOkolzE4USzeSzD9uAa1zBNChRagbC3yU,68
+blueprint/templates/gitignore_template.txt,sha256=MqIynoVNFdezKbZPvq-RQRGo37bB8HQxHoFmlqMFLmM,760
+blueprint/templates/logger.yml,sha256=WiELM3Yqc2zGo-l2zhtfExVFs7StwlSNMgQ-zd2oTtM,573
+ds_blueprint-0.1.0.dist-info/METADATA,sha256=hnqNY6ccGzGn6TRao8qjnCkEWILr8QS_HWzFKg1Zz80,481
+ds_blueprint-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ds_blueprint-0.1.0.dist-info/entry_points.txt,sha256=xVmLlZDNyWC08FvsSvwUsSltH6QfZqO4Q8MTcsHms5Y,47
+ds_blueprint-0.1.0.dist-info/RECORD,,
