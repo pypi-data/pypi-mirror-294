@@ -1,0 +1,5 @@
+from typing import Literal
+
+Item = Literal[{items_keys}]
+
+items: dict[Item, int] = {{items_keys_and_ids}}
