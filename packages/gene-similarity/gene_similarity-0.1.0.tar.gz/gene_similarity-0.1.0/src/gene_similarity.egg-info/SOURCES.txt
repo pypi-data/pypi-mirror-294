@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/gene_similarity/__init__.py
+src/gene_similarity/__main__.py
+src/gene_similarity/calculate_similarity.py
+src/gene_similarity/cli.py
+src/gene_similarity/output.py
+src/gene_similarity/parser.py
+src/gene_similarity.egg-info/PKG-INFO
+src/gene_similarity.egg-info/SOURCES.txt
+src/gene_similarity.egg-info/dependency_links.txt
+src/gene_similarity.egg-info/entry_points.txt
+src/gene_similarity.egg-info/requires.txt
+src/gene_similarity.egg-info/top_level.txt
