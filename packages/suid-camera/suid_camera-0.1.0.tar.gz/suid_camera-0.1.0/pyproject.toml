@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "suid-camera"
+version = "0.1.0"
+description = ""
+authors = ["Henrycke Bozza Schenberk <henrycke.bozza@parallaxautomacao.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
