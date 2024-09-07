@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: rob_pitch
+Version: 0.1.0
+Summary: Robust pitch prediction using PyTorch
+Author: Xinsheng Wang, Mingqi Jiang
+Author-email: w.xinshawn@gmail.com, mingqi.jiang@mobvoi.com
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hydra-core==1.3.2
+Requires-Dist: modelscope==1.18.0
+Requires-Dist: numpy==1.24.3
+Requires-Dist: omegaconf==2.3.0
+Requires-Dist: setuptools==69.5.1
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: soxr==0.3.7
+Requires-Dist: torch==2.0.1
+Requires-Dist: torchaudio==2.0.2
+Requires-Dist: tqdm==4.66.5
+
+# RobPitch
+
+## Overview
+
+RobPitch is a pitch detection model trained to be robust against noise and reverberation environments. The model has been trained on 1600 hours of high-quality data, supplemented by an equivalent amount of simulated noisy and reverberant data, ensuring effective performance under challenging acoustic conditions.
+
+## Installation
+
+```
+pip install rob-pitch==0.1.0
+```
+
+## Model Download
+
+We use modelscope to download pretrained model and config.
+```
+from modelscope import snapshot_download
+model_dir = snapshot_download('pandamq/robpitch-16k')
+cp -r ~/.cache/modelscope/hub/pandamq/robpitch-16k .
+```
+
+## Usage Example
+
+```
+import torch
+import numpy as np
+
+from robpitch import RobPitch
+from utils.audio import load_audio
+
+# Initialize the model
+robpitch = RobPitch()
+device = torch.device("cpu")
+
+# Load model from checkpoint
+model = robpitch.load_from_checkpoint(
+    config_path="robpitch-16k/config.yaml",
+    ckpt_path="robpitch-16k/model.bin",
+    device=device
+)
+
+# Load and process the audio
+wav = load_audio(
+    "path/to/audio",
+    sampling_rate=16000,
+    volume_normalize=True
+)
+wav = torch.from_numpy(wav).unsqueeze(0).float().to(device)
+
+# Get model outputs
+outputs = model(wav)
+pitch = outputs['pitch']
+latent_feature = outputs['latent']
+
+```
+
+For more detailed usage examples, refer to the exp/demo.ipynb notebook.
