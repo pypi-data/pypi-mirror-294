@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tidy-vcf
+Version: 0.2.1.0
+Summary: Make tidy VCF data.
+Home-page: https://github.com/silastittes/tidy_vcf
+Author: Silas Tittes
+Author-email: silas.tittes@gmail.com
+License: MIT
+Keywords: VCF genetics python package
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Given a vcf file, produces a tidy versions of sites and genotypes data, in                     efforts to make it easier to calculate summary statitics and visualizations.
