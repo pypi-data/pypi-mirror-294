@@ -1,0 +1,27 @@
+# setup
+pip >=21.0.0
+setuptools >=64.0.0  # required for being able to run editable installs
+versioningit >=2.0.0,<4  # required for being able to run editable installs
+
+# tests
+pytest >=8.0.0
+pytest-asyncio >=0.23.5
+pytest-trio
+requests-mock
+freezegun >=1.0.0
+
+# code-coverage
+pytest-cov
+coverage[toml]
+
+# code-linting
+ruff ==0.6.4
+
+# typing
+mypy ==1.10.1
+lxml-stubs
+trio-typing
+types-freezegun
+types-requests
+types-setuptools
+types-urllib3
