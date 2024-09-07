@@ -1,0 +1,105 @@
+[build-system]
+requires = ['hatchling', 'hatch-fancy-pypi-readme>=22.5.0']
+build-backend = "hatchling.build"
+
+[project]
+name = "mlcompare"
+description = "Quickly compare machine learning models across libraries and datasets."
+authors = [{name = "Mitchell Medeiros"}]
+license = "MIT"
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+    "License :: OSI Approved :: MIT License",
+    'Operating System :: Unix',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
+    'Typing :: Typed',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering',
+]
+dependencies = [
+    "numpy>=1.23.5,<2.0.0", # for OpenML & Tensorflow compatability
+    "pandas[pyarrow]>=2.0.0",
+    "pydantic>=2.0.0",
+    "plotly>=4.0.0",
+    "kaggle>=1.0.0",
+    "huggingface_hub>=0.21.0",
+    "openml>=0.13.0",
+    "scikit-learn>=1.4.0",
+    "xgboost>=2.1.0",
+    "lightgbm>=4.0.0",
+    "torch>=2.0.0",
+    # "tensorflow>=2.0.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "black>=24.0.0",
+    "ruff>=0.5.0",
+    "ipykernel>=6.0.0",
+]
+docs = [
+    "python-dotenv==1.0.1",
+    "sphinx==7.3.7",
+    "pydata-sphinx-theme==0.15.4",
+    "sphinx-sitemap==2.6.0",
+    "sphinx-copybutton==0.5.2",
+    "sphinx_design==0.6.0",
+    "sphinxext-opengraph==0.9.1",
+    "sphinx-autodoc-typehints==2.2.3",
+    "sphinx-docsearch==0.0.7",
+    "matplotlib>=3.9.1",
+]
+
+[project.urls]
+Documentation = "https://mlcompare.readthedocs.io/en/latest/api_reference"
+Changelog = "https://mlcompare.readthedocs.io/en/latest/release_notes"
+Repository = "https://github.com/MitchMedeiros/MLCompare"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mlcompare"]
+
+[tool.hatch.version]
+path = "mlcompare/__init__.py"
+pattern = "^__version__ = ['\"](?P<version>[^'\"]*)['\"]"
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+xfail_strict = true
+filterwarnings = ["ignore::DeprecationWarning:kaggle.rest", "ignore::UserWarning:sklearn.preprocessing"]
+
+[tool.ruff]
+line-length = 105
+exclude = [
+    ".eggs",
+    ".github",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "dist",
+    "docs",
+    "venv",
+]
+
+[tool.ruff.lint]
+ignore = ["E741"]
+pydocstyle = { convention = 'google' }
+
+[tool.black]
+line-length = 105

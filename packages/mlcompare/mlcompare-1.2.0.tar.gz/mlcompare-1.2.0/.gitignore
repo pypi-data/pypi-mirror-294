@@ -1,0 +1,46 @@
+# Virtual environments
+env/
+env3*/
+venv/
+.venv/
+__pypackages__/
+
+# Package files
+*.egg-info/
+dist/
+build/
+
+# Doc files
+docs/build
+docs/source/_static
+docs/source/_templates
+docs/source/*/generated
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+.mypy_cache/
+.pytest_cache/
+/.ruff_cache/
+
+
+# Test files
+tests.log
+testing.py
+testing.ipynb
+mlcompare-results-*
+tests/data/test.*
+
+# Other
+.DS_Store
+.env
+.pypirc
+.coverage
+.coverage.*
