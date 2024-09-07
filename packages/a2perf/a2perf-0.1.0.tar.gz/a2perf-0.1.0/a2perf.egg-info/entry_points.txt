@@ -1,0 +1,2 @@
+[console_scripts]
+a2perf = a2perf.launch.entrypoint:run_main
