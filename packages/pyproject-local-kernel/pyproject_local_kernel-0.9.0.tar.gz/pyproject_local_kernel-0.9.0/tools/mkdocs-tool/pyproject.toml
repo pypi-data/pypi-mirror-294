@@ -1,0 +1,16 @@
+[project]
+name = "mkdocs-tool"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs",
+    "mkdocs-material>=9.1",
+    "mdx-gh-links>=0.3",
+    "mkdocs-version-annotations>=1.0",
+    "mkdocs-include-markdown-plugin>=4.0.4",
+]
+classifiers = ["Private :: Do Not Upload"]
+
+[tools.uv]
+package = false

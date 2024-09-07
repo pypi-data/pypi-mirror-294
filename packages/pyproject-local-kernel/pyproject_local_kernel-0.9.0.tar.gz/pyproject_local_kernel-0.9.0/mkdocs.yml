@@ -1,0 +1,69 @@
+site_name: Pyproject Local Kernel
+site_description:
+repo_name: bluss/pyproject-local-kernel
+repo_url: https://github.com/bluss/pyproject-local-kernel
+docs_dir: docs
+edit_uri: blob/main/docs
+copyright: Copyright &copy; 2024 “bluss” Ulrik Sverdrup
+
+nav:
+  - Overview: README.md
+  - FAQ: FAQ.md
+  - Changelog: CHANGELOG.md
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+    - toc.follow
+    - navigation.path
+    - navigation.top
+    - navigation.tabs
+    - navigation.footer
+  font:
+    text: Inter
+    monospace: Fira Mono
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path:
+      - !relative $config_dir
+  - pymdownx.tabbed:
+      alternate_style: true
+  - mdx_gh_links:
+      user: bluss
+      repo: pyproject-local-kernel
+
+plugins:
+  - search
+  - mkdocs-version-annotations:
+      version_added_title: 'new in **\1**'
+      version_changed_title: 'changed in **\1**'
+      version_removed_title: 'removed in **\1**'
+  - include-markdown:
+      preserve_includer_indent: true
+
+extra:
+  social:
+  pypi:
+    name: pyproject-local-kernel
+    url: https://pypi.org/project/pyproject-local-kernel/
+    image: "https://img.shields.io/pypi/v/pyproject-local-kernel?style=for-the-badge&logo=python&logoColor=yellow&color=000050&labelColor=3f6ec6"
+
+extra_css:
+  - static/extra.css
+
+watch:
+  - "."
