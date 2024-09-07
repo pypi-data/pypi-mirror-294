@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+iranian/__init__.py
+iranian/iran.py
+qom.egg-info/PKG-INFO
+qom.egg-info/SOURCES.txt
+qom.egg-info/dependency_links.txt
+qom.egg-info/top_level.txt
