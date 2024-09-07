@@ -1,0 +1,3 @@
+[fsspec.specs]
+enc=fsspec_encrypted:EncryptedFS
+
