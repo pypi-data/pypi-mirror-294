@@ -1,0 +1,12 @@
+monisys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monisys/monicli.py,sha256=3rKS7v2mw9K00B-pwIHAlEQn0qmX9I0CbkUeaOitkwY,1698
+monisys/Managers/Arguments.py,sha256=Z1HzqZ0TrMIyGfR61734xXpJOK9uY8uTggaqiyEGBE0,1109
+monisys/Managers/Systeminfo.py,sha256=RotLR6jaLsGeIqnbRtPCorr36KAdhhTbcpWAp_xpJVM,993
+monisys/Managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monisys/Managers/manager.py,sha256=tJplyhLhZkAHSJQJP6JcvDuisiYEA-f9EomMmpSyZVg,1236
+monisys/Managers/systeminfocli.py,sha256=THW01900OPmI5ExxMqWBn4jph81tnl6hAkRIAzT0oBA,9828
+monisys-0.3.dist-info/METADATA,sha256=jDQf_xoSRnO5zvCNyqVvrb0LVrPQLgIj4_wmzFM_JBc,2384
+monisys-0.3.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+monisys-0.3.dist-info/entry_points.txt,sha256=d8LY7odlYMnxxHA9vW88SCRO-OcN0bwPmMDazTtbv88,49
+monisys-0.3.dist-info/top_level.txt,sha256=BtIB4XcZRW7juv_JcEQYx_SXXos99xr2-YYYDFTcYcQ,8
+monisys-0.3.dist-info/RECORD,,
