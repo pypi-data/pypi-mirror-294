@@ -1,0 +1,2 @@
+include log/*.json
+include version.py
