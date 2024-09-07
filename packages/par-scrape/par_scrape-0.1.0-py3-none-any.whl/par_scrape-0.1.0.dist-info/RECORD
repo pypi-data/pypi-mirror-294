@@ -1,0 +1,12 @@
+par_scrape/__init__.py,sha256=6E4SMmOUct49JziJ81hApi45-oFb43f4QuBOojtBPJc,675
+par_scrape/__main__.py,sha256=xr6fSu23Sz8vQt8uqTWG54ohTvVQ7-ydMxOmBfoTpzI,11459
+par_scrape/fetch_html.py,sha256=eEYUYFcvFGUlSFxu6fvK-shisMU7cA2wnkpW9VUiVFs,6395
+par_scrape/pricing.py,sha256=tvry5J4Wzis4xuim6NlvGpfEoz54kPm5C-CKQw1auxo,3087
+par_scrape/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+par_scrape/scrape_data.py,sha256=6f_fEVO2CYveRR1IaFh-KKraOIpTZtutM3tf3Hesbuc,8453
+par_scrape/utils.py,sha256=c9cOYiC0DdH7jnljj_j98axRKA4I46n-w5mIscXb47w,121
+par_scrape-0.1.0.dist-info/METADATA,sha256=VDcGgt_9fUE_KB-SQT95fqM21cQWUcxZbaszpF450LI,7365
+par_scrape-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+par_scrape-0.1.0.dist-info/entry_points.txt,sha256=2tCGtiLIfK_SVJtO45aQ4OcYX3XHdYcfCAlWjKUCrRg,55
+par_scrape-0.1.0.dist-info/licenses/LICENSE,sha256=mM7wR5vvvL5avX6RGqhwhOGjxyojbty3pmJSEHOqeFM,1069
+par_scrape-0.1.0.dist-info/RECORD,,
