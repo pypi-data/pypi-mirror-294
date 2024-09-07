@@ -1,0 +1,7 @@
+tpm2_pytss>=2.3.0
+
+[aws]
+boto3
+
+[gcp]
+google-auth>=2.34.0
