@@ -1,0 +1,14 @@
+mgcomtools/YcPostgres.py,sha256=mZEr3yIFPH61pwpmIAJG8a225AwVm275R1bXiwFolyQ,4219
+mgcomtools/YcSchema.py,sha256=IQFBNMfkxrtg7VHtPXkxSd8_t1m9khdK8yDsUzVZXn4,2917
+mgcomtools/__init__.py,sha256=ou-oenJ5uqcVgyy2bwIz3S7NgmnBib5IA_UynwKLxP0,72
+mgcomtools/gcp.py,sha256=6x4ozn2pkt9qMZSA5iDatK1VXn1QuKeMg6K5tKJFtD8,1781
+mgcomtools/postgres.py,sha256=T4tnJi_CTU807v9iuiQBhV2v-Od_SjMrkfqyu5nyYHk,5360
+mgcomtools/schema.py,sha256=tFG_Vacx9jhjPN03_BqKo7PcN_ElfxyDYqymzIoF_xU,2864
+mgcomtools/tables.py,sha256=evp-aRaiQjUM-xJXVIfMtejIJsX4b_Zb_-DHyqFA9VI,2757
+mgcomtools/telegram.py,sha256=yU_ajKh1syq14slTjfkxgtQ3c1_WIhoUHNL01xjw3Qw,254
+mgcomtools/test.py,sha256=6LxTFK6OgOTIWc-50ROpDcnsGoDx8q7UuWAi9Zmtz2U,31
+mgcomtools/yschema.py,sha256=tFG_Vacx9jhjPN03_BqKo7PcN_ElfxyDYqymzIoF_xU,2864
+mgcomtools-0.1.71.dist-info/METADATA,sha256=bj4YVFi3y8lA5gvbAN1mnljPRZ7feNfv53wNQO-S6UQ,505
+mgcomtools-0.1.71.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mgcomtools-0.1.71.dist-info/top_level.txt,sha256=bzbjaTi_bQM2puYPFzIIPDVOHceWr1mXBWO2Dj4Syyg,11
+mgcomtools-0.1.71.dist-info/RECORD,,
