@@ -1,0 +1,19 @@
+[project]
+name = "PyOpenocdClient"
+version = "0.1.0"
+authors = [
+  { name="Jan Matyas", email="info@janmatyas.net" },
+]
+description = "Library for controlling OpenOCD from Python programs"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/HonzaMat/PyOpenocdClient"
+Issues = "https://github.com/HonzaMat/PyOpenocdClient/issues"
+Documentation = "https://pyopenocdclient.readthedocs.io/en/latest/"
