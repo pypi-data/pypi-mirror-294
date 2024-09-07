@@ -1,0 +1,74 @@
+# Power CI/CD
+
+Utility to automate the CI/CD process for Power Platform projects in a git driven multi-stage environment.
+
+## Features
+
+- [x] Power BI
+  - [x] Import PBIX into src folder
+  - [x] Export src folder to PBIX
+  - [x] Retrieve from workspace
+  - [x] Publish to workspace
+    - [x] Custom model parameters
+    - [x] Custom hide/show report pages
+    - [x] Custom refresh schedules
+    - [x] Custom powerapps connections
+  - [x] Support one PBIX to multiple reports and datasets
+- [ ] Power Apps
+  - [ ] Initialize new app
+  - [ ] Retrieve app
+  - [ ] Publish app
+  - [ ] Customize parameters
+- [ ] Sharepoint Tables
+  - [ ] Initialize new table
+  - [ ] Retrieve table (schema)
+  - [ ] Publish table (schema)
+  - [ ] Retrieve data
+  - [ ] Publish data
+
+## Requirements
+
+- Python 3.11 or later
+- git
+
+## Installation
+
+```powershell
+pip install powercicd
+```
+
+### Add support in VS Code
+
+```powershell
+powercicd config setup-vscode
+```
+
+## CLI Syntax
+
+See `powercicd --help` for the full list of commands and options.
+See the generated documentation at [https://github.com/jeromerg/powercicd/tree/main/doc/cli.md](https://github.com/jeromerg/powercicd/tree/main/doc/cli.md).
+
+## Example
+
+- prepare a powerbi workspace `my-workspace-dev` in your own tenant, e.g. `mytenant.onmicrosoft.com`
+- copy the example project `.\doc\examples\my_project\` to your local machine
+- init git in the project folder
+  - `git init` if you want a minor version based on the git commit history length 
+- edit the `power-project-dev.yaml`
+  - change the `tenant` to the name of your tenant, e.g. `mytenant.onmicrosoft.com`
+- cd to the project folder
+- import an existing PBIX:
+
+  ```powershell
+  powercicd --stage dev powerbi import test_report --pbix-file "C:\path\to\my_report.pbix"
+  ```
+
+- deploy the PBIX to the workspace:
+
+  ```powershell
+  powercicd --stage dev powerbi publish test_report
+  ```
+
+## TODOs
+
+- prevent duplicate comonent names
