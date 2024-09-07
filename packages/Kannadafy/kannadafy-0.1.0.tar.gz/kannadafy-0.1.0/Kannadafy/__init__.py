@@ -1,0 +1,1 @@
+from .kannadafy import main

@@ -1,0 +1,2 @@
+[console_scripts]
+kannadafy = Kannadafy.kannadafy:main
