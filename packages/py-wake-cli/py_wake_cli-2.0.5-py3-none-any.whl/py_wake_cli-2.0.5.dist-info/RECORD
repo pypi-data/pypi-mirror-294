@@ -1,0 +1,8 @@
+wake/__init__.py,sha256=-UpndZZXmk9n6GT7J6wUR1h4c2plkPCBevCoYUYF5Tc,65
+wake/cli.py,sha256=XWlsCK2SBCAJERfHBiMa2zKob-WmHDgXkjN8l2RL-D0,3367
+wake/wake.py,sha256=OmXNxvn_xGaFEAylOhlWPi6jEAeiwb1TZd_9r0zU39c,4421
+py_wake_cli-2.0.5.dist-info/LICENSE,sha256=td6WMjWowKokAiXSBIkd-I107hG71dD6ux-EijKv-U8,1062
+py_wake_cli-2.0.5.dist-info/METADATA,sha256=x4KdYeKLP55gOG2SSeYkgh0CHvy3bF5jnfcn0nJObpQ,2412
+py_wake_cli-2.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+py_wake_cli-2.0.5.dist-info/entry_points.txt,sha256=JAGTMzOf7XDM4-DBwJn0Xkx6SqdeyN6l3OOHTdbMx1w,37
+py_wake_cli-2.0.5.dist-info/RECORD,,
