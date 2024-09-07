@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tegridymidi
+Version: 0.2.2
+Summary: Tools for reading, writing, and manipulating MIDIs
+Author: Alex Lev
+Author-email: Alex Lev <alexlev61@proton.me>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: networkx
+Requires-Dist: scikit-learn
+Provides-Extra: cuda
+Requires-Dist: einops; extra == "cuda"
+Requires-Dist: torch; extra == "cuda"
+Requires-Dist: cupy-cuda12x; extra == "cuda"
+Requires-Dist: torch-summary; extra == "cuda"
+
+# Tegridy MIDI
+
+## Tegridy MIDI is a Python package for working with MIDI files. It provides tools for reading, writing, and manipulating MIDI data
+
+### Features
+
+- Read and write MIDI files
+- Manipulate MIDI data
+- Integrate with FluidSynth for MIDI playback
+
+### Installation
+
+```sh
+pip install tegridymidi
+```

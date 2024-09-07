@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=74.1.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tegridymidi"
+version = "0.2.2"
+description = "Tools for reading, writing, and manipulating MIDIs"
+authors = [
+    { name = "Alex Lev", email = "alexlev61@proton.me" }
+]
+dependencies = [
+    "tqdm",
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "networkx",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+cuda = [
+    "einops",
+    "torch",
+    "cupy-cuda12x",
+    "torch-summary",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
