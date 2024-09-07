@@ -1,0 +1,10 @@
+setup.py
+chessencryption/__init__.py
+chessencryption/decode.py
+chessencryption/encode.py
+chessencryption/util.py
+chessencryption.egg-info/PKG-INFO
+chessencryption.egg-info/SOURCES.txt
+chessencryption.egg-info/dependency_links.txt
+chessencryption.egg-info/requires.txt
+chessencryption.egg-info/top_level.txt
