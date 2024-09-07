@@ -1,0 +1,9 @@
+pixi_rocker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pixi_rocker/pixi.py,sha256=vV6IeslD9WJNE9yRS8FmEOET4yVobpIJQ5BT8VEvgPw,926
+pixi_rocker/templates/curl_snippet.Dockerfile,sha256=VNGK0rAljAWRVQgHENYCQFARj5jO3GddcTRcyUDWmCg,139
+pixi_rocker/templates/pixi_snippet.Dockerfile,sha256=sI43_rtsHpqriILEJvRBYocGFmHk8D3Tryft4DZ5I24,111
+pixi_rocker-0.0.6.dist-info/METADATA,sha256=c5S6LAYQ1PILGc_6LtXlnWILpx0VToc5LUXW8FItHek,2224
+pixi_rocker-0.0.6.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+pixi_rocker-0.0.6.dist-info/entry_points.txt,sha256=-53HdK3NQ5n8s7pjx7E7_cGtJpY-b3hWWjxoHo3GplE,58
+pixi_rocker-0.0.6.dist-info/licenses/LICENSE,sha256=BELp7Z_UlGhotfEDzDkWiCw7MtJ12i7B3rhIjebfk0k,1075
+pixi_rocker-0.0.6.dist-info/RECORD,,

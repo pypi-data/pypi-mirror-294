@@ -1,0 +1,2 @@
+[rocker.extensions]
+pixi = pixi_rocker.pixi:PixiExtension
