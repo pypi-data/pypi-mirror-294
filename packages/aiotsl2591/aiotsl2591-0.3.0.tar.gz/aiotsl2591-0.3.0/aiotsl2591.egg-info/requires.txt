@@ -1,0 +1,4 @@
+
+[tests]
+mypy
+types-pkg-resources

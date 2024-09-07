@@ -1,0 +1,21 @@
+image: python:3.12
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -V
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -U build
+
+test:
+  script:
+  - python -m build
+  - pip install --upgrade .
