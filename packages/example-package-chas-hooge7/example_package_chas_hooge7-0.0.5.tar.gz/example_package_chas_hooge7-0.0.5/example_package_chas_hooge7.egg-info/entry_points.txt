@@ -1,0 +1,3 @@
+[console_scripts]
+goodbye = example_package_chas_hooge7.main:goodbye
+hello = example_package_chas_hooge7.main:hello
