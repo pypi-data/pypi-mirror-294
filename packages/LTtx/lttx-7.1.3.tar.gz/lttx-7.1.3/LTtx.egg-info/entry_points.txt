@@ -1,0 +1,3 @@
+[console_scripts]
+LTtx_server = tx.LTtx_server:main
+LTtx_tools_install = tx.__init__:install_additional_tools
