@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pallapay/__init__.py
+src/pallapay/client.py
+src/pallapay/enums.py
+src/pallapay/request.py
+src/pallapay/schema.py
+src/pallapay/utils.py
+src/pallapay_python_sdk.egg-info/PKG-INFO
+src/pallapay_python_sdk.egg-info/SOURCES.txt
+src/pallapay_python_sdk.egg-info/dependency_links.txt
+src/pallapay_python_sdk.egg-info/requires.txt
+src/pallapay_python_sdk.egg-info/top_level.txt
