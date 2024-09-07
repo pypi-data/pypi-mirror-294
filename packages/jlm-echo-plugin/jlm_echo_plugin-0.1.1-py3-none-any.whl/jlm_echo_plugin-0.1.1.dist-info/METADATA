@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jlm_echo_plugin
+Version: 0.1.1
+Requires-Dist: llm
+Requires-Dist: tlid
+
