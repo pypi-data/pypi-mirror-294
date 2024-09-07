@@ -1,0 +1,2 @@
+[console_scripts]
+refact = refact.refact_cmdline:cmdline_main

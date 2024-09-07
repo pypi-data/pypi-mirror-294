@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: refact
+Version: 0.9.8
+Summary: A python client to refact-lsp server
+Home-page: https://github.com/smallcloudai/refact
+Author: Small Magellanic Cloud AI LTD
+Author-email: info@smallcloud.tech
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.6
