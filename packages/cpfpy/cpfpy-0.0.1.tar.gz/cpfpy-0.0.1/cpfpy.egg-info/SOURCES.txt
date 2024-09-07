@@ -1,0 +1,11 @@
+README.md
+setup.py
+cpfpy/__init__.py
+cpfpy/format_cpf.py
+cpfpy/validate_cpf.py
+cpfpy.egg-info/PKG-INFO
+cpfpy.egg-info/SOURCES.txt
+cpfpy.egg-info/dependency_links.txt
+cpfpy.egg-info/top_level.txt
+cpfpy/utils/__init__.py
+cpfpy/utils/digits.py
