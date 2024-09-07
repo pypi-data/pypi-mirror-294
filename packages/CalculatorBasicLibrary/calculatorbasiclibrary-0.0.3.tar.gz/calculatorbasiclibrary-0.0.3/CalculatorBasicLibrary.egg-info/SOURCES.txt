@@ -1,0 +1,8 @@
+LICENCE.TXT
+README.txt
+setup.py
+CalculatorBasicLibrary.egg-info/PKG-INFO
+CalculatorBasicLibrary.egg-info/SOURCES.txt
+CalculatorBasicLibrary.egg-info/dependency_links.txt
+CalculatorBasicLibrary.egg-info/requires.txt
+CalculatorBasicLibrary.egg-info/top_level.txt
