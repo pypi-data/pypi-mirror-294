@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: assayo
+Version: 0.0.10
+Summary: Visualization and analysis of git commit statistics. Team Lead performance tool.
+Home-page: https://github.com/bakhirev/assayo-npx
+Author: Aleksei Bakhirev
+Author-email: alexey-bakhirev@yandex.ru
+License: License :: OSI Approved :: MIT License
+Keywords: git,stat,statistic,statistics,log,report,audit,data-visualization,commit,commits,achivments
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
