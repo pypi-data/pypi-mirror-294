@@ -1,0 +1,5 @@
+[console_scripts]
+meds-torch-eval = meds_torch.eval:main
+meds-torch-train = meds_torch.train:main
+meds-torch-transfer = meds_torch.transfer_learning:main
+meds-torch-tune = meds_torch.tune:main
