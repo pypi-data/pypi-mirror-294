@@ -1,0 +1,14 @@
+deferrer/__init__.py,sha256=4Bh4O7YeP8j-OYAySAiiEqxuTEtErWBgcPnpfWp8czY,49
+deferrer/__public__.py,sha256=FPJXEJUTH_--DNVy6DLUgDMlAMd7uGoXrG01vDYzNfo,147
+deferrer/_code_location.py,sha256=JgTW7eHdxw4hm3JLibmZgWSq5UFJo3vTWdkRjL6ulSo,367
+deferrer/_defer.py,sha256=9Y47kvf3Td7bf5yboDp1p1CFfmr4MWtFwyKL9vszPvI,7537
+deferrer/_defer_scope.py,sha256=dpuRRPaXmtiZjCIvGqtq7WyBIwNED_pmtIDZKw2Sc1g,6374
+deferrer/_deferred_actions.py,sha256=ws4tsXjfEHC2rqJs3DfbPsm9Ctp-35iTqXXU5rucyUY,1417
+deferrer/_frame.py,sha256=ZXKjLOaUG-UslbTfPEMWAbUk7nLzzbpKRXA6OABBZXc,2895
+deferrer/_opcode.py,sha256=U0kXQ5gRJFiqS4BOobV-6enT6bnT6H05HVRRPu9zaec,535
+deferrer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deferrer-0.2.0.dist-info/LICENSE,sha256=-fHgWXwCvaTaBFfrW6kjSaLKJQeuckrCLaZK9TYk8uU,1080
+deferrer-0.2.0.dist-info/METADATA,sha256=2oRKKE9BaQceOfb87tzmz1E6SItLRZn5wxX4Xq19s7k,2995
+deferrer-0.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+deferrer-0.2.0.dist-info/top_level.txt,sha256=iR7KQu77gdNo3kSoDo7Dx9ha8BxNITG7WlQ5KrPGuNc,9
+deferrer-0.2.0.dist-info/RECORD,,
