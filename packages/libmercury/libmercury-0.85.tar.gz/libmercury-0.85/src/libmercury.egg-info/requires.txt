@@ -1,0 +1,6 @@
+routes
+werkzeug
+colorama
+pycryptodome
+MarsRouter
+SQLAlchemy==1.4.55
