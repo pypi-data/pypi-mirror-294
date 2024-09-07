@@ -1,0 +1,3 @@
+[console_scripts]
+tk = took.took:main
+took = took.took:main
