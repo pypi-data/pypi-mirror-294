@@ -1,0 +1,10 @@
+README.md
+mathfixer.py
+proxy.py
+setup.py
+mathfixer.egg-info/PKG-INFO
+mathfixer.egg-info/SOURCES.txt
+mathfixer.egg-info/dependency_links.txt
+mathfixer.egg-info/entry_points.txt
+mathfixer.egg-info/requires.txt
+mathfixer.egg-info/top_level.txt
