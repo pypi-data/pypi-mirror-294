@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bengalinlp
+Version: 1.0.0
+Summary: BengaliNLP is a natural language processing toolkit for Bengali Language
+Home-page: https://github.com/banglawiki/bengalinlp
+Author: KhulnaSoft DevOps
+Author-email: info@khulnasoft.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sentencepiece
+Requires-Dist: gensim
+Requires-Dist: nltk
+Requires-Dist: numpy <2.0,>=1.18.5
+Requires-Dist: scipy <1.14.0,>=1.7.0
+Requires-Dist: sklearn-crfsuite
+Requires-Dist: tqdm
+Requires-Dist: ftfy
+Requires-Dist: emoji
+Requires-Dist: requests
+Provides-Extra: fasttext
+Requires-Dist: fasttext ; extra == 'fasttext'
+
+# BengaliNLP
