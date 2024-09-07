@@ -1,0 +1,17 @@
+# TestSetInputArgumentDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **str** |  | 
+**type** | **str** |  | 
+**value** | **str** |  | 
+**last_modification_time** | **datetime** |  | [optional] 
+**last_modifier_user_id** | **int** |  | [optional] 
+**creation_time** | **datetime** |  | [optional] 
+**creator_user_id** | **int** |  | [optional] 
+**id** | **int** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

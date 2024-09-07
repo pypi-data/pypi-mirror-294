@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: uipath_orchestrator_rest
+Version: 18.1
+Summary: UiPath Orchestrator REST API Client 18.1
+Home-page: 
+Author-email: Jorge Caravaca <taruelec@gmail.com>
+Project-URL: homepage, https://github.com/TaruDesigns/UIPathAPI
+Requires-Python: >=3.8
+License-File: LICENSE.md
+Requires-Dist: certifi>=2024
+Requires-Dist: python-dateutil>=2.1
+Requires-Dist: six>=1.10
+Requires-Dist: urllib3>=1.23
