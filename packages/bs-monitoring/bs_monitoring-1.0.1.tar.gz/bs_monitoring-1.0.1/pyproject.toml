@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bs_monitoring"
+version = "1.0.1"
+description = "A simple monitoring tool-kit enabling easier description of monitoring data pipelines."
+authors = [{name = "Matej Sirovatka", email = "matej.sirovatka@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "elasticsearch>=8.12.1,<9",
+    "python-dotenv",
+    "psycopg2>=2.9.9,<3",
+    "dacite==1.8.1",
+    "Cerberus==1.3.5",
+    "pytz>=2024.1,<2025"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bitswan-space/bs-monitoring"
+
