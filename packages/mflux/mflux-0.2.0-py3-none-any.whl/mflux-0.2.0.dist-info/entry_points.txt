@@ -1,0 +1,3 @@
+[console_scripts]
+mflux-generate = mflux.generate:main
+mflux-save = mflux.save:main
