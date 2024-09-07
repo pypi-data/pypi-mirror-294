@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: Flask-Annex
+Version: 2.0.0
+Summary: Efficient integration of external storage services for Flask
+Home-page: https://github.com/4Catalyzer/flask-annex
+Author: Jimmy Jia
+Author-email: tesrin@gmail.com
+License: MIT
+Keywords: storage s3 flask
+Classifier: Framework :: Flask
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask>=2.0
+Requires-Dist: packaging>=17.0
+Provides-Extra: s3
+Requires-Dist: boto3>=1.4.0; extra == "s3"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Provides-Extra: tests-s3
+Requires-Dist: moto; extra == "tests-s3"
+Requires-Dist: requests; extra == "tests-s3"
+
+# Flask-Annex [![GitHub Actions][build-badge]][build] [![PyPI][pypi-badge]][pypi]
+
+Efficient integration of external storage services for [Flask](http://flask.pocoo.org/).
+
+Run `pip install -e .[s3,tests]` to install for development and with `S3` support.
+
+[![Codecov][codecov-badge]][codecov]
+
+[build-badge]: https://github.com/4Catalyzer/flask-annex/actions/workflows/main.yml/badge.svg
+[build]: https://github.com/4Catalyzer/flask-annex/actions
+[pypi-badge]: https://img.shields.io/pypi/v/Flask-Annex.svg
+[pypi]: https://pypi.python.org/pypi/Flask-Annex
+[codecov-badge]: https://img.shields.io/codecov/c/github/4Catalyzer/flask-annex/master.svg
+[codecov]: https://codecov.io/gh/4Catalyzer/flask-annex
