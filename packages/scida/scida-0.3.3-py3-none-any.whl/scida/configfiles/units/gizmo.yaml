@@ -1,0 +1,64 @@
+metadata_unitsystem: cgs
+units:
+  # h: 0.7 hubble factor, needs to be set by snapshot
+  # a: 1.0 # scale factor, needs to be set by snapshot
+  ckpc: a * kpc
+  # for GIZMO, one can change the code unit defaults; TODO: get from params.txt
+  code_mass: 1e10 * Msun / h
+  code_length: ckpc / h
+  code_velocity: km / s
+  code_time: 0.978 * Gyr / h
+  code_energy: (code_velocity)^2
+  code_density: code_mass / code_length^3
+  code_magnetic: gauss
+  code_divdamp: code_magnetic * code_velocity
+fields:
+  _all:
+    AGS-Softening: unknown
+    Coordinates: code_length
+    Velocities: a^0.5 * code_velocity
+    ParticleIDs:
+    ParticleChildIDsNumber:
+    ParticleIDGenerationNumber:
+    Masses: code_mass
+    Potential: (km / s)^2  # TODO: not in GIZMO manual, taken from https://bitbucket.org/awetzel/gizmo_analysis/src/master/gizmo_io.py
+    HaloID: none
+    ID_Generations: none
+  PartType0:
+    ArtificialViscosity:
+    DelayTime: unknown
+    Density: code_density
+    Dust_Masses: code_mass  # guess
+    Dust_Metallicity:
+    ElectronAbundance:
+    FractionH2:
+    GrackleHI: unknown
+    GrackleHII: unknown
+    GrackleHM: unknown
+    GrackleHeI: unknown
+    GrackleHeII: unknown
+    GrackleHeIII: unknown
+    InternalEnergy: code_energy
+    Metallicity:
+    NeutralHydrogenAbundance:
+    PhotonEnergy: code_energy
+    Sigma: unknown
+    SmoothingLength: code_length
+    StarFormationRate: Msun / yr
+    StellarFormationTime: # guess
+    MagneticField: code_magnetic
+    MagneticFieldDivergence: code_divdamp
+    NWindLaunches: none
+  PartType4:
+    Dust_Masses: code_mass  # guess
+    Dust_Metallicity:
+    Metallicity:
+    StellarFormationTime: # guess
+  PartType5:
+    BH_AccretionLength: code_length  # guess
+    BH_NProgs: none
+    BH_Mass: code_mass
+    BH_Mdot: code_mass / code_time
+    BH_Mass_AlphaDisk: code_mass
+    BH_StellarFormationTime: # guess
+    StellarFormationTime: # guess
