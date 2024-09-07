@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+frieren/__init__.py
+frieren.egg-info/PKG-INFO
+frieren.egg-info/SOURCES.txt
+frieren.egg-info/dependency_links.txt
+frieren.egg-info/requires.txt
+frieren.egg-info/top_level.txt
+frieren/base/__init__.py
+frieren/base/dtypes.py
+frieren/base/locator.py
+frieren/base/metadata.py
+frieren/base/operator.py
+frieren/base/repository.py
+test/test_fileio.py
