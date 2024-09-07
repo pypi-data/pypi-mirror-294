@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gojyuuonjyunn
+Version: 1.0
+Summary: Simple Wrapper to Sort Japanese Strings in Gojyuuonjyunn Order
+Home-page: https://github.com/Sakkyoku-Sha/gojyuuonjyunn
+Author: Ryan Anderson
+Author-email: ryananderson0147@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pykakasi
+
+# gojyuuonjyunn
+
+# Simple Wrapper to Sort Japanese Strings in Gojyuuonjyunn Order
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install gojyuuonjyunn
+```
+
+## Usage
+
+Here is an example of how to use the sort method to sort a list of Japanese strings in Gojyuuonjyunn order:
+
+```python
+import gojyuuonjyunn
+
+strings = ["こんにちは", "さようなら", "ありがとう"]
+sorted_strings = gojyuuonjyunn.sort(strings)
+print(sorted_strings)
+```
