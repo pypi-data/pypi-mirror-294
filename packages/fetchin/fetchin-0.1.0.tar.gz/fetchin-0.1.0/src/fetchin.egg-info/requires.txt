@@ -1,0 +1,8 @@
+requests==2.32.3
+pybreaker==1.2.0
+prometheus-client==0.20.0
+
+[dev]
+black
+flake8
+pytest
