@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: linggapy
+Version: 0.1.1
+Summary: Library for Stemming Balinese Text Language
+Home-page: https://github.com/putuwaw/linggapy
+Author: Putu Widyantara Artanta Wibawa
+Author-email: putuwaw973@gmail.com
+License: MIT
+Keywords: stemming,stem,balinese,language
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# linggapy
+
+Library for Stemming Balinese Text Language
+
+```py
+from linggapy.stemmer import Stemmer
+
+stemmer = Stemmer()
+print(stemmer.stem("kajemak"))
+
+# output: jemak
+```
