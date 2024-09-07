@@ -1,0 +1,14 @@
+__pycache__
+.git
+.vscode
+venv
+obj
+bin
+build
+*.egg-info
+.pytest_cache
+*.jpg
+*.svg
+*.css
+package-lock.json
+vendor
