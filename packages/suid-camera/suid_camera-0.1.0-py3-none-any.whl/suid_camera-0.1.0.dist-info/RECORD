@@ -1,0 +1,6 @@
+suid_camera/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suid_camera/protos/messages.proto,sha256=ai_2NBRoE4Qv_mmyq1TG6WYMZD-TdLEw3w067qRlOhg,146
+suid_camera/protos/service.proto,sha256=GxwGv5UJ_vuq3sPQfjgk5LSQUkF8_Izm2oRTVN5yiNs,262
+suid_camera-0.1.0.dist-info/METADATA,sha256=cR3f5zCh-9ZiGP5bKZfn14VcCB5mfWZPuP7MPBTDqsw,370
+suid_camera-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+suid_camera-0.1.0.dist-info/RECORD,,
