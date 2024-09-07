@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: SMOF_MOF
+Version: 0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # SMOF-MOF
+        
+        ## Installation
+        You can install `SMOF-MOF` using pip
+        
+        ```
+        pip install SMOF-MOF
+        ```
+        
+        ## Mass ratio variance-based outlier factor (MOF)
+        ----
+        
+        the outlier score of each data point is called `MOF`. It measures the global deviation of density given sample with respect to other data points.
+        it is global in the outlier score depend on how isolated. data point is with respect to all data points in the data set.
+        the variance of mass ratio can identify data points that have a substantially. lower density compared to other data points. 
+        These are considered outliers.
+        
+        #### MOF()
+        
+        > Initial a model of `MOF`
+        
+            Parameters :
+            Return :
+                    self : object
+                            object of MOF model
+        #### MOF.fit(Data)
+        > Fit data to  `MOF` model
+        
+            Parameters :
+                    Data  : numpy array of shape (n_points, d_dimensions)
+                            The input samples.
+            Return :
+                    self  : object
+                            fitted estimator
+        #### Process_MOF(X =[])
+        > Process data with `MOF`
+        
+            Parameters :
+                    X  : numpy array of shape (n_points, d_dimensions)
+                            The input samples.
+            Return :
+                    decision_scores_ : numpy array of shape (n_samples)
+                            decision score for each point
+        #### MOF attributes
+        | Attributes | Type | Details |
+        | ------ | ------- | ------ |
+        | MOF.Data | numpy array of shape (n_points, d_dimensions) | input data for model |
+        | MOF.MassRatio | numpy array of shape (n_samples, n_points) | MassRatio for each a pair of points |
+        | MOF.decision_scores_ | numpy array of shape (n_samples) | decision score for each point |
+        ### Examples
+        ```
+        # This example demonstrates  the usage of MOF
+        from SMOF_MOF import Process_MOF
+        import numpy as np
+        X = [[ 0.74193734,  6.84385655,  5.90835464],
+                [ 0.74193734,  6.69344758,  5.76863345],
+                [ 0.74193734,  9.45125311,  7.21457799],
+                [ 1.62924054,  7.58482389,  5.79026593],
+                [ 1.80828877,  7.46054784,  5.79939564],
+                [ 1.62924054 , 7.03623644,  5.78720408],
+                [ 2.6461748 ,  9.44786798,  7.21604848],
+                [ 0.09531018,  7.91465424,  6.00166237],
+                [ 0.09531018,  6.61217543,  5.77796187]]
+        X = np.array(X)
+        score = Process_MOF(X)
+        print(scores)
+        ```
+        **Output**
+        ```
+        [0.05043327 0.03993228 0.34079475 0.07714844 0.10691165 0.063680160.4016755  0.81238359 0.04089301]
+        ```
+        > **Note** The data size should not exceed **10000** points because MOF uses high memory.
+        
+        ## Streaming Mass ratio variance-based outlier factor (SMOF)
+        ----
+        the outlier score of each data point is called `SMOF`. It measures the global deviation of density of data points in current window with respect to data points in the refernce window. this algoihtm process in non-overlapping window. the mutiply between variance of mass ratio of each data point and average of them in present window can identify data points that have a substantially lower density compared to other data points. These are considered outliers.
+        
+        #### SMOF(win=256, seed=42, Train=[])
+        
+        > Initial a model of `SMOF`
+        
+            Parameters :
+                    win : int (default = 256)
+                            window size of sum of reference and current window
+                    seed : int (default = 42)
+                            random seed
+                    Train : numpy array of shape (n_points, d_dimensions)
+                            data points for intilized model
+            Return :
+                    self : object
+                            object of SMOF model
+        #### SMOF.fit(X_current)
+        > Move current data point to current window and assign `SMOF` scores
+        
+            Parameters :
+                    X_current  : numpy array of shape (n_points, d_dimensions)
+                            current data point from streaming data
+            Return :
+                    self  : object
+                            fitted estimator
+        
+        #### Process_SMOF(Win=500, X =[], Seed=42)
+        > Process data with `SMOF`
+        
+            Parameters :
+                    win : int (default = 500)
+                            window size of sum of reference and current window
+                    X  : numpy array of shape (n_points, d_dimensions)
+                            The input samples.
+                    seed : int (default = 42)
+                            random seed
+            Return :
+                    SMOFs : numpy array of shape (n_samples)
+                            decision score for each point
+        
+        #### SMOF attributes
+        | Attributes | Type | Details |
+        | ------ | ------- | ------ |
+        | MOF.win | int | window size of sum of reference and current window |
+        | MOF.window_current | numpy array of shape (n_samples, n_points) | current data point from streaming data |
+        | MOF.SMOFs | numpy array of shape (n_samples) | decision score for each point |
+        ### Examples
+        ```
+        # This example demonstrates  the usage of SMOF
+        from SMOF_MOF import Process_SMOF
+        import numpy as np
+        X = [[-2.30258509,  7.71114603,  5.81740873]
+            [-2.30258509,  6.93449458,  5.81144035]
+            [ 0.09531018,  7.26410017,  5.99670081]
+            [ 1.13140211,  7.17019646,  5.80242044]
+            [ 0.74193734,  7.06227732,  5.90835464]
+            [-2.30258509,  6.64391993,  5.80844275]
+            [ 1.13140211,  7.69807454,  5.91106761]
+            [ 0.09531018,  6.79805201,  5.81442899]
+            [ 0.09531018,  7.42362814,  5.92719266]
+            [ 0.09531018,  6.9118469 ,  5.81144035]
+            [-2.30258509,  7.01040212,  5.80242044]
+            [ 0.09531018,  7.13894636,  5.91106761]
+            [ 0.09531018,  7.61928251,  5.80242044]
+            [ 0.09531018,  7.29580291,  6.01640103]
+            [-2.30258509, 12.43197678,  5.79331844]
+            [ 1.13140211,  9.53156118,  7.22336862]
+            [-2.30258509,  7.09431783,  5.79939564]
+            [ 0.09531018,  7.50444662,  5.82037962]
+            [ 0.09531018,  7.8184705 ,  5.82334171]
+            [ 0.09531018,  7.25212482,  5.91106761]]
+        X = np.array(X)
+        score = Process_SMOF(Win=10,X=X)
+        print(score)
+        ```
+        **Output**
+        ```
+        <runtime>  10it [00:00, 509.68it/s]
+        [0.02466581 0.00734274 0.00502668 0.00333289 0.00544248 0.0046538 0.00933626 0.00316922 0.00294779 0.00122089 0.01376553 0.00126867 0.00730856 0.00496102 0.03370523 0.13718442 0.03043219 0.02105821 0.02646965 0.00197488]
+         
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
