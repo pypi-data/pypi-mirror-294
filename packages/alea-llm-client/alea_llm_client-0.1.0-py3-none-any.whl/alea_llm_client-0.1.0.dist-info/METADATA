@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: alea-llm-client
+Version: 0.1.0
+Summary: ALEA LLM client abstraction library for Python
+Home-page: https://aleainstitute.ai/
+License: MIT
+Keywords: alea,llm,client,api
+Author: ALEA Institute
+Author-email: hello@aleainstitute.ai
+Requires-Python: >=3.10,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: anthropic (>=0.34.2,<0.35.0)
+Requires-Dist: openai (>=1.43.1,<2.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/alea-institute/alea-llm-client
+Description-Content-Type: text/markdown
+
+# ALEA LLM Client
+
