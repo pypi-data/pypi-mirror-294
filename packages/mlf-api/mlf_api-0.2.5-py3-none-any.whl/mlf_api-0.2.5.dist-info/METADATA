@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlf-api
+Version: 0.2.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.8.4
+Requires-Dist: aiortc ==1.5.0
+Requires-Dist: numpy ==1.24.3
+Requires-Dist: opencv-python ==4.7.0.72
+Requires-Dist: requests ==2.31.0
+
+UNKNOWN
+
