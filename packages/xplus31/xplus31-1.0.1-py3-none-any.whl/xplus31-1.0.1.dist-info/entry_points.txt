@@ -1,0 +1,2 @@
+[console_scripts]
+31_help = src:help
