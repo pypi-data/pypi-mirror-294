@@ -1,0 +1,1 @@
+from .diz_egua import diz_egua
