@@ -1,0 +1,4 @@
+analyse_texte.egg-info/PKG-INFO
+analyse_texte.egg-info/SOURCES.txt
+analyse_texte.egg-info/dependency_links.txt
+analyse_texte.egg-info/top_level.txt
