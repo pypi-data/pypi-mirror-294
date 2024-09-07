@@ -1,0 +1,4 @@
+aiohttp
+termcolor
+pydantic
+prompt_toolkit
