@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py-data-validator
+Version: 0.1.1
+Summary: Python data validation library
+Author-email: Krunal Dodiya <krunal@example.com>
+License: MIT
+Project-URL: homepage, https://www.proalgotrader.com
+Project-URL: repository, https://github.com/krunaldodiya/py-data-validator
+Project-URL: documentation, https://www.proalgotrader.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
