@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+picorm/FileStorage.py
+picorm/SQLiteStorage.py
+picorm/Storage.py
+picorm/__about__.py
+picorm/__init__.py
+picorm/utils.py
+picorm.egg-info/PKG-INFO
+picorm.egg-info/SOURCES.txt
+picorm.egg-info/dependency_links.txt
+picorm.egg-info/top_level.txt
+picorm/tests/__init__.py
+picorm/tests/test_storages.py
