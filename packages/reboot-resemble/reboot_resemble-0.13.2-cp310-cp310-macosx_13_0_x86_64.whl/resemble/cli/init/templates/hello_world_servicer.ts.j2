@@ -1,0 +1,37 @@
+import { ReaderContext, WriterContext } from "@reboot-dev/resemble";
+
+import {
+  HelloWorld,
+  GreetRequest,
+  GreetResponse,
+  NumGreetingsRequest,
+  NumGreetingsResponse,
+} from "../{{ api_directory }}/{{ name }}/v1/hello_world_rsm.js";
+
+export class HelloWorldServicer extends HelloWorld.Interface {
+  constructor() {
+    super();
+  }
+
+  async numGreetings(
+    context: ReaderContext,
+    state: HelloWorld.State,
+    request: NumGreetingsRequest
+  ): Promise<NumGreetingsResponse> {
+    return new NumGreetingsResponse({
+      numberOfGreetings: state.numberOfGreetings
+    });
+  }
+
+  async greet(
+    context: WriterContext,
+    state: HelloWorld.State,
+    request: GreetRequest
+  ): Promise<GreetResponse> {
+    state.numberOfGreetings += 1;
+
+    return new GreetResponse({
+      numberOfGreetings: state.numberOfGreetings
+    });
+  }
+}
