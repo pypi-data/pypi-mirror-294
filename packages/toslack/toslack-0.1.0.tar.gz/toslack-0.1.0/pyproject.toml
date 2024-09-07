@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "slack-sdk>=3.31.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toslack"
+version = "0.1.0"
+readme = "README.md"
+authors = [
+  { name="HowieMen", email="howiemen@gmail.com" },
+]
+dependencies = [
+  "slack_sdk >= 3.31.0",
+]
+description = "Python API and CLI for sending message in Slack"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+keywords = [
+	"slack",
+	"slack-api",
+	"chat",
+	"chatbot",
+]
+classifiers = [
+	"Intended Audience :: Developers",
+	"Topic :: Communications :: Chat",
+	"Topic :: System :: Networking",
+	"Topic :: Office/Business",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/HowieMen/toslack"
+"Bug Tracker" = "https://github.com/HowieMen/toslack/issues"
+
+[tool.setuptools.packages.find]
+include = ["toslack*"]
+
+[tool.distutils.bdist_wheel]
+universal = false
+
+[tool.black]
+line-length = 125
+

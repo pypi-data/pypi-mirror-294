@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+toslack/__init__.py
+toslack/py.typed
+toslack/slack_client.py
+toslack/slack_message.py
+toslack.egg-info/PKG-INFO
+toslack.egg-info/SOURCES.txt
+toslack.egg-info/dependency_links.txt
+toslack.egg-info/requires.txt
+toslack.egg-info/top_level.txt

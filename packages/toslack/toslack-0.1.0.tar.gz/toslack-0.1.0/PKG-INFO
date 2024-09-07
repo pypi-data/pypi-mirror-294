@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: toslack
+Version: 0.1.0
+Summary: Python API and CLI for sending message in Slack
+Author-email: HowieMen <howiemen@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2015- Slack Technologies, LLC
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/HowieMen/toslack
+Project-URL: Bug Tracker, https://github.com/HowieMen/toslack/issues
+Keywords: slack,slack-api,chat,chatbot
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Office/Business
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: slack_sdk>=3.31.0
+
+<h1 align="center">Python API and CLI for sending message in Slack</h1>
+
+<p align="center">
+    <a href="https://pypi.org/project/toslack/">
+        <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/toslack"></a>
+    <a href="https://pypi.org/project/slack-sdk/">
+        <img alt="slack-to Versions" src="https://img.shields.io/badge/slack--sdk-%3E%3D3.31.0-red"></a>
+    <a href="https://pypi.org/project/toslack/">
+        <img alt="Python Versions" src="https://img.shields.io/pypi/pyversions/toslack.svg"></a>
+</p>
+
+**toslack** is a Python package that helps you send messages, images or files to slack channels with simple settings. Command line tools are also provided to do the same thing.
+
+### Requirements
+
+- **Python Version**: Ensure you are using Python 3.6 or higher.
+- **Dependencies**:
+  - `slack_sdk` (version 3.31.0)
+  - `dataclasses` (built-in for Python 3.6+)
+  - `typing` (for type hinting)
+
+## Installation
+
+```
+pip install toslack
+```
+
+## Sending a message to Slack
+
+One of the most common use-cases is sending a message to Slack. If your app's bot user is not in a channel yet, invite the bot user before running the code snippet (or add `chat:write.public` to Bot Token Scopes for posting in any public channels).
+
+```
+import os
+from toslack import SlackMessage
+from toslack import SlackClient
+
+client = SlackClient(token=os.environ['SLACK_BOT_TOKEN'], channel=os.environ['TO_SLACK_CHANNEL'])
+message = SlackMessage(client=client)
+message.post(text="Hello world!")
+```
+
+Or posting your message by the command line.
+
+```
+python slack.py --token xxx --channel C123456 post $message
+```
+
+## Uploading files to Slack
+
+You can just include a path to the file directly in the API call and upload it that way.
+
+```
+import os
+from toslack import SlackMessage
+from toslack import SlackClient
+
+client = SlackClient(token=os.environ['SLACK_BOT_TOKEN'], channel=os.environ['TO_SLACK_CHANNEL'])
+message = SlackMessage(client=client)
+message.upload(file_path="./tmp.txt")
+```
+
+Or upload by specifying the file path on the command line.
+
+```
+python slack.py --token xxx --channel C123456 upload $file_path
+```
