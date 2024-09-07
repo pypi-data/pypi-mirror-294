@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "tassistant-bot"
+version = "0.2.5"
+description = ""
+authors = ["kinsoRick <kmasnaveev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyroTGFork = "^2.1.33.2"
+tgcrypto = "^1.2.5"
+python-dotenv = "^1.0.1"
+colorlog = "^6.8.2"
+gitpython = "^3.1.43"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+tassistant = "tassistant_bot.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+tox = "^4.18.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
