@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dftpy
+Version: 2.1.1
+Summary: Python3 packages for Density Functional Theory
+Home-page: http://dftpy.rutgers.edu
+Author: Pavanello Research Group
+Author-email: m.pavanello@rutgers.edu
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.11.0
+Requires-Dist: scipy>=0.18.0
+Requires-Dist: ase>=3.22.0
+Requires-Dist: xmltodict>=0.12.0
+Provides-Extra: libxc
+Requires-Dist: pylibxc2; python_version < "3.10" and extra == "libxc"
+Provides-Extra: upf
+Requires-Dist: upf_to_json; extra == "upf"
+Provides-Extra: mpi
+Requires-Dist: mpi4py; extra == "mpi"
+Requires-Dist: mpi4py-fft; extra == "mpi"
+Provides-Extra: all
+Requires-Dist: pylibxc2; python_version < "3.10" and extra == "all"
+Requires-Dist: upf_to_json; extra == "all"
+Requires-Dist: mpi4py; extra == "all"
+Requires-Dist: mpi4py-fft; extra == "all"
+Requires-Dist: pyfftw; extra == "all"
+
+# DFTpy Manual, Tutorials and more
+
+See [DFTpy's website](http://dftpy.rutgers.edu) for details.
+
+See also [DFTpy's forum](https://lists.rutgers.edu/mm3/archives/list/dftpy_forum@email.rutgers.edu/) for commonly asked questions.
+
+
