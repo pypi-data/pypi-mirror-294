@@ -1,0 +1,3 @@
+[console_scripts]
+autopep695=autopep695.cli:main
+

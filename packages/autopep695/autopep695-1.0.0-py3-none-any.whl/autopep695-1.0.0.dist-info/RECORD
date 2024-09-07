@@ -1,0 +1,15 @@
+autopep695/__init__.py,sha256=Q7LyH81zIhAXI0FYCboyqz6LzbLgnIkWT-w7--bmVjo,68
+autopep695/__main__.py,sha256=tMhf3imBqgoP9RpntlmyIvkGY7VMk-DYxk_8wxSItEU,43
+autopep695/aliases.py,sha256=gb5kY1ruVdEGvJhvmsmK1Xa6JXCCX5ENQ_jexKvppZk,727
+autopep695/analyzer.py,sha256=V_cTorvv3ELZf3HuwQvGMudTYM60qQfz7LW01RSFsZI,4709
+autopep695/base.py,sha256=ZCSPtRJWRjOykYsPmSFEMaKV8gwMvwKvTeHkgzH-EJA,16833
+autopep695/check.py,sha256=uCH9aaLIlJUkWPnqf0-HWtOF7f8wwCqvLwpqLg8tlN0,5562
+autopep695/cli.py,sha256=BolddLEwWf5JTWJMFB-zmUF2yUWUZ_QVL0YhViw8MpA,2994
+autopep695/format.py,sha256=Lm0CUd4u4mFvkObjePHzxZHUdSF5cbRtOSS3JLGosK4,2962
+autopep695/symbols.py,sha256=6ZPIkegmGHP_Abx2fcJntxLxKr_6TfAvmaPri-kaRIM,1301
+autopep695/ux.py,sha256=1p07MNtELW_qw87jym1QQoMQT5hWLfNTAhEKDPnZK_s,1093
+autopep695-1.0.0.dist-info/entry_points.txt,sha256=2GSFVV9yis0Jeoz3lWIvhQC4u3t6kROLPEjx0EscsCc,50
+autopep695-1.0.0.dist-info/LICENSE,sha256=VFzx_CopjzV5cFx9oErhGl1LPx8_h8Zb83s0Ag2ehig,1090
+autopep695-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+autopep695-1.0.0.dist-info/METADATA,sha256=VKjPomTJ8yNpt05xYrpE7uPk9jfib3rzm_CLNZsZuXU,5891
+autopep695-1.0.0.dist-info/RECORD,,
