@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "openfunnel-telemetry"
+version = "1.0.0"
+description = "OpenFunnel Telemetry Python SDK for Code Level Telemetry"
+authors = ["Fenil Suchak <fenil.suchak1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
