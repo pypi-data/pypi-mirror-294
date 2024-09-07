@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+recursive-include tests *

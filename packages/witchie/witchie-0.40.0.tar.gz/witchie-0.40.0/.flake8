@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+[flake8]
+exclude=build,tests,tmp,venv,witchie/tui
+max-line-length=100

@@ -1,0 +1,19 @@
+/*
+ * SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+ *
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/* Overrides for the docs theme  */
+table { width: 100% }
+table th { text-align: left }
+code { white-space: pre }
+h2, h3 { margin-top: 2.5rem; }
+h4, h5 { margin-top: 2rem; }
+
+td.code {
+    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
+    font-size: 0.875em;
+    width: 20%;
+    white-space: nowrap;
+}

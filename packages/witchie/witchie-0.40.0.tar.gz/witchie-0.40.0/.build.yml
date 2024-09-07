@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: 2024 Ngô Ngọc Đức Huy <huyngo@disroot.org>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+# CI for testing
+image: alpine/latest
+packages:
+  - py3-flake8
+  - py3-virtualenv
+  - python3
+  - reuse
+  - vermin
+sources:
+  - 'https://git.sr.ht/~huyngo/witchie'
+tasks:
+  - install: |
+      cd witchie
+      virtualenv venv
+      source venv/bin/activate
+      pip install '.'
+      pip install pytest
+  - reuse: |
+      cd witchie
+      reuse lint
+  - lint: |
+      cd witchie
+      vermin witchie
+      flake8
+  - test: |
+      cd witchie
+      source venv/bin/activate
+      pytest

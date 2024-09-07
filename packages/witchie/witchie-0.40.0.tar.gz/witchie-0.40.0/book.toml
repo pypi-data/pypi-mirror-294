@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+[book]
+authors = ["Ivan Habunek"]
+language = "en"
+multilingual = false
+src = "docs"
+title = "toot"
+
+[output.html]
+additional-css = ["book.css"]
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]

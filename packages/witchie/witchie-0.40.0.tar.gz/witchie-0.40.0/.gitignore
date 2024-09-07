@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+*.egg-info/
+*.pyc
+.pypirc
+/.cache/
+/.coverage
+/.env
+/.envrc
+/.pytest_cache/
+/build/
+/dist/
+/htmlcov/
+/tmp/
+/toot-*.tar.gz
+debug.log
+/pyrightconfig.json
+/venv/
+/book

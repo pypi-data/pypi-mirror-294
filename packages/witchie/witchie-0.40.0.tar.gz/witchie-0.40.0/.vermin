@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2017-2023 Ivan Habunek et al <ivan@habunek.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+[vermin]
+only_show_violations = yes
+show_tips = no
+targets = 3.9
