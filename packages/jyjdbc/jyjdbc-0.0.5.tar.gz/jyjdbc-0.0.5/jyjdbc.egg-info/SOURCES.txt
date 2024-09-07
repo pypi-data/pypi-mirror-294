@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test_jyjdbcingres_dbapi20.py
+test_jyjdbcsqlite_dbapi20.py
+test_zxjdbcingres_dbapi20.py
+test_zxjdbcsqlite_dbapi20.py
+jyjdbc/__init__.py
+jyjdbc/_version.py
+jyjdbc.egg-info/PKG-INFO
+jyjdbc.egg-info/SOURCES.txt
+jyjdbc.egg-info/dependency_links.txt
+jyjdbc.egg-info/top_level.txt
+jyjdbc.egg-info/zip-safe

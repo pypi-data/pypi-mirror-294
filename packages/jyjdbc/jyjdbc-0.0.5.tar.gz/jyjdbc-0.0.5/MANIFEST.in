@@ -1,0 +1,5 @@
+include LICENSE
+include test_jyjdbcingres_dbapi20.py
+include test_zxjdbcingres_dbapi20.py
+include test_jyjdbcsqlite_dbapi20.py
+include test_zxjdbcsqlite_dbapi20.py
