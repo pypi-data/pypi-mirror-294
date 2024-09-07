@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fastapi_g_context/__init__.py
+fastapi_g_context/fastapi_g.py
+fastapi_g_context.egg-info/PKG-INFO
+fastapi_g_context.egg-info/SOURCES.txt
+fastapi_g_context.egg-info/dependency_links.txt
+fastapi_g_context.egg-info/requires.txt
+fastapi_g_context.egg-info/top_level.txt
+tests/test_app.py
+tests/test_globals.py
