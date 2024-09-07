@@ -1,0 +1,3 @@
+[console_scripts]
+litedoc = litedoc.__main__:main
+
