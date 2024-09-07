@@ -1,0 +1,10 @@
+l0n0lacl/AclNDTensor.py,sha256=0I9hAW_oJyMuhb3kOHawjx3_nuoeNDihOoUd0oVQKFM,3318
+l0n0lacl/AclStream.py,sha256=R3sU3sR_csiFfXBy-kGYgzuHg_CdrYk6R7B6QPo-ydQ,661
+l0n0lacl/OpRunner.py,sha256=1WmDInQkdF5CCvrfl7ildQprN4UwlAXG9nfgWbDDWCY,4219
+l0n0lacl/__init__.py,sha256=uwNxkI0-t7RhT4IWslaKfBzWufrL3xUfumLEcCO9KqI,668
+l0n0lacl/utils.py,sha256=34geI3wX-QFs6LwyzD216ePG8gh_0YvPVoU6mbUXDH0,7091
+l0n0lacl-1.0.0.dist-info/LICENSE,sha256=wdWP7UHOEUufElhjEe--UBNK2NbbYba38MgtK0xR-sI,1093
+l0n0lacl-1.0.0.dist-info/METADATA,sha256=zpJ9vlbqPFmB6FQ74zn6ylTzpdJH-MuXx-z-kkfzKkQ,5843
+l0n0lacl-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+l0n0lacl-1.0.0.dist-info/top_level.txt,sha256=RAdySLczdSVfKCj8na74edq5pPI2slsB-TV__kRJyhA,9
+l0n0lacl-1.0.0.dist-info/RECORD,,
