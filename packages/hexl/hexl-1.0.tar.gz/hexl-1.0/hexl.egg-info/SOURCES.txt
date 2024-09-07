@@ -1,0 +1,13 @@
+README.md
+setup.py
+hexl/__init__.py
+hexl/hex_functions.py
+hexl/hexl.py
+hexl.egg-info/PKG-INFO
+hexl.egg-info/SOURCES.txt
+hexl.egg-info/dependency_links.txt
+hexl.egg-info/top_level.txt
+tests/__init__.py
+tests/hex_functions.py
+tests/hexl.py
+tests/tests.py
