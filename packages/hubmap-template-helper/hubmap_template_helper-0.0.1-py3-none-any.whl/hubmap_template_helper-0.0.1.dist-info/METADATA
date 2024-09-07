@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: hubmap_template_helper
+Version: 0.0.1
+Summary: Helper functions for templates within HuBMAP Data Portal
+Author-email: "Thomas C. Smits" <tsmits@hms.harvard.edu>
+Project-URL: Homepage, https://github.com/thomcsmits/hubmap_template_helper
+Project-URL: Bug Tracker, https://github.com/thomcsmits/hubmap_template_helper/issues
+Keywords: HuBMAP
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=0.2.0
+Requires-Dist: pandas >=0.20.0
+
+# HuBMAP Template Helper Package
+
+This is a package with helper functions for using data from the [HuBMAP Data Portal](https://portal.hubmapconsortium.org).
+
+It is used in various [templates](https://github.com/hubmapconsortium/user-templates-api).
+
+Please refer to the [tutorial](https://github.com/thomcsmits/hubmap_template_helper/blob/main/tutorial.ipynb) to see the usage.
