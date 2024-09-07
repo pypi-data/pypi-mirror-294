@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: llm_jlm
+Version: 0.1.4
+Requires-Dist: llm
+Requires-Dist: tlid
+
