@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pict/__init__.py
+pict/cli.py
+pict.egg-info/PKG-INFO
+pict.egg-info/SOURCES.txt
+pict.egg-info/dependency_links.txt
+pict.egg-info/entry_points.txt
+pict.egg-info/requires.txt
+pict.egg-info/top_level.txt
