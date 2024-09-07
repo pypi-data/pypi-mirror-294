@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gather_taxi_data/__init__.py
+src/gather_taxi_data/gather_all_data.py
+src/gather_taxi_data/gather_bwc_data.py
+src/gather_taxi_data/gather_gps_data.py
+src/gather_taxi_data/setup.py
+src/gather_taxi_data.egg-info/PKG-INFO
+src/gather_taxi_data.egg-info/SOURCES.txt
+src/gather_taxi_data.egg-info/dependency_links.txt
+src/gather_taxi_data.egg-info/entry_points.txt
+src/gather_taxi_data.egg-info/requires.txt
+src/gather_taxi_data.egg-info/top_level.txt
+src/tests/__init__.py

@@ -1,0 +1,2 @@
+[console_scripts]
+gather-taxi-data = gather_taxi_data.gather_all_data:main
