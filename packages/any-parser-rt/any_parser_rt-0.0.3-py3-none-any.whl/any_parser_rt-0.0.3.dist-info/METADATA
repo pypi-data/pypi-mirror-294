@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: any-parser-rt
+Version: 0.0.3
+Summary: 
+Author: Rachel Hu
+Author-email: goldpiggy@berkeley.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# How to use
+
+## Sync SDK
+```
+from any_parser_rt.any_parser_rt import AnyParserRT
+
+ap_rt = AnyParserRT(api_key="...")
+
+md_output, total_time = ap_rt.extract(file_path="./data/test.pdf")
+```
+Check [example](example/example.ipynb)
+
+## Async SDK
+
+```
+from any_parser_rt.any_parser_rt import AnyParserRT
+
+ap_rt = AnyParserRT(api_key="...")
+
+file_id = ap_rt.async_extract(file_path="./data/test.pdf")
+
+md = ap_rt.async_fetch(file_id=file_id)
+```
+
+Check [example](example/async_example.ipynb)
