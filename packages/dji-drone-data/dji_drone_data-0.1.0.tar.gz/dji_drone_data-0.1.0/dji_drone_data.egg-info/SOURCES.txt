@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+dji_drone_data/__init__.py
+dji_drone_data/analyzer.py
+dji_drone_data/parser.py
+dji_drone_data.egg-info/PKG-INFO
+dji_drone_data.egg-info/SOURCES.txt
+dji_drone_data.egg-info/dependency_links.txt
+dji_drone_data.egg-info/requires.txt
+dji_drone_data.egg-info/top_level.txt

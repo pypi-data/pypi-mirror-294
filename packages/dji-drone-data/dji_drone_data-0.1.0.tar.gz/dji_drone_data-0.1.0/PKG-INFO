@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dji_drone_data
+Version: 0.1.0
+Summary: A library to parse SRT data and apply Kalman filter to GPS coordinates.
+Home-page: https://github.com/cjnghn/dji_drone_data
+Author: cjnghn
+Author-email: chotnt741@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: filterpy
