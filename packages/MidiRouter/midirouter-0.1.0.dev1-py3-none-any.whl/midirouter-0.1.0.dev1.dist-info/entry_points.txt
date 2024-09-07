@@ -1,0 +1,3 @@
+[console_scripts]
+midi-router = midi_router.cli:main
+
