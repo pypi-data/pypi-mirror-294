@@ -1,0 +1,9 @@
+irisml/tasks/call_azure_openai_completion.py,sha256=BL0GuqUqN5czoqgSymcfgJs2vEE-xX5IBkaqN63igxE,2551
+irisml/tasks/create_azure_openai_chat_model.py,sha256=DNsmg82DIqRjd4YO8QhgsZhcPOntolUlD8WvErlHt24,5388
+irisml/tasks/create_azure_openai_chat_with_images_model.py,sha256=uodiBTyW-mhTuMgaatpnx9_qtcq2w8dHrvDeB7fbw6g,6723
+irisml/tasks/create_azure_openai_completion_model.py,sha256=zPB6MC_sXCLcEwf8iB5J2vgjMuy6Lp0mq9Rev5HGvwI,8209
+irisml_tasks_azure_openai-0.0.5.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+irisml_tasks_azure_openai-0.0.5.dist-info/METADATA,sha256=30x68vd-TQWE12YkxIZkMxnKX0YZsxaB9PAPrNunCTc,1953
+irisml_tasks_azure_openai-0.0.5.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+irisml_tasks_azure_openai-0.0.5.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_azure_openai-0.0.5.dist-info/RECORD,,
