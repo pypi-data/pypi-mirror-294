@@ -1,0 +1,2 @@
+[console_scripts]
+gte = gte.cli.gte:main
