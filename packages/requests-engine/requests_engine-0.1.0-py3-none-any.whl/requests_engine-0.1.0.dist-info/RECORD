@@ -1,0 +1,13 @@
+requests_engine/__init__.py,sha256=KVu3rUYVMDyyWyLyXfYozbrOIHOy4pjaqOxEzVjcbzA,228
+requests_engine/conversation.py,sha256=fXGzBHQppE2ZalL355j2Y9VLmB0zo9JcaNeDQ7fn4sI,1318
+requests_engine/engine.py,sha256=oCOLJS3KyrIm2LcehwZWvxRUcSLFBgloSc6In36aX60,4356
+requests_engine/model_pricing.py,sha256=880Jq5P0Ysom7xKxhctcM5oKB4IyX7iy8fiLGIvAuvk,1456
+requests_engine/providers/__init__.py,sha256=mFYW8Q1T-UCPFrUTEOJZ6G74EjL_kifu4ZvSW-F26_s,352
+requests_engine/providers/abstract_provider.py,sha256=545kjphRtqnaOCx3WYUb_ch6ZiGpgYPTnex4riHA3zE,632
+requests_engine/providers/aws_anthropic_provider.py,sha256=KFEcjTYiBj_y2C9rQtoVj63MZApLYEwJ0NOMhrE22TQ,2745
+requests_engine/providers/gcp_beta_completions_provider.py,sha256=xLrS5MtqQDZmcUfVaNAUyqyrRLT4DnmH5OLJwpwcftA,2409
+requests_engine/providers/openai_compatible_api_provider.py,sha256=2mW4XdGNZyknvN-1JZeNLs4vbwACuQuSMfs5zUjqirE,1455
+requests_engine-0.1.0.dist-info/METADATA,sha256=wnno77QYp_JOnnPpbJNA6znJGa5wMi_LI6tapNFo3qc,6275
+requests_engine-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+requests_engine-0.1.0.dist-info/licenses/LICENSE.md,sha256=2wmpDZtX3OoAI2Grmi38noY-bwxzn-3W6Te8isLIjJE,1072
+requests_engine-0.1.0.dist-info/RECORD,,
