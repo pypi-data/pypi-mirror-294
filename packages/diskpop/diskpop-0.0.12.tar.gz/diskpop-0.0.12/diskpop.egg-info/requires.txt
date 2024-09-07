@@ -1,0 +1,5 @@
+numpy==1.21
+pandas
+matplotlib
+scipy
+h5py
