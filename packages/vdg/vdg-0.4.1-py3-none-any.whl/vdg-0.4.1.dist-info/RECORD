@@ -1,0 +1,17 @@
+vdg/__init__.py,sha256=8yPI9dbwQUYqhMtA3RfAi5yJOhZBnz-g8966ssrYXiU,21
+vdg/autopub.py,sha256=fwyJPQoydmA3gFGJbGIsLsTCy_12dytPZ0wlyzg9tF0,8088
+vdg/draftgen.py,sha256=ARISwaKIrs4EpWw0cdmH0CeeD8ARi036WoJQB9ilXOA,3624
+vdg/filters.py,sha256=cfKLqsWA4fiIhbc0yjSzGZ3Yy3LQHhX0akQjvDCBXIA,1243
+vdg/main.py,sha256=tCZ2vdYo8sYKm7UuD_iDeT-Z8dePiT7yBgh9RYv5KsE,2968
+vdg/utils.py,sha256=8phR4jSeORaS3J0eZ3LviyfhdcjfA2Uo_NaNAjp2DOg,318
+vdg/templates/bangumi.html.jinja,sha256=uWjmWE_adm3of0JKei1-u1Yu_eoEa-Dhcm-LnjEsWyI,4583
+vdg/templates/bangumi.title.txt.jinja,sha256=6fIMFRrN-krsen-bDBw0QHdYF3RLupdt0jDmM4-DWnw,167
+vdg/templates/form.yml,sha256=ffFMd9dGnoGnxnVJ27Sr4ic98_GhFa1RuvcDN8WCaJY,2536
+vdg/templates/vcb-s.html.jinja,sha256=EgTzVE5Q6qY_p7EkNblkRQPn3qbQqmuo7u4f62MB1G0,1968
+vdg/templates/vcb-s.title.txt.jinja,sha256=b1_n-WLVnDwzb3rUjoRWiGMdpHmIBaW1lZt6PO5Y0D8,92
+vdg-0.4.1.dist-info/LICENSE,sha256=54oHGIhclHmbWtFU3Lo-8QxMOIpnVosyKgUl6628xrM,1065
+vdg-0.4.1.dist-info/METADATA,sha256=fJ8Owx-WmDm-N38V_3KTmiOSI4RFI9UNtkUaZ80N1qQ,1611
+vdg-0.4.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+vdg-0.4.1.dist-info/entry_points.txt,sha256=tbdPOdjI8pKmNnBY9_geKjap190oIY-TDo5CBDhMchw,38
+vdg-0.4.1.dist-info/top_level.txt,sha256=-TOEpx9cIUHGDArsb3b_nxrzICRVhmpKWzl_BYaqKeU,4
+vdg-0.4.1.dist-info/RECORD,,
