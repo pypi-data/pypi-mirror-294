@@ -1,0 +1,4 @@
+[console_scripts]
+pautodock=pautodock.__main__:main
+pautodock-recover-output=pautodock.__recover_output__:main
+
