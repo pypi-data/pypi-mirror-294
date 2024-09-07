@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: crypto-gltf
+Version: 0.1.7
+Summary: 
+Author: will
+Author-email: will@loci.ai
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cellular-automaton (>=1.0.8,<2.0.0)
+Requires-Dist: cryptography (>=43.0.0,<44.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: mypy (>=1.11.1,<2.0.0)
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: pygame (>=2.6.0,<3.0.0)
+Requires-Dist: pytest (>=8.3.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
