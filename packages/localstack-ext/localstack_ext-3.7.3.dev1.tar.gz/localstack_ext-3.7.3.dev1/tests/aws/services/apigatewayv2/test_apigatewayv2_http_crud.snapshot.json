@@ -1,0 +1,1594 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_get_deployment": {
+    "recorded-date": "27-08-2024, 04:07:53",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "get-deployments-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidId"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidId",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-deployment-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid Deployment identifier specified"
+        },
+        "Message": "Invalid Deployment identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-deployment-invalid-deployment": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid Deployment identifier specified"
+        },
+        "Message": "Invalid Deployment identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-deployments": {
+        "Items": [
+          {
+            "AutoDeployed": false,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:1>",
+            "DeploymentStatus": "DEPLOYED"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-deployment": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_create_deployment": {
+    "recorded-date": "27-08-2024, 04:07:58",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "create_auto-stage": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:1>'",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "auto",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "stages-before-deployments": [
+        {
+          "AutoDeploy": true,
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "DeploymentId": "<deployment-id:1>",
+          "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:1>'",
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "auto",
+          "StageVariables": {},
+          "Tags": {}
+        },
+        {
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "stage",
+          "StageVariables": {},
+          "Tags": {}
+        }
+      ],
+      "create-invalid-api-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidId"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidId",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "create-with-invalid-stage": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Stage stage1 does not exist. StageName specified on a CreateDeployment request must exist so the stage can be updated with the new deployment."
+        },
+        "Message": "Stage stage1 does not exist. StageName specified on a CreateDeployment request must exist so the stage can be updated with the new deployment.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-with-no-stage": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:2>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-with-stage": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:3>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "stages-after-named-stage-deployment": [
+        {
+          "AutoDeploy": true,
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "DeploymentId": "<deployment-id:1>",
+          "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:1>'",
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "auto",
+          "StageVariables": {},
+          "Tags": {}
+        },
+        {
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "DeploymentId": "<deployment-id:3>",
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "stage",
+          "StageVariables": {},
+          "Tags": {}
+        }
+      ],
+      "create-with-auto-deploy-stage": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:4>",
+        "DeploymentStatus": "FAILED",
+        "DeploymentStatusMessage": {
+          "message": "Deployment ID cannot be set on this stage 111111111111:<api-id:1> because AutoDeploy is enabled."
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-stages-after": [
+        {
+          "AutoDeploy": true,
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "DeploymentId": "<deployment-id:1>",
+          "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:1>'",
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "auto",
+          "StageVariables": {},
+          "Tags": {}
+        },
+        {
+          "CreatedDate": "datetime",
+          "DefaultRouteSettings": {
+            "DetailedMetricsEnabled": false
+          },
+          "DeploymentId": "<deployment-id:3>",
+          "LastUpdatedDate": "datetime",
+          "RouteSettings": {},
+          "StageName": "stage",
+          "StageVariables": {},
+          "Tags": {}
+        }
+      ]
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_update_deployment": {
+    "recorded-date": "27-08-2024, 04:08:04",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "create-with-no-stage": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-with-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid Deployment identifier specified"
+        },
+        "Message": "Invalid Deployment identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-with-invalid-deployment": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid Deployment identifier specified"
+        },
+        "Message": "Invalid Deployment identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-with-no-description": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-deployment-with-description": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "Description": "description",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-override-description": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "Description": "description",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_delete_deployment": {
+    "recorded-date": "27-08-2024, 04:08:11",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "create-deployment": {
+        "AutoDeployed": false,
+        "CreatedDate": "datetime",
+        "DeploymentId": "<deployment-id:1>",
+        "DeploymentStatus": "DEPLOYED",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "delete-invalid-api-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidID"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidID",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-invalid-deployment-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid Deployment identifier specified"
+        },
+        "Message": "Invalid Deployment identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-with-stage-still-pointing": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Active stages pointing to this deployment must be moved or deleted"
+        },
+        "Message": "Active stages pointing to this deployment must be moved or deleted",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "delete-deployment": {
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 204
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_get_stage": {
+    "recorded-date": "27-08-2024, 04:08:13",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "get-stages-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidID"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidID",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-stage-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidID"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidID",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-stage-invalid-stage-name": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid stage identifier specified"
+        },
+        "Message": "Invalid stage identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-stages": {
+        "Items": [
+          {
+            "CreatedDate": "datetime",
+            "DefaultRouteSettings": {
+              "DetailedMetricsEnabled": false
+            },
+            "LastUpdatedDate": "datetime",
+            "RouteSettings": {},
+            "StageName": "stage",
+            "StageVariables": {},
+            "Tags": {}
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-stage": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_create_stage": {
+    "recorded-date": "27-08-2024, 04:08:22",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "create-stage-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalid"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalid",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "create-stage-empty-string": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Stage name must be non-empty"
+        },
+        "Message": "Stage name must be non-empty",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-stage-with-forward-slashes": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Stage name cannot contain slashes"
+        },
+        "Message": "Stage name cannot contain slashes",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-stage-with-special-char": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Stage name only allows a-zA-Z0-9_"
+        },
+        "Message": "Stage name only allows a-zA-Z0-9_",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-stage": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-stage-with-same-name": {
+        "Error": {
+          "Code": "ConflictException",
+          "Message": "Stage already exists"
+        },
+        "Message": "Stage already exists",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 409
+        }
+      },
+      "create-default-stage": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "$default",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-stage-auto": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "auto",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-stage-auto": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:1>'",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "auto",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "create-stage-from-existing": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "from-existing",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "auto-deploy-stage": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:2>",
+        "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '<deployment-id:2>'",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "auto",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_update_stage": {
+    "recorded-date": "27-08-2024, 04:08:26",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "update-with-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidId"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidId",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-with-invalid-stage-name": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid stage identifier specified"
+        },
+        "Message": "Invalid stage identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-stage": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "Description": "description",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-stage-deployment": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "Description": "description",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-auto-deploy-and-deployment-id": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Deployment ID cannot be set on this stage 111111111111:<api-id:1> because AutoDeploy is enabled."
+        },
+        "Message": "Deployment ID cannot be set on this stage 111111111111:<api-id:1> because AutoDeploy is enabled.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "get-stage-after-auto-deploy-update-fail": {
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "Description": "description",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-stage-auto": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "DeploymentId": "<deployment-id:1>",
+        "Description": "description",
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "stage",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-stage-deployment-auto-deploy": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Deployment ID cannot be set on this stage 111111111111:<api-id:1> because AutoDeploy is enabled."
+        },
+        "Message": "Deployment ID cannot be set on this stage 111111111111:<api-id:1> because AutoDeploy is enabled.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_delete_stage": {
+    "recorded-date": "27-08-2024, 04:08:28",
+    "recorded-content": {
+      "api-id": "<api-id:1>",
+      "delete-stage-invalid-api": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid API identifier specified 111111111111:invalidId"
+        },
+        "Message": "Invalid API identifier specified 111111111111:invalidId",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-stage-invalid-name": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid stage identifier specified"
+        },
+        "Message": "Invalid stage identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-stage": {
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 204
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_auto_deploy_stage_http": {
+    "recorded-date": "27-08-2024, 23:37:47",
+    "recorded-content": {
+      "get-deployments": {
+        "Items": [
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:1>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:2>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:3>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:4>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:5>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:6>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          },
+          {
+            "AutoDeployed": true,
+            "CreatedDate": "datetime",
+            "DeploymentId": "<deployment-id:7>",
+            "DeploymentStatus": "DEPLOYED",
+            "Description": "Automatic deployment triggered by changes to the Api configuration"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters": {
+    "recorded-date": "24-08-2024, 03:09:59",
+    "recorded-content": {
+      "invalid-create": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid Request Actioned Parameter destination specified: invalid]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid Request Actioned Parameter destination specified: invalid]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {
+            "access-control-allow-origin": "*",
+            "access-control-expose-headers": "x-amzn-RequestId,x-amzn-ErrorType,x-amzn-ErrorMessage,Date",
+            "connection": "keep-alive",
+            "content-length": "162",
+            "content-type": "application/json",
+            "date": "Sat, 24 Aug 2024 03:09:59 GMT",
+            "x-amz-apigw-id": "c_lJME9KIAMEXYA=",
+            "x-amzn-errortype": "BadRequestException",
+            "x-amzn-requestid": "49d2a597-6da3-4ecb-bc4a-d72283aa47d9",
+            "x-amzn-trace-id": "Root=1-66c94f07-32ee1cc056434a6f16039a85"
+          },
+          "HTTPStatusCode": 400,
+          "RequestId": "49d2a597-6da3-4ecb-bc4a-d72283aa47d9",
+          "RetryAttempts": 0
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters_headers": {
+    "recorded-date": "28-08-2024, 19:18:46",
+    "recorded-content": {
+      "create-invalid-mapping": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.headers.foo]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.headers.foo]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-duplicate-headers": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_1 is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_1 is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-duplicate-headers-case-insensitive": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_1 is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_1 is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-with-no-mapping": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {},
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-with-all-actions": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:header.header_append": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "remove:header.header_remove": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-delete-parameter-mapping": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:header.header_append": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "remove-needs-single-quotes": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Remove action has improper source \"\"]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Remove action has improper source \"\"]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-with-different-casing": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_append is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_append is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-with-different-action-will-fail": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_append is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter header.header_append is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-with-same-casing-and-action": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:header.header_append": "${request.header.foo}",
+          "overwrite:header.header_overwrite": "$request.header.foo"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "missing-param-name": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid Request Actioned Parameter destination specified: append:header]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid Request Actioned Parameter destination specified: append:header]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-with-multivalue": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-with-multiple-param": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-missing-curly": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: ${request.body]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: ${request.body]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-extra-curly": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.body}]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.body}]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-case-sensitive": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:HEADER.DestinatioN": "But they will be useless",
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "multiple-errors": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $invalid, Parameter header.first is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $invalid, Parameter header.first is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "reserved-header": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Operations on header authorization are restricted]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Operations on header authorization are restricted]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "reserved-header-prefix": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Operations on header apigw-any-suffix are restricted]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Operations on header apigw-any-suffix are restricted]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "reserved-header-multiple-errors": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $illegal, Operations on header authorization are restricted]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $illegal, Operations on header authorization are restricted]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "with-static-sign": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:HEADER.DestinatioN": "But they will be useless",
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.foo": "$request.path$",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "with-sign-become-static": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:HEADER.DestinatioN": "But they will be useless",
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.foo": "$a",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "sign-with-length-over-2": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $aa]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $aa]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "open-curly": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: {]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: {]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "close-curly": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: }]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: }]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "open-curly-in-dynamic": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.header.foo{]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.header.foo{]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "close-curly-in-dynamic": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.header.foo}]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $request.header.foo}]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "open-curly-in-block": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:HEADER.DestinatioN": "But they will be useless",
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.foo": "${request.header.foo{}",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "close-curly-in-block": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: ${request.header.foo}}]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: ${request.header.foo}}]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "greedy-block-match": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:2>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "append:HEADER.DestinatioN": "But they will be useless",
+          "append:header.append_header": "${request.body}followed with text$request.path",
+          "append:header.foo": "${request.header.foo$request.header.foo$}",
+          "append:header.header_append": "${request.header.foo}",
+          "append:header.multi_header.1": "$request.header.foo",
+          "append:header.multi_header.2": "static value",
+          "overwrite:header.header_overwrite": "$request.header.foo",
+          "overwrite:header.multi_header.3": "static value",
+          "remove:header.multi_header.4": "''"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "illegal-char-in-param-name": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter name should match the following regular expression: ^[a-zA-Z0-9._$-]+$]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Parameter name should match the following regular expression: ^[a-zA-Z0-9._$-]+$]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters_path": {
+    "recorded-date": "27-08-2024, 04:09:40",
+    "recorded-content": {
+      "create-with-path-override": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "overwrite:path": "$request.header.foo"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "remove-with-path-override": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-case-sensitive": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "overwrite:Path": "$request.header.foo"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "append-not-allowed": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on path., Parameter path. is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on path., Parameter path. is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "remove-not-allowed": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action remove is not supported on path., Parameter path. is not unique]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action remove is not supported on path., Parameter path. is not unique]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_response_parameters": {
+    "recorded-date": "28-08-2024, 20:43:02",
+    "recorded-content": {
+      "create-with-header-override": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "ResponseParameters": {
+          "200": {
+            "overwrite:header.header": "$response.header.foo"
+          }
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-remove-integration-response": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "response-under-200": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 199 is not valid.]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 199 is not valid.]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "response-over-599": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 600 is not valid.]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 600 is not valid.]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "response-not-int": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 200  is not valid.]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Status Code 200  is not valid.]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_response_parameters_statuscode": {
+    "recorded-date": "29-08-2024, 00:26:30",
+    "recorded-content": {
+      "create-with-statuscode-override": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "ResponseParameters": {
+          "200": {
+            "overwrite:statuscode": "$response.header.foo"
+          }
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "invalid-mapping": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $resp.header.foo]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid mapping expression specified: $resp.header.foo]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-static-code": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "ResponseParameters": {
+          "200": {
+            "overwrite:statuscode": "201"
+          }
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-static-below-100": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 99]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 99]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-static-above-600": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 600]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 600]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-static-code-non-int": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 20.1]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Invalid StatusCode Provided: 20.1]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-with-empty-will-remove": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "ResponseParameters": {},
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-with-append": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on statuscode.]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on statuscode.]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-not-all-valid": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on statuscode.]"
+        },
+        "Message": "Invalid mapping expression specified: Validation Result: warnings : [], errors : [Action append is not supported on statuscode.]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "get-integration-after-invalid-update": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "GET",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "https://example.com",
+        "PayloadFormatVersion": "1.0",
+        "ResponseParameters": {},
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_http_integration_invalid_use_cases": {
+    "recorded-date": "29-08-2024, 00:42:24",
+    "recorded-content": {
+      "invalid-integration-req-no-payload": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "PayloadFormatVersion is a required parameter for integration"
+        },
+        "Message": "PayloadFormatVersion is a required parameter for integration",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "invalid-integration-type": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Currently, an API with a protocol type of HTTP may only be associated with proxy integrations (AWS_PROXY, HTTP_PROXY)"
+        },
+        "Message": "Currently, an API with a protocol type of HTTP may only be associated with proxy integrations (AWS_PROXY, HTTP_PROXY)",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "invalid-payload-format-version": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "PayloadFormatVersion 2.0 is not supported for integration of type HTTP_PROXY"
+        },
+        "Message": "PayloadFormatVersion 2.0 is not supported for integration of type HTTP_PROXY",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  }
+}

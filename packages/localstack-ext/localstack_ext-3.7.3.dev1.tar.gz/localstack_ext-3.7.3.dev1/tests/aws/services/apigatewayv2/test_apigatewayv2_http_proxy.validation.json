@@ -1,0 +1,32 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_integration_keeps_body_intact": {
+    "last_validated_date": "2024-08-30T15:38:27+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_integration": {
+    "last_validated_date": "2024-08-30T15:38:02+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_invalid_uri_with_stage_variables": {
+    "last_validated_date": "2024-08-30T15:38:31+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_passes_body_for_get_method": {
+    "last_validated_date": "2024-08-30T15:38:39+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_query_string_in_uri": {
+    "last_validated_date": "2024-08-30T15:38:47+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param": {
+    "last_validated_date": "2024-08-30T15:39:11+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_in_querystring": {
+    "last_validated_date": "2024-08-30T15:38:55+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite": {
+    "last_validated_date": "2024-08-30T15:39:28+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite_multivalue": {
+    "last_validated_date": "2024-08-30T15:39:53+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite_with_qs": {
+    "last_validated_date": "2024-08-30T15:39:36+00:00"
+  }
+}

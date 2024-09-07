@@ -1,0 +1,52 @@
+{
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpoint::test_pinpoint_app_operations": {
+    "recorded-date": "04-09-2024, 04:42:51",
+    "recorded-content": {
+      "create_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  }
+}
