@@ -1,0 +1,8 @@
+click
+numpy
+safetensors
+tqdm
+scipy
+fuzzywuzzy
+python-Levenshtein
+PyYAML
