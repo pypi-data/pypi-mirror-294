@@ -1,0 +1,9 @@
+toslack/__init__.py,sha256=5ycil7aH3BImTjj5rmflVHCOh9iatJ8GHZ6bZeG1fP0,77
+toslack/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toslack/slack_client.py,sha256=bh3fuF9o4FKGiYIHwTofCQzvg9jzNHcTrKd2k8kWM2E,1143
+toslack/slack_message.py,sha256=kSBCwBx2E-KKDVl5YvcMFQJ6dQsRmQAXEFya-B_77p8,349
+toslack-0.1.0.dist-info/LICENSE,sha256=6hGf4Cu4YUmHs4D-ONJ0xXtVw1H1nnEb5GdFO74d98g,1112
+toslack-0.1.0.dist-info/METADATA,sha256=MqB2q1UnX27lZBsd_jfUfzOl-5lFLl1uTWgWXW7947U,4203
+toslack-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+toslack-0.1.0.dist-info/top_level.txt,sha256=0t1e1aUqLJ5wtN0cMRDKoSYsT4gjCMl0vn0_WKPdvAw,8
+toslack-0.1.0.dist-info/RECORD,,
