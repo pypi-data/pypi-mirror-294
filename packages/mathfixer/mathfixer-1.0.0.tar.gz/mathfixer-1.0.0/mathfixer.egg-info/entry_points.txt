@@ -1,0 +1,2 @@
+[console_scripts]
+mathfixer = mathfixer:main
