@@ -1,0 +1,11 @@
+hexl/__init__.py,sha256=X9sNcyL7p9Nm75lOZ5OWZkpR1hvdret51WQoXg4fMy8,386
+hexl/hex_functions.py,sha256=oORm8NHbA7HOngQuHhLt0ODQ876h4zyhlvJ2cGjOu_0,5055
+hexl/hexl.py,sha256=PhAgJTIuk9YbCFUFYq4TJSIBEKn2AbBMIWyFGyIOVUg,6729
+tests/__init__.py,sha256=u1p1-DGGyEsNCe_sxmzT3_YrA5lTWlgihtKtymKCJFE,870
+tests/hex_functions.py,sha256=oORm8NHbA7HOngQuHhLt0ODQ876h4zyhlvJ2cGjOu_0,5055
+tests/hexl.py,sha256=PhAgJTIuk9YbCFUFYq4TJSIBEKn2AbBMIWyFGyIOVUg,6729
+tests/tests.py,sha256=Wv4b2v2Ahe22UPrOcMSwBPIsJKDa5LAggztVNmGVhuc,2699
+hexl-1.0.dist-info/METADATA,sha256=aH4p-6YuK--D39Uv0YvJHFMYnnrLk_zq0aVReN-L_nM,3491
+hexl-1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+hexl-1.0.dist-info/top_level.txt,sha256=uH9a4oOEuTXRAIbKJ3dccITyeJG1FSwH-NLJSQ_8_Hw,11
+hexl-1.0.dist-info/RECORD,,
