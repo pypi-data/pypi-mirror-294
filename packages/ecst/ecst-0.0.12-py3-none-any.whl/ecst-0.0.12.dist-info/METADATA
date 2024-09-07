@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: ecst
+Version: 0.0.12
+Summary: Create local tunnels and sessions to AWS ECS services running in a VPC.
+Project-URL: Homepage, https://github.com/mikefrancis/ecstunnel
+Project-URL: Bug Tracker, https://github.com/mikefrancis/ecstunnel/issues
+Author-email: Mike Francis <mikeffrancis@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: boto3
+Description-Content-Type: text/markdown
+
+# ecst
+
+Create local tunnels and sessions to AWS ECS services running in a VPC.
+
+## Prerequesites
+
+- Python 3
+- [AWS CLI Session Manager plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
+
+## Installation
+
+Install from [PyPI](https://pypi.org/project/ecst):
+
+```bash
+pip install ecst
+```
+
+## Usage
+
+```bash
+usage: python -m ecst [-h] [--local-port LOCAL_PORT] [--remote-port REMOTE_PORT]
+            [--region REGION] [--aws-profile AWS_PROFILE] [--verbose]
+            cluster service
+```
