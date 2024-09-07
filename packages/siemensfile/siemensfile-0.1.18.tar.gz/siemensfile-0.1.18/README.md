@@ -1,0 +1,28 @@
+# SIEMENSFile
+
+**SIEMENSFile** es un paquete para leer y procesar archivos `.dat` de Siemens y realizar reconstrucciones de imagenes de resonancia magnetica (MRI). Este paquete facilita la extraccion de datos del  `rawdata` y el `metadata` y su reconstruccion preliminar en imagenes utilizando transformadas rapidas de Fourier (FFT). La unica reconstruccion implementada es la cartesiana; proximamente se implementara la reconstruccion no cartesiana.
+
+## Instalacion
+
+Puedes instalar el paquete directamente desde PyPI con el siguiente comando:
+
+```bash
+pip install siemensfile
+```
+# Importar la funcion siemensfile desde el paquete
+from siemensfile import siemensfile
+
+# Usar la funcion siemensfile para procesar un archivo .dat
+
+```bash
+[metadata, rawdata] = siemensfile(r'tests/datatest/siemens_file_test_cartesian_sample.dat', reconstruction="Cartesiana")
+
+```
+
+Creditos y Reconocimientos
+Este proyecto utiliza como base el paquete twixtools, desarrollado por Philipp Ehses. twixtools proporciona la funcionalidad central para la lectura de archivos .dat de Siemens, y este proyecto expande sus capacidades para incluir reconstrucciones de imagenes.
+
+Agradecemos enormemente a los autores y colaboradores de twixtools por su trabajo, que ha permitido el desarrollo de este paquete.
+
+Si estas buscando una solucion mas completa para leer y escribir archivos .dat de Siemens, te recomendamos que tambien consultes twixtools directamente.
+https://github.com/pehses/twixtools
