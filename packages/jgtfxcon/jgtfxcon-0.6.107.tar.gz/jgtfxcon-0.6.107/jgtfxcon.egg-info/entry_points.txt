@@ -1,0 +1,15 @@
+[console_scripts]
+dkfxcli = jgtfxcon.dkfxcli:main
+efxrmorder = jgtfxcon.jgtfxremoveorder:emain
+efxtr = jgtfxcon.jgtfxtransact:emain
+fxaddorder = jgtfxcon.jgtfxentryorder:main
+fxclosebyinstrument = jgtfxcon.fxclosebyinstrument:main
+fxcloselots = jgtfxcon.fxdevclose_lots:main
+fxmvstop = jgtfxcon.fxchgstop:main
+fxreport = jgtfxcon.jgtfxreport:main
+fxrmorder = jgtfxcon.jgtfxremoveorder:main
+fxrmtrade = jgtfxcon.fxclosebyinstrument:main
+fxsubscription = jgtfxcon.fxsetsubscription:main
+fxtr = jgtfxcon.jgtfxtransact:main
+ifxtr = jgtfxcon.jgtfxtransact:iemain
+jgtfxcli = jgtfxcon.jgtfxcli:main
