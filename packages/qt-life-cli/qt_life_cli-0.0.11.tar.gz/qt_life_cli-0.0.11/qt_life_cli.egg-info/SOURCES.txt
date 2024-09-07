@@ -1,0 +1,10 @@
+README.md
+setup.py
+qt_life_cli/__init__.py
+qt_life_cli/main.py
+qt_life_cli.egg-info/PKG-INFO
+qt_life_cli.egg-info/SOURCES.txt
+qt_life_cli.egg-info/dependency_links.txt
+qt_life_cli.egg-info/entry_points.txt
+qt_life_cli.egg-info/requires.txt
+qt_life_cli.egg-info/top_level.txt

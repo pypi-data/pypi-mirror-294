@@ -1,0 +1,2 @@
+[console_scripts]
+qt = qt_life_cli.main:cli

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: qt-life-cli
+Version: 0.0.11
+Author: Anonymous
+Author-email: anonymous@qtlife.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Click==8.1.3
+Requires-Dist: prompt_toolkit==3.0.38
+Requires-Dist: colorama==0.4.6
+
+# Quantum Life CLI
+
+## Installation
+
+You can install Quantum CLI using pip:
+```
+pip install qt-life-cli
+```
+
+Alternatively, you can use the provided install script to set up a virtual environment and install Quantum CLI:
+
+```
+chmod +x install.sh
+./install.sh
+```
+
+## Usage
+
+After installation, you can run the Quantum CLI by typing:
+
+```
+qt
+```
+
+Follow the on-screen instructions to interact with the Quantum CLI.
