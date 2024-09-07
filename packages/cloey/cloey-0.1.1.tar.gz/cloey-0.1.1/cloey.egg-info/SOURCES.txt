@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cloey/__init__.py
+cloey/framework.py
+cloey.egg-info/PKG-INFO
+cloey.egg-info/SOURCES.txt
+cloey.egg-info/dependency_links.txt
+cloey.egg-info/requires.txt
+cloey.egg-info/top_level.txt
