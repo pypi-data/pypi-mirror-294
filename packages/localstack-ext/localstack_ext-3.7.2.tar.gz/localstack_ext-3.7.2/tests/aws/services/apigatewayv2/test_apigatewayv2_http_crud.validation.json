@@ -1,0 +1,50 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_create_deployment": {
+    "last_validated_date": "2024-08-27T04:07:58+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_delete_deployment": {
+    "last_validated_date": "2024-08-27T04:08:11+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_get_deployment": {
+    "last_validated_date": "2024-08-27T04:07:52+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpDeploymentCrud::test_update_deployment": {
+    "last_validated_date": "2024-08-27T04:08:04+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_http_integration_invalid_use_cases": {
+    "last_validated_date": "2024-08-29T00:42:24+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters": {
+    "last_validated_date": "2024-08-24T03:09:59+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters_headers": {
+    "last_validated_date": "2024-08-28T19:18:46+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_request_parameters_path": {
+    "last_validated_date": "2024-08-27T04:09:40+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_response_parameters": {
+    "last_validated_date": "2024-08-28T20:43:02+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpIntegrationCrud::test_response_parameters_statuscode": {
+    "last_validated_date": "2024-08-29T00:26:30+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_auto_deploy_stage": {
+    "last_validated_date": "2024-08-20T23:22:26+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_auto_deploy_stage_http": {
+    "last_validated_date": "2024-08-27T23:37:45+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_create_stage": {
+    "last_validated_date": "2024-08-27T04:08:21+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_delete_stage": {
+    "last_validated_date": "2024-08-27T04:08:28+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_get_stage": {
+    "last_validated_date": "2024-08-27T04:08:13+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_crud.py::TestApigatewayV2HttpStageCrud::test_update_stage": {
+    "last_validated_date": "2024-08-27T04:08:25+00:00"
+  }
+}

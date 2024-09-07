@@ -1,0 +1,441 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_integration": {
+    "recorded-date": "30-08-2024, 15:38:02",
+    "recorded-content": {
+      "invoke-/api": {
+        "args": {
+          "queryStringParam": "test"
+        },
+        "data": "\"{\\\"foo\\\": \\\"bar\\\"}\"",
+        "files": {},
+        "form": {},
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Content-Length": "20",
+          "Content-Type": "application/json",
+          "Forwarded": "<forwarded>",
+          "Host": "<host:1>",
+          "User-Agent": "python/testing",
+          "X-Amzn-Trace-Id": "<trace-id:1>",
+          "X-Test": "test"
+        },
+        "json": {
+          "foo": "bar"
+        },
+        "method": "POST",
+        "origin": "<origin>",
+        "url": "http://<host:1>/anything?queryStringParam=test"
+      },
+      "invoke-/api/anything": {
+        "args": {
+          "queryStringParam": "test"
+        },
+        "data": "\"{\\\"foo\\\": \\\"bar\\\"}\"",
+        "files": {},
+        "form": {},
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Content-Length": "20",
+          "Content-Type": "application/json",
+          "Forwarded": "<forwarded>",
+          "Host": "<host:1>",
+          "User-Agent": "python/testing",
+          "X-Amzn-Trace-Id": "<trace-id:2>",
+          "X-Test": "test"
+        },
+        "json": {
+          "foo": "bar"
+        },
+        "method": "POST",
+        "origin": "<origin>",
+        "url": "http://<host:1>/anything?queryStringParam=test"
+      },
+      "invoke-qs-non-encoded-with-url": {
+        "args": {
+          "a": "b",
+          "redirect_uri": "http://localhost:3001/example-client/success"
+        },
+        "data": "\"{\\\"foo\\\": \\\"bar\\\"}\"",
+        "files": {},
+        "form": {},
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Content-Length": "20",
+          "Content-Type": "application/json",
+          "Forwarded": "<forwarded>",
+          "Host": "<host:1>",
+          "User-Agent": "python/testing",
+          "X-Amzn-Trace-Id": "<trace-id:3>"
+        },
+        "json": {
+          "foo": "bar"
+        },
+        "method": "POST",
+        "origin": "<origin>",
+        "url": "http://<host:1>/anything?a=b&redirect_uri=http:%2F%2Flocalhost:3001%2Fexample-client%2Fsuccess"
+      },
+      "invoke-qs-encoded-with-url": {
+        "args": {
+          "a": "b",
+          "redirect_uri": "http://localhost:3001/example-client/success"
+        },
+        "data": "\"{\\\"foo\\\": \\\"bar\\\"}\"",
+        "files": {},
+        "form": {},
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Content-Length": "20",
+          "Content-Type": "application/json",
+          "Forwarded": "<forwarded>",
+          "Host": "<host:1>",
+          "User-Agent": "python/testing",
+          "X-Amzn-Trace-Id": "<trace-id:4>"
+        },
+        "json": {
+          "foo": "bar"
+        },
+        "method": "POST",
+        "origin": "<origin>",
+        "url": "http://<host:1>/anything?a=b&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fexample-client%2Fsuccess"
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_integration_keeps_body_intact": {
+    "recorded-date": "30-08-2024, 15:38:27",
+    "recorded-content": {
+      "create-integration": {
+        "ConnectionType": "INTERNET",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationMethod": "ANY",
+        "IntegrationType": "HTTP_PROXY",
+        "IntegrationUri": "<integration-uri:1>",
+        "PayloadFormatVersion": "1.0",
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-route": {
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "RouteId": "<route-id:1>",
+        "RouteKey": "ANY /api/{proxy+}",
+        "Target": "integrations/<integration-id:1>",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-stage": {
+        "AutoDeploy": true,
+        "CreatedDate": "datetime",
+        "DefaultRouteSettings": {
+          "DetailedMetricsEnabled": false
+        },
+        "LastUpdatedDate": "datetime",
+        "RouteSettings": {},
+        "StageName": "dev",
+        "StageVariables": {},
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "invoke-api": {
+        "args": {},
+        "data": "DQotLTRlZmQxNTllYWUwYzRmNGUxMjVhNWE1MDllMDczZDg1DQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImZvcm1maWVsZCINCg0Kbm90IGEgZmlsZSwganVzdCBhIGZpZWxkDQotLTRlZmQxNTllYWUwYzRmNGUxMjVhNWE1MDllMDczZDg1DQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImZvbyI7IGZpbGVuYW1lPSJmb28iDQpDb250ZW50LVR5cGU6IHRleHQvcGxhaW47DQoNCmJhcg0KDQotLTRlZmQxNTllYWUwYzRmNGUxMjVhNWE1MDllMDczZDg1LS0NCg==",
+        "domain": "<domain:1>",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "286",
+          "content-type": "multipart/form-data; boundary=4efd159eae0c4f4e125a5a509e073d85",
+          "forwarded": "<forwarded:1>",
+          "host": "<domain:1>",
+          "user-agent": "python/test-request",
+          "via": "HTTP/1.1 AmazonAPIGateway",
+          "x-amzn-tls-cipher-suite": "TLS_AES_128_GCM_SHA256",
+          "x-amzn-tls-version": "TLSv1.3",
+          "x-amzn-trace-id": "<x-amzn-trace-id>",
+          "x-forwarded-for": "<origin:1>",
+          "x-forwarded-port": "<x-forwarded-port:1>",
+          "x-forwarded-proto": "https"
+        },
+        "method": "POST",
+        "origin": "<origin:1>",
+        "path": "/"
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_invalid_uri_with_stage_variables": {
+    "recorded-date": "30-08-2024, 15:38:31",
+    "recorded-content": {
+      "invoke-bad-uri": {
+        "content": {
+          "message": "Internal Server Error"
+        },
+        "statusCode": 500
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_passes_body_for_get_method": {
+    "recorded-date": "30-08-2024, 15:38:39",
+    "recorded-content": {
+      "invoke-get-body": {
+        "content": {
+          "args": {},
+          "data": "Sir, this is a Wendy's",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "22",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_query_string_in_uri": {
+    "recorded-date": "30-08-2024, 15:38:47",
+    "recorded-content": {
+      "invoke-with-qs": {
+        "content": {
+          "args": {
+            "moreQueryString": "really",
+            "uriQueryString": "uriValue"
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything?uriQueryString=uriValue&moreQueryString=really"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_in_querystring": {
+    "recorded-date": "30-08-2024, 15:38:55",
+    "recorded-content": {
+      "invoke-with-qs-param": {
+        "content": {
+          "args": {
+            "stage": "",
+            "uriQueryString": "{param}"
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything?uriQueryString={param}&stage="
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param": {
+    "recorded-date": "30-08-2024, 15:39:11",
+    "recorded-content": {
+      "invoke-with-path-param": {
+        "content": {
+          "args": {},
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything"
+        },
+        "statusCode": 200
+      },
+      "invoke-with-get-path-param": {
+        "url": "http://<host:1>/get"
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite": {
+    "recorded-date": "30-08-2024, 15:39:28",
+    "recorded-content": {
+      "invoke-with-path-override": {
+        "content": {
+          "args": {},
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite_with_qs": {
+    "recorded-date": "30-08-2024, 15:39:36",
+    "recorded-content": {
+      "invoke-with-path-override-with-qs": {
+        "content": {
+          "args": {
+            "q1": "overwriteHardcoded?q=uriHardcoded",
+            "q2": "requestQuery"
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything?q1=overwriteHardcoded%3Fq=uriHardcoded&q2=requestQuery"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_proxy.py::TestHttpApiHttpProxyIntegration::test_http_proxy_with_path_param_overwrite_multivalue": {
+    "recorded-date": "30-08-2024, 15:39:53",
+    "recorded-content": {
+      "invoke-no-query-target-with-overwrite": {
+        "content": {
+          "args": {
+            "q1": "hardcoded?q1=requestQuery"
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything?q1=hardcoded%3Fq1=requestQuery"
+        },
+        "statusCode": 200
+      },
+      "invoke-query-target-no-overwrite": {
+        "content": {
+          "args": {
+            "q1": [
+              "uriHardcoded",
+              "requestQuery"
+            ]
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:2>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything/testValue/test?q1=uriHardcoded&q1=requestQuery"
+        },
+        "statusCode": 200
+      },
+      "invoke-no-query-target-no-overwrite": {
+        "content": {
+          "args": {
+            "q1": "requestQuery"
+          },
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate",
+            "Content-Length": "0",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "User-Agent": "python/testing",
+            "X-Amzn-Trace-Id": "<trace-id:3>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything/testValue?q1=requestQuery"
+        },
+        "statusCode": 200
+      }
+    }
+  }
+}

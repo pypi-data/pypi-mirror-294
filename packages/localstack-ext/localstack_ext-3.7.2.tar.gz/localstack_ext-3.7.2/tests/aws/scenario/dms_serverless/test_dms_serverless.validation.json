@@ -1,0 +1,23 @@
+{
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_cdc_replication_data_queries": {
+    "last_validated_date": "2024-08-29T15:59:09+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_create_describe_replication_config": {
+    "last_validated_date": "2024-08-29T13:32:51+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_describe_replication_table_statistics": {
+    "last_validated_date": "2024-08-29T13:32:54+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_full_load_replication": {
+    "last_validated_date": "2024-08-30T06:54:02+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_resource_replication_config": {
+    "last_validated_date": "2024-08-29T13:32:43+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_vpc_endpoints[without-kinesis-streams]": {
+    "last_validated_date": "2024-08-29T17:03:32+00:00"
+  },
+  "tests/aws/scenario/dms_serverless/test_dms_serverless.py::TestDmsScenario::test_vpc_endpoints[without-secret-manager]": {
+    "last_validated_date": "2024-08-29T16:35:02+00:00"
+  }
+}
