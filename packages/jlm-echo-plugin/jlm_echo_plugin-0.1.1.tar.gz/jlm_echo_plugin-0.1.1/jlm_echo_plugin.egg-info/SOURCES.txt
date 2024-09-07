@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+jlm_echo_plugin.egg-info/PKG-INFO
+jlm_echo_plugin.egg-info/SOURCES.txt
+jlm_echo_plugin.egg-info/dependency_links.txt
+jlm_echo_plugin.egg-info/entry_points.txt
+jlm_echo_plugin.egg-info/requires.txt
+jlm_echo_plugin.egg-info/top_level.txt

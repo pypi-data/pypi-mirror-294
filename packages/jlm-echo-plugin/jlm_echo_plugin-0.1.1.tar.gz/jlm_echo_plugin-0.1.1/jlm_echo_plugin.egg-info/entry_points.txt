@@ -1,0 +1,2 @@
+[llm.models]
+echo = jecho:JEchoModel
