@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+slicerio/__init__.py
+slicerio/_version.py
+slicerio/data_helper.py
+slicerio/segmentation.py
+slicerio/server.py
+slicerio.egg-info/PKG-INFO
+slicerio.egg-info/SOURCES.txt
+slicerio.egg-info/dependency_links.txt
+slicerio.egg-info/requires.txt
+slicerio.egg-info/top_level.txt
+slicerio/tests/__init__.py
+slicerio/tests/test_segmentation.py
