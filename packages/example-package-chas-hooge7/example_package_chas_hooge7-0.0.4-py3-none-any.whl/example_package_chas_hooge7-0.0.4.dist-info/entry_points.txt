@@ -1,0 +1,2 @@
+[console_scripts]
+example_package_chas_hooge7 = example_package_chas_hooge7.main:hello
