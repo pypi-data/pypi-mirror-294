@@ -1,0 +1,1 @@
+import{u as e}from"./reactQuery-BtcRQ453.js";import{u}from"./index-aa2HDIEK.js";function i(){const s=u();return e(["system","settings"],()=>s.fetch("/system/settings").then(t=>t.json()))}export{i as u};
