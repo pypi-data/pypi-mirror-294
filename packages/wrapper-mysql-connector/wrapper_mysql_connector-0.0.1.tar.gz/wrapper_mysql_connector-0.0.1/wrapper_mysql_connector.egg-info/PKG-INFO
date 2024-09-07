@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wrapper-mysql-connector
+Version: 0.0.1
+Summary: Wrapper não oficial do mysql-connector
+Author: Renan de Souza Rodrigues
+Author-email: renanrodrigues7110@gmail.com
+License: MIT License
+Keywords: mysql,mysql-connector,wrapper,wrapper-mysql,wrapper-mysql-connector
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: mysql-connector-python
+
+# wrapper to mysql-connector
+
+- close and open connection `@name_task` -> your def
+- **connected()** return connection in `MySQL`
+- **get_cursor()** return instance of `cursor`
+- **desconected()** return bool for `connection` sucess or fail
+- ClassConnection() -> `constructor` of `MySQLConnector`
