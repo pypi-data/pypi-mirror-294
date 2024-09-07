@@ -1,0 +1,15 @@
+README.md
+setup.py
+monisys/__init__.py
+monisys/monicli.py
+monisys.egg-info/PKG-INFO
+monisys.egg-info/SOURCES.txt
+monisys.egg-info/dependency_links.txt
+monisys.egg-info/entry_points.txt
+monisys.egg-info/requires.txt
+monisys.egg-info/top_level.txt
+monisys/Managers/Arguments.py
+monisys/Managers/Systeminfo.py
+monisys/Managers/__init__.py
+monisys/Managers/manager.py
+monisys/Managers/systeminfocli.py
