@@ -1,0 +1,6 @@
+gitpython
+pydantic
+pyyaml
+wexample-helpers
+wexample-helpers-yaml
+wexample-prompt
