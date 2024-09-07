@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: briefer
+Version: 0.0.7
+Project-URL: Homepage, https://briefer.cloud
+Project-URL: Repository, https://github.com/briefercloud/briefer
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: docker
+
