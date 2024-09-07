@@ -1,0 +1,8 @@
+lika/__init__.py,sha256=IucHKETjouPvBpLqLMMm1WD055DGPyZDWU5MmUiNEUg,168
+lika/response.py,sha256=rLUdXaEwcQRmKawAu9-FXoQol-pitipNePxNrCRHZ74,1559
+lika/router.py,sha256=irtUigHQZvcdKNk7NFS2SqEZVsIcHT1RMjnRqu7yHCw,7415
+lika/server.py,sha256=hH5LupyJwwiqli_q3FXtwRIkmZu5f6HzFLPO4H5qjqQ,2080
+lika-0.2.0.dist-info/LICENSE,sha256=iDvYSiWtxHQx-ZM59kPpCCtumNq9whxUCiYQeKUkt78,1086
+lika-0.2.0.dist-info/METADATA,sha256=H1nPAHDADf4cHh9DmsCO5Zd4PtlGAV2UWbLAmr2LYSE,475
+lika-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+lika-0.2.0.dist-info/RECORD,,

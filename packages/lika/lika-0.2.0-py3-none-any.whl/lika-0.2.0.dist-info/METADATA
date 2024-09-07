@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lika
+Version: 0.2.0
+Summary: 
+Author: KarisAya
+Author-email: 1048827424@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# lika
+
+_✨ 简易 Python ASGI Web 框架 ✨_
+
+<img src="https://img.shields.io/badge/python-3.12+-blue.svg" alt="python">
+<a href="./LICENSE"><img src="https://img.shields.io/github/license/KarisAya/lika.svg" alt="license"></a>
+
+# 文档
+
+没做
+
