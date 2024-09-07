@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Monoid";
+  src: url("%(DATA_PATH)s/Monoid.woff2") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "ShareTechMono";
+  src: url("%(DATA_PATH)s/ShareTechMono.woff2") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Hack';
+  src: url(fonts/Hack-Regular.woff2) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Hack';
+  src: url(fonts/Hack-Italic.woff2) format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Hack';
+  src: url(fonts/Hack-Bold.woff2) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Hack';
+  src: url(fonts/Hack-BoldItalic.woff2) format('woff');
+  font-style: italic;
+  font-weight: 700;
+}
+#blink_effect {
+  color: %(BG_COLOR)s;
+  font-size: 20 px;
+  transition: 1.5s;
+}
+html {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 3em;
+  color: %(FG_COLOR)s;
+  background-color: black;
+}
+hr {
+  border: outset 3px rgb(83,93,103);
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: %(BG_COLOR)s;
+  border-radius: 12px;
+  border: 2px solid gray;
+}
+table::-webkit-scrollbar {
+  width: 12px;
+}
+table::-webkit-scrollbar-track {
+  background: black;
+}
+table::-webkit-scrollbar-thumb {
+  background-color: %(BG_COLOR)s;
+  border-radius: 12px;
+  border: 3px solid gray;
+}
+table {
+  background-color: %(BG_COLOR)s;
+  font-family: ShareTechMono;
+  font-size: 12pt;
+  display: block;
+  table-layout: fixed;
+  overflow-x: scroll;
+  border-right: inset 2px rgb(175,165,186);
+  border-bottom: inset 2px rgb(175,165,186);
+  border-top: inset 3px rgb(175,165,186);
+  border-left: inset 3px rgb(175,165,186);
+  margin-left: 3em;
+  margin-right: 3em;
+}
+table hr {
+  font-family: Monoid;
+  font-size: 14pt;
+}
+td {
+  overflow: hidden;
+  padding: 6em;
+}
+p, pre {
+  font-family: ShareTechMono;
+  font-size: 12pt;
+  line-height: 1.5;
+}
+h1 {
+  font-family: Monoid;
+  font-weight: normal;
+  font-size: 18pt;
+  text-align: center;
+}
+@media print {
+  .pagebreak { page-break-after: always; }
+  .sigmargin { padding-bottom: 0; }
+  #block {
+  page-break-inside: avoid;
+  }
+  @page {
+    direction: vertical;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    size: letter;
+    resolution: 72dpi;
+  }
+}

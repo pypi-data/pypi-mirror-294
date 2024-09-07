@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "bb-simplelogger"
+version = "0.1.0"
+description = "Custom logger class using the builtin logging module"
+authors = ["Erik Beebe <beebeapps_debugging@tuta.io>"]
+readme = "README.md"
+packages = [{ include = "simplelogger" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

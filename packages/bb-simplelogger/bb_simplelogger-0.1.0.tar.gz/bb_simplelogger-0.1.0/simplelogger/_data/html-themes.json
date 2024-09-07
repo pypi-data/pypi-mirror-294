@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Amoled",
+        "fg_color": "#d6d6d6",
+        "bg_color": "#000000",
+        "border_color": "#a8a8a8",
+        "border_style": "inset",
+        "border_size": "3px",
+        "header_footer_color": "#a8a8a8",
+        "header_footer_style": "outset",
+        "header_footer_size": "3px"
+    },
+    {
+        "name": "Dark",
+        "fg_color": "#e0e0e0",
+        "bg_color": "#1a1a1a",
+        "border_color": "#a8a8a8",
+        "border_style": "inset",
+        "border_size": "3px",
+        "header_footer_color": "#a8a8a8",
+        "header_footer_style": "outset",
+        "header_footer_size": "3px"
+    },
+    {
+        "name": "Earth",
+        "fg_color": "#dbffdb",
+        "bg_color": "#078eb2",
+        "border_color": "#8c6640",
+        "border_style": "solid",
+        "border_size": "3px",
+        "header_footer_color": "#8c6640",
+        "header_footer_style": "ridge",
+        "header_footer_size": "5px"
+    },
+    {
+        "name": "Forest",
+        "fg_color": "#bdd6bd",
+        "bg_color": "#14230a",
+        "border_color": "#9c7a59",
+        "border_style": "dotted",
+        "border_size": "5px",
+        "header_footer_color": "#9c7a59",
+        "header_footer_style": "ridge",
+        "header_footer_size": "3px"
+    },
+    {
+        "name": "Light",
+        "fg_color": "#1a1a1a",
+        "bg_color": "#e0e0e0",
+        "border_color": "#0e0e0e",
+        "border_style": "inset",
+        "border_size": "3px",
+        "header_footer_color": "#0e0e0e",
+        "header_footer_style": "outset",
+        "header_footer_size": "3px"
+    },
+    {
+        "name": "Mars",
+        "fg_color": "#e0d6cc",
+        "bg_color": "#241000",
+        "border_color": "#722f29",
+        "border_style": "dotted",
+        "border_size": "2px",
+        "header_footer_color": "#722f29",
+        "header_footer_style": "dashed",
+        "header_footer_size": "3px"
+    },
+    {
+        "name": "Midnight",
+        "fg_color": "#cde9f4",
+        "bg_color": "#0d0d30",
+        "border_color": "#bdbd83",
+        "border_style": "solid",
+        "border_size": "3px",
+        "header_footer_color": "#bdbd83",
+        "header_footer_style": "dotted",
+        "header_footer_size": "5px"
+    }
+]

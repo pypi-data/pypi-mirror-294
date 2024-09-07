@@ -1,0 +1,226 @@
+<style>
+  @font-face {
+    font-family: "Monoid";
+    src: url("%(DATA_PATH)s/Monoid.woff2") format("woff");
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "ShareTechMono";
+    src: url("%(DATA_PATH)s/ShareTechMono.woff2") format("woff");
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Hack";
+    src: url("%(DATA_PATH)s/Hack-Regular.woff2") format('woff');
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Hack";
+    src: url("%(DATA_PATH)s/Hack-Italic.woff2") format('woff');
+    font-style: italic;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Hack";
+    src: url("%(DATA_PATH)s/Hack-Bold.woff2") format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Hack";
+    src: url("%(DATA_PATH)s/Hack-BoldItalic.woff2") format('woff');
+    font-style: italic;
+    font-weight: 700;
+  }
+  #heading {
+    background-color: %(BG_COLOR)s;
+    height: 0.6in;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: %(PAGE_WIDTH)s;
+  }
+  #footing {
+    background-color: %(BG_COLOR)s;
+    border: none;
+    bottom: 0;
+    height: 0.25in;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: %(PAGE_WIDTH)s;
+  }
+  #blink_effect {
+    color: %(FG_COLOR)s;
+    transition: 1.5s;
+  }
+  #no_blink {
+    color: %(FG_COLOR)s;
+    transition: none;
+  }
+  #content {
+    margin: 0;
+    box-decoration-break: clone;
+    width: 100%;
+    overflow: auto;
+    display: block;
+  }
+  #main {
+    display: block;
+    border-style: %(BORDER_STYLE)s;
+    border-width: %(BORDER_SIZE)s;
+    border-color: %(BORDER_COLOR)s;
+  }
+  body {
+    background-color: %(BG_COLOR)s;
+    font-size: 10pt;
+    line-height: 1;
+    border-style: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  body::-webkit-scrollbar-track {
+    background: %(BG_COLOR)s;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: %(FG_COLOR)s;
+    border-radius: 12px;
+    border: solid 2px %(BORDER_COLOR)s;
+  }
+  h1 {
+    font-family: "Monoid";
+    margin: none;
+    padding: none;
+    font-weight: normal;
+    font-size: 18pt;
+    text-align: center;
+  }
+  hr {
+    border-color: %(HEADER_FOOTER_COLOR)s;
+    border-style: %(HEADER_FOOTER_STYLE)s;
+    border-width: %(HEADER_FOOTER_SIZE)s;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    color: %(FG_COLOR)s;
+    background-color: %(BG_COLOR)s;
+    width: %(PAGE_WIDTH)s;
+    height: %(PAGE_HEIGHT)s;
+    margin: auto;
+  }
+  pre {
+    font-family: "Hack";
+    font-size: 10pt;
+  }
+  table#main {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  table::-webkit-scrollbar {
+    width: 12px;
+  }
+  table::-webkit-scrollbar-track {
+    background: %(BG_COLOR);
+  }
+  table::-webkit-scrollbar-thumb {
+    background-color: %(FG_COLOR)s;
+    border-radius: 12px;
+    border: 3px solid gray;
+  }
+/*  table tbody {
+    width: %(PAGE_WIDTH)s;
+    border: none;
+  }*/
+/*  tr {
+    border: none;
+  }*/
+/*  td {
+    width: 100%;
+    border: none;
+  }*/
+  @media print {
+    .pagebreak { page-break-after: always; }
+    .sigmargin { padding-bottom: 0; }
+    #block {
+      page-break-inside: avoid;
+    }
+    #main {
+      border: none;
+    }
+    body {
+      zoom: %(PAGE_ZOOM)s;
+    }
+    @page {
+      direction: vertical;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      size: %(PRINT_PAGE_SIZE)s;
+    }
+  }
+</style>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--    <script src="%(DATA_PATH)s/js/printFormat.js"></script> -->
+<!--    <script src="%(DATA_PATH)s/js/htmlFormat.js"></script> -->
+    <script>
+      let blinking_text = document.getElementById('blink_effect');
+      if ( blinking_text != null ) {
+        setInterval( function() {
+          blinking_text.style.display = ( blinking_text.style.display == 'none' ? '' : 'none' );
+        }, 1200 );
+      };
+    </script>
+    <script>
+      let no_blinking_text = document.getElementById('no_blink');
+      if ( no_blinking_text != null ) {
+        setInterval( function() {
+          no_blinking_text.style.display = ( no_blinking_text.style.display == 'none' ? '' : 'none' );
+        }, 0 );
+      };
+    </script>
+  </head>
+  <body>
+    <div #scrollingContainer class="col-xxs-9 content-container" style="overflow-x: hidden; width: 100%;"></div>
+    <div id="content">
+      <table id="main">
+        <thead>
+          <tr><td>
+            <div style="height: 0.6in; margin-bottom: 12px;"></div>
+          </td></tr>
+        </thead>
+        <tbody>
+          <tr><td>
+            %(DATA)s
+          </td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>
+            <div style="height: 0.25in; margin-top: 12px;"></div>
+          </td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+                                  <!-- HEADER -->
+  <div id="heading">
+    <h1>%(TITLE)s</h1>
+    <hr style="padding: none; margin: none;"/>
+  </div>
+  <div id="footing">
+    <hr style="padding: none; margin: none;"/>
+  </div>
+</html>
