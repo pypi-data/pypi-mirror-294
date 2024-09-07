@@ -1,0 +1,2 @@
+const __vite__fileDeps=["./index.umd-C4jtQwe4.js","./index-BgbMjq3j.js","./index-BnE2Oh-e.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+import{e9 as n,ea as o,d5 as a}from"./index-BgbMjq3j.js";function u(r){return n(this,void 0,void 0,function(){var e;return o(this,function(t){switch(t.label){case 0:return[4,a(()=>import("./index.umd-C4jtQwe4.js").then(i=>i.i),__vite__mapDeps([0,1,2]),import.meta.url)];case 1:return e=t.sent(),r._plugins=e,[2]}})})}export{u as loadLegacyVideoPlugins};
