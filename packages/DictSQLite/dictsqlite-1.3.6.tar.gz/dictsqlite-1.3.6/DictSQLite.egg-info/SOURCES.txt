@@ -1,0 +1,9 @@
+README.md
+setup.py
+DictSQLite.egg-info/PKG-INFO
+DictSQLite.egg-info/SOURCES.txt
+DictSQLite.egg-info/dependency_links.txt
+DictSQLite.egg-info/requires.txt
+DictSQLite.egg-info/top_level.txt
+dict_sqlite/__init__.py
+dict_sqlite/main.py
