@@ -1,0 +1,12 @@
+*.pyc
+.vagrant
+*.egg-info
+.eggs
+build
+.tox
+flycheck-*
+dist
+AUTHORS
+ChangeLog
+.pytest_cache
+.venv
