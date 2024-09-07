@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+pydicom
+ormir-pyvoxel
+qtpy
+progress
+flexidep>=0.0.8
