@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: aact
+Version: 0.0.1
+Summary: An actor model library for multi-agent/environment interaction in Python based on Redis.
+License-File: LICENSE.md
+Requires-Python: >=3.10
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: aiostream>=0.6.2
+Requires-Dist: google-cloud-speech>=2.27.0
+Requires-Dist: google-cloud-texttospeech>=2.17.2
+Requires-Dist: numpy>=2.1.0
+Requires-Dist: pyaudio>=0.2.14
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: redis>=5.0.8
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rq>=1.16.2
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.12.5
+Requires-Dist: types-aiofiles>=24.1.0.20240626
+Requires-Dist: types-pyaudio>=0.2.16.20240516
+Requires-Dist: types-requests>=2.32.0.20240712
+Requires-Dist: types-toml>=0.10.8.20240310
+Provides-Extra: vision
+Requires-Dist: opencv-python; extra == 'vision'
+Description-Content-Type: text/markdown
+
+# AAct -- An actor model library in Python
+*Designed for interactive systems involving agents, users, and environments.*
