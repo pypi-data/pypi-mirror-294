@@ -1,0 +1,23 @@
+[project]
+name = "gepcat"
+version = "1.0.0"
+readme = "README.md"
+dependencies = [
+    "click",
+    "toml",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==6.2.5",
+    "pytest-cov==3.0.0",
+]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project.scripts]
+gepcat = "src.main:pycat"
