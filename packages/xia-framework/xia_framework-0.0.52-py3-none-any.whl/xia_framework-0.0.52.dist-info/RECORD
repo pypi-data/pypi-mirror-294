@@ -1,0 +1,15 @@
+xia_framework/__init__.py,sha256=hw9OXFWkZFP07UPNTNqb4Q2m_PiGleBdqA2keNwj71Q,326
+xia_framework/application.py,sha256=9a7Sppaw6FCz-XjaORZ_cFuBzv0JrDl7otEKf94ISlc,4869
+xia_framework/base.py,sha256=IK0b-6aBMyoQTLEAF1ck6UMcVGYQ_Kc5U7mUvvxbmT0,13955
+xia_framework/cosmos.py,sha256=CG-fDNfRs5OOr_8vetNF_BwP4zIQoUgr3ejza6Y2iGM,3295
+xia_framework/foundation.py,sha256=v3t0lwfzK5pRBdwTVNtdPd9W-0LvRnj3nfTYlHSaq_A,9019
+xia_framework/realm.py,sha256=w-YHjuNwTYVbPzdDVUCkJ4tOZ33neyG0TTtJfXq3uCU,87
+xia_framework/singularity.py,sha256=JdmbqHKLTdT7ufK998k-knCwGTtaVsnfi9qMCIN0-nc,1538
+xia_framework/tools/__init__.py,sha256=nIz1ARmDECgpG78s9OMBPXy9c5E5y5929fAhXipkXG8,89
+xia_framework/tools/gcloud.py,sha256=dxKOfl3Yj9kUcTal8BN_5qQ7E0gfpGUW7E2pV5zif7g,3417
+xia_framework/tools/gh.py,sha256=WmwFYUq8A8HJZLi-nPgzOgX8rYlRLE1iepsUwsAeGfA,758
+xia_framework-0.0.52.dist-info/LICENSE,sha256=RJDBG1pyQlnqJqp7zHghqWIOzrnMJSSiw_voH1hh06Q,1062
+xia_framework-0.0.52.dist-info/METADATA,sha256=QOepLRAMYR8R535zW8j73xFgMw_MkhVkd_OrmJ6-8-w,263
+xia_framework-0.0.52.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+xia_framework-0.0.52.dist-info/top_level.txt,sha256=nsqQPILRIIL9d9ob5Ky5VCmeiP-19rdka8GWp6SvjLM,14
+xia_framework-0.0.52.dist-info/RECORD,,
