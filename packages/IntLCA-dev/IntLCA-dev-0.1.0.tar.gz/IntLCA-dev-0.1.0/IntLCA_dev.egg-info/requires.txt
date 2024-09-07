@@ -1,0 +1,4 @@
+brightway2==2.4.3
+premise>=1.5.1
+ipython==8.12.3
+jupyterlab
