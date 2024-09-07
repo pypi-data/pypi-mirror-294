@@ -1,0 +1,10 @@
+cmw/__init__.py,sha256=vk1h5-EV7d_dFoWxOh26T_lsKo-O4EmwfQ1Gjy02igo,3287
+cmw/config.yaml,sha256=AX1XJJEsuNblMxQWYn4pow7JdPEwoI18ul073M21BVw,392
+cmw/index.md,sha256=LjHvia_mBZUhrIMr6_C_Eltcx7n0yyd4lI8RZIVOTB0,1161
+cmw/loader.py,sha256=Qc0K07DQek88tsq9Ur85S7osTuKDv76BkKbaGGWnHRY,844
+cmw/template.html,sha256=jtdvAcn9Ro_aPB95FaADXDjBVkjgVC-do2ZMwFSOSm0,1787
+cmw-9.dist-info/METADATA,sha256=OFHGrCE_TYA1iLIvAxTiOcumXcSNZbFRSw0tHa9KtoA,750
+cmw-9.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cmw-9.dist-info/entry_points.txt,sha256=_nRnvcDkA-CGRKiYVGEe8IaR0gG9NDb8CAmevDx5QyA,33
+cmw-9.dist-info/licenses/LICENSE,sha256=08FwlK4Tm6fY9e5_vQAbHVv8aKPXsGyyo_-YWRsdNDE,1070
+cmw-9.dist-info/RECORD,,
