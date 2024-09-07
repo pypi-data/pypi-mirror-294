@@ -1,0 +1,17 @@
+api_canvas_lms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_canvas_lms/account.py,sha256=6ehE2wgiulR803S88TTRqCQoTgGBKHbx56akHbBqd2A,8002
+api_canvas_lms/adda.py,sha256=oSY-wF-U1mN2F77yXYn58lPGYo3BV2EtcLI-snX92fc,12604
+api_canvas_lms/base.py,sha256=yImhgiefd5689K1uHauUbfC4u0FCl5ekUwaBDYUvH0o,3184
+api_canvas_lms/course.py,sha256=qCtTgX1W07TphsylrfbkHO0hsU4qkIpKzw7bppqC_Ns,2347
+api_canvas_lms/discussion_topic.py,sha256=aGABmO64XAJcq0hzFn9Fmo1R6Ve5heeAz9GC7FnB9i0,2051
+api_canvas_lms/enrollment.py,sha256=87-VbI-p7aKSDC8ox4fs7s4-8752ljNBSdqo2uMdMaY,703
+api_canvas_lms/exceptions.py,sha256=omz-pwphfumsVUQG1WON5A8pFwonvGcUNXMFhA9XjDs,1592
+api_canvas_lms/module.py,sha256=coEbL0GXWHBfIPe_EdJmiEBXwJM0VUtv-zxdm-5j9nI,12880
+api_canvas_lms/mvc.py,sha256=DHKUh16iIKg-SClc13W6sHBaSA8A7F7bc-E8Fn7XDoA,5686
+api_canvas_lms/user.py,sha256=-AYSLfzOevDc76rmtzPJvjMhKxyrZcDIxBnAYRLjEfo,9145
+api_canvas_lms/utils.py,sha256=Y1VKKiN69eABdQvhNPDgVblJj3sFbrese7OsbwGG0xc,2069
+api_canvas_lms-0.1.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+api_canvas_lms-0.1.12.dist-info/METADATA,sha256=pMyQFQhROMa5lmkwi7xrQJ5e_JUUEoocfPR_A0yUVWg,1133
+api_canvas_lms-0.1.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+api_canvas_lms-0.1.12.dist-info/top_level.txt,sha256=b9Hrug5cwyoYeJPpII9eu-mb-nNwR1A3pcB5IAXkNG8,15
+api_canvas_lms-0.1.12.dist-info/RECORD,,
