@@ -1,0 +1,4 @@
+feat: add time_out param into job.execute func for exp-client (#35) * feat: add time_out param into job.execute func  * fix: remove pseudorandom in test func (5055759)
+feat: job_name added to Job and Run classes chore: re-add job_name to run.py (1f0b3ec)
+feat: retrieve a list of the keys for jobs not deleted in exp_client (#33) * feat: retrieve a list of the keys for jobs not deleted in exp_client  * fix: update epx docs  * fix: comments  * fix: lint (2f81efe)
+feat: use api for run and job status (#37) (9d3f4d1)

@@ -1,0 +1,21 @@
+## New Features
+feat: add time_out param into job.execute func for exp-client (#35) * feat: add time_out param into job.execute func  * fix: remove pseudorandom in test func (5055759)
+feat: job_name added to Job and Run classes chore: re-add job_name to run.py (1f0b3ec)
+feat: retrieve a list of the keys for jobs not deleted in exp_client (#33) * feat: retrieve a list of the keys for jobs not deleted in exp_client  * fix: update epx docs  * fix: comments  * fix: lint (2f81efe)
+feat: use api for run and job status (#37) (9d3f4d1)
+## Patched Changes
+ci: add tests and linting to action (#25) Co-authored-by: Samuel Williams <samuel.williams@epistemix.com> (480808d)
+ci: fix permission issue for publishing to pypi (#39) (cbc923d)
+ci: fix reformatted version line in __init__.py (02480a1)
+ci: publish to pypi on release (#38) (2b67718)
+docs(README): updates to README and removed now-unused scripts (cd2a4ae)
+docs: add local build process documentation (#24) (e19016d)
+docs: updated link (0097b17)
+fix: client delete should delete both results metadata (#34) * fix: should delete bot results and metadata  * fix: remove key metadata cache when delete job  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (1373348)
+fix: job_name declared twice (#22) (8fee027)
+fix: job_name declared twice (a8be8ba)
+refactor: unpack model_params in ModelConfigSweep (#32) * refactor: unpack model_params in ModelConfigSweep  * fix: lint and format  * fix: add unit test for unpack_model_params func  * fix: comments and add some examples  * fix: update docstring of modelconfigsweep (3830d5c)
+refactor: update user agent to header epx client (#31) * refactor: update user agent to header epx client  * refactor: fix lint update user agent to header epx client  * refactor: fix test update user agent to header epx client  * refactor: fix test update user agent to header epx client  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (c959368)
+
+---
+**Full Changelog**: https://github.com/Epistemix-Inc/epx-client/compare/0.3.0...cbc923da11666956b1135e20824d620610c3a166
