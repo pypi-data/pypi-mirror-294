@@ -1,0 +1,3 @@
+[console_scripts]
+golem-reputation=golem_reputation.entrypoints.cli.main:main
+
