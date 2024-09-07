@@ -1,0 +1,4 @@
+taxi_data_core
+selenium
+pydantic
+beautifulsoup4
