@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ArabicTagger
+Version: 0.1.5b1
+Summary: A BI-LSTM & CRF model implemented in Keras & Arabic Tagger
+Home-page: https://github.com/yourusername/my_package
+Author: Eslam Tarek Farouk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: tensorflow (==2.10.0)
+Requires-Dist: keras (==2.10.0)
+Requires-Dist: bpemb
+Requires-Dist: numpy
+
