@@ -1,0 +1,9 @@
+cedashtools/__init__.py,sha256=7W0eVbEHJRINZG7w3Ga8ij6YobTNQE6bRNslmeo0MSE,23
+cedashtools/user_access/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cedashtools/user_access/validator.py,sha256=Fbie1wUreMmLrRr42RvfsQ0VyrHgULHML7NSIM8lJ5U,531
+cedashtools/user_access/website.py,sha256=8HexuqnvsWoem164bOPkvhVBpuZ6TQYMLUto1-HDaDs,665
+cedashtools-0.2.0.dist-info/LICENSE,sha256=BKM6H6HPzmgCCk6amauD-I9Aa6ZdIWHcDvi8ntGgFe8,1089
+cedashtools-0.2.0.dist-info/METADATA,sha256=abHO26HOUIPMp-0xnOXpE2Z9Sx54C0S0vgtPlC4vwYY,3969
+cedashtools-0.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+cedashtools-0.2.0.dist-info/top_level.txt,sha256=ytabRNoUTqBYRn6Q4rA2vVNx-N_A64arvkiavVUKtCU,12
+cedashtools-0.2.0.dist-info/RECORD,,
