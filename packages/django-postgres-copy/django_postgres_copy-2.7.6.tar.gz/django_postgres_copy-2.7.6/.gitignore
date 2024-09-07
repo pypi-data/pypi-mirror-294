@@ -1,0 +1,9 @@
+build/*
+*.pyc
+.coverage
+*.egg*
+dist
+.tox
+.python-version
+tests.log
+docs/_build
