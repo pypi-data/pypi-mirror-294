@@ -1,0 +1,8 @@
+memorizz/__init__.py,sha256=vSuQkaw6wNXciHvQ-Pr9KVF4r3ncfB3QWag2lbUImdU,188
+memorizz/database/__init__.py,sha256=HhCKIv5jK99tchOpUKfhBtFFcbtvWnlnZeYKfYwXqV8,179
+memorizz/database/mongodb/__init__.py,sha256=SedvNfcpPOZz5Wn6IDIKIDrBkhkrhxEq1zuDxl2objQ,185
+memorizz/database/mongodb/mongodb_tools.py,sha256=nDEUeyr7NZ4Qqpp8utgglRwUUTaWS1cZxvUojo5q0nY,11255
+memorizz-0.0.7.dist-info/METADATA,sha256=e2x8drP-Z9PNQDw31PJdVVtY7ZwJU59xl8bIWMy7uek,14170
+memorizz-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+memorizz-0.0.7.dist-info/licenses/LICENCE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memorizz-0.0.7.dist-info/RECORD,,
