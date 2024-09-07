@@ -1,0 +1,15 @@
+klaudlytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klaudlytics/cli.py,sha256=FMMGAEqxcpY8r_CYAgQ4FrT0198Gmf3_Z8dBfq2wIaQ,973
+klaudlytics/main.py,sha256=jev38yRs8frQjBRDpindsslM2YLKli-NHTfFNc-erY4,729
+klaudlytics/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klaudlytics/modules/db_optimizer.py,sha256=YML0sWvEFx8Ps4qxHGhwZRU88Cizw4VGq_rlFP4tEk8,7273
+klaudlytics/modules/ec2_optimizer.py,sha256=dVCEVpcVLQfsBWJiV6SdA-7TVazduwmyNF_7N6m6Wi8,11837
+klaudlytics/modules/s3_optimizer.py,sha256=loWAjJAx673Uea_2WA9UAXMNLnDhSHJYtkmRUB9FMD0,4208
+klaudlytics/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klaudlytics/utils/aws_client.py,sha256=eXRbg2AQZ63LEH9MOcaxi5co-JkZm9z4jwpSufh_dbg,8194
+klaudlytics/utils/region_utils.py,sha256=fwAEn1bweXASJ5A40mug-VeaRnD4R6NGUGIF7Y6q7fk,765
+klaudlytics-0.1.8.dist-info/METADATA,sha256=U8Hbw8KJinyI1gJHXz8v9yO6EC7uY2OSYmFSbgPAm4E,1662
+klaudlytics-0.1.8.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+klaudlytics-0.1.8.dist-info/entry_points.txt,sha256=5tVfqzX1ojhNaCloXP0NOCHVYIAEJHwpHBsezGhhKOA,54
+klaudlytics-0.1.8.dist-info/top_level.txt,sha256=Sq0UEcaBQ5m_ePgxz1lTCFWP0f-0rR7_cj3SpDATza0,12
+klaudlytics-0.1.8.dist-info/RECORD,,
