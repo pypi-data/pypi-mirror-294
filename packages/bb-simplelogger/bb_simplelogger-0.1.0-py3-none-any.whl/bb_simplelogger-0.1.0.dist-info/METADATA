@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: bb-simplelogger
+Version: 0.1.0
+Summary: Custom logger class using the builtin logging module
+Author: Erik Beebe
+Author-email: beebeapps_debugging@tuta.io
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# SimpleLogger
+
+> Custom logger class using the builtin logging module
+
+- Simplifies logging to a file
+- Adds color formatting
+- Adds ability to set verbosity through environment variable 'BBLOGGER_VERBOSITY'
+
+### Logger class
+
+```python
+
+class SimpleLogger( logging.getLoggerClass() ):
+
+        """
+        All options and keyword arguments are optional
+
+        Arguments:
+            'name':  str - name given to logger
+            'level': int [1-5] - terminal output logging level - default is 3
+
+        Keyword Arguments:
+            'date_fmt':        str ['%H:%M:%S'] - date format string
+            'html_theme':      str ['plain'] - html theme to use when writing html or pdf
+                                - see SimpleLogger.view_html_themes() to print examples
+            'terminal_output': bool [True] - whether or not to output logs to terminal
+            'logfile':         str - plaintext log file to write in realtime
+            'overwrite':       bool [False] - overwrite logfile at initial start of program if existing
+            'logfile_level':   int [1-4] - limit logs at or above level given - default is 1
+            'logfile_title':   str - prepend text to logfile (shows date and time only by default)
+                                - also applies to html/pdf if used
+            'to_html':         str [path] - write logs to an html file at exit of program
+            'to_pdf':          bool - use with 'to_html' to instead save a pdf
+                                - REQUIREMENT: chrome or chromium and bash in system path
+        """
+
+
+from simplelogger import SimpleLogger
+log = SimpleLogger( __name__, 2, logfile = "/home/user/log/my-logfile" )
+
+#
+# Setting level does not effect log file
+# Log file recieves all logs by default
+#
+
+```
+
+### Changelog
+
+- v0.1.0
+    - initial release
+
