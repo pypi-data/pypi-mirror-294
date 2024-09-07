@@ -1,0 +1,8 @@
+kiteconnect
+pandas
+furl
+nsetools
+prettytable
+pyotp
+webdriver_manager
+selenium

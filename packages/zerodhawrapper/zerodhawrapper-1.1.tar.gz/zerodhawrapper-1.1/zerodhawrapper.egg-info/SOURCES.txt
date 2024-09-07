@@ -1,0 +1,7 @@
+setup.py
+zd.py
+zerodhawrapper.egg-info/PKG-INFO
+zerodhawrapper.egg-info/SOURCES.txt
+zerodhawrapper.egg-info/dependency_links.txt
+zerodhawrapper.egg-info/requires.txt
+zerodhawrapper.egg-info/top_level.txt
