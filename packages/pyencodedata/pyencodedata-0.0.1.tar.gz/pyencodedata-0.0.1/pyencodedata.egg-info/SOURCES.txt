@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyencodedata/__init__.py
+pyencodedata/info.py
+pyencodedata.egg-info/PKG-INFO
+pyencodedata.egg-info/SOURCES.txt
+pyencodedata.egg-info/dependency_links.txt
+pyencodedata.egg-info/top_level.txt
