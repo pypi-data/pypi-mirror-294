@@ -1,0 +1,17 @@
+omuplugin_obs/__init__.py,sha256=S_Z2T00JfILtZKGKEc4QYVZM5k06uRTo-teobwPAXlQ,191
+omuplugin_obs/__main__.py,sha256=Bp4HkaVl7r7viEF7oIZPujgEE2pFg9jcd8hWlAMPiQ8,61
+omuplugin_obs/const.py,sha256=Z5Qb3winBj0qT5jCLtVSB4xGUEZk6DQMZ_nwBU0Vfh8,97
+omuplugin_obs/hwnd_helpers.py,sha256=YI5gG4b4gYXbgUraYznn2xk3Ug4OEsvM-CP72wHb_iE,1546
+omuplugin_obs/obsconfig.py,sha256=roSkhqsUe_PRh4shhZL2IQYfjF54KDTb85faSWhIQDA,1006
+omuplugin_obs/permissions.py,sha256=r_gUp0lLafUiA5IMduvXzqbpB8Xp5oM_Dn-cE1Q7hz4,3184
+omuplugin_obs/plugin.py,sha256=iIjTwEq5rzGfX99Snj06fH5BTjb1CKSg86_uG1ExlwY,6518
+omuplugin_obs/types.py,sha256=jVyP6Ez7-C6sgWvYZNNcv4_prS2_4fBDjU7MnPSJeV8,7851
+omuplugin_obs/version.py,sha256=rhqna_mYFYCJHw-jzaPRItJeYlLMYvaxYdcJ1MlgnAc,108
+omuplugin_obs/script/.gitignore,sha256=zZUSlSsX0LmW2Hj82fTkJ5ygS7aUgEgKYDHHOgWsEKg,22
+omuplugin_obs/script/obsplugin.py,sha256=2ol-IN0XpX62sThG2eRrRMC00Fu8n0nNiD5KBi58MrQ,12757
+omuplugin_obs/script/omuapps_plugin.py,sha256=B1W0CFxngCPcOT_pL3cCIHHSC4DDf1pZ38-QiAKojjI,1489
+omuplugin_obs/script/venv_loader.py,sha256=6aG3PxewRu69tYJEDkHn0X_q08F0XIToXcVRGmTEsF8,757
+omuplugin_obs-0.6.22.dist-info/METADATA,sha256=RU0F-SyOeWjHR6XK5rtJfwC6wavthshElr4sb7jPyhs,406
+omuplugin_obs-0.6.22.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+omuplugin_obs-0.6.22.dist-info/entry_points.txt,sha256=J_1OYKriH-QFY9EoKtbedW-j6u4xGAAqe6M81jNjsfY,44
+omuplugin_obs-0.6.22.dist-info/RECORD,,
