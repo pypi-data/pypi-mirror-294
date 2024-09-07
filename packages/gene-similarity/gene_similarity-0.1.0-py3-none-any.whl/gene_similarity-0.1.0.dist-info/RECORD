@@ -1,0 +1,12 @@
+gene_similarity/__init__.py,sha256=wmHBc28Yw_Th1tAGsM6ehvhwMdnVDSpVflVoVG0mvII,51
+gene_similarity/__main__.py,sha256=TfFpYPcgOtm44mz3_bgPHL4MIWxIT4DdQIGAc6vh6IM,259
+gene_similarity/calculate_similarity.py,sha256=O8-cX_RnhlPPj2s1b8RUke-sbeUdJ2atOAz3JmU8EyQ,2469
+gene_similarity/cli.py,sha256=H2aFG8YPRjaF40wVVtPK56WNgU7_8Q27RK0TLbCdjoQ,5555
+gene_similarity/output.py,sha256=4YykQwWRTR7N2BMQ4dt8LSDGhubJRCpmv-4vyP5wKas,2363
+gene_similarity/parser.py,sha256=XBt1hktGqZwHgBj0Tr2aiV9KzFivtXAsrNSLV_aZhNk,620
+gene_similarity-0.1.0.dist-info/LICENSE,sha256=q8k-8vmY4wNDPTvNefucEVGl8iKiqWyYeextbBKdlIg,1067
+gene_similarity-0.1.0.dist-info/METADATA,sha256=bSMGc4w2hSm3D3Hxe2E20G0Fabhxmi6IXDFv0xgSe4E,2241
+gene_similarity-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gene_similarity-0.1.0.dist-info/entry_points.txt,sha256=If0n3csymOl2qYxErJTFKIhhA4hpkPLJg9XBjiHqKko,68
+gene_similarity-0.1.0.dist-info/top_level.txt,sha256=A5mzw6mXGjKEKlQuvqAwJrgyz9qFnYWlO9-eLH4srv0,16
+gene_similarity-0.1.0.dist-info/RECORD,,

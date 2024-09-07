@@ -1,0 +1,2 @@
+[console_scripts]
+gene-similarity = gene_similarity.cli:entry_point
