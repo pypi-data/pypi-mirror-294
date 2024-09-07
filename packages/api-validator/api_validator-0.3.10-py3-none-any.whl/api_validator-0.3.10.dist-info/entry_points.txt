@@ -1,0 +1,2 @@
+[console_scripts]
+api-validator = api_validator.bin.cli:main
