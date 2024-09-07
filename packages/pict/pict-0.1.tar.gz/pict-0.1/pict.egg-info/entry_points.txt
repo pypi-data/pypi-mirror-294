@@ -1,0 +1,2 @@
+[console_scripts]
+initialize-project = pict.cli:main
