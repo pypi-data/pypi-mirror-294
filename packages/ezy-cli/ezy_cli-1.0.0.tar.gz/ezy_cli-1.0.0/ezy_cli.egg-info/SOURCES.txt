@@ -1,0 +1,10 @@
+README.md
+setup.py
+ezy_cli/__init__.py
+ezy_cli/__main__.py
+ezy_cli/ezy_cli.py
+ezy_cli/utils.py
+ezy_cli.egg-info/PKG-INFO
+ezy_cli.egg-info/SOURCES.txt
+ezy_cli.egg-info/dependency_links.txt
+ezy_cli.egg-info/top_level.txt
