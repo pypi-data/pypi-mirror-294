@@ -1,0 +1,3 @@
+[console_scripts]
+mkslides-reveal=mkslides-reveal.__main__:main
+
