@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+inline-svg-utf8 = src:InlineSvgPluginUtf8
