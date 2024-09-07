@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+repotokens.py
+setup.py
+repotokens.egg-info/PKG-INFO
+repotokens.egg-info/SOURCES.txt
+repotokens.egg-info/dependency_links.txt
+repotokens.egg-info/entry_points.txt
+repotokens.egg-info/requires.txt
+repotokens.egg-info/top_level.txt
