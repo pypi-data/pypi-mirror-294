@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: scb
+Version: 0.1.2
+Summary: A Python wrapper for SCB API
+Home-page: https://github.com/rubenselander/scb
+Author: Ruben Selander
+Author-email: ruben.selander@nordicintel.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.21.0
+
+# SCB Python Wrapper
+This is a Python wrapper for the SCB API. The wrapper is designed to make it easier to interact with the SCB API. The wrapper is designed to be easy to use and to make it easy to get data from the SCB API.
+
