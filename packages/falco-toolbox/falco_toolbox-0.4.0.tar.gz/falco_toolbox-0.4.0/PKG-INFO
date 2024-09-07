@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: falco-toolbox
+Version: 0.4.0
+Project-URL: Documentation, https://github.com/Tobi DEGNON/falco-toolbox#readme
+Project-URL: Issues, https://github.com/Tobi DEGNON/falco-toolbox/issues
+Project-URL: Source, https://github.com/Tobi DEGNON/falco-toolbox
+Author-email: Tobi DEGNON <tobidegnon@proton.me>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# falco_toolbox
+
+[![PyPI - Version](https://img.shields.io/pypi/v/falco-toolbox.svg)](https://pypi.org/project/falco-toolbox)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/falco-toolbox.svg)](https://pypi.org/project/falco-toolbox)
+
+-----
+
+## Table of Contents
+
+- [falco\_toolbox](#falco_toolbox)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
+
+## Installation
+
+```console
+pip install falco-toolbox
+```
+
+## License
+
+`falco-toolbox` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Acknowledgements
+
+A lot of the code in this package was taken from [django-twc-toolbox](https://github.com/westerveltco/django-twc-toolbox). The license file has been updated to reflect this.
