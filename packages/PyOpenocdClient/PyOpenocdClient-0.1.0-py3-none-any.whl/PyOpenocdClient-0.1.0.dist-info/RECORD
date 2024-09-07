@@ -1,0 +1,12 @@
+py_openocd_client/__init__.py,sha256=THbr8De7S91EatjLlLIDbkWNLoGAQf5j6kn69xOqGHg,332
+py_openocd_client/baseclient.py,sha256=368QbP3luvSOXF9nNqspwycKYiwpzrFsVzdgg5JQcOQ,7024
+py_openocd_client/bp_parser.py,sha256=yQw8qrK6GmZhR5sIdzjD90zW0StQVUkgAerwqiB08pg,4013
+py_openocd_client/client.py,sha256=hvqZ4VMKHW21aaj1Ve5ixChgN_j4Xpn17qaENwoziEI,25551
+py_openocd_client/errors.py,sha256=9K48w4rVgaOkCF4q3ORp3KxH31DVQL0JNXoGktgE-H0,3703
+py_openocd_client/types.py,sha256=gOoND2jpGqfAqKDE-LwowTL6eHlTd9GHNsAJQvl8C5o,2204
+py_openocd_client/wp_parser.py,sha256=gcwewLfMus26vve7yPDZnW7kQKvnZpWFJ-CnxPw1Acc,1583
+PyOpenocdClient-0.1.0.dist-info/LICENSE,sha256=LQ4E7j3KmZ2D4Bx0cNd7_k39v0KJlF72VjOAl6k5Aas,1094
+PyOpenocdClient-0.1.0.dist-info/METADATA,sha256=pwRFnFT96KZW1wKuakD_GOItFk9_vuW-4L1Inos7M6M,1428
+PyOpenocdClient-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+PyOpenocdClient-0.1.0.dist-info/top_level.txt,sha256=YzDCf323Zc2HbUuT7wyJ2IHg8vlELGt9Ve0k_u3lhMk,18
+PyOpenocdClient-0.1.0.dist-info/RECORD,,
