@@ -1,0 +1,4 @@
+graft autopep695
+include LICENSE
+include pyproject.toml
+include README.md
