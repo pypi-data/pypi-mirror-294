@@ -1,0 +1,13 @@
+falco_ui/__about__.py,sha256=5lAkq2F8oin4WnZjBe3xQCsdp9dprn_DVftw1mZ7djQ,129
+falco_ui/__init__.py,sha256=r94O36QjFjTHbHgig-HKk-EymEIXfkAADGWOBcO4lMw,107
+falco_ui/apps.py,sha256=nsl4se9ehWLkhFmmlBt6m5PvbbHZNM6hZvXjN1Mi9QQ,147
+falco_ui/favicons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falco_ui/favicons/apps.py,sha256=VM8wxx_bBCFB5NaLuAaigViCW6cgOhW4mtqTyTQ3Lok,157
+falco_ui/favicons/urls.py,sha256=dmtdK3ZbJUd75enucOEES_vxO21X0VGomKbKDzvzF8U,456
+falco_ui/favicons/views.py,sha256=3VtwhCwC8T4_d7sndSfTVc-EZrjodLM3SjpM4fanRrI,1122
+falco_ui/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falco_ui/forms/apps.py,sha256=tMGv-3JS_SqdYOAzZq8bNQSsuHvGjsUZbmKVODuraT0,151
+falco_ui-0.1.0.dist-info/METADATA,sha256=FfmpIhoSXWNZzrqgwXwPiUwhqPBDsZXZ05q4FZgwaiM,1551
+falco_ui-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+falco_ui-0.1.0.dist-info/licenses/LICENSE.txt,sha256=0QF8XfuH0zkIHhSet6teXfiCze6JSdr8inRkmLLTDyo,1099
+falco_ui-0.1.0.dist-info/RECORD,,
