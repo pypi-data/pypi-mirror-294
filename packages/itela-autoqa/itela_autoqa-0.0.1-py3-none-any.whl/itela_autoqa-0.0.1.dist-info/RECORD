@@ -1,0 +1,10 @@
+itela_autoqa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itela_autoqa/ai.py,sha256=choaH9ZA6LfIdwriEtIFJ6vpKibI3gfsh1D0aCuUUks,4245
+itela_autoqa/cli.py,sha256=K6PyjXfPLVDtvkmFX6ZqmCbJGQp_3d4r0ESluQr2mEY,1286
+itela_autoqa/config.py,sha256=hN0bBJKsVhkiWIkYSpF_LIlcLVPfdSZqYYyeRvayn30,84
+itela_autoqa/utils.py,sha256=wqOkxn5NuEAVf74zvPi0q_DGs3GR3r25lM4ox-eNI8Y,1503
+itela_autoqa-0.0.1.dist-info/METADATA,sha256=BVlAho8-sy9zuaJaARTKtro_88sFQ5HEmbwDrTlSSdo,2447
+itela_autoqa-0.0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+itela_autoqa-0.0.1.dist-info/entry_points.txt,sha256=FBXjUVKVNecaDSPR0dyQNZQf7UfgDGrJ7PaKRDd5K-Y,55
+itela_autoqa-0.0.1.dist-info/top_level.txt,sha256=wtSjYCfAakOSYZJOxVIyOI1rKmjvKBzj_95AcxSSIkQ,13
+itela_autoqa-0.0.1.dist-info/RECORD,,
