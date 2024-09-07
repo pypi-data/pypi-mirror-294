@@ -1,0 +1,8 @@
+cloud_auth_tpm/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+cloud_auth_tpm/gcp/__init__.py,sha256=kacwAWO8qta8MUFQVn0Pn_OC70zaRs4DYG2XjVqAP24,85
+cloud_auth_tpm/gcp/gcpcredentials.py,sha256=v0pyh5dFjyMXkSa7jRseZFJZ2jLbIFDjnkgG9VHCCvw,3961
+cloud_auth_tpm-0.0.40.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloud_auth_tpm-0.0.40.dist-info/METADATA,sha256=JKV3B85-yGHeb8ykALMwDjcoj0PBCGFHduuUOuKPbfg,7699
+cloud_auth_tpm-0.0.40.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+cloud_auth_tpm-0.0.40.dist-info/top_level.txt,sha256=2gezTjJgACp4_6fEvuidY_jQxuu8yFl_dFXeReo0Q3Y,15
+cloud_auth_tpm-0.0.40.dist-info/RECORD,,
