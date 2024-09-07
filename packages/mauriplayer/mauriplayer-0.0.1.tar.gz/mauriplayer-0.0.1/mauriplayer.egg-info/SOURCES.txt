@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mauriplayer/__init__.py
+mauriplayer/lala.py
+mauriplayer/player.py
+mauriplayer.egg-info/PKG-INFO
+mauriplayer.egg-info/SOURCES.txt
+mauriplayer.egg-info/dependency_links.txt
+mauriplayer.egg-info/top_level.txt
