@@ -1,0 +1,4 @@
+include kommando_central/sql/*
+graft kommando_central/static
+graft kommando_central/templates
+global-exclude *.pyc

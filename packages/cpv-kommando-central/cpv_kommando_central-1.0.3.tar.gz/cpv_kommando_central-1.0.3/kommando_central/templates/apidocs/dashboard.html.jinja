@@ -1,0 +1,183 @@
+{% extends 'base/dashboard-page.html.jinja' %}
+
+{% block tabid %}apiTab{% endblock %}
+{% block title %}API dokumentation{% endblock %}
+
+{% block tabcontent %}
+
+<div class="apidoc">
+    <h3>GET /token/</h3>
+    <p>
+        Returnerer en bearer token, der skal benyttes for at kalde de endpoints, der er udstillet i API'et.
+    </p>
+    <p>
+        For at få en token benyttes Basic Authentication med en dedikeret API bruger.
+        Hvilke API brugere der er oprettet kan se på
+        <a href="{{ url_for('users.show_all_users') }}">fanen "Brugere" på dashboardet</a>.
+    </p>
+    <p>
+        Afdelings-ID for api-brugeren er stemplet i token. Alle kald til API'et foretages
+        (og valideres) i forhold til den afdeling, der gælder for api-brugeren.
+    </p>
+    <p>
+        Eksempel fra Python:
+    </p>
+    <p>
+    <pre>
+    <code>
+        from requests.auth import HTTPBasicAuth
+
+        basic = HTTPBasicAuth(api_user, pwd)
+        url = f'{kbc_host}/auth/token'
+        try:
+            jwt_response = requests.get(url, auth=basic)
+        except requests.exceptions.ConnectionError as e:
+            print_http_connection_error(e)
+            exit()
+        jwt_token = jwt_response.json()['token']
+
+        auth_headers = {"Authorization": f"Bearer {jwt_token}"}
+        response = requests.get(f'{kbc_host}/events/own', headers=auth_headers)
+    </code>
+    </pre>
+    </p>
+
+    <h3>
+        GET /events/{til-enhed-id}
+    </h3>
+    <p>
+        Returnere de events der er blevet sendt til enheden med id <code>til-bane-id</code>.
+    </p>
+    <p>
+        Man kan kun hente events for enheder i sin egen (api-brugerens) afdeling. Hvis
+        <code>til-enhed-id</code> ikke er i egen afdeling returneres en fejl.
+    </p>
+    <p>
+        Events returneres som en json dict på formen:
+    </p>
+    <p>
+    <pre>
+        <code>
+        {
+            "json_source": "Python dict",
+            "to_department_id": "CPV",
+            "to_track_id": 1,
+            "events": {
+                "4": {
+                    "command_id": "START",
+                    "created": "15-03-2023 20:11:07.173209",
+                    "from_department_id": "CPS",
+                    "from_track_id": 3,
+                    "from_track_name": "Astrosmølf",
+                    "message": "Her kan stå en lille besked"
+                }
+            },
+        }
+        </code>
+        </pre>
+    </p>
+    <ul>
+        <li>
+            Enhed 1 i CPV har modtaget en kommando med id = 4 fra enhed 3 i CPS. I kommandoen er der desuden sendt en
+            lille besked.
+        </li>
+    </ul>
+
+
+    <h3>
+        GET /events/department
+    </h3>
+    <p>
+        Returnerer alle events for api-brugerens afdeling. Events returneres som en json dict på
+        formen:
+    </p>
+    <p>
+    <pre>
+        <code>       
+        {
+            "json_source": "Python dict",
+            "to_track_id": {
+                "1": {
+                    "to_track_name": "Gargamel",
+                    "events": {
+                        "4": {
+                            "command_id": "START",
+                            "created": "15-03-2023 20:11:07.173209",
+                            "from_department_id": "CPS",
+                            "from_track_id": 3,
+                            "from_track_name": "Astrosmølf"
+                            "message": "Her kan stå en lille besked"
+                        }
+                    }
+                },
+                "4": {
+                    "to_track_name": "Smølfine",
+                    "events": {
+                        "5": {
+                            "command_id": "START",
+                            "created": "15-03-2023 20:11:14.664885",
+                            "from_department_id": "CPB",
+                            "from_track_id": 2,
+                            "from_track_name": "Gammelsmølf"
+                            "message": "Her kan stå en anden lille besked"
+                        }
+                    }
+                }
+            }
+        }
+        </code>
+        </pre>
+    </p>
+    <p>
+    <ul>
+        <li>
+            Enhed 1 har modtaget en event med id = 4 fra enhed 3 i CPS. I eventet er der desuden sendt en lille
+            besked.
+        </li>
+        <li>
+            Enhed 4 har modtaget en event med id = 5 fra enhed 2 i CPB. I dette event er der også sendt en lille
+            besked.
+        </li>
+    </ul>
+    </p>
+
+    <h3>
+        POST /event/{fra-enhed-id}/{til-enhed-id}/{kommando}/{besked}
+    </h3>
+    <p>
+        Sender en kommando fra <code>fra-enhed-id</code> til enhed <code>til-enhed-id</code> (med en valgfri besked).
+    </p>
+    <p>
+        De kommandoer, der understøttes kan ses på <a href="{{ url_for('tracks.show_all_tracks') }}">fanen "Kommandoer" på dashbord'et</a>.
+    </p>
+    <p>
+        Man kan kun sende <strong>fra</strong> en enhed i egen afdeling. Hvis
+        <code>fra-enhed-id</code> ikke er i egen (api-brugerens) afdeling returneres en fejl.
+    </p>
+    <p>
+        Du kan se et overblik over tilgængelige enheder ID'er på
+        <a href="{{ url_for('tracks.show_all_tracks') }}">fanen "Enheder" på dashbord'et</a>.
+    </p>
+
+    <h3>
+        DELETE /event/{event-id}
+    </h3>
+    <p>
+        Sletter event med <code>event-id</code>.
+    </p>
+
+    <h3>
+        GET /tracks/own
+    </h3>
+    <p>
+        Returnerer enheder, der er registreret i egen (api-brugerens) afdeling.
+    </p>
+
+    <h3>
+        GET /tracks/all
+    </h3>
+    <p>
+        Returnerer alle registrerede enheder i centralen.
+    </p>
+</div>
+{% endblock tabcontent %}
