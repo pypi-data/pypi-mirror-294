@@ -1,0 +1,8 @@
+pandas>=2.0.0
+protobuf>=4.25.2
+Requests>=2.31.0
+toml>=0.10.2
+tqdm>=4.66.1
+google-cloud-bigquery>=3.11
+db-dtypes>=1.1.1
+argparse>=1.4.0
