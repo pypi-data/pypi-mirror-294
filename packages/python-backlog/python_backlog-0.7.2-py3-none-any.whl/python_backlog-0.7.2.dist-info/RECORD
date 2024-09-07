@@ -1,0 +1,15 @@
+backlog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backlog/attachment.py,sha256=RpaAcTnr_2CsJUDeeJHT1YSH0TwPImH5C0uwUOpDlHs,764
+backlog/base.py,sha256=-EUjAZr20vq3i8ekPe9LwbGvwJZ6PGhGCV8TsqZqIrs,5632
+backlog/category.py,sha256=DQ06yhOCXxtDbPMZ1Ig1QD8n7Ht_ZFrp8PJzO18IeZk,2530
+backlog/custom_field.py,sha256=dJ-XnrYv0rlpLvPhIkZEgcyNjZB8GR3352Or8HUPKlc,12243
+backlog/git.py,sha256=mazfvwn1Ekga0eeigk22Xf3vhXEo-P5Irfyq6r_QbaA,3056
+backlog/issue.py,sha256=of0DQ_1fsBPJ2aU6TS7IWlw0DzZIJRzo4fCGuKv2JY8,6636
+backlog/project.py,sha256=TOBDLV6eSpeQRxcjZ1ArrEE8lHRE7JIyaCJUQALSdSg,13839
+backlog/user.py,sha256=fgd1X1fom1mTPKDU6DFqBspPauq6UuhxrbFd9CCrptU,2829
+backlog/wiki.py,sha256=NjMkHopNb-9oic1yziiypzzpIHSdXcRfePZhOBKtDok,5431
+python_backlog-0.7.2.dist-info/LICENSE,sha256=1teWq4411yGkUz_9lD1V74mcHFRix2IqOAoFaghKYwo,1073
+python_backlog-0.7.2.dist-info/METADATA,sha256=t_HkpWuFHIQUfbOrhIvWjkPGkq5lWsX4Y4PPb4EqcK8,2166
+python_backlog-0.7.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+python_backlog-0.7.2.dist-info/top_level.txt,sha256=qzHRU2P6F24ntkXGiIBl4Qf_AlV0BRebSc5tuLlcOIE,8
+python_backlog-0.7.2.dist-info/RECORD,,
