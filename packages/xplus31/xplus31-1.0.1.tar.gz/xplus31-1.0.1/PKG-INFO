@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xplus31
+Version: 1.0.1
+Summary: A simple test of package distribution with simple functions in it
+Home-page: https://pypi.org/project/xplus31
+Author: A.T.P.test
+Author-email: nonsense@fake.email
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: License :: Freeware
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2,>=1
+
+### What is this
+This is a project which mainly contains simple functions like this:
+```python
+    plus31 = lambda x : x + 31
+```
+The purpose to create this project is to practicing package distribution.
+
+### How to import its functions
+For practice, the directory is designed very complex.
+However, with model `calcfun`, import will be easy.
+We have function/variables named plus5,plus7,minus1,plus13,plus31,const,print_clr under `calcfun`.
+We can:
+```python
+    assert xplus31.src.merge.deeper.file31.plus31 is xplus31.calcfun.plus31
+    assert xplus31.calcfun.plus31(79) == 100
+```
+,etc.
+### Ester-eggs:
+Find it yourself!
