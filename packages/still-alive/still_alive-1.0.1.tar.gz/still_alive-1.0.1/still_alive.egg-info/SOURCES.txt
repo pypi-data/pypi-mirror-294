@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+still_alive/__init__.py
+still_alive/mouse_mover.py
+still_alive.egg-info/PKG-INFO
+still_alive.egg-info/SOURCES.txt
+still_alive.egg-info/dependency_links.txt
+still_alive.egg-info/entry_points.txt
+still_alive.egg-info/requires.txt
+still_alive.egg-info/top_level.txt

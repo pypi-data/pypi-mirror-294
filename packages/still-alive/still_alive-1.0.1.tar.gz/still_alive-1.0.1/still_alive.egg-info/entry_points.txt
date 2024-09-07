@@ -1,0 +1,3 @@
+[console_scripts]
+still-alive = still_alive.mouse_mover:main
+
