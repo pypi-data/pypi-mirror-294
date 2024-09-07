@@ -1,0 +1,10 @@
+echoof/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+echoof/base.py,sha256=YP6OsbKGlQpWVNNYvw64bYEQ4xUD1bsqkmeWxloXWzo,2473
+echoof/cli.py,sha256=pMTff7s24Mj6d7UujgCeHrmaR8r6BKdUvFnaJ-4uL94,2773
+echoof/logger.py,sha256=UZ3tNHaJNRjEJZc2T9jgzQ4A5Y0rSG73NqEAwx-RErU,639
+echoof-0.1.1.dist-info/LICENSE,sha256=t1c_8Os-wHmd-xAsjrgQ9rUkUNRkR3c32mhY6PQG8h8,138
+echoof-0.1.1.dist-info/METADATA,sha256=eoqAREt8Tv2mh7kp4yhTJuhoucpvkRMHnZu8SFWJw44,456
+echoof-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+echoof-0.1.1.dist-info/entry_points.txt,sha256=-sbvU0yll1l-VWC_3XWHfbDSfa_BqXqA828EkDWbWCo,43
+echoof-0.1.1.dist-info/top_level.txt,sha256=QsYUF6CHQ4-9neEOQsQf1HISR6Muu5aCazyQ2UuG4cA,7
+echoof-0.1.1.dist-info/RECORD,,
