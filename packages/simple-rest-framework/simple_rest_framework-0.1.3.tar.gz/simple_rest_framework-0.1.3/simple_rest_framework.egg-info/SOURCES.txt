@@ -1,0 +1,7 @@
+setup.py
+simple_rest_framework.egg-info/PKG-INFO
+simple_rest_framework.egg-info/SOURCES.txt
+simple_rest_framework.egg-info/dependency_links.txt
+simple_rest_framework.egg-info/entry_points.txt
+simple_rest_framework.egg-info/requires.txt
+simple_rest_framework.egg-info/top_level.txt
