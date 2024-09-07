@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tutubo
+Version: 2.0.0
+Summary: wrapper around pytube with some new functionality
+Home-page: https://github.com/OpenJarbas/tutubo
+Author: jarbasAI
+Author-email: jarbasai@mailfence.com
+License: Apache
+Platform: UNKNOWN
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: pytube
+Requires-Dist: ytmusicapi
+
+UNKNOWN
+
+
