@@ -1,0 +1,3 @@
+PyJWT
+edx-django-utils
+requests
