@@ -1,0 +1,7 @@
+gdp_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdp_tools/lor_gdp_tools.py,sha256=nPA5x4BhlHrzzAEIh4mnfBUPKQnYVfh1qW-t57WSKo8,4592
+gdp_tools/tests.py,sha256=prkA529toCoWpsjJBqOWiUEOKPw0pGzH2e2pvyHmKME,127
+lor_gdp_tools-0.1.8.dist-info/METADATA,sha256=DduhON3F-zFsC6i1PAibxzfRahe0JUzDl39DN5qvmWM,3918
+lor_gdp_tools-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lor_gdp_tools-0.1.8.dist-info/top_level.txt,sha256=AcrlBtqGetOcP3kIB2lgaIVD7sZlV_40_MlAC_FVJ94,10
+lor_gdp_tools-0.1.8.dist-info/RECORD,,
