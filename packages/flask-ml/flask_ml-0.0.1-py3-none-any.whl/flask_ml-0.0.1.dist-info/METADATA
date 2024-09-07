@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: flask_ml
+Version: 0.0.1
+Summary: A Flask extension for running machine learning code
+Project-URL: Homepage, https://github.com/UMass-Rescue/Flask-ML
+Author-email: Prasanna Lakkur Subramanyam <psubramanyam@umass.edu>
+License-File: LICENSE
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.3
+Requires-Dist: flask
+Requires-Dist: requests

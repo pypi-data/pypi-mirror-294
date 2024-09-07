@@ -1,0 +1,11 @@
+flask_ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_ml/flask_ml_client/MLClient.py,sha256=a7MhlrJuK6oPhiLMkZUk5j0QQai9i5OwD4gUspxoznE,2067
+flask_ml/flask_ml_client/__init__.py,sha256=uf9FCAA-WX06DC6Gt-k8fPYZnnRgkPwCz-YDi107Zc0,32
+flask_ml/flask_ml_server/MLServer.py,sha256=4Idou51Ww9H_WAXyolYYDu6HKjT8-O9O4q8Jqd1nehA,3737
+flask_ml/flask_ml_server/__init__.py,sha256=T-Alnvdm7GNY-Z5m3US1a7gxn5-TsNGJmzjS2sOm4jE,261
+flask_ml/flask_ml_server/constants.py,sha256=hZ5FwGd80dFhTL774v77y_9BCefjCGa0YKlg4jocRcg,218
+flask_ml/flask_ml_server/response.py,sha256=Oc2f_CR-aSgocbQGR2oXEKQCEbM2_-jYJSsdJPJ-lOg,2512
+flask_ml-0.0.1.dist-info/METADATA,sha256=Zp_hx_Dq43IINh85eADN-CivIgFCzYMX6j7lHsx2fIY,653
+flask_ml-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+flask_ml-0.0.1.dist-info/licenses/LICENSE,sha256=ZC_mkJzj6zI0j6Lh6z2eoBj23kN79pJJqSYShwlq05Q,1094
+flask_ml-0.0.1.dist-info/RECORD,,
