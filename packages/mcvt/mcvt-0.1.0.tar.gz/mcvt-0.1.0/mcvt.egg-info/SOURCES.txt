@@ -1,0 +1,5 @@
+mcvt.egg-info/PKG-INFO
+mcvt.egg-info/SOURCES.txt
+mcvt.egg-info/dependency_links.txt
+mcvt.egg-info/requires.txt
+mcvt.egg-info/top_level.txt
