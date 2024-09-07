@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+itela_autoqa/__init__.py
+itela_autoqa/ai.py
+itela_autoqa/cli.py
+itela_autoqa/config.py
+itela_autoqa/utils.py
+itela_autoqa.egg-info/PKG-INFO
+itela_autoqa.egg-info/SOURCES.txt
+itela_autoqa.egg-info/dependency_links.txt
+itela_autoqa.egg-info/entry_points.txt
+itela_autoqa.egg-info/requires.txt
+itela_autoqa.egg-info/top_level.txt

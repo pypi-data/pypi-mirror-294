@@ -1,0 +1,4 @@
+VERSION = "v0.0.2"
+MODEL_NAME = "gpt-4o-mini"
+MAX_TOKENS = 4096
+TEMPERATURE = 0.001
