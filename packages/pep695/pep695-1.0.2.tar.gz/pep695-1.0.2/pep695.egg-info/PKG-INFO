@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pep695
+Version: 1.0.2
+Summary: pep695 is now autopep695
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: autopep695
+
+# pep695 is now autopep695
+
+This package has been renamed. Use `pip install autopep695` instead.
+
+New package: https://pypi.org/project/autopep695/

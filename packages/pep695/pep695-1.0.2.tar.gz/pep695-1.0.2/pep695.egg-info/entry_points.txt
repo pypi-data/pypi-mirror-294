@@ -1,0 +1,2 @@
+[console_scripts]
+pep695 = pep695.cli:main
