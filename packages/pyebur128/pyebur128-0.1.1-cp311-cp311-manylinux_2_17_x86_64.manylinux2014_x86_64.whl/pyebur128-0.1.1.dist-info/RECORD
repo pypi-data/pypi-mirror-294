@@ -1,0 +1,12 @@
+pyebur128-0.1.1.dist-info/LICENSE,sha256=Tyj0LwLjQ64v6bjT3C8j9V8Y4ImtsYHKTuN2MeU1PAI,1076
+pyebur128-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyebur128-0.1.1.dist-info/METADATA,sha256=LenbxevjCq8xhLMZBo2xkidWaeCxopZxuRlZFIvoLEI,2968
+pyebur128-0.1.1.dist-info/top_level.txt,sha256=Ggu1djtaVuD3KLH3xZVsTUUyyceYjo7cB3EGKwDcABQ,10
+pyebur128-0.1.1.dist-info/RECORD,,
+pyebur128-0.1.1.dist-info/WHEEL,sha256=1pYTe4_OeXMoiAzbCCjVEUIQIlCH_vOwKRWEjMaDcV0,151
+pyebur128/pyebur128.pyx,sha256=qk9jXnUm5-q2EFKKkTZEhnvh9xacgENW80RmeDYHBcU,24067
+pyebur128/pyebur128.c,sha256=2mwOut3C6lupXYiBZT7K_IXPp8RSJ5c0oiz9Dx7_C5I,1592073
+pyebur128/pyebur128.cpython-311-x86_64-linux-gnu.so,sha256=XxW2z5Sp816bjxUzaLLXdezT16rMCzLxuG_TrKlBJik,2659224
+pyebur128/__init__.py,sha256=ScHIkrOny93tCDw63Dqw_iTfee1SgKLHxNDK45v7TdM,497
+pyebur128/pyebur128.pxd,sha256=BEThLfzziWynEE1ak26GCyObViCVwzPenCzYR2RZNnI,4959
+pyebur128/version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
