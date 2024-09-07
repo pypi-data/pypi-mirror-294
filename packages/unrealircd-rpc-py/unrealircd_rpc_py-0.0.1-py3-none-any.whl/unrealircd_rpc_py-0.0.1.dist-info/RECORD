@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unrealircd_rpc_py/Channel.py,sha256=P8a1XrkEArIqBwPRT75GuMaMb2027fqr0Gx5e5rX_zg,8522
+unrealircd_rpc_py/Connection.py,sha256=aH5j4Y3_4_jxuD9W18A9U-VLq440NOrwg_F8SaWl5ys,6879
+unrealircd_rpc_py/Rpc.py,sha256=nYFQ51sYVpbfe2UrcDjcnUav2FJdvbWIsb4KUSAPq7k,1666
+unrealircd_rpc_py/Server.py,sha256=jV3Wk5d41My4D0ri2Avq4_q0quTlUegeMqOgXCgZrWI,15947
+unrealircd_rpc_py/Server_ban.py,sha256=AMlcWpbs7uU7q9S2J2rJSiUdIPmeSXE4xApNDRWaewc,8382
+unrealircd_rpc_py/Server_ban_exeption.py,sha256=i9HuD7ocf4H_4Rnsr46puPvYawdNGNAG2twNJbSUamA,9010
+unrealircd_rpc_py/Stats.py,sha256=IdrNyxlzbZ6oCY8xrqr_KCDrDH6YfzZ82m1pjlhYzTk,3605
+unrealircd_rpc_py/User.py,sha256=0m-woXQa1r-mmE1sUZgNK1Hhylv7H8maGDcybssHOEs,17885
+unrealircd_rpc_py/Whowas.py,sha256=HfwWsfRcZ5tVxZR58-akO2AV2Qqb8f14KpA7TKEiVvk,3976
+unrealircd_rpc_py/__init__.py,sha256=Pxpaobw0u9tTyUGRa91vUQD0TTwRTL8TB9GL84vntqw,53
+unrealircd_rpc_py-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unrealircd_rpc_py-0.0.1.dist-info/METADATA,sha256=WldLNoTCR5MKFwzA-1cdkEBSUFWEAKLBJm9CJ3gYf8U,514
+unrealircd_rpc_py-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+unrealircd_rpc_py-0.0.1.dist-info/top_level.txt,sha256=eQni518p5DJdo6YLjJGWNDXQn4xAyQ4VpXMttPE3SHI,24
+unrealircd_rpc_py-0.0.1.dist-info/RECORD,,

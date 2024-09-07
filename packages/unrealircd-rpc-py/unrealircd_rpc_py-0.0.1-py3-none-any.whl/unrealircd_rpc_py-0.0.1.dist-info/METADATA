@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: unrealircd-rpc-py
+Version: 0.0.1
+Summary: Python library for unrealIRCD json-rpc
+Home-page: https://github.com/adator85/unrealircd_rpc_py
+Author: adator
+Author-email: debian@deb.biz.st
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+
+# UNREALIRCD-RPC-PY
