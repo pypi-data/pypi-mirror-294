@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: monisys
+Version: 0.2
+Summary: Monisys with tool we can able to moniter entire os
+Home-page: https://github.com/prasaanth2k/monisys
+Author: Prasaanth Sakthivel
+Author-email: prasaanth@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+
+### Monisys - Moiniter entore os things
+
+
+Install as sudo 
+```bash
+sudo pip install monisys
+```
+### Help message 
+```bash
+monisys -h or  --help
+```
+![helpmessage](/images/helpmessage.png)
+
+
+```python3
+
+import time
+from monisys.Managers.Systeminfo import SystemInfo
+system_info = SystemInfo('cpu_info')
+
+cpuinfos = system_info.get_all_data()
+print(cpuinfos)
+
+```
