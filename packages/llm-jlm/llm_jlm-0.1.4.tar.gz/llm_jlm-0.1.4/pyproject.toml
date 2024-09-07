@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_jlm"
+version = "0.1.4"
+dependencies = ["llm", "tlid"]
+
+[project.entry-points.llm]
+jlm = "llm_jlm"
