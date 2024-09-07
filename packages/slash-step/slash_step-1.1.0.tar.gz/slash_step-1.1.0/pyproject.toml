@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=0.25.1", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slash-step"
+description = "A more granular sub STEP for slash tests"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "BSD 3-Clause License" }
+
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "Logbook>=1.2.0",
+    "gossip",
+    "slash>=0.7.0",
+]
+
+dynamic = ["version"]
+
+authors = [
+    { name = "Omer Gertel", email = "omer.gertel@gmail.com" },
+]
+
+[project.urls]
+"Homepage" = "https://github.com/getslash/slash-step"
+
+[project.optional-dependencies]
+testing = [
+    "pytest",
+    "pylint",
+    "munch",
+]
+
+[tool.hatch.version]
+source = "vcs"
