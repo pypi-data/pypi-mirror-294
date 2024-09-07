@@ -1,0 +1,22 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %                            	 		Setting paths for PyXMake on Windows		  				                   	 %
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Adjust the following paths according to your system settings. 
+#
+# Created on 20.03.2018	
+# 
+# ------------------------------------------------------------------------------------------------------------------------
+#    Requirements and dependencies:
+#        - 
+#
+#    Changelog:
+#        - 										  
+#	  
+#     Adjust the paths above according to your system.  
+#		 1) Your local Intel Fortan Compiler.
+#		 2) Your local Visual C++ Compiler. 
+#
+#     @author: garb_ma                                  				        		       [DLR-FA,STM Braunschweig]
+# ------------------------------------------------------------------------------------------------------------------------
+C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.1.146\windows
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin
