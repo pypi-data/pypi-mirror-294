@@ -1,0 +1,5 @@
+[pymodaq.instruments]
+oceaninsight = pymodaq_plugins_oceaninsight
+
+[pymodaq.plugins]
+oceaninsight = pymodaq_plugins_oceaninsight
