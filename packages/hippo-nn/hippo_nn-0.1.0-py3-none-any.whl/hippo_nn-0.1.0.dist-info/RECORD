@@ -1,0 +1,10 @@
+hippo/__init__.py,sha256=UzCZLKEtkqLxsmGa7SyhAfAe5iMeyTu7HbTW0waWcoU,325
+hippo/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+hippo/camelyon_utils.py,sha256=sYIqLBPoYg134T35pTRCEyezUS4PaWBkW0BnljK8ZVo,1287
+hippo/search.py,sha256=BTR00KBBc2MNF3550AjtVunEfbMHM7QjdxeXIv7XWNg,11639
+hippo/models/__init__.py,sha256=5uvE_fu93GzIjqTYzrI_28qBGAHm7i247JbHtNaI788,122
+hippo/models/abmil.py,sha256=kYCbKmAUkRRz6_EwIBRT8uz8BKHTfiGeunQXJcaY6hQ,3130
+hippo_nn-0.1.0.dist-info/METADATA,sha256=fDyMPAzPR9JtuGSiqJz-3EGj2ipYfyorl3ar7-RezvY,16135
+hippo_nn-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hippo_nn-0.1.0.dist-info/licenses/LICENSE,sha256=_htQKU7PpItEukkbTJc40rtT25qNXVSVTHSUou_y1T0,1503
+hippo_nn-0.1.0.dist-info/RECORD,,
