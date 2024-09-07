@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bolinette-api
+Version: 0.18.2
+Summary: The Bolinette api package, based on bolinette-data and bolinette-web
+Home-page: https://bolinette.org
+License: MIT
+Keywords: Bolinette,Framework,REST,API
+Author: Pierre Chat
+Author-email: pierrechat@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: bolinette-data (>=0.18.2,<0.19.0)
+Requires-Dist: bolinette-web (>=0.18.2,<0.19.0)
+Project-URL: Documentation, https://bolinette.org/docs
+Project-URL: Repository, https://github.com/bolinette/bolinette
+Description-Content-Type: text/markdown
+
+# Bolinette
+
+This is the Bolinette monorepo.
+It contains the sources of the Bolinette `core` package and the `data`, `web` and `api` extensions.
+
