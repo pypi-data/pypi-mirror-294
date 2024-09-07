@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "envpp"
+version = "1.0.1"
+description = ""
+authors = ["moose23967 <moose23967@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "envpp", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+typer = "^0.12.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
