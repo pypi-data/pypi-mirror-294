@@ -1,0 +1,15 @@
+morix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morix/complection.py,sha256=4ZDMKoMM7tWHJTWKEQC9MKH6Oj33gMCFh2YRmgqiNfw,1885
+morix/config_loader.py,sha256=f_nc8YJBfin3NCgZkOOz6ORtWn0jeeE6SM_QIiHIDt0,1993
+morix/conversation.py,sha256=Eo4v4I6bP1BOQG4Jc-twEgXFXxKi6jtB1MrGVuGyzd4,3918
+morix/functions.py,sha256=LBTrjgqHxyUE5t2dAwqTJyaTVECkJs_kdRS50LVvTGI,5848
+morix/helpers.py,sha256=0hhhnRQoQ_ddRwoAhxyjaFoko_z-a8zPA_M1vUZ7kvs,3287
+morix/main.py,sha256=CSJUwjo5oYGZTS-APBkSiVpBAlWlbNzQ-uSTggAQ4DA,1931
+morix/scan.py,sha256=1FedsIkVU6pPKwM1R7cxc97GaPNzQEvLD4NYz-8YTMA,6001
+morix/version.py,sha256=rPBy5747KJm7ZYwYO5JdpmlK2P_QQZ3hgafRzZ3-bWw,48
+morix-0.6.0.dist-info/LICENSE,sha256=zz-3Bmh8b62-vpZ5c9Ue73xFJbidhVDIEfoKwoqZhkw,1064
+morix-0.6.0.dist-info/METADATA,sha256=J21SfAXac8LfYyVhIuCmZGtkHqCXpFUD5xyvRn4xzo0,3706
+morix-0.6.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+morix-0.6.0.dist-info/entry_points.txt,sha256=UN-lbp5gzDaBoJ5P8AJZdvw_0XDRyCCtqyA3Zaz1q0M,42
+morix-0.6.0.dist-info/top_level.txt,sha256=MzRF0sPRNoONv0hgDGTnLY9EiGswpwgfOoQ9DVMZRso,6
+morix-0.6.0.dist-info/RECORD,,
