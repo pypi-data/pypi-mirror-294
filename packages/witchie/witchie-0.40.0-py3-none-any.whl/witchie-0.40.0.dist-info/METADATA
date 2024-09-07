@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: witchie
+Version: 0.40.0
+Summary: Akkoma CLI client
+Author-email: Ngô Ngọc Đức Huy <huyngo@disroot.org>, Ivan Habunek <ivan@habunek.com>
+Maintainer-email: Ngô Ngọc Đức Huy <huyngo@disroot.org>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console :: Curses
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests>=2.13,<3.0
+Requires-Dist: wcwidth>=0.1.7
+Requires-Dist: tomlkit>=0.10.0,<1.0
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: pyyaml ; extra == "dev"
+Requires-Dist: twine ; extra == "dev"
+Requires-Dist: wheel ; extra == "dev"
+Requires-Dist: urwidgets>=0.1,<0.2 ; extra == "richtext"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: vermin ; extra == "test"
+Requires-Dist: beautifulsoup4>=4.5.0,<5.0 ; extra == "tui"
+Requires-Dist: urwid>=2.0.0,<3.0 ; extra == "tui"
+Project-URL: Documentation, https://man.sr.ht/~huyngo/witchie
+Project-URL: Home, https://sr.ht/~huyngo/witchie
+Project-URL: Issue tracker, https://todo.sr.ht/~huyngo/witchie
+Project-URL: Source, https://git.sr.ht/~huyngo/witchie
+Provides-Extra: dev
+Provides-Extra: richtext
+Provides-Extra: test
+Provides-Extra: tui
+
+<!--
+SPDX-FileCopyrightText: 2023-2024 Ngô Ngọc Đức Huy <huyngo@disroot.org>
+
+SPDX-License-Identifier: GPL-3.0-only
+-->
+
+# Witchie - an Akkoma CLI client
+
+Witchie is a CLI and TUI tool for interacting with Akkoma instances from the
+command line.  It is a fork of [ibuhanek's toot](https://github.com/ihabunek/toot)
+for Mastodon to add Akkoma-specific features, such as custom emoji reacts or quote.
+
+[![builds.sr.ht status](https://builds.sr.ht/~huyngo/witchie.svg)](https://builds.sr.ht/~huyngo/witchie?)
+
+Requires python 3.9 or later
+
+## Resources
+
+* Homepage: https://sr.ht/~huyngo/witchie
+* Mailing list for discussion: https://lists.sr.ht/~huyngo/witchie
+* Bugs/feature requests: https://todo.sr.ht/~huyngo/witchie
+
+## Features
+
+* Posting, replying, deleting statuses
+* Support for media uploads, spoiler text, sensitive content
+* Search by account or hash tag
+* Following, muting and blocking accounts
+* Simple switching between authenticated accounts
+
+## Terminal User Interface
+
+witchie includes a terminal user interface (TUI). Run it with `witchie tui`.
+
+For now, the TUI is not maintained.
+
+![TUI timeline](https://raw.githubusercontent.com/ihabunek/toot/master/docs/images/tui_list.png)
+
+![compose post in TUI](https://raw.githubusercontent.com/ihabunek/toot/master/docs/images/tui_compose.png)
+
+## License
+
+Copyright 2017-2023 Ivan Habunek <ivan@habunek.com> and contributors.
+Copyright 2023-2024 Ngô Ngọc Đức Huy <huyngo@disroot.org>
+
+Licensed under [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html).
+

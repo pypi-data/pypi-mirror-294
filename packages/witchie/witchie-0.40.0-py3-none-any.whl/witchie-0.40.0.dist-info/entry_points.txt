@@ -1,0 +1,3 @@
+[console_scripts]
+witchie=witchie.console:main
+
