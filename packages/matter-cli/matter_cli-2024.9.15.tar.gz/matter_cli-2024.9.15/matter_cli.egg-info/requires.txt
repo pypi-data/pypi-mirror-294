@@ -1,0 +1,14 @@
+pyyaml
+adbutils
+androidviewclient
+aapt
+wget
+selenium
+pyautogui
+Faker
+opencv-python
+numpy
+lxml
+bottle
+pynput
+click

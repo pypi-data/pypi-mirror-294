@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matter-cli"
+version = "2024.9.15"
+authors = [
+  { name="dan", email="dwdyoung0219@gmail.com" },
+]
+description = "frame work for testing apps、website、products with one interface"
+readme = "README.md"
+license = {file = 'LICENSE'}
+keywords = ['matter', 'test', 'autotest']
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # 用于读取yml文件
+    "pyyaml",    
+    # 用于连接到安卓设备 
+    # "adb-shell[usb]", 
+    # "adb-shell[async]", 
+    "adbutils",
+    "androidviewclient",
+    "aapt", #1.0.2
+    # 用于下载文件
+    "wget",
+    # 用于测试浏览器的库
+    "selenium",
+    # 用于测试桌面程序
+    "pyautogui",
+    # 用于生成虚假的数据
+    "Faker",
+    # 用于图像比较图像定位
+    "opencv-python",
+    "numpy",
+    # 用于解析xpath
+    "lxml",
+    # 用于建立web服务器传递文件
+    "bottle",
+    # 用于录制鼠标键盘操作
+    "pynput",
+    # 用于命令行交互
+    'click',
+]
+
+
+[project.scripts]
+matter = "matter.matter_command:main"
+
+[project.urls]
+Homepage = "https://gitee.com/dwdyoung/matter"
+Issues = "https://gitee.com/dwdyoung/matter/issues"
+Documentation = "https://yuque/dengbuladuo/matter"
+Repository = "https://gitee.com/dwdyoung/matter"

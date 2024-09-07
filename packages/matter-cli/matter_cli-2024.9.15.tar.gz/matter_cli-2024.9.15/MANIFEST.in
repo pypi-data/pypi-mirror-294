@@ -1,0 +1,3 @@
+include matter/**.md
+include matter/service/matter_service.exe
+include matter/service/matter_service.xml
