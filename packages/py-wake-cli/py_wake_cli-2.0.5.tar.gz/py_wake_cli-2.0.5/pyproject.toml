@@ -1,0 +1,87 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "py-wake-cli"
+version = "2.0.5"
+description = "A simple wakeonlan implementation."
+readme = "README.md"
+license = "MIT"
+authors = ["lojoja <dev@lojoja.com>"]
+homepage = "https://github.com/lojoja/wake"
+repository = "https://github.com/lojoja/wake"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+packages = [
+    {include = "wake"}
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/lojoja/wake/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+click = "^8.0.0"
+clickext = "^1.0.1"
+tabulate = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0.0"
+pylint = "^3.0.0"
+pyright = "^1.1.349"
+pytest = "^8.0.0"
+pytest-cov = ">=4.1,<6.0"
+pytest-mock = "^3.12.0"
+
+[tool.poetry.scripts]
+wake = 'wake.cli:cli'
+
+[tool.black]
+include = '\.pyi?$'
+line-length = 120
+skip-magic-trailing-comma = true
+target_version = ["py310", "py311"]
+
+[tool.coverage.run]
+source = ["wake"]
+omit = ["tests/"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "if log:"
+]
+fail_under = 100
+show_missing = true
+
+[tool.pylint.main]
+ignore-paths = ["^(.*/)?.venv/.*$", "^(.*/)?dist/.*$"]
+load-plugins = ["pylint.extensions.mccabe"]
+
+[tool.pylint.basic]
+good-names = ["ip"]
+
+[tool.pylint.design]
+max-complexity = 15
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pyright]
+ignore = [".venv/*", "dist/*"]
+pythonVersion = "3.10"
+venv = ".venv"
+venvPath = "."
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers"
+testpaths = ["tests"]
+markers=[]
+filterwarnings = ["ignore:::.*pytest_cov*"]
