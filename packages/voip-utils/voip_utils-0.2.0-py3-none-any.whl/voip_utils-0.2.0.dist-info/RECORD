@@ -1,0 +1,14 @@
+voip_utils/__init__.py,sha256=XotXuaL-gyn-2g-RuZfMglEO-Evd7FM2Jy0DIFOA0IU,212
+voip_utils/call_phone.py,sha256=jn-ip5il7kDCvtmihTVqpzTYQEcCC-HTyRuEdKdVhag,3103
+voip_utils/const.py,sha256=1GeO_4dmG6tD1YsrGUmFb0Twk7Y0pfZwXLANsQy1nAo,83
+voip_utils/error.py,sha256=NizAi2M0vboyWU3wmlKrDw-H1VEbmg5JqnWrCJbfYDc,170
+voip_utils/rtp_audio.py,sha256=Hjhx9XaBGi-pISJznFDlLmFqLwsjOy0lyfyhC2-7tqo,7319
+voip_utils/sip.py,sha256=b8g43sBaF3vJ63E4p1yIIbVrw4VEwzyju32X--QZHQc,22875
+voip_utils/util.py,sha256=XOxl69HtQdnw932rbZ7MiN2zwwIbnB3RzECGXbd5uTU,257
+voip_utils/voip.py,sha256=GV9IMWlHUMNeW7kW6buw04JM6pOBBSOeW2eK-ezlkOA,9743
+voip_utils-0.2.0.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+voip_utils-0.2.0.dist-info/METADATA,sha256=6inhWKvChUda0I2w8ufbkO4pQCMVBeJvMRz0n7VWnqc,1390
+voip_utils-0.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+voip_utils-0.2.0.dist-info/top_level.txt,sha256=qgc6C1aIRikRVHhdVga8sKI2LUK57AAuvqEla7lZC6I,11
+voip_utils-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+voip_utils-0.2.0.dist-info/RECORD,,
