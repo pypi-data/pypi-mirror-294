@@ -1,0 +1,3 @@
+[console_scripts]
+tassistant=tassistant_bot.__main__:main
+
