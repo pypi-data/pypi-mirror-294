@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hukudo
+Version: 3.7.1
+Author-email: Felix Hummel <felix.hummel+lib@hukudo.de>
+Project-URL: Homepage, https://gitlab.com/hukudo/lib/
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: httpx[http2]
+Requires-Dist: python-dotenv
+Requires-Dist: python-gitlab
+Requires-Dist: requests
+Requires-Dist: structlog
+Provides-Extra: pypi
+Requires-Dist: pypi-simple; extra == "pypi"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: bump2version; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: requests_cache; extra == "dev"
+Requires-Dist: ruff>=0.5.5; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: types-click; extra == "dev"
+Requires-Dist: uv>=0.3.5; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: ablog; extra == "docs"
+Requires-Dist: glob2; extra == "docs"
+Requires-Dist: linkify-it-py; extra == "docs"
+Requires-Dist: myst_parser; extra == "docs"
+Requires-Dist: pydata_sphinx_theme; extra == "docs"
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-reload; extra == "docs"
+Requires-Dist: uv>=0.3.5; extra == "docs"
+Provides-Extra: xls
+Requires-Dist: openpyxl; extra == "xls"
+Provides-Extra: all
+Requires-Dist: hukudo[dev,docs,pypi,xls]; extra == "all"

@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hukudo"
+version = "3.7.1"
+authors = [{name = "Felix Hummel", email = "felix.hummel+lib@hukudo.de"}]
+classifiers = ["Programming Language :: Python :: 3"]
+
+urls = {Homepage = "https://gitlab.com/hukudo/lib/"}
+dependencies = [
+    "click",
+    "httpx[http2]",
+    "python-dotenv",
+    "python-gitlab",
+    "requests",
+    "structlog",
+]
+
+[project.optional-dependencies]
+pypi = ["pypi-simple"]
+dev = [
+    "build",
+    "bump2version",
+    "coverage",
+    "ipython",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-xdist",
+    "requests_cache",
+    "ruff >= 0.5.5",
+    "twine",
+    "types-click",
+    "uv >= 0.3.5",
+]
+docs = [
+    "ablog",
+    "glob2",
+    "linkify-it-py",
+    "myst_parser",
+    "pydata_sphinx_theme",
+    "sphinx",
+    "sphinx-reload",
+    "uv >= 0.3.5",
+]
+xls = [
+    "openpyxl",
+]
+all = [
+    "hukudo[dev,docs,pypi,xls]",
+]
+
+[project.scripts]
+hukudo = "hukudo.cli:main"
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+
+[tool.pytest.ini_options]
+addopts = "--tb=short --junit-xml=tests/result/junit.xml --doctest-modules"
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "conftest.py",
+  "setup.py",
+]
+
+[tool.coverage.html]
+directory = "tests/result/coverage"
+
+[tool.coverage.xml]
+output = "tests/result/coverage.xml"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.basedpyright]
+typeCheckingMode = "standard"
