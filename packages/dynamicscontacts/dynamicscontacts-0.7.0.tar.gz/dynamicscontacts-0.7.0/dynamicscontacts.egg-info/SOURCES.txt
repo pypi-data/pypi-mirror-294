@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+dynamics/__init__.py
+dynamics/contacts.py
+dynamicscontacts.egg-info/PKG-INFO
+dynamicscontacts.egg-info/SOURCES.txt
+dynamicscontacts.egg-info/dependency_links.txt
+dynamicscontacts.egg-info/requires.txt
+dynamicscontacts.egg-info/top_level.txt
