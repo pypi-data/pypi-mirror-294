@@ -1,0 +1,13 @@
+klondike/__init__.py,sha256=QsLv1LlBAjl5OTdztshTuitjXAX_4j8rWRTz03jOBPk,911
+klondike/bigquery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klondike/bigquery/bigquery.py,sha256=qU5hWviyKqL55XRvC6HD2A4a7doigFPkHu15tXdWH8A,9590
+klondike/snowflake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klondike/snowflake/snowflake.py,sha256=1I_WtJoL6A2ZmSBAMqgBG_fAzsdiJRNofqsE90Hh0dc,10809
+klondike/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klondike/utilities/utilities.py,sha256=V2_IrlN3Kt1XSsBwhvnBSsaMLJIkxIFfyv6dHeGFTao,315
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klondike-0.2.1.dist-info/LICENSE,sha256=Z6W-kz_GS5R8QFbtffE_1ejK87HzMXrMOYwROR9CRWk,1076
+klondike-0.2.1.dist-info/METADATA,sha256=yJJ_ld7jqU-tusIPjeZpvTbTedqUyeMf4hTKhpqxKf8,2564
+klondike-0.2.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+klondike-0.2.1.dist-info/top_level.txt,sha256=X4NWoFXwocMWlwSP39-So1r4Fj6lzezbyjw8B-8Q5kE,15
+klondike-0.2.1.dist-info/RECORD,,
