@@ -1,0 +1,2 @@
+[console_scripts]
+pyright-stubgen = pyright_stubgen:main
