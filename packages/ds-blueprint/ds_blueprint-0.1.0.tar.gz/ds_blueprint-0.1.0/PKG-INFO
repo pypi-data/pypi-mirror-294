@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ds-blueprint
+Version: 0.1.0
+Summary: Package to create DS and AI project's templates
+Author: CarloG
+Author-email: carlo.rafael@hotmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: blueprint-environments (>=0.1.0,<0.2.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: rich (>=13.8.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# blueprint
+

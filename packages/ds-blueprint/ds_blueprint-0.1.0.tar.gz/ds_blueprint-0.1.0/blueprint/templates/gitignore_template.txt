@@ -1,0 +1,65 @@
+# Ignore local credentials
+conf/local/credentials.yml
+
+# Ignore all files in data directories
+data/01_bronze/*
+data/02_silver/*
+data/03_gold/*
+
+# Don't ignore .gitkeep files
+!data/01_bronze/.gitkeep
+!data/02_silver/.gitkeep
+!data/03_gold/.gitkeep
+
+# Python-related ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/

@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ds-blueprint"
+version = "0.1.0"
+description = "Package to create DS and AI project's templates"
+authors = ["CarloG <carlo.rafael@hotmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "blueprint" }
+]
+include = [
+    "blueprint/templates/**/*"
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+rich = "^13.8.0"
+
+blueprint-environments = "^0.1.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+blueprint = "blueprint.cli:cli"
+
+[tool.template]
+files = "templates"
