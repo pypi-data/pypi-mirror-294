@@ -1,0 +1,11 @@
+pygologin/__init__.py,sha256=aiZOWem7s4VcXIK7YFlJ72zS2Sw6nQ4RrVylRItX-h4,126
+pygologin/__meta__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pygologin/gologin.py,sha256=Q2SvyzJsv1HZ33jpKDYij4bDbzC4xJ8Y43EF-3Uueg8,35205
+pygologin/cookiesManager/__init__.py,sha256=hIcTkZaq7uSwa1mWSAxnZUV8yKabL8kL2L4qmjvy2fs,43
+pygologin/cookiesManager/cookiesManager.py,sha256=e6WrJjFHNSx10FU5K5edjL4bghaghCOhhUs1UPKxn_s,9859
+pygologin/extensionsManager/__init__.py,sha256=ebFge-hrd8Yg9AlGL9BbJSxZEkvQhWLEa739KsC3az4,49
+pygologin/extensionsManager/extensionsManager.py,sha256=lL9UtGG_JJER8jcmGvM-a39rziKt1zer8ZXajTU9nwQ,3091
+pygologin-0.1.1.dist-info/METADATA,sha256=3C8kaTX1bmTZEZ4sWW9zGQztsUahoZ1U7gAqAienFJ0,5517
+pygologin-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pygologin-0.1.1.dist-info/licenses/LICENSE,sha256=aHZ-lbP0Iy1CU6G7PH1sYZFgLWTY72l57Rrh6TNxkRQ,1052
+pygologin-0.1.1.dist-info/RECORD,,
