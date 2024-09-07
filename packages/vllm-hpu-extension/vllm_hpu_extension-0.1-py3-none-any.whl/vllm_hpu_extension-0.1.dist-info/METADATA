@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vllm-hpu-extension
+Version: 0.1
+Summary: HPU extension package for vLLM
+Home-page: https://github.com/tzielinski-habana/vllm-hpu-extension
+Author: Tomasz Zielinski
+Author-email: tzielinski@habana.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+HPU extension package for vLLM. The package contains custom HPU-specific ops. It only works together with vLLM.

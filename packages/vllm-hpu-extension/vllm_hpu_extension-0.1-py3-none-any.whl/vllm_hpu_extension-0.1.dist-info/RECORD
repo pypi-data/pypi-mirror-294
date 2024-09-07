@@ -1,0 +1,10 @@
+vllm_hpu_extension/__init__.py,sha256=nLGezTrTgeZGZXHRO4t6vh8vtSNqQDMXkfPSaxNg_Eo,349
+vllm_hpu_extension/cache_ops.py,sha256=Y-DmuD99W8nHInNdRgqAypwIDRePJTV0oUwMqIrrqVY,4718
+vllm_hpu_extension/ops.py,sha256=3Lg1A6b01PE2IEaql8QJ0PDKI933oiS0t79eRBW65sA,10575
+vllm_hpu_extension/rotary_embed.py,sha256=wwHGl_vCc7OZL5r1luo42h82EUtU2rW0WZhyKPHp3aI,4776
+vllm_hpu_extension/utils.py,sha256=Y4aa0bVegF-rqXfRAazgu3ggR5qrR_TvVTzuYa6ETKc,1705
+vllm_hpu_extension-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vllm_hpu_extension-0.1.dist-info/METADATA,sha256=oe8YWlRAPodgGLaICasZMirxh56LJ-vuizDN_kt9h28,583
+vllm_hpu_extension-0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+vllm_hpu_extension-0.1.dist-info/top_level.txt,sha256=F5u4ZITrUacdT8NGLp1bh_5zOet-QFUzGshlcneWw5U,19
+vllm_hpu_extension-0.1.dist-info/RECORD,,
