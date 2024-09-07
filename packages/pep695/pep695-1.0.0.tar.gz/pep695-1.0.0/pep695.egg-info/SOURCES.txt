@@ -1,0 +1,7 @@
+README.md
+setup.py
+pep695.egg-info/PKG-INFO
+pep695.egg-info/SOURCES.txt
+pep695.egg-info/dependency_links.txt
+pep695.egg-info/requires.txt
+pep695.egg-info/top_level.txt
