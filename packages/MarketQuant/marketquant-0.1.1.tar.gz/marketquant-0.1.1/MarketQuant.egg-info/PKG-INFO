@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MarketQuant
+Version: 0.1.1
+Summary: A quantitative market analysis tool builder library
+Home-page: https://github.com/maxheltzel/MarketQuant
+Author: Max Heltzel
+Author-email: maxheltzel6@gmail.com
+License: MPL-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mplfinance
+Requires-Dist: mplcursors
+Requires-Dist: yfinance
+Requires-Dist: numpy
+
+# MarketQuant
