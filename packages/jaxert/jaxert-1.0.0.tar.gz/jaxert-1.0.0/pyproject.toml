@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jaxert"
+dynamic = ["version"]
+dependencies = [
+  "jax",
+]
+requires-python = ">= 3.8"
+readme = "README.md"
+license = {text = "MIT License"}
+classifiers = [
+  "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/ymd-h/jaxert"
+
+
+[tool.hatch.version]
+path = "src/jaxert/version.py"
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  ".github",
+  ".gitmodules",
+  "dev-py",
+  "tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jaxert"]
+
+
+[tool.hatch.envs.test]
+dependencies = [
+  "coverage[toml]",
+]
+
+[tool.hatch.envs.test.scripts]
+run = "coverage run -m unittest discover tests"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11", "3.12"]
+
+
+[tool.hatch.envs.cov]
+dependencies = [
+  "coverage[toml]",
+]
+
+[tool.hatch.envs.cov.scripts]
+erase = "coverage erase"
+combine = "coverage combine"
+report = "coverage report"
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+relative_files = true
+omit = ["tests/test_*.py"]
+source = ["jaxert"]
+
+[tool.coverage.paths]
+source = [
+  "jaxert",
+  "src/jaxert",
+  "*/site-packages/jaxert",
+]
