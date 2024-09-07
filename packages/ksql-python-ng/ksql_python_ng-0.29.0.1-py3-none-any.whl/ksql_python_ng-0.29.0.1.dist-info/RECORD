@@ -1,0 +1,12 @@
+ksql/__init__.py,sha256=mtz8cMtt0bj2A4oRe6uj2hWNPNUWtnobypv0tSEXS3Y,227
+ksql/api.py,sha256=7WuWGw_TOQSwkDOpILuh3kiD-6j8imlRSc-7vHUsJ-4,14524
+ksql/builder.py,sha256=m-Iba7Pze5yyDCChSRSrTwBskXRlIqBMxFKtNUJuq68,5824
+ksql/client.py,sha256=YyTZiWudjD_vf9Z_dAEh2mPS4pP_vLWEl3uV1NRx9_g,3548
+ksql/errors.py,sha256=8-c1vaGDqKnsWJQkzNWCUryFXDj-AFDMrL87w5j2Sug,1072
+ksql/upload.py,sha256=j8mFvSzga_Xc3eJEg3vU-IIIFoDkzx_wjVppqk__QKA,1413
+ksql/utils.py,sha256=2w7tM6gUgMbiwvNzpDZli3aUNvjAEBP2hcq2ndINm2c,2830
+ksql_python_ng-0.29.0.1.dist-info/LICENSE,sha256=Gw6NXj50m-6_vNKsr1GqvCgW63RcTvfkSqVShT0mclI,1088
+ksql_python_ng-0.29.0.1.dist-info/METADATA,sha256=irDbkf1REAGJ_S9AwhIP-caP7-3LvGA9xuD1EavkRhY,13685
+ksql_python_ng-0.29.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ksql_python_ng-0.29.0.1.dist-info/top_level.txt,sha256=eozq2w5zKcDp-5_Gol94H0n-0xeCrf9dJqbtTkMWWUE,5
+ksql_python_ng-0.29.0.1.dist-info/RECORD,,
