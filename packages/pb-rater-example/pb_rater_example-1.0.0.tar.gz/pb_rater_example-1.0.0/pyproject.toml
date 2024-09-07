@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pb_rater_example"
+version = "1.0.0"
+dependencies = [
+    "numpy",
+    "scipy"
+]
+authors = [
+  { name="Patrick Bischke", email="patbischke@gmail.com" },
+]
+description = "Rater Example Case Study"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["readme"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md"}
+
+[project.urls]
+Homepage = "https://https://github.com/patbischke/pb_rater_example"
+Issues = "https://https://github.com/patbischke/pb_rater_example/issues"

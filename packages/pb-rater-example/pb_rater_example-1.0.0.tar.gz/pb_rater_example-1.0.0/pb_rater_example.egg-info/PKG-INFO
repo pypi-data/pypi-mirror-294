@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pb_rater_example
+Version: 1.0.0
+Summary: Rater Example Case Study
+Author-email: Patrick Bischke <patbischke@gmail.com>
+Project-URL: Homepage, https://https://github.com/patbischke/pb_rater_example
+Project-URL: Issues, https://https://github.com/patbischke/pb_rater_example/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+PB Rater Example
+
+D&O premium calulations with demo and unit test
