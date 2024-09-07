@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: WebScrapingTool
+Version: 1.1
+Summary: A toolkit to install essential web scraping libraries with one command.
+Home-page: https://github.com/rohit180497/WebScrapingTool
+Author: Rohit Kosamkar
+Author-email: rohitkosamkar97@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: webdriver-manager
+Requires-Dist: beautifulsoup4
+Requires-Dist: scrapy
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: parsel
+Requires-Dist: httpx
+Requires-Dist: fake-useragent
+Requires-Dist: cchardet
+Requires-Dist: aiohttp
+Requires-Dist: pyppeteer
+Requires-Dist: selenium
+Requires-Dist: tqdm
+
+# WebScrapingTool
