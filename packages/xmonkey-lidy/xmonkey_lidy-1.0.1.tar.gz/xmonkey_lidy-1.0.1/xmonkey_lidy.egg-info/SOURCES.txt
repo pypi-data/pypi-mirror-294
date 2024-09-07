@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+xmonkey_lidy/__init__.py
+xmonkey_lidy/cli.py
+xmonkey_lidy/downloader.py
+xmonkey_lidy/matcher.py
+xmonkey_lidy/utils.py
+xmonkey_lidy.egg-info/PKG-INFO
+xmonkey_lidy.egg-info/SOURCES.txt
+xmonkey_lidy.egg-info/dependency_links.txt
+xmonkey_lidy.egg-info/entry_points.txt
+xmonkey_lidy.egg-info/requires.txt
+xmonkey_lidy.egg-info/top_level.txt
+xmonkey_lidy/data/spdx_exclusions.json
+xmonkey_lidy/data/spdx_license_patterns.json
+xmonkey_lidy/data/spdx_licenses.json
