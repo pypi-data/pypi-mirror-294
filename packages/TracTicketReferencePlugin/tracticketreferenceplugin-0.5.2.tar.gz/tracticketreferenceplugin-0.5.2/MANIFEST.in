@@ -1,0 +1,12 @@
+include CHANGELOG.txt
+include LICENSE
+include README.txt
+include setup.cfg
+include setup.py
+include tests/*.py
+include ticketref/*.py
+include ticketref/htdocs/*.css
+include ticketref/htdocs/*.js
+include ticketref/locale/*/LC_MESSAGES/*.po
+include ticketref/locale/*.pot
+include tox.ini
