@@ -1,0 +1,3 @@
+[trac.plugins]
+ticketref.api = ticketref.api
+ticketref.web_ui = ticketref.web_ui
