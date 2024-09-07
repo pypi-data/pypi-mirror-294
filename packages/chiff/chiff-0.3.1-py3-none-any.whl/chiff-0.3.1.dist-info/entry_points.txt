@@ -1,0 +1,4 @@
+[console_scripts]
+chiff=chiff.main:main
+chiffd=chiff.socket:main
+
