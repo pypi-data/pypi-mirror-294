@@ -1,0 +1,2 @@
+open_spiel>=1.2
+pandas>=2.0

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: LiteEFG
+Version: 0.1.3
+Summary: An efficient EFG solver based on computation graph
+Author: Mingyang Liu
+Author-email: liumy0723@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: open_spiel>=1.2
+Requires-Dist: pandas>=2.0
