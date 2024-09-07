@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+multirepo_manager.egg-info/PKG-INFO
+multirepo_manager.egg-info/SOURCES.txt
+multirepo_manager.egg-info/dependency_links.txt
+multirepo_manager.egg-info/entry_points.txt
+multirepo_manager.egg-info/requires.txt
+multirepo_manager.egg-info/top_level.txt
+src/__init__.py
+src/cli.py
+src/version.py
+tests/test_cli.py

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: multirepo-manager
+Version: 1.0.0
+Summary: CLI to manage multiple git repositories in the same folder
+Home-page: https://github.com/DeGiorgiMarcello/multirepo-manager
+Author: Marcello De Giorgi
+Author-email: degiorgimarcello@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.*
+Requires-Dist: GitPython==3.1.*
+Requires-Dist: python_dotenv==1.0.*
+
+README.md
