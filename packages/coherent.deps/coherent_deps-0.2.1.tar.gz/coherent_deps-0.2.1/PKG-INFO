@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: coherent.deps
+Version: 0.2.1
+Author-Email: "Jason R. Coombs" <jaraco@jaraco.com>
+Summary: Utilities for resolving imports to dependencies.
+Requires-Python: >= 3.8
+Requires-Dist: tqdm
+Requires-Dist: jaraco.ui
+Requires-Dist: coherent.deps
+Requires-Dist: jaraco.context
+Requires-Dist: jaraco.collections
+Requires-Dist: jaraco.mongodb
+Requires-Dist: keyring
+Requires-Dist: tempora
+Requires-Dist: jaraco.compat
+Requires-Dist: jaraco.functools
+Requires-Dist: more-itertools
+Requires-Dist: requests
+Requires-Dist: requests-file
+Requires-Dist: requests-toolbelt
+Requires-Dist: retry-requests
+Requires-Dist: zipp
+Provides-Extra: test
+Provides-Extra: doc
+Project-URL: Source, https://github.com/coherent-oss/coherent.deps
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+
