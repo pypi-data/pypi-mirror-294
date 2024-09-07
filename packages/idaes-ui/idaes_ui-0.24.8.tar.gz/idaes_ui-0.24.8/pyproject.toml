@@ -1,0 +1,114 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "wheel",
+    "setuptools_scm[toml]"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+    name = "idaes-ui"
+    description = "IDAES UI"
+    readme = "README.md"
+    version = "0.24.8" #Version format 0.YY.M
+    license = {text="BSD"}
+    requires-python = ">=3.9"
+    authors = [
+        {name="The IDAES Project"}
+    ]
+    classifiers = [
+            "Development Status :: 3 - Alpha",
+            "Intended Audience :: End Users/Desktop",
+            "Intended Audience :: Science/Research",
+            "License :: OSI Approved :: BSD License",
+            "Natural Language :: English",
+            "Operating System :: MacOS",
+            "Operating System :: Microsoft :: Windows",
+            "Operating System :: Unix",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
+            "Programming Language :: Python :: 3.11",
+            "Programming Language :: Python :: 3.12",
+            "Programming Language :: Python :: Implementation :: CPython",
+            "Topic :: Scientific/Engineering :: Mathematics",
+            "Topic :: Scientific/Engineering :: Chemistry",
+            "Topic :: Software Development :: Libraries :: Python Modules",
+    ]
+    dependencies = [
+        # IMPORTANT: idaes-pse should NOT be added to the default dependencies
+        # this causes, among other things, CI failures in IDAES/idaes-pse
+        # Don't version setuptools, various bits complain
+        "setuptools",
+        "pydantic ~= 2.0",
+
+        # Pint 0.24.1 for Python 3.9 compatibility
+        "pint >= 0.24.1",
+
+        # fastapi is not used at the moment; uncomment once fastapi is needed again
+        # "fastapi",
+        # "uvicorn",
+    ]
+
+    keywords = ["IDAES", "energy systems", "chemical engineering", "process modeling"]
+
+[project.optional-dependencies]
+testing = [
+    "pytest",
+    "pytest-icdiff >= 0.7",  # readable dict diffs for test_flowsheet and others
+    "playwright==1.42.0",
+    "pytest-playwright==0.4.4",
+    "requests==2.31.0",
+    # "httpx",  # fastapi testing
+]
+# For packaging
+pkg = [
+    "build",
+    "twine"
+]
+
+[project.urls]
+github = "https://github.com/idaes/idaes-ui"
+issues = "https://github.com/idaes/idaes-ui/issues"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[tool.setuptools.package-data]
+idaes_ui = [
+    "*.template",
+    "*.json",
+    "*.yaml",
+    "*.svg",
+    "*.png",
+    "*.jpg",
+    "*.csv",
+    "*.ipynb",
+    "*.txt",
+    "*.js",
+    "*.css",
+    "*.html",
+    "*.json.gz",
+    "*.dat",
+    "*.yml",
+    "*.yaml",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-q"
+testpaths = [
+    "idaes_ui",
+    "docs"
+]
+markers = [
+    "component: between unit and integration test",
+    "unit: test one small unit of functionality",
+    "integration: test integrated functionality",
+    "screenshot: screenshots"
+]
