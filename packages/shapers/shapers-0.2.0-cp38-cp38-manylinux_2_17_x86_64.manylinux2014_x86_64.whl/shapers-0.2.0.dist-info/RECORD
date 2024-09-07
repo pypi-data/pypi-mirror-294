@@ -1,0 +1,9 @@
+shapers-0.2.0.dist-info/METADATA,sha256=sQdgBe0DVGmj_x9vclzZV1cLsaYbd0OAFVesDTpS1UY,544
+shapers-0.2.0.dist-info/WHEEL,sha256=0OYiWtyCsc3HcTnEJgUAFebyenV-aC_CYqwoZe1p_rM,127
+shapers-0.2.0.dist-info/licenses/LICENSE,sha256=r9AKamunPp1u5mnOCg4WT7WstXuI7YoH_n27TWUaLuI,1501
+shapers.libs/libquadmath-96973f99.so.0,sha256=TTl4bvOwbX8wBgD5FNipsuiQCqVBXitOn5iTZovS9hk,247609
+shapers.libs/libgfortran-040039e1.so.5,sha256=sGchydrx5_-xK2dyADxavnS_GGIDVezXDTUKgMn5XU4,2686057
+shapers.libs/libopenblas-59eb799f.so.0,sha256=Js-On30yBOFPjgOrkjkbvKKeRjWiogZ70L8pnFIfjdU,14880625
+shapers/__init__.py,sha256=H1xM8v2D09WQlnmwsGWl6oX_tvozPsmmJTzXNR661MM,111
+shapers/shapers.cpython-38-x86_64-linux-gnu.so,sha256=8J07L7tdyE_3f_654TjFf24M1ByMnHNDKntnvpqFrZk,793009
+shapers-0.2.0.dist-info/RECORD,,
