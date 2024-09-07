@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: nrt_analyzer
+Version: 0.0.4
+Summary: Tools to pipeline bulk analyses of NRT recordings from cochlear implants (Cochlear).
+Project-URL: Homepage, https://gitlab.com/open-source-brain/nrt_analyzer/
+Project-URL: Examples, https://open-source-brain.gitlab.io/nrt_analyzer/
+Author-email: Jaime Undurraga <jaime.undurraga@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.9
+Requires-Dist: astropy>=5.2.1
+Requires-Dist: gitpython>=3.1.27
+Requires-Dist: gitpython>=3.1.31
+Requires-Dist: matplotlib>=3.5.1
+Requires-Dist: numpy>=1.22.2
+Requires-Dist: openpyxl>=3.1.2
+Requires-Dist: pandas>=1.4.1
+Requires-Dist: prettytable>=3.7.0
+Requires-Dist: scikit-learn>=1.0.2
+Requires-Dist: scipy>=1.8.0
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: setuptools>=58.0.4
+Requires-Dist: sqlalchemy>=1.4.31
+Requires-Dist: toml>=0.10.2
