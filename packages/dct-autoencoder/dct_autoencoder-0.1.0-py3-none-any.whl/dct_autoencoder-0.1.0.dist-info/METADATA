@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dct-autoencoder
+Version: 0.1.0
+Summary: 
+Author: Dariush Bahrami
+Author-email: dariushbahrami1993@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: torch (>=2.4.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# dct-autoencoder
+
+2D Discrete Cosine Transform in PyTorch
+
+![DCT Basis Functions](./assets/figures/dct_basis_functions_block_size_16.png)
+
+
+## Usage
+
+Refer to the [usage notebook](./usage.ipynb) for code examples.
+
+
+## TODO
+
+- [x] Add support for color images
+- [x] Improve documentation
+- [ ] Add tests
+- [ ] Distribute on PyPI
