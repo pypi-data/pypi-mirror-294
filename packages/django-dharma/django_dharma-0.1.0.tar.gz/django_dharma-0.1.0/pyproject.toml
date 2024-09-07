@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "django-dharma"
+version = "0.1.0"
+description = "A Django app to run checks on models"
+authors = ["Ivan Tabarelli <itabarelli@gmail.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+Django = "^4.2"
+
+[tool.poetry.group.dev.dependencies]
+tox = "^3.24.4"
+tox-poetry = "^0.3.0"
+isort = "^5.10.1"
+pre-commit = "^3.8.0"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+
+[tool.flake8]
+max-line-length = 88
+exclude = ["migrations"]
+
+[tool.isort]
+profile = "black"
+
+[tool.django_dharma]
+django_dharma = { path = "django_dharma" }
+
+[tool.poetry.urls]
+homepage = "https://github.com/yourusername/django-dharma"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
