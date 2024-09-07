@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!-- https://github.com/ddh0/easy-llama/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebUI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <div id="conversation" class="conversation"></div>
+    </div>
+    <form id="promptForm" onsubmit="submitForm(event)">
+        <textarea id="prompt" name="prompt" placeholder="type a message here..."></textarea>
+        <div class="button-group">
+            <button type="button" id="newBotMessageButton">new bot message</button>
+            <button type="button" id="swipeButton">re-roll last message</button>
+            <button type="button" id="resetButton">restart chat</button>
+            <button type="button" id="removeButton">remove last message</button>
+            <button type="submit" id="submitButton">send message</button>
+        </div>
+    </form>
+</body>
+<!-- ./marked.min.js is originally from: https://cdn.jsdelivr.net/npm/marked/marked.min.js -->
+<!-- it is used to parse markdown within messages -->
+<script src="marked.min.js"></script>
+<script src="client.js"></script>
+</html>
