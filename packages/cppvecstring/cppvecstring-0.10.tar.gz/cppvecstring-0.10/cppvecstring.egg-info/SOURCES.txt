@@ -1,0 +1,17 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cppvecstring/LICENSE
+cppvecstring/README.MD
+cppvecstring/__init__.py
+cppvecstring/cppvectstr.pyx
+cppvecstring/cppvectstr_compile.py
+cppvecstring/requirements.txt
+cppvecstring/thirdparty.json
+cppvecstring.egg-info/PKG-INFO
+cppvecstring.egg-info/SOURCES.txt
+cppvecstring.egg-info/dependency_links.txt
+cppvecstring.egg-info/requires.txt
+cppvecstring.egg-info/top_level.txt

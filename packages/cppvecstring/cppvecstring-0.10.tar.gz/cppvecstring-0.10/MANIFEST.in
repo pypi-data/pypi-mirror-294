@@ -1,0 +1,6 @@
+include cppvecstring/requirements.txt
+include cppvecstring/thirdparty.json
+include cppvecstring/cppvectstr.pyx
+include cppvecstring/cppvectstr_compile.py
+include cppvecstring/LICENSE
+include cppvecstring/README.MD
