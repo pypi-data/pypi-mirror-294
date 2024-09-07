@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyspiceworks
+Version: 0.0.0a0
+Summary: A minimal python wrapper for the internal Spiceworks Cloud IT Help Desk API
+Author-email: Milo Pitsch <jskresl@gmail.com>
+Project-URL: Homepage, https://github.com/sudo-matcha/pyspiceworks
+Project-URL: Issues, https://github.com/sudo-matcha/pyspiceworks/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE.md
+Requires-Dist: relative_datetime==0.1.4
+Requires-Dist: selenium_wire==5.1.0

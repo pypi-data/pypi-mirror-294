@@ -1,0 +1,10 @@
+LICENSE.md
+pyproject.toml
+src/pyspiceworks/Spiceworks.py
+src/pyspiceworks/__init__.py
+src/pyspiceworks/example.py
+src/pyspiceworks.egg-info/PKG-INFO
+src/pyspiceworks.egg-info/SOURCES.txt
+src/pyspiceworks.egg-info/dependency_links.txt
+src/pyspiceworks.egg-info/requires.txt
+src/pyspiceworks.egg-info/top_level.txt
