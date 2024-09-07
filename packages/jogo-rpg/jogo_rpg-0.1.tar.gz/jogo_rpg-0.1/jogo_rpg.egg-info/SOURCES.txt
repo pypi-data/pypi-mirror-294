@@ -1,0 +1,11 @@
+README.md
+setup.py
+jogo_rpg/__init__.py
+jogo_rpg/batalha.py
+jogo_rpg/npc.py
+jogo_rpg/player.py
+jogo_rpg/utils.py
+jogo_rpg.egg-info/PKG-INFO
+jogo_rpg.egg-info/SOURCES.txt
+jogo_rpg.egg-info/dependency_links.txt
+jogo_rpg.egg-info/top_level.txt
