@@ -1,0 +1,14 @@
+README.md
+setup.py
+baseballquery/__init__.py
+baseballquery/download.py
+baseballquery/linear_weights.py
+baseballquery/retrosheet_cwevent_convert.py
+baseballquery/stat_calculator.py
+baseballquery/stat_splits.py
+baseballquery.egg-info/PKG-INFO
+baseballquery.egg-info/SOURCES.txt
+baseballquery.egg-info/dependency_links.txt
+baseballquery.egg-info/not-zip-safe
+baseballquery.egg-info/requires.txt
+baseballquery.egg-info/top_level.txt
