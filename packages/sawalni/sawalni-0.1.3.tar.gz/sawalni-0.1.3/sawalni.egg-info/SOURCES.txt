@@ -1,0 +1,7 @@
+README.md
+setup.py
+sawalni.egg-info/PKG-INFO
+sawalni.egg-info/SOURCES.txt
+sawalni.egg-info/dependency_links.txt
+sawalni.egg-info/requires.txt
+sawalni.egg-info/top_level.txt
