@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_overwrite_configs/__init__.py
+mkdocs_overwrite_configs/plugin.py
+mkdocs_overwrite_configs.egg-info/PKG-INFO
+mkdocs_overwrite_configs.egg-info/SOURCES.txt
+mkdocs_overwrite_configs.egg-info/dependency_links.txt
+mkdocs_overwrite_configs.egg-info/entry_points.txt
+mkdocs_overwrite_configs.egg-info/requires.txt
+mkdocs_overwrite_configs.egg-info/top_level.txt
