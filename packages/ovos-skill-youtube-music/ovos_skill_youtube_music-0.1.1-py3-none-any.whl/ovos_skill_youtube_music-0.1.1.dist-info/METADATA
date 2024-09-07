@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ovos-skill-youtube-music
+Version: 0.1.1
+Summary: ovos common play youtube music skill plugin
+Home-page: https://github.com/OpenVoiceOS/skill-ovos-youtube-music
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Keywords: ovos skill plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-plugin-manager>=0.0.1a3
+Requires-Dist: tutubo
+Requires-Dist: ovos-workshop>=0.0.5,~=0.0
+
+UNKNOWN
+
+
