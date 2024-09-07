@@ -1,0 +1,2 @@
+[console_scripts]
+xmonkey-lidy = xmonkey_lidy.cli:cli

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xmonkey-lidy
+Version: 1.0.0
+Summary: A XMonkey tool for identifying SPDX licenses.
+Author: Oscar Valenzuela B.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: tqdm
+
