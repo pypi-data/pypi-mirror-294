@@ -1,0 +1,17 @@
+django_dharma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dharma/base.py,sha256=fiP6vHBTL9D1ky1u4gYTMnRuFEN6u2at8MNS2xouFPA,843
+django_dharma/collector.py,sha256=BJnSFziau0YrTInRjKigYR8CieyMgGEx307Ji0n-P3c,1411
+django_dharma/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dharma/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dharma/management/commands/perform_checks.py,sha256=sPoGK1Z5cCZjl91nvHcchaAocNfGmLjDxqIuR-2djcs,2435
+django_dharma/migrations/0001_initial.py,sha256=Xr5AO410wCjdFiqTrjfeUtySjaVAqMr_3jndnJjRezg,1218
+django_dharma/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dharma/models.py,sha256=w0CVuh3E6LkQkgjGkH9ar3u0IHOc-J4sdDt9jI7Liig,2292
+django_dharma/protocols.py,sha256=fdxcoqVRivM8qjiK8JrfcqzrVKhaKPXATHCBh75uXFc,2127
+django_dharma/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dharma/tests/test_anomalies.py,sha256=l7Wr3QTvBpMuLBZ_MXKdDogOAM4RQugQUYVq85bP9e4,1390
+django_dharma/tests/test_collector.py,sha256=8kll0fqrp78rm05M3isws21TO8qfR7EErPEocCUuRMU,3055
+django_dharma/tests/test_protocols.py,sha256=_5WENkn5NXFy_KheO42yX9aT6d_wjcfZwjPAbfTEYF4,1376
+django_dharma-0.1.0.dist-info/METADATA,sha256=r7r2LWaHtqtyMC3PRgZdIZ1tcMlWYT1dkg35TFcrf2E,4537
+django_dharma-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_dharma-0.1.0.dist-info/RECORD,,
