@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bvlogger
+Version: 1.0.0
+Summary: A Python SDK for logging of connector and endpoint management
+Author: Obaid ur Rehman
+Author-email: obaid_mailbox@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests>=2.25.1
+
