@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cpv-kommando-central
+Version: 1.0.3
+Requires-Dist: flask
+Requires-Dist: flask-jwt-extended
+Requires-Dist: flask-cors
+

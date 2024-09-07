@@ -1,0 +1,10 @@
+{% extends 'base/base.html.jinja' %}
+
+{% block content %}
+<section class="content">
+    <header>
+        <h2>{% block title %}{% endblock %}</h2>
+    </header>
+    {% block sectioncontent %}{% endblock %}
+</section>
+{% endblock %}

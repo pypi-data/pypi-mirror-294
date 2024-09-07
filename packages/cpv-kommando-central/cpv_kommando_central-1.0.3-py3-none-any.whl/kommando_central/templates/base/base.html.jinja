@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - cpvb-kbc</title>
+    {% endblock %}
+</head>
+
+<body>
+    <nav id="mainnav">
+        <a href="{{url_for('index')}}">
+            <img class="logo" src="{{ url_for('static', filename='images/CP-KB-logo.png') }}">
+        </a>
+        <h1>Coding Pirates Kommando Central</h1>
+
+        {% if g.user %}
+        <select name="usermenu" id="usermenu" onchange="location.assign(document.getElementById('usermenu').value)">
+            <option value="">{{ g.user['username'] }}</option>
+            <option value="{{ url_for('users.update', user_id=g.user['id']) }}">Rediger profil</option>
+
+            {% if g.isRoleController or g.isRoleAdmin%}
+            <option value="{{ url_for('users.register') }}">Opret ny bruger</option>
+            {% endif %}
+
+            <option value="{{ url_for('auth.logout') }}">Log Out</option>
+
+        </select>
+        {% else %}
+        <ul>
+            <li><span>{{ g.user['username'] }}</span>
+            <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        </ul>
+        {% endif %}
+    </nav>
+
+    {% for message in get_flashed_messages() %}
+    <div class="content flash">{{ message }}</div>
+    {% endfor %}
+
+    {% if g.user %}
+
+    {% block content %}{% endblock %}
+
+    {% else %}
+    <div class="content">
+        Log in for at komme igang.
+        {% block loginform %}{% endblock %}
+    </div>
+    {% endif %}
+
+    <div id="footer">
+        {% block footer %}
+        &copy; 2023 - yet another raw <a href="https://codingpirates.dk/">Coding Pirates</a> product.
+        {% endblock %}
+    </div>
+</body>
+
+</html>

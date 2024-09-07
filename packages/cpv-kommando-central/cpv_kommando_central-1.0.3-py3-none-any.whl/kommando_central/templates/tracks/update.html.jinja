@@ -1,0 +1,32 @@
+{% extends 'base/single-page.html.jinja' %}
+
+{% block title %}Rediger enheden{% endblock %}
+
+{% block sectioncontent %}
+
+<form method="post" id="trackform">
+    <label for="trackname">Navn</label>
+    <input name="trackname" id="trackname" value="{{ request.form['trackname'] or track['track_name']}}" required>
+    <label for="description">Beskrivelse (max 100 tegn)</label>
+    <input name="description" id="description" value="{{ request.form['description'] or track['description'] }}"
+        maxlength="100" size="30">
+
+    <label for="department_id">Department ID
+        {% if g.isRoleAdmin %}
+        <select name="department_id" id="department_id" form="trackform">
+            {% for id, name in g.static_values['departments'].items() %}
+            {% if id == track['department_id'] %}
+            <option value="{{id}}" selected="selected">{{name}}</option>
+            {% else %}
+            <option value="{{id}}">{{name}}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+        {% else %}
+        <input name="department_id" value="{{ g.user['department_id'] }}" readonly>
+        {% endif %}
+    </label>
+
+    <input type="submit" value="Gem">
+</form>
+{% endblock %}
