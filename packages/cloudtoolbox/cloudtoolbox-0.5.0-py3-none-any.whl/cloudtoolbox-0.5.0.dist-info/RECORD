@@ -1,0 +1,16 @@
+cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/factory.py,sha256=ex9U_fjXaw3Cuy-i-pLKjFqLqYsEOJ9C9ACzerq4kY4,1797
+cloud/protocols.py,sha256=h7hzghQOGAnZhWej-20n590mh7vq8z1raDfjh2LfC-Q,847
+cloud/amazon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/amazon/helpers.py,sha256=ioBfAcBShoNIBUy5s21ZCPb37Doq57G7y_GMMtIoCfk,724
+cloud/amazon/s3.py,sha256=Zzx3hydLBTGjej8KM-1qAt3Uc7BMSzM2G_NTFz3hZaM,1009
+cloud/amazon/sns.py,sha256=I59SvjMH1Vj_mT-A9xr81OgwFdTOq2n8uXNbursEj0U,788
+cloud/amazon/sqs.py,sha256=yeXK2TNA6pZLlVJgAQJ65gLaygIUr5FuyqtyVHScQy0,796
+cloud/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/google/pubsub.py,sha256=UwUSJAn74wJyDOC8fD8avuWXBLvXdv4kewnBKy_IsZo,812
+cloud/google/storage.py,sha256=DLTgkM06GBOo6hywx4w6KAfTHny9jY51TQqgU5KmPS0,1127
+cloudtoolbox-0.5.0.dist-info/LICENSE,sha256=rThOU8UxDe6MN6VzoDKWCbES9omgFolEzcsicN4TQIo,1061
+cloudtoolbox-0.5.0.dist-info/METADATA,sha256=wdkhRI8xQkZoy6WV3r2oVHBJaZ6DLUeXIDXG0dNgacA,2497
+cloudtoolbox-0.5.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+cloudtoolbox-0.5.0.dist-info/top_level.txt,sha256=lBiHHi76sKOBY-DmE0iDypxZxv-TTCnvHeiFleC_PuA,6
+cloudtoolbox-0.5.0.dist-info/RECORD,,
