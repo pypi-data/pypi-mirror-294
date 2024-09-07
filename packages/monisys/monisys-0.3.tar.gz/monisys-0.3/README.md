@@ -1,0 +1,62 @@
+# Monisys - Monitor Your Entire OS and Gain Insights About Your Machine
+
+<img src="https://github.com/user-attachments/assets/db339f64-c42c-42d4-9414-62706b0a5820" alt="monisys" width="400" />
+
+
+Monisys is a Python3 package built on top of `osquery` that allows users to monitor and retrieve comprehensive information about their operating system. This package can be used as a module to develop custom monitoring dashboards, or you can utilize the built-in dashboard (currently under development).
+
+[![PyPI Version](https://img.shields.io/pypi/v/monisys)](https://pypi.org/project/monisys/) [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
+
+## Installation
+
+To install Monisys, run the following command with superuser privileges:
+
+```bash
+sudo pip install monisys
+```
+## Getting Started
+
+After installing, you can access the help message to explore the available commands and options:
+
+```python3
+monisys -h
+# or
+monisys --help
+```
+<img src="https://github.com/user-attachments/assets/27de83ad-3f7b-4c59-b18e-16baf79877c1" alt="help" width="600" />
+
+### Command-Line Interface (CLI) Examples
+
+Monisys provides various CLI commands to retrieve specific system information:
+
+Display CPU Information
+
+```bash
+sudo monisys -ci
+# or
+sudo monisys --cpu-info
+```
+<img src="https://github.com/user-attachments/assets/ce533047-5608-4624-b1e3-00e9a8ca4c26" alt="cpuinfo" width="600" />
+
+### Display USB Devices
+
+```bash
+monisys -ud
+# or
+monisys --display-usbdevices
+```
+<img src="https://github.com/user-attachments/assets/0f4e703e-bad9-452e-b693-1c223356d08e" alt="usbdevices" width="600" />
+
+### Using Monisys as a Module
+
+Monisys can also be used programmatically to fetch system data. Here’s an example of how to retrieve CPU information:
+
+```bash
+import time
+from monisys.Managers.Systeminfo import SystemInfo
+
+system_info = SystemInfo('cpu_info')
+cpuinfos = system_info.get_all_data()
+
+print(cpuinfos)
+```
