@@ -1,0 +1,14 @@
+azure-storage-blob
+fastapi
+python-dotenv
+uvicorn
+moviepy
+numpy
+pydantic
+imageio
+torch
+tqdm
+opencv-python
+numpy
+python_speech_features
+argparse
