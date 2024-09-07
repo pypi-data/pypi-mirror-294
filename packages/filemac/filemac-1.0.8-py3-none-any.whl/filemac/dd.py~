@@ -1,0 +1,9 @@
+import sys
+
+
+def getargs(kwargs):
+    print(kwargs[:])
+
+
+xp = sys.argv
+getargs(xp)
