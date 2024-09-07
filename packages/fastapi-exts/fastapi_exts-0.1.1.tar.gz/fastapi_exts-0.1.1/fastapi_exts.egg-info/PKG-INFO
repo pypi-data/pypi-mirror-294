@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastapi-exts
+Version: 0.1.1
+Summary: The extended function library of fastapi can be read README.md
+Home-page: https://github.com/hgz1989/fastapi-exts
+Author: HanGuangZheng
+Author-email: hanguangzheng@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi>=0.113.0
+
+<p align="center">
+  <a href="https://fastapi.tiangolo.com"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"></a>
+</p>
