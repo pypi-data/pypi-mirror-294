@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gepcat
+Version: 0.0.10746547639
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: toml
+Provides-Extra: test
+Requires-Dist: pytest ==6.2.5 ; extra == 'test'
+Requires-Dist: pytest-cov ==3.0.0 ; extra == 'test'
+
+# py-cat
