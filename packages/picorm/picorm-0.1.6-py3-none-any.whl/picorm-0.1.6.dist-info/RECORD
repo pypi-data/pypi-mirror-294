@@ -1,0 +1,13 @@
+picorm/FileStorage.py,sha256=xigGvix-qPJM1xxNenSEYif7k9BJalFX3-WkhQC6Rgc,5732
+picorm/SQLiteStorage.py,sha256=Kd6QKEo48uNQzx7-7coZfkDq3IAw6XPiWflQo4icIT0,3930
+picorm/Storage.py,sha256=Y1mk24OFT7fU0OkREqzUrYOgLkaLKF1RJ32P1DmCjpg,5173
+picorm/__about__.py,sha256=_UezlDG94aYIyBsWZWpkRcjqEAcf9Ixil_RZ2ac04Xw,457
+picorm/__init__.py,sha256=Boe3G3DDK2v_zEe-xZGMpvUgz7e5JUfgStbiljVgY9Y,106
+picorm/utils.py,sha256=RM4CXlKBXpw97Xkp2XKO5nLnd3Wq9SYXCyZnQQwE4Hs,47
+picorm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picorm/tests/test_storages.py,sha256=EfCEq2xdXI2XaitZ0uJPioxXStUrNoDhnQtGyekPftc,10785
+picorm-0.1.6.dist-info/LICENSE,sha256=5IxDsHksFkchaRUKph4Q-_8b8ALKUt3g3eaRsswgPr0,1060
+picorm-0.1.6.dist-info/METADATA,sha256=GI6YZcvYFMqi1v1oi5dZNJH2PJ6DTGZyCuhiaX14GnM,6571
+picorm-0.1.6.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+picorm-0.1.6.dist-info/top_level.txt,sha256=Dl7w6L_j5ON_T9aXilKL6QxtAcYpCQBJ-pTY4xstYy0,7
+picorm-0.1.6.dist-info/RECORD,,
