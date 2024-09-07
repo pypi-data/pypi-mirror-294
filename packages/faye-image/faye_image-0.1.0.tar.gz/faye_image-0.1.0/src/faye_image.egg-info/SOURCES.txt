@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/faye-image/__init__.py
+src/faye-image/image_factory.py
+src/faye-image/image_intermediate.py
+src/faye-image/builders/__init__.py
+src/faye-image/builders/array_based_builders.py
+src/faye-image/builders/builder_interface.py
+src/faye-image/builders/file_based_builders.py
+src/faye_image.egg-info/PKG-INFO
+src/faye_image.egg-info/SOURCES.txt
+src/faye_image.egg-info/dependency_links.txt
+src/faye_image.egg-info/requires.txt
+src/faye_image.egg-info/top_level.txt
