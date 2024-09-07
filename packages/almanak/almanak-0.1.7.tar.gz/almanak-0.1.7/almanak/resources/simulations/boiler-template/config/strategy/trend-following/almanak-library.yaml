@@ -1,0 +1,29 @@
+name: "Trend Following"
+type: "strategy"
+version: "1.0.0"
+author: "Almanak"
+description: "Trend Following strategy"
+license: "MIT"
+
+settings:
+  example_setting: "example_value"
+
+models:
+  - alias: "trading_prediction"
+    source: "wandb://almanak/model-registry/Uniswap_Trader_Trend-Following:latest"
+  - alias: "bancor_lp_action"
+    source: "wandb://almanak/uncategorized/action_user.onnx:latest"
+
+supported_chains:
+  - engine: 'evm'
+    chainId: '1'
+    dependencies:
+      protocols:
+        - "library://almanak/protocols/aave-v3:1.0.0"
+  - engine: 'evm'
+    chainId: '2'
+    dependencies:
+      protocols:
+        - "library://almanak/protocols/aave-v3:1.0.0"
+    settings:
+      uniswap_v3_usdc_pool: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
