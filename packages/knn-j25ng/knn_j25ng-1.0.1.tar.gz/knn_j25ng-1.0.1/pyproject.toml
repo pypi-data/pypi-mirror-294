@@ -1,0 +1,24 @@
+[project]
+name = "knn_j25ng"
+version = "1.0.1"
+description = "Implements KNN model using KNeighborsClassifier"
+authors = [
+    {name = "j25ng", email = "jsan2861@gmail.com"},
+]
+dependencies = [
+    "numpy>=2.1.1",
+    "pandas>=2.2.2",
+    "scikit-learn>=1.5.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = true
+
+[project.scripts]
+fish = "knn_j25ng.main:main"
+
+[project.urls]
+Homepage = "https://github.com/j25ng/knn_j25ng"
