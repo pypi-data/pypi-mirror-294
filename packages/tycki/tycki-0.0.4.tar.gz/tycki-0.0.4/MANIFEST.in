@@ -1,0 +1,2 @@
+include tycki/VERSION
+recursive-include extern *
