@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: polyptich
+Version: 0.0.11
+Summary: Extra visualization functions
+Author-email: Wouter Saelens <wouter.saelens@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/zouter/polyptich
+Project-URL: Bug Tracker, https://github.com/zouter/polyptich/issues
+Keywords: visualization
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: ruff; extra == "test"
+
+## Polyptich: easier layouting in matplotlib
+
+
+```python
+import polyptich as pp
+```
+
+
+```python
+fig = pp.Figure()
+ax = pp.Panel((2, 2))
+ax.plot([1, 2, 3], [1, 2, 3])
+fig.main.add_right(ax)
+
+ax = pp.Panel((2, 2))
+ax.plot([1, 2, 3], [1, 2, 3])
+fig.main.add_right(ax)
+
+ax = pp.Panel((2, 2))
+ax.plot([1, 2, 3], [1, 2, 3])
+fig.main.add_right(ax)
+fig.display()
+```
+
+
+    
+![png](README_files/README_2_0.png)
+    
+
+
+
+```python
+fig = pp.Figure()
+ax1 = pp.Panel((2, 2))
+ax1.plot([1, 2, 3], [1, 2, 3])
+ax1.add_tag("a")
+
+ax2 = pp.Panel((2, 2))
+ax2.barh([1, 2, 3], [1, 2, 3])
+ax2.add_tag("b")
+
+ax3 = pp.Panel((2, 2))
+ax3.scatter([1, 2, 3], [3, 1, 2])
+ax3.add_tag("c")
+
+ax4 = pp.Panel((2, 2))
+ax4.matshow([[1, 2], [3, 4]])
+ax4.add_tag("d")
+
+title = pp.Title("Nice Hello")
+legend = pp.Panel((None, 0.5))
+legend.axis("off")
+
+fig.main = title / (ax1 | ax2) / (ax3 | ax4) / legend
+fig.display()
+```
+
+
+    
+![png](README_files/README_3_0.png)
+    
+
+
+
+```python
+fig = pp.Figure()
+axes = []
+
+ax1 = pp.Panel((2, 2))
+ax1.plot([1, 2, 3], [1, 2, 3])
+axes.append(ax1)
+
+ax2 = pp.Panel((2, 2))
+ax2.barh([1, 2, 3], [1, 2, 3])
+axes.append(ax2)
+
+ax3 = pp.Panel((2, 2))
+ax3.scatter([1, 2, 3], [3, 1, 2])
+axes.append(ax3)
+
+ax4 = pp.Panel((2, 2))
+ax4.matshow([[1, 2], [3, 4]])
+axes.append(ax4)
+```
+
+
+    <_Figure size 640x480 with 0 Axes>
+
+
+
+```python
+fig.main = pp.Wrap(axes, ncol = 4)
+fig.display()
+```
+
+
+    
+![png](README_files/README_5_0.png)
+    
+
