@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/gs_api_wrapper/__init__.py
+src/gs_api_wrapper/audit.py
+src/gs_api_wrapper/client.py
+src/gs_api_wrapper.egg-info/PKG-INFO
+src/gs_api_wrapper.egg-info/SOURCES.txt
+src/gs_api_wrapper.egg-info/dependency_links.txt
+src/gs_api_wrapper.egg-info/requires.txt
+src/gs_api_wrapper.egg-info/top_level.txt
