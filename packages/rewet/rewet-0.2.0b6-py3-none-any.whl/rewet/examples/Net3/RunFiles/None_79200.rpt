@@ -1,0 +1,176 @@
+  Page 1                                    Sat Aug 17 21:34:29 2024
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                         Version 2.2                            *
+  ******************************************************************
+  
+  Analysis begun Sat Aug 17 21:34:29 2024
+
+   
+  Hydraulic Status:
+  -----------------------------------------------------------------------
+     0:00:00: Balanced after 32 trials
+              9 nodes had demands reduced by a total of 100.00%
+     0:00:00: Reservoir River is emptying
+     0:00:00: Reservoir Lake is closed
+     0:00:00: Reservoir 131_breakA_1_nn is filling
+     0:00:00: Reservoir 131_breakB_1_nn is closed
+     0:00:00: Reservoir 131_leak_2_nn is filling
+     0:00:00: Reservoir 153_breakA_1_nn is filling
+     0:00:00: Reservoir 153_breakB_1_nn is closed
+     0:00:00: Reservoir 177_leak_1_nn is filling
+     0:00:00: Reservoir 204_leak_1_nn is filling
+     0:00:00: Reservoir 204_breakA_2_nn is closed
+     0:00:00: Reservoir 204_breakB_2_nn is filling
+     0:00:00: Reservoir 204_breakA_3_nn is filling
+     0:00:00: Reservoir 204_breakB_3_nn is closed
+     0:00:00: Reservoir 204_leak_4_nn is filling
+     0:00:00: Tank 1 is emptying at 15.09 ft
+     0:00:00: Tank 2 is emptying at 6.50 ft
+     0:00:00: Tank 3 is closed at 4.00 ft
+     0:00:00: Pipe 20 temporarily closed
+     0:00:00: CV lk_pipe_109 closed
+     0:00:00: CV lk_pipe_121 closed
+     0:00:00: CV lk_pipe_149 closed
+     0:00:00: CV lk_pipe_199 closed
+     0:00:00: CV 131_breakB_1-rlk closed
+     0:00:00: CV 153_breakB_1-rlk closed
+     0:00:00: CV 204_breakA_2-rlk closed
+     0:00:00: CV 204_breakB_3-rlk closed
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:00:00 hrs.
+   
+     0:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:00:00 hrs.
+   
+     0:15:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:15:00 hrs.
+   
+     0:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:30:00 hrs.
+   
+     0:45:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:45:00 hrs.
+   
+     1:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 83.79%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:00:00 hrs.
+   
+     1:15:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 85.59%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:15:00 hrs.
+   
+     1:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 87.44%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:30:00 hrs.
+   
+     1:40:39: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 88.77%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:40:39 hrs.
+   
+     1:55:39: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 88.78%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:55:39 hrs.
+   
+     2:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 2:00:00 hrs.
+   
+     2:15:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 2:15:00 hrs.
+   
+     2:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 2:30:00 hrs.
+   
+     2:45:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 2:45:00 hrs.
+   
+     3:00:00: Pump 10 changed by timer control
+     3:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 97.45%
+     3:00:00: Reservoir Lake is emptying
+   
+     3:15:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 97.45%
+   
+     3:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 97.45%
+   
+     3:45:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 97.45%
+   
+     4:00:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     4:15:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     4:30:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     4:45:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     5:00:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     5:15:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     5:30:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     5:45:00: Balanced after 14 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     6:00:00: Balanced after 32 trials
+              8 nodes had demands reduced by a total of 100.00%
+     6:00:00: CV lk_pipe_109 changed from closed to open
+   
+     6:15:00: Balanced after 32 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     6:30:00: Balanced after 32 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     6:45:00: Balanced after 32 trials
+              8 nodes had demands reduced by a total of 100.00%
+   
+     7:00:00: Balanced after 22 trials
+              8 nodes had demands reduced by a total of 100.00%
+     7:00:00: CV lk_pipe_109 changed from open to closed
+   
+  Water Quality Mass Balance (mg)
+  ================================
+  Initial Mass:      0.00000e+000
+  Mass Inflow:       1.48888e+007
+  Mass Outflow:      7.10584e+006
+  Mass Reacted:      0.00000e+000
+  Final Mass:        7.78300e+006
+  Mass Ratio:         1.00000
+  ================================
+
+  Analysis ended Sat Aug 17 21:34:29 2024

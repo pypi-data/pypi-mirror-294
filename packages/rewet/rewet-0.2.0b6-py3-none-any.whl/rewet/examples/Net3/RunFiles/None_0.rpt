@@ -1,0 +1,54 @@
+  Page 1                                    Sat Aug 17 21:34:27 2024
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                         Version 2.2                            *
+  ******************************************************************
+  
+  Analysis begun Sat Aug 17 21:34:27 2024
+
+   
+  Hydraulic Status:
+  -----------------------------------------------------------------------
+     0:00:00: Balanced after 5 trials
+     0:00:00: Reservoir River is emptying
+     0:00:00: Reservoir Lake is closed
+     0:00:00: Tank 1 is filling at 13.10 ft
+     0:00:00: Tank 2 is emptying at 23.50 ft
+     0:00:00: Tank 3 is filling at 29.00 ft
+   
+     0:00:00: Balanced after 1 trials
+   
+     0:15:00: Balanced after 2 trials
+   
+     0:30:00: Balanced after 2 trials
+   
+     0:45:00: Balanced after 2 trials
+   
+     1:00:00: Pump 10 changed by timer control
+     1:00:00: Balanced after 7 trials
+     1:00:00: Reservoir Lake is emptying
+     1:00:00: Pump 10 changed from closed to open
+   
+     1:15:00: Balanced after 2 trials
+   
+     1:30:00: Balanced after 2 trials
+   
+     1:45:00: Balanced after 2 trials
+   
+     2:00:00: Balanced after 3 trials
+     2:00:00: Tank 2 is filling at 21.21 ft
+   
+  Water Quality Mass Balance (mg)
+  ================================
+  Initial Mass:      0.00000e+000
+  Mass Inflow:       2.75096e+006
+  Mass Outflow:      2.64502e+004
+  Mass Reacted:      0.00000e+000
+  Final Mass:        2.72451e+006
+  Mass Ratio:         1.00000
+  ================================
+
+  Analysis ended Sat Aug 17 21:34:27 2024

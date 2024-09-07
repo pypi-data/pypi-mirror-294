@@ -1,0 +1,137 @@
+  Page 1                                    Sat Aug 17 21:34:29 2024
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                         Version 2.2                            *
+  ******************************************************************
+  
+  Analysis begun Sat Aug 17 21:34:29 2024
+
+   
+  Hydraulic Status:
+  -----------------------------------------------------------------------
+     0:00:00: Balanced after 39 trials
+              14 nodes had demands reduced by a total of 100.00%
+     0:00:00: Reservoir River is emptying
+     0:00:00: Reservoir Lake is closed
+     0:00:00: Reservoir 131_breakA_1_nn is filling
+     0:00:00: Reservoir 131_breakB_1_nn is closed
+     0:00:00: Reservoir 131_leak_2_nn is filling
+     0:00:00: Reservoir 153_breakA_1_nn is filling
+     0:00:00: Reservoir 153_breakB_1_nn is closed
+     0:00:00: Reservoir 177_leak_1_nn is filling
+     0:00:00: Reservoir 204_leak_1_nn is closed
+     0:00:00: Reservoir 204_breakA_2_nn is closed
+     0:00:00: Reservoir 204_breakB_2_nn is filling
+     0:00:00: Reservoir 204_breakA_3_nn is filling
+     0:00:00: Reservoir 204_breakB_3_nn is closed
+     0:00:00: Reservoir 204_leak_4_nn is filling
+     0:00:00: Tank 1 is closed at 15.09 ft
+     0:00:00: Tank 2 is closed at 6.50 ft
+     0:00:00: Tank 3 is closed at 4.00 ft
+     0:00:00: Pipe 20 temporarily closed
+     0:00:00: Pipe 50 temporarily closed
+     0:00:00: CV lk_pipe_109 closed
+     0:00:00: CV lk_pipe_121 closed
+     0:00:00: CV lk_pipe_149 closed
+     0:00:00: CV lk_pipe_199 closed
+     0:00:00: CV 131_breakB_1-rlk closed
+     0:00:00: CV 153_breakB_1-rlk closed
+     0:00:00: CV 204_leak_1-rlk closed
+     0:00:00: CV 204_breakA_2-rlk closed
+     0:00:00: CV 204_breakB_3-rlk closed
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:00:00 hrs.
+   
+     0:00:00: Balanced after 7 trials
+              14 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:00:00 hrs.
+   
+     0:15:00: Balanced after 9 trials
+              14 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:15:00 hrs.
+   
+     0:30:00: Balanced after 7 trials
+              14 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:30:00 hrs.
+   
+     0:45:00: Balanced after 7 trials
+              14 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 0:45:00 hrs.
+   
+     1:00:00: Balanced after 76 trials
+              5 nodes had demands reduced by a total of 100.00%
+     1:00:00: Reservoir 131_breakA_1_nn is closed
+     1:00:00: Reservoir 131_leak_2_nn is closed
+     1:00:00: Reservoir 153_breakA_1_nn is closed
+     1:00:00: Reservoir 177_leak_1_nn is closed
+     1:00:00: Reservoir 204_leak_1_nn is filling
+     1:00:00: Reservoir 204_breakA_3_nn is closed
+     1:00:00: Reservoir 204_leak_4_nn is closed
+     1:00:00: CV 131_breakA_1-rlk changed from open to closed
+     1:00:00: CV 131_leak_2-rlk changed from open to closed
+     1:00:00: CV 153_breakA_1-rlk changed from open to closed
+     1:00:00: CV 177_leak_1-rlk changed from open to closed
+     1:00:00: CV 204_leak_1-rlk changed from closed to open
+     1:00:00: CV 204_breakA_3-rlk changed from open to closed
+     1:00:00: CV 204_leak_4-rlk changed from open to closed
+   
+  WARNING: Maximum trials exceeded at 1:00:00 hrs. System may be unstable.
+  WARNING: Pump 10 open but exceeds maximum flow at 1:00:00 hrs.
+  WARNING: Node lk_aux_109 disconnected at 1:00:00 hrs
+  WARNING: Node lk_aux_121 disconnected at 1:00:00 hrs
+  WARNING: Node lk_aux_149 disconnected at 1:00:00 hrs
+  WARNING: System disconnected because of Link lk_pipe_149
+   
+     1:15:00: Balanced after 48 trials
+              10 nodes had demands reduced by a total of 100.00%
+     1:15:00: Reservoir 131_breakA_1_nn is filling
+     1:15:00: Reservoir 131_leak_2_nn is filling
+     1:15:00: Reservoir 153_breakA_1_nn is filling
+     1:15:00: Reservoir 177_leak_1_nn is filling
+     1:15:00: Reservoir 204_breakA_3_nn is filling
+     1:15:00: Reservoir 204_leak_4_nn is filling
+     1:15:00: Tank 2 is emptying at 6.50 ft
+     1:15:00: Pipe 50 changed from temporarily closed to open
+     1:15:00: CV 131_breakA_1-rlk changed from closed to open
+     1:15:00: CV 131_leak_2-rlk changed from closed to open
+     1:15:00: CV 153_breakA_1-rlk changed from closed to open
+     1:15:00: CV 177_leak_1-rlk changed from closed to open
+     1:15:00: CV 204_breakA_3-rlk changed from closed to open
+     1:15:00: CV 204_leak_4-rlk changed from closed to open
+   
+  WARNING: Maximum trials exceeded at 1:15:00 hrs. System may be unstable.
+  WARNING: Pump 10 open but exceeds maximum flow at 1:15:00 hrs.
+   
+     1:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:30:00 hrs.
+   
+     1:45:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 1:45:00 hrs.
+   
+     2:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 100.00%
+   
+  WARNING: Pump 10 open but exceeds maximum flow at 2:00:00 hrs.
+   
+  Water Quality Mass Balance (mg)
+  ================================
+  Initial Mass:      0.00000e+000
+  Mass Inflow:       9.09473e-001
+  Mass Outflow:      0.00000e+000
+  Mass Reacted:      0.00000e+000
+  Final Mass:        9.09476e-001
+  Mass Ratio:         1.00000
+  ================================
+
+  Analysis ended Sat Aug 17 21:34:29 2024
