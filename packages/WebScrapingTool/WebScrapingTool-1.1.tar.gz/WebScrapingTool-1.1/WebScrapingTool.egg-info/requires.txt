@@ -1,0 +1,15 @@
+pandas
+numpy
+webdriver_manager
+beautifulsoup4
+scrapy
+requests
+lxml
+parsel
+httpx
+fake-useragent
+cchardet
+aiohttp
+pyppeteer
+selenium
+tqdm

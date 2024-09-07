@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+WebScrapingTool.egg-info/PKG-INFO
+WebScrapingTool.egg-info/SOURCES.txt
+WebScrapingTool.egg-info/dependency_links.txt
+WebScrapingTool.egg-info/requires.txt
+WebScrapingTool.egg-info/top_level.txt
