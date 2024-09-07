@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: security.md
+Version: 0.2.3
+Summary: Common utilities for Camptocamp CI
+Home-page: https://github.com/camptocamp/c2cciutils
+License: FreeBSD
+Keywords: ci
+Author: Camptocamp
+Author-email: info@camptocamp.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: defusedxml (>=0.0.0,<1.0.0)
+Requires-Dist: markdown (>=3.0,<4.0)
+Requires-Dist: markdown-table (>=2020.0.0,<2021.0.0)
+Project-URL: Repository, https://github.com/camptocamp/c2cciutils
+Description-Content-Type: text/markdown
+
+## SECURITY.md
+
+Tools used to parse standardize [SECURITY.md](https://github.com/sbrunner/security.md/wiki/SECURITY.md) files.
+
+## Usage:
+
+```python
+from security_md import Security
+
+security = Security("""
+| Version         | Supported Until | Alternate Tag |
+| --------------- | --------------- | ------------- |
+| 7.6             | 23/06/2025      |               |
+| 7.6-gdal3.7     | Best effort     |               |
+| 7.6-gdal3.8     | Best effort     | 7.6           |
+| 7.6-gdal3.9     | Best effort     |               |
+""")
+print(security.headers)
+print(security.raw)
+for version in security.supported_versions():
+    print(version)
+    print(security.all_tags(version))
+```
+
