@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: chessencryption
+Version: 1.0
+Requires-Dist: chess
+Requires-Dist: flask
+

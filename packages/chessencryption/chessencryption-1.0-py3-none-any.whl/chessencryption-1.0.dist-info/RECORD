@@ -1,0 +1,8 @@
+chessencryption/__init__.py,sha256=yax0vi5CrFTesHtJzuiS15olmaK6qzc3-McTFFWbrZk,330
+chessencryption/decode.py,sha256=cA5wNg15yglO64_5AC-bhQVo_opGU_0VF7xS61oxnwA,2742
+chessencryption/encode.py,sha256=UpIgGogQlxzS5DwKhYtaH9QjZmtJG9pk2-orbvLVZYM,2726
+chessencryption/util.py,sha256=l3ImQoQI0bL9JJxjHb-3szI4PlCJVRwORZaL1IrR0TM,461
+chessencryption-1.0.dist-info/METADATA,sha256=_VcbzOuD1pdbLKp-2mrB5reXb0KhUG1x8TvuLLCyyEI,100
+chessencryption-1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+chessencryption-1.0.dist-info/top_level.txt,sha256=emPtJhYkvTnRirufc74F9c6xvZjNeM1TXYB1nqOZFgA,16
+chessencryption-1.0.dist-info/RECORD,,
