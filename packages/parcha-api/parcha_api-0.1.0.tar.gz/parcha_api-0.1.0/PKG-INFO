@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: parcha-api
+Version: 0.1.0
+Summary: Python client for interacting with the Parcha API, providing both synchronous and asynchronous methods for various API endpoints.
+Home-page: https://docs.parcha.ai
+License: Proprietary
+Keywords: KYB,KYC,API client,Parcha,business verification,customer verification,compliance
+Author: Miguel Rios
+Author-email: miguel@parcha.ai
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: pydantic (>=2.9.0,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Documentation, https://docs.parcha.ai
+Project-URL: Repository, https://github.com/parcha-ai/parcha-api-python
+Description-Content-Type: text/markdown
+
+# Parcha API Client
+
+A Python client for interacting with the Parcha API, providing both synchronous and asynchronous methods for various API endpoints.
+
+## Features
+
+- KYB (Know Your Business) and KYC (Know Your Customer) job management
+- Check job execution
+- Job retrieval by ID and case ID
+- Asynchronous support using `aiohttp`
+
+## Installation
+
+```bash
+pip install parcha-api-client  # Note: Package name may differ
+```
+
+## Usage
+
+```python
+from parcha_api import ParchaAPI, KYBAgentJobInput
+
+# Initialize the client
+api = ParchaAPI("https://api.parcha.com", "your_api_token")
+
+# Start a KYB agent job
+kyb_input = KYBAgentJobInput(
+    agent_key="your_agent_key",
+    kyb_schema={"business_name": "Example Corp"}
+)
+response = api.start_kyb_agent_job(kyb_input)
+
+# Get job by ID
+job = api.get_job_by_id("job_id_here")
+
+# Async example
+async def fetch_jobs():
+    jobs = await api.get_jobs_by_case_id_async("case_id", "agent_key")
+    return jobs
+```
+
+## Documentation
+
+For detailed information on available methods and models, refer to the docstrings in the source code.
+
+## Requirements
+
+- Python 3.7+
+- `requests`
+- `aiohttp`
+- `pydantic`
+
+## License
+
+This Parcha API Client is proprietary software belonging to Parcha Labs Inc. 
+All rights reserved. Use of this software is subject to the terms of your service agreement with Parcha Labs Inc..
+
+For questions about licensing or usage, please contact support@parcha.ai.
+
