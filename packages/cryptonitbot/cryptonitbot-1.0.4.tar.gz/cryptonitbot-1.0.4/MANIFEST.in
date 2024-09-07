@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+include cryptonit_bot/requirements.txt
+include Instructions.txt
+include cryptonit.py
+include cryptonit_bot/Instructions.txt
