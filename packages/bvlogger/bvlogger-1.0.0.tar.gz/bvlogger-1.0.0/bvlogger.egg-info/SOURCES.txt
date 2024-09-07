@@ -1,0 +1,10 @@
+setup.py
+bvlogger.egg-info/PKG-INFO
+bvlogger.egg-info/SOURCES.txt
+bvlogger.egg-info/dependency_links.txt
+bvlogger.egg-info/requires.txt
+bvlogger.egg-info/top_level.txt
+loggerSdk/__init__.py
+loggerSdk/authentication.py
+loggerSdk/connector_logging.py
+loggerSdk/endpoint_details.py
