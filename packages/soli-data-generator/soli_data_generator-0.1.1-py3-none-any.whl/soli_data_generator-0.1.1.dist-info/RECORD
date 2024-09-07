@@ -1,0 +1,9 @@
+soli_data_generator/__init__.py,sha256=IAVf4g-tyEgV8YXRiT5bIAYv40Wdh-V6BlYVxzTCdk4,413
+soli_data_generator/llm/__init__.py,sha256=fVbGCYFTOEGGDHZbBdYcUrH1eemjlUK5mK4z22VbWjo,125
+soli_data_generator/llm/text.py,sha256=j-pQsLGhjrOTHEh7BEvYhrHpix3HVbklvlUPpNDFZxU,5883
+soli_data_generator/procedural/__init__.py,sha256=1vcJ__dLf7GLyM4T3AmmMBlq5sq03IZAGhF1LsUiQwY,153
+soli_data_generator/procedural/template.py,sha256=OUYRkh9sn9Q4P_dwf1GxanSKunt7ZLmlvzWhDeoVBTo,15534
+soli_data_generator-0.1.1.dist-info/LICENSE,sha256=XSFZewwdqRqQXX8y2E6pPoxr5AnlwWA9AIPLebt3FnQ,1071
+soli_data_generator-0.1.1.dist-info/METADATA,sha256=L0Du_GGX8AuA_HME594yV8j8iWQI_W9OBEaHXLen-U8,7018
+soli_data_generator-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+soli_data_generator-0.1.1.dist-info/RECORD,,
