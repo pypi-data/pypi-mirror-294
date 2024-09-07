@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: yaopt
+Version: 0.1.3
+Summary: Basic options pricing in Python
+Home-page: https://github.com/someben/yaopt
+Author: Ben Gimpert
+Author-email: ben@somethingmodern.com
+License: MIT
+Keywords: yaopt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+#######
+yaopt
+#######                                      
+                                         
+.. image:: https://badge.fury.io/py/yaopt.png                                                                   
+   :target: http://badge.fury.io/py/yaopt                                                   
+
+
+Basic Options Pricing (in Python)
+***********************************
+
+“Oh cool. Probably a little easier than spinning up the QuantLib stack.” — `Wes McKinney <https://github.com/wesm>`_, creator of `Pandas <https://github.com/pydata/pandas>`_.
+
+
+Features
+==========
+
+#. Option valuation w/ Black-Scholes, lattice (binomial tree), and Monte Carlo simulation models.                                  
+#. Basic Greeks calculation (delta, theta, rho, vega, gamma) across each valuation model.
+#. Discrete dividends support in the lattice (binomial tree) and Monte Carlo simulation models.
+#. Early exercise (American options) support in Monte Carlo simulation through the Longstaff-Schwartz technique.
+#. Minimal dependencies, just Numpy & SciPy.
+#. Free software, released under the MIT license.
+
+
+
+
+
+History
+-------
+
+0.1.0 (2023-01-10)
+---------------------
+
+* First release on PyPI.
+
+0.1.2 (2024-09-06)
+---------------------
+
+* Fix to Black-Scholes implied volatility.
+
+0.1.3 (2024-09-06)
+---------------------
+
+* Fix to README.
+
+
