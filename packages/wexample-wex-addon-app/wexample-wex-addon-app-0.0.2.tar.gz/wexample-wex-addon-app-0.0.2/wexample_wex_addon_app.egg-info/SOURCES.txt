@@ -1,0 +1,16 @@
+README.md
+setup.py
+tests/__init__.py
+wexample_wex_addon_app/__init__.py
+wexample_wex_addon_app.egg-info/PKG-INFO
+wexample_wex_addon_app.egg-info/SOURCES.txt
+wexample_wex_addon_app.egg-info/__init__.py
+wexample_wex_addon_app.egg-info/dependency_links.txt
+wexample_wex_addon_app.egg-info/top_level.txt
+wexample_wex_addon_app/const/__init__.py
+wexample_wex_addon_app/const/globals.py
+wexample_wex_addon_app/const/types.py
+wexample_wex_addon_app/options_values/__init__.py
+wexample_wex_addon_app/options_values/readme_content_option_value.py
+wexample_wex_addon_app/utils/AppDirectoryStructure.py
+wexample_wex_addon_app/utils/__init__.py
