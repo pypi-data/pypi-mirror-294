@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "docker-generate"
+version = "0.1.0"
+description = "Generate Dockerfile(s) for your projects"
+authors = ["latentdream <email@guillaume.sh>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+click = "^8.1.7"
+openai = "^1.43.0"
+prompt-toolkit = "^3.0.47"
+anthropic = "^0.34.2"
+click-spinner = "^0.1.10"
+
+
+[tool.poetry.scripts]
+docker-gen = "src.docker_gen:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
