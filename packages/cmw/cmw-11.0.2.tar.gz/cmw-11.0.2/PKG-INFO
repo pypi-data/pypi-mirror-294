@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: cmw
+Version: 11.0.2
+Summary: CommonMark Website (cmw): A CLI tool to seamlessly convert CommonMark markdown files into professional HTML websites with minimal effort.
+Project-URL: Homepage, https://github.com/mizuki-hikaru/cmw
+Project-URL: Issues, https://github.com/mizuki-hikaru/cmw/issues
+Author-email: Mizuki Hikaru <mizuki@hikaru.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: mistletoe
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# CommonMark Website
+
+Documentation can be found at [commonmarkwebsite.org](https://commonmarkwebsite.org).
