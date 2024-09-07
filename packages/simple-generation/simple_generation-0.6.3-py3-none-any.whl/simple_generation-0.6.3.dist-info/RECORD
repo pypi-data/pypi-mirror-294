@@ -1,0 +1,12 @@
+simple_generation/__init__.py,sha256=8NB62UcRl8fFTGHWkTRn2p3rMxbirl_X1yIzqm1s8Qc,246
+simple_generation/cli.py,sha256=crFmvCVTwj-7gK4eptRx-0MzfU8dfggBHHIKyxW4nBU,11617
+simple_generation/simple_generation.py,sha256=BUs20-9C14XYnBUhEfa5faJTAjUd6k33_BuWApJyGXU,20223
+simple_generation/utils.py,sha256=fxiXU10kPZdwovlfLjQLRZLSM2806sACZ1R0kZ-U_Q4,4459
+simple_generation/vlm/__init__.py,sha256=y30gnFdFPEgyWfdEhrzVY7Qq2FOlUrlwzMerMratM3Q,36
+simple_generation/vlm/utils.py,sha256=HF8GAb587kNtmKJZAMm3t4UR95VKF2xRTDSEuXNpEmI,3530
+simple_generation/vlm/vlm.py,sha256=Mf2-cQj0nKZH4dt1uBdPKnCKRdx2eaHdVfCdHutlhjU,13540
+simple_generation-0.6.3.dist-info/LICENSE,sha256=yWusPxB2mCo6ImfOtch8F6hAKzgMqsfJCFFoi-PLWv4,590
+simple_generation-0.6.3.dist-info/METADATA,sha256=iJaml0-PZoC7b8FZgsRfotbh7bQB6EkArVr7AA_hlC0,16487
+simple_generation-0.6.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+simple_generation-0.6.3.dist-info/entry_points.txt,sha256=rHtQgzADqvNrADU3Z27OViW30RT9rpIlabzmDavuCy4,51
+simple_generation-0.6.3.dist-info/RECORD,,
