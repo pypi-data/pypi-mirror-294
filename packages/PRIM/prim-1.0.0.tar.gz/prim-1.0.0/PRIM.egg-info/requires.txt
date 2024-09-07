@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pandas
+mplcursors
+scipy
+
+[test]
+pytest
+mock
