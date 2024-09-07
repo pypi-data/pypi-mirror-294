@@ -1,0 +1,13 @@
+sentencepiece
+gensim
+nltk
+numpy<2.0,>=1.18.5
+scipy<1.14.0,>=1.7.0
+sklearn-crfsuite
+tqdm
+ftfy
+emoji
+requests
+
+[fasttext]
+fasttext
