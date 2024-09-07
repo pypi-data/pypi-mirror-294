@@ -1,0 +1,9 @@
+jogo_rpg/__init__.py,sha256=kd2Ato2J1QT3HXn620Uggs71AU-Eq_jPhAddHWrOOJs,186
+jogo_rpg/batalha.py,sha256=Iq0U5wfiZVytG5PXpQ6r4nvdl_0ZyuQFCQ8uc6XLDfM,960
+jogo_rpg/npc.py,sha256=f_QXpSakBvx42MJlDcXWKF1drCjJEnF1l-7p_JQ7Axg,707
+jogo_rpg/player.py,sha256=_Xku4CQ3-CPWxPAcv8NyvMNjyJXEVXQZxc06dq7VxCk,621
+jogo_rpg/utils.py,sha256=CX66wkSGMqICKV7t1WgghG8FqetKhyQk-pvm7LseVDo,64
+jogo_rpg-0.1.dist-info/METADATA,sha256=5cQiszjnNrWbP6BGujvQYRfGzP7eEi8DhtZiRCUtCDc,206
+jogo_rpg-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jogo_rpg-0.1.dist-info/top_level.txt,sha256=ca102EeSccEiRftt4l5MAJkx8ySnNCzHCc_VinhQLBg,9
+jogo_rpg-0.1.dist-info/RECORD,,
