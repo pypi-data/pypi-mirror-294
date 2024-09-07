@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: akantu-geomechanical-solver
+Version: 0.1.3
+Summary: Geomechanical simulator based on the open-source FEM library Akantu.
+Home-page: https://gitlab.com/emil.gallyamov/akantu-geomechanical-solver
+License: GPL
+Author: Emil Gallyamov
+Author-email: emil.gallyamov@epfl.ch
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: parallel
+Provides-Extra: serial
+Provides-Extra: test
+Requires-Dist: akantu (==4.0.1rc2+226.gad188433212) ; extra == "serial"
+Requires-Dist: gmsh (>=4.13.1,<5.0.0)
+Requires-Dist: mpi4py (>=4.0.0,<5.0.0)
+Requires-Dist: mpmath (>=1.3.0,<2.0.0) ; extra == "dev" or extra == "test"
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: pre-commit (>=3.8.0,<4.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=8.3.2,<9.0.0) ; extra == "dev" or extra == "dev" or extra == "test"
+Requires-Dist: scipy (>=1.14.0,<2.0.0) ; extra == "dev" or extra == "test" or extra == "parallel"
+Requires-Dist: sphinx (>=8.0.2,<9.0.0) ; extra == "doc" or extra == "dev"
+Project-URL: Repository, https://gitlab.com/emil.gallyamov/akantu-geomechanical-solver
+Description-Content-Type: text/markdown
+
+
+[![Project Status](https://img.shields.io/badge/status-under%20development-yellow)](https://gitlab.com/hsolleder/akantu-geomechanical-solver)
+![GitLab License](https://img.shields.io/gitlab/license/hsolleder%2Fakantu-geomechanical-solver)
+
+# Akantu Geomechanical solver
+
+This package contains a geomechanical simulator based on the open-source FEM library [Akantu].
+
+## Install
+
+Start by cloning the repository, for instance using
+
+```bash
+git clone git@gitlab.com:hsolleder/akantu-geomechanical-solver.git
+```
+
+To set up the backend environment, you need [pip](https://pip.pypa.io/en/stable/installation/). The akantu software can be installed using two different approaches:
+
+### Serial
+
+To install the serial version of akantu, run
+
+``` bash
+pip install .[serial] --index-url https://gitlab.com/api/v4/projects/15663046/packages/pypi/simple
+```
+
+### Parallel (WIP)
+
+To install the parallel version of akantu, using the `installation.sh` script or the Docker image
+
