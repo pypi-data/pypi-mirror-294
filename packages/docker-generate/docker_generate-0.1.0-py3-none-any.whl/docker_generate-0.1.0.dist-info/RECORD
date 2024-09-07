@@ -1,0 +1,5 @@
+docker_generate.py,sha256=eByuQNf8W-3FndMRlls5V4Ov0KOqOLl1NX7OwNpUxd8,4592
+docker_generate-0.1.0.dist-info/entry_points.txt,sha256=c1QK_XFiYPgAumH5_O4qK3HgJXdYmpVvbf9myKofhwE,50
+docker_generate-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+docker_generate-0.1.0.dist-info/METADATA,sha256=mF1NvtUvsg9UpebBDGzCD-erNhVo-gOyuRdZf-KSGXg,858
+docker_generate-0.1.0.dist-info/RECORD,,

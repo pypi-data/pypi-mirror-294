@@ -1,0 +1,3 @@
+[console_scripts]
+docker-gen=src.docker_gen:main
+

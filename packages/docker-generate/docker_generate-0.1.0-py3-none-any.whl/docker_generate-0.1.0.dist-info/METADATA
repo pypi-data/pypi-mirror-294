@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: docker-generate
+Version: 0.1.0
+Summary: Generate Dockerfile(s) for your projects
+License: MIT
+Author: latentdream
+Author-email: email@guillaume.sh
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: anthropic (>=0.34.2,<0.35.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: click-spinner (>=0.1.10,<0.2.0)
+Requires-Dist: openai (>=1.43.0,<2.0.0)
+Requires-Dist: prompt-toolkit (>=3.0.47,<4.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# 🐋 Generate Dockerfile, on the fly
+
+```
+# Install
+pip install docker-gen ploomber-cloud
+
+# Genetare a custom dockerfile four your project
+docker-gen
+
+# Deploy your project
+ploomber-cloud deploy
+```
+
+
+
