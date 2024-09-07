@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "blueprint-environments"
+version = "0.1.2"
+description = "Set of tools to manage environments"
+authors = ["Carlo G <carlo.rafael@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "environments"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyyaml = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
