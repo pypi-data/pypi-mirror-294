@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+wrapper_connector/__init__.py
+wrapper_connector/connectionMySql.py
+wrapper_mysql_connector.egg-info/PKG-INFO
+wrapper_mysql_connector.egg-info/SOURCES.txt
+wrapper_mysql_connector.egg-info/dependency_links.txt
+wrapper_mysql_connector.egg-info/requires.txt
+wrapper_mysql_connector.egg-info/top_level.txt
