@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+logmon/__init__.py
+logmon/bot.py
+logmon/commands_linux.py
+logmon/config.py
+logmon/init.py
+logmon/main_executor.py
+logmon/main_watcher.py
+logmon/notify_loop.py
+logmon.egg-info/PKG-INFO
+logmon.egg-info/SOURCES.txt
+logmon.egg-info/dependency_links.txt
+logmon.egg-info/requires.txt
+logmon.egg-info/top_level.txt

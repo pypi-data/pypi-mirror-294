@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logmon"
+version = "0.0.2"
+description = "Linux authentication log monitor and commands executor"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["authentication", "logs", "monitoring", "telegram"]
+authors = [
+  {name = "DrEm-s", email = "unfol2000@gmail.com" }
+]
+
+dependencies = [
+  "certifi==2024.6.2",
+  "charset-normalizer==3.3.2",
+  "idna==3.7",
+  "pyinotify-elephant-fork==0.0.1",
+  "python-dotenv==1.0.1",
+  "requests==2.32.3",
+  "urllib3==2.2.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/DrEm-s/logmonitor"
