@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: multilogin
+Version: 2.0.0
+Summary: 
+Author: teocns
+Author-email: teocns@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings (>=2.3.4,<3.0.0)
+Requires-Dist: requests
+Requires-Dist: urllib3 (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+
+##  Overview
+
+Multilogin SDK and CLI client for managing user authentication, profile data, and controlling the launcher.
+
+---
+
+##  Getting Started
+
+
+###  Installation
+
+
+```
+pip install mlx-py
+```
+---
+
+##  Contributing
+
+Contributions are welcome!
+
+---
+
+##  License
+
+This project is released under the [MIT](https://github.com/uvflow/mlx-py/tree/main/LICENSE) License. For more details, refer to the [LICENSE](https://github.com/uvflow/mlx-py/tree/main/LICENSE) file.
+
+
