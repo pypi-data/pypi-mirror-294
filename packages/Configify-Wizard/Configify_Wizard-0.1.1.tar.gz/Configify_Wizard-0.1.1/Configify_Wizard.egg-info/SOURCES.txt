@@ -1,0 +1,11 @@
+README.md
+setup.py
+Configify_Wizard.egg-info/PKG-INFO
+Configify_Wizard.egg-info/SOURCES.txt
+Configify_Wizard.egg-info/dependency_links.txt
+Configify_Wizard.egg-info/requires.txt
+Configify_Wizard.egg-info/top_level.txt
+config_parser_module/__init__.py
+config_parser_module/config_reader.py
+tests/__init__.py
+tests/test_config_parser_module.py
