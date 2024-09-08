@@ -1,0 +1,9 @@
+backend: gcs
+# tf_bucket:
+# org_buckets:
+#   xia-test-bucket:
+#     bucket_project:
+#     bucket_region: eu
+#     bucket_orgs:
+#      - <realm>/<foundation>
+
