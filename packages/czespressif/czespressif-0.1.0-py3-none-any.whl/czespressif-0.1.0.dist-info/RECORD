@@ -1,0 +1,8 @@
+templates/CHANGELOG.md.j2,sha256=4T63UTd-HP0A_y6gCMBrXR4jYrKrSle4vEB2piCtZ_I,1706
+tests/test_czespressif.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+czespressif-0.1.0.dist-info/LICENSE,sha256=fwe0AmqAqkGbg7v5zVS5fskBZq3z-OFrtOEZxfPT4Vs,11327
+czespressif-0.1.0.dist-info/METADATA,sha256=6dvHq-asPb9wPxrkhyE5NTafNUCEdkMPXtxmc2uq8xM,15850
+czespressif-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+czespressif-0.1.0.dist-info/entry_points.txt,sha256=lsKE9YAARU4zBlzXAc9QxGtI005vmWr8iu73mWjDKnU,64
+czespressif-0.1.0.dist-info/top_level.txt,sha256=BonJi6a0RcQmytwJfwG_9Vd9RKoi66LDlntYeNH5Bx0,16
+czespressif-0.1.0.dist-info/RECORD,,
