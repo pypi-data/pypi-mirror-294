@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+itranslator/__init__.py
+itranslator/asyncio.py
+itranslator/errors.py
+itranslator/itranslator.py
+itranslator.egg-info/PKG-INFO
+itranslator.egg-info/SOURCES.txt
+itranslator.egg-info/dependency_links.txt
+itranslator.egg-info/requires.txt
+itranslator.egg-info/top_level.txt
