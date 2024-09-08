@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Snippify"
+version = "1.0.2"
+authors = [
+  { name="Aditya Gaur", email="adityagaur.home@gmail.com" },
+]
+description = "Project Snippify: Create, Save, Use Snippets Easily, directly in the comfort zone of your terminal or your code."
+readme = "README.md"
+dependencies = ['colorama','pyboxen','pynput','pyperclip','tabulate']
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["Snippify", "Snippet Maker", "Snippet Manager", "Code Snippets", "Project Snippify"]
+
+[project.urls]
+Homepage = "https://github.com/xdityagr/Snippify"
