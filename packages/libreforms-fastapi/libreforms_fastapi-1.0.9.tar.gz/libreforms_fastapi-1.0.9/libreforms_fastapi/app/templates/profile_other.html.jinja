@@ -1,0 +1,234 @@
+{% extends "base.html.jinja" %}
+
+{% block header %}
+    <link href="{{ url_for('static', path='css/datatables.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+{{config.SITE_NAME}} — User Profile
+{% endblock %}
+
+{% block content %}
+<h4>User Profile</h4>
+<div class="container table-responsive">
+    <div class="spinner-border spinner-border-sm loading-circle" role="status"></div>
+    <table id="profileTable" class="table table-hover table-striped table-light" style="display: none;">
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div id="linkedRefsSection" class="mt-4" style="display: none;">
+    <h5>Linked References</h5>
+    <p>The section below will display back references made to this user in form submissions, not including when the user is the creator, last editor, or approver of the form. Please note: you will only be able to see form submissions listed here that your user has the necessary group-based privileges to view.</p>
+    <div class="container table-responsive" style="opacity: .7;">
+        <table id="linkedRefsTable" class="table table-hover table-striped table-light" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Document ID</th>
+                    <th>Form Name</th>
+                    <th>Details</th>
+                    <th>Last Editor</th>
+                    <th>Last Modified</th>
+                    <th>Created By</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="noLinkedRefsMessage" style="display: none;">No linked references found.</div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', path='js/datatables.js')}}"></script>
+<script>
+
+    // https://www.geeksforgeeks.org/how-to-truncate-a-string-in-javascript/
+    function GFG(str, maxLength) {
+        if (str.length > maxLength) {
+            return str.substring(0, maxLength) + '...';
+        }
+        return str;
+    }
+
+    function formatObject(obj) {
+        return Object.entries(obj)
+            .map(([key, value]) => `<strong>${key}</strong>: ${value}`)
+            .join(', ');
+    }
+
+    $(document).ready( function () {
+
+        const spinner = document.querySelector('.loading-circle');
+        const profileTable = document.getElementById('profileTable');
+        const apiKey = "{{ request.user.api_key }}";
+        const userId = "{{ target_user_id }}";
+        
+        $.ajax({
+            url: `/api/auth/get/${userId}`,
+            type: "GET",
+            beforeSend: function(xhr){xhr.setRequestHeader('X-API-KEY', apiKey);},
+            success: function(profileData) {
+
+                const attributes = [
+                    { label: "ID", value: profileData.id },
+                    { label: "Username", value: profileData.username },
+                    { label: "Email", value: profileData.email },
+                    { label: "Groups", value: profileData.groups.join(", ") },
+                    { label: "Active", value: profileData.active ? 'Yes' : 'No' },
+                    { label: "Created Date", value: '<span title="' + profileData.created_date +'">' + prettifyTimeDiff(profileData.created_date, "{{config['TIMEZONE']|string}}") + '</span>' },
+                    { label: "Last Login", value: '<span title="' + profileData.last_login +'">' + prettifyTimeDiff(profileData.last_login, "{{config['TIMEZONE']|string}}") + '</span>' },
+                    { label: "Relationships", value: renderUserRelationships(profileData.relationships) },
+                    { label: "Received Relationships", value: renderUserRelationships(profileData.received_relationships) }
+                ];
+
+                attributes.forEach(attr => {
+                    let row = `<tr>
+                        <td>${attr.label}</td>
+                        <td>${attr.value}</td>
+                    </tr>`;
+
+                    $("#profileTable tbody").append(row);
+                });
+
+                spinner.style.display = 'none'; // Hide the spinner
+                profileTable.style.display = ''; // Show the profile table
+
+                $('#profileTable').DataTable({
+                    "ordering": false,
+                    "info": false,
+                    "paging": false,
+                    "searching": false 
+                });
+
+
+
+                function fetchLinkedReferences() {
+                    $.ajax({
+                        url: `/api/auth/get_linked_refs/${profileData.username}`,
+                        type: 'GET',
+                        headers: {
+                            'X-API-KEY': apiKey,
+                        },
+                        dataType: 'json',
+                        success: function(response) {
+                            if (response.length > 0) {
+                                $('#linkedRefsSection').show();  // Show the section
+                                $('#linkedRefsTable').show();    // Show the table
+                                $('#noLinkedRefsMessage').hide(); // Hide the no data message
+                                response.forEach(doc => {
+                                    let row = `<tr>
+                                        <td>
+                                            <a href="/ui/form/read_one/${doc['metadata']['form_name']}/${doc['metadata']['document_id']}">${doc.metadata.document_id}</a>
+                                        </td>
+                                        <td>${doc.metadata.form_name.replace(/_/g, ' ')}</td>
+                                        <td>${GFG(formatObject(doc['data']), 150)}</td>
+                                        <td>
+                                            <a target="_blank" href="/ui/auth/p/${doc['metadata']['last_editor']}" class="badge bg-primary text-decoration-none" style=" {%if not config['OTHER_PROFILES_ENABLED'] and not request.user.site_admin%} pointer-events: none;{%endif%}" aria-label="Link to ${doc['metadata']['last_editor']}">
+                                                ${doc['metadata']['last_editor']}
+                                            </a>
+                                        </td>
+                                        <td><span title="${doc['metadata']['last_modified']}">${prettifyTimeDiff(doc['metadata']['last_modified'], "{{config['TIMEZONE']|string}}")}</span></td>
+                                        <td>
+                                            <a target="_blank" href="/ui/auth/p/${doc['metadata']['created_by']}" class="badge bg-primary text-decoration-none" style=" {%if not config['OTHER_PROFILES_ENABLED'] and not request.user.site_admin%} pointer-events: none;{%endif%}" aria-label="Link to ${doc['metadata']['created_by']}">
+                                                ${doc['metadata']['created_by']}
+                                            </a>
+                                        </td>
+                                        <td><span title="${doc['metadata']['created_at']}">${prettifyTimeDiff(doc['metadata']['created_at'], "{{config['TIMEZONE']|string}}")}</span></td>
+
+
+                                    </tr>`;
+                                    $('#linkedRefsTable tbody').append(row);
+                                });
+                                $('#linkedRefsTable').DataTable({
+                                    "ordering": true,
+                                    "order": [[4, "desc"]],
+                                    "lengthChange": false,
+                                    "info": false,
+                                    // "searching": false,
+                                    "paging": false
+                                });
+                            } else {
+                                $('#linkedRefsSection').hide();  // Hide the section
+                                $('#noLinkedRefsMessage').show(); // Show the no data message
+                            }
+                        },
+                        error: function(xhr) {
+                            console.error('Failed to fetch linked references', xhr.responseText);
+                            $('#linkedRefsSection').hide();  // Also hide on error
+                            $('#noLinkedRefsMessage').show(); // Show the no data message
+                        }
+                    });
+                }
+
+                fetchLinkedReferences();
+
+
+            },
+            error: function(error) {
+                console.error("Error fetching profile data:", error);
+
+                // Stash a flashed success message and redirect
+                setFlashMessage("There was an issue fetching user profile data", AlertCategories.WARNING);
+                window.location.href = '/ui/auth/profile';
+
+            }
+        });
+    });
+    // Function to copy to clipboard and show tooltip
+    function copyToClipboard(element) {
+        // Copying to clipboard
+        var textElement = element.closest('td').querySelector('#apiKey');
+        var text = textElement.innerText;
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = text;
+        elem.select();
+        document.execCommand("copy");
+        document.body.removeChild(elem);
+
+        // Change the icon
+        var icon = element;
+        icon.innerHTML = '<path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>';
+
+
+        // Tooltip activation
+        var tooltip = new bootstrap.Tooltip(element, {
+            title: "Copied!",
+            trigger: "manual",
+            placement: 'top' // Adjust if needed
+        });
+
+        tooltip.show(); // Show the tooltip
+
+        // Hide tooltip after 2 seconds
+        setTimeout(function() {
+            tooltip.hide();
+        }, 2000);
+
+        // Original icon paths
+        var originalIconPaths = `
+            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>`;
+
+        // Revert the icon back to its original state after 3 seconds
+        setTimeout(function() {
+            icon.innerHTML = originalIconPaths;
+        }, 3000);
+
+    }
+</script>
+
+{% endblock %}
