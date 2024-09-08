@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tcrdb
+Version: 0.0.3
+Summary: Base classes and utilities for simple python databases.
+Home-page: https://github.com/anamoyee/tcrdb
+Author: anamoyee
+License: GPL-3.0 license
+Project-URL: Source, https://github.com/anamoyee/tcrdb
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11,<3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tcrutils>=12.0.248
+
+# TCRDB
+
+Base classes and utilities for simple python databases.
