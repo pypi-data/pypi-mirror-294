@@ -1,0 +1,16 @@
+auth_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_plugin/base_auth.py,sha256=qLZRNsQC5mvFs1BvnHtBIUJFL5KkylMajC-D3WhkAr0,370
+auth_plugin/config.py,sha256=TdklRkhypSHpvj6CoPWFEz0Ir3hgPpF2I048lgC61Qs,145
+auth_plugin/db_manager.py,sha256=MiwSiu4MY1bJ9PpVRNjLpSeXbFD92gmK98prIobr_G4,2012
+auth_plugin/jwt_auth.py,sha256=Rpm232q7bZ5UeTAX5gDF5zR3Fx7Qt2lP0lxOIlJRFZI,801
+auth_plugin/oauth2_auth.py,sha256=qp6dgbPXkYwNDZ11DmuGrmc90GF3KUfyktPbrzwIZ7g,1102
+auth_plugin/utils.py,sha256=rdZX-cmMlk3nOJCLkOnBkiwfjTHoOvvzob2C8qI9Cf8,159
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_db_manager.py,sha256=Jxn9lFsGAQiPeThw4k6INnGeSXSFG8cr-b2VfJtqS90,1121
+tests/test_jwt_auth.py,sha256=awkhMys2BXtLK6vkK4McTga5qQGrkJ7iKpbnMjaN0NQ,958
+tests/test_oauth2_auth.py,sha256=ltHVD9CWGkIupy8hQHRVapsU57UlWNt-TSoO6rrSmoI,728
+tests/test_utils.py,sha256=0fMYvSJl4PnrYOZUCq_GjtWI0k195b-iw8PfiBixUVw,545
+auth_plugin-0.2.2.0.dist-info/METADATA,sha256=3isoRSk81AWQNZxxNjs_BnfPiFFWpF-umubvujxLYdw,2938
+auth_plugin-0.2.2.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+auth_plugin-0.2.2.0.dist-info/top_level.txt,sha256=gafWlo_8GqlzyQmp4eodW3T9D2-7oji8flvVA_Kzn3k,18
+auth_plugin-0.2.2.0.dist-info/RECORD,,
