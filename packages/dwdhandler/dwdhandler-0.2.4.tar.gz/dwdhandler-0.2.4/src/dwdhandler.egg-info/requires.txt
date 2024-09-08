@@ -1,0 +1,13 @@
+numpy
+pandas
+seaborn
+matplotlib
+folium
+plotly
+scipy
+psycopg2
+sqlalchemy
+python-dotenv
+
+[rasterproc]
+pyproj
