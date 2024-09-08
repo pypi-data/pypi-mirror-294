@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: artemis-hunter
+Version: 0.114
+Summary: This package does automated vulnerability enumeration and recommends exploits
+Home-page: https://github.com/sudouser2010/artemis
+Author: "Hadron Davinci"
+Project-URL: Bug Tracker, https://github.com/sudouser2010/artemis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: toml==0.10.2
+Requires-Dist: beautifulsoup4==4.12.3
+
+# Artemis Hunter
+* note the setup steps described here are being beta-tested.
+
+## This package does automated vulnerability enumeration and recommends exploits.<br><br>
+
+### How to Run on Non Kali-Linux Operating System (Recommended)
+* Clone repo
+* cd into repo
+* Build image
+
+    ```
+    docker build -t artemis .
+    ```
+* Run as terminal inside container
+  ```
+  docker run -ti -v ${PWD}:/root/repo artemis
+  ```
+
+* Run Artemis
+
+  ```
+  artemis_hunter 
+  ```
+  
+---  
+
+### How to Run on Kali-Linux Operating System
+* Install Artemis Python Package
+
+    ```
+    pip install artemis_hunter
+    ```
+* Run Artemis
+  ```
+  artemis_hunter 
+  ```
