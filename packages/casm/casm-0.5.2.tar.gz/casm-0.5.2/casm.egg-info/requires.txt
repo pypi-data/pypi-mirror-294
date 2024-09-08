@@ -1,0 +1,5 @@
+makefile-help
+podman>=5.0.0
+podman_compose>=1.2.0
+xarg-python>=1.5.1
+xmanage>=0.4.2
