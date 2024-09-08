@@ -1,0 +1,6 @@
+argcomplete>=2.0.0
+pydantic>=2.8
+setuptools>=72
+
+[devel]
+xeet>=0.5.5
