@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+LUCY/__init__.py
+LUCY/app.py
+LUCY/data_collection.py
+LUCY/data_preprocessing.py
+LUCY/hyperparameter.py
+MyFriendLUCY.egg-info/PKG-INFO
+MyFriendLUCY.egg-info/SOURCES.txt
+MyFriendLUCY.egg-info/dependency_links.txt
+MyFriendLUCY.egg-info/entry_points.txt
+MyFriendLUCY.egg-info/requires.txt
+MyFriendLUCY.egg-info/top_level.txt
