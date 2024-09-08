@@ -1,0 +1,9 @@
+LICENSE
+cli.py
+setup.py
+hugo_sizer.egg-info/PKG-INFO
+hugo_sizer.egg-info/SOURCES.txt
+hugo_sizer.egg-info/dependency_links.txt
+hugo_sizer.egg-info/entry_points.txt
+hugo_sizer.egg-info/requires.txt
+hugo_sizer.egg-info/top_level.txt
