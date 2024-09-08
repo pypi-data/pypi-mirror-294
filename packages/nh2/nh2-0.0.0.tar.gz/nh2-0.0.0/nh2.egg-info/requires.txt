@@ -1,0 +1,7 @@
+certifi
+h2
+
+[dev]
+pylint
+pytest-cov
+pytest
