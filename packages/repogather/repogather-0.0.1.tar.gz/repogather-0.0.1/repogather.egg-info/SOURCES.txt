@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+repogather.py
+setup.py
+repogather.egg-info/PKG-INFO
+repogather.egg-info/SOURCES.txt
+repogather.egg-info/dependency_links.txt
+repogather.egg-info/requires.txt
+repogather.egg-info/top_level.txt
