@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qanalytics"
+authors = [{ name="mattcharr", email="matthieu.charrier.pro@gmail.com" }]
+maintainers = [{ name="mattcharr", email="matthieu.charrier.pro@gmail.com" }]
+description = "Design and manage your own exotic financial derivatives contracts"
+readme = "README.md"
+version = "0.1.2"
+requires-python=">=3.5"
+classifiers = [
+    "Programming Language :: C++",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3.5",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Operating System :: Microsoft :: Windows"
+]
+keywords = [
+    "finance", "pricing", "pricer", "quantitative", "quant",
+    "option", "structured product", "derivatives", "model", "quantitative"
+]
+
+[tool.setuptools]
+include-package-data = true
+packages = ["qanalytics"]
+
+[tool.setuptools.package-data]
+'qanalytics' = ['*.dll', '*.so', '*.so.*', '*.dylib']
+
+[project.urls]
+Homepage = "https://github.com/matt-charr/qAPP/"
+Documentation = "https://matt-charr.github.io/qAPP/"
+Repository = "https://github.com/matt-charr/qAPP/"
+Issues = "https://github.com/matt-charr/qAPP/issues/"
+Changelog = "https://github.com/matt-charr/qAPP/releases/"
