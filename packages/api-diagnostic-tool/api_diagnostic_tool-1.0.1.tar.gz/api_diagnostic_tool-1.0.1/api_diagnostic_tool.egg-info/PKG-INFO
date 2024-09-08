@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: api_diagnostic_tool
+Version: 1.0.1
+Summary: A CLI tool for API diagnostics
+Home-page: https://github.com/yourusername/api_diagnostic_tool
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: requests
