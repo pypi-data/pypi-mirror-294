@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/ecliptor/__init__.py
+src/ecliptor/ecliptor.py
+src/ecliptor/exceptions.py
+src/ecliptor.egg-info/PKG-INFO
+src/ecliptor.egg-info/SOURCES.txt
+src/ecliptor.egg-info/dependency_links.txt
+src/ecliptor.egg-info/requires.txt
+src/ecliptor.egg-info/top_level.txt
