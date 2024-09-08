@@ -1,0 +1,8 @@
+transformation_libraries/__init__.py,sha256=ZY6KpAfWag0IW858q-mX0O0B4K0uK2LFvsD2RrKoFA0,135
+transformation_libraries/transpose/__init__.py,sha256=TKXyA701TeUquUpK1ZU6ANtC75Vf3hWYMULgvxMCEdk,159
+transformation_libraries/transpose/api.py,sha256=RMzsG3Stz_zKERkDv8KYKWhuapmjMF41FLx6UGpRiZI,127
+transformation_libraries/transpose/core.py,sha256=D2WlDevj4IoPVEesYLc-5dE_MIcQhkc2P3oOB_m3-X8,1022
+data_transformations_tools-0.1.0.dist-info/LICENSE,sha256=fhJYKHyXqLL7X9EDZcsm9TNT7qxgYtpHKzBZBQ3nkmA,1069
+data_transformations_tools-0.1.0.dist-info/METADATA,sha256=bwqk185agpA3vS9XxXVOI-C4Jl73uLINrX2fQK1Fcaw,1258
+data_transformations_tools-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+data_transformations_tools-0.1.0.dist-info/RECORD,,

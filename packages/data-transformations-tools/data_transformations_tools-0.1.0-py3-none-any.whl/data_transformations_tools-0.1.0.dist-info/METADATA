@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: data-transformations-tools
+Version: 0.1.0
+Summary: Python library to data transformation
+License: MIT
+Author: Johnny Lazo
+Author-email: johnny.lazoq@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: pyment (>=0.3.3,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Transformation Library
+
+A Python library for performing various transformations, including converting between imperial unit lengths and weights, and performing 2D convolution and transpose operations.
+
+## Features
+
+- **Length Conversion**: Convert lengths between miles, yards, feet, and inches.
+- **Weight Conversion**: Convert weights between hundredweight, stone, pounds, and ounces.
+- **2D Convolution**: Perform 2D convolution operations on matrices.
+- **Fast Transpose**: Perform fast transpose operations on 2D matrices.
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install transformation_library
