@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/sliderplot.egg-info/PKG-INFO
+src/sliderplot.egg-info/SOURCES.txt
+src/sliderplot.egg-info/dependency_links.txt
+src/sliderplot.egg-info/top_level.txt
