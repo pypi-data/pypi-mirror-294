@@ -1,0 +1,4 @@
+[console_scripts]
+gdbdbg-gdb = gdbdbg.gdbinit:main
+gdbdbg-info = gdbdbg.dbg:main
+gdbdbg-inject = gdbdbg.inject:main
