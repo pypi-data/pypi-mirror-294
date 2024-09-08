@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nh2
+Version: 0.0.0
+Summary: A simple HTTP/2 connection manager.
+Author-email: Daniel Reed <nmlorg@gmail.com>
+Project-URL: Homepage, https://github.com/nmlorg/nh2
+Project-URL: Issues, https://github.com/nmlorg/nh2/issues
+Requires-Python: >=3.8
+Requires-Dist: certifi
+Requires-Dist: h2
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
