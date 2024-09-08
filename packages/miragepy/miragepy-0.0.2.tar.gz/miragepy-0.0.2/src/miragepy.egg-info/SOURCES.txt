@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/mirage/__init__.py
+src/mirage/mirage.py
+src/miragepy.egg-info/PKG-INFO
+src/miragepy.egg-info/SOURCES.txt
+src/miragepy.egg-info/dependency_links.txt
+src/miragepy.egg-info/entry_points.txt
+src/miragepy.egg-info/requires.txt
+src/miragepy.egg-info/top_level.txt
