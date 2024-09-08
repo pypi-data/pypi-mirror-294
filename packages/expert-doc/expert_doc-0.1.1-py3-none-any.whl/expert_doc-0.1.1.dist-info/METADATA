@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: expert_doc
+Version: 0.1.1
+Summary: Document parser for 'expert'
+Author: Liam Tengelis
+Author-email: liam.tengelis@blacktuskdata.com
+Requires-Dist: pikepdf
+Requires-Dist: pypdfium2
+

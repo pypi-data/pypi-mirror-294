@@ -1,0 +1,8 @@
+expert_doc/__init__.py,sha256=ymMeweXR26Ae8AO_e48lvRjDPrMfDW_5MWCL4gbEfzM,122
+expert_doc/doc_parser.py,sha256=ZaMNlLwnM_2zn5x2fMHIJ3OPs5bl6ADuJmio-6rKgfo,433
+expert_doc/models.py,sha256=rm851h4gNd5vgj7bm3pUTIn5W8JWowZriVtwplOIHvU,492
+expert_doc/pdf_parser.py,sha256=OPRRSeDQdZWhMUPDvULr4DRJ7aae16BOhkoSXzFPCXo,1236
+expert_doc-0.1.1.dist-info/METADATA,sha256=Z-c26m19-UXjxILfVVJWg36PQMZVpd9sifgqqkLGttY,209
+expert_doc-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+expert_doc-0.1.1.dist-info/top_level.txt,sha256=o8IM_7mM_7JzAQOeoSl_g6CJCE49Fiu0WbWrS-Vc5SA,11
+expert_doc-0.1.1.dist-info/RECORD,,
