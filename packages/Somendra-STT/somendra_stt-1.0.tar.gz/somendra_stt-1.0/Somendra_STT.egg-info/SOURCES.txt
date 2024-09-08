@@ -1,0 +1,6 @@
+setup.py
+Somendra_STT/__init__.py
+Somendra_STT.egg-info/PKG-INFO
+Somendra_STT.egg-info/SOURCES.txt
+Somendra_STT.egg-info/dependency_links.txt
+Somendra_STT.egg-info/top_level.txt
