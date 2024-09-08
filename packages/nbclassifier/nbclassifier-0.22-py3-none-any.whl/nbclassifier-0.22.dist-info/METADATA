@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nbclassifier
+Version: 0.22
+Summary: a package that implements the naive bayesian classifier in a sample dataset
+Author: Raghul
+Author-email: raghulares@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
