@@ -1,0 +1,2 @@
+[console_scripts]
+fpvgcc = fpvgcc.cli:main
