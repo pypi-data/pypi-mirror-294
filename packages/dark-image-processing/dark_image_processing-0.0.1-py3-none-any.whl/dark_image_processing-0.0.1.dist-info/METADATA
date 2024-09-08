@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dark_image_processing
+Version: 0.0.1
+Summary: Processamento de Imagens com Python
+Home-page: https://github.com/DarkSoulBr/image-processing-package
+Author: Luis Ramires
+Author-email: luis.ramires@uol.com.br
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+
+# package_name
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histrogram matching, Structural similarity and Resize Images
+	Utils:
+		- Read, Save and Plot Image	
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install dark_image_processing
+```
+
+## Author
+Luis Ramires
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
