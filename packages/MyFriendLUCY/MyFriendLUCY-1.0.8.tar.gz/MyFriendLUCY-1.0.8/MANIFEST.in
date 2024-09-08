@@ -1,0 +1,2 @@
+include LUCY/eth_lstm_best_strong_greatest_model.keras
+include LUCY/scaler.pkl
