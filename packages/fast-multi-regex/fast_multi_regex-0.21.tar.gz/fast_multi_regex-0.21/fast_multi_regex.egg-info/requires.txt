@@ -1,0 +1,14 @@
+hyperscan>=0.7.7
+pydantic
+pyeda
+tsc-base
+fastapi
+uvicorn
+watchdog
+asyncio
+requests
+aiohttp
+pyyaml
+toml
+jsoncomment
+prometheus-client
