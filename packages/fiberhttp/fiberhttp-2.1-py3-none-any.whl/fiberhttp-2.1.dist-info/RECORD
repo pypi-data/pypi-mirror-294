@@ -1,0 +1,10 @@
+fiberhttp/__init__.py,sha256=KJnmVfCZZEXoYrTmwOLPouhGPWmoYyW9AGGOp1I4C4w,192
+fiberhttp/client_file.py,sha256=VPMDRu1AeoFf73LxFyG59LsbGg0XmdofXBh_8k73AtU,3388
+fiberhttp/methods.py,sha256=MINXTUpiDIbVsmExh4O4mPYO_e3QmK29cVUjfVgzOJU,1054
+fiberhttp/other_functions.py,sha256=LHBDiriTHoH8TzjD5-ZcRIhvUBwkZzMKQ2NdgrFzjP8,1028
+fiberhttp/responses.py,sha256=nfutLXoJk_3UQq3RpxDUbIwIctxrVMqeD4pwAdFh_kU,912
+fiberhttp-2.1.dist-info/LICENSE,sha256=s-aKZVbz8mSXQjzeaWnVgc7eI-fln2VKsqr_3PMbWPM,38
+fiberhttp-2.1.dist-info/METADATA,sha256=tUcUwRshGAaiIT3RiORg510l7MPJBNDrEaViH7wcU0U,1518
+fiberhttp-2.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+fiberhttp-2.1.dist-info/top_level.txt,sha256=vsRmGOSQUC88Swpb9bVaYS0Y6YJNm1qxhS9y0Np0Y0w,10
+fiberhttp-2.1.dist-info/RECORD,,
