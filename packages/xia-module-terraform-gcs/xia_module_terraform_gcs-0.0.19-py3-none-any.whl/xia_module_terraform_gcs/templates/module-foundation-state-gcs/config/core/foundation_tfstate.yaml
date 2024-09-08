@@ -1,0 +1,9 @@
+backend: gcs
+# default_tf_bucket:
+# org_buckets:
+#   xia-test-bucket:
+#     bucket_project:
+#     bucket_region: eu
+#     bucket_orgs:
+#      - . # . means default value, could use any starting part of <realm>/<foundation> as match pattern
+
