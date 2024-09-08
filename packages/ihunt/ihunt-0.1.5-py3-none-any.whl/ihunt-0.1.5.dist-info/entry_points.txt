@@ -1,0 +1,2 @@
+[console_scripts]
+ihunt = ihunt:main
