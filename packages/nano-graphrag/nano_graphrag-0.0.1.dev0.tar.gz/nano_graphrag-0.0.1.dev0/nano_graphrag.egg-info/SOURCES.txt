@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+readme.md
+setup.py
+drive_events/__init__.py
+nano_graphrag.egg-info/PKG-INFO
+nano_graphrag.egg-info/SOURCES.txt
+nano_graphrag.egg-info/dependency_links.txt
+nano_graphrag.egg-info/requires.txt
+nano_graphrag.egg-info/top_level.txt
