@@ -1,0 +1,2 @@
+[console_scripts]
+uzweb = uzweb.cli:main

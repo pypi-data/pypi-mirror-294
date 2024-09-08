@@ -1,0 +1,8 @@
+setup.py
+uzweb.egg-info/PKG-INFO
+uzweb.egg-info/SOURCES.txt
+uzweb.egg-info/dependency_links.txt
+uzweb.egg-info/entry_points.txt
+uzweb.egg-info/top_level.txt
+webengine/__init__.py
+webengine/cli.py
