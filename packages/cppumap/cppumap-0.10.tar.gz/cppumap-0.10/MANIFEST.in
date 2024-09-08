@@ -1,0 +1,7 @@
+include cppumap/requirements.txt
+include cppumap/thirdparty.json
+include cppumap/cppum.pyx
+include cppumap/cppum_compile.py
+include cppumap/joinall.py
+include cppumap/LICENSE
+include cppumap/README.MD
