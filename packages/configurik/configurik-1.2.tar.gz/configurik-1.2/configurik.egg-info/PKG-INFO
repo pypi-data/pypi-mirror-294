@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: configurik
+Version: 1.2
+Summary: Library for loading yml configurations
+Author: Vitaly Mahonin
+Author-email: nabuki@vk.com
+Requires-Python: >=3.8
+Requires-Dist: python-dotenv<2.0.0,>=1.0.1
