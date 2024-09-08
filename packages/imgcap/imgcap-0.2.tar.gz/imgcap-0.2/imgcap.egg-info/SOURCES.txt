@@ -1,0 +1,10 @@
+README.md
+imgcap.py
+pyproject.toml
+imgcap.egg-info/PKG-INFO
+imgcap.egg-info/SOURCES.txt
+imgcap.egg-info/dependency_links.txt
+imgcap.egg-info/entry_points.txt
+imgcap.egg-info/requires.txt
+imgcap.egg-info/top_level.txt
+tests/test_imgcap.py
