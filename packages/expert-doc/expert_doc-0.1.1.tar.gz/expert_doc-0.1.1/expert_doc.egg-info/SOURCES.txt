@@ -1,0 +1,11 @@
+README.md
+setup.py
+expert_doc/__init__.py
+expert_doc/doc_parser.py
+expert_doc/models.py
+expert_doc/pdf_parser.py
+expert_doc.egg-info/PKG-INFO
+expert_doc.egg-info/SOURCES.txt
+expert_doc.egg-info/dependency_links.txt
+expert_doc.egg-info/requires.txt
+expert_doc.egg-info/top_level.txt
