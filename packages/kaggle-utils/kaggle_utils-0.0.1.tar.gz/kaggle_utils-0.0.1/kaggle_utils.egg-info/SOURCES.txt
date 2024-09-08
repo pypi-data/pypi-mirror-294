@@ -1,0 +1,6 @@
+README.md
+setup.py
+kaggle_utils.egg-info/PKG-INFO
+kaggle_utils.egg-info/SOURCES.txt
+kaggle_utils.egg-info/dependency_links.txt
+kaggle_utils.egg-info/top_level.txt
