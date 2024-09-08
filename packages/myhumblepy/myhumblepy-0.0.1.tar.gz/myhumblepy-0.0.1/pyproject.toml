@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "myhumblepy"
+version = "0.0.1"
+description = "A package of utility functions"
+authors = ["JeremyLew <45438791+JeremyLew@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.2.2"
+pytest = "^7.4"
+black = "*"  
+mypy = "*"  
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
