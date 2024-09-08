@@ -1,0 +1,9 @@
+typer
+google-generativeai
+python-dotenv
+httpx
+setuptools
+wheel
+build
+twine
+ruff
