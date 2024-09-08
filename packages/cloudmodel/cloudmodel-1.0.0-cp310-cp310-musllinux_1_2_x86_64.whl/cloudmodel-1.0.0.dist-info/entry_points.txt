@@ -1,0 +1,3 @@
+[console_scripts]
+cloudmodel = cloudmodel.__main__:main
+
