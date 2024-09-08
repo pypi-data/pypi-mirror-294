@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+configurik/__init__.py
+configurik/__init__.pyi
+configurik.egg-info/PKG-INFO
+configurik.egg-info/SOURCES.txt
+configurik.egg-info/dependency_links.txt
+configurik.egg-info/requires.txt
+configurik.egg-info/top_level.txt
