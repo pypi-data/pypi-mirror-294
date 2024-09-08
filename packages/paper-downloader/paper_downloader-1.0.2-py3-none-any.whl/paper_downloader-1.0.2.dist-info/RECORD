@@ -1,0 +1,12 @@
+paper_down/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paper_down/downloader.py,sha256=qfm-khUOCCFTcsiLqTmX0zfoHdOprivmhCU5PZgpJnQ,1886
+paper_down/main.py,sha256=xcfghaeMZn5mtzvZ5Xh9qt07CJ0bPq6JuaX_VC9_bT8,5163
+paper_down/save.py,sha256=0hLsGWbjj4-12Vnr6YPRzdDoO2zHJ5ErrQLpkHWa9N0,230
+paper_down/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paper_down/config/config_loader.py,sha256=sZAaQX3333LOHTtxvJ2p5zBZlPrRip0aJZfMEnNX_aE,710
+paper_downloader-1.0.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paper_downloader-1.0.2.dist-info/METADATA,sha256=v-Ws-MtFvMy_o0EcKm7Uzumk2LSKPNfL07ARZISrTDs,1359
+paper_downloader-1.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+paper_downloader-1.0.2.dist-info/entry_points.txt,sha256=ty9vspYY5a56_kRIaTDlOq62rtDztUVy06OLVfGymcg,44
+paper_downloader-1.0.2.dist-info/top_level.txt,sha256=Z_tSeNMjfFFILV52PP5ljw26yuZqK3H12DOcfCocUQE,11
+paper_downloader-1.0.2.dist-info/RECORD,,
