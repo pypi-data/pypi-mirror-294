@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lens_v1
+Version: 0.1.0
+Summary: A package for extracting named entities in skin cancer narratives using a pre-trained NER model.
+Author: Daisy Monika Lal
+Author-email: d.m.lal@lancaster.ac.uk
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: transformers >=4.0.0
+Requires-Dist: torch >=1.7.0
+Requires-Dist: spacy >=3.0.0
+Requires-Dist: pandas >=1.0.0
+Requires-Dist: numpy >=1.19.0
+Requires-Dist: spacy-transformers >=1.0.0
+
