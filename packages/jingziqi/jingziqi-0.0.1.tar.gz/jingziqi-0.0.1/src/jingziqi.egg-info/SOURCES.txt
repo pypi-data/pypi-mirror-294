@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/jingziqi.egg-info/PKG-INFO
+src/jingziqi.egg-info/SOURCES.txt
+src/jingziqi.egg-info/dependency_links.txt
+src/jingziqi.egg-info/top_level.txt
+src/moudle/__init__.py
+src/moudle/core.py
