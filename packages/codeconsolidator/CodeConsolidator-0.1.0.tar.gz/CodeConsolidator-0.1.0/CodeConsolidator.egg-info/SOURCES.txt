@@ -1,0 +1,7 @@
+setup.py
+CodeConsolidator.egg-info/PKG-INFO
+CodeConsolidator.egg-info/SOURCES.txt
+CodeConsolidator.egg-info/dependency_links.txt
+CodeConsolidator.egg-info/entry_points.txt
+CodeConsolidator.egg-info/requires.txt
+CodeConsolidator.egg-info/top_level.txt
