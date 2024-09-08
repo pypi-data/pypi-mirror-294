@@ -1,0 +1,14 @@
+calc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calc/__main__.py,sha256=SglsAHz4r4vEJWvQMXJRBWtn0Klx6iCM8kyzCevTR_c,342
+calc/app.py,sha256=RsS2H7B2a3jtUJQbvR0bIizYPrc8GF4Sfe3lyk83fgA,2223
+calc/window/__init__.py,sha256=1YPsWpb01sRPXL5Q35WnipjElCDJHvXyrhEM1Q3y0pk,56
+calc/window/design/__init__.py,sha256=xl1_Cj-BvD6ldzCqSPITP7oQTw7E4ChlRLHqJzpF6NE,67
+calc/window/design/main_window.py,sha256=6JxA14pDc7oam88h_nmy32zVn_w76TOyI2k-iTwGbFg,19688
+calc/window/design/main_window.ui,sha256=F0U7bURp8_YhcpvI7GqillvXIK2dN4jS9vHNwpTAqhs,16383
+calc/window/widgets/__init__.py,sha256=B0YbuHTV2TuV0lWPMc8hLSNvE-UZBbaGripx19gR7ik,126
+calc/window/widgets/digit_button.py,sha256=qFCHdJsGmRytdk1b9X4GwX0U3HBZzomJGQ1nLvwLadc,667
+calc/window/widgets/operator_button.py,sha256=VaIKKyxxDeF5eZWGEKaar8oASX8FU1T4zSy5oSnN3cs,998
+calc/window/window.py,sha256=2N92qike42d--Mf69LWJyQnZ8TWd98wqbEjfHMGoxas,2597
+calc_with_bugs-0.1.0.dist-info/METADATA,sha256=JeU5x7jBJXfE4WYM5el5Gn_Ym7seQj8yLuYEhbrGa6E,1448
+calc_with_bugs-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+calc_with_bugs-0.1.0.dist-info/RECORD,,
