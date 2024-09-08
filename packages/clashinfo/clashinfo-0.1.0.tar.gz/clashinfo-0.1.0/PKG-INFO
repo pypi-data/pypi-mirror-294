@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: clashinfo
+Version: 0.1.0
+Summary: A Python wrapper for the Clash of Clans and Clash Royale API
+Author: Agilarasu Saravanan
+Author-email: s.agilarasu@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests
