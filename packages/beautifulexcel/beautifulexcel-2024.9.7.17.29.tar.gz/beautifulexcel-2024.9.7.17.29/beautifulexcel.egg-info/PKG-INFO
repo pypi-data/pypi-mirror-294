@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: beautifulexcel
+Version: 2024.9.7.17.29
+Summary: BeautifulExcel is a python package that makes it easy and quick to save pandas dataframes in beautifully formatted excel files. BeautifulExcel is the Openpyxl for Data Scientists with a deadline.
+Home-page: https://github.com/vanalmsick/beautifulexcel
+Author: https://github.com/vanalmsick
+Project-URL: Issues, https://github.com/vanalmsick/beautifulexcel/issues
+Project-URL: Documentation, https://vanalmsick.github.io/beautifulexcel/
+Project-URL: Source Code, https://github.com/vanalmsick/beautifulexcel
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# beautifulexcel
+BeautifulExcel is a python package that makes it easy and quick to save pandas dataframes in beautifully formatted excel files. BeautifulExcel is the Openpyxl for Data Scientists with a deadline.
