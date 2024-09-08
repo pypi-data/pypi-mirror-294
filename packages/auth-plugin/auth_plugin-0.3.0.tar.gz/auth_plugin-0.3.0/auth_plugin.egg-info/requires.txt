@@ -1,0 +1,9 @@
+PyJWT
+pymongo
+SQLAlchemy
+mysql-connector-python
+requests
+psycopg2
+cryptography
+certifi
+cffi
