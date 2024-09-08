@@ -1,0 +1,34 @@
+[tool.black]
+line-length = 79
+
+[tool.poetry]
+name = "stormtrooper"
+version = "1.0.0"
+description = "Transformer/LLM-based zero and few-shot classification in scikit-learn pipelines"
+authors = ["Márton Kardos <power.up1163@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.0"
+scikit-learn = "^1.2.0"
+transformers = ">=4.25.0, <4.41.0"
+tqdm = "^4.60.0"
+thefuzz = "^0.18.0"
+aiohttp = "^3.8.0"
+accelerate = ">=0.2.1"
+sentence-transformers = ">=3.0.1"
+datasets = ">=2.14.0"
+torch = ">=2.0.0"
+openai = ">=1.40.0"
+mkdocs = { version = "^1.5.2", optional = true }
+mkdocs-material = { version = "^9.5.12", optional = true }
+mkdocstrings = { version = "^0.24.0", extras = ["python"], optional = true }
+
+[tool.poetry.extras]
+docs = ["mkdocs", "mkdocs-material", "mkdocstrings"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
