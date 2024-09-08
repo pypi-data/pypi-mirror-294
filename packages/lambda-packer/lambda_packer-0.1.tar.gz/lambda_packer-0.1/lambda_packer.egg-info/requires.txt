@@ -1,0 +1,7 @@
+Click
+PyYAML
+docker
+
+[dev]
+pytest
+black
