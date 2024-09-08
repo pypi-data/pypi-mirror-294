@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/soundingcenter/SoundingCenter.py
+src/soundingcenter/__init__.py
+src/soundingcenter/test_api.py
+src/soundingcenter.egg-info/PKG-INFO
+src/soundingcenter.egg-info/SOURCES.txt
+src/soundingcenter.egg-info/dependency_links.txt
+src/soundingcenter.egg-info/requires.txt
+src/soundingcenter.egg-info/top_level.txt
