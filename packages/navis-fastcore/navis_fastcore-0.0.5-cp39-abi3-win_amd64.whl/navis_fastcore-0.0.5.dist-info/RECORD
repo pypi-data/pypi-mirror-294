@@ -1,0 +1,11 @@
+navis_fastcore-0.0.5.dist-info/METADATA,sha256=uANJnLTEBLfiaINF3tMuB8IyQAVUnToF6fcoaCPLc7U,2987
+navis_fastcore-0.0.5.dist-info/WHEEL,sha256=RWw-DjN0KT3eDoJ7GTxTlCe6IRX5K2PqH8HzYCIGX_k,94
+navis_fastcore-0.0.5.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+navis_fastcore/dag.py,sha256=IiXYSRky-ihEunXSCj0RtbsKz4-y1VswG-P6DmGQnzM,20171
+navis_fastcore/nblast.py,sha256=uNCacqI3598Rj_O_Y5QEcDYkDirTxJ7vJZm0EXon-Js,2575
+navis_fastcore/wrappers/csgraph.py,sha256=lIEoWchvTl7l6YYrf7swiKuaju_r_XSZauGZShdOzYk,3412
+navis_fastcore/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navis_fastcore/__init__.py,sha256=QYBMALyX8sBJ9kOJIFlqM0DlYNvLC4HZLIN3i07hxZA,139
+navis_fastcore/__version__.py,sha256=WHKO8MKUPU2s76IoWBPR1ABKvabYzHOcKIewQ_j7hz8,53
+navis_fastcore/_fastcore.pyd,sha256=io8mgNqQIYq-h5fdJHMoz8nyMASPXSJECiMITFxMIFw,763392
+navis_fastcore-0.0.5.dist-info/RECORD,,
