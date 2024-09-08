@@ -1,0 +1,4 @@
+[console_scripts]
+get-pkl = fishknn.app:get_pkl
+predict = fishknn.app:run
+show-data = fishknn.app:show_data
