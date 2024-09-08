@@ -1,0 +1,35 @@
+gpt_model: gpt-4o-2024-08-06 # see available models for API
+log_level: INFO
+ignore_pattern_files: # files with ignore patterns
+- ~/.gitignore_global
+- ~/.config/morix/.gptignore
+- .gitignore # file in the scan folder
+- .gptignore # file in the scan folder
+text_extensions: ['.txt', '.csv', '.html', '.htm', '.json', '.xml', '.py', '.md', '.proto', '.cs'] # extensions that will automatically be considered as text
+functions: .chatgpt
+
+role: # default roles specified at startup
+  system:
+    developer:
+      content: |
+        You are a helpful assistant and lead developer that generates code and returns files using the crud_files function.
+        Rules:
+        - ALWAYS use the crud_files function to return the generated files. NOT describe files in the content.
+        - ALWAYS use the task_status function to return the status of the task.
+        - You DO NOT write pieces of code, you write files in FULL. If the code in the file has not changed, then it is NOT necessary to write it. Always write the file names before the code.
+        - You check each of your responses for errors. If something is not clear, ask.
+        - You do not need to write the code twice, just send the resulting code.
+        - You MUST follow the project rules described in the file .morix/manifesto.md if it exists
+        - Пиши по русски.
+  user:
+    additional_content: |
+      Instead of outputting code in text, send them using the crud_files function so that each file is saved to disk.
+      ALWAYS use the task_status function to return the status of the task.
+      Send ALL new or changed files. It is NOT necessary to send unchanged files.
+      Remember, you can read the files you need using the crud_files function and you have access to the console using the run_console_command function.
+
+permissions:
+  allow_run_console_command: true
+
+command_output:
+  max_output_lines: 100
