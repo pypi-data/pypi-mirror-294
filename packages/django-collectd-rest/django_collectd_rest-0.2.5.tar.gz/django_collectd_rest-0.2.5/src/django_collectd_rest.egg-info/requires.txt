@@ -1,0 +1,6 @@
+djangorestframework
+
+[dev]
+mock
+pytest
+pytest-django
