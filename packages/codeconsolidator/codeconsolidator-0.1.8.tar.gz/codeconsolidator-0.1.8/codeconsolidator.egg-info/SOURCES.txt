@@ -1,0 +1,10 @@
+README.md
+setup.py
+codeconsolidator/__init__.py
+codeconsolidator/app.py
+codeconsolidator.egg-info/PKG-INFO
+codeconsolidator.egg-info/SOURCES.txt
+codeconsolidator.egg-info/dependency_links.txt
+codeconsolidator.egg-info/entry_points.txt
+codeconsolidator.egg-info/requires.txt
+codeconsolidator.egg-info/top_level.txt
