@@ -1,0 +1,13 @@
+qanalytics/Core.py,sha256=xhM8o8GhJZvOVuO6P-XJCwxTTSiW1EBGgR6v13Db2I8,2671
+qanalytics/Enum.py,sha256=JUH2oPPsHf5CcL9dIKDD09DXu8bHb5rtjsAhL6rS4h4,1996
+qanalytics/Struct.py,sha256=rsToKjcpgcynrif4x-yp7vuBCkVulgZWxgE7y6omSYI,19486
+qanalytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qanalytics/jsoncpp.dll,sha256=jeoxn6ITpdnMC8tO4Gbg8K2obGZCD_EVZ-2_u9eDSsw,202240
+qanalytics/libcurl.dll,sha256=SnREdPbEf2hPQ2ohMax7L_RMGnd_0uYsnCr5ZM6WS1c,498688
+qanalytics/libmariadb.dll,sha256=STccUewlOVKC2mOl3x3Zhp43uXhnt93GWLvPDgP3lw4,523776
+qanalytics/qAPI.dll,sha256=PBJHLXdmYftLkLG2Ilaeg9iblf8AjBUdQnQfvwZ5WxA,2905600
+qanalytics-0.1.2.dist-info/LICENCE,sha256=auHsghjoA2DPviEl9x6Y5Ih1TWJzlLVQbS0asfzCLvg,372
+qanalytics-0.1.2.dist-info/METADATA,sha256=ohmOBlNVjBm7EEqa44prdOxQkkcUD_IPtIvfWzRDB5I,1178
+qanalytics-0.1.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+qanalytics-0.1.2.dist-info/top_level.txt,sha256=2Q0eSrZgS7JumBR2OfXKhUxtGTi3gesOLrUsDsglfOI,11
+qanalytics-0.1.2.dist-info/RECORD,,
