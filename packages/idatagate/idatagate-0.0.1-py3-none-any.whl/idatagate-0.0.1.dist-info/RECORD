@@ -1,0 +1,12 @@
+idatagate/assets/alphabet.png,sha256=wRC0KlTwSOwHyBwCHpw_jn59jI8b3Jg6txGBe1soJoU,40565
+idatagate/assets/encsa.txt,sha256=Aoc9dlBbkndn4T5RwrGhPXEAWXZNPxR-rOnEqqaqPTM,3236
+idatagate/cli.py,sha256=OZLMJra8h6rk0iQnMaCQAaX-t8f742Io7c3KlRR0UYU,2712
+idatagate/collect.py,sha256=-XWCxMsL831AMBZd5RehaMgBDcr9QeX3eW2T5ymTJQE,3283
+idatagate/dataset.py,sha256=asT14FsSBu3_6639OAytKCJ7InIjxT6sTCE3FOHkWLo,1784
+idatagate/statistics.py,sha256=Uev3NERmgpnqrtBy-5ko_LrxyAaCndiB3sOGQKkIM74,1333
+idatagate/storage.py,sha256=9S-iqvnXJxpNhDo89EViV9EO8sanOY9xAe1PXXocsD4,3715
+idatagate/utils.py,sha256=uVIllPfQ4WvueFMRmAzUH61tduYk04HrVjYtKmmJkco,2085
+idatagate-0.0.1.dist-info/METADATA,sha256=yDfRx2jP2zmkhUU1Dyjw8IO1peg1qGApAQcOc5Ha2hg,4045
+idatagate-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+idatagate-0.0.1.dist-info/entry_points.txt,sha256=t7i4ztkKY07er66G7yOxadgtTiBk9Pqr7_mYbQrjn5g,47
+idatagate-0.0.1.dist-info/RECORD,,
