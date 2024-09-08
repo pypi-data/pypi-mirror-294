@@ -1,0 +1,197 @@
+[tool.poetry]
+name = "kleinmann-orm"
+version = "0.0.2"
+description = "A tiny tortoise ORM"
+# NOTE: See CONTRIBUTORS.rst for upstream authors/contributors
+authors = ["Lev Gorodetskii <github@drsr.io>"]
+maintainers = ["Lev Gorodetskii <github@drsr.io>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/kleinmann-orm/kleinmann-orm"
+repository = "https://github.com/kleinmann-orm/kleinmann-orm.git"
+documentation = "https://github.com/kleinmann-orm/kleinmann-orm"
+keywords = ["sql", "postgres", "sqlite", "aiosqlite", "asyncpg", "relational", "database", "rdbms", "orm", "object mapper", "async", "asyncio", "aio"]
+packages = [
+    { include = "kleinmann", from = "src" },
+    { include = "kleinmann_core", from = "src" },
+]
+include = ["CHANGELOG.md", "LICENSE", "README.md"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: PL/SQL",
+    "Framework :: AsyncIO",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+iso8601 = "^1.0.2"
+aiosqlite = ">=0.20.0"
+pytz = "*"
+ciso8601 = { version = "*", markers = "sys_platform != 'win32' and implementation_name == 'cpython'", optional = true }
+uvloop = { version = "*", markers = "sys_platform != 'win32' and implementation_name == 'cpython'", optional = true }
+orjson = { version = "*", optional = true }
+asyncpg = "*"
+# FIXME: Update jsonschema tests
+pydantic = { version = "^2.0,!=2.7.0,<2.9.0", optional = true }
+
+[tool.poetry.dev-dependencies]
+# Linter tools
+mypy = "*"
+ruff = "*"
+darglint = "*"
+pygments = "*"
+black = "*"
+codespell = "*"
+# Test tools
+coveralls = "*"
+pytest = "*"
+pytest-xdist = "*"
+pytest-cov = "*"
+# Pypi
+twine = "*"
+# Sample integration - Quart
+quart = "*"
+# Sample integration - Sanic
+sanic = "*"
+# Sample integration - Starlette
+starlette = "*"
+# Pydantic support
+pydantic = "*"
+# FastAPI support
+fastapi = "*"
+asgi_lifespan = "*"
+httpx = "*"
+# Aiohttp support
+aiohttp = "*"
+# BlackSheep support
+blacksheep = "*"
+pytest-asyncio = "*"
+# mypy
+types-PyYAML = "*"
+types-pytz = "*"
+# Documentation tools
+sphinx-immaterial = "*"
+sphinx-copybutton = "*"
+Pygments = "*"
+docutils = "*"
+
+[tool.poetry.extras]
+accel = ["ciso8601", "uvloop", "orjson"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+check_untyped_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = false
+warn_unused_configs = true
+warn_unreachable = true
+allow_redefinition = true
+strict_equality = true
+show_error_context = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+check_untyped_defs = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+warn_unreachable = false
+
+[[tool.mypy.overrides]]
+module = ["examples.*"]
+check_untyped_defs = false
+disallow_untyped_calls = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[[tool.mypy.overrides]]
+module = ["examples.fastapi.*"]
+check_untyped_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[[tool.mypy.overrides]]
+module = ["kleinmann.contrib.test.*"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[[tool.mypy.overrides]]
+module = ["kleinmann.contrib.sanic.*"]
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = ["tests.conftest"]
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = ["kleinmann.backends.base.client"]
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+addopts = "-n auto --cov kleinmann --cov kleinmann_core --cov-append"
+filterwarnings = [
+    'ignore:`pk` is deprecated:DeprecationWarning',
+    'ignore:`index` is deprecated:DeprecationWarning',
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+    "if TYPE_CHECKING:",
+    "if env.DEBUG:",
+]
+
+[tool.ruff.lint]
+ignore = [
+    "E501",     # line too long
+    "PLW2901",  # `for` loop variable `value` overwritten by assignment target
+    "PLW0603",  # Using the global statement is discouraged
+]
+isort = { force-single-line = false, known-first-party = ["kleinmann"] }
+extend-select = ["I", "PLE", "PLW", "S", "W"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+"examples/*/_tests.py" = ["S"]
