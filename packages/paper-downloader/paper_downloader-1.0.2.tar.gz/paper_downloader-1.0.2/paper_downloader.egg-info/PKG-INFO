@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: paper-downloader
+Version: 1.0.2
+Summary: Download, Merge, and Rename
+Home-page: https://github.com/dw-dengwei/paper-down
+Author: Wei Deng
+Author-email: dw-dengwei@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.28.0
+Requires-Dist: tqdm>=4.64.0
+Requires-Dist: pypdf>=4.3.1
+Requires-Dist: prompt-toolkit>=3.0.39
+
+# Introduction
+This tool provide a pipeline that can help you download PDF(s), merge them into a single file and rename it based on the venue, title and authors.
+
+# Usage
+1. Write `config.json` at `${HOME}/paper-down/config.json` with the following format:
+
+```json
+{
+  "temp_filename_1": "__TEMP__1.pdf",
+  "temp_filename_2": "__TEMP__2.pdf",
+  "temp_filename": "__TEMP__.pdf",
+  "save_root": REPLACE_WITH_YOUR_ROOT
+}
+```
+
+2. Note that the `save_root` property is the place where PDFs save to.
+In this directory, it should contain some directories like:
+```plaintext
+YOUR_ROOT
+├── LLM
+├── Image Generation 
+├── 3D Reconstruction
+├── Face Recognition
+├── ...
+```
+
+3. Install `paper-downloader`:
+
+```bash
+pip install paper-downloader
+```
+
+4. Start!
+
+```bash
+pd
+```
