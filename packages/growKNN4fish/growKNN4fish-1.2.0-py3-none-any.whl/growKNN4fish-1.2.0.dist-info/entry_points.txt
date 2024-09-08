@@ -1,0 +1,5 @@
+[console_scripts]
+fish-help = fishknn.help:help
+fish-predict = fishknn.app:run
+get-pkl = fishknn.app:get_pkl
+show-data = fishknn.app:show_data
