@@ -1,0 +1,6 @@
+dm_aiomysql/__init__.py,sha256=eUxhPvSb2jk09e1dyCp-vEzpWo0S8TBrn89SQPGUCqk,133
+dm_aiomysql/aiomysql_client.py,sha256=IwYD9sPmWi_y7g4IkpjN-ZOunHZxeqbp61yrubhgsxk,5027
+dm_aiomysql-0.1.0.dist-info/METADATA,sha256=My29dgv6ZowiTphCTqH2de5jva5SmMq-2aMGwbJurL8,3257
+dm_aiomysql-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+dm_aiomysql-0.1.0.dist-info/top_level.txt,sha256=F1hCGcAGOLt3mr7VV-EjEF6-UwWBVzG9qbjOfTJ_5bE,12
+dm_aiomysql-0.1.0.dist-info/RECORD,,
