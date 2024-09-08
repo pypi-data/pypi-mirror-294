@@ -1,0 +1,11 @@
+Kannadafy.py
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Kannadafy.egg-info/PKG-INFO
+Kannadafy.egg-info/SOURCES.txt
+Kannadafy.egg-info/dependency_links.txt
+Kannadafy.egg-info/entry_points.txt
+Kannadafy.egg-info/top_level.txt
