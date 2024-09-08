@@ -1,0 +1,173 @@
+{
+    "name": "Myanmar",
+    "altSpellings": [
+        "MM",
+        "Burma",
+        "The Republic of the Union of Myanmar"
+    ],
+    "area": 676578,
+    "borders": [
+        "BD",
+        "CN",
+        "IN",
+        "LA",
+        "TH"
+    ],
+    "callingCodes": [
+        "95"
+    ],
+    "capital": "Naypyidaw",
+    "capital_latlng": [
+        19.7633,
+        96.0785
+    ],
+    "currencies": [
+        "MMK"
+    ],
+    "demonym": "Myanmarian",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg",
+    "geoJSON": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "id": "MMR",
+                "properties": {
+                    "name": "Myanmar"
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [92.171808, 9.4518],
+                            [101.1702717, 28.5478351],
+                            [95.955974, 21.916221],
+                            [95.955974, 9.4518]
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "ISO": {
+        "alpha2": "MM",
+        "alpha3": "MMR"
+    },
+    "languages": [
+        "Burmese"
+    ],
+    "states": [
+        {
+            "id": 1,
+            "name": "Yangon Region",
+            "state_code": "YN",
+            "cities": [
+                {
+                    "id": 1,
+                    "name": "Yangon",
+                    "latitude": 16.8661,
+                    "longitude": 96.1951
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Mandalay Region",
+            "state_code": "MD",
+            "cities": [
+                {
+                    "id": 2,
+                    "name": "Mandalay",
+                    "latitude": 21.9588,
+                    "longitude": 96.0891
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Ayeyarwady Region",
+            "state_code": "AY",
+            "cities": [
+                {
+                    "id": 3,
+                    "name": "Pathein",
+                    "latitude": 16.7795,
+                    "longitude": 94.7321
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Sagaing Region",
+            "state_code": "SA",
+            "cities": [
+                {
+                    "id": 4,
+                    "name": "Sagaing",
+                    "latitude": 21.8787,
+                    "longitude": 95.9797
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Shan State",
+            "state_code": "SH",
+            "cities": [
+                {
+                    "id": 5,
+                    "name": "Taunggyi",
+                    "latitude": 20.7907,
+                    "longitude": 97.0378
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Kachin State",
+            "state_code": "KC",
+            "cities": [
+                {
+                    "id": 6,
+                    "name": "Myitkyina",
+                    "latitude": 25.3912,
+                    "longitude": 97.3958
+                }
+            ]
+        }
+    ],
+    "wikiLink": "https://en.wikipedia.org/wiki/Myanmar",
+    "languages_official": [
+        "Burmese"
+    ],
+    "postal_code_format": "\\d{5}",
+    "start_of_week": "monday",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "un_locode": "MM",
+    "unofficial_names": [
+        "Myanmar (Burma)",
+        "ミャンマー",
+        "Burma"
+    ],
+    "government": "Unitary parliamentary republic",
+    "expectancy": 66.6,
+    "dish": "Mohinga",
+    "symbol": "Peacock",
+    "density": 83.2,
+    "location": "Southeast Asia",
+    "religion": "Buddhism",
+    "temperature": 27.0,
+    "continent": "Asia",
+    "independence": 1948,
+    "tld": ".mm",
+    "timezones": [
+        "UTC+06:30"
+    ],
+    "translations": {
+        "es": "Birmania",
+        "fr": "Birmanie",
+        "ja": "ミャンマー",
+        "it": "Birmania"
+    }
+}
