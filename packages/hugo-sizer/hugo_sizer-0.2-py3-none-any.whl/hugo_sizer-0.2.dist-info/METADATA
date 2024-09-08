@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hugo-sizer
+Version: 0.2
+License-File: LICENSE
+Requires-Dist: requests >=2.31.0
+Requires-Dist: aiohttp >=3.10.5
+Requires-Dist: beautifulsoup4 >=4.12.2
+

@@ -1,0 +1,2 @@
+[console_scripts]
+hugo-sizer = cli:main
