@@ -1,0 +1,14 @@
+[project]
+dynamic = ["readme", "requires-python", "authors", "classifiers", "urls"]
+
+name = "autohack"
+version = "0.1"
+dependencies = [
+  "toml==0.10.2",
+  "beautifulsoup4==4.12.3"
+]
+description = "This package does automated vulnerability enumeration and recommends exploits."
+
+[build-system]
+requires = ["setuptools==65"]
+build-backend = "setuptools.build_meta"
