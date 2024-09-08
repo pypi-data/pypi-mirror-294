@@ -1,0 +1,2 @@
+[console_scripts]
+codeconsolidator = codeconsolidator.app:main
