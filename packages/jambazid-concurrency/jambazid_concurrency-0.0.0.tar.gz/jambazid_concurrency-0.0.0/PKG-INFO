@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jambazid-concurrency
+Version: 0.0.0
+Summary: <CHANGE THIS>
+License: MIT
+Author: Firstname Lastname
+Author-email: github@jambazid.dev
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
