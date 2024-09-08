@@ -1,0 +1,13 @@
+drf_test_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_test_generator/apps.py,sha256=rQzNbkwLigNQjsri5MB_UEMjmvVh-hIIMJS-lW6Kphs,166
+drf_test_generator/constants.py,sha256=swjPHsoWKox64UPIY4R8UhG0QWMYS6iDB3QRNZWx20Q,330
+drf_test_generator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_test_generator/viewset.py,sha256=0J-SolV9Evo-rb1u5oPwEiE2UhSXHpu91fsMj65gk1Q,10270
+drf_test_generator/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_test_generator/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_test_generator/management/commands/generate_viewset_tests.py,sha256=vLsIQcIouOJKOsVlejIJLwJ8u_vijT9A-NUY9vkLhzM,3582
+drf_test_generator-0.0.6.dist-info/LICENSE,sha256=s3XQHu9ZUG7meR3LlIlHUEily2unvEyYCYnnJLVRobc,1092
+drf_test_generator-0.0.6.dist-info/METADATA,sha256=3NpM5hxmXaRJ1MhHz2thAS1QySBz1mHEAvWs4i_hsgs,10944
+drf_test_generator-0.0.6.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+drf_test_generator-0.0.6.dist-info/top_level.txt,sha256=0SgiHY1LitzLxvViNOO3oszRFsdSslq3dtpK_foeFdA,19
+drf_test_generator-0.0.6.dist-info/RECORD,,
