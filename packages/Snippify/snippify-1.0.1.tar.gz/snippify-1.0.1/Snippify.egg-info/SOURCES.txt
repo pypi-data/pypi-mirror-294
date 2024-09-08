@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Snippify.egg-info/PKG-INFO
+Snippify.egg-info/SOURCES.txt
+Snippify.egg-info/dependency_links.txt
+Snippify.egg-info/requires.txt
+Snippify.egg-info/top_level.txt

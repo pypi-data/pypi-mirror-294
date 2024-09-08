@@ -1,0 +1,5 @@
+colorama
+pyboxen
+pynput
+pyperclip
+tabulate
