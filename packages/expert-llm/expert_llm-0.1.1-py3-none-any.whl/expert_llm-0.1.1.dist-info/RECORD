@@ -1,0 +1,11 @@
+expert_llm/__init__.py,sha256=0cQmH3KJ3am2qvdC0UW6maHX_hdJHCnTNNDU_lChzA0,227
+expert_llm/models.py,sha256=vEajiDU00uJBVPElLgtKsKo-CS2PuFxdoDgjPxWOSC0,1502
+expert_llm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+expert_llm/remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+expert_llm/remote/jina_ai_client.py,sha256=zwyMXC-1vp4j2_gHEXGSKea0XUeyqryojFGFKiEuKfA,1306
+expert_llm/remote/openai_shaped_client.py,sha256=tCHSwP2PsgXORPBt9im_GIJYMOVnMQ29oBVUxEvSjug,2506
+expert_llm/remote/openai_shaped_client_implementations.py,sha256=ovpx6NkLjCS_I3UMTmVZo2aRrVeQxoCKBA_CwWnryJo,2922
+expert_llm-0.1.1.dist-info/METADATA,sha256=ttF3PXq13-N60vUkZmxAZ3ghblD-TOu6FL07xgwFjSY,179
+expert_llm-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+expert_llm-0.1.1.dist-info/top_level.txt,sha256=1eiESwAzpIB81EefGGKuKfgGgQdwRLo0CWamVjlu9NY,11
+expert_llm-0.1.1.dist-info/RECORD,,
