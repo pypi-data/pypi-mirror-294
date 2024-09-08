@@ -1,0 +1,9 @@
+expert_kb/__init__.py,sha256=gdHf53X1BJQyMmVwbzr-RAqFuLVhx9mvbYrBr7Z38tk,51
+expert_kb/knowledgebase.py,sha256=mTripws2tUs1Mk9AANtaXR47x3GWHHJXGlDBIvN8O4M,3587
+expert_kb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+expert_kb/schema.sql,sha256=Ox6irluA6MOW_846sjUnCqNLmUw_W4FcjDnIbEyt1JE,256
+expert_kb/sqlite_db.py,sha256=7D3ygtddDErcG6a8Dk7Pjd2BZh5TsrwsVskmNa6pss8,1711
+expert_kb-0.1.1.dist-info/METADATA,sha256=iDKEY2dh5esjty0kiEl39E1Ye-bYCI-0_liGELbfYEg,195
+expert_kb-0.1.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+expert_kb-0.1.1.dist-info/top_level.txt,sha256=xdNP5eSVo-152ONBnBbH5tBbmHHiAmS27nhxCxo-eww,10
+expert_kb-0.1.1.dist-info/RECORD,,
