@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: datadocai
+Version: 0.0.3
+Summary: create database documentation with AI
+Home-page: https://github.com/jeremyjouvancedev/DataDocAi
+Author: Jeremy Jouvance
+Author-email: jeremy.jouvance@gmail.com
+Keywords: chatgpt,database,trino,ai,documentation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: langchain >=0.2.16
+Requires-Dist: langchain-community >=0.2.16
+Requires-Dist: langchain-core >=0.2.38
+Requires-Dist: langchain-openai >=0.1.9
+Requires-Dist: trino ==0.329.0
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: langgraph >=0.2.16
+Requires-Dist: langchain-ollama >=0.1.3
+
