@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: sopsy
+Version: 1.0.0
+Summary: SOPS Python wrapper library
+Project-URL: Homepage, https://github.com/nikaro/sopsy
+Project-URL: Repository, https://github.com/nikaro/sopsy
+Project-URL: Issues, https://github.com/nikaro/sopsy/issues
+Project-URL: Changelog, https://github.com/nikaro/sopsy/blob/main/CHANGELOG.md
+Author-email: Nicolas Karolak <nicolas@karolak.fr>
+License: GPL-3.0-or-later
+License-File: LICENSE
+Keywords: sops
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# SOPSy
+
+SOPSy is a simple Python wrapper arround [SOPS](https://github.com/getsops/sops).
+
+Check [documentation](http://sopsy.nikaro.net/).

@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_call:
+  workflow_dispatch:
+
+env:
+  TASK_X_REMOTE_TASKFILES: 1
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Install tools
+        run: |
+          echo "/home/linuxbrew/.linuxbrew/bin" >> "$GITHUB_PATH"
+          /home/linuxbrew/.linuxbrew/bin/brew install \
+            actionlint \
+            check-jsonschema \
+            fd \
+            go-task \
+            jq \
+            prettier \
+            rye \
+            shellcheck \
+            shfmt \
+            yamlfmt \
+            yamllint \
+
+      - name: Lint
+        run: task lint --yes
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Install tools
+        run: |
+          echo "/home/linuxbrew/.linuxbrew/bin" >> "$GITHUB_PATH"
+          /home/linuxbrew/.linuxbrew/bin/brew install \
+            go-task \
+            rye \
+
+      - name: Install dependencies
+        run: task sync --yes
+
+      - name: Test
+        run: task test --yes
+
+      - name: Build
+        run: task build --yes
+
+  check:
+    name: Check
+    permissions: {}
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    if: always()
+    steps:
+      - name: Ensure no jobs failed
+        run: |-
+          [ "${{ !contains(needs.*.result, 'failure') }}" = "true" ] || exit 1

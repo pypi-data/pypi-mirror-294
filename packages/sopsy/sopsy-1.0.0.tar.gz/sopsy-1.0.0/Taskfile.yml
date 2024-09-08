@@ -1,0 +1,176 @@
+version: '3'
+
+set: [errexit, nounset, pipefail]
+shopt: [globstar]
+
+includes:
+  lint:
+    taskfile: https://github.com/nikaro/meta/raw/main/taskfiles/lint.yml
+    internal: true
+  format:
+    taskfile: https://github.com/nikaro/meta/raw/main/taskfiles/format.yml
+    internal: true
+
+tasks:
+  init:
+    desc: Initialize repositry
+    cmds:
+      - git config core.hooksPath .githooks
+      - git config commit.template .gitmessage
+
+  lock:
+    desc: Generate lockfile
+    sources:
+      - ./pyproject.toml
+    generates:
+      - ./requirements.lock
+      - ./requirements-dev.lock
+    cmd: rye lock --all-features
+
+  lock:update:
+    desc: Update packages to their latest version
+    cmd: rye lock --all-features --update-all
+
+  sync:
+    desc: Synchronize virtualenv with lockfile
+    deps: [lock]
+    sources:
+      - ./requirements.lock
+      - ./requirements-dev.lock
+    cmd: rye sync --all-features --no-lock || rye sync --all-features --no-lock --force
+
+  lint:
+    desc: Run linters
+    cmds:
+      - task: lint:default
+      - task: lint:python
+
+  lint:python:
+    desc: Lint Python code
+    deps: [sync]
+    sources:
+      - ./pyproject.toml
+      - ./requirements.lock
+      - ./requirements-dev.lock
+      - ./src/**/*.py
+      - ./tests/**/*.py
+    cmds:
+      - rye run ruff format --check
+      - rye run ruff check
+      - rye run basedpyright ./src/
+      - cmd: rye run mypy ./src/
+        ignore_error: true
+
+  format:
+    desc: Run formatters
+    cmds:
+      - task: format:default
+      - task: format:python
+
+  format:python:
+    desc: Format Python code
+    deps: [sync]
+    sources:
+      - ./pyproject.toml
+      - ./requirements.lock
+      - ./requirements-dev.lock
+      - ./src/**/*.py
+      - ./tests/**/*.py
+    cmds:
+      - rye run ruff format
+
+  test:
+    desc: Run tests
+    deps: [sync]
+    sources:
+      - ./pyproject.toml
+      - ./requirements.lock
+      - ./requirements-dev.lock
+      - ./src/**/*.py
+      - ./tests/**/*.py
+    cmd: rye run pytest --cov-report=term-missing --cov-report=html --cov=sopsy ./tests/
+
+  bump:
+    desc: Bump version
+    vars:
+      RC_IGNORE: 3,21
+    status:
+      - test -f ./_changelog.md
+      - git show --name-only | grep -q CHANGELOG.md
+    preconditions:
+      - cz --no-raise {{.RC_IGNORE}} bump --dry-run --check-consistency --changelog --changelog-to-stdout
+    cmd: cz --no-raise {{.RC_IGNORE}} bump --changelog --changelog-to-stdout > ./_changelog.md
+
+  build:
+    desc: Build project
+    deps: [sync]
+    sources:
+      - ./src/**/*.py
+      - ./tests/**/*.py
+      - ./pyproject.toml
+      - ./requirements.lock
+    generates:
+      - ./dist/*.whl
+      - ./dist/*.tar.gz
+    cmd: rye build
+
+  release:
+    desc: Publish GitHub release
+    deps: [bump, build]
+    env:
+      LATEST_RELEASE:
+        sh: gh release list --limit 1 --json tagName --jq '.[].tagName'
+      REVISION:
+        sh: echo ${REVISION:-$(git describe --tags --abbrev=0)}
+    status:
+      - test "$LATEST_RELEASE" = "$REVISION"
+    preconditions:
+      - test -n "$GH_TOKEN"
+      - test -n "$REVISION"
+    cmds:
+      - gh release create --notes-file ./_changelog.md --verify-tag "$REVISION" ./dist/*
+      - defer: rm -rf ./_changelog.md
+
+  publish:
+    desc: Upload package on PyPI
+    deps: [build]
+    env:
+      PGP_ID:
+        sh: echo ${PGP_ID:-47F86D99}
+      PYPI_USER:
+        sh: echo ${PYPI_USER:-nka}
+    preconditions:
+      - test -n "$PGP_ID"
+      - test -n "$PYPI_USER"
+      - test -n "$PYPI_TOKEN"
+    sources:
+      - ./dist/*.whl
+      - ./dist/*.tar.gz
+    cmd: |-
+      rye publish \
+        --username "$PYPI_USER "\
+        --token "$PYPI_TOKEN" \
+        --sign --identity "$PGP_ID" \
+        --skip-existing \
+        --yes
+
+  gendoc:
+    desc: Generate documentation
+    deps: [test]
+    sources:
+      - ./docs/**
+      - ./mkdocs.yml
+      - ./pyproject.toml
+      - ./requirements.lock
+      - ./requirements-dev.lock
+      - ./src/**/*.py
+    cmd: rye run mkdocs build
+
+  clean:
+    desc: Cleanup workspace
+    cmds:
+      - rm -rf ./dist/
+      - rm -rf ./.ruff_cache/
+      - rm -rf ./.pytest_cache/
+      - fd --type directory --no-ignore __pycache__ | xargs --no-run-if-empty rm -rf
+      - rm -rf ./site/
