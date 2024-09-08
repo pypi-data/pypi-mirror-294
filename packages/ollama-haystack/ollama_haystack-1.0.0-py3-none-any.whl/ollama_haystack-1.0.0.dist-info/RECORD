@@ -1,0 +1,11 @@
+haystack_integrations/components/embedders/ollama/__init__.py,sha256=-IcdvlAb6vwn8buOlW9uRKL2oxD37eADOnXY9HjW5co,160
+haystack_integrations/components/embedders/ollama/document_embedder.py,sha256=80v3P4YfcO6BdUDZR_wJzKALl5rMi7dVCLXYSZIn6Ps,5683
+haystack_integrations/components/embedders/ollama/text_embedder.py,sha256=1sfmPqReEsLlqwNx6FROBQbOpwkcyJY4w_7xk3rcfDE,2655
+haystack_integrations/components/generators/ollama/__init__.py,sha256=14U1ZYpuzQnr8iZAWWZfkX-jnpRRZVKou7oJV3OKwag,146
+haystack_integrations/components/generators/ollama/generator.py,sha256=vixzMux1MWfjIAhrswmFoooSKdR9jlVHKzt-dI169ME,7108
+haystack_integrations/components/generators/ollama/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+haystack_integrations/components/generators/ollama/chat/chat_generator.py,sha256=ezWA9y-MUVtJpda3WyzEZET8Fz1KQOgKio_zal6L6mE,5819
+ollama_haystack-1.0.0.dist-info/METADATA,sha256=4hBBYCHxxUDpN_CSpSxRiojlIBtDIUxyhXHXot3SqMk,2365
+ollama_haystack-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ollama_haystack-1.0.0.dist-info/licenses/LICENSE.txt,sha256=OrAtTu4aPmrTjKDSTzkSPgo_ji6NOMWO2N9JOTFyAzM,11350
+ollama_haystack-1.0.0.dist-info/RECORD,,
