@@ -1,0 +1,17 @@
+ffxiv_stats/__init__.py,sha256=9fI4CTyRYgQ6ei0KNxJlIGLzAInuAePwK0YYbzvsa0g,441
+ffxiv_stats/jobs.py,sha256=a8TFK7EWuWoPzgJpNLzJ4e_utQDed7SnUHFUsZnkio4,32564
+ffxiv_stats/modifiers.py,sha256=F3S30gvw1_xVni4FjpIIV5YRWZtOgjxXDWhQxBa0OwA,2586
+ffxiv_stats/moments.py,sha256=hxa9YT-0Tr9xAL1gxpfkpNALZaNF-Sh9jnqgqCigzOk,53063
+ffxiv_stats/rate.py,sha256=rCDIrS3c850aZM34lTYrCPOPC3mB2_XC4kqOk4DygBc,6575
+ffxiv_stats/tests/test_jobs.py,sha256=1K5lowiLEbE4VKrJw--3VRS7DkJEbH8YmW9Ug_Pai6o,2602
+ffxiv_stats/tests/test_rate.py,sha256=U3T0v0aKbs5lbZMUEZoI-IplcQhjqzh8T5ReY_Co-UQ,1917
+ffxiv_stats/tests/data/dawntrail/drk_auto_90p.csv,sha256=wdLnHBHDDRmC5Kj4e8CQIXZ_I4yhMoWYQTc_wZ1btiw,2688
+ffxiv_stats/tests/data/dawntrail/drk_pet_420p.csv,sha256=VJjVjOUGVGiVz_Trd-JwdiM9-xqWvr14ToH8vz8zApQ,231
+ffxiv_stats/tests/data/dawntrail/drk_pet_570p.csv,sha256=Fea5llgzxW-pX6JRoOpB4DJhWoPtlc5PW6vHeo_uhS0,77
+ffxiv_stats/tests/data/dawntrail/drk_pet_620p.csv,sha256=L94d-bycEYircTMajwrxHoOt8PJabPpNQglsltS5lfY,77
+ffxiv_stats/tests/data/dawntrail/smn_pet_150p.csv,sha256=QRQ6fJMalSSmS4KcAsYj7SbcFW9iVnzGS-yOIYugc0U,240
+ffxiv_stats/tests/data/dawntrail/smn_pet_160p.csv,sha256=wgvwXbYahlII3Z06UP1mmffKyQlqgpaho930zwbqWes,240
+ffxiv_stats-0.5.5.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+ffxiv_stats-0.5.5.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+ffxiv_stats-0.5.5.dist-info/METADATA,sha256=MzeKLV6gQBXrOAkGe1qkRemBUu2xAoVYvlVk-SxxaV0,5442
+ffxiv_stats-0.5.5.dist-info/RECORD,,
