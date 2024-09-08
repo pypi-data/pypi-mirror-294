@@ -1,0 +1,11 @@
+quasi_utils/auth_utils.py,sha256=b6AeR_VgxM27Lcunrx4kYTiWIslfmoTyWXSw-OO1b_Y,2401
+quasi_utils/aws_utils.py,sha256=lzCetAoEr5tPg7gL4GMSfuaO8TDO10d77HuGFukljK4,858
+quasi_utils/dynamo_utils.py,sha256=H0jtT6C37F-ClSVyxg4uDdEeGYxx2-45ZyEx89ZSv1E,1464
+quasi_utils/generic_utils.py,sha256=jqGy9qOQaNdnec5CaXevbnthKMo8375wvB8qrEWUYV8,1026
+quasi_utils/oms.py,sha256=xa7Iu_7XUm4JC1QKb9ypRdiMuiYNgzKuALvAcYG7BBM,15962
+quasi_utils/oms_utils.py,sha256=EiiJhk5o7_nhKa9d0yMcoVcAscRXsLQFdO7kQ13uslo,3853
+quasi_utils-0.1.49.dist-info/LICENSE,sha256=klJLoF9LnlxyDaiV7rJLMFCEYApqHrHBxRcMnlFKh8c,1092
+quasi_utils-0.1.49.dist-info/METADATA,sha256=__AshOHOTQ9jcvR8CZSJ131_EgqU8475fp6lhXp2G28,1952
+quasi_utils-0.1.49.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+quasi_utils-0.1.49.dist-info/top_level.txt,sha256=Ku_d404Hep2w-QuSbqAtZ3BKrAUDbygjC2itrv9St1A,12
+quasi_utils-0.1.49.dist-info/RECORD,,
