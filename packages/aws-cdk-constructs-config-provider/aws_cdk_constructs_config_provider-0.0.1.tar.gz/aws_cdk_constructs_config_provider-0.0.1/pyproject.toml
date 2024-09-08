@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "aws-cdk-constructs-config-provider"
+version = "0.0.1"
+description = ""
+authors = ["Sergio <sergio.penafilgueira@fao.org>","Matteo <matteo.terrinoni@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9.19"
+python-dotenv = "^0.21.0"
+pydantic-settings = "^2.0.2"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.8.8"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:tool.poetry.version"
+branch = "main"
+version_source = "tag"
+upload_to_pypi = true
+hvcs = "bitbucket"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
