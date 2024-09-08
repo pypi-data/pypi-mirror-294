@@ -1,0 +1,2 @@
+[console_scripts]
+petrelpy = petrelpy.cli:cli

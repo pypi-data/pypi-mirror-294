@@ -1,0 +1,144 @@
+Metadata-Version: 2.3
+Name: petrelpy
+Version: 0.1.0
+Summary: Utilities for working with Petrel imports and exports.
+Author-email: Frank Male <frank.male@psu.edu>
+License: Copyright 2018-2023 Frank Male
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Requires-Python: <3.13,>=3.8
+Requires-Dist: click
+Requires-Dist: dask[dataframe]
+Requires-Dist: fastparquet
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: trogon
+Provides-Extra: dev
+Requires-Dist: ipykernel>=6.0.0; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo; extra == 'docs'
+Requires-Dist: jupytext>=1.14; extra == 'docs'
+Requires-Dist: myst-nb>=0.13.1; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: sphinx-autoapi>=1.8.4; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-design; extra == 'docs'
+Requires-Dist: sphinx-external-toc; extra == 'docs'
+Requires-Dist: sphinx-sitemap; extra == 'docs'
+Requires-Dist: sphinx>=5.0.2; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-cov>=2.12.1; extra == 'test'
+Requires-Dist: pytest-mpl>=0.16; extra == 'test'
+Requires-Dist: pytest-xdist>=2.4; extra == 'test'
+Requires-Dist: pytest>=6.2; extra == 'test'
+Description-Content-Type: text/markdown
+
+# petrelpy
+
+Getting data in and out of Petrel
+
+[![DOI](https://zenodo.org/badge/289056556.svg)](https://zenodo.org/badge/latestdoi/289056556)
+
+Included are a command line tool and library for importing
+
+- production
+- injection
+- completions information
+- well formation tops, and
+- headers
+
+into Petrel, and exporting
+
+- per-well geomodel properties
+- GSLIB cellular outputs, and
+- geomodel properties at tops
+
+## Installation
+
+The easiest way to use the command line interface is with
+[pipx](https://pypa.github.io/pipx/):
+
+```sh
+pipx install .
+```
+
+or
+
+```sh
+pipx install git+https://github.com/frank1010111/petrelpy.git
+```
+
+This will put `petrelpy` on your path, and you can invoke the CLI tool with
+
+```
+$ petrelpy --help
+Usage: petrelpy [OPTIONS] COMMAND [ARGS]...
+
+  Command line tool for working with Petrel input and output formats.
+
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  production  Convert IHS production spreadsheet to Petrel vol format.
+```
+
+In order to use the library, install with pip:
+
+```sh
+pip install git+https://github.com/frank1010111/petrelpy.git
+```
+
+## Getting started
+
+Check out [the docs](https://petrelpy.readthedocs.io). If it isn't live quite
+yet, you can choose to use `nox -s docs -- serve` to see them locally.
+
+## Contributing
+
+New Petrel-helpers are always appreciated. See
+[the contribution guidelines](CONTRIBUTING.md)
+
+## The Stormy Petrel
+
+    A thousand miles from land are we,
+    Tossing about on the roaring sea, -
+    From billow to bounding billow cast,
+    Like fleecy snow on the stormy blast.
+    The sails are scattered abroad like weeds;
+    The strong masts shake like quivering reeds;
+    The mighty cables and iron chains,
+    The hull, which all earthly strength disdains, -
+    They strain and they crack; and hearts like stone
+    Their natural, hard, proud strength disown.
+
+    Up and down! - up and down!
+    From the base of the wave to the billow’s crown,
+    And amidst the flashing and feathery foam
+    The stormy petrel finds a home, -
+    A home, if such a place may be
+    For her who lives on the wide, wide sea,
+    On the craggy ice, in the frozen air,
+    And only seeketh her rocky lair
+    To warm her young, and to teach them spring
+    At once o’er the waves on their stormy wing!
+
+    O’er the deep! - o’er the deep!
+    Where the whale and the shark and the sword-fish sleep, -
+    Outflying the blast and the driving rain,
+    The petrel telleth her tale — in vain;
+    For the mariner curseth the warning bird
+    Which bringeth him news of the storm unheard!
+    Ah! thus does the prophet of good or ill
+    Meet hate from the creatures he serveth still;
+    Yet he ne’er falters, - so, petrel, spring
+    Once more o’er the waves on thy stormy wing!
+
+[Barry Cornwall](https://mypoeticside.com/show-classic-poem-6226)

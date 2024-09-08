@@ -1,0 +1,11 @@
+petrelpy/__init__.py,sha256=AwhNkgmAnxiW46vreDHFYutPdz7UJw2vVzx7VJ8gmwk,47
+petrelpy/__main__.py,sha256=uS4yrpUGDNCFdaxr02vwK7K9jS_-1A6avYiJWGnv1DE,204
+petrelpy/cli.py,sha256=ykBu8AFMOChNVaUneCtXGXwg3ulT3qHUUmMqDD_iD2c,6230
+petrelpy/gslib.py,sha256=cI2MVskI_erF6cZ7uXE1qe-SdczzT_e7e_jRY74Fmi8,11435
+petrelpy/petrel.py,sha256=EyewEoZKoLumXIFjBy1_5AYRu1Y0aesf_kwfp-R-edE,11518
+petrelpy/wellconnection.py,sha256=SFWq1IQZpWxfJBXG-HUriilUHJYotwmygzgFmMaov04,7173
+petrelpy-0.1.0.dist-info/METADATA,sha256=jAqYGsC22vOPvIvtTDNOt_1hVU2LeQe9S1b6koAn7R4,5177
+petrelpy-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+petrelpy-0.1.0.dist-info/entry_points.txt,sha256=MhQHwJN_6Dhb_Iv755XnnoMN72jnouPFMZfzn-0r-hA,46
+petrelpy-0.1.0.dist-info/licenses/LICENSE,sha256=9nLtsX_mSn75KysjPBrV7F5PpNoi5VlzpME5s_2Hs6Q,1063
+petrelpy-0.1.0.dist-info/RECORD,,
