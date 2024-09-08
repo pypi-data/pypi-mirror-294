@@ -1,0 +1,12 @@
+bpmn_parser/__init__.py,sha256=l1lGiTPrfq3PZHqUg_dguHUr-YSTkQmTYQJsQ57662g,68
+bpmn_parser/_exclusive_gateway.py,sha256=UdjTV14WtDCu76ekoe-O__CYBH_EIE1PWufyewo72Gw,1117
+bpmn_parser/_intermediate_catch_event.py,sha256=GlHsCGM_YZXziEGZyivajptEovekI_hL0-Ai_DwH_6A,1637
+bpmn_parser/_sequence_flow.py,sha256=qojK4dGtO-wtVBD0zpMLLs3BXhzGhCOe_VMNNlQ48sY,2381
+bpmn_parser/_service_task.py,sha256=25SCiFSjCGSVpCeo-Xxd6wQ3KSwA3jqE6--EY89e_6s,1462
+bpmn_parser/_task.py,sha256=beah9hgmw7j2EIf_JwjOfWWlI9FTVvxp4mu456dSqL8,2384
+bpmn_parser/_user_task.py,sha256=pGdLUeeCdNUXETdGuNXjagtgU64va4zgOA4m109x_EQ,1834
+bpmn_parser/exceptions.py,sha256=dRO4V_haQJNHw5Wh0tojR7sMDeYY4g4dasZtvqqioFo,262
+bpmn_parser/parser.py,sha256=zYhesB3Q9Kb2MbFQWBVlRu8XorZfQ6KxTv8-U3Qu4Ec,3896
+bpmn_parser-1.0.16.dist-info/METADATA,sha256=ks9h6Atw36C6jmAVaYMOFALnhoW91RtETBFrid3PDm8,4161
+bpmn_parser-1.0.16.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bpmn_parser-1.0.16.dist-info/RECORD,,
