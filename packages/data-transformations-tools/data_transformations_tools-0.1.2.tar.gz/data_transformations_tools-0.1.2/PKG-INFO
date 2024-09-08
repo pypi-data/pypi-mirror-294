@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: data-transformations-tools
+Version: 0.1.2
+Summary: Python library to data transformation
+License: MIT
+Author: Johnny Lazo
+Author-email: johnny.lazoq@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: pyment (>=0.3.3,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Transformation Library
+
+The Data Transformation Library is a Python library that provides a set of functions for common data transformation tasks for data engineers and data scientists. 
+
+## Features
+
+- **Transpose**: Perform fast transpose operations on 2D matrices.
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install transformation_libraries
+
+Usage
+Here is a simple example of how to use the library:
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Authors
+Johnny Lazo johnny.lazoq@gmail.com
+```
+
