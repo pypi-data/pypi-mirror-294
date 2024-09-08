@@ -1,0 +1,8 @@
+setup.py
+nbclassifier/__init__.py
+nbclassifier/nbclassifier.py
+nbclassifier.egg-info/PKG-INFO
+nbclassifier.egg-info/SOURCES.txt
+nbclassifier.egg-info/dependency_links.txt
+nbclassifier.egg-info/requires.txt
+nbclassifier.egg-info/top_level.txt
