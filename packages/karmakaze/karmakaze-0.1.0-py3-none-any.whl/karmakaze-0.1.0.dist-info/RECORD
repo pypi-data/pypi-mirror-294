@@ -1,0 +1,8 @@
+karmakaze/__init__.py,sha256=_PjEqUqQCgUdxSElc_ZBAJxlUr8ZKgby7YMJhJf6bfU,73
+karmakaze/deserialise.py,sha256=4UfYm_FMQAyno85gPOrFrlvT4QeLtQ_ToH7QCcQOkNE,3882
+karmakaze/parse.py,sha256=BtswGvEtWl1f_N3TVivc6brKHnneVz86QhijokqeKRI,19258
+karmakaze/tools.py,sha256=GLxv-DMsc3G8fKuH_kzpRo1_VlJ9cKGUkpH80Xq-45c,4652
+karmakaze-0.1.0.dist-info/LICENSE,sha256=YvEoohpZ8cycjwP8dlAaQ6bC2JA7HBgvZ-DcsF5TRKk,1070
+karmakaze-0.1.0.dist-info/METADATA,sha256=YCPvqZEh1xZ-BELHUdgHUizxpiMf5O2RyrtP8koD6ZY,999
+karmakaze-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+karmakaze-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: karmakaze
+Version: 0.1.0
+Summary: Response deserialisation & parsing engine for Knew Karma
+License: MIT
+Keywords: knewkarma,reddit,reddit-api
+Author: Richard Mwewa
+Author-email: rly0nheart@duck.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: homepage, https://knewkarma.readthedocs.io
+Project-URL: repository, https://github.com/rly0nheart/karmakaze
+Project-URL: tracker, https://github.com/rly0nheart/karmakaze/issues
+Description-Content-Type: text/markdown
+
+# karmakaze
+Response deserialisation &amp; parsing engine for Knew Karma
+
