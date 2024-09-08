@@ -1,0 +1,11 @@
+endmapper/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+endmapper/endpoint_handlers.py,sha256=UPmqcItnkxPD1qt24sJ_lwFOHxvcQ2FL9HnYl7sSr7A,2894
+endmapper/urls.py,sha256=cNIdDhUxXdY5DBC0TsOYc-oCloBdd_cmjZ4r-r8Ceuk,167
+endmapper/mappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+endmapper/mappers/base_mapper.py,sha256=Ggq9xb36KvtSYx3BjwYXFiQpH30iaEmL5kfmtubw6Lc,1234
+endmapper/mappers/dj_mapper.py,sha256=Cdc2nHcw5wVqyd9MAavUh-68XO_qDIOQkBo5b1dugrM,870
+endmapper-0.2.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+endmapper-0.2.4.dist-info/METADATA,sha256=k_GEqBy0PtucMDfP5nlehu-4i8cT9QBZqBCfnsfbz0Q,489
+endmapper-0.2.4.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+endmapper-0.2.4.dist-info/top_level.txt,sha256=z25OMLUiWsFeJngV0AQXJoZ2aSDAgxfsKnN9WJP15dw,10
+endmapper-0.2.4.dist-info/RECORD,,
