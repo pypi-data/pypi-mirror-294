@@ -1,0 +1,93 @@
+<!doctype html>
+{#
+  Copyright 2024 Adam McKellar, Kanushka Gupta, Timo Ege
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. 
+#}
+
+{% macro radio(prop) %}
+  {% set description = namespace(value=false) %}
+  {% for elem in prop.enum %}
+    {% set description.value = description.value or elem.description|length != 0 %}
+  {% endfor %}
+
+  <script>
+    availableEnumValues.set("{{ prop.key }}", []);
+  </script>
+
+  <hgroup>
+    <h4>{{ prop.title }}</h4>
+    <p>{{ prop.description }}</p>
+  </hgroup>
+  <fieldset>
+    {% for elem in prop.enum %}
+      {% if description.value %}
+      <label for="{{ elem.key }}">
+      {% endif %}
+        <input type="radio" name="{{ prop.key }}" id={{ elem.key }} onchange="render()" {{ "checked" if prop.default == elem.key }} />
+      {% if not description.value %}
+      <label for="{{ elem.key }}">
+      {% endif %}
+        {{ elem.title}} {{ "-" if elem.description }} {{ elem.description }}
+      </label>
+
+      <script>
+        availableEnumValues.set("{{ prop.key }}", [...availableEnumValues.get("{{ prop.key }}"), "{{ elem.key }}"]);
+      </script>
+    {% endfor %}
+  </fieldset>
+
+  <script>
+    input.set("{{ prop.key }}", "{{ prop.default }}")
+    radio.add("{{ prop.key }}")
+  </script>
+{% endmacro %}
+
+
+{% macro switch(prop) %}
+  <h4>{{ prop.title }}</h4>
+  <fieldset>
+    <label for="{{ prop.key }}">
+      <input name="{{ prop.key }}" id="{{ prop.key }}" value="{{ prop.key }}" type="checkbox" role="switch" onchange="render()" {{ "checked" if prop.default }} />
+      {{ prop.description }}
+    </label>
+  </fieldset>
+  <script>
+    input.set("{{ prop.key }}", {{ "true" if prop.default else "false" }})
+    bool.add("{{ prop.key }}")
+  </script>
+{% endmacro %}
+
+
+{% macro text(prop) %}
+  <hgroup>
+    <h4>{{ prop.title }}</h4>
+    <p>{{ prop.description }}</p>
+  </hgroup>
+  <input type="text" name="{{ prop.key }}" id="{{ prop.key }}" placeholder="{{ prop.default }}" aria-label="Text" onchange="render()" />
+  <script>
+    input.set("{{ prop.key }}", `{{ prop.default }}`)
+  </script>
+{% endmacro %}
+
+
+{% macro number(prop) %}
+  <hgroup>
+    <h4>{{ prop.title }}</h4>
+    <p>{{ prop.description }}</p>
+  </hgroup>
+  <input type="number" name="{{ prop.key }}" id="{{ prop.key }}" placeholder="{{ prop.default }}" aria-label="Number" onchange="render()" />
+  <script>
+    input.set("{{ prop.key }}", {{ prop.default }})
+  </script>
+{% endmacro %}

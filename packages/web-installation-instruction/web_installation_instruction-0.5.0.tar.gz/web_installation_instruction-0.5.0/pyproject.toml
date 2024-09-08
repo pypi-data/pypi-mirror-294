@@ -1,0 +1,47 @@
+[build-system]
+requires = [
+    "setuptools >=61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-installation-instruction"
+description = "Tool rendering html page from install.cfg file."
+readme = "README.md"
+
+maintainers = [
+    { name = "Adam McKellar", email = "dev@mckellar.eu" },
+    { name = "Kanushka Gupta" },
+    { name = "Timo Ege", email = "timoege@online.de" },
+]
+authors = [
+    { name = "Adam McKellar", email = "dev@mckellar.eu" },
+    { name = "Kanushka Gupta" },
+    { name = "Timo Ege", email = "timoege@online.de" },
+]
+version = "0.5.0"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "jinja2",
+    "typer",
+    "installation-instruction >= 0.4.0"
+]
+[project.scripts]
+ibi-build-html = "web_installation_instruction.__main__:run_cli"
+
+[project.urls]
+Repository = "https://github.com/instructions-d-installation/web-installation-instruction"
+Issues = "https://github.com/instructions-d-installation/web-installation-instruction/issues"
+Changelog = "https://github.com/instructions-d-installation/web-installation-instruction/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+web_installation_instruction = ["template/*.jinja"]

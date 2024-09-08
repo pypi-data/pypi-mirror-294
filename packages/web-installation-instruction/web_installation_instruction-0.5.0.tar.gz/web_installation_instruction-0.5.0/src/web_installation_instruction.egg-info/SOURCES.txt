@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/web_installation_instruction/__init__.py
+src/web_installation_instruction/__main__.py
+src/web_installation_instruction.egg-info/PKG-INFO
+src/web_installation_instruction.egg-info/SOURCES.txt
+src/web_installation_instruction.egg-info/dependency_links.txt
+src/web_installation_instruction.egg-info/entry_points.txt
+src/web_installation_instruction.egg-info/requires.txt
+src/web_installation_instruction.egg-info/top_level.txt
+src/web_installation_instruction/template/forms.html.jinja
+src/web_installation_instruction/template/index.html.jinja

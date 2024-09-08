@@ -1,0 +1,2 @@
+[console_scripts]
+ibi-build-html = web_installation_instruction.__main__:run_cli
