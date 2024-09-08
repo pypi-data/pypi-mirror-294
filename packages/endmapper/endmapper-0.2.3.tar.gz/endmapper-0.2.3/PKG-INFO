@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: endmapper
+Version: 0.2.3
+Summary: This is the simplest module for quick get project endpoints
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Endmapper
+
+Endmapper is a library for mapping endpoints.
+
+## Installation
+
+```bash
+pip install endmapper
