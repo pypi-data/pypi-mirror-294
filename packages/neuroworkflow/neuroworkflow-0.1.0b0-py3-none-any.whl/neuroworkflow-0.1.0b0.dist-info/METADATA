@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: neuroworkflow
+Version: 0.1.0b0
+Summary: A well orgnized way and tool to write a mri data analysis workflow
+Project-URL: Homepage, https://github.com/shaobingchen/neuroworkflow
+Author-email: shaobingchen <shaobingchen0012@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
