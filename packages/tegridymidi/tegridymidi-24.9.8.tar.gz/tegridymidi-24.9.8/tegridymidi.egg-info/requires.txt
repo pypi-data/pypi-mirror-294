@@ -1,0 +1,13 @@
+tqdm
+pillow
+numpy
+matplotlib
+scipy
+networkx
+scikit-learn
+
+[cuda]
+torch
+einops
+cupy-cuda12x
+torch-summary
