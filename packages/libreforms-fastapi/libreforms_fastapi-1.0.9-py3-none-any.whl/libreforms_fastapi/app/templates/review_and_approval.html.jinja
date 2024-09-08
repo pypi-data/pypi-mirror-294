@@ -1,0 +1,161 @@
+{% extends "base.html.jinja" %}
+
+{% block header %}
+    <link href="{{ url_for('static', path='css/datatables.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+{{config.SITE_NAME}} — Review & Approval
+{% endblock %}
+
+{% block content %}
+<h4>Review & Approval</h4>
+
+
+
+<div class="container table-responsive">
+    <div class="spinner-border spinner-border-sm loading-circle" role="status"></div>
+    <table id="readAllTable" class="table table-hover table-striped table-light" style="display: none;">
+        <thead>
+            <tr>
+                <th>Record</th>
+                <th>Form</th>
+                <th>Details</th>
+                <th>Last Editor</th>
+                <th>Last Modified</th>
+                <th>Created By</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<div id="noDataMessage" style="display: none;">There are no submissions that require your review or approval at this time.</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', path='js/datatables.js')}}"></script>
+<script>
+
+
+$(document).ready(function () {
+
+    const spinner = document.querySelector('.loading-circle');
+    const readAllTable = document.getElementById('readAllTable');
+    const noDataMessage = document.getElementById('noDataMessage');
+    const apiKey = "{{ request.user.api_key }}";
+    const formNames = {{ form_names | tojson }};
+    let allFormData = [];
+
+
+    // https://www.geeksforgeeks.org/how-to-truncate-a-string-in-javascript/
+    function GFG(str, maxLength) {
+        if (str.length > maxLength) {
+            return str.substring(0, maxLength) + '...';
+        }
+        return str;
+    }
+
+    function formatObject(obj) {
+        return Object.entries(obj)
+            .map(([key, value]) => `<strong>${key}</strong>: ${value}`)
+            .join(', ');
+    }
+
+
+    // Wrap the AJAX call in a function that returns a Promise
+    function fetchData() {
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: `/api/form/read_all_needing_action?return_full_records_flat=true`,
+                type: "GET",
+                dataType: 'json',
+                beforeSend: function(xhr){xhr.setRequestHeader('X-API-KEY', apiKey);},
+                success: function(formData) {
+                    resolve(formData.documents);
+                    // console.log(formData.documents);
+                },
+                error: function(xhr, status, error) {
+                    reject(error);
+                }
+            });
+        });
+    }
+
+
+
+    // Use .then() to process data after the AJAX call is complete
+    fetchData().then(formData => {
+        allFormData = allFormData.concat(formData);
+
+        //console.log(allFormData);
+
+        // Now process allFormData
+        allFormData.forEach(form => {
+            let row = `<tr>
+                            <td title="View submission actions" class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">${form['metadata']['document_id']}</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/ui/form/review_and_approval/${form['metadata']['form_name']}/${form['metadata']['document_id']}">Go to Review and Approval</a>
+                                    <a class="dropdown-item" href="/ui/form/read_one/${form['metadata']['form_name']}/${form['metadata']['document_id']}">View this Submission</a>
+                                </div>
+                            </td>
+                            <td>${form['metadata']['form_name'].replace(/_/g, ' ')}</td>
+                            {# <td>${GFG(JSON.stringify(form['data']), 60)}</td> #}
+            {# <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Review and Approval</h6>
+            <a class="dropdown-item disabled" id="approveLink" href="#">Go to Approval</a> #}
+                            <td>${GFG(formatObject(form['data']), 150)}</td>
+                            <td>
+                                <a target="_blank" href="/ui/auth/p/${form['metadata']['last_editor']}" class="badge bg-primary text-decoration-none" style=" {%if not config['OTHER_PROFILES_ENABLED'] and not request.user.site_admin%} pointer-events: none;{%endif%}" aria-label="Link to ${form['metadata']['last_editor']}">
+                                    ${form['metadata']['last_editor']}
+                                </a>
+                            </td>
+                            <td><span title="${form['metadata']['last_modified']}">${prettifyTimeDiff(form['metadata']['last_modified'], "{{config['TIMEZONE']|string}}")}</span></td>
+                            <td>
+                                <a target="_blank" href="/ui/auth/p/${form['metadata']['created_by']}" class="badge bg-primary text-decoration-none" style=" {%if not config['OTHER_PROFILES_ENABLED'] and not request.user.site_admin%} pointer-events: none;{%endif%}" aria-label="Link to ${form['metadata']['created_by']}">
+                                    ${form['metadata']['created_by']}
+                                </a>
+                            </td>
+                            <td><span title="${form['metadata']['created_at']}">${prettifyTimeDiff(form['metadata']['created_at'], "{{config['TIMEZONE']|string}}")}</span></td>
+                        </tr>`;
+            $("#readAllTable tbody").append(row);
+        });
+
+
+
+
+        spinner.style.display = 'none'; // Hide the spinner
+        readAllTable.style.display = ''; // Show the table
+
+        $('#readAllTable').DataTable({
+            // This is a fix to properly sort prettified datetimes
+            columnDefs: [
+                { 
+                    targets: [4, 6], 
+                    render: function(data, type, row) {
+                        var date = $(data).attr('title');
+                        return type === 'sort' ? date : data; 
+                    }
+                }
+            ],
+            language: {
+                "emptyTable":     "There are no submissions that require your review or approval at this time"
+            }
+        });
+
+    }).catch(error => {
+        console.error("Error fetching data:", error);
+        flashMessage("There was an issue fetching results. There may be none to display.", AlertCategories.WARNING);
+        spinner.style.display = 'none'; // Hide the spinner
+        readAllTable.style.display = 'none'; 
+        noDataMessage.style.display = ''; 
+
+    });
+});
+
+</script>
+
+{% endblock %}

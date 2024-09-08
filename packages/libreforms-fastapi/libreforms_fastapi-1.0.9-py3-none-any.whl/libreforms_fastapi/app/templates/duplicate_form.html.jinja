@@ -1,0 +1,351 @@
+{% extends "base.html.jinja" %}
+
+{% block title %}
+{{ config.SITE_NAME }} — Duplicate Form
+{% endblock %}
+
+{% block content %}
+<h4>Duplicate Form: {{form_name | replace("_", " ") | title}}</h4>
+
+<div class="container">
+
+    <form id="dataForm" method="POST">
+
+        {% for field in form_html %}
+            {{ field | safe }}
+        {% endfor %}
+
+        <fieldset style="padding-top: 10px;" class="form-check">
+            <button type="submit" class="btn btn-primary" id="createButton">Create</button>
+        </fieldset>
+
+    </form>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+
+var apiKey = "{{ request.user.api_key }}"; 
+function getLookup(formName, fieldName, el) {
+
+    // Access the selected option
+    var selectedOption = el.options[el.selectedIndex];
+
+    // Get the 'data-hidden' attribute from the selected option
+    var documentData = selectedOption.getAttribute('data-hidden');
+    var documentId = selectedOption.value;
+    // console.log(documentData);
+    
+    const contentField = document.getElementById(`content_${fieldName}`);
+
+    // Clear previous contents
+    contentField.innerHTML = '';
+
+    if (documentData) {
+        let dataObj;
+        try {
+            dataObj = JSON.parse(documentData); 
+        } catch (error) {
+            console.error("Parsing error:", error);
+            return; // Stop execution if JSON is invalid.
+        }
+
+        const listGroup = document.createElement("div");
+        listGroup.className = 'list-group';
+
+        Object.keys(dataObj).forEach(function(key) {
+            const listItem = document.createElement("a");
+            listItem.className = 'list-group-item list-group-item-action';
+            listItem.innerHTML = `<strong>${key}:</strong> ${dataObj[key]}`;
+            listGroup.appendChild(listItem);
+        });
+
+        contentField.appendChild(listGroup);
+
+        let oldLink = document.getElementById('lookup-link-'+fieldName);
+        if (oldLink) {
+            oldLink.parentNode.removeChild(oldLink);
+        }
+
+        // Create an anchor element with the appropriate href
+        let link = document.createElement('a');
+        link.href = "/ui/form/read_one/" + formName + "/" + documentId;
+        link.innerHTML = "Open Full Record for this Form";
+        link.className = "btn btn-primary d-flex justify-content-center my-3";
+        link.title = "Click here to view more details about this form.";
+        link.target = "_blank";
+        link.setAttribute("aria-label", "View full details for this form");
+        link.id = 'lookup-link-'+fieldName; // Add this line to set the id
+
+        contentField.parentNode.insertBefore(link, contentField);
+
+
+    }
+}
+
+
+function generateLookup(formName, fieldName, displayFields) {
+
+    function fetchData(formName) {
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: `/api/form/read_all/${formName}?flatten=true&exclude_journal=true&stringify_output=true&sort_by_last_edited=true&newest_first=true&return_when_empty=true`,
+                type: "GET",
+                dataType: 'json',
+                beforeSend: function(xhr){xhr.setRequestHeader('X-API-KEY', apiKey);},
+                success: function(formData) {
+                    resolve(formData.documents);
+                },
+                error: function(xhr, status, error) {
+                    reject(error);
+                }
+            });
+        });
+    }
+
+    // Fetch data for the single form
+    fetchData(formName).then(documents => {
+
+        // First add an empty option at the top of the list
+        $('#' + fieldName).append($('<option>', {
+            value: "",
+            'data-hidden': "",
+            text: "Select an option below"
+        }));
+
+
+        var trimmedData = [];
+        // Process documents
+        documents.forEach(form => {
+            // Initialize an empty string for each form
+            let concatenatedFields = '';
+
+            displayFields.forEach(field => {
+                if (form[field] !== undefined) {
+                    concatenatedFields += form[field] + ', ';
+                }
+            });
+
+            // Trim the trailing commas and spaces, and add the concatenated string to the trimmedData array
+            concatenatedFields = concatenatedFields.replace(/,\s*$/, '');
+            trimmedData.push(concatenatedFields);
+
+            // Append each concatenated string as an option to the select element
+            $('#' + fieldName).append($('<option>', {
+                value: form['__metadata__document_id'],
+                'data-hidden': JSON.stringify(form),
+                text: concatenatedFields
+            }));
+        });
+    }).catch(error => {
+        console.error("Error fetching data: ", error);
+    });
+}
+
+
+$(document).ready(function() {
+
+    var formName = "{{ form_name }}";
+    var documentId = "{{ document_id }}";
+
+    // Fetch existing document data
+    function fetchDocumentData() {
+        $.ajax({
+            url: `/api/form/read_one/${formName}/${documentId}`,
+            type: 'GET',
+            headers: {
+                'X-API-KEY': apiKey,
+            },
+            dataType: 'json',
+            success: populateFormData,
+            error: function(xhr) {
+                console.error('Failed to fetch document data', xhr.responseText);
+            }
+        });
+    }
+
+    // Populate form fields with fetched data
+    function populateFormData(response) {
+        const data = response.data;
+
+        for (const key in data) {
+            const value = data[key];
+            const field = $(`[name="${key}"]`);
+
+            // Check if the field has the data-mutable attribute and if it's set to "true"
+            const isMutable = field.attr('data-mutable') === 'true';
+
+            // Debugging: Log field information
+            // console.log(`Field: ${key}, Data Mutable: ${isMutable}`);
+
+            if (isMutable) {
+                // Skip setting the value for fields marked as mutable
+                // console.log("Skipping mutable field: ", key);
+                continue;
+            }
+
+            if (Array.isArray(value)) {
+                // For checkboxes or multi-selects
+                value.forEach(val => {
+                    $(`[name="${key}"]`).filter(`[value="${val}"]`).prop('checked', true);
+                });
+            } else if (typeof value === 'object' && value !== null) {
+                // I'm leaving this hear but I don't think we are going to have too many of these
+            } else {
+                // Handle strings and numbers
+                if(field.is(':radio')) {
+                    // If the field is a radio button, find the one that matches the value and check it
+                    field.filter(`[value="${value}"]`).prop('checked', true);
+                } else if (field.is(':checkbox')) {
+                    // Handle boolean values for checkboxes
+                    if (typeof value === 'boolean') {
+                        field.prop('checked', value);
+                        field.trigger('change');
+                    } else {
+                        // For all other field types, just set the value
+                        field.val(value);
+                    }
+                } else {
+                    // For all other field types, just set the value
+                    field.val(value);
+                }
+            }
+        }
+    }
+
+    // Call fetchDocumentData on page load
+    fetchDocumentData();
+
+    // var elements = document.querySelectorAll('.data-lookup');
+
+    // Iterate over each element and call getLookup with appropriate parameters
+    // elements.forEach(function(element) {
+    //     var dataLink = element.getAttribute('data-link');
+    //     var id = element.id;
+    //     getLookup(dataLink, id, element);
+    // });
+
+
+
+    // Initialize Bootstrap tooltips
+    $('[data-bs-toggle="tooltip"]').tooltip();
+
+    // Set each label correctly
+    $('.bool-switch').each(function() {
+        $(this).trigger('change');
+    });
+
+
+    // Form submission event
+    $('#dataForm').submit(function(event) {
+        event.preventDefault(); // Prevent the form from submitting via the browser
+
+        // Disable the submit button
+        $('#createButton').prop('disabled', true);
+
+        // Flag to track if the form is valid
+        let formIsValid = true;
+
+        // Iterate over each required checkbox group
+        $('.required-checkbox-group[data-required="true"]').each(function() {
+            const $group = $(this);
+            const isChecked = $group.find('input[type="checkbox"]:checked').length > 0;
+
+            if (!isChecked) {
+                formIsValid = false;
+
+                // Temporarily show the tooltip
+                $group.tooltip('dispose').tooltip({
+                    title: "Please select at least one option.",
+                    placement: 'right'
+                }).tooltip('show');
+
+                // Hide the tooltip after 2 seconds
+                setTimeout(function() { $group.tooltip('dispose'); }, 2000);
+            }
+        });
+
+        // Prevent form submission if validation fails
+        if (!formIsValid) {
+
+            // Re-enable the submit button
+            $('#createButton').prop('disabled', false);
+            event.preventDefault();
+            
+        } else {
+            var formData = {};
+            
+            // Process all except checkboxes
+            $('#dataForm').find('input:not(:checkbox), textarea, select').each(function() {
+                formData[this.name] = $(this).val();
+            });
+            
+            
+            // Process checkboxes: group them by name and gather checked values into arrays
+            $('#dataForm').find('input:checkbox').each(function() {
+                if ($(this).hasClass('bool-switch-checkbox')) {
+                    // If element has the class 'bool-switch-checkbox', set formData[this.name] to its checked state
+                    formData[this.name] = $(this).is(':checked');
+                } else {
+                    if (!formData.hasOwnProperty(this.name)) {
+                        formData[this.name] = [];
+                    }
+                    if ($(this).is(':checked')) {
+                        formData[this.name].push($(this).val() || true); // Push 'true' if value is unspecified
+                    }
+                }
+            });
+
+
+            $('#dataForm').find('input:radio').each(function() {
+                if ($(this).is(':checked')) {
+                    formData[this.name] = $(this).val();
+                }
+            });
+
+            var formName = "{{ form_name }}";
+
+            // console.log(formData);
+
+            $.ajax({
+                url: `/api/form/create/${formName}`,
+                type: 'POST',
+                headers: {
+                    'X-API-KEY': apiKey,
+                },
+                data: JSON.stringify(formData),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function(response) {
+                    // Redirect to the read_one page with the form_name and document_id from the response
+                    setFlashMessage("Successfully created form submission", AlertCategories.SUCCESS);
+                    
+
+                    window.location.href = `/ui/form/read_one/${formName}/${response.document_id}`;
+
+                },
+                error: function(xhr) {
+
+                    // Re-enable the submit button
+                    $('#createButton').prop('disabled', false);
+
+                    console.error('Form creation failed', xhr.responseText);
+                    flashMessage(xhr.responseText, 'warning');
+                }
+            });
+        }
+    });
+});
+
+
+function updateLabel(checkbox, enabledText, disabledText) {
+    var label = checkbox.nextElementSibling;
+    label.textContent = checkbox.checked ? enabledText : disabledText;
+}
+
+
+
+</script>
+{% endblock %}
