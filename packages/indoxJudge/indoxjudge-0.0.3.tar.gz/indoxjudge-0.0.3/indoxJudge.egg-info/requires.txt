@@ -1,0 +1,15 @@
+dash
+dash_bootstrap_components
+dash_daq
+ipython
+loguru
+nltk
+numpy
+pandas
+plotly
+protobuf
+pydantic
+Requests
+tenacity
+tqdm
+scikit-criteria
