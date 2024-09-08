@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: opentelemetry-instrumentation-asyncpg-listen
+Version: 0.0.1
+Summary: OpenTelemetry asyncpg-listen instrumentation
+Project-URL: Homepage, https://github.com/anna-money/opentelemetry-instrumentation-asyncpg-listen
+Author-email: Iurii Pliner <yury.pliner@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: opentelemetry-api>=1.19
+Requires-Dist: opentelemetry-instrumentation>=0.48b0
+Requires-Dist: opentelemetry-semantic-conventions>=0.48b0
+Requires-Dist: wrapt<2.0.0,>=1.0.0
+Provides-Extra: instruments
+Requires-Dist: asyncpg-listen<0.1.0,>=0.0.6; extra == 'instruments'
