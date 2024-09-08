@@ -1,0 +1,2 @@
+[console_scripts]
+load_clean_and_plot = eeg_analysis.main:load_clean_and_plot
