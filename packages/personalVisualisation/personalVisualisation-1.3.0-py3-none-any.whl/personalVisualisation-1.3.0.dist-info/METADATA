@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: personalVisualisation
+Version: 1.3.0
+Summary: All functions that assist in standardising development approaches.
+Home-page: https://github.com/yourusername/your-repo
+Author: Marcus
+Author-email: marcusongkiansiong@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: custom-development-standardisation >=1.1.2
+Requires-Dist: matplotlib >=3.8.3
+Requires-Dist: pandas >=2.2.2
+Requires-Dist: Pillow >=10.4.0
+
+
+# Charts
+### Generate image
+##### generate pie chart
+`./images/pie.py`, `generate_pie_chart_image_data(data)`
+```python
+    obj = {
+        one: 10
+        two: 20
+        three: 30
+    }
+```
+*Caption 1: Expected input structure for `generate_pie_chart_image_data` function*
+
+
+
+# Change log
+### [1.3.0] - 2024-09-07
+add:
+1. insert_logger
+2. Logger
+3. Logger method execution encapsulation
+fixed:
+others:
+### [1.2.0] - 2024-08-01
+add:
+1. Bar.py: Added bar chart image generation
+fixed:
+others:
+### [1.1.1] - 2024-07-06
+add:
+fixed:
+others:
+1. Incorporated log function call in image/line.py.
+### [1.1.0] - 2024-06-23
+add:
+1. Line.py: You can generate line chart binary now from x and y array data. 
+fixed:
+others:
+### [1.0.0] - 2024-06-23
+add:
+1. image visualisation: Charts that is presented in terms of image binary data
+2. pie visual for image: Display a pie chart.
+3. root init file: Added log_data class initialisation. 
+fixed:
+others:
+1. Purpose of image visualisation: For displaying visuals in the front end.
