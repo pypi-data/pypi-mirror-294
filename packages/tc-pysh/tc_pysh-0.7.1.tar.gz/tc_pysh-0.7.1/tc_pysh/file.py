@@ -1,0 +1,114 @@
+import os
+import re
+import builtins
+from typing import Union, IO, Optional
+from collections.abc import Iterable
+from io import TextIOBase
+
+from .stream import Stream
+
+
+class FileStream(Stream):
+    def __init__(self, file: IO[str] | Iterable):
+        if hasattr(file, "close"):
+            self.f: Optional[IO[str]] = file
+        else:
+            self.f = None
+        super().__init__(file)
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+
+    def close(self):
+        if self.f is not None:
+            self.f.close()
+
+    @property
+    def closed(self):
+        return self.f is not None and self.f.closed
+
+    @classmethod
+    def wrap(cls, path_or_file: Union[str, IO[str]]):
+        if isinstance(path_or_file, str):
+            return cls(builtins.open(path_or_file))
+        else:
+            return cls(path_or_file)
+
+
+def open(path: str, mode="r") -> FileStream:
+    if mode != "r":
+        raise ValueError("Only r mode is supported for text streams.")
+
+    return FileStream(builtins.open(path))
+
+
+def human(size, use_si=False):
+    "Convert number of bytes into human readable size."
+    s = size
+    u = ""
+    d = 10**3 if use_si else 2**10
+    for unit in ("K", "M", "G", "T", "E", "P"):
+        if s < d:
+            break
+        s /= d
+        u = unit
+
+    return s, u
+
+
+def size(path):
+    "Return the size of path in bytes."
+    return os.stat(path).st_size
+
+
+# FIXME Right now all the following functions are eager
+# because the wrapper needs to read the file before it is closed.
+# I need to figure a proper way of providing a lazy stream of lines.
+# For that, the wrapper should pass the closing procedure down the pipe.
+
+
+def head(path_or_file: Union[str, IO[str]], n=10):
+    "Iterate over the n first lines of path."
+    with FileStream.wrap(path_or_file) as f:
+        return Stream(f.islice(n))
+
+
+def tail(path_or_file: Union[str, IO[str]], n=10):
+    "Iterate over the n last lines of path."
+    with FileStream.wrap(path_or_file) as f:
+        return Stream(f.tail(n))
+
+
+def skip(path_or_file: Union[str, IO[str]], n=10):
+    "Iterate over the lines of path after the nth."
+    with FileStream.wrap(path_or_file) as f:
+        for _ in zip(range(n), f):
+            pass
+        return Stream(list(f))
+
+
+def before(path_or_file: Union[str, IO[str]], n=10):
+    "Iterate over the lines of path but stop before the last n."
+    with FileStream.wrap(path_or_file) as f:
+        return Stream(list(f.before(n)))
+
+
+def last(path_or_file: Union[str, IO[str]]):
+    with FileStream.wrap(path_or_file) as f:
+        for last in f:
+            pass
+        return Stream(list(last))
+
+
+def grep(path_or_file: Union[str, IO[str]], pattern):
+    "Iterate over the lines from path that match pattern."
+    r = re.compile(pattern)
+    with FileStream.wrap(path_or_file) as f:
+
+        def matcher(e):
+            return r.match(e) is not None
+
+        return f.filter(matcher)
