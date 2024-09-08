@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: myhumblepy
+Version: 0.0.1
+Summary: A package of utility functions
+License: MIT
+Author: JeremyLew
+Author-email: 45438791+JeremyLew@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# myhumblepy
+
+This repository is a collection of my utility functions as I learn how to create
+and maintain a python package.
+
