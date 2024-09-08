@@ -1,0 +1,12 @@
+logmon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logmon/bot.py,sha256=BuBVyavt9xjG0fJMuhv-xhtYGre4kDdz6AoZ3cleR60,4051
+logmon/commands_linux.py,sha256=EcUb2TaSuQx3P1HlqmZq4t0xJkkN2nrz1o9e8jOs6kg,2561
+logmon/config.py,sha256=TO7OZFypvVM_rBSzmEcBy0m-EBTFltm079k0MfdWcSI,2386
+logmon/init.py,sha256=FIXVwfR9EQSGCbBUS95vSKi20nsa0-0sfQMOxwCcbK4,1673
+logmon/main_executor.py,sha256=dLNNKAcFTGa5apNOmfDPxXhswJILxqP1EReXjN8_d7I,2054
+logmon/main_watcher.py,sha256=5vb-tXjncd8JjW4dV_RcZ2qknhKK9pntSy4OCGpbuZA,1049
+logmon/notify_loop.py,sha256=W7aAvpDMH25AecapfTilVbvXq5a7jAB0oGqP5faNgtk,2404
+logmon-0.0.1.dist-info/METADATA,sha256=UgbCliSIFBqg65R4CDEqJygeOSaAd13ijiFRYmig_g0,2933
+logmon-0.0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+logmon-0.0.1.dist-info/top_level.txt,sha256=pyc831AehibhvwfdsIyEs9q1PnbQm2ndihW3oprqNGc,7
+logmon-0.0.1.dist-info/RECORD,,
