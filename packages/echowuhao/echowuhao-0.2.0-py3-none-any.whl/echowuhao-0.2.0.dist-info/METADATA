@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: echowuhao
+Version: 0.2.0
+Summary: Personal tools
+Requires-Python: >=3.11
+Requires-Dist: echowuhao
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+## develop tool
+
+uv build
+
+### install
+
+uv tool install .
