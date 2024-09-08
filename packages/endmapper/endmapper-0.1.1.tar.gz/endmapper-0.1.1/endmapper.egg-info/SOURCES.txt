@@ -1,0 +1,7 @@
+LICENSE
+README.txt
+setup.py
+endmapper.egg-info/PKG-INFO
+endmapper.egg-info/SOURCES.txt
+endmapper.egg-info/dependency_links.txt
+endmapper.egg-info/top_level.txt
