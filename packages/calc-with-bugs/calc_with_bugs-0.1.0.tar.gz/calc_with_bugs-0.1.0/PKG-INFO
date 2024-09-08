@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: calc-with-bugs
+Version: 0.1.0
+Summary: 
+Author: Artem Burenin
+Author-email: burenin@mindbox.cloud
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyqt6 (>=6.4.2,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Калькулятор с багами
+
+Это приложение создано для тестов в режиме чёрного ящика.
+
+## Как установить и запустить
+
+> [!NOTE]
+> Для работы приложения требуется Python версии 3.9 или выше.
+
+Установить калькулятор можно с помощью pip. Для этого в терминале введите команду:
+```shell
+pip install "calc-with-bugs==0.1.0"
+```
+
+Чтобы запустить в терминале введите команду:
+
+```shell
+python -m calc
+```
+
+## Какие есть баги
+
+- Можно ввести буквы в окошко, это крашит приложение
+- Кнопка MC (Memory clear) отключена
+- Нажмите на 0)
+- Нажмите на MR)
+- кнопка стирания не работает

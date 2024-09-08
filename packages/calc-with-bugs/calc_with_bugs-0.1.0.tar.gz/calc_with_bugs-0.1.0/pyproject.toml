@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "calc-with-bugs"
+version = "0.1.0"
+description = ""
+authors = ["Artem Burenin <burenin@mindbox.cloud>"]
+readme = "README.md"
+packages = [
+    { include = "calc" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyqt6 = "^6.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
