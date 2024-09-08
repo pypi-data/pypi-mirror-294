@@ -1,0 +1,2 @@
+[console_scripts]
+pd = paper_down.main:main
