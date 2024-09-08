@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Configify-Wizard
+Version: 0.1.0
+Summary: A configuration parser for YAML, CFG, and ENV files
+Home-page: https://github.com/yourusername/config_parser_module
+Author: Krishna Murthy Srinivasan
+Author-email: harikrishnachn@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+
