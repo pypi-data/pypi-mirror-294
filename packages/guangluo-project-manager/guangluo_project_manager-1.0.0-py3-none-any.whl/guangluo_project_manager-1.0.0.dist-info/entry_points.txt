@@ -1,0 +1,3 @@
+[console_scripts]
+project=guangluo_project_manager.main:app
+
