@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+backtesterr.egg-info/PKG-INFO
+backtesterr.egg-info/SOURCES.txt
+backtesterr.egg-info/dependency_links.txt
+backtesterr.egg-info/top_level.txt
+src/__init__.py
+src/backtester.py
