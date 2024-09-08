@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jingziqi
+Version: 0.0.1
+Summary: 实现井字棋算法
+Author: hjk
+Author-email: 2637389915@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
