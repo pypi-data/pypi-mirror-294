@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+tcrdb/__init__.py
+tcrdb/tcrdb_dddb.py
+tcrdb/version.py
+tcrdb.egg-info/PKG-INFO
+tcrdb.egg-info/SOURCES.txt
+tcrdb.egg-info/dependency_links.txt
+tcrdb.egg-info/requires.txt
+tcrdb.egg-info/top_level.txt
