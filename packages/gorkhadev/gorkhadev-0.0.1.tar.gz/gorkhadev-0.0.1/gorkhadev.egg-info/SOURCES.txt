@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gorkhadev/__init__.py
+gorkhadev/info.py
+gorkhadev.egg-info/PKG-INFO
+gorkhadev.egg-info/SOURCES.txt
+gorkhadev.egg-info/dependency_links.txt
+gorkhadev.egg-info/top_level.txt

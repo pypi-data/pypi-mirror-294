@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gorkhadev
+Version: 0.0.1
+Summary: CLI for Gorkha Dev
+Home-page: https://github.com/gorkhadev/gorkhadev
+Author: Gorkha Dev
+Author-email: gorkhadeveloper@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Gorkha Dev
+
+The CLI for Gorkha Dev.
+
+
