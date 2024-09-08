@@ -1,0 +1,2 @@
+include my_eth_predictor/*.h5
+include my_eth_predictor/scaler_custom.pkl
