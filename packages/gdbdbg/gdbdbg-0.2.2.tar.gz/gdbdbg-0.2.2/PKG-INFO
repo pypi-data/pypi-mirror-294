@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: gdbdbg
+Version: 0.2.2
+Summary: gdb debugger
+Home-page: https://github.com/saltstack/gdbdbg
+Bug Tracker = https://github.com/saltstack/gdbdbg/issues
+Author: Daniel A. Wozniak
+Author-email: <dwozniak@broadcom.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+gdbdbg
+======
+
+gdbdbg will gather some general debugging information as well as the stack
+traces from each thread.
+
+```
+gdbdbg-info <pid>
+```
+
+gdbdbg-inject can be used to inject some python code into the running process.
+
+If you have manhole installed you can write a script like this:
+
+```manhole.py
+import manhole
+manhole.install()
+```
+
+And inject it with gdbdbg-inject:
+
+```
+gdbdbg-inject <pid> manhole.py
+```
