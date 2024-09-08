@@ -1,0 +1,10 @@
+pyjamfpro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyjamfpro/endpoints.py,sha256=i2Ma25u-KHLi42Mwwuf8aL_IVKy9iXni9-sbyKgY8Fs,10362
+pyjamfpro/jamfpro.py,sha256=BJ0JL17FleoV1AYeRUWiLc44IxPXfRvZ0DicevnYyu8,6172
+pyjamfpro/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyjamfpro/utils/dict_to_xml.py,sha256=oLyTov5SIrPHhIx8-8oP32PZxzFidn-uPRXmF115nfA,1356
+pyjamfpro-0.2.1.dist-info/LICENSE.md,sha256=umZ-6Hu_v9fB1BnrDaQBV1B7wS0Om42VlHdT1Uco7js,1082
+pyjamfpro-0.2.1.dist-info/METADATA,sha256=G54lLjMMSMOL8AYE9CQisLHsUR0Sjq9i_Lez8DZdzDQ,3998
+pyjamfpro-0.2.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+pyjamfpro-0.2.1.dist-info/top_level.txt,sha256=M7aq0qBatIvtrMN-Cb04HI4YU91qD7rXpuu2mHQ6M7Q,10
+pyjamfpro-0.2.1.dist-info/RECORD,,
