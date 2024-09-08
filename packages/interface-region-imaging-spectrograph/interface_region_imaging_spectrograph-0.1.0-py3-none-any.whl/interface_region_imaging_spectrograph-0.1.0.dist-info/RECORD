@@ -1,0 +1,13 @@
+iris/__init__.py,sha256=H2ybAKQhhxW-57iSoH5NfcVPZdb-xPxxd4N-I2_LNc8,265
+iris/data.py,sha256=9cAcUQvLm60u3FMy8msR0PCpSDQQfVqoy9Vq9kdzIHg,8218
+iris/planning.py,sha256=V8iqjjbjQ4G8QJlXStlvYm_ho2KLlDJjBqSPViozuxM,1582
+iris/_spectrograph/__init__.py,sha256=oPszbjozcFTPKTLEtvR0lzB50w6h_unI3fXVWnEZm-4,173
+iris/_spectrograph/_spectrograph.py,sha256=xKKRNrmESaXHQafbgriZQFHFTuJ3JkDjYZvqt6STYHQ,15147
+iris/_spectrograph/_spectrograph_test.py,sha256=MhE-DcDPOdapwtlTuVFm3vgHSdePwH76QcdirrUJr1E,843
+iris/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iris/_tests/test_data.py,sha256=azfmhfNTWjACl-VWJfzoWMnSIMdEqreiH0aD4hyZoHU,3099
+iris/_tests/test_planning.py,sha256=SgELk1R2b_t3t-zAJgMOSa87QfWL2tIWAzIYdk5VsfY,949
+interface_region_imaging_spectrograph-0.1.0.dist-info/METADATA,sha256=34kl80vtVKlTJtSF-h1sbEI6-7eV5EkdbCq3IqN_6ss,3120
+interface_region_imaging_spectrograph-0.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+interface_region_imaging_spectrograph-0.1.0.dist-info/top_level.txt,sha256=v3iL68K7jvu0_EcJMk9MMahcEbXtfFjHEzSsOSM5yJQ,5
+interface_region_imaging_spectrograph-0.1.0.dist-info/RECORD,,
