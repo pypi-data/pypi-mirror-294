@@ -1,0 +1,2 @@
+[console_scripts]
+executable-name = fdio.fdio:cli

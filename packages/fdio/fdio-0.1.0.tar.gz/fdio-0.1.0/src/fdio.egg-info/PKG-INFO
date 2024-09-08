@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fdio
+Version: 0.1.0
+Summary: A CLI tool that manages files and directories.
+Home-page: https://github.com/ayoub-aberbach/fdio
+Author: Ayoub A.
+Author-email: aberbach.me@gmail.com
+License: MIT
+Keywords: cli,file,io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: importlib-metadata; python_version < "3.11"
+
+## Project Description
+
+    FDIO is a Python command line interface (CLI) tool designed to allow you to manage your files and directories.
+
+
+## Commands:
+    
+    crd  Create directories and sub-directories.
+    crf  Create files in the current (or a given) path.
+    cnt  Show the content of one or more files.
+    lfd  List all files and directories of a given path.
+    prg  Purge files and folders.
