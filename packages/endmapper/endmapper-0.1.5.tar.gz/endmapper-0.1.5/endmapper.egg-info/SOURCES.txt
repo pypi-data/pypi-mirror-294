@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+/bin
+bin/endpoint_mapper.py
+endmapper.egg-info/PKG-INFO
+endmapper.egg-info/SOURCES.txt
+endmapper.egg-info/dependency_links.txt
+endmapper.egg-info/top_level.txt
