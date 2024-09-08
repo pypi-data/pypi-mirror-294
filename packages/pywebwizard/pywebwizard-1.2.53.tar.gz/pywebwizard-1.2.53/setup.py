@@ -1,0 +1,50 @@
+from setuptools import setup, find_packages
+
+with open('requirements.txt', 'r') as f:
+    requirements = f.read().splitlines()
+version = "1.2.53"
+setup(
+    name="pywebwizard",
+    version=version,
+    description="The definitive Web Browser Wizard library",
+    long_description=open('README.md', 'r').read(),
+    long_description_content_type="text/markdown",
+    author="ConnorLilHomer",
+    author_email="info@parendum.com",
+    maintainer="Parendum OÜ",
+    maintainer_email="info@parendum.com",
+    url="https://gitlab.com/parendum/webwizard",
+    download_url="https://gitlab.com/parendum/webwizard/-/archive/main/webwizard-main.tar.gz",
+    packages=find_packages(),
+    # py_modules=['module1', 'module2'],
+    # scripts=['bin/script1', 'bin/script2'],
+    # ext_modules=[],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    # distclass=None,  # Clase personalizada de distribución, si es necesaria
+    # script_name='setup.py',
+    # script_args=['build'],
+    # options={},
+    license="MIT",
+    keywords=["web automation", "browser", "scraping", "python", "selenium"],
+    platforms=["Windows", "Linux", "MacOS"],
+    # cmdclass={},
+    # data_files=[('my_data', ['data/data_file.txt'])],
+    # package_dir={"": "src"},
+    # obsoletes=['old-package'],
+    # provides=['webwizard'],
+    # requires=['special-lib (>=1.0)'],
+    # command_packages=['cmd_pkg'],
+    # command_options={},
+    # package_data={'pywebwizard': ['data/*.csv']},
+    # include_package_data=True,
+    # libraries=['mylib'],
+    # headers=['include/header.h'],
+    # ext_package='pywebwizard.extensions',
+    # include_dirs=['/usr/include/mylib'],
+    fullname=f"PyWebWizard {version}",
+    python_requires='>=3.8',
+)
