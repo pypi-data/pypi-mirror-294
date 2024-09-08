@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: table-transformer
+Version: 1.0.5
+Summary: Table Transformer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torchvision (~=0.19.1)
+Requires-Dist: numpy (~=2.1.1)
+Requires-Dist: pandas (==2.2.2)
+Requires-Dist: torch (~=2.4.1)
+Requires-Dist: matplotlib (~=3.9.2)
+Requires-Dist: seaborn (~=0.13.2)
+Requires-Dist: PyMuPDF (==1.24.10)
+Requires-Dist: scikit-image (==0.24.0)
+Requires-Dist: pathlib (~=1.0.1)
+Requires-Dist: pycocotools (~=2.0.7)
+Requires-Dist: editdistance (==0.6.2)
+Requires-Dist: scipy (~=1.11.2)
+Requires-Dist: Cython (==0.29.33)
+Requires-Dist: packaging (~=23.1)
+Requires-Dist: tqdm (==4.66.5)
+Requires-Dist: Pillow (~=9.5.0)
+Requires-Dist: wheel (~=0.40.0)
+Requires-Dist: easyocr (~=1.7.1)
+
+# Table Transformer Library
+
+Original repository: https://github.com/microsoft/table-transformer
+
+## Introduction
+This is the Table Transformer Model developed by Brandon Smock et al. of Microsoft AI. This repository consists of **Table Structure Recognition (TATR)** for detecting and extracting table infomation into popular formats such as CSV or HTML table, plus text recognition using EasyOCR.
+
+## Installation
+```
+pip install table-transformer
+```
+
+## Usage
+
+The full model usage can be found here:
+
+```
+from table_transformer import TableExtractionPipeline, get_cell_coordinates_by_row, apply_ocr, get_detection_class_thresholds, get_structure_class_thresholds
+
+import numpy as np
+import csv
+import easyocr
+from tqdm.auto import tqdm
+
+det_config = "table_transformer\src\detection_config.json"
+str_config = "table_transformer\src\structure_config.json"
+
+
+pipe = TableExtractionPipeline(det_device="cpu", str_device="cpu",
+                 det_model_path=".\pubtables1m_detection_detr_r18.pth",
+                 str_model_path=".\TATR-v1.1-Pub-msft.pth",
+                 det_config_path=det_config, str_config_path=str_config,)
+
+from PIL import Image
+
+img = Image.open("table.jpg")
+
+reader = easyocr.Reader(['en','vi']) # this needs to run only once to load the model into memory
+
+pipe(reader, img)
+     
+```
+
+
+## Evaluation
+
+With structure recognition, the original author has evaluated the v1.0 model on PubTables-1M with great results. With other datasets such as PubTabNet, the score is quite good.
+
+You can check out the score and run the evaluation with your own dataset in [this](https://colab.research.google.com/drive/1-1yRr9djVi5OxITrSf3iZsg__MNE5hN5?usp=sharing) link.
+
+## Version history
+- v1.0.5: Added Table Detection, ending up with a full Table Extraction Pipeline.
+- v1.0.3: Removed unnecessary code and added new functionalities.
+- v1.0.2: Initial version.
