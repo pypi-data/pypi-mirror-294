@@ -1,0 +1,9 @@
+LICENSE
+README.md
+numstore.py
+setup.cfg
+setup.py
+numstore.egg-info/PKG-INFO
+numstore.egg-info/SOURCES.txt
+numstore.egg-info/dependency_links.txt
+numstore.egg-info/top_level.txt
