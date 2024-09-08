@@ -1,0 +1,118 @@
+{
+    "name": "Andorra",
+    "altSpellings": [
+        "AD",
+        "The Principality of Andorra",
+        "Andorre"
+    ],
+    "area": 468,
+    "borders": [
+        "FR",
+        "ES"
+    ],
+    "callingCodes": [
+        "376"
+    ],
+    "capital": "Andorra la Vella",
+    "capital_latlng": [
+        42.5078,
+        1.5211
+    ],
+    "currencies": [
+        "EUR"
+    ],
+    "demonym": "Andorran",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+    "geoJSON": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "id": "AND",
+                "properties": {
+                    "name": "Andorra"
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [1.4087052, 42.4287488],
+                            [1.786639, 42.655791],
+                            [1.521801, 42.506285],
+                            [1.4087052, 42.4287488]
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "ISO": {
+        "alpha2": "AD",
+        "alpha3": "AND"
+    },
+    "languages": [
+        "Catalan"
+    ],
+    "states": [
+        {
+            "id": 1,
+            "name": "Andorra la Vella",
+            "state_code": "07",
+            "cities": [
+                {
+                    "id": 1,
+                    "name": "Andorra la Vella",
+                    "latitude": 42.5078,
+                    "longitude": 1.5211
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Escaldes-Engordany",
+            "state_code": "08",
+            "cities": [
+                {
+                    "id": 2,
+                    "name": "Escaldes-Engordany",
+                    "latitude": 42.5087,
+                    "longitude": 1.5406
+                }
+            ]
+        }
+    ],
+    "wikiLink": "https://en.wikipedia.org/wiki/Andorra",
+    "languages_official": [
+        "Catalan"
+    ],
+    "postal_code_format": "AD[1-7]0\\d",
+    "start_of_week": "monday",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "un_locode": "AD",
+    "unofficial_names": [
+        "Andorre",
+        "Andorra",
+        "アンドラ"
+    ],
+    "government": "Parliamentary co-principality",
+    "expectancy": 84.2,
+    "dish": "Escudella",
+    "symbol": "Eagle",
+    "density": 164.9,
+    "location": "Pyrenees",
+    "religion": "Roman Catholicism",
+    "temperature": 8.5,
+    "continent": "Europe",
+    "independence": "1278",
+    "tld": ".ad",
+    "timezones": [
+        "UTC+01:00"
+    ],
+    "translations": {
+        "es": "Andorra",
+        "fr": "Andorre",
+        "ja": "アンドラ",
+        "it": "Andorra"
+    }
+}

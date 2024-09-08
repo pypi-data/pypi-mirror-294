@@ -1,0 +1,128 @@
+{
+    "name": "Montenegro",
+    "altSpellings": [
+        "ME",
+        "Crna Gora"
+    ],
+    "area": 13812,
+    "borders": [
+        "AL",
+        "BA",
+        "HR",
+        "RS",
+        "XK"
+    ],
+    "callingCodes": [
+        "382"
+    ],
+    "capital": "Podgorica",
+    "capital_latlng": [
+        42.4304,
+        19.2594
+    ],
+    "currencies": [
+        "EUR"
+    ],
+    "demonym": "Montenegrin",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
+    "geoJSON": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "id": "MNE",
+                "properties": {
+                    "name": "Montenegro"
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [18.4337921, 41.8297],
+                            [20.352926, 43.558743],
+                            [19.37439, 42.708678],
+                            [18.4337921, 41.8297]
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "ISO": {
+        "alpha2": "ME",
+        "alpha3": "MNE"
+    },
+    "languages": [
+        "Montenegrin",
+        "Serbian",
+        "Bosnian",
+        "Albanian",
+        "Croatian"
+    ],
+    "states": [
+        {
+            "id": 1,
+            "name": "Podgorica",
+            "state_code": "PG",
+            "cities": [
+                {
+                    "id": 1,
+                    "name": "Podgorica",
+                    "latitude": 42.4304,
+                    "longitude": 19.2594
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Nikšić",
+            "state_code": "NK",
+            "cities": [
+                {
+                    "id": 2,
+                    "name": "Nikšić",
+                    "latitude": 42.7761,
+                    "longitude": 18.9444
+                }
+            ]
+        }
+    ],
+    "wikiLink": "https://en.wikipedia.org/wiki/Montenegro",
+    "languages_official": [
+        "Montenegrin",
+        "Serbian",
+        "Bosnian",
+        "Albanian",
+        "Croatian"
+    ],
+    "postal_code_format": "8\\d{4}",
+    "start_of_week": "monday",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "un_locode": "ME",
+    "unofficial_names": [
+        "Crna Gora",
+        "Montenegro",
+        "モンテネグロ"
+    ],
+    "government": "Parliamentary Republic",
+    "expectancy": 77.1,
+    "dish": "Njeguški pršut",
+    "symbol": "Double-headed eagle",
+    "density": 45.6,
+    "location": "Balkans",
+    "religion": "Eastern Orthodoxy",
+    "temperature": 14.5,
+    "continent": "Europe",
+    "independence": 2006,
+    "tld": ".me",
+    "timezones": [
+        "UTC+01:00"
+    ],
+    "translations": {
+        "es": "Montenegro",
+        "fr": "Monténégro",
+        "ja": "モンテネグロ",
+        "it": "Montenegro"
+    }
+}
