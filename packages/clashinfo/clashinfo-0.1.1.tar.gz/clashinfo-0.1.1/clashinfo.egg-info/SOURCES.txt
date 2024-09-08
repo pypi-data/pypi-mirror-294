@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+clashinfo/__init__.py
+clashinfo/coc.py
+clashinfo/cr.py
+clashinfo.egg-info/PKG-INFO
+clashinfo.egg-info/SOURCES.txt
+clashinfo.egg-info/dependency_links.txt
+clashinfo.egg-info/requires.txt
+clashinfo.egg-info/top_level.txt
