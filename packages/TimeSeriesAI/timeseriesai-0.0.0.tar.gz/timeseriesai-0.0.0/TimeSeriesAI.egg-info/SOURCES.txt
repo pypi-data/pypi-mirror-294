@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+TimeSeriesAI.egg-info/PKG-INFO
+TimeSeriesAI.egg-info/SOURCES.txt
+TimeSeriesAI.egg-info/dependency_links.txt
+TimeSeriesAI.egg-info/top_level.txt
+timeseriesai/__init__.py
+timeseriesai/version.py
