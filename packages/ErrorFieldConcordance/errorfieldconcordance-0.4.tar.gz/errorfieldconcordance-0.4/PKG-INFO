@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ErrorFieldConcordance
+Version: 0.4
+Summary: Calculation of trending concordance between two measures using the Error Field method
+Author-email: Joe Rinehart <jrinehar@hs.uci.ed>
+Keywords: statistics,method comparison,cardiac output,concordance,trending
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# ErrorFieldConcordance
+
+Thie package provides calculation (and optionally graphing) of trending concordance between two measures using the Error Field method.
+
+## Function Call
+After importing the package, the method can be called as follows:
+
+```
+Concordance = ErrorFieldConcordance(X,Y,plot_TF=False,graph_label='',XMeasName='ΔX (LPM)',YMeasName='ΔY (LPM)')
+```
+
+Function Parameters:
++ The X and Y parameters are lists or arrays of equal size corresponding to paired measures to be compared.
++ plot_TF is a boolean that controls whether or not a figure is created
++ graph_label is an optional parameter to be prefixed to the graph title
++ XMeasName and YMeasName are used to customize the X and Y graph labels
+
+## Output
+
+The returned concordance value is a number in the range of \[-1,1\].  Values close to 1 indicate strong concordance.  Values close to -1 indicate strong negative concordance (i.e. the measures tend to move in the opposite direction of one another). Values near 0 suggest independence of the two measures. 
+
+## Graphing
+![Example Error Field Concordance graph showing plotting of random data](https://www.wtfstatistics.com/assets/ExampleFigure1.png)
+
+The figure above shows an Error Field Concordance plot for two 1,000 sample arrays of noise (i.e. independent samples).  The data demonstrates the fields in the plot, with blue zones indicating concordance (the measures move in the same direction and magnitude), red zones indicating discordance (the measures move in opposite directions), and yellow zones indicating relative independence of movement.
+
+![Example Error Field Concordance graph showing highly concordant data](https://www.wtfstatistics.com/assets/ExampleFigure2.png)
+
+The second figure shows two data sets that are highly concordant. Larger movements in the measures (points farther from the origin in the plot) are weighted more heavily than points with little movement.
+
+## Citing
+Please cite this package using the following:  *PubMed Reference & Citation TBD*
+
+## Contributors
+Thanks go out to Bernd Saugel, Sean Coeckelenbergh, Ishita Srivastava, and Brandon Woo for their contributions to this project.
