@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: parendum-astra-api
+Version: 0.1.2
+Summary: A library to interact with the Astra Portal API of Parendum.
+Home-page: https://gitlab.com/parendumteam/parendum-astra-api
+Author: Parendum OÜ
+Author-email: info@parendum.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome
+Requires-Dist: requests
+
+# Parendum Astra API Library
+
+**Parendum OÃœ**  
+Creation Date: September 2023  
+Copyright Â© 2023 Parendum OÃœ. All rights reserved.
+
+## Description
+
+The Parendum Astra API library provides a Python client for interacting with the Parendum Astra API. This library facilitates secure communication with the API, including HMAC signature generation, request header creation, and encrypted response decryption.
+
+## Features
+
+- HMAC signature generation for secure API requests.
+- Encrypted response decryption using AES.
+- Simple methods for fetching reports and company lists.
+
+## Installation
+
+To use this library in your project, simply install it with the next command.
+
+```bash
+pip install git+https://gitlab.com/parendumteam/parendum-astra-api/
+```
+
+## Usage
+
+Initialize the API client with your API key and secret:
+
+```python
+from parendum_astra_api import ParendumAstraAPI
+
+client = ParendumAstraAPI(api_key="YOUR_API_KEY", api_secret="YOUR_API_SECRET")
+```
+
+Retrieve reports:
+
+```python
+reports = client.get_reports(summary=True)
+print(reports)
+```
+
+Retrieve a list of companies:
+
+```python
+companies = client.get_companies()
+print(companies)
+```
+
+## Contact
+
+For any inquiries, feedback, or issues, please contact:
+
+- Email: info@parendum.com
+- Website: https://parendum.com
+
+
+## License
+
+Unauthorized use, reproduction, modification, or distribution without the express consent of Parendum OÃœ is strictly prohibited.
