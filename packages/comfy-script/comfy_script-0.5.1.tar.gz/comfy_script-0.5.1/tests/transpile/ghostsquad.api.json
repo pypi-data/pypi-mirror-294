@@ -1,0 +1,1146 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": {
+        "content": "sdxl\\animeIllustDiffusion_v071.safetensors",
+        "image": "checkpoints/sdxl\\animeIllustDiffusion_v071.jpeg"
+      },
+      "example": "[none]"
+    },
+    "class_type": "CheckpointLoader|pysssss",
+    "_meta": {
+      "title": "Checkpoint Loader 🐍"
+    }
+  },
+  "3": {
+    "inputs": {
+      "prompt": "blurry, worst quality, low quality, ugly, watermark, embedding:sdxl\\unaestheticXL2v10, embedding:sdxl\\EasyNegativeV2-SDXL, embedding:sdxl\\BadDream-SDXL",
+      "insert_embedding": "CHOOSE"
+    },
+    "class_type": "Power Prompt - Simple (rgthree)",
+    "_meta": {
+      "title": "Negative"
+    }
+  },
+  "45": {
+    "inputs": {
+      "prompt": "a gmome in the forest",
+      "insert_embedding": "CHOOSE"
+    },
+    "class_type": "Power Prompt - Simple (rgthree)",
+    "_meta": {
+      "title": "Positive 1\n"
+    }
+  },
+  "194": {
+    "inputs": {
+      "any_02": [
+        "1",
+        2
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "VAE Switch"
+    }
+  },
+  "356": {
+    "inputs": {
+      "value": 1
+    },
+    "class_type": "ImpactFloat",
+    "_meta": {
+      "title": "Denoise For Txt2Img"
+    }
+  },
+  "464": {
+    "inputs": {
+      "base_ctx": [
+        "707",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "Context (rgthree)"
+    }
+  },
+  "495": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "aspect_ratio": "16:9 landscape 1344x768",
+      "swap_dimensions": "Off",
+      "upscale_factor": 1.5,
+      "batch_size": 1
+    },
+    "class_type": "CR SDXL Aspect Ratio",
+    "_meta": {
+      "title": "🔳 CR SDXL Aspect Ratio"
+    }
+  },
+  "497": {
+    "inputs": {
+      "any_02": [
+        "495",
+        4
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Empty Latent Switch"
+    }
+  },
+  "572": {
+    "inputs": {
+      "output_path": "",
+      "filename_prefix": "[time(%Y%m%d-%H%M%S)]-pass1",
+      "filename_delimiter": "-",
+      "filename_number_padding": 4,
+      "filename_number_start": "false",
+      "extension": "png",
+      "quality": 100,
+      "lossless_webp": "false",
+      "overwrite_mode": "false",
+      "show_history": "false",
+      "show_history_by_prefix": "true",
+      "embed_workflow": "true",
+      "show_previews": "false",
+      "images": [
+        "677",
+        0
+      ]
+    },
+    "class_type": "Image Save",
+    "_meta": {
+      "title": "Image Save"
+    }
+  },
+  "602": {
+    "inputs": {
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "destination": [
+        "825",
+        0
+      ],
+      "source": [
+        "978",
+        5
+      ],
+      "mask": [
+        "630",
+        21
+      ]
+    },
+    "class_type": "ImageCompositeMasked",
+    "_meta": {
+      "title": "ImageCompositeMasked"
+    }
+  },
+  "629": {
+    "inputs": {
+      "any_01": [
+        "602",
+        0
+      ],
+      "any_02": [
+        "978",
+        5
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Image Output Switch"
+    }
+  },
+  "630": {
+    "inputs": {
+      "base_ctx": [
+        "1464",
+        0
+      ],
+      "steps": [
+        "1462",
+        0
+      ],
+      "step_refiner": [
+        "975",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "635": {
+    "inputs": {
+      "base_ctx": [
+        "1505",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx\n"
+    }
+  },
+  "669": {
+    "inputs": {
+      "base_ctx": [
+        "670",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "670": {
+    "inputs": {
+      "base_ctx": [
+        "1387",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "677": {
+    "inputs": {
+      "mode": "Only pause if batch",
+      "count": 1,
+      "images": [
+        "629",
+        0
+      ]
+    },
+    "class_type": "Preview Chooser",
+    "_meta": {
+      "title": "Preview Chooser"
+    }
+  },
+  "697": {
+    "inputs": {
+      "base_ctx": [
+        "702",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "Prompt Ctx"
+    }
+  },
+  "700": {
+    "inputs": {
+      "base_ctx": [
+        "697",
+        0
+      ],
+      "model": [
+        "437:2",
+        0
+      ],
+      "positive": [
+        "437:1",
+        0
+      ],
+      "negative": [
+        "441:1",
+        0
+      ],
+      "seed": [
+        "862",
+        0
+      ],
+      "text_pos_g": [
+        "1419",
+        0
+      ],
+      "text_neg_g": [
+        "1495",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "Prompt Ctx"
+    }
+  },
+  "702": {
+    "inputs": {
+      "base_ctx": [
+        "1321",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "707": {
+    "inputs": {
+      "base_ctx": [
+        "700",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "Context (rgthree)"
+    }
+  },
+  "813": {
+    "inputs": {
+      "base_ctx": [
+        "1326",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "824": {
+    "inputs": {
+      "base_ctx": [
+        "630",
+        0
+      ],
+      "latent": [
+        "978",
+        3
+      ],
+      "images": [
+        "629",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "825": {
+    "inputs": {
+      "any_01": [
+        "630",
+        7
+      ],
+      "any_02": [
+        "978",
+        5
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Any Switch (rgthree)"
+    }
+  },
+  "846": {
+    "inputs": {
+      "action": "replace",
+      "tidy_tags": "yes",
+      "text_a": [
+        "1448",
+        0
+      ],
+      "text_b": "/^.*$/",
+      "text_c": "CLIP_L(\\g<0>)\n\n\\g<0>"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "858": {
+    "inputs": {
+      "text": [
+        "846",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Debug Positive\n"
+    }
+  },
+  "859": {
+    "inputs": {
+      "action": "replace",
+      "tidy_tags": "yes",
+      "text_a": [
+        "1455",
+        0
+      ],
+      "text_b": "/^.*$/",
+      "text_c": "CLIP_L(\\g<0>)\n\n\\g<0>"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "860": {
+    "inputs": {
+      "text": [
+        "859",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Debug Negative\n"
+    }
+  },
+  "861": {
+    "inputs": {
+      "hard_mode": false,
+      "boost": true,
+      "model": [
+        "870",
+        1
+      ]
+    },
+    "class_type": "Automatic CFG",
+    "_meta": {
+      "title": "Automatic CFG"
+    }
+  },
+  "862": {
+    "inputs": {
+      "seed": 64712465704708
+    },
+    "class_type": "Seed Generator",
+    "_meta": {
+      "title": "Seed Generator"
+    }
+  },
+  "870": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ],
+      "vae": [
+        "194",
+        0
+      ],
+      "latent": [
+        "497",
+        0
+      ],
+      "clip_width": [
+        "495",
+        0
+      ],
+      "clip_height": [
+        "495",
+        1
+      ],
+      "denoise": [
+        "356",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "Model Ctx"
+    }
+  },
+  "962": {
+    "inputs": {
+      "base_ctx": [
+        "635",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "965": {
+    "inputs": {
+      "int": 32
+    },
+    "class_type": "Int Literal",
+    "_meta": {
+      "title": "Desired Steps\n"
+    }
+  },
+  "975": {
+    "inputs": {
+      "any_02": [
+        "1501",
+        0
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Refine Step Switch\n"
+    }
+  },
+  "978": {
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": [
+        "630",
+        8
+      ],
+      "steps": [
+        "630",
+        9
+      ],
+      "cfg": 5.5,
+      "sampler_name": "dpmpp_3m_sde_gpu",
+      "scheduler": "karras",
+      "start_at_step": [
+        "1465",
+        0
+      ],
+      "end_at_step": [
+        "630",
+        10
+      ],
+      "return_with_leftover_noise": "enable",
+      "preview_method": "taesd",
+      "vae_decode": "true",
+      "model": [
+        "630",
+        1
+      ],
+      "positive": [
+        "630",
+        4
+      ],
+      "negative": [
+        "630",
+        5
+      ],
+      "latent_image": [
+        "630",
+        6
+      ],
+      "optional_vae": [
+        "630",
+        3
+      ]
+    },
+    "class_type": "KSampler Adv. (Efficient)",
+    "_meta": {
+      "title": "KSampler Adv. (Efficient)"
+    }
+  },
+  "983": {
+    "inputs": {
+      "base_ctx": [
+        "824",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "984": {
+    "inputs": {
+      "base_ctx": [
+        "983",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1108": {
+    "inputs": {
+      "base_ctx": [
+        "1325",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1210": {
+    "inputs": {
+      "base_ctx": [
+        "813",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1211": {
+    "inputs": {
+      "base_ctx": [
+        "1210",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1212": {
+    "inputs": {
+      "base_ctx": [
+        "1211",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1213": {
+    "inputs": {
+      "base_ctx": [
+        "1212",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1309": {
+    "inputs": {
+      "expression": "a - b",
+      "a": [
+        "1462",
+        0
+      ],
+      "b": [
+        "965",
+        0
+      ]
+    },
+    "class_type": "MathExpression|pysssss",
+    "_meta": {
+      "title": "Denoise Calc -> Start Steps\n"
+    }
+  },
+  "1321": {
+    "inputs": {
+      "base_ctx": [
+        "870",
+        0
+      ],
+      "model": [
+        "861",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1325": {
+    "inputs": {
+      "base_ctx": [
+        "1476",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1326": {
+    "inputs": {
+      "base_ctx": [
+        "1108",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1386": {
+    "inputs": {
+      "base_ctx": [
+        "984",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1387": {
+    "inputs": {
+      "base_ctx": [
+        "1386",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1419": {
+    "inputs": {
+      "any_01": [
+        "45",
+        1
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Prompt Switch\n"
+    }
+  },
+  "1442": {
+    "inputs": {
+      "text": [
+        "1",
+        3
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "1443": {
+    "inputs": {
+      "text": [
+        "1442",
+        0
+      ],
+      "sub_text": "sdxl_pony",
+      "case_insensitive": true
+    },
+    "class_type": "Text Contains",
+    "_meta": {
+      "title": "Text Contains"
+    }
+  },
+  "1444": {
+    "inputs": {
+      "text_a": [
+        "1446",
+        0
+      ],
+      "text_b": [
+        "1447",
+        0
+      ],
+      "boolean": [
+        "1581",
+        0
+      ]
+    },
+    "class_type": "Text Input Switch",
+    "_meta": {
+      "title": "Text Input Switch"
+    }
+  },
+  "1446": {
+    "inputs": {
+      "string": "score_9, score_8_up, score_7_up, rating_explicit"
+    },
+    "class_type": "Simple String",
+    "_meta": {
+      "title": "Pony Specific\n"
+    }
+  },
+  "1447": {
+    "inputs": {
+      "string": ""
+    },
+    "class_type": "Simple String",
+    "_meta": {
+      "title": "Empty String\n"
+    }
+  },
+  "1448": {
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "false",
+      "text_a": [
+        "1444",
+        0
+      ],
+      "text_b": [
+        "1419",
+        0
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "1453": {
+    "inputs": {
+      "string": "score_4,score_5, derpibooru_p_low"
+    },
+    "class_type": "Simple String",
+    "_meta": {
+      "title": "Pony Specific\n"
+    }
+  },
+  "1454": {
+    "inputs": {
+      "text_a": [
+        "1453",
+        0
+      ],
+      "text_b": [
+        "1456",
+        0
+      ],
+      "boolean": [
+        "1580",
+        0
+      ]
+    },
+    "class_type": "Text Input Switch",
+    "_meta": {
+      "title": "Text Input Switch"
+    }
+  },
+  "1455": {
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "false",
+      "text_a": [
+        "1495",
+        0
+      ],
+      "text_b": [
+        "1454",
+        0
+      ],
+      "text_c": [
+        "3",
+        1
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "1456": {
+    "inputs": {
+      "string": ""
+    },
+    "class_type": "Simple String",
+    "_meta": {
+      "title": "Empty String\n"
+    }
+  },
+  "1457": {
+    "inputs": {
+      "string": "[:(hands:1.15),:0.15]"
+    },
+    "class_type": "Simple String",
+    "_meta": {
+      "title": "Hands Negative"
+    }
+  },
+  "1462": {
+    "inputs": {
+      "expression": "ceil(a / b)",
+      "a": [
+        "965",
+        0
+      ],
+      "b": [
+        "1464",
+        23
+      ]
+    },
+    "class_type": "MathExpression|pysssss",
+    "_meta": {
+      "title": "Actual Total Steps\n"
+    }
+  },
+  "1464": {
+    "inputs": {
+      "base_ctx": [
+        "1520",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1465": {
+    "inputs": {
+      "any_02": [
+        "1309",
+        0
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Start Step Switch\n"
+    }
+  },
+  "1475": {
+    "inputs": {
+      "base_ctx": [
+        "464",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "Context (rgthree)"
+    }
+  },
+  "1476": {
+    "inputs": {
+      "base_ctx": [
+        "1475",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "Context (rgthree)"
+    }
+  },
+  "1495": {
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "false",
+      "text_a": [
+        "1457",
+        0
+      ],
+      "text_b": [
+        "3",
+        1
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "1498": {
+    "inputs": {
+      "float": 0.6
+    },
+    "class_type": "ttN float",
+    "_meta": {
+      "title": "Pass 1 End\n"
+    }
+  },
+  "1501": {
+    "inputs": {
+      "Value": 10000
+    },
+    "class_type": "DF_Integer",
+    "_meta": {
+      "title": "Default End\n"
+    }
+  },
+  "1504": {
+    "inputs": {
+      "base_ctx": [
+        "669",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1505": {
+    "inputs": {
+      "base_ctx": [
+        "1504",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1508": {
+    "inputs": {
+      "base_ctx": [
+        "669",
+        0
+      ]
+    },
+    "class_type": "Context (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1520": {
+    "inputs": {
+      "base_ctx": [
+        "1213",
+        0
+      ]
+    },
+    "class_type": "Context Big (rgthree)",
+    "_meta": {
+      "title": "ctx"
+    }
+  },
+  "1560": {
+    "inputs": {
+      "boolean": true
+    },
+    "class_type": "Logic Boolean Primitive",
+    "_meta": {
+      "title": "Detect Pony for Positive Prompt\n"
+    }
+  },
+  "1575": {
+    "inputs": {
+      "boolean": true
+    },
+    "class_type": "Logic Boolean Primitive",
+    "_meta": {
+      "title": "Detect Pony for Negative\n"
+    }
+  },
+  "1580": {
+    "inputs": {
+      "boolean_a": [
+        "1443",
+        0
+      ],
+      "boolean_b": [
+        "1575",
+        0
+      ]
+    },
+    "class_type": "Logic Comparison AND",
+    "_meta": {
+      "title": "Logic Comparison AND"
+    }
+  },
+  "1581": {
+    "inputs": {
+      "boolean_a": [
+        "1443",
+        0
+      ],
+      "boolean_b": [
+        "1560",
+        0
+      ]
+    },
+    "class_type": "Logic Comparison AND",
+    "_meta": {
+      "title": "Logic Comparison AND"
+    }
+  },
+  "437:0": {
+    "inputs": {
+      "text": [
+        "846",
+        0
+      ]
+    },
+    "class_type": "PromptToSchedule",
+    "_meta": {
+      "title": "PromptToSchedule"
+    }
+  },
+  "437:1": {
+    "inputs": {
+      "clip": [
+        "697",
+        2
+      ],
+      "prompt_schedule": [
+        "437:0",
+        0
+      ]
+    },
+    "class_type": "ScheduleToCond",
+    "_meta": {
+      "title": "ScheduleToCond (Positive)"
+    }
+  },
+  "437:2": {
+    "inputs": {
+      "model": [
+        "697",
+        1
+      ],
+      "prompt_schedule": [
+        "437:0",
+        0
+      ]
+    },
+    "class_type": "ScheduleToModel",
+    "_meta": {
+      "title": "ScheduleToModel (Positive)"
+    }
+  },
+  "441:0": {
+    "inputs": {
+      "text": [
+        "859",
+        0
+      ]
+    },
+    "class_type": "PromptToSchedule",
+    "_meta": {
+      "title": "PromptToSchedule"
+    }
+  },
+  "441:1": {
+    "inputs": {
+      "clip": [
+        "697",
+        2
+      ],
+      "prompt_schedule": [
+        "441:0",
+        0
+      ]
+    },
+    "class_type": "ScheduleToCond",
+    "_meta": {
+      "title": "ScheduleToCond (Positive)"
+    }
+  }
+}
