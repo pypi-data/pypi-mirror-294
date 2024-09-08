@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: personalWebbingCommunication
+Version: 1.1.2
+Summary: All functions that assist in standardising development approaches.
+Home-page: https://github.com/yourusername/your-repo
+Author: Marcus
+Author-email: marcusongkiansiong@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: custom-development-standardisation >=1.1.2
+Requires-Dist: Flask >=3.0.3
+
+# Purpose
+Abstracting message construction and deconstruction to achieve consistency
+
+1. Multipart
+    1. Structure of message (see Appendix A, Figure 1)
+    2. Current data types (see Appendix A, Figure 2)
+
+#### Helper modules
+1. Multipart message deconstructer in CDN. 
+2. 
+
+# Section types
+    1. 
+
+# Appendix 
+Appendix A
+1. Multipart
+    *Figure 1: Structure of the message from top (left) to bottom (right).*
+```mermaid
+graph TD
+    subgraph one[Cover]
+        metadata_0[Content-Type: hello; Separator_string: separator text]
+        a{{separator text}}
+        subgraph comp_1
+            metadata_1.1
+            metadata_1.2
+            data1
+        end
+        b{{separator text}}
+        subgraph comp_2
+            metadata_2.1
+            metadata_2.2
+            data2
+        end
+        c{{separator text}}
+        subgraph comp_3
+            metadata_3.1
+            metadata_3.2
+            data3
+        end
+    end
+```
+Table 1: Current data types
+|data type|metadata|Specifics|
+|-|-|-|
+|text|data_type,name||
+|image|data_type||
+
+    
+# Change log
+### [1.3.1] - 2024-09-08
+add:
+fixed:
+1. get_logger: Direct import of logger variable does not change for files that import it when logger changes.
+others:
+### [1.3.0] - 2024-09-07
+add:
+1. insert_logger
+2. Logger
+3. Logger method execution encapsulation
+fixed:
+others:
+### [1.2.0] - 2024-08-01
+add:
+1. Bar.py: Added bar chart image generation
+fixed:
+others:
+### [1.1.1] - 2024-07-06
+add:
+fixed:
+others:
+1. Incorporated log function call in image/line.py.
+### [1.1.0] - 2024-06-23
+add:
+1. Line.py: You can generate line chart binary now from x and y array data. 
+fixed:
+others:
+### [1.0.0] - 2024-06-23
+add:
+1. image visualisation: Charts that is presented in terms of image binary data
+2. pie visual for image: Display a pie chart.
+3. root init file: Added log_data class initialisation. 
+fixed:
+others:
+1. Purpose of image visualisation: For displaying visuals in the front end.
