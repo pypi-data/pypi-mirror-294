@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: tegridymidi
+Version: 24.9.7
+Summary: Tools for reading, writing, and manipulating MIDIs
+Home-page: https://github.com/asigalov61/tegridymidi
+Author: Alex Lev
+Author-email: Alex Lev <alexlev61@proton.me>
+Maintainer-email: Alex Lev <alexlev61@proton.me>
+License: Apache Software License 2.0
+Project-URL: Homepage, https://github.com/asigalov61/tegridymidi
+Project-URL: Documentation, https://github.com/asigalov61/tegridymidi/docs
+Project-URL: Repository, https://github.com/asigalov61/tegridymidi
+Project-URL: Issues, https://github.com/asigalov61/tegridymidi/issues
+Project-URL: Discussions, https://github.com/asigalov61/tegridymidi/discussions
+Keywords: MIDI,tegridy,tools
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: networkx
+Requires-Dist: scikit-learn
+Provides-Extra: cuda
+Requires-Dist: torch; extra == "cuda"
+Requires-Dist: einops; extra == "cuda"
+Requires-Dist: cupy-cuda12x; extra == "cuda"
+Requires-Dist: torch-summary; extra == "cuda"
+
+# Tegridy MIDI
+
+## Tools for reading, writing, and manipulating MIDIs
+
+![Tegridy MIDI Logo](https://github.com/user-attachments/assets/6b1f98e1-255c-4e76-ba24-46f37ad36b46)
+
+***
+
+## Features
+
+- Read and write MIDI files
+- Manipulate MIDI data
+- Integrate with FluidSynth for MIDI playback
+
+***
+
+## Installation
+
+### CPU
+
+```sh
+pip install tegridymidi
+```
+
+### GPU
+
+```sh
+pip install tegridymidi[cuda]
+```
+
+***
+
+### Project Los Angeles
+### Tegridy Code 2024
