@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "guangluo-project-manager"
+version = "1.0.0"
+description = ""
+authors = ["guangluo <guangluo@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pony = "^0.7.19"
+typer = "^0.12.5"
+
+[tool.poetry.scripts]
+project = "guangluo_project_manager.main:app"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
