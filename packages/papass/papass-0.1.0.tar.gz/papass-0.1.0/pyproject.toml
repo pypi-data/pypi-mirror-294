@@ -1,0 +1,101 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "papass"
+authors = [{name = "Reinhard Stahn"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">= 3.10"
+dynamic = ["version", "description"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "click",
+]
+
+[project.urls]
+documentation = "https://papass.readthedocs.io"
+source = "https://github.com/rainij/papass"
+
+[project.scripts]
+papass = "papass.__main__:cli"
+
+[project.optional-dependencies]
+docs = [
+    "myst-parser",
+    "sphinx",
+    "sphinx-book-theme",
+]
+dev = [
+    "hypothesis",
+    "mypy",
+    "pytest",
+    "pytest-timeout",
+    "ruff",
+]
+dev-pylsp = [
+    "python-lsp-server",
+    "python-lsp-ruff",
+    "pylsp-mypy",
+    "pylsp-rope",
+]
+
+[tool.pytest.ini_options]
+timeout = 10.0
+session_timeout = 100.0
+addopts = "--doctest-modules --hypothesis-profile dev"
+testpaths = [
+    "src",  # For doctest
+    "tests",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    # isort
+    "I",
+    # pycodestyle
+    "E",
+    # pydocstyle
+    "D",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+]
+ignore = [
+   "D100", # undocumented-public-module
+   "D104", # undocumented-public-package
+   "D203", # incompatible with D211
+   "D213", # incompatible with D212
+   "D416", # section-name-ends-in-colon, disabled because we do not use google convention
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**py" = [
+    # Missing docstrings are OK (D100-D107).
+    "D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107",
+    # Others
+    "D400", "D415",
+]
+
+[tool.mypy]
+packages = "papass,tests"
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+allow_untyped_defs = true
+allow_incomplete_defs = true
