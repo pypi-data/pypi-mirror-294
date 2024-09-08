@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: split-gpx
+Version: 0.2.1
+Summary: Split a GPX tracks into multiple parts
+Author: FriedrichFröbel
+License: MIT
+Project-URL: Homepage, https://github.com/FriedrichFroebel/split_gpx
+Project-URL: Repository, https://github.com/FriedrichFroebel/split_gpx
+Project-URL: Issues, https://github.com/FriedrichFroebel/split_gpx/issues
+Project-URL: Changelog, https://github.com/FriedrichFroebel/split_gpx/blob/main/CHANGELOG.md
+Keywords: gps,gpx,track
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: gpxpy
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: codespell; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pep8-naming; extra == "dev"
+Requires-Dist: flake8-bugbear; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: importlib_resources; python_version < "3.10" and extra == "dev"
+Requires-Dist: Faker; extra == "dev"
+
+# GPX splitter
+
+Simple tool to split a GPX file into multiple parts.
+
+## Features
+
+At the moment, this only supports splitting GPX files after a fixed number of track points. Everything besides the tracks itself will be discarded.
+
+I mostly wrote this module for myself to make it easier to install it as I commonly need this functionality to successfully send full tracks to my GPS device which only supports 500 points per track.
+
+## Installation
+
+You can install this package from PyPI:
+
+```bash
+python -m pip install split_gpx
+```
+
+Alternatively, you can use the package from source directly after installing the required dependencies.
+
+## Usage
+
+To see the supported CLI parameters, just run:
+
+```bash
+python -m split_gpx --help  # or `split_gpx --help`
+```
+
+## License
+
+This package is subject to the terms of the MIT license.
