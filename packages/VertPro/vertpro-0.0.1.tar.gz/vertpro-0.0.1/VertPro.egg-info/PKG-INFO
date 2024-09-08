@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: VertPro
+Version: 0.0.1
+Summary: A tool made to aid with conversion in Python
+Home-page: 
+Author: Umer Imran
+Author-email: um3rimran@gmail.com
+License: MIT
+Keywords: convert
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.TXT
+
+This is a library that is supposed to help with conversion. More types of conversion will be added while this library goes through updates
+Hope this helps.
+Made by the same 11 year old who made CalculatorBasicLibrary.
+This will be automatically downloaded with CBL(the short for CalculatorBasicLibrary) when it is complete.
+NOTE: Money conversions will either not be added here or they will be changed only when an update for something else occurs..
+
+Change Log
+==========
+
+0.0.1 (07/09/2024)
+-------------------
+First Release

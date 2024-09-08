@@ -1,0 +1,7 @@
+LICENCE.TXT
+README.txt
+setup.py
+VertPro.egg-info/PKG-INFO
+VertPro.egg-info/SOURCES.txt
+VertPro.egg-info/dependency_links.txt
+VertPro.egg-info/top_level.txt
