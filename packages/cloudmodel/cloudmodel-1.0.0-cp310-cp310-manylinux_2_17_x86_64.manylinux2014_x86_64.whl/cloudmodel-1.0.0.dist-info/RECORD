@@ -1,0 +1,12 @@
+cloudmodel.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+cloudmodel.libs/libgfortran-040039e1.so.5.0.0,sha256=FK-zEpsai1C8QKOwggx_EVLqm8EBIaqxUpQ_cFdHKIY,2686065
+cloudmodel/z_profile.py,sha256=Rwkf_8Ihem1IsAy54deyIthhfYMxWUGqgI0WRp0WVC4,13465
+cloudmodel/constants.py,sha256=Via8QNMpai-nvmma7M4wcnmGAUzDa3jfFqJ46EzCtsc,1517
+cloudmodel/cloud_read.py,sha256=sUIgVGO0I8srMtviaas8yHt8TcJF2sFFnYQb6FiOmtI,23470
+cloudmodel/__init__.py,sha256=j0p4c4X3x9ms96w3iUQ8-t8sc88T_aIxBrMHk8Ws23k,189
+cloudmodel/interface/__init__.py,sha256=pKL3Fdk0u0bgnhu_9WAWQfQdvd-EnYARBpmwOipKpTc,115
+cloudmodel/interface/cloud_compiled.cpython-310-x86_64-linux-gnu.so,sha256=989v3Kk7JnXBGgKzN7_b_kKhWC0CawlCzWWw3yVzPhw,88641
+cloudmodel-1.0.0.dist-info/METADATA,sha256=v_oBLNbaOZYGUwq8uNh1v-wH26C_Eja0ynkSranW9S0,5221
+cloudmodel-1.0.0.dist-info/RECORD,,
+cloudmodel-1.0.0.dist-info/WHEEL,sha256=sZM_NeUMz2G4fDenMf11eikcCxcLaQWiYRmjwQBavQs,137
+cloudmodel-1.0.0.dist-info/entry_points.txt,sha256=_m_n_9Ens7vp2VQlWQeCl1fSj3Pc0yZfz2ETxRMcMs0,57
